@@ -1,0 +1,23 @@
+===== Example
+
+```
+;; Suppose you want to short-circuit a sum like:
+(reduce (fn [a v] (+ a v)) (range 10))
+;;=> 45
+
+;; So that it either returns the sum of the integers if less than 100:
+(reduce (fn [a v] (if (< a 100) (+ a v) (reduced :big))) (range 10))
+;;=> 45
+
+;; But the keyword :big otherwise:
+(reduce (fn [a v] (if (< a 100) (+ a v) (reduced :big))) (range 20))
+;;=> :big
+
+;; The value returned by (reduced :big) short-circuits the reduction so that 
+;; it returns the wrapped value without ranging over the entire sequence.
+;; This is useful for infinite lazy sequences:
+(reduce (fn [a v] (if (< a 100) (+ a v) (reduced :big))) (range))
+;;=>:big
+
+;; Which would otherwise not terminate.
+```

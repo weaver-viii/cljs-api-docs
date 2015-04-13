@@ -1,0 +1,25 @@
+===== Example
+
+```
+;; although negative (or zero) drop-item-counts are accepted they do nothing
+(drop -1 [1 2 3 4])
+;;=> (1 2 3 4) 
+
+(drop 0 [1 2 3 4])
+;;=> (1 2 3 4) 
+
+(drop 2 [1 2 3 4])
+;;=> (3 4) 
+
+;; dropping more items than are present is allowed, and all items are dropped.
+(drop 5 [1 2 3 4])
+;;=> ()
+```
+
+===== Example
+
+```
+;; similar to subvec but lazy and with seqs
+(take 3 (drop 5 (range 1 11)))
+;;=> (6 7 8)
+```

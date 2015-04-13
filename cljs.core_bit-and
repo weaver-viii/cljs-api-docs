@@ -1,0 +1,58 @@
+===== Example
+
+```
+;; bits can be entered using radix notation
+;; but they are long integers so by default they
+;; display in decimal.
+(bit-and 2r1100 2r1001)
+;;=> 8
+;; 8 = 2r1000
+
+;; here we see the same bits entered in decimal
+(bit-and 12 9)
+;;=> 8
+```
+
+===== Example
+
+```
+;; bits can be entered in hexidecimal
+(bit-and 0x08 0xFF)
+;;=> 8
+
+;; bits can be show with Integer/toHexString
+(Integer/toHexString (bit-and 0x0108 0xFFFF))
+;;=> "108"
+```
+
+===== Example
+
+```
+;; bits can also be shown with Integer/toBinaryString
+
+(Integer/toBinaryString 235)
+;;=> "11101011"
+
+(Integer/toBinaryString 199)
+;;=> "11000111"
+
+(bit-and 235 199)
+;;=> 195
+
+(Integer/toBinaryString 195)
+;;=> "11000011"
+
+;;  11101011  = 235
+;;& 11000111  = 199
+;;==========
+;;  11000011  = 195
+```
+
+===== Example
+
+```
+;; here is the truth table for AND 
+(Integer/toBinaryString (bit-and 2r1100 2r1010) )
+;;=> "1000"
+;; or 2r1000
+```

@@ -1,0 +1,35 @@
+===== Example
+
+```
+<pre>
+user=> (/ 6 3)
+2
+
+user=> (/ 6 3 2)
+1
+
+user=> (/ 10)
+1/10
+
+user=> (/ 1 3)
+1/3
+
+user=> (/)
+ArityException Wrong number of args (0) passed to: core$-SLASH-
+
+user=> (/ 1 0)
+java.lang.ArithmeticException
+
+user=> (/ 0)
+java.lang.ArithmeticException
+</pre>
+```
+
+===== Example
+
+```
+;;; Automatically handles floating point:
+
+user=> (/ 43.0 2)
+21.5
+```

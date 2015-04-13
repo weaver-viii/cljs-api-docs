@@ -1,0 +1,16 @@
+===== Example
+
+```
+user=> (use 'clojure.pprint)
+user=> (pprint (meta #'first))
+{:ns #<Namespace clojure.core>,
+ :name first,
+ :added "1.0",
+ :file "clojure/core.clj",
+ :static true,
+ :column 1,
+ :line 49,
+ :arglists ([coll]),
+ :doc
+ "Returns the first item in the collection. Calls seq on its\n    argument. If coll is nil, returns nil."}
+```

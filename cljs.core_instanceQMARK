@@ -1,0 +1,43 @@
+===== Example
+
+```
+user=> (instance? Long 1)
+true
+user=> (instance? Integer 1)
+false
+user=> (instance? Number 1)
+true
+user=> (instance? String 1)
+false
+user=> (instance? String "1")
+true
+
+```
+
+===== Example
+
+```
+user=> (def al (new java.util.ArrayList))
+#'user/al
+user=> (instance? java.util.Collection al)
+true
+user=> (instance? java.util.RandomAccess al)
+true
+user=> (instance? java.lang.String al)
+false
+```
+
+===== Example
+
+```
+;; Some things are more than what they seem to be at first glance
+user=> (instance? clojure.lang.IFn +)
+true
+user=> (instance? clojure.lang.Keyword :a)
+true
+user=> (instance? clojure.lang.IFn :a)
+true
+user=> (instance? clojure.lang.IFn {:a 1})
+true
+
+```

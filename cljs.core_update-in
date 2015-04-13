@@ -1,0 +1,71 @@
+===== Example
+
+```
+(def users [{:name "James" :age 26}  {:name "John" :age 43}])
+#'user/users
+
+;; similar to assoc-in but does not simply replace the item.
+;; the specified function is performed on the matching item.
+;; here the age of the second (index 1) user is incremented.
+(update-in users [1 :age] inc)
+;;=> [{:name "James", :age 26} {:name "John", :age 44}]
+
+```
+
+===== Example
+
+```
+(def p {:name "James" :age 26})
+#'user/p
+
+(update-in p [:age] inc)
+;;=> {:name "James", :age 27}
+
+;; remember, the value of p hasn't changed!
+(update-in p [:age] + 10)
+;;=> {:name "James", :age 36}
+
+;; Here we see that the keyed object is 
+;; the first argument in the function call.
+;; i.e. :age (- 16 10) => 16
+(update-in p [:age] - 10)
+;;=> {:name "James", :age 16}
+
+
+```
+
+===== Example
+
+```
+(defn char-cnt [s]
+  "Counts occurence of each character in s"
+  (reduce
+    (fn [m k]
+      (update-in m [k] (fnil inc 0)))
+  {}
+  (seq s)))
+;; Note use of fnil above 
+;; - returns 0 if nil is passed to inc (avoids null pointer exception)
+
+(char-cnt "foo-bar")
+;;=> {\r 1, \a 1, \b 1, \- 1, \o 2, \f 1}
+
+```
+
+===== Example
+
+```
+;; f has args
+;; The keyed value is placed as the first argument
+;; :a  (/ 3 4 5) => 3/20 
+(update-in {:a 3} [:a] / 4 5)
+;;=> {:a 3/20}
+```
+
+===== Example
+
+```
+;; be careful with that empty path sequence, it's seldom what you want
+(update-in {} [] (constantly {:k :v}))
+;;=> {nil {:k :v}}
+```

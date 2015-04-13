@@ -1,0 +1,124 @@
+===== Example
+
+```
+(def negative-quotient (comp - /))
+;; #'user/negative-quotient
+
+(negative-quotient 8 3)  ;;=> -8/3
+
+(def concat-and-reverse (comp (partial apply str) reverse str)) 
+;; #'user/concat-and-reverse
+
+(concat-and-reverse "hello" "clojuredocs")
+;;=> "scoderujolcolleh"
+
+```
+
+===== Example
+
+```
+((comp str +) 8 8 8)   ;;=> "24"
+
+```
+
+===== Example
+
+```
+(map
+   (comp - (partial + 3) (partial * 2))
+       [1 2 3 4])
+;;=>  (-5 -7 -9 -11)
+```
+
+===== Example
+
+```
+(filter (comp not zero?) [0 1 0 2 0 3 0 4])
+;;=> (1 2 3 4)
+```
+
+===== Example
+
+```
+;; make a struct 'goods'. it assumes that every goods has
+;; its id number and price.
+(defstruct goods :id :price)
+
+;; generate data.
+(def data (map #(struct goods %1 %2)
+	       (shuffle (range 0 10)) 
+               (shuffle
+	          (into (range 100 500 100)
+			(range 100 500 100)))))
+
+(defn comp-goods-price
+  "a compare function by :price of the struct 'goods.' the sort order 
+   is that the lower price is superior to the higher one and if the 
+   price is same, the lower id is superior to the higher one."
+  [el1 el2]
+  (if (or  (< (:price el1) (:price el2))
+           (and (= (:price el1) (:price el2)) (< (:id el1) (:id el2))))
+    true
+    false))
+
+;; The shuffle will cause your results to differ.
+data   
+;;=> ({:id 1, :price 300} {:id 6, :price 100} 
+;;    {:id 3, :price 100} {:id 4, :price 400}
+;;    {:id 0, :price 300} {:id 2, :price 200} 
+;;    {:id 5, :price 200} {:id 8, :price 400})
+
+(sort (comp comp-goods-price) data)
+;;=> ({:id 3, :price 100} {:id 6, :price 100} 
+;;    {:id 2, :price 200} {:id 5, :price 200} 
+;;    {:id 0, :price 300} {:id 1, :price 300}
+;;    {:id 4, :price 400} {:id 8, :price 400})
+
+(sort-by :price < data) ; compare this with the above.
+;;=> ({:id 6, :price 100} {:id 3, :price 100} 
+;;    {:id 2, :price 200} {:id 5, :price 200} 
+;;    {:id 1, :price 300} {:id 0, :price 300} 
+;;    {:id 4, :price 400} {:id 8, :price 400})
+
+;; Yet another example of 'comp' by PriorityBlockingQueue.
+
+(import [java.util.concurrent PriorityBlockingQueue])
+;; java.util.concurrent.PriorityBlockingQueue
+
+(def pqdata (new PriorityBlockingQueue 8
+		 (comp comp-goods-price)))
+;; #'user/pqdata
+
+(doseq [x data] (.add pqdata x))
+;;=> nil
+
+(dotimes [_ 8] (println (.poll pqdata)))
+;;  {:id 3, :price 100}
+;;  {:id 6, :price 100}
+;;  {:id 2, :price 200}
+;;  {:id 5, :price 200}
+;;  {:id 0, :price 300}
+;;  {:id 1, :price 300}
+;;  {:id 4, :price 400}
+;;  {:id 8, :price 400}
+;;=> nil
+
+```
+
+===== Example
+
+```
+(def countif (comp count filter))
+#'user/countif
+
+(countif even? [2 3 1 5 4])
+;;=> 2
+```
+
+===== Example
+
+```
+; Get 2nd to last element from a list
+( (comp second reverse) '("a" 2 7 "b"))   
+;;=> 7
+```

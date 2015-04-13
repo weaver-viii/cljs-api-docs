@@ -1,0 +1,69 @@
+===== Example
+
+```
+(rest [1 2 3 4 5])            ;;=> (2 3 4 5)
+(rest ["a" "b" "c" "d" "e"])  ;;=> ("b" "c" "d" "e")
+```
+
+===== Example
+
+```
+;; For the most part rest must take a collection as its argument.
+;; It always returns a seq.
+(rest '())
+;;=> ()
+```
+
+===== Example
+
+```
+;; There is one case where the input is not required to be a collection.
+;; But, 'rest' still returns a list.
+(rest nil)
+;;=> ()
+```
+
+===== Example
+
+```
+;; A simple (re-)implementation of 'map' using 'rest' for recursing over a collection.  
+;; Note that (seq coll) is used as the test.
+(defn my-map [func coll]
+  (when-let [s (seq coll)]
+    (cons (func (first s))
+          (my-map func (rest s)))))
+
+(my-map #(* % %) [2 3 5 7 11 13])
+;;=> (4 9 25 49 121 169)
+```
+
+===== Example
+
+```
+;; Any collection can be used
+(rest '(1 2 3 4 5))   ;;=> (2 3 4 5)
+(rest [1 2 3 4 5])    ;;=> (2 3 4 5)
+(rest #{1 2 3 4 5})   ;;=> (2 3 4 5)
+
+(rest {1 nil 2 nil 3 nil 4 nil 5 nil}) ;;=> ([2 nil] [3 nil] [4 nil] [5 nil])
+```
+
+===== Example
+
+```
+;; Difference between next and rest:
+(rest [:a])
+;; => ()
+(next [:a])
+;; => nil
+
+(rest [])
+;; => ()
+(next [])
+;; => nil
+
+(rest nil)
+;; => ()
+(next nil)
+;; => nil
+```

@@ -1,0 +1,31 @@
+===== Example
+
+```
+(def owners [{:owner "Jimmy"
+              :pets (ref [{:name "Rex"
+                           :type :dog}
+                          {:name "Sniffles"
+                           :type :hamster}])} 
+              {:owner "Jacky" 
+               :pets (ref [{:name "Spot" 
+                            :type :mink}
+                           {:name "Puff" 
+                            :type :magic-dragon}])}])
+
+;; This example is contrived as there are other more 
+;; terse ways of expressing the idea.  It demonstrates
+;; several of the ways to extract items from a collection.
+;; Notice how the collection can be used in function or 
+;; parameter position.
+(as-> owners $ (nth $ 0) (:pets $) (deref $) ($ 1) ($ :type))
+;;=> :hamster
+```
+
+===== Example
+
+```
+(as-> 0 n
+      (inc n)  ; n is 0 here passed from first parameter to as->
+      (inc n)) ; n is 1 here passed from result of previous inc expression
+;;=> 2
+```

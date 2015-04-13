@@ -1,0 +1,27 @@
+===== Example
+
+```
+;; Convert number into list of bits:
+(defn bits [n s]
+  (take s
+       (map
+         (fn [i] (bit-and 0x01 i))
+         (iterate
+           (fn [i] (bit-shift-right i 1))
+           n))))
+;; #'user/bits
+
+(map (fn [n] (bits n 3)) (range 8))
+;;=> ((0 0 0) (1 0 0) (0 1 0) (1 1 0) (0 0 1) (1 0 1) (0 1 1) (1 1 1))
+
+```
+
+===== Example
+
+```
+(bit-shift-right 2r1101 0)     ;;=> 13
+(bit-shift-right 2r1101 1)     ;;=>  6
+(bit-shift-right 2r1101 2)     ;;=>  3
+(bit-shift-right 2r1101 3)     ;;=>  1
+(bit-shift-right 2r1101 4)     ;;=>  0
+```

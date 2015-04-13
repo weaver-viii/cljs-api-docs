@@ -1,0 +1,112 @@
+===== Example
+
+```
+;; Taken from the excellent clojure tutorial:
+;; http://java.ociweb.com/mark/clojure/article.html
+
+(print "Enter a number: ")
+(flush) ; stays in a buffer otherwise
+(let [line (read-line)
+      value (try
+              (Integer/parseInt line)
+              (catch NumberFormatException e line))] ; use string val if not int
+  (println
+    (condp = value
+      1 "one"
+      2 "two"
+      3 "three"
+      (str "unexpected value, \"" value \")))
+  (println
+    (condp instance? value
+       Number (* value 2)
+       String (* (count value) 2))))
+
+```
+
+===== Example
+
+```
+;; (some #{4 5 9} [1 2 3 4] 
+;;  is the first matching clause, 
+;;  the match value is 4 which is decremented
+(condp some [1 2 3 4]
+  #{0 6 7} :>> inc
+  #{4 5 9} :>> dec
+  #{1 2 3} :>> #(+ % 3))
+;;=> 3
+```
+
+===== Example
+
+```
+;; in this case there is no matching clause
+;; so an exception is raised.
+(condp some [1 2 3 4]
+   #{0 6 7} :>> inc
+   #{5 9}   :>> dec)
+
+;; java.lang.IllegalArgumentException: No matching clause: [1 2 3 4]
+```
+
+===== Example
+
+```
+;; a composite predicate which parses a string with "re-seq" 
+;; producing a list which is made into a "seq".
+(condp (comp seq re-seq) "foo=bar"
+  #"[+](\w+)"    :>> #(vector (-> % first (nth 1) keyword) true)
+  #"[-](\w+)"    :>> #(vector (-> % first (nth 1) keyword) false)
+  #"(\w+)=(\S+)" :>> #(let [x (first %)]
+                        [(keyword (nth x 1)) (nth x 2)]))
+;;=> [:foo "bar"]
+```
+
+===== Example
+
+```
+;; See examples for "if" explaining Clojure's idea of logical true
+;; and logical false.
+```
+
+===== Example
+
+```
+;;this is with liberator
+;;branching on request method
+(defresource my-resource
+  :exists? (fn [{:keys [db] {query-params :query-params 
+                             body :body 
+                             method :request-method} 
+                 :request}]
+             
+             (condp = method
+               :get (my-get-exists-fn)
+               :post (my-post-exists-fn))))
+```
+
+===== Example
+
+```
+;; a recursive function to calculate length
+;; same as 'count'
+(defn length [lst]
+    (condp = lst
+        (list) 0 ; if empty list result 0
+        (+ 1 (length (rest lst))))) ; default expression
+
+(length '(1 2 3))
+;;=> 3
+```
+
+===== Example
+
+```
+;; pass in the function
+;; #(%1 2 %2) < 3 
+;; is the passing condition.
+(condp #(%1 2 %2) 3
+  = "eq"
+  < "lt"
+  > "gt")
+;;=> "lt"
+```

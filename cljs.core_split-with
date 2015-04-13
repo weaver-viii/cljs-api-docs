@@ -1,0 +1,12 @@
+===== Example
+
+```
+user=> (split-with (partial >= 3) [1 2 3 4 5])
+[(1 2 3) (4 5)]
+
+user=> (split-with (partial > 3) [1 2 3 2 1])
+[(1 2) (3 2 1)]
+
+user=> (split-with (partial > 10) [1 2 3 2 1])
+[(1 2 3 2 1) ()]
+```

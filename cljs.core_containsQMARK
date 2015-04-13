@@ -1,0 +1,40 @@
+===== Example
+
+```
+;; `contains?` is straightforward for maps:
+(contains? {:a 1} :a)    ;=> true
+(contains? {:a nil} :a)  ;=> true
+(contains? {:a 1} :b)    ;=> false
+
+;; It's likely to surprise you for other sequences because it's 
+;; about *indices* or *keys*, not *contents*:
+
+(contains? [:a :b :c] :b)  ;=> false
+(contains? [:a :b :c] 2)   ;=> true
+(contains? "f" 0)          ;=> true
+(contains? "f" 1)          ;=> false
+
+;; It can be applied to non-sequences:
+
+(contains? 5 3)          ;=> false
+
+;; Although lists are sequences, they are not keyed sequences.
+;; `contains` should not be used for lists.
+
+(contains? '(1 2 3) 1)   
+;;=> false                  (Clojure = 1.1)
+;; IllegalArgumentException (Clojure >=1.5)
+
+
+```
+
+===== Example
+
+```
+;; Can be used to test set membership
+(def s #{"a" "b" "c"})
+
+;; The members of a set are the keys of those elements.
+(contains? s "a")   ;=> true
+(contains? s "z")   ;=> false
+```

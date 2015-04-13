@@ -1,0 +1,113 @@
+===== Example
+
+```
+;; 2 is even, so `some` stops there, 3 and 4 are never tested
+(some even? '(1 2 3 4))
+;;=> true
+
+;; they are all odd, so not true, i.e. nil
+(some even? '(1 3 5 7))
+;;=> nil
+```
+
+===== Example
+
+```
+(some true? [false false false])
+;;=> nil
+
+(some true? [false true false])
+;;=> true
+
+(some true? [true true true])
+;;=> true
+
+```
+
+===== Example
+
+```
+(some #(= 5 %) [1 2 3 4 5])
+;;=> true
+
+(some #(= 5 %) [6 7 8 9 10])
+;;=> nil
+```
+
+===== Example
+
+```
+;; the first logical true value is returned, i.e. anything but nil and false
+;; when return nil if its predicate is logical false.
+(some #(when (even? %) %) '(1 2 3 4))
+;;=> 2
+```
+
+===== Example
+
+```
+;; a hash acts as a function returning nil when the
+;; key is not present and the key value otherwise.
+(some {2 "two" 3 "three"} [nil 3 2])
+;;=> "three"
+
+;; there is nothing special about the 'nil' in the collection
+;; other than it is not found in the hash.
+(some {nil "nothing" 2 "two" 3 "three"} [nil 3 2])
+;;=> "nothing"
+
+;; the hash (as function) returns a nil for the key of '3';
+(some {2 "two" 3 nil} [nil 3 2])
+;;=> "two"
+```
+
+===== Example
+
+```
+;; some can be used as a substitute for (first (filter ...
+;; in most cases.
+
+(first (filter even? [1 2 3 4]))
+;;=> 2
+
+;; 'some' returns exactly one item (nil if nothing is found)
+(some #(if (even? %) %) [1 2 3 4])
+;;=> 2
+
+```
+
+===== Example
+
+```
+;; find a whether a word is in a list of words.
+(def word "foo")
+(def words ["bar" "baz" "foo" ""])
+(some (partial = word) words)
+;;=> true
+```
+
+===== Example
+
+```
+;; here we see sets being used as a predicates
+;; the first member of the collection that appears in the set is returned
+
+(some #{2} (range 0 10))      ;;=> 2
+(some #{6 2 4} (range 0 10))  ;;=> 2
+(some #{2 4 6} (range 3 10))  ;;=> 4
+(some #{200} (range 0 10))    ;;=> nil
+
+
+```
+
+===== Example
+
+```
+;; be careful, 'nil' can occasionally be returned on success.
+(#{nil} nil)
+;;=> nil 
+
+;; almost as troublesome is returning a false
+(#{false} false)
+;;=> false
+```

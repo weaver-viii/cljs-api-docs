@@ -1,0 +1,27 @@
+===== Example
+
+```
+user=> (require 'clojure.string)
+nil
+
+user=> (clojure.string/capitalize "MiXeD cAsE")
+"Mixed case"
+
+user=> (clojure.string/capitalize "mIxEd CaSe")
+"Mixed case"
+
+```
+
+===== Example
+
+```
+(defn capitalize-words 
+  "Capitalize every word in a string"
+  [s]
+  (->> (string/split (str s) #"\b") 
+       (map string/capitalize)
+       (string/join)))
+
+(capitalize-words "a bunch of words/text")
+;;=> "A Bunch Of Words/Text"
+```

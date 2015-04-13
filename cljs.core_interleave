@@ -1,0 +1,64 @@
+===== Example
+
+```
+;; This example takes a list of keys and a separate list of values and 
+;; inserts them into a map.
+(apply assoc {} 
+   (interleave [:fruit :color :temp] 
+               ["grape" "red" "hot"]))
+
+;;=> {:temp "hot", :color "red", :fruit "grape"}
+
+```
+
+===== Example
+
+```
+;; Simple example:
+(interleave [:a :b :c] [1 2 3])
+;;=> (:a 1 :b 2 :c 3)
+```
+
+===== Example
+
+```
+;; The shortest input stops interleave:
+
+(interleave [:a :b :c] [1 2])
+;;=> (:a 1 :b 2)
+
+(interleave [:a :b] [1 2 3])
+;;=> (:a 1 :b 2)
+```
+
+===== Example
+
+```
+(def s1 [[:000-00-0000 "TYPE 1" "JACKSON" "FRED"]
+         [:000-00-0001 "TYPE 2" "SIMPSON" "HOMER"]
+         [:000-00-0002 "TYPE 4" "SMITH" "SUSAN"]])
+
+(interleave (map #(nth % 0 nil) s1) (map #(nth % 1 nil) s1))
+;;=> (:000-00-0000 "TYPE 1" 
+;;    :000-00-0001 "TYPE 2"
+;;    :000-00-0002 "TYPE 4")
+```
+
+===== Example
+
+```
+(def s1 [[:000-00-0000 "TYPE 1" "JACKSON" "FRED"]
+         [:000-00-0001 "TYPE 2" "SIMPSON" "HOMER"]
+         [:000-00-0002 "TYPE 4" "SMITH" "SUSAN"]])
+
+(def cols [0 2 3])
+
+(defn f1 
+  [s1 col] 
+  (map #(get-in s1 [% col] nil) (range (count s1))))
+
+(apply interleave (map (partial f1 s1) cols))
+;;=> (:000-00-0000 "JACKSON" "FRED" 
+;;    :000-00-0001 "SIMPSON" "HOMER" 
+;;    :000-00-0002 "SMITH" "SUSAN")
+```

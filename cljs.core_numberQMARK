@@ -1,0 +1,31 @@
+===== Example
+
+```
+user=> (number? 1)
+true
+user=> (number? 1.0)
+true
+user=> (number? :a)
+false
+user=> (number? nil)
+false
+user=> (number? "23")
+false
+
+
+```
+
+===== Example
+
+```
+;; map number? over the vector
+(map number? [1 0.44 3e6 0xFF])
+;;=> (true true true true)
+
+;; map number? over the vector created by converting a list into a vector 
+;; with the function "into"
+(map number? (into [] '(1 0.44 3e6 0xFF)))
+;;=> (true true true true)
+
+
+```

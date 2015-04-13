@@ -1,0 +1,16 @@
+===== Example
+
+```
+user=> (format "%016x" -1)
+"ffffffffffffffff"
+
+;; bit-shift-right sign extends most significant bit while right shifting.
+user=> (format "%016x" (bit-shift-right -1 10))
+"ffffffffffffffff"
+
+;; unsigned-bit-shift-right fills most significant bits of result with 0.
+;; No sign extension.
+user=> (format "%016x" (unsigned-bit-shift-right -1 10))
+"003fffffffffffff"
+
+```

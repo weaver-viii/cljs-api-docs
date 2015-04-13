@@ -1,0 +1,44 @@
+===== Example
+
+```
+user=> (next '(:alpha :bravo :charlie))
+(:bravo :charlie)
+
+user=> (next (next '(:one :two :three)))
+(:three)
+
+user=> (next (next (next '(:one :two :three))))
+nil
+```
+
+===== Example
+
+```
+;; next is used in the recursive call.  (This is a naive implementation for illustration only.  Using `rest` is usually preferred over `next`.)
+
+(defn my-map [func a-list]
+  (when a-list
+    (cons (func (first a-list))
+          (my-map func (next a-list)))))
+```
+
+===== Example
+
+```
+;; Difference between next and rest:
+
+(next [:a])
+;; => nil
+(rest [:a])
+;; => ()
+
+(next [])
+;; => nil
+(rest [])
+;; => ()
+
+(next nil)
+;; => nil
+(rest nil)
+;; => ()
+```

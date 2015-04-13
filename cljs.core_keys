@@ -1,0 +1,12 @@
+===== Example
+
+```
+(keys {:keys :and, :some :values})
+;;=> (:keys :some)
+
+(keys {})
+;;=> nil
+
+(keys nil)
+;;=> nil
+```

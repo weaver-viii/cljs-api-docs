@@ -1,0 +1,28 @@
+===== Example
+
+```
+;; an idiomatic persistent-list is a list
+(list? '(1 2 3))
+;;=> true
+
+;; a persistent-list is a list
+;; (list? (list 1 2))
+;;=> true
+
+;; a numeric value (long) is not a list
+(list? 0)
+;;=> false
+
+;; a persistent-array-map is not a list
+(list? {})
+;;=> false
+
+;; a persistent-vector is not a list
+(list? [])
+;;=> false
+
+;; a lazy-sequence is not always a list
+(list? (range 10))
+;;=> false
+
+```

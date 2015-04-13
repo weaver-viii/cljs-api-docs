@@ -1,0 +1,23 @@
+===== Example
+
+```
+;; prepend 1 to a list
+(cons 1 '(2 3 4 5 6))
+;;=> (1 2 3 4 5 6)
+
+;; notice that the first item is not expanded
+(cons [1 2] [4 5 6])
+;;=> ([1 2] 4 5 6)
+```
+
+===== Example
+
+```
+;; may return results of different types but always a seq
+(map (juxt identity type seq? list?)
+     [(cons 1 nil)
+      (cons 1 '())])
+;; => ([(1) clojure.lang.PersistentList true true] 
+;;     [(1) clojure.lang.Cons true false])
+
+```

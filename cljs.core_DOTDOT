@@ -1,0 +1,10 @@
+===== Example
+
+```
+user> (.. "fooBAR" (toLowerCase) (contains "ooba"))
+true
+
+;; use macroexpand to see how the form above will appear
+user> (macroexpand '(.. "fooBAR" (toLowerCase) (contains "ooba")))
+(. (. "fooBAR" (toLowerCase)) (contains "ooba"))
+```

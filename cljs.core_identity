@@ -1,0 +1,50 @@
+===== Example
+
+```
+user=> (identity 4)
+4
+```
+
+===== Example
+
+```
+user=> (filter identity [1 2 3 nil 4 false true 1234])
+(1 2 3 4 true 1234)
+```
+
+===== Example
+
+```
+user=> (map #(%1 %2) (cycle [inc identity]) [1 2 3 4 5 6 7 8 9 10])
+(2 2 4 4 6 6 8 8 10 10)
+
+```
+
+===== Example
+
+```
+user=> (partition-by identity (sort "abcdaabccc"))
+((\a \a \a) (\b \b) (\c \c \c \c) (\d))
+
+```
+
+===== Example
+
+```
+user=> (map first (partition-by identity [1 1 2 3 3 1 1 5 5]))
+(1 2 3 1 5)
+```
+
+===== Example
+
+```
+user=> (group-by identity "abracadabra")
+{\a [\a \a \a \a \a], \b [\b \b], \r [\r \r], \c [\c], \d [\d]}
+```
+
+===== Example
+
+```
+user=> (map #(identity %) [1 2 3 4]) ; ~ (map (fn [x] x) [1 2 3 4])
+(1 2 3 4)
+```

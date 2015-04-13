@@ -1,0 +1,69 @@
+===== Example
+
+```
+;; a map is a collection
+(coll? {})
+;;=> true
+
+;; a set is a collection
+(coll? #{})
+;;=> true
+
+;; a vector is a collection
+(coll? [])
+;;=> true
+
+;; a list is a collection 
+(coll? ())
+;;=> true
+
+;; a number (long) is not a collection
+(coll? 4)
+;;=> false
+
+;; a string is not a collection
+(coll? "fred")
+;;=> false
+
+;; ...but a string sequence is a collection
+(coll? (seq "fred"))
+;;=> true
+
+;; a boolean is not a collection
+(coll? true)
+;;=> false
+
+;; nil is not a collection
+(coll? nil)
+;;=> false
+
+```
+
+===== Example
+
+```
+user=> (coll? {:a 10 :b 20}) ; map is a collection of map-entries
+true
+```
+
+===== Example
+
+```
+;; contrast to example code for sequential?
+;;
+user> (coll? '(1 2 3))
+true
+user> (coll? [1 2 3])
+true
+user> (coll? (range 1 5))
+true
+user> (coll? 1)
+false
+user> (coll? {:a 2 :b 1})   
+true
+user> (coll? {:a 2 :b 1})  ; in contrast to sequential?, coll? returns true for
+                           ; a hash map
+true
+user> (sequential? {:a 2 :b 1})
+false
+```

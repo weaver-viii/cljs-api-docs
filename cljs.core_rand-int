@@ -1,0 +1,31 @@
+===== Example
+
+```
+user=> (rand-int 30)
+10
+
+user=> (rand-int 30)
+7
+
+;compare with 
+user=> (int (rand 30))
+
+```
+
+===== Example
+
+```
+(require '[clojure.set :as set])
+
+; random generation of unique series of random numbers from 0 to n-1 
+
+(defn unique-random-numbers [n]
+  (let [a-set (set (take n (repeatedly #(rand-int n))))]
+    (concat a-set (set/difference (set (take n (range)))
+                                  a-set))))
+
+user=> (unique-random-numbers 20)
+(0 1 3 6 7 8 9 12 14 16 17 19 2 4 5 10 11 13 15 18)
+
+
+```

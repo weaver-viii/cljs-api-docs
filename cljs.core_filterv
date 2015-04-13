@@ -1,0 +1,17 @@
+===== Example
+
+```
+;; very similar to filter but returns a vector
+(filterv even? (range 10))
+;;=> [0 2 4 6 8]
+
+(filter (fn [x]
+    (= (count x) 1))
+    ["a" "aa" "b" "n" "f" "lisp" "clojure" "q" ""])
+;;=> ["a" "b" "n" "f" "q"]
+
+(filter #(= (count %) 1)
+    ["a" "aa" "b" "n" "f" "lisp" "clojure" "q" ""])
+;;=> ["a" "b" "n" "f" "q"]
+
+```

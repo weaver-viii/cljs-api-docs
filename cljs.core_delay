@@ -1,0 +1,27 @@
+===== Example
+
+```
+;; In this example you can see that the first time the delay is forced
+;; the println is executed however the second dereference shows just the
+;; precomputed value.
+
+user=> (def my-delay (delay (println "did some work") 100))
+#'user/my-delay
+
+user=> @my-delay
+did some work
+100
+
+user=> @my-delay
+100
+
+```
+
+===== Example
+
+```
+;; Note that the implementation of deref for delays makes it impossible for the
+;; body of the delay to be executed more than once, even if the derefs occur
+;; from multiple threads near the same time, because it is a synchronized method
+;; in Java.
+```

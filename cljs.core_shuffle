@@ -1,0 +1,8 @@
+===== Example
+
+```
+;; Make five permutations of the [1 2 3] vector.
+;; Notice that the type of the shuffled collection is retained.
+(repeatedly 5 (partial shuffle [1 2 3]))
+;;=> ([2 3 1] [2 1 3] [2 3 1] [3 2 1] [3 1 2])
+```

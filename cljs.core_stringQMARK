@@ -1,0 +1,21 @@
+===== Example
+
+```
+user=> (string? "abc")
+true
+
+user=> (string? "")
+true
+
+user=> (string? \a)
+false
+
+user=> (string? 1)
+false
+
+user=> (string? ["a" "b" "c"])
+false
+
+user=> (string? nil)
+false
+```

@@ -1,0 +1,21 @@
+===== Example
+
+```
+(use 'clojure.data)
+(def uno {:same "same", :different "one"})
+(def dos {:same "same", :different "two", :onlyhere "whatever"})
+(diff uno dos)
+=> ({:different "one"} {:onlyhere "whatever", :different "two"} {:same "same"})
+;;  {different in uno} {     different or unique in dos       } {same in both}
+(diff {:a 1} {:a 1 :b 2})
+=> (nil {:b 2} {:a 1})
+;; the first contains nothing unique, but only the second contains :b
+;; and both contain :a
+```
+
+===== Example
+
+```
+(diff [1 2 3] [5 9 3 2 3 7])              ;;=> [[1 2] [5 9 nil 2 3 7] [nil nil 3]]
+(diff (set [1 2 3]) (set [5 9 3 2 3 7]))  ;;=> [#{1}  #{7 9 5}        #{3 2}]
+```

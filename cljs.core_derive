@@ -1,0 +1,24 @@
+===== Example
+
+```
+;; derive let you build a hierarchy but parents/ancestors/descendants and isa? let you query the hierarchy
+(derive ::rect ::shape)
+(derive ::square ::rect)
+
+```
+
+===== Example
+
+```
+user=> (derive ::Cat ::Feline)
+nil
+
+user=> (derive ::Lion ::Feline)
+nil
+
+user=> (isa? ::Lion ::Feline)
+true
+
+user=> (isa? ::Tuna ::Feline)
+false
+```

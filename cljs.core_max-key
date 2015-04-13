@@ -1,0 +1,14 @@
+===== Example
+
+```
+user=> (max-key count "asd" "bsd" "dsd" "long word")
+"long word"
+```
+
+===== Example
+
+```
+; find the key that has the highest value in a map
+user=> (key (apply max-key val {:a 3 :b 7 :c 9}))
+:c
+```

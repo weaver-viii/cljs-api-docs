@@ -1,0 +1,6 @@
+===== Example
+
+```
+(try-expr "Can I call this function?" (= 1 1))
+;; => "No, I said you don't call this." - Rich Hickey
+```

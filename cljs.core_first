@@ -1,0 +1,18 @@
+===== Example
+
+```
+(first '(:alpha :bravo :charlie))
+;;=> :alpha
+```
+
+===== Example
+
+```
+;; nil is a valid (but empty) collection.
+(first nil)
+;;=> nil
+
+;; if collection is empty, returns nil.
+(first [])
+;;=> nil
+```

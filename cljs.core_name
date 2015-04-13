@@ -1,0 +1,18 @@
+===== Example
+
+```
+;; the name of the keyword is without the ':'
+;; "str" will retain the ':'.
+(name :x)
+;;=> "x"
+
+(name "x")
+;;=> "x"
+
+;; returns the symbol name as a string without the namespace.
+(name 'x)
+;;=> "x"
+
+(name 'user/x)
+;;=> "x"
+```

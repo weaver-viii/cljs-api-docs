@@ -1,0 +1,16 @@
+===== Example
+
+```
+user=> (reversible? [])
+true
+user=> (reversible? (sorted-map))
+true
+user=> (reversible? (sorted-set))
+true
+user=> (reversible? '())
+false
+user=> (reversible? {})
+false
+user=> (reversible? #{})
+false
+```

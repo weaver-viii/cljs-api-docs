@@ -1,0 +1,33 @@
+===== Example
+
+```
+(seq '(1))  ;;=> (1)
+(seq [1 2]) ;;=> (1 2)
+(seq "abc") ;;=> (\a \b \c)
+
+;; Corner cases
+(seq nil)   ;;=> nil
+(seq '())   ;;=> nil
+(seq "")    ;;=> nil
+```
+
+===== Example
+
+```
+;; (seq x) is the recommended idiom for testing if a collection is not empty
+(every? seq ["1" [1] '(1) {:1 1} #{1}])
+;;=> true
+```
+
+===== Example
+
+```
+;; 'seq' can be used to turn a map into a list of vectors.
+;; Notice how the list is built adding elements to the beginning 
+;; of the seq (list) not to the end, as with vectors.
+;; (Of course, the order that items are 
+;;  taken from a map should not be relied upon
+;;  unless a deterministic 'sorted-map' is used.)
+(seq {:key1 "value1" :key2 "value2"})
+;;=> ([:key2 "value 2"] [:key1 "value 1"])
+```

@@ -1,0 +1,14 @@
+===== Example
+
+```
+user=> (clojure.string/upper-case "MiXeD cAsE")
+"MIXED CASE"
+```
+
+===== Example
+
+```
+;; Non-character symbols will be returned back
+user=> (clojure.string/upper-case ",.!@#$%^&*()")
+",.!@#$%^&*()"
+```

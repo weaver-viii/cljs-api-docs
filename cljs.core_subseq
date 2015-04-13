@@ -1,0 +1,39 @@
+===== Example
+
+```
+;; Note, that collection passed to subseq must implement Sorted.  
+;; Just passing a collection that has been sorted is not enough.
+
+user=> (subseq [1 2 3 4] > 2)
+java.lang.ClassCastException: clojure.lang.PersistentVector cannot be cast to clojure.lang.Sorted (NO_SOURCE_FILE:0)
+
+user=> (subseq (sorted-set 1 2 3 4) > 2)
+(3 4)
+
+```
+
+===== Example
+
+```
+;; Example of getting a subsequence of hashmaps sorted by key :a and
+;;  secondarily :b.
+
+(defn compare-ab [x y]
+  (compare [(get x :a) (get x :b)]
+           [(get y :a) (get y :b)]))
+ 
+(def ss-ab (apply sorted-set-by compare-ab
+                      [{:a 42 :b 5000}
+                       {:a 1 :b 2}
+                       {:a 99 :b -1000}
+                       {:a -1 :b 7}]))
+user=> ss-ab
+#{{:a -1, :b 7} {:a 1, :b 2} {:a 42, :b 5000} {:a 99, :b -1000}}
+
+;; Select all maps whose key :a is greater than 5. 
+user=> (subseq ss-ab > {:a 5})
+({:a 42, :b 5000} {:a 99, :b -1000})
+
+
+
+```

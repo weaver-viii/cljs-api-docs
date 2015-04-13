@@ -1,0 +1,15 @@
+===== Example
+
+```
+(try
+  (throw 
+    (ex-info "The ice cream has melted!" 
+       {:causes             #{:fridge-door-open :dangerously-high-temperature} 
+        :current-temperature {:value 25 :unit :celcius}}))
+  (catch Exception e (ex-data e))
+
+;;=> {:causes #{:fridge-door-open :dangerously-high-temperature} 
+;;    :current-temperature {:value 25 :unit :celcius}}))
+
+
+```

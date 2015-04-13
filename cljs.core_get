@@ -1,0 +1,70 @@
+===== Example
+
+```
+(get [1 2 3] 1)
+;;=> 2
+
+(get [1 2 3] 5)
+;;=> nil
+
+(get {:a 1 :b 2} :b)
+;;=> 2
+
+(get {:a 1 :b 2} :z "missing")
+;;=> "missing"
+
+
+```
+
+===== Example
+
+```
+;; to get an index of the element of a vector, use .indexOf
+(def v ["one" "two" "three" "two"])
+;; #'user/v
+
+(.indexOf v "two")
+;;=> 1
+
+(.indexOf v "foo")
+;;=> -1
+
+```
+
+===== Example
+
+```
+;; the system environment has a hash-map semantic
+(get (System/getenv) "SHELL")
+;;=> "/bin/bash"
+
+(get (System/getenv) "PATH")
+;;=> "/usr/local/bin:/sbin:/usr/sbin:/usr/bin:/bin"
+```
+
+===== Example
+
+```
+;; 'get' is not the only option
+(def my-map {:a 1 :b 2 :c 3})
+
+;; maps act like functions taking keys 
+(my-map :a)
+;;=> 1
+
+;; even keys (if they are keywords) act like functions
+(:b my-map)
+;;=> 2
+```
+
+===== Example
+
+```
+;; it is tempting to try an index on a list
+(get '(a b c) 1)
+;;=> nil
+
+;; but you should use nth
+(nth '(a b c) 1)
+;;=> b
+```

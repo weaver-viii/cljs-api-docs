@@ -1,0 +1,51 @@
+===== Example
+
+```
+user=> (partition-by #(= 3 %) [1 2 3 4 5])
+((1 2) (3) (4 5))
+```
+
+===== Example
+
+```
+user=> (partition-by odd? [1 1 1 2 2 3 3])
+((1 1 1) (2 2) (3 3))
+
+user=> (partition-by even? [1 1 1 2 2 3 3])
+((1 1 1) (2 2) (3 3))
+
+```
+
+===== Example
+
+```
+;; (this is part of a solution from 4clojure.com/problem 30)
+user=> (partition-by identity "Leeeeeerrroyyy")
+((\L) (\e \e \e \e \e \e) (\r \r \r) (\o) (\y \y \y))
+```
+
+===== Example
+
+```
+;; Note that previously created 'bins' are not used when same value is seen again
+user=> (partition-by identity "ABBA")
+((\A) (\B \B) (\A))
+```
+
+===== Example
+
+```
+;; Arbitrary partitioning
+(let [seen (atom true)]
+  (partition-by #(cond
+                  (#{1} %) (reset! seen (not @seen))
+                  (or (and (string? %)
+                           (< (count %) 2))
+                      (char? %)) "letter"
+                  (string? %) "string"
+                  (#{0} %) 0
+                  (vector? %) (count %)
+                  :else "rest")
+                [1 1 1 2 3 nil "a" \l 0 4 5 {:a 1} "bc" "aa" "k" [0] [1 1] [2 2]]))
+;;=> ((1) (1) (1) (2 3 nil) ("a" \l) (0) (4 5 {:a 1}) ("bc" "aa") ("k") ([0]) ([1 1] [2 2]))
+```

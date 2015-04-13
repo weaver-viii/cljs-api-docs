@@ -1,0 +1,28 @@
+===== Example
+
+```
+;; this is the idiomatic vector 
+(vector? [1 2 3])
+;;=> true
+
+;; a list is not a vector
+(vector? '(1 2 3))
+;;=> false
+
+;; a list may be converted into a vector
+(vector? (vec '(1 2 3)))
+;;=> true
+
+;; a map is not a vector
+(vector? {:a 1 :b 2 :c 3})
+;;=> false
+
+;; a set is not a vector
+(vector? #{:a :b :c})
+;;=> false
+
+(first {:a 1 :b 2 :c 3})
+;;=> [:c 3]
+(vector? (first {:a 1 :b 2 :c 3}))
+;;=> true
+```

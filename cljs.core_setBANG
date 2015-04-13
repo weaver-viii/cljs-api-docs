@@ -1,0 +1,11 @@
+===== Example
+
+```
+(set! var-symbol expr)
+```
+
+===== Example
+
+```
+(set! *warn-on-reflection* true)
+```

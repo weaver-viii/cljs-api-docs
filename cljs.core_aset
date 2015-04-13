@@ -1,0 +1,41 @@
+===== Example
+
+```
+user=> (def my-array (into-array Integer/TYPE [1 2 3]))
+#'user/my-array
+
+user=> (aset my-array 1 10) ; Set the element with index 1 to 10
+10
+
+user=> (into [] my-array)
+[1 10 3]
+```
+
+===== Example
+
+```
+; Two dimensional example
+(use 'clojure.pprint)
+(let [the-array (make-array Long/TYPE 2 3) ]
+  (dotimes [nn 6]
+    (let [ii    (quot nn 3)
+          jj    (rem  nn 3) ]
+      (aset the-array ii jj nn)
+    ))
+  (pprint the-array)
+)
+;=> [[0, 1, 2], [3, 4, 5]]
+
+; Types are defined in clojure/genclass.clj:
+;    Boolean/TYPE
+;    Character/TYPE
+;    Byte/TYPE
+;    Short/TYPE
+;    Integer/TYPE
+;    Long/TYPE
+;    Float/TYPE
+;    Double/TYPE
+;    Void/TYPE
+
+
+```

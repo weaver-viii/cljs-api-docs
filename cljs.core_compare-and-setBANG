@@ -1,0 +1,23 @@
+===== Example
+
+```
+;; first we make a demonstration atom
+(def a (atom 0))
+;; #'user/a 
+
+;; failing to set the demonstration atom because the old-value does not match. 
+(compare-and-set! a 10 20)
+;;=> false
+
+;; as you can see there was no change to the atom
+@a
+;;=> 0
+
+;; but when  the old-value matches the atom is set to the new-value.
+(compare-and-set! a 0 10)
+;;=> true
+
+@a
+;;=> 10
+
+```

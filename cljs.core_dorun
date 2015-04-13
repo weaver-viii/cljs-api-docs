@@ -1,0 +1,33 @@
+===== Example
+
+```
+<pre>
+user=> (dorun 5 (repeatedly #(println "hi")))
+hi
+hi
+hi
+hi
+hi
+hi
+nil
+</pre>
+```
+
+===== Example
+
+```
+user=> (let [x (atom 0)]
+         (dorun (take 10 (repeatedly #(swap! x inc))))
+         @x)
+10
+```
+
+===== Example
+
+```
+user=> (dorun (map #(println "hi" %) ["mum" "dad" "sister"]))
+hi mum
+hi dad
+hi sister
+nil
+```

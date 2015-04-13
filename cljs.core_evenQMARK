@@ -1,0 +1,16 @@
+===== Example
+
+```
+user=> (even? 2)
+true
+
+user=> (even? 1)
+false
+```
+
+===== Example
+
+```
+user=> (filter even? (range 10))
+(0 2 4 6 8)
+```

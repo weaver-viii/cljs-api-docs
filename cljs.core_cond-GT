@@ -1,0 +1,37 @@
+===== Example
+
+```
+
+(cond-> 1          ; we start with 1
+    true inc       ; the condition is true so (inc 1) => 2
+    false (* 42)   ; the condition is false so the operation is skipped
+    (= 2 2) (* 3)) ; (= 2 2) is true so (* 2 3) => 6 
+;;=> 6
+;; notice that the threaded value gets used in 
+;; only the form  and not the test part of the clause.
+```
+
+===== Example
+
+```
+Useful when you want to conditionally evaluate expressions and thread them together. For instance, the following returns a vector containing the names (as symbols) of the implementing classes of instance.
+
+=> (defn instance->types
+     [instance]
+     (cond-> [] 
+       (instance? java.util.SortedMap instance) (conj 'SortedMap)
+       (instance? java.util.AbstractMap instance) (conj 'AbstractMap)))
+#'user/instance->types
+
+=> (def hm (java.util.HashMap.))
+#'user/hm
+
+=> (instance->types hm)
+[AbstractMap]
+
+=> (def tm (java.util.TreeMap.))
+#'user/tm
+
+=> (instance->types tm)
+[SortedMap AbstractMap]
+```

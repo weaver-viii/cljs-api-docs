@@ -1,0 +1,40 @@
+===== Example
+
+```
+user=> (list 'a 'b 'c 'd 'e 'f 'g)
+(a b c d e f g)
+user=> (list 1 2 3)
+(1 2 3)
+```
+
+===== Example
+
+```
+user=> (let [m {:1 1 :2 2 :3 3 :4 4}] (map list (keys m) (vals m)))
+((:1 1) (:2 2) (:3 3) (:4 4))
+```
+
+===== Example
+
+```
+;; Lists can also be constructed literally using quote, but note the difference
+
+;; When using list the arguments are evaluated
+(let [x 1 y 2]
+  (list x y))
+;; => (1 2)
+
+;; ... and when using quote ' they are not:
+(let [x 1 y 2]
+  '(x y))
+;; => (x y)
+
+;; there is syntax quote ` (back tick) that allows selective evaluation inside it with ~:
+(let [x 1 y 2]
+  `(~x ~y))
+;; => (1 2)
+
+;; But syntax quote ` is mostly used in macro definitions where most elements
+;; should not be evaluated and unquoted with ~ and list form above feels
+;; more idiomatic for simple list construction.
+```

@@ -1,0 +1,47 @@
+===== Example
+
+```
+user=> (use 'clojure.pprint)
+user=> (pprint (methods print-dup))
+{nil #<core$fn__5424 clojure.core$fn__5424@b08549>,
+ java.lang.String #<core$fn__5475 clojure.core$fn__5475@1bddeea>,
+ java.lang.Boolean #<core$fn__5446 clojure.core$fn__5446@1b40b96>,
+ clojure.lang.IPersistentList
+ #<core$fn__5461 clojure.core$fn__5461@d5b26d>,
+ java.sql.Timestamp
+ #<instant$fn__6277 clojure.instant$fn__6277@ce52d1>,
+ java.util.UUID #<uuid$fn__6290 clojure.uuid$fn__6290@17e7fa1>,
+ clojure.lang.Var #<core$fn__5455 clojure.core$fn__5455@78be86>,
+ clojure.lang.PersistentVector
+ #<core$fn__5525 clojure.core$fn__5525@15fc948>,
+ java.util.Calendar
+ #<instant$fn__6266 clojure.instant$fn__6266@1733349>,
+ java.util.Map #<core$fn__5486 clojure.core$fn__5486@806f9b>,
+ java.lang.Class #<core$fn__5531 clojure.core$fn__5531@1daa05b>,
+ java.util.regex.Pattern #<core$fn__5544 clojure.core$fn__5544@10dfca>,
+ java.lang.Number #<core$fn__5436 clojure.core$fn__5436@27edc3>,
+ java.lang.Long #<core$fn__5511 clojure.core$fn__5511@1edea9d>,
+ clojure.lang.Namespace #<core$fn__5546 clojure.core$fn__5546@f1a434>,
+ java.math.BigDecimal #<core$fn__5517 clojure.core$fn__5517@1a5a160>,
+ clojure.lang.Symbol #<core$fn__5451 clojure.core$fn__5451@17d2095>,
+ clojure.lang.Keyword #<core$fn__5432 clojure.core$fn__5432@ea3d50>,
+ clojure.lang.LazilyPersistentVector
+ #<core$fn__5527 clojure.core$fn__5527@1b77718>,
+ java.util.Collection #<core$fn__5465 clojure.core$fn__5465@1f784a4>,
+ java.lang.Double #<core$fn__5513 clojure.core$fn__5513@5e0db2>,
+ clojure.lang.Fn #<core$fn__5440 clojure.core$fn__5440@ce073>,
+ clojure.lang.IRecord #<core$fn__5502 clojure.core$fn__5502@19b43b4>,
+ clojure.lang.PersistentHashSet
+ #<core$fn__5523 clojure.core$fn__5523@1b93220>,
+ clojure.lang.IPersistentCollection
+ #<core$fn__5469 clojure.core$fn__5469@1fb7c3>,
+ clojure.lang.BigInt #<core$fn__5519 clojure.core$fn__5519@1f5d7d>,
+ clojure.lang.ISeq #<core$fn__5459 clojure.core$fn__5459@412c94>,
+ java.util.Date #<instant$fn__6261 clojure.instant$fn__6261@d7bf11>,
+ clojure.lang.PersistentHashMap
+ #<core$fn__5521 clojure.core$fn__5521@14a5481>,
+ clojure.lang.IPersistentMap
+ #<core$fn__5490 clojure.core$fn__5490@1a4f2db>,
+ clojure.lang.Ratio #<core$fn__5515 clojure.core$fn__5515@146f3dc>,
+ java.lang.Character #<core$fn__5509 clojure.core$fn__5509@f09e3f>}
+```

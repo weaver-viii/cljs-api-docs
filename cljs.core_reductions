@@ -1,0 +1,44 @@
+===== Example
+
+```
+user=> (reductions + [1 1 1 1])
+(1 2 3 4)
+user=> (reductions + [1 2 3])
+(1 3 6)
+
+;; This is just like reduce except that the calculation is collected during the reduce.
+user=> (assert (= (reduce + [1 2 3]) 
+                  (last (reductions + [1 2 3]))))
+nil
+
+```
+
+===== Example
+
+```
+user=> (reductions conj [] '(1 2 3))
+([] [1] [1 2] [1 2 3])
+```
+
+===== Example
+
+```
+user=> (reductions + [1 2 3 4 5])
+(1 3 6 10 15)
+
+;;defining the function to perform the same reductions
+user=> (reductions (fn [sum num] (+ sum num)) [1 2 3 4 5])
+;;(1 3 6 10 15)
+
+;;reductions using a init value 100
+user=> (reductions (fn [sum num] (+ sum num)) 100 [1 2 3 4 5])
+;;(100 101 103 106 110 115)
+
+;;defining a function for the same reductions
+user=>(defn add [sum num] 
+    #_=>(+ sum num))
+;;#'user/add
+
+user=>(reductions add [1 2 3 4 5])
+;;(1 3 6 10 15)
+```

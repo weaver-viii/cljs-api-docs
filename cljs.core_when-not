@@ -1,0 +1,33 @@
+===== Example
+
+```
+;; build tuples over sets with the same cardinality 
+(map
+  #(when-not (= %2 %3) [%1 %2 %3])
+    (iterate inc 0)   ; a lazy list of indecies
+    [:a :b :c]
+    [:a :a :a])
+;;=> (nil [1 :b :a] [2 :c :a])
+
+```
+
+===== Example
+
+```
+;; See examples for "if" explaining Clojure's idea of logical true
+;; and logical false.
+```
+
+===== Example
+
+```
+;; when-not is similar to unless (in other languages).
+;; An alias can be provided with a macro
+(defmacro unless [& args] `(when-not ~@args))
+
+(map #(unless (= %2 %3) [%1 %2 %3])
+  (iterate inc 0)    ; a lazy list for indecies
+  [:a :b :c]
+  [:a :a :a]) 
+;;=> (nil [1 :b :a] [2 :c :a])
+```

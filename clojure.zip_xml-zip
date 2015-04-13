@@ -1,0 +1,101 @@
+===== Example
+
+```
+(def xmlzipper (clojure.zip/xml-zip (clojure.xml/parse "resources/somedata.xml")))
+
+;;make a zippper pointing at the children to the topnode in somedata.xml
+(clojure.zip/children xmlzipper)
+
+ 
+
+
+
+
+
+```
+
+===== Example
+
+```
+(require '[clojure.zip :as z])
+
+;; The following example make use of an xml-tree ...
+;; <root><any>foo bar</any>bar</root>
+;; Notice that the xml-parse will not produce the exact 
+;; xml object as the "foo" and "bar" strings are combined.
+
+;; Travel over the zipper in classic lisp style
+(z/right
+  (z/down
+    (z/xml-zip 
+      {:tag :root :content [{:tag :any :content ["foo" "bar"]} "bar"]})))
+
+;;=> ["bar" {:l [{:content ["foo" "bar"], :tag :any}], 
+;;+>         :pnodes [{:content [{:content ["foo" "bar"], :tag :any} "bar"], :tag :root}],
+;;+>         :ppath nil, :r nil}]
+
+;; The above can also be written like this using the thread macro style
+(->{:tag :root :content [{:tag :any :content ["foo" "bar"]} "bar"]}
+   z/xml-zip 
+   z/down 
+   z/right)
+
+;;=> ["bar" {:l [{:content ["foo" "bar"], :tag :any}], 
+;;+>         :pnodes [{:content [{:content ["foo" "bar"], :tag :any} "bar"], :tag :root}],
+;;+>         :ppath nil, :r nil}]
+
+```
+
+===== Example
+
+```
+(require '[clojure.xml :as xml]
+         '[clojure.zip :as zip])
+
+;; Looking at the whole zipper is usually not the goal.
+;; Here is a case where the "bar" element is extracted.
+;; The following is derived from the following xml.
+;; <root><any>foo</any>bar</root>
+(->{:tag :root :content [{:tag :any :content ["foo"]} "bar"]}
+   zip/xml-zip
+   zip/down
+   zip/right
+   zip/node)
+;;=> "bar"
+
+;; The following shows a slightly larger example including the parser.
+(def data
+  "<constraint name=\"a\">
+    <pair name=\"ab\">
+      <feature name=\"ab1\">
+        <geom name=\"ab1x\"/> 
+      </feature>
+      <feature name=\"ab2\">
+        <geom name=\"ab2y\"/>
+      </feature>
+    </pair>
+    <pair name=\"ac\">
+      <feature name=\"ac1\">
+        <geom name=\"ac1z\"/>
+      </feature>
+      <feature name=\"ac2\"/>
+    </pair>
+  </constraint>" )
+
+;; Here is an example of the parser in action
+(def xml-tree
+  (-> data 
+    .getBytes 
+    java.io.ByteArrayInputStream. 
+    xml/parse  ))
+
+;; Traversing the xml using a zipper
+(-> xml-tree
+    zip/xml-zip 
+    zip/down
+    zip/down
+    zip/down
+    zip/node
+    )
+;;=> {:tag :geom, :attrs {:name "ab1x"}, :content nil}
+```

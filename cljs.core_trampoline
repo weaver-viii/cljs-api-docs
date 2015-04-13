@@ -1,0 +1,65 @@
+===== Example
+
+```
+(defn foo [x]
+   (if (< x 0)
+     (println "done")
+     #(foo (do (println :x x) (dec x)))))
+;; #'user/foo
+
+;; `trampoline` will keep calling the function 
+;; for as long as "foo" returns a function.
+
+(trampoline foo 10)
+;; :x 10
+;; :x 9
+;; :x 8
+;; :x 7
+;; :x 6
+;; :x 5
+;; :x 4
+;; :x 3
+;; :x 2
+;; :x 1
+;; :x 0
+;; done
+;;=> nil
+```
+
+===== Example
+
+```
+;; Short tutorial-style article with example of using trampoline at this link:
+;; http://jakemccrary.com/blog/2010/12/06/trampolining-through-mutual-recursion/
+```
+
+===== Example
+
+```
+;; Using mutually recursive functions to implement a finite state machine (FSM)
+;; This machine has three states {a b c} and 
+;; seven transitions {:a-b :a-c :b-a :b-c :c-a :c-b :final}.
+
+(defn foo [cmds]
+(letfn
+   [(a-> [[_ & rs]]
+      #(case _ 
+         :a-b (b-> rs)
+         :a-c (c-> rs)
+         false))
+    (b-> [[_ & rs]]
+      #(case _ 
+         :b-a (a-> rs)
+         :b-c (c-> rs)
+         false))
+    (c-> [[_ & rs]]
+      #(case _ 
+         :c-a (a-> rs)
+         :c-b (c-> rs)
+         :final true
+         false))]
+  (trampoline a-> cmds)))
+    
+(foo [:a-b :b-c :c-a :a-c :final])
+;;=> true
+```

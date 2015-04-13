@@ -1,0 +1,28 @@
+===== Example
+
+```
+;; Everything except `false' and `nil' is true in boolean context.
+user=> (into {} (map #(vector % (boolean %)) [true false nil [] {} '() #{} ""]))
+{true true, false false, nil false, [] true, {} true, #{} true, "" true}
+
+user=> (clojure.pprint/pp)
+{true true,
+ false false,
+ nil false,
+ [] true,
+ {} true,
+ #{} true,
+ "" true}
+nil
+
+```
+
+===== Example
+
+```
+;; Beware that boolean returns true for numbers 0 and 1
+user=> (boolean 0)
+true
+user=> (boolean 1)
+true
+```

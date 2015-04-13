@@ -1,0 +1,46 @@
+===== Example
+
+```
+(empty '(1 2)) ;; => ()
+(empty  [1 2]) ;; => []
+(empty  {1 2}) ;; => {}
+(empty #{1 2}) ;; => #{}
+
+;; Works for PersistentQueue as well, which is slightly harder to see
+(def q (conj clojure.lang.PersistentQueue/EMPTY 1))
+;; => #'user/q
+q
+;; => #<PersistentQueue clojure.lang.PersistentQueue@20>
+(seq q)
+;; => (1)
+
+(def empty-q (empty q))
+;; => #'user/empty-q
+empty-q
+;; => #<PersistentQueue clojure.lang.PersistentQueue@1>
+(seq empty-q)
+;; => nil
+
+;; returns nil when input is not supported or not a collection
+(empty (int-array [1 2])) ;; => nil
+(empty 1) ;; => nil
+
+(map empty [[\a \b] {1 2} (range 4)])
+;; => ([] {} ())
+
+(swap! (atom (range 10)) empty)      
+;; => ()
+
+```
+
+===== Example
+
+```
+;; The output will not necessarily be of the same JVM class as the input
+user=> (class (seq [1]))
+clojure.lang.PersistentVector$ChunkedSeq
+
+user=> (class (empty (seq [1])))
+clojure.lang.PersistentList$EmptyList
+
+```

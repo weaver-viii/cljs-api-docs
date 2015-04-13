@@ -1,0 +1,10 @@
+===== Example
+
+```
+user=> (select-keys {:a 1 :b 2} [:a])
+{:a 1}
+user=> (select-keys {:a 1 :b 2} [:a :c])
+{:a 1}
+user=> (select-keys {:a 1 :b 2 :c 3} [:a :c])
+{:c 3, :a 1}
+```

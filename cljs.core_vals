@@ -1,0 +1,12 @@
+===== Example
+
+```
+(vals {:a "foo", :b "bar"})
+;;=> ("bar" "foo")
+
+(vals {})
+;;=> nil
+
+(vals nil)
+;;=> nil
+```

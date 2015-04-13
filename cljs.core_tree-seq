@@ -1,0 +1,81 @@
+===== Example
+
+```
+;; Each node is a number or a seq, 
+;; so branch?==seq? and children==identity
+;; 
+;;     .
+;;    / \
+;;   .   .
+;;  /|\  |
+;; 1 2 . 4
+;;     |  
+;;     3
+;;
+
+user=> (tree-seq seq? identity '((1 2 (3)) (4)))
+
+(((1 2 (3)) (4)) (1 2 (3)) 1 2 (3) 3 (4) 4)
+
+```
+
+===== Example
+
+```
+user=> (tree-seq map? #(interleave (keys %) (vals %)) {:a 1 :b {:c 3 :d 4 :e {:f 6 :g 7}}})
+
+({:a 1, :b {:c 3, :d 4, :e {:f 6, :g 7}}} :a 1 :b {:c 3, :d 4, :e {:f 6, :g 7}} :c 3 :d 4 :e {:f 6, :g 7} :f 6 :g 7)
+```
+
+===== Example
+
+```
+;; Each node is a (node-root child1 child2 ...),
+;; so branch?==next and children==rest
+;;
+;;     A
+;;    / \
+;;   B   C
+;;  / \  |
+;; D   E F
+;;
+user=> (map first (tree-seq next rest '(:A (:B (:D) (:E)) (:C (:F)))))
+
+(:A :B :D :E :C :F)
+```
+
+===== Example
+
+```
+;; FYI, previous example doesn't always work:
+;;
+user> (map first (tree-seq next rest '((1 2 (3)) (4))))
+((1 2 (3)) 4)
+
+```
+
+===== Example
+
+```
+user=> (tree-seq seq? seq [[1 2 [3]] [4]])
+([[1 2 [3]] [4]])
+
+user=> (tree-seq vector? seq [[1 2 [3]] [4]])
+([[1 2 [3]] [4]] [1 2 [3]] 1 2 [3] 3 [4] 4)
+
+user=> (tree-seq seq? seq '((1 2 (3)) (4)))
+(((1 2 (3)) (4)) (1 2 (3)) 1 2 (3) 3 (4) 4)
+
+```
+
+===== Example
+
+```
+;; Use tree-seq to recursively find all files 
+;; given a root directory
+(let [directory (clojure.java.io/file "/path/to/directory/")
+      dir? #(.isDirectory %)]
+    ;we want only files, therefore filter items that are not directories.
+    (filter (comp not dir?) 
+          (tree-seq dir? #(.listFiles %) directory)))
+```

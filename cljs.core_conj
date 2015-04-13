@@ -1,0 +1,94 @@
+===== Example
+
+```
+;; notice that conjoining to a vector is done at the end
+(conj [1 2 3] 4)
+;;=> [1 2 3 4]
+
+;; notice conjoining to a list is done at the beginning
+(conj '(1 2 3) 4)
+;;=> (4 1 2 3)
+
+(conj ["a" "b" "c"] "d")
+;;=> ["a" "b" "c" "d"]
+
+;; conjoining multiple items is done in order
+(conj [1 2] 3 4)               
+;;=> [1 2 3 4]
+
+(conj '(1 2) 3 4)               
+;;=> (4 3 1 2)
+
+(conj [[1 2] [3 4]] [5 6])       
+;;=> [[1 2] [3 4] [5 6]]
+
+;; conjoining to maps only take items as vectors of length exactly 2
+(conj {1 2, 3 4} [5 6])
+;;=> {5 6, 1 2, 3 4}
+
+(conj {:firstname "John" :lastname "Doe"} {:age 25 :nationality "Chinese"})
+;;=> {:nationality "Chinese", :age 25, :firstname "John", :lastname "Doe"}
+
+;; conj on a set
+(conj #{1 3 4} 2)
+;;=> #{1 2 3 4}
+
+
+```
+
+===== Example
+
+```
+;; conjoin shows similar behaviour to cons
+;; The main difference being that conj works on collections
+;; but cons works with seqs. 
+(conj ["a" "b" "c"] ["a" "b" "c"] )
+;;=> ["a" "b" "c" ["a" "b" "c"]]
+```
+
+===== Example
+
+```
+;; conjoin nil with x or xs
+(conj nil 3)
+;;=> (3)
+
+(conj nil 3 4)
+;;=> (4 3)
+```
+
+===== Example
+
+```
+;; maps and sets are treated differently
+(conj {1 2} {3 4})
+;;=> {3 4, 1 2}   ; the contents of {3 4} are added to {1 2}
+
+(conj #{1 2} #{3})
+;;=> #{1 2 #{3}}  ; the whole set #{3} is added to #{1 2}
+
+(clojure.set/union #{1 2} #{3})
+;;=> #{1 2 3}  ; must use (clojure.set/union) to merge sets, not conj
+
+```
+
+===== Example
+
+```
+;; When conjoining into a map, vector pairs may be provided:
+(conj {:a 1} [:b 2] [:c 3])
+;;=> {:c 3, :b 2, :a 1}
+
+;; Or maps may be provided, with multiple pairings:
+(conj {:a 1} {:b 2 :c 3} {:d 4 :e 5 :f 6})
+;;=> {:f 6, :d 4, :e 5, :b 2, :c 3, :a 1}
+
+;; But multiple pairings cannot appear in vectors:
+(conj {:a 1} [:b 2 :c 3])
+;;=> IllegalArgumentException Vector arg to map conj must be a pair...
+
+;; And pairs may not be provided in lists:
+(conj {:a 1} '(:b 2))
+;;=> ClassCastException ...Keyword cannot be cast to ...Map$Entry...
+
+```

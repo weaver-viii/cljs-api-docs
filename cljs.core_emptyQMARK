@@ -1,0 +1,35 @@
+===== Example
+
+```
+<pre>user=> (empty? ())
+true
+user=> (empty? '(1))
+false</pre>
+```
+
+===== Example
+
+```
+user=> (every? empty? ["" [] () '() {} #{} nil])
+true
+
+;example of recommended idiom for testing if not empty
+user=> (every? seq ["1" [1] '(1) {:1 1} #{1}])
+true
+```
+
+===== Example
+
+```
+<pre>
+user=> (drop-while empty? ["" [] "foobar"])
+("foobar")
+</pre>
+```
+
+===== Example
+
+```
+user=> (empty? nil)
+true
+```

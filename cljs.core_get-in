@@ -1,0 +1,107 @@
+===== Example
+
+```
+;; We can use get-in for reaching into nested maps:
+user=> (def m {:username "sally"
+               :profile {:name "Sally Clojurian"
+                         :address {:city "Austin" :state "TX"}}})
+#'user/m
+
+user=> (get-in m [:profile :name])
+"Sally Clojurian"
+user=> (get-in m [:profile :address :city])
+"Austin"
+user=> (get-in m [:profile :address :zip-code])
+nil
+user=> (get-in m [:profile :address :zip-code] "no zip code!")
+"no zip code!"
+
+
+;; Vectors are also associative:
+user=> (def v [[1 2 3]
+               [4 5 6]
+               [7 8 9]])
+#'user/v
+user=> (get-in v [0 2])
+3
+user=> (get-in v [2 1])
+8
+
+
+;; We can mix associative types:
+user=> (def mv {:username "jimmy"
+                :pets [{:name "Rex"
+                        :type :dog}
+                       {:name "Sniffles"
+                        :type :hamster}]})
+#'user/mv
+user=> (get-in mv [:pets 1 :type])
+:hamster
+
+```
+
+===== Example
+
+```
+(def s1 [[:000-00-0000 "TYPE 1" "JACKSON" "FRED"]
+         [:000-00-0001 "TYPE 2" "SIMPSON" "HOMER"]
+         [:000-00-0002 "TYPE 4" "SMITH" "SUSAN"]])
+
+(def cols [0 2 3])
+
+(defn f1 
+  [s1 col] 
+  (map #(get-in s1 [% col] nil) (range (count s1))))
+
+(apply interleave (map (partial f1 s1) cols))
+
+(:000-00-0000 "JACKSON" "FRED" :000-00-0001 "SIMPSON" "HOMER" :000-00-0002 "SMITH" "SUSAN")
+```
+
+===== Example
+
+```
+;; spam link removed
+```
+
+===== Example
+
+```
+;; Introduction of references is jarring to get-in usage
+
+(def owners [{:owner "Jimmy"
+              :pets (ref [{:name "Rex"
+                           :type :dog}
+                          {:name "Sniffles"
+                           :type :hamster}])} 
+              {:owner "Jacky" 
+               :pets (ref [{:name "Spot" 
+                            :type :mink}
+                           {:name "Puff" 
+                            :type :magic-dragon}])}])
+;;=> 'user/owners
+
+(get-in owners [0 :pets])
+;;=> #<Ref@: [{:name "Rex", :type :dog} {:name "Sniffles", :type :hamster}>
+
+;; In order to go deeper the get needs to be split 
+;; as the deref cannot be used as part of the get.
+(-> (get-in owners [0 :pets]) deref (get-in [1 :type]))
+;;=> :hamster
+
+;; At this point it clear that the thread operator 
+;; can be used to produce similar results. 
+(-> owners (nth 0) :pets deref (nth 1) :type)
+;;=> :hamster
+```
+
+===== Example
+
+```
+;; If the nested structure contains list, it does not work, because list is 
+;; not an associative structure.
+(def a {:a '({:b1 2} {:b2 4}) :c 3})
+;;=> 'user/a
+(get-in a [:a 0 :b])
+;;=> nil
+```

@@ -1,0 +1,125 @@
+===== Example
+
+```
+(def *strings* ["str1" "str2" "str3"])
+;; #'user/*strings*
+
+;; Oops!
+(str *strings*)
+;;=> "[\"str1\" \"str2\" \"str3\"]"
+
+;; Yay!
+(apply str *strings*)
+;;=> "str1str2str3"
+
+;; Note the equivalence of the following two forms
+(apply str ["str1" "str2" "str3"])  ;;=> "str1str2str3"
+(str "str1" "str2" "str3")          ;;=> "str1str2str3"
+
+```
+
+===== Example
+
+```
+;; If you were to try
+(max [1 2 3])
+;;=> [1 2 3]
+
+;; You would get '[1 2 3]' for the result. In this case, 'max' has received one
+;; vector argument, and the largest of its arguments is that single vector.
+
+;; If you would like to find the largest item **within** the vector, you would need
+;; to use `apply`
+
+(apply max [1 2 3])
+;;=> 3
+
+;; which is the same as 
+(max 1 2 3)
+;;=> 3
+
+```
+
+===== Example
+
+```
+;; Here's an example that uses the optional second argument, args:
+
+(apply map vector [[:a :b] [:c :d]])
+;;=> ([:a :c] [:b :d])
+
+;; In this example, 'f' = 'map', 'args' = 'vector', and argseq = '[:a :b] [:c :d]',
+;; making the above code equivalent to
+
+(map vector [:a :b] [:c :d])
+;;=> ([:a :c] [:b :d]) ;Same answer as above
+
+;; It might help to think of 'map' and 'vector' as "slipping inside" the argument
+;; list ( '[[:a :b] [:c :d]]' ) to give '[map vector [:a :b] [:c :d]]' , which 
+;; then becomes the executable form '(map vector [:a :b] [:c :d])' .
+```
+
+===== Example
+
+```
+;; only functions can be used with apply.  'and' is a macro
+;; because it needs to evaluate its arguments lazily and so
+;; does not work with apply.
+(apply and (list true true false true)
+;; RuntimeException : cannot take value of a macro
+
+;; This can be circumvented with another macro.
+;; But understand what is happening
+;; http://stackoverflow.com/questions/5531986/treat-clojure-macro-as-a-function
+(defmacro make-fn [m] 
+ `(fn [& args#]
+    (eval 
+      (cons '~m args#))))
+
+(apply (make-fn and) '(true true false true))
+;;=> false
+
+
+```
+
+===== Example
+
+```
+;; 'apply' is used to apply an operator to its operands. 
+(apply + '(1 2))  ; equivalent to (+ 1 2)
+;;=> 3
+
+
+;; You can also put operands before the list of 
+;; operands and they'll be consumed in the list of operands
+
+(apply + 1 2 '(3 4))  ; equivalent to (apply + '(1 2 3 4))
+;;=> 10
+```
+
+===== Example
+
+```
+;; You can use map and apply together to drill one level deep in a collection
+;; of collections, in this case returning a collection of the max of each
+;; nested collection
+
+(map #(apply max %) [[1 2 3][4 5 6][7 8 9]])
+;;=> (3 6 9)
+```
+
+===== Example
+
+```
+;; Using `apply` with optional keyword parameters:
+
+(defn add2 [a & {:keys [plus] :or {plus 0}}]
+  (+ 2 plus a))
+
+(add2 4)                    ; => 6
+(add2 4 :plus 1)            ; => 7
+(apply add2 [4])            ; => 6
+(apply add2 [4 {:plus 1}])  ; => IllegalArgumentException
+(apply add2 [4 :plus 1])    ; => 7
+
+```

@@ -1,0 +1,42 @@
+===== Example
+
+```
+;; true:
+(== 1)
+(== 1 1)       
+(== 1/1, 2/2, 3/3, 4/4)   
+(== 1, 1.0, 1/1)
+(== :foo)
+
+
+;; false:
+(== 1 2)
+
+;; ClassCastException
+(== 1 \1)
+(== 1 "1")
+```
+
+===== Example
+
+```
+user=> (= 0.0 0)
+false
+user=> (== 0.0 0)
+true
+```
+
+===== Example
+
+```
+;; Just what you would expect
+(== 2.0 1.9999999)
+;;=> false
+
+;; a suprising result
+(== 2.0 2 6/3 1.9999999999999999)
+;;=> true ??!?
+;; Yes, there is some rounding off going on.
+;; if you take off just one of the repeating 9 (on my machine) these compare.
+
+```

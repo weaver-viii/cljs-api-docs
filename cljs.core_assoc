@@ -1,0 +1,37 @@
+===== Example
+
+```
+(assoc {} :key1 "value" :key2 "another value")
+;;=> {:key2 "another value", :key1 "value"}
+
+;; Here we see an overwrite by a second entry with the same key
+(assoc {:key1 "old value1" :key2 "value2"} 
+        :key1 "value1" :key3 "value3")
+;;=> {:key3 "value3", :key2 "value2", :key1 "value1"}
+
+;; We see a nil being treated as an empty map
+(assoc nil :key1 4)
+;;=> {:key1 4}
+
+;; 'assoc' being used on an array, the key is the index.
+(assoc [1 2 3] 0 10)   ;;=> [10 2 3]
+(assoc [1 2 3] 3 10)   ;;=> [1 2 3 10]
+;; but if the index does not exist, it is not added automagically
+(assoc [1 2 3] 4 10)
+;; java.lang.IndexOutOfBoundsException (NO_SOURCE_FILE:0)
+
+;; From http://clojure-examples.appspot.com/clojure.core/assoc
+```
+
+===== Example
+
+```
+;; here is an example of updating a field in a map.
+(def test-map {:account-no 12345678 :lname "Jones" :fnam "Fred"})
+(assoc test-map :fnam "Sue")
+;;=> {:account-no 12345678, :lname "Jones", :fnam "Sue"}
+
+;; notice that test-map is unchanged
+test-map
+;;=> {:account-no 12345678 :lname "Jones" :fnam "Fred"})
+```

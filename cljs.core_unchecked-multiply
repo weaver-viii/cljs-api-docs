@@ -1,0 +1,17 @@
+===== Example
+
+```
+;; the unchecked-multiply function silently overflows
+
+user=> (* 1000000000000 10)
+10000000000000
+user=> (unchecked-multiply 1000000000000 10)
+10000000000000
+
+user=> (* 3037000500 3037000500)
+ArithmeticException integer overflow  clojure.lang.Numbers.throwIntOverflow (Numbers.java:1424)
+user=> (unchecked-multiply 3037000500 3037000500)
+-9223372036709301616
+
+
+```

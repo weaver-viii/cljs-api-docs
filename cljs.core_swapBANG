@@ -1,0 +1,49 @@
+===== Example
+
+```
+;; make an atomic list
+(def players (atom ()))
+;; #'user/players
+
+;; conjoin a keyword into that list
+(swap! players conj :player1)
+;;=> (:player1)
+
+;; conjoin a second keyword into the list
+(swap! players conj :player2)
+;;=> (:player2 :player1)
+
+;; take a look at what is in the list
+(deref players)
+;;=> (:player2 :player1)
+```
+
+===== Example
+
+```
+;; how to: atomic counter 
+(def counter (atom 0))
+;; #'user/counter
+
+(swap! counter inc)
+;;=> 1
+
+(swap! counter inc)
+;;=> 2
+```
+
+===== Example
+
+```
+;; swap map values
+(def m1 (atom {:a "A" :b "B"}))
+;; atom
+
+;; dereference the atom
+@m1
+;;=> {:a "A", :b "B"}
+
+;; notice that the value swapped in, is part of the returned value
+(swap! m1 assoc :a "Aaay")
+;;=> {:a "Aaay", :b "B"}
+```

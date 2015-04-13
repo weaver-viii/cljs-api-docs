@@ -1,0 +1,26 @@
+===== Example
+
+```
+user=> (bit-and-not 2r1100 2r1001) ; (and X (not Y))
+4
+;; 4 = 2r0100
+```
+
+===== Example
+
+```
+;; here is the truth table for AND-NOT (which is not the same as NAND) 
+(Integer/toBinaryString (bit-and-not 2r1100 2r1010) )
+;;=> "100"
+;; or 2r0100
+
+;; NAND would be...
+(Integer/toBinaryString (bit-not (bit-and 2r1100 2r1010)) )
+;;=> "11111111111111111111111111110111"
+;; which is clearly not the same
+
+;; this operation is material non-implication
+(= (bit-and-not 2r1100 2r1010) (bit-and 2r1100 (bit-not 2r1010)) )
+;;=> true
+
+```

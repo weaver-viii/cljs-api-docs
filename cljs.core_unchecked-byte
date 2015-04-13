@@ -1,0 +1,14 @@
+===== Example
+
+```
+user=> (unchecked-byte 127)
+127
+user=> (unchecked-byte 128)
+-128
+user=> (unchecked-byte 255)
+-1
+user=> (unchecked-byte 256)
+0
+user=> (unchecked-byte 257)
+1
+```

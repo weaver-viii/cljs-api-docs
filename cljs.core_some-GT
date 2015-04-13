@@ -1,0 +1,10 @@
+===== Example
+
+```
+user=> (-> {:a 1} :b inc)
+;; NullPointerException   clojure.lang.Numbers.ops (Numbers.java:942)
+
+user=> (some-> {:a 1} :b inc)
+;; nil
+
+```

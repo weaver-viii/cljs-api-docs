@@ -1,0 +1,27 @@
+===== Example
+
+```
+user=> (pr "foo")
+"foo"nil
+```
+
+===== Example
+
+```
+user=> (pr {:foo "hello" :bar 34.5})
+{:foo "hello", :bar 34.5}nil
+```
+
+===== Example
+
+```
+;; Difference between pr and print
+
+user=> (pr ['a :b "\n" \space "c"])
+[a :b "\n" \space "c"]nil
+
+user=> (print ['a :b "\n" \space "c"])
+[a :b
+   c]nil
+
+```

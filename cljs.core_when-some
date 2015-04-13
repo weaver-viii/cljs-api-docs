@@ -1,0 +1,9 @@
+===== Example
+
+```
+user=> (when-some [x 1] [x :ok])
+[1 :ok]
+
+user=> (when-some [x nil] [x :ok])
+nil
+```

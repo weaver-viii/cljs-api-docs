@@ -1,0 +1,32 @@
+===== Example
+
+```
+;; can't interchange INTs with LONGs, only F(int, int) or F(long, long)
+;; F is a function, not an
+;; overflow very easily as shown below.
+
+(unchecked-subtract Long/MIN_VALUE 5555555554)
+user=> 9223372031299220254
+
+;; it promotes to long
+(unchecked-subtract Long/MIN_VALUE (int 1))
+user=> 9223372036854775807
+
+(unchecked-subtract Integer/MIN_VALUE Long/MIN_VALUE)
+user=> 9223372034707292160
+
+(unchecked-subtract Long/MIN_VALUE Long/MIN_VALUE)
+user=> 0
+
+(unchecked-subtract Integer/MIN_VALUE Integer/MIN_VALUE)
+user=> 0
+
+(unchecked-subtract Integer/MIN_VALUE 0)
+user=> -2147483648
+
+;; Again, promote to long
+(unchecked-subtract Integer/MIN_VALUE 1)
+user=> -2147483649
+
+;; To prevent long promotion, see unchecked-subtract-int 
+```

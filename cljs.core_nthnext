@@ -1,0 +1,26 @@
+===== Example
+
+```
+(nthnext (range 10) 3)
+;;=> (3 4 5 6 7 8 9)
+
+(nthnext [] 3)
+;;=> nil
+
+(nthnext [1 2 3 4 5 6 7] 4)
+;;=> (5 6 7)
+
+
+```
+
+===== Example
+
+```
+;; drop is also similar, but different 
+(nthnext (range 10) 5)   ;;=> (5 6 7 8 9)
+(drop    5 (range 10))   ;;=> (5 6 7 8 9)
+
+;; here is a case where the results differ
+(nthnext [] 3)  ;;=> nil
+(drop    3 [])  ;;=> ()   ; a lazy sequence
+```

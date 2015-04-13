@@ -1,0 +1,17 @@
+===== Example
+
+```
+;; assuming current namespace is user
+(use 'clojure.test)
+(deftest eg-tests (is (= 1 1)))
+(run-all-tests)
+;;=> ... visits very many namespaces looking for tests to run
+;;=> {:type :summary, :fail 0, :error 0, :pass 1, :test 1}
+
+(run-all-tests #"us.*")  ; only matches "user"
+;;=> Testing user
+;;=> Ran 1 tests containing 1 assertions.
+;;=> 0 failures, 0 errors.
+;;=> {:type :summary, :fail 0, :error 0, :pass 1, :test 1}
+
+```

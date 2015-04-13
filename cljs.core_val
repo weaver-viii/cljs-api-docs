@@ -1,0 +1,21 @@
+===== Example
+
+```
+user=> (map val {:a 1 :b 2})
+(1 2)
+
+```
+
+===== Example
+
+```
+(val (first {:one :two}))
+:two
+```
+
+===== Example
+
+```
+;syntactic sugar for (val)
+(:doc (meta #'meta))
+```

@@ -1,0 +1,29 @@
+===== Example
+
+```
+(nthrest (range 10) 5)
+;;=> (5 6 7 8 9)
+
+;; in many cases gives the same result as nthnext
+(nthnext (range 10) 5)
+;;=> (5 6 7 8 9)
+
+;; here is a case where the results differ
+(nthrest [] 3)  ;;=> []
+(nthnext [] 3)  ;;=> nil
+
+(nthrest [1 2 3 4 5 6 7] 4)
+;;=> (5 6 7)
+```
+
+===== Example
+
+```
+;; drop is also similar, but lazy 
+(nthrest (range 10) 5)   ;;=> (5 6 7 8 9)
+(drop    5 (range 10))   ;;=> (5 6 7 8 9)
+
+;; here is a case where the results differ
+(nthrest [] 3)  ;;=> []
+(drop    3 [])  ;;=> ()   ; returning a lazy sequence
+```
