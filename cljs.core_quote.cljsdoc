@@ -1,4 +1,4 @@
-===== Example
+===== Example#73f26e
 
 ```
 ;; ' is the shortcut for quote
@@ -22,7 +22,7 @@ CompilerException java.lang.RuntimeException: Unable to resolve symbol: quote in
 
 ```
 
-===== Example
+===== Example#e67151
 
 ```
 ;; Proof that ' is just a syntactic sugar for quote:

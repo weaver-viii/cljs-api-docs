@@ -1,4 +1,4 @@
-===== Example
+===== Example#4ab197
 
 ```
 (def *strings* ["str1" "str2" "str3"])
@@ -18,7 +18,7 @@
 
 ```
 
-===== Example
+===== Example#ace221
 
 ```
 ;; If you were to try
@@ -40,7 +40,7 @@
 
 ```
 
-===== Example
+===== Example#6c66ae
 
 ```
 ;; Here's an example that uses the optional second argument, args:
@@ -59,7 +59,7 @@
 ;; then becomes the executable form '(map vector [:a :b] [:c :d])' .
 ```
 
-===== Example
+===== Example#e790eb
 
 ```
 ;; only functions can be used with apply.  'and' is a macro
@@ -82,7 +82,7 @@
 
 ```
 
-===== Example
+===== Example#193f46
 
 ```
 ;; 'apply' is used to apply an operator to its operands. 
@@ -97,7 +97,7 @@
 ;;=> 10
 ```
 
-===== Example
+===== Example#c98330
 
 ```
 ;; You can use map and apply together to drill one level deep in a collection
@@ -108,7 +108,7 @@
 ;;=> (3 6 9)
 ```
 
-===== Example
+===== Example#6fb4d4
 
 ```
 ;; Using `apply` with optional keyword parameters:

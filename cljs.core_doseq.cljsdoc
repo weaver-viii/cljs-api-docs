@@ -1,4 +1,4 @@
-===== Example
+===== Example#922545
 
 ```
 user=> (doseq [x [1 2 3] 
@@ -17,7 +17,7 @@ nil
 
 ```
 
-===== Example
+===== Example#774aef
 
 ```
 user=> (doseq [[x y] (map list [1 2 3] [1 2 3])] 
@@ -32,7 +32,7 @@ user=> (map list [1 2 3] [1 2 3])
 ((1 1) (2 2) (3 3))
 ```
 
-===== Example
+===== Example#3ad331
 
 ```
 user=> (doseq [[[a b] [c d]] (map list (sorted-map :1 1 :2 2) (sorted-map :3 3 :4 4))]
@@ -46,7 +46,7 @@ user=> (map list (sorted-map :1 1 :2 2) (sorted-map :3 3 :4 4))
 (([:1 1] [:3 3]) ([:2 2] [:4 4]))
 ```
 
-===== Example
+===== Example#e54e21
 
 ```
 user=> (doseq [[k v] (map identity {:1 1 :2 2 :3 3})] 
@@ -69,7 +69,7 @@ user=> (doseq [[k v] {:1 1 :2 2 :3 3}]
 nil
 ```
 
-===== Example
+===== Example#b2acd7
 
 ```
 ; Multiple sequences results in a Cartesian cross of their values.
@@ -83,7 +83,7 @@ user=> (doseq [a [1 2]
 nil
 ```
 
-===== Example
+===== Example#b1ee0c
 
 ```
 ; Keywords :let, :when, and :while are supported, the same as "for"
@@ -111,7 +111,7 @@ user=>
 
 ```
 
-===== Example
+===== Example#dff797
 
 ```
 ; ClojureCLR example

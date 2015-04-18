@@ -1,4 +1,4 @@
-===== Example
+===== Example#d67f5e
 
 ```
 user=> (take 2 (ns-interns `clojure.core))
@@ -12,7 +12,7 @@ user=> (count (ns-interns `clojure.core)) ; only 621 functions to learn :-)
 user=>
 ```
 
-===== Example
+===== Example#a7541c
 
 ```
 ;; See also http://clojure.org/namespaces for information on namespaces in Clojure and how to inspect and manipulate them

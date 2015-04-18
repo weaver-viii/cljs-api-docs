@@ -1,4 +1,4 @@
-===== Example
+===== Example#85db8e
 
 ```
 (def negative-quotient (comp - /))
@@ -14,14 +14,14 @@
 
 ```
 
-===== Example
+===== Example#0f28a1
 
 ```
 ((comp str +) 8 8 8)   ;;=> "24"
 
 ```
 
-===== Example
+===== Example#96c97e
 
 ```
 (map
@@ -30,14 +30,14 @@
 ;;=>  (-5 -7 -9 -11)
 ```
 
-===== Example
+===== Example#b9499e
 
 ```
 (filter (comp not zero?) [0 1 0 2 0 3 0 4])
 ;;=> (1 2 3 4)
 ```
 
-===== Example
+===== Example#e55035
 
 ```
 ;; make a struct 'goods'. it assumes that every goods has
@@ -105,7 +105,7 @@ data
 
 ```
 
-===== Example
+===== Example#6195f0
 
 ```
 (def countif (comp count filter))
@@ -115,7 +115,7 @@ data
 ;;=> 2
 ```
 
-===== Example
+===== Example#544f48
 
 ```
 ; Get 2nd to last element from a list

@@ -1,4 +1,4 @@
-===== Example
+===== Example#fb73c0
 
 ```
 ;; `project` strips out unwanted key/value pairs from a set of maps. 

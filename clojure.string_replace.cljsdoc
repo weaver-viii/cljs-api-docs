@@ -1,11 +1,11 @@
-===== Example
+===== Example#a03db2
 
 ```
 user=> (clojure.string/replace "The color is red" #"red" "blue")
 "The color is blue"
 ```
 
-===== Example
+===== Example#3c291a
 
 ```
 user=> (clojure.string/replace "The color is red." #"[aeiou]"  #(str %1 %1))
@@ -13,7 +13,7 @@ user=> (clojure.string/replace "The color is red." #"[aeiou]"  #(str %1 %1))
 
 ```
 
-===== Example
+===== Example#b8d4a5
 
 ```
 ;; Note: When replace-first or replace have a regex pattern as their
@@ -49,7 +49,7 @@ user=> (str/replace "fabulous fodder foo food" #"f(o+)(\S+)" (re-qr "$2$1"))
 
 ```
 
-===== Example
+===== Example#a4f5b3
 
 ```
 ;; replaces all a's with 1 and all b's with 2
@@ -57,7 +57,7 @@ user=>(clojure.string/replace "a b a" #"a|b" {"a" "1" "b" "2"})
 "1 2 1"
 ```
 
-===== Example
+===== Example#c5f74a
 
 ```
 ;; Note: See clojure.core/subs for discussion of behavior of substrings
@@ -65,7 +65,7 @@ user=>(clojure.string/replace "a b a" #"a|b" {"a" "1" "b" "2"})
 ;; significantly affect your memory usage in some cases.
 ```
 
-===== Example
+===== Example#5e3027
 
 ```
 ;; To title case

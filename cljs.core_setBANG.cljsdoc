@@ -1,10 +1,10 @@
-===== Example
+===== Example#3987f0
 
 ```
 (set! var-symbol expr)
 ```
 
-===== Example
+===== Example#45cf39
 
 ```
 (set! *warn-on-reflection* true)

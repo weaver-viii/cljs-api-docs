@@ -1,4 +1,4 @@
-===== Example
+===== Example#542eb6
 
 ```
 ;; Calculate the sum of all numbers under 1000:
@@ -6,7 +6,7 @@ user=> (reduce + (take-while (partial > 1000) (iterate inc 0)))
 499500
 ```
 
-===== Example
+===== Example#a46e39
 
 ```
 user=> (take-while neg? [-2 -1 0 1 2 3])

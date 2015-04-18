@@ -1,4 +1,4 @@
-===== Example
+===== Example#d14b9d
 
 ```
 (defmulti service-charge (fn [acct] [(account-level acct) (:tag acct)]))
@@ -7,7 +7,7 @@
 (defmethod service-charge [::acc/Premium ::acc/Account] [_] 0)
 ```
 
-===== Example
+===== Example#4f7db5
 
 ```
 ;this example illustrates that the dispatch type
@@ -34,7 +34,7 @@
 
 ```
 
-===== Example
+===== Example#25e234
 
 ```
 ;; Methods can be given a name.  Very useful in stack traces.

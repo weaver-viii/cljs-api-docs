@@ -1,4 +1,4 @@
-===== Example
+===== Example#8b3f98
 
 ```
 ;; can't interchange INTs with LONGs, only F(int, int) or F(long, long)

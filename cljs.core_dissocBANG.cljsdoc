@@ -1,4 +1,4 @@
-===== Example
+===== Example#260fca
 
 ```
 ;; dissoc! works on a transient map

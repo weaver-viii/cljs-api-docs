@@ -1,4 +1,4 @@
-===== Example
+===== Example#bc26c1
 
 ```
 (defn is-small? [number]
@@ -11,7 +11,7 @@ user=> (is-small? 500)
 "no"
 ```
 
-===== Example
+===== Example#66a529
 
 ```
 ;; Be aware that the only two values considered "logical false" in Clojure

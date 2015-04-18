@@ -1,11 +1,11 @@
-===== Example
+===== Example#2d9720
 
 ```
 user> (sorted-set-by > 3 5 8 2 1)
 #{8 5 3 2 1}
 ```
 
-===== Example
+===== Example#1cea4b
 
 ```
 ;; Be cautious about comparison functions that only compare part of

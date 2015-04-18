@@ -1,4 +1,4 @@
-===== Example
+===== Example#6fb529
 
 ```
 (reduce + [1 2 3 4 5])  ;;=> 15
@@ -7,7 +7,7 @@
 (reduce + 1 [2 3])      ;;=> 6
 ```
 
-===== Example
+===== Example#d37a01
 
 ```
 ;; converting a vector to a set
@@ -16,7 +16,7 @@
 
 ```
 
-===== Example
+===== Example#bd4f15
 
 ```
 ;; Create a word frequency map out of a large string s.
@@ -30,7 +30,7 @@
 
 ```
 
-===== Example
+===== Example#2f42ad
 
 ```
 ;; Calculate primes until 1000
@@ -56,7 +56,7 @@
 ;;    991 997]
 ```
 
-===== Example
+===== Example#28605c
 
 ```
 ;; Add one collection to another (combining sequences is done with cons):
@@ -67,7 +67,7 @@
 ;;=> '(6 5 4 1 2 3)
 ```
 
-===== Example
+===== Example#ee38f5
 
 ```
 ;; Combine a vector of collections into a single collection 
@@ -84,7 +84,7 @@
 
 ```
 
-===== Example
+===== Example#09815c
 
 ```
 (defn key-pres?
@@ -104,7 +104,7 @@
         csv-data))
 ```
 
-===== Example
+===== Example#2a3059
 
 ```
 (defn reduce-csv-row
@@ -126,7 +126,7 @@
 
 ```
 
-===== Example
+===== Example#dc8818
 
 ```
 ;; Some functions update a collection with a single item.

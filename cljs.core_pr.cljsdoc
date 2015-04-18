@@ -1,18 +1,18 @@
-===== Example
+===== Example#123e59
 
 ```
 user=> (pr "foo")
 "foo"nil
 ```
 
-===== Example
+===== Example#b0f2ed
 
 ```
 user=> (pr {:foo "hello" :bar 34.5})
 {:foo "hello", :bar 34.5}nil
 ```
 
-===== Example
+===== Example#1053ce
 
 ```
 ;; Difference between pr and print

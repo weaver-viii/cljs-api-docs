@@ -1,4 +1,4 @@
-===== Example
+===== Example#cfb5e6
 
 ```
 user=> (not-any? odd? '(2 4 6))

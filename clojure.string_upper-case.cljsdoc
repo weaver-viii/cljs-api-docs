@@ -1,11 +1,11 @@
-===== Example
+===== Example#c3d681
 
 ```
 user=> (clojure.string/upper-case "MiXeD cAsE")
 "MIXED CASE"
 ```
 
-===== Example
+===== Example#b89a5e
 
 ```
 ;; Non-character symbols will be returned back

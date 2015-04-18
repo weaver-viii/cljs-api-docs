@@ -1,4 +1,4 @@
-===== Example
+===== Example#3e7ada
 
 ```
 <pre>user=&gt; (bit-set 2r1011 2) ; index is 0-based

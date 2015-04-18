@@ -1,4 +1,4 @@
-===== Example
+===== Example#3b9615
 
 ```
 (use 'clojure.walk)
@@ -10,7 +10,7 @@
 => [6 {2 [[0 :a] [1 1]], 5 [[3 :b] [4 2]]}] 
 ```
 
-===== Example
+===== Example#860050
 
 ```
 ;;example of removing namespaces from all keys in a nested data structure

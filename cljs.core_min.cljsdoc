@@ -1,4 +1,4 @@
-===== Example
+===== Example#1ae914
 
 ```
 user=> (min 1 2 3 4 5)  
@@ -9,7 +9,7 @@ user=> (min 100)
 100
 ```
 
-===== Example
+===== Example#8e1b06
 
 ```
 ;; If elements are already in a sequence, use apply

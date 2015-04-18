@@ -1,4 +1,4 @@
-===== Example
+===== Example#ada1e3
 
 ```
 ;; a map is a collection
@@ -39,14 +39,14 @@
 
 ```
 
-===== Example
+===== Example#a53230
 
 ```
 user=> (coll? {:a 10 :b 20}) ; map is a collection of map-entries
 true
 ```
 
-===== Example
+===== Example#ce63bc
 
 ```
 ;; contrast to example code for sequential?

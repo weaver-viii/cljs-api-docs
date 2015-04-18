@@ -1,4 +1,4 @@
-===== Example
+===== Example#2e323b
 
 ```
 user=> [(type []) (class [])]
@@ -11,7 +11,7 @@ user=> (with-redefs [type (constantly java.lang.String)
 [java.lang.String 10]
 ```
 
-===== Example
+===== Example#302197
 
 ```
 (ns http)
@@ -29,7 +29,7 @@ user=> (with-redefs [type (constantly java.lang.String)
 (run-tests) ;; test is passing
 ```
 
-===== Example
+===== Example#62f76b
 
 ```
 ;; be careful, with-redefs can permanently change a var if applied concurrently:
@@ -42,7 +42,7 @@ user> (ten)
 79
 ```
 
-===== Example
+===== Example#f5941e
 
 ```
 ;; redefine var

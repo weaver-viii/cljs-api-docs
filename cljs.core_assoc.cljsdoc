@@ -1,4 +1,4 @@
-===== Example
+===== Example#a7af96
 
 ```
 (assoc {} :key1 "value" :key2 "another value")
@@ -23,7 +23,7 @@
 ;; From http://clojure-examples.appspot.com/clojure.core/assoc
 ```
 
-===== Example
+===== Example#a75b15
 
 ```
 ;; here is an example of updating a field in a map.

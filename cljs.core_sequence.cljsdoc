@@ -1,4 +1,4 @@
-===== Example
+===== Example#cf1b7a
 
 ```
 user> (sequence [1 2 3])

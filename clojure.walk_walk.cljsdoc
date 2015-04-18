@@ -1,4 +1,4 @@
-===== Example
+===== Example#7f8862
 
 ```
 (use 'clojure.walk)
@@ -16,7 +16,7 @@ user=> (walk first reverse [ [1 2] [3 4] [5 6] ])
 (5 3 1)
 ```
 
-===== Example
+===== Example#658070
 
 ```
 (require '[clojure.walk :as w])

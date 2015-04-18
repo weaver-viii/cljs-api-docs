@@ -1,4 +1,4 @@
-===== Example
+===== Example#e7ee7f
 
 ```
 (count nil)
@@ -20,7 +20,7 @@
 ;;=> 6
 ```
 
-===== Example
+===== Example#99bc22
 
 ```
 (count '(1 2 3 3 1))

@@ -1,4 +1,4 @@
-===== Example
+===== Example#bed2ec
 
 ```
 ; Maps can be constructed from a sequence of 2-vectors or a sequence 
@@ -15,7 +15,7 @@ user=> (into [] {1 2, 3 4})
 
 ```
 
-===== Example
+===== Example#b28ffe
 
 ```
 ; Items are conj'ed one at a time, which puts them at the head of 
@@ -25,7 +25,7 @@ user=> (into () '(1 2 3))
 
 ```
 
-===== Example
+===== Example#6c4f50
 
 ```
 (defn test-key-inclusion-cols
@@ -35,7 +35,7 @@ user=> (into () '(1 2 3))
 
 ```
 
-===== Example
+===== Example#4af4fc
 
 ```
 ; Change from one type of map to another

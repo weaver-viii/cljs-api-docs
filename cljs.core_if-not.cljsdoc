@@ -1,4 +1,4 @@
-===== Example
+===== Example#32039d
 
 ```
 user=> (defn has-neg [coll] 
@@ -13,14 +13,14 @@ user=> (has-neg [1 2 -3 4])
 true
 ```
 
-===== Example
+===== Example#657ffc
 
 ```
 user=> (if-not (zero? 0) :then :else)
 :else
 ```
 
-===== Example
+===== Example#b81aa3
 
 ```
 ;; See examples for "if" explaining Clojure's idea of logical true

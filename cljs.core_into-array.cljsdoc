@@ -1,4 +1,4 @@
-===== Example
+===== Example#ec7afe
 
 ```
 ;; Array's component type is set to (class 2), cannot add Strings.
@@ -21,7 +21,7 @@ user=> (into-array Byte/TYPE (map byte (range 4)))
 #<byte[] [B@68ffefc9>
 ```
 
-===== Example
+===== Example#eca18e
 
 ```
 ;; java.nio.file.Paths#get takes (String, String...)
@@ -29,7 +29,7 @@ user=> (java.nio.file.Paths/get "/Users" (into-array ["username" "dev" "clojure"
 #<UnixPath /Users/username/dev/clojure>
 ```
 
-===== Example
+===== Example#7f2cba
 
 ```
 ;; Creating an empty array defaults to Object[]

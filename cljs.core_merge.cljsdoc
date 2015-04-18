@@ -1,11 +1,11 @@
-===== Example
+===== Example#7cb59a
 
 ```
 (merge {:a 1 :b 2 :c 3} {:b 9 :d 4})
 ;;=> {:d 4, :a 1, :b 9, :c 3}
 ```
 
-===== Example
+===== Example#cde647
 
 ```
 (merge {:a 1} nil)   ;=> {:a 1}
@@ -14,7 +14,7 @@
 
 ```
 
-===== Example
+===== Example#7e0662
 
 ```
 ;; `merge` can be used to support the setting of default values

@@ -1,4 +1,4 @@
-===== Example
+===== Example#d535db
 
 ```
 user=> (every? even? '(2 4 6))
@@ -7,7 +7,7 @@ user=> (every? even? '(1 2 3))
 false
 ```
 
-===== Example
+===== Example#a96713
 
 ```
 ;; you can use every? with a set as the predicate to return true if 
@@ -25,7 +25,7 @@ user=> (every? {1 "one" 2 "two"} [1 2 3])
 false
 ```
 
-===== Example
+===== Example#799432
 
 ```
 ;; this is kind of weird IMO... but it works that way (the same for vectors)

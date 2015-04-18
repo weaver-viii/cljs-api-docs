@@ -1,4 +1,4 @@
-===== Example
+===== Example#59cee1
 
 ```
 ;; Define the multimethod
@@ -10,7 +10,7 @@
 (defmethod service-charge [::acc/Premium ::acc/Account] [_] 0)
 ```
 
-===== Example
+===== Example#a9d79f
 
 ```
 ;this example illustrates that the dispatch type
@@ -44,7 +44,7 @@
  java.lang.IllegalArgumentException: I don't know the Spanish language
 ```
 
-===== Example
+===== Example#f2b7dc
 
 ```
 ;; Implementing factorial using multimethods Note that factorial-like function 
@@ -64,7 +64,7 @@
 (factorial 7) ; => 5040
 ```
 
-===== Example
+===== Example#a672e3
 
 ```
 ;; defmulti/defmethods support variadic arguments and dispatch functions.
@@ -96,7 +96,7 @@
 ;; => "number: 1 and 2"
 ```
 
-===== Example
+===== Example#7f8264
 
 ```
 ;; defmulti - custom hierarchy

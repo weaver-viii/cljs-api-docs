@@ -1,4 +1,4 @@
-===== Example
+===== Example#351c15
 
 ```
 ;; Generate a Java class
@@ -14,7 +14,7 @@ Hello, World!
 
 ```
 
-===== Example
+===== Example#ca8104
 
 ```
 ;; Let's create a namespace and then assign it as the current namespace
@@ -35,7 +35,7 @@ my-new-namespace=>
 
 ```
 
-===== Example
+===== Example#eace79
 
 ```
 ;; Generating a class so we can call Clojure from Java 
@@ -84,7 +84,7 @@ public class Main {
 ;; Example was borrowed from clartaq @ Stack Overflow
 ```
 
-===== Example
+===== Example#b8dce9
 
 ```
 ;; Create a namespace named demo.namespace.
@@ -104,7 +104,7 @@ user=>(require 'demo.namespace)
 user=>(use 'demo.namespace)
 ```
 
-===== Example
+===== Example#94e111
 
 ```
 ;; This example will illustrate changing between namespaces at the repl
@@ -150,7 +150,7 @@ user=> (foo)
 nil
 ```
 
-===== Example
+===== Example#3f0771
 
 ```
 (ns rosettacode.24game
@@ -161,7 +161,7 @@ nil
  (is (= "ABC" (str/capitalize "abc")))
 ```
 
-===== Example
+===== Example#ee511c
 
 ```
 ;; Multiple required namespaces with aliases
@@ -171,7 +171,7 @@ nil
 
 ```
 
-===== Example
+===== Example#d81324
 
 ```
 ;; In clojure 1.4 and higher you can use the refer function from within
@@ -186,7 +186,7 @@ nil
 
 ```
 
-===== Example
+===== Example#5b95f3
 
 ```
 (ns foo.bar

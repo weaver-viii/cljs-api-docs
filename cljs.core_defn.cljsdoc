@@ -1,4 +1,4 @@
-===== Example
+===== Example#3a2484
 
 ```
 user=> (defn foo [a b c]
@@ -43,7 +43,7 @@ user=> (boo 1 2 :d 3 :c 4)
 
 ```
 
-===== Example
+===== Example#90e430
 
 ```
 user=> (defn bar
@@ -57,7 +57,7 @@ user=> (bar 5 6 2)
 
 ```
 
-===== Example
+===== Example#048c13
 
 ```
 ;; You can use destructuring to have keyword arguments. This would be a
@@ -81,7 +81,7 @@ user=> (keyworded-map :sequence [1 2 3] :function #(+ % 2))
 
 ```
 
-===== Example
+===== Example#0f6327
 
 ```
 (defn somefn

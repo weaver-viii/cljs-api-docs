@@ -1,11 +1,11 @@
-===== Example
+===== Example#fdd22f
 
 ```
 user=> (max-key count "asd" "bsd" "dsd" "long word")
 "long word"
 ```
 
-===== Example
+===== Example#e878bf
 
 ```
 ; find the key that has the highest value in a map

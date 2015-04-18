@@ -1,4 +1,4 @@
-===== Example
+===== Example#cb62e8
 
 ```
 ;; a function that expects a non-nil value
@@ -47,7 +47,7 @@
 
 ```
 
-===== Example
+===== Example#adcf47
 
 ```
 ;; Treat nil as 0 for the purposes of incrementing

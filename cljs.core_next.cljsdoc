@@ -1,4 +1,4 @@
-===== Example
+===== Example#4df194
 
 ```
 user=> (next '(:alpha :bravo :charlie))
@@ -11,7 +11,7 @@ user=> (next (next (next '(:one :two :three))))
 nil
 ```
 
-===== Example
+===== Example#f0863a
 
 ```
 ;; next is used in the recursive call.  (This is a naive implementation for illustration only.  Using `rest` is usually preferred over `next`.)
@@ -22,7 +22,7 @@ nil
           (my-map func (next a-list)))))
 ```
 
-===== Example
+===== Example#aea15d
 
 ```
 ;; Difference between next and rest:

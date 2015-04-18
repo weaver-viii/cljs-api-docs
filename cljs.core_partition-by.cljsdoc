@@ -1,11 +1,11 @@
-===== Example
+===== Example#98e074
 
 ```
 user=> (partition-by #(= 3 %) [1 2 3 4 5])
 ((1 2) (3) (4 5))
 ```
 
-===== Example
+===== Example#05e13f
 
 ```
 user=> (partition-by odd? [1 1 1 2 2 3 3])
@@ -16,7 +16,7 @@ user=> (partition-by even? [1 1 1 2 2 3 3])
 
 ```
 
-===== Example
+===== Example#f38a49
 
 ```
 ;; (this is part of a solution from 4clojure.com/problem 30)
@@ -24,7 +24,7 @@ user=> (partition-by identity "Leeeeeerrroyyy")
 ((\L) (\e \e \e \e \e \e) (\r \r \r) (\o) (\y \y \y))
 ```
 
-===== Example
+===== Example#86b823
 
 ```
 ;; Note that previously created 'bins' are not used when same value is seen again
@@ -32,7 +32,7 @@ user=> (partition-by identity "ABBA")
 ((\A) (\B \B) (\A))
 ```
 
-===== Example
+===== Example#9c8b82
 
 ```
 ;; Arbitrary partitioning

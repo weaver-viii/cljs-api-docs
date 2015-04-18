@@ -1,4 +1,4 @@
-===== Example
+===== Example#bbc8d4
 
 ```
 ;; we have a list of key colours
@@ -34,7 +34,7 @@ user=> (rgb-to-key-colour [255 0 0] key-colours)
 
 ```
 
-===== Example
+===== Example#c05dba
 
 ```
 ; "min-key"/"max-key" to "min"/"max" like "sort-by" to "sort"

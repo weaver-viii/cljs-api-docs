@@ -1,4 +1,4 @@
-===== Example
+===== Example#6ac2c6
 
 ```
 user=> (sort-by count ["aaa" "bb" "c"])
@@ -11,14 +11,14 @@ user=> (sort-by first > [[1 2] [2 2] [2 3]])
 ([2 2] [2 3] [1 2])
 ```
 
-===== Example
+===== Example#e5cdbf
 
 ```
 user=> (sort-by :rank [{:rank 2} {:rank 3} {:rank 1}])
 ({:rank 1} {:rank 2} {:rank 3})
 ```
 
-===== Example
+===== Example#9a5360
 
 ```
 (def x [{:foo 2 :bar 11}
@@ -31,7 +31,7 @@ user=> (sort-by :rank [{:rank 2} {:rank 3} {:rank 1}])
 ;=>({:foo 1, :bar 77} {:bar 99, :foo 1} {:foo 2, :bar 11} {:bar 55, :foo 2})
 ```
 
-===== Example
+===== Example#0f9fe6
 
 ```
 (def x [{:foo 2 :bar 11}
@@ -46,7 +46,7 @@ user=> (sort-by :rank [{:rank 2} {:rank 3} {:rank 1}])
 ;=> ({:bar 55, :foo 2} {:foo 1, :bar 77} {:bar 99, :foo 1} {:foo 2, :bar 11})
 ```
 
-===== Example
+===== Example#b229c9
 
 ```
 ;sort entries in a map by value
@@ -54,7 +54,7 @@ user=> (sort-by val > {:foo 7, :bar 3, :baz 5})
 ([:foo 7] [:baz 5] [:bar 3])
 ```
 
-===== Example
+===== Example#a9fa15
 
 ```
 ;; Warning: You can sort a Java array and get back a sorted immutable Clojure
