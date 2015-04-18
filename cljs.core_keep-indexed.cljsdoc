@@ -1,11 +1,11 @@
-===== Example#aa1c1b
+===== Example
 
 ```
 user=> (keep-indexed #(if (odd? %1) %2) [:a :b :c :d :e])
 (:b :d)
 ```
 
-===== Example#aa1c1b
+===== Example
 
 ```
 user=> (keep-indexed #(if (pos? %2) %1) [-9 0 29 -7 45 3 -8])
@@ -17,7 +17,7 @@ user=> (keep-indexed (fn [idx v]
 (2 4 5)
 ```
 
-===== Example#aa1c1b
+===== Example
 
 ```
 (defn position [x coll & {:keys [from-end all] :or {from-end false all false}}]

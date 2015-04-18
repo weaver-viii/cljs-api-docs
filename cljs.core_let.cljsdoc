@@ -1,4 +1,4 @@
-===== Example#5d6f49
+===== Example
 
 ```
 ;; let is a Clojure special form, a fundamental building block of the language.
@@ -46,7 +46,7 @@ user=> (let [[g h] [1 2 3]]
 ;; From http://clojure-examples.appspot.com/clojure.core/let with permission.
 ```
 
-===== Example#5d6f49
+===== Example
 
 ```
 user=> (let [a (take 5 (range))
@@ -61,7 +61,7 @@ I was here!
 
 ```
 
-===== Example#5d6f49
+===== Example
 
 ```
 ; :as example 
@@ -82,7 +82,7 @@ user=> (let [[x y] [5 3]
          ;...
 ```
 
-===== Example#5d6f49
+===== Example
 
 ```
 ;;; map destructuring, all features
@@ -114,7 +114,7 @@ user=>
 ;; other macros that bind variables, e.g. `for` and `doseq`
 ```
 
-===== Example#5d6f49
+===== Example
 
 ```
 ;;; no value of a key
@@ -134,7 +134,7 @@ user> (let [[a b :as v] nil]
 
 ```
 
-===== Example#5d6f49
+===== Example
 
 ```
 ;; lexical clojure (or let-over-fn) is an idiom for doing, in functional languages,

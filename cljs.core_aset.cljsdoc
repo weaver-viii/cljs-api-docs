@@ -1,4 +1,4 @@
-===== Example#837fd7
+===== Example
 
 ```
 user=> (def my-array (into-array Integer/TYPE [1 2 3]))
@@ -11,7 +11,7 @@ user=> (into [] my-array)
 [1 10 3]
 ```
 
-===== Example#837fd7
+===== Example
 
 ```
 ; Two dimensional example

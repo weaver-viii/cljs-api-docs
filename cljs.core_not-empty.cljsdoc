@@ -1,4 +1,4 @@
-===== Example#7c2f32
+===== Example
 
 ```
 user=> (not-empty [1])

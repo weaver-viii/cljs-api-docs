@@ -1,4 +1,4 @@
-===== Example#47a2ad
+===== Example
 
 ```
 user=> (def x "Hello!\nMy name is George.\n")

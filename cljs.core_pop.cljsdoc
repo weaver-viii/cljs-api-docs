@@ -1,4 +1,4 @@
-===== Example#9694cb
+===== Example
 
 ```
 user=> (peek [1 2 3])

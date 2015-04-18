@@ -1,4 +1,4 @@
-===== Example#7d7d85
+===== Example
 
 ```
 user=> (def my-atom (atom 0))

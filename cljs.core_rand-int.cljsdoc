@@ -1,4 +1,4 @@
-===== Example#744593
+===== Example
 
 ```
 user=> (rand-int 30)
@@ -12,7 +12,7 @@ user=> (int (rand 30))
 
 ```
 
-===== Example#744593
+===== Example
 
 ```
 (require '[clojure.set :as set])

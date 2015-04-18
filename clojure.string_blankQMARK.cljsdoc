@@ -1,4 +1,4 @@
-===== Example#10442f
+===== Example
 
 ```
 user> (clojure.string/blank? nil)

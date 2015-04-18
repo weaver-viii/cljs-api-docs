@@ -1,4 +1,4 @@
-===== Example#9717d1
+===== Example
 
 ```
 user> (seq? 1)
@@ -9,7 +9,7 @@ user> (seq? (seq [1]))
 true
 ```
 
-===== Example#9717d1
+===== Example
 
 ```
 ;; contrast to example code for sequential?

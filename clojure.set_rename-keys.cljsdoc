@@ -1,4 +1,4 @@
-===== Example#5a6a47
+===== Example
 
 ```
 user=> (rename-keys {:a 1, :b 2} {:a :new-a, :b :new-b})
@@ -13,7 +13,7 @@ user=> (rename-keys {:a 1} {:b :new-b})
 
 ```
 
-===== Example#5a6a47
+===== Example
 
 ```
 ;; You need to be careful about key collisions.  You probably shouldn't 

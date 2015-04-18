@@ -1,4 +1,4 @@
-===== Example#60e2a7
+===== Example
 
 ```
 user> (or true false false)
@@ -29,7 +29,7 @@ foo
 true
 ```
 
-===== Example#60e2a7
+===== Example
 
 ```
 ;; See examples for "if" explaining Clojure's idea of logical true

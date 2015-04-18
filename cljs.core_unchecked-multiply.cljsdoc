@@ -1,4 +1,4 @@
-===== Example#890976
+===== Example
 
 ```
 ;; the unchecked-multiply function silently overflows

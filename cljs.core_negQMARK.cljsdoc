@@ -1,4 +1,4 @@
-===== Example#a59ff4
+===== Example
 
 ```
 user=> (neg? -1)

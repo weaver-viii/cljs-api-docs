@@ -1,4 +1,4 @@
-===== Example#46e8e3
+===== Example
 
 ```
 (use '[clojure.set :only [superset?]])

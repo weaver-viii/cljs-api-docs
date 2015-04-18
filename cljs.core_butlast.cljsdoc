@@ -1,4 +1,4 @@
-===== Example#e20d45
+===== Example
 
 ```
 user=> (butlast [1 2 3])
@@ -9,7 +9,7 @@ user=> (butlast (butlast (butlast [1 2 3])))
 nil
 ```
 
-===== Example#e20d45
+===== Example
 
 ```
 ;really slow reverse

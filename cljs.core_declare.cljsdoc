@@ -1,4 +1,4 @@
-===== Example#d5ac04
+===== Example
 
 ```
 user=> (defn foo []
@@ -15,7 +15,7 @@ user=> (defn foo []
 
 ```
 
-===== Example#d5ac04
+===== Example
 
 ```
 user=> (declare show)
@@ -31,7 +31,7 @@ nil
 user=> 
 ```
 
-===== Example#d5ac04
+===== Example
 
 ```
 ; def will do too.

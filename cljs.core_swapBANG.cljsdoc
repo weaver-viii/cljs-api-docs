@@ -1,4 +1,4 @@
-===== Example#d47f3c
+===== Example
 
 ```
 ;; make an atomic list
@@ -18,7 +18,7 @@
 ;;=> (:player2 :player1)
 ```
 
-===== Example#d47f3c
+===== Example
 
 ```
 ;; how to: atomic counter 
@@ -32,7 +32,7 @@
 ;;=> 2
 ```
 
-===== Example#d47f3c
+===== Example
 
 ```
 ;; swap map values

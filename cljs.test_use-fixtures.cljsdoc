@@ -1,4 +1,4 @@
-===== Example#bb4e4b
+===== Example
 
 ```
 ; See https://clojure.github.io/clojure/clojure.test-api.html for details
@@ -22,7 +22,7 @@
 ))
 ```
 
-===== Example#bb4e4b
+===== Example
 
 ```
 ; This fixture is intended to perform setup/teardown for each individual test in the namespace. Note that it assumes the :once fixture will handle creating/destroying the DB, while we only create/drop tables within the DB.

@@ -1,4 +1,4 @@
-===== Example#0ef617
+===== Example
 
 ```
 ;; `max` returns the largest of its arguments
@@ -13,7 +13,7 @@ user=> (max 100)
 100
 ```
 
-===== Example#0ef617
+===== Example
 
 ```
 ;; If elements are already in a sequence, use apply

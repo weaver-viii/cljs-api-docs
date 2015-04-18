@@ -1,4 +1,4 @@
-===== Example#c30afd
+===== Example
 
 ```
 <pre>
@@ -25,7 +25,7 @@ java.lang.ArithmeticException
 </pre>
 ```
 
-===== Example#c30afd
+===== Example
 
 ```
 ;;; Automatically handles floating point:

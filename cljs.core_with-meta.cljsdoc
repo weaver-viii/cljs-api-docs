@@ -1,4 +1,4 @@
-===== Example#0fddeb
+===== Example
 
 ```
 user=> (with-meta [1 2 3] {:my "meta"})
@@ -9,7 +9,7 @@ user=> (meta (with-meta [1 2 3] {:my "meta"}))
 
 ```
 
-===== Example#0fddeb
+===== Example
 
 ```
 ;; the same example above in a simplified way

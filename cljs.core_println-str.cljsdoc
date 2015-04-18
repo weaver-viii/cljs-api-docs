@@ -1,4 +1,4 @@
-===== Example#d18343
+===== Example
 
 ```
 ;; Create a newline-terminated string from the items and store it in x.

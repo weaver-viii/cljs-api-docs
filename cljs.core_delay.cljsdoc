@@ -1,4 +1,4 @@
-===== Example#356d6c
+===== Example
 
 ```
 ;; In this example you can see that the first time the delay is forced
@@ -17,7 +17,7 @@ user=> @my-delay
 
 ```
 
-===== Example#356d6c
+===== Example
 
 ```
 ;; Note that the implementation of deref for delays makes it impossible for the

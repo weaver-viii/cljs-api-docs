@@ -1,4 +1,4 @@
-===== Example#ad9cb6
+===== Example
 
 ```
 user=> (rem 10 9)
@@ -7,7 +7,7 @@ user=> (rem 2 2)
 0
 ```
 
-===== Example#ad9cb6
+===== Example
 
 ```
 ;; rem and mod are commonly used to get the remainder.

@@ -1,4 +1,4 @@
-===== Example#c0cc4d
+===== Example
 
 ```
 (defprotocol Fly
@@ -18,7 +18,7 @@
 -> "Crow flies..."
 ```
 
-===== Example#c0cc4d
+===== Example
 
 ```
 ;; from Stuart Halloway's examples:
@@ -43,7 +43,7 @@
 
 ```
 
-===== Example#c0cc4d
+===== Example
 
 ```
 ;; defprotocol does NOT support interfaces with variable argument lists, 
@@ -61,7 +61,7 @@
 (defn my-fn [this & args] (-my-fn this args))
 ```
 
-===== Example#c0cc4d
+===== Example
 
 ```
 ;; Protocols allow you to add new abstractions to existing types in a clean way.

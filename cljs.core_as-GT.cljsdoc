@@ -1,4 +1,4 @@
-===== Example#3f54ac
+===== Example
 
 ```
 (def owners [{:owner "Jimmy"
@@ -21,7 +21,7 @@
 ;;=> :hamster
 ```
 
-===== Example#3f54ac
+===== Example
 
 ```
 (as-> 0 n

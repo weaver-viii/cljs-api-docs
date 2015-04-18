@@ -1,4 +1,4 @@
-===== Example#e8f738
+===== Example
 
 ```
 <pre>user=> (bit-shift-left 1 10)
@@ -12,7 +12,7 @@
 
 ```
 
-===== Example#e8f738
+===== Example
 
 ```
 ;;a bogus bit-array implementation

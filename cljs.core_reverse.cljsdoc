@@ -1,4 +1,4 @@
-===== Example#29a542
+===== Example
 
 ```
 user=> (reverse '(1 2 3))

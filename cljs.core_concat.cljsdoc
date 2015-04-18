@@ -1,4 +1,4 @@
-===== Example#1ac5e0
+===== Example
 
 ```
 
@@ -16,7 +16,7 @@ user=> (concat [:a :b] nil [1 [2 3] 4])
 
 ```
 
-===== Example#1ac5e0
+===== Example
 
 ```
 user=> (concat "abc" "def")

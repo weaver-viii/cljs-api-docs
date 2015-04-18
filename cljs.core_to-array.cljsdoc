@@ -1,11 +1,11 @@
-===== Example#213389
+===== Example
 
 ```
 user=> (to-array [1 2 3])
 #<Object[] [Ljava.lang.Object;@b2bb14>
 ```
 
-===== Example#213389
+===== Example
 
 ```
 (def hello (to-array "Hello World!"))

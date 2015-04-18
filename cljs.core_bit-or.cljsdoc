@@ -1,4 +1,4 @@
-===== Example#b8fe19
+===== Example
 
 ```
 user=> (bit-or 2r1100 2r1001)
@@ -11,7 +11,7 @@ user=> (bit-or 12 9)
 
 ```
 
-===== Example#b8fe19
+===== Example
 
 ```
 ;; here is the truth table for OR

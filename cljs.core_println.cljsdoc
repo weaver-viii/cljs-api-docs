@@ -1,4 +1,4 @@
-===== Example#74eb4d
+===== Example
 
 ```
 user=> (println "Hello world.")
@@ -35,7 +35,7 @@ nil
 user=>
 ```
 
-===== Example#74eb4d
+===== Example
 
 ```
 ; be careful when using println in functions like map

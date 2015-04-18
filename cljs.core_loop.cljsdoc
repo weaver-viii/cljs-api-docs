@@ -1,4 +1,4 @@
-===== Example#3d7d83
+===== Example
 
 ```
 ;; looping is recursive in Clojure, the loop construct is a hack so that
@@ -23,7 +23,7 @@ user=> (my-re-seq #"\d" "0123456789")
 
 ```
 
-===== Example#3d7d83
+===== Example
 
 ```
 ;; Read decoded MP3 data in loop (requires mp3plugin.jar on class path)
@@ -43,7 +43,7 @@ user=> (my-re-seq #"\d" "0123456789")
 
 ```
 
-===== Example#3d7d83
+===== Example
 
 ```
 (loop [x 10]
@@ -52,7 +52,7 @@ user=> (my-re-seq #"\d" "0123456789")
     (recur (- x 2))))
 ```
 
-===== Example#3d7d83
+===== Example
 
 ```
 (defn find-needle [needle haystack]
@@ -80,7 +80,7 @@ user=>(find-needle "|" "hay|stack")
 [\| (\| \s \t \a \c \k) (\h \a \y)]
 ```
 
-===== Example#3d7d83
+===== Example
 
 ```
 ; makes a simple template function that can be used in mustache way: http://mustache.github.com/

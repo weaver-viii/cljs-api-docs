@@ -1,4 +1,4 @@
-===== Example#5d4bc6
+===== Example
 
 ```
 user=> (counted? [:a :b :c])

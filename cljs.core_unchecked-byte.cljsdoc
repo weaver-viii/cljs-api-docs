@@ -1,4 +1,4 @@
-===== Example#f51ad2
+===== Example
 
 ```
 user=> (unchecked-byte 127)

@@ -1,4 +1,4 @@
-===== Example#926c82
+===== Example
 
 ```
 user=> (def x (byte-array [(byte 0x43) 

@@ -1,4 +1,4 @@
-===== Example#628540
+===== Example
 
 ```
 ;; The commented forms do not get executed
@@ -8,7 +8,7 @@ user=> (comment
 nil
 ```
 
-===== Example#628540
+===== Example
 
 ```
 ;; What is inside the (comment ...) form is not completely ignored.  Clojure
@@ -37,7 +37,7 @@ a : b
 )
 ```
 
-===== Example#628540
+===== Example
 
 ```
 ;; Another thing to watch out for: the comment form IS a form, and is usually

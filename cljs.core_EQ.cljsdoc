@@ -1,4 +1,4 @@
-===== Example#990c9e
+===== Example
 
 ```
 user=> (= 1)
@@ -22,7 +22,7 @@ true
 
 ```
 
-===== Example#990c9e
+===== Example
 
 ```
 ;; There are functional differences between = and == 
@@ -42,7 +42,7 @@ true
 (= 1 "1")       ; differs from ==
 ```
 
-===== Example#990c9e
+===== Example
 
 ```
 ;; If passed a single value (= x) the result is always true.

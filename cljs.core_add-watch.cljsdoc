@@ -1,4 +1,4 @@
-===== Example#1e9619
+===== Example
 
 ```
 ;; Add useful context to watcher function:
@@ -9,7 +9,7 @@
 
 ```
 
-===== Example#1e9619
+===== Example
 
 ```
 ;; timing of agent actions and watches using nrepl (ymmv)
@@ -28,7 +28,7 @@ user> a
 
 ```
 
-===== Example#1e9619
+===== Example
 
 ```
 (def a (atom {}))
@@ -51,7 +51,7 @@ user> a
 ;; {:foo "bar"}
 ```
 
-===== Example#1e9619
+===== Example
 
 ```
 ;; The name of my account can change, and I want to update another atom accordingly.

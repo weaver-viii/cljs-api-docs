@@ -1,4 +1,4 @@
-===== Example#6360d6
+===== Example
 
 ```
 ;;getting meta-data for a defined symbol (as opposed to what it's pointing to.
@@ -18,7 +18,7 @@ user=> (meta (var meta))
 
 ```
 
-===== Example#6360d6
+===== Example
 
 ```
 => *clojure-version*

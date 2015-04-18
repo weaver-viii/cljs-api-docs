@@ -1,4 +1,4 @@
-===== Example#f6d776
+===== Example
 
 ```
 user=> (second '(:alpha :bravo :charlie))

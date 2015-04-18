@@ -1,4 +1,4 @@
-===== Example#50b433
+===== Example
 
 ```
 user=> (associative? [1 2 3]) ; vector

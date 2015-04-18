@@ -1,4 +1,4 @@
-===== Example#ef3b30
+===== Example
 
 ```
 ;; The distinction is that re-find tries to find _any part_ of the string
@@ -15,7 +15,7 @@ user=> (re-matches #"hello, (.*)" "hello, world")
 
 ```
 
-===== Example#ef3b30
+===== Example
 
 ```
 ;; Note: See clojure.core/subs for discussion of behavior of substrings
@@ -23,7 +23,7 @@ user=> (re-matches #"hello, (.*)" "hello, world")
 ;; significantly affect your memory usage in some cases.
 ```
 
-===== Example#ef3b30
+===== Example
 
 ```
 ; Regex match flags can be embedded in the regex string.  So, we can convert the normal case-sensitive matching into case-insensitive matching.

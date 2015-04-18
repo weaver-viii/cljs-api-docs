@@ -1,4 +1,4 @@
-===== Example#0bdc2f
+===== Example
 
 ```
 ;; partition a list of 20 items into 5 (20/4) lists of 4 items
@@ -32,7 +32,7 @@
 
 ```
 
-===== Example#0bdc2f
+===== Example
 
 ```
 ;; a step smaller than the partition-size results in reuse.
@@ -41,7 +41,7 @@
 
 ```
 
-===== Example#0bdc2f
+===== Example
 
 ```
 ;; When there are less than n items in the coll, partition's behaviour

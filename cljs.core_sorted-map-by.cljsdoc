@@ -1,4 +1,4 @@
-===== Example#74fdfe
+===== Example
 
 ```
 ; The basic function requires discrete elements, and cannot accept a 
@@ -21,7 +21,7 @@ user=> (into (sorted-map)  {1 :a  2 :b  3 :c} )
 
 ```
 
-===== Example#74fdfe
+===== Example
 
 ```
 ;; If you wish to sort the map according to the values, instead of by keys 

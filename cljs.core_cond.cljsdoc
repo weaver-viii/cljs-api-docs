@@ -1,4 +1,4 @@
-===== Example#b56106
+===== Example
 
 ```
 (defn pos-neg-or-zero
@@ -18,7 +18,7 @@ user=> (pos-neg-or-zero 0)
 
 ```
 
-===== Example#b56106
+===== Example
 
 ```
 user=> (let [grade 85]
@@ -31,14 +31,14 @@ user=> (let [grade 85]
 "B"
 ```
 
-===== Example#b56106
+===== Example
 
 ```
 ;; See examples for "if" explaining Clojure's idea of logical true
 ;; and logical false.
 ```
 
-===== Example#b56106
+===== Example
 
 ```
 ;; Generates a random number compares it to user input

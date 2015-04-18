@@ -1,4 +1,4 @@
-===== Example#cf2c45
+===== Example
 
 ```
 user=> (subs "Clojure" 1)    
@@ -14,7 +14,7 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: 20 (NO_SOU
 
 ```
 
-===== Example#cf2c45
+===== Example
 
 ```
 ;; Note that subs uses method java.lang.String/substring

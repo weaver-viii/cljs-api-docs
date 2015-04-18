@@ -1,4 +1,4 @@
-===== Example#ff0449
+===== Example
 
 ```
 user=> (import 'java.util.PriorityQueue)
@@ -26,7 +26,7 @@ user=> (isa? java.util.PriorityQueue java.util.TreeMap)
 false
 ```
 
-===== Example#ff0449
+===== Example
 
 ```
 user=> (derive ::Feline ::Animal)

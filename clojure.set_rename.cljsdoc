@@ -1,4 +1,4 @@
-===== Example#949d69
+===== Example
 
 ```
 ;; Here's a relation with two keys (think "column names" in SQL), :a and :b

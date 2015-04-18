@@ -1,4 +1,4 @@
-===== Example#3a8bfa
+===== Example
 
 ```
 ;; group strings by their length
@@ -11,7 +11,7 @@
 
 ```
 
-===== Example#3a8bfa
+===== Example
 
 ```
 ;; group by a primary key

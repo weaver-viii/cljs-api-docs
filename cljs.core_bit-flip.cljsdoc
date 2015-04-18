@@ -1,4 +1,4 @@
-===== Example#bdb01d
+===== Example
 
 ```
 user=> (bit-flip 2r1011 2)

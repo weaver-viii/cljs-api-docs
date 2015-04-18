@@ -1,4 +1,4 @@
-===== Example#0d6927
+===== Example
 
 ```
 (if-some [a 10]    :true :false)   ; => :true

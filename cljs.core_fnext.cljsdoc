@@ -1,4 +1,4 @@
-===== Example#740f88
+===== Example
 
 ```
 user=> (fnext ['(a b c) '(b a c)])

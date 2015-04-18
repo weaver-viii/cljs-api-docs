@@ -1,4 +1,4 @@
-===== Example#ac96d6
+===== Example
 
 ```
 user> (rsubseq (sorted-set 1 2 3 4 5) < 3)

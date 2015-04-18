@@ -1,4 +1,4 @@
-===== Example#e6120e
+===== Example
 
 ```
 ;; Create a promise
@@ -26,7 +26,7 @@ user> (deref p)
 42
 ```
 
-===== Example#e6120e
+===== Example
 
 ```
 ;; For lazy sequences

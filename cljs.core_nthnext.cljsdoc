@@ -1,4 +1,4 @@
-===== Example#faf250
+===== Example
 
 ```
 (nthnext (range 10) 3)
@@ -13,7 +13,7 @@
 
 ```
 
-===== Example#faf250
+===== Example
 
 ```
 ;; drop is also similar, but different 

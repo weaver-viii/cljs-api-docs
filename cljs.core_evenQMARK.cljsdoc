@@ -1,4 +1,4 @@
-===== Example#703ea8
+===== Example
 
 ```
 user=> (even? 2)
@@ -8,7 +8,7 @@ user=> (even? 1)
 false
 ```
 
-===== Example#703ea8
+===== Example
 
 ```
 user=> (filter even? (range 10))

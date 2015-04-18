@@ -1,4 +1,4 @@
-===== Example#30b8c3
+===== Example
 
 ```
 user> (defonce foo 5)

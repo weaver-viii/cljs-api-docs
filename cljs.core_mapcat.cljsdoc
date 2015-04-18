@@ -1,4 +1,4 @@
-===== Example#715e4d
+===== Example
 
 ```
 user=> (mapcat reverse [[3 2 1 0] [6 5 4] [9 8 7]])
@@ -6,7 +6,7 @@ user=> (mapcat reverse [[3 2 1 0] [6 5 4] [9 8 7]])
 
 ```
 
-===== Example#715e4d
+===== Example
 
 ```
 user=> (mapcat (fn [[k v]] 
@@ -18,7 +18,7 @@ user=> (mapcat (fn [[k v]]
 ((:a :x 1 2) (:a :y 3 4) (:b :x 1 2) (:b :z 5 6))
 ```
 
-===== Example#715e4d
+===== Example
 
 ```
 user=> (require '[clojure.string :as cs])
@@ -40,7 +40,7 @@ user=> (mapcat #(cs/split % #"\d") ["aa1bb" "cc2dd" "ee3ff"])
 
 ```
 
-===== Example#715e4d
+===== Example
 
 ```
 ;; Suppose you've got a function that takes a value
@@ -66,7 +66,7 @@ user=> (mapcat #(cs/split % #"\d") ["aa1bb" "cc2dd" "ee3ff"])
 
 ```
 
-===== Example#715e4d
+===== Example
 
 ```
 ; Flatten a map, consing keys on to each nested vector 
@@ -75,7 +75,7 @@ user=> (mapcat #(cs/split % #"\d") ["aa1bb" "cc2dd" "ee3ff"])
 
 ```
 
-===== Example#715e4d
+===== Example
 
 ```
 ;; A very useful feature of mapcat is that it allows function f to produce no result

@@ -1,4 +1,4 @@
-===== Example#711ee8
+===== Example
 
 ```
 user=> (bit-not 2r0111)

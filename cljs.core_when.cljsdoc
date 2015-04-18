@@ -1,4 +1,4 @@
-===== Example#7500e6
+===== Example
 
 ```
 user=> (when (= 1 1) true)
@@ -8,7 +8,7 @@ user=> (when (not= 1 1) true)
 nil
 ```
 
-===== Example#7500e6
+===== Example
 
 ```
 user=> (def has-value (when true
@@ -23,14 +23,14 @@ user=> has-value
 
 ```
 
-===== Example#7500e6
+===== Example
 
 ```
 ;; See examples for "if" explaining Clojure's idea of logical true
 ;; and logical false.
 ```
 
-===== Example#7500e6
+===== Example
 
 ```
 ;; When is a macro of (if .. do ..)

@@ -1,4 +1,4 @@
-===== Example#7a098c
+===== Example
 
 ```
 user=> (mod 10 5)

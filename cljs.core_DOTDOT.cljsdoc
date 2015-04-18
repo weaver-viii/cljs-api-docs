@@ -1,4 +1,4 @@
-===== Example#0a7277
+===== Example
 
 ```
 user> (.. "fooBAR" (toLowerCase) (contains "ooba"))

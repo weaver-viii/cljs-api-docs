@@ -1,4 +1,4 @@
-===== Example#8d5915
+===== Example
 
 ```
 ;; The following defines a lazy-seq of all positive numbers.  Note that 
@@ -16,7 +16,7 @@ user=> (take 5 (positive-numbers))
 
 ```
 
-===== Example#8d5915
+===== Example
 
 ```
 ;; A lazy-seq of Fibonacci numbers (fn = fn-1 + fn-2)
@@ -28,7 +28,7 @@ user=> (take 5 (fib 1 1))
 (1 1 2 3 5)
 ```
 
-===== Example#8d5915
+===== Example
 
 ```
 ;; It might be easier to think about the producer function as a function
@@ -45,7 +45,7 @@ user=> (take 6 (sum-last-2))
 (1 2 3 5 8 13)
 ```
 
-===== Example#8d5915
+===== Example
 
 ```
 ;; An example combining lazy sequences with higher order functions
@@ -62,7 +62,7 @@ user=> (take 20 (sieve (iterate inc 2)))
 
 ```
 
-===== Example#8d5915
+===== Example
 
 ```
 ;; Other examples on this page are little too eager to produce the head of collection

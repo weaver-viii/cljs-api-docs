@@ -1,4 +1,4 @@
-===== Example#5a599b
+===== Example
 
 ```
 user=> (chunked-seq? (range 1000))

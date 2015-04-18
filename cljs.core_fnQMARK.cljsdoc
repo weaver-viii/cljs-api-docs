@@ -1,4 +1,4 @@
-===== Example#3033eb
+===== Example
 
 ```
 user=> (fn? 5)
@@ -11,7 +11,7 @@ user=> (fn? #(5))
 true
 ```
 
-===== Example#3033eb
+===== Example
 
 ```
 ;; Even though maps, sets, vectors and keywords behave as functions:

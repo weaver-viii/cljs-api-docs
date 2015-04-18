@@ -1,4 +1,4 @@
-===== Example#bda3d0
+===== Example
 
 ```
 (get [1 2 3] 1)
@@ -16,7 +16,7 @@
 
 ```
 
-===== Example#bda3d0
+===== Example
 
 ```
 ;; to get an index of the element of a vector, use .indexOf
@@ -31,7 +31,7 @@
 
 ```
 
-===== Example#bda3d0
+===== Example
 
 ```
 ;; the system environment has a hash-map semantic
@@ -42,7 +42,7 @@
 ;;=> "/usr/local/bin:/sbin:/usr/sbin:/usr/bin:/bin"
 ```
 
-===== Example#bda3d0
+===== Example
 
 ```
 ;; 'get' is not the only option
@@ -57,7 +57,7 @@
 ;;=> 2
 ```
 
-===== Example#bda3d0
+===== Example
 
 ```
 ;; it is tempting to try an index on a list

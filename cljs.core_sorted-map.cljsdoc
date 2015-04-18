@@ -1,11 +1,11 @@
-===== Example#963122
+===== Example
 
 ```
 (sorted-map :z 1, :b 2, :a 3)   ;;=> {:a 3, :b 2, :z 1}
 (into (sorted-map) {:b 2 :a 1}) ;;=> {:a 1, :b 2}
 ```
 
-===== Example#963122
+===== Example
 
 ```
 ; 'seq' can be used to turn a map into a list of vectors

@@ -1,4 +1,4 @@
-===== Example#2873f6
+===== Example
 
 ```
 (seq '(1))  ;;=> (1)
@@ -11,7 +11,7 @@
 (seq "")    ;;=> nil
 ```
 
-===== Example#2873f6
+===== Example
 
 ```
 ;; (seq x) is the recommended idiom for testing if a collection is not empty
@@ -19,7 +19,7 @@
 ;;=> true
 ```
 
-===== Example#2873f6
+===== Example
 
 ```
 ;; 'seq' can be used to turn a map into a list of vectors.

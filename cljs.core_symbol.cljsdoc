@@ -1,4 +1,4 @@
-===== Example#d8138b
+===== Example
 
 ```
 ;; Returns a symbol with the given namespace and name.
@@ -26,7 +26,7 @@ clojure.core/foo
 
 ```
 
-===== Example#d8138b
+===== Example
 
 ```
 ;; some gotchas to be aware of:
@@ -57,7 +57,7 @@ user=> (symbol "/abc/def/ghi")
 /abc/def/ghi
 ```
 
-===== Example#d8138b
+===== Example
 
 ```
 ;; but keywords and numbers are not names

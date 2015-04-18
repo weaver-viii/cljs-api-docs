@@ -1,4 +1,4 @@
-===== Example#0f9bee
+===== Example
 
 ```
 user=> (def food [:ice-cream :steak :apple])

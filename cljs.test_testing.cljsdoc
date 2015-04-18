@@ -1,4 +1,4 @@
-===== Example#707dfd
+===== Example
 
 ```
 (:use 'clojure.test)

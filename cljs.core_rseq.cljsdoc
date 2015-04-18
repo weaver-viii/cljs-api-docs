@@ -1,4 +1,4 @@
-===== Example#33db02
+===== Example
 
 ```
 user=> (vec (range 10))
@@ -9,7 +9,7 @@ user=> (rseq (vec (range 10)))
 
 ```
 
-===== Example#33db02
+===== Example
 
 ```
 (rseq (into (sorted-map) {:a 1 :b 2}))

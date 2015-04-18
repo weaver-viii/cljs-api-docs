@@ -1,4 +1,4 @@
-===== Example#2f27f6
+===== Example
 
 ```
 ;; although negative (or zero) drop-item-counts are accepted they do nothing
@@ -16,7 +16,7 @@
 ;;=> ()
 ```
 
-===== Example#2f27f6
+===== Example
 
 ```
 ;; similar to subvec but lazy and with seqs

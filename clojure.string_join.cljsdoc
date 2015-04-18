@@ -1,11 +1,11 @@
-===== Example#cb9ea0
+===== Example
 
 ```
 user=> (clojure.string/join ", " [1 2 3])
 "1, 2, 3"
 ```
 
-===== Example#cb9ea0
+===== Example
 
 ```
 ;; Splits a string on space character and joins 

@@ -1,4 +1,4 @@
-===== Example#5190e5
+===== Example
 
 ```
 (use 'clojure.data)
@@ -13,7 +13,7 @@
 ;; and both contain :a
 ```
 
-===== Example#5190e5
+===== Example
 
 ```
 (diff [1 2 3] [5 9 3 2 3 7])              ;;=> [[1 2] [5 9 nil 2 3 7] [nil nil 3]]

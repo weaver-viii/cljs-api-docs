@@ -1,4 +1,4 @@
-===== Example#89c09c
+===== Example
 
 ```
 ;; Very useful when working with sequences. Capturing the return value 
@@ -17,14 +17,14 @@ nil
 
 ```
 
-===== Example#89c09c
+===== Example
 
 ```
 ;; See examples for "if" explaining Clojure's idea of logical true
 ;; and logical false.
 ```
 
-===== Example#89c09c
+===== Example
 
 ```
 ;; Works well with collections

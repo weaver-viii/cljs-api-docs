@@ -1,4 +1,4 @@
-===== Example#eb708b
+===== Example
 
 ```
 user=> (meta (vary-meta 'foo assoc :a 1))
@@ -6,7 +6,7 @@ user=> (meta (vary-meta 'foo assoc :a 1))
 
 ```
 
-===== Example#eb708b
+===== Example
 
 ```
 ;; continuing from the previous with-meta example

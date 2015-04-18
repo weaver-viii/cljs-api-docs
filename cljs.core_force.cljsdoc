@@ -1,4 +1,4 @@
-===== Example#db4d21
+===== Example
 
 ```
 ;; an example for delay using an event-queue
@@ -106,7 +106,7 @@ nil
 user> 
 ```
 
-===== Example#db4d21
+===== Example
 
 ```
 ;; the tarai benchmark comparing non-lazy version with lazy-version

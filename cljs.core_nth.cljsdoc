@@ -1,4 +1,4 @@
-===== Example#b02cbf
+===== Example
 
 ```
 user=> (nth ["a" "b" "c" "d"] 0)

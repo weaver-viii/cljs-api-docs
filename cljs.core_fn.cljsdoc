@@ -1,4 +1,4 @@
-===== Example#bb9dab
+===== Example
 
 ```
 ;; simple anonymous function passed to (map )
@@ -35,7 +35,7 @@ user=>  ((fn ([a] (inc a)) ([a b] (+ a b))) 3)
 
 ```
 
-===== Example#bb9dab
+===== Example
 
 ```
 ;; the shortcut form for (fn ) is #( )

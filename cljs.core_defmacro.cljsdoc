@@ -1,4 +1,4 @@
-===== Example#bce0c4
+===== Example
 
 ```
 (defmacro with-tree
@@ -22,7 +22,7 @@
   )
 ```
 
-===== Example#bce0c4
+===== Example
 
 ```
 (defmacro unless [pred a b]
@@ -33,7 +33,7 @@
 (unless false (println "Will print") (println "Will not print"))
 ```
 
-===== Example#bce0c4
+===== Example
 
 ```
 (def dbg 1)

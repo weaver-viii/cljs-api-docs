@@ -1,4 +1,4 @@
-===== Example#f0b2b3
+===== Example
 
 ```
 ;; Note, that collection passed to subseq must implement Sorted.  
@@ -12,7 +12,7 @@ user=> (subseq (sorted-set 1 2 3 4) > 2)
 
 ```
 
-===== Example#f0b2b3
+===== Example
 
 ```
 ;; Example of getting a subsequence of hashmaps sorted by key :a and

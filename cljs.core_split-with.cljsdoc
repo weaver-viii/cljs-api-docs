@@ -1,4 +1,4 @@
-===== Example#9904e5
+===== Example
 
 ```
 user=> (split-with (partial >= 3) [1 2 3 4 5])

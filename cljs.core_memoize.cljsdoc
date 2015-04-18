@@ -1,4 +1,4 @@
-===== Example#09a018
+===== Example
 
 ```
 ;; First we define a function that presumably have some expensive computation.

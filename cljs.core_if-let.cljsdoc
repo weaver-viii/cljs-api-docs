@@ -1,4 +1,4 @@
-===== Example#2407b7
+===== Example
 
 ```
 user=> (defn sum-even-numbers [nums]
@@ -15,7 +15,7 @@ user=> (sum-even-numbers [1 3 5 7 9 10 12])
 
 ```
 
-===== Example#2407b7
+===== Example
 
 ```
 user=> (if-let [x false y true]
@@ -37,7 +37,7 @@ user=> (if-let-demo false)
 
 ```
 
-===== Example#2407b7
+===== Example
 
 ```
 ;; This macro is nice when you need to calculate something big. And you need 
@@ -57,14 +57,14 @@ user=> (if-let-demo false)
 ;; gives up and returns 42.
 ```
 
-===== Example#2407b7
+===== Example
 
 ```
 ;; See examples for "if" explaining Clojure's idea of logical true
 ;; and logical false.
 ```
 
-===== Example#2407b7
+===== Example
 
 ```
 ;;; with destructuring binding
@@ -91,7 +91,7 @@ user=> (if-let-demo false)
 
 ```
 
-===== Example#2407b7
+===== Example
 
 ```
 ;; Note that the binding only extends to the then form, not to the else:
@@ -100,7 +100,7 @@ CompilerException java.lang.RuntimeException: Unable to resolve symbol:
 x in this context, compiling: ...
 ```
 
-===== Example#2407b7
+===== Example
 
 ```
 ;; Works well with collections

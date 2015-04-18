@@ -1,4 +1,4 @@
-===== Example#b37c93
+===== Example
 
 ```
 user=> (number? 1)
@@ -15,7 +15,7 @@ false
 
 ```
 
-===== Example#b37c93
+===== Example
 
 ```
 ;; map number? over the vector

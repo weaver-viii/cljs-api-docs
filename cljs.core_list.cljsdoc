@@ -1,4 +1,4 @@
-===== Example#ba7b9b
+===== Example
 
 ```
 user=> (list 'a 'b 'c 'd 'e 'f 'g)
@@ -7,14 +7,14 @@ user=> (list 1 2 3)
 (1 2 3)
 ```
 
-===== Example#ba7b9b
+===== Example
 
 ```
 user=> (let [m {:1 1 :2 2 :3 3 :4 4}] (map list (keys m) (vals m)))
 ((:1 1) (:2 2) (:3 3) (:4 4))
 ```
 
-===== Example#ba7b9b
+===== Example
 
 ```
 ;; Lists can also be constructed literally using quote, but note the difference

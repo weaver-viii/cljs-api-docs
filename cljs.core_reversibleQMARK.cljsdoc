@@ -1,4 +1,4 @@
-===== Example#475b71
+===== Example
 
 ```
 user=> (reversible? [])

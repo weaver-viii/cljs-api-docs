@@ -1,4 +1,4 @@
-===== Example#25d33a
+===== Example
 
 ```
 user=> (difference #{1 2 3})
@@ -9,7 +9,7 @@ user=> (difference #{1 2 3} #{1} #{1 4} #{3})
 #{2}
 ```
 
-===== Example#25d33a
+===== Example
 
 ```
 user=> (difference (set (keys {:1 1 :2 2 :3 3})) (set (keys {:1 1 :2 2})))

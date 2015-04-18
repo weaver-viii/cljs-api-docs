@@ -1,4 +1,4 @@
-===== Example#624275
+===== Example
 
 ```
 user=> (map-indexed (fn [idx itm] [idx itm]) "foobar")
@@ -7,7 +7,7 @@ user=> (map-indexed (fn [idx itm] [idx itm]) "foobar")
 
 ```
 
-===== Example#624275
+===== Example
 
 ```
 ;; or simply

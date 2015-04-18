@@ -1,4 +1,4 @@
-===== Example#1bb73d
+===== Example
 
 ```
 ;; (keyword name): name can be string, symbol, or keyword.
@@ -27,7 +27,7 @@ user=> (keyword (str *ns*) "foo")
 :user/foo
 ```
 
-===== Example#1bb73d
+===== Example
 
 ```
 ;; some gotchas to be aware of:
@@ -55,7 +55,7 @@ user=> (keyword "/abc/def/ghi")
 :/abc/def/ghi
 ```
 
-===== Example#1bb73d
+===== Example
 
 ```
 ;; You can define namespaced keywords using '::'

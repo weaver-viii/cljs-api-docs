@@ -1,4 +1,4 @@
-===== Example#8ac3f6
+===== Example
 
 ```
 ;; Checking numbers
@@ -54,7 +54,7 @@ java.lang.Exception: Can't take value of a macro: #'clojure.core/fn (NO_SOURCE_F
 
 ```
 
-===== Example#8ac3f6
+===== Example
 
 ```
 ;This example demonstrates how to add type information to regular clojure maps

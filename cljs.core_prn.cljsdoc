@@ -1,4 +1,4 @@
-===== Example#687b8b
+===== Example
 
 ```
 user=> (prn "fred" 1)

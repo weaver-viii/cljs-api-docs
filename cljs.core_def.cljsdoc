@@ -1,4 +1,4 @@
-===== Example#0c77bc
+===== Example
 
 ```
 user=> (def my-val 5)
@@ -8,7 +8,7 @@ user=> my-val
 5
 ```
 
-===== Example#0c77bc
+===== Example
 
 ```
 user=> (def my-function (fn [x] (* x x x)))
@@ -17,7 +17,7 @@ user=> (my-function 4)
 64
 ```
 
-===== Example#0c77bc
+===== Example
 
 ```
 ;; This is an example of setting a docstring during a def.
@@ -35,7 +35,7 @@ user> ted-nugent
 
 ```
 
-===== Example#0c77bc
+===== Example
 
 ```
 ;; give function another name

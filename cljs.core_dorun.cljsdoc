@@ -1,4 +1,4 @@
-===== Example#2a563e
+===== Example
 
 ```
 <pre>
@@ -13,7 +13,7 @@ nil
 </pre>
 ```
 
-===== Example#2a563e
+===== Example
 
 ```
 user=> (let [x (atom 0)]
@@ -22,7 +22,7 @@ user=> (let [x (atom 0)]
 10
 ```
 
-===== Example#2a563e
+===== Example
 
 ```
 user=> (dorun (map #(println "hi" %) ["mum" "dad" "sister"]))

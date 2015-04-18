@@ -1,4 +1,4 @@
-===== Example#28d1d6
+===== Example
 
 ```
 ;; We can use get-in for reaching into nested maps:
@@ -40,7 +40,7 @@ user=> (get-in mv [:pets 1 :type])
 
 ```
 
-===== Example#28d1d6
+===== Example
 
 ```
 (def s1 [[:000-00-0000 "TYPE 1" "JACKSON" "FRED"]
@@ -58,13 +58,13 @@ user=> (get-in mv [:pets 1 :type])
 (:000-00-0000 "JACKSON" "FRED" :000-00-0001 "SIMPSON" "HOMER" :000-00-0002 "SMITH" "SUSAN")
 ```
 
-===== Example#28d1d6
+===== Example
 
 ```
 ;; spam link removed
 ```
 
-===== Example#28d1d6
+===== Example
 
 ```
 ;; Introduction of references is jarring to get-in usage
@@ -95,7 +95,7 @@ user=> (get-in mv [:pets 1 :type])
 ;;=> :hamster
 ```
 
-===== Example#28d1d6
+===== Example
 
 ```
 ;; If the nested structure contains list, it does not work, because list is 

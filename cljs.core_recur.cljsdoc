@@ -1,4 +1,4 @@
-===== Example#5eec34
+===== Example
 
 ```
 (def factorial
@@ -12,7 +12,7 @@
 ))))
 ```
 
-===== Example#5eec34
+===== Example
 
 ```
 ; A loop that sums the numbers 10 + 9 + 8 + ...
@@ -27,7 +27,7 @@
     (recur (+ cnt sum) (dec cnt))))
 ```
 
-===== Example#5eec34
+===== Example
 
 ```
 (loop [i 0]  
@@ -37,7 +37,7 @@
 ))
 ```
 
-===== Example#5eec34
+===== Example
 
 ```
 (defn compute-across [func elements value]

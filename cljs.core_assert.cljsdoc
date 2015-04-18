@@ -1,4 +1,4 @@
-===== Example#6fc003
+===== Example
 
 ```
 user=> (assert true)
@@ -20,7 +20,7 @@ user=> (assert "foo")
 nil
 ```
 
-===== Example#6fc003
+===== Example
 
 ```
 ;; Messages can help you track down what went wrong.

@@ -1,4 +1,4 @@
-===== Example#00bb01
+===== Example
 
 ```
 ;; notice that conjoining to a vector is done at the end
@@ -36,7 +36,7 @@
 
 ```
 
-===== Example#00bb01
+===== Example
 
 ```
 ;; conjoin shows similar behaviour to cons
@@ -46,7 +46,7 @@
 ;;=> ["a" "b" "c" ["a" "b" "c"]]
 ```
 
-===== Example#00bb01
+===== Example
 
 ```
 ;; conjoin nil with x or xs
@@ -57,7 +57,7 @@
 ;;=> (4 3)
 ```
 
-===== Example#00bb01
+===== Example
 
 ```
 ;; maps and sets are treated differently
@@ -72,7 +72,7 @@
 
 ```
 
-===== Example#00bb01
+===== Example
 
 ```
 ;; When conjoining into a map, vector pairs may be provided:

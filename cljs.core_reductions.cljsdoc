@@ -1,4 +1,4 @@
-===== Example#edb6ca
+===== Example
 
 ```
 user=> (reductions + [1 1 1 1])
@@ -13,14 +13,14 @@ nil
 
 ```
 
-===== Example#edb6ca
+===== Example
 
 ```
 user=> (reductions conj [] '(1 2 3))
 ([] [1] [1 2] [1 2 3])
 ```
 
-===== Example#edb6ca
+===== Example
 
 ```
 user=> (reductions + [1 2 3 4 5])

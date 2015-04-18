@@ -1,4 +1,4 @@
-===== Example#8f8c8a
+===== Example
 
 ```
 user=> (select odd? #{1 2 3} )

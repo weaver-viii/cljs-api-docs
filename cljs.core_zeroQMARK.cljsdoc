@@ -1,4 +1,4 @@
-===== Example#f32cb8
+===== Example
 
 ```
 (zero? 0)               ;;=> true

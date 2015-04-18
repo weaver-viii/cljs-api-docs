@@ -1,4 +1,4 @@
-===== Example#57cafe
+===== Example
 
 ```
 Let's assume you want to apply a function to a vector of maps,
@@ -22,7 +22,7 @@ An easy way to do so is using reduce-kv,
 => ({:b 3, :a 2} {:b 5, :a 4})
 ```
 
-===== Example#57cafe
+===== Example
 
 ```
 ;; Swap keys and values in a map

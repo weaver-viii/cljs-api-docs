@@ -1,4 +1,4 @@
-===== Example#232f44
+===== Example
 
 ```
 (use '[clojure.set :only (index)])

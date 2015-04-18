@@ -1,4 +1,4 @@
-===== Example#a53d55
+===== Example
 
 ```
 ;; create hash map the long way
@@ -23,7 +23,7 @@ user=> (hash-map :key1 'val1, 'key2 :val2, [:compound :key] nil)
 
 ```
 
-===== Example#a53d55
+===== Example
 
 ```
 user=> (map #(hash-map % 0) (seq "abcdefgh"))
@@ -33,7 +33,7 @@ user=> (apply hash-map (.split "a 1 b 2 c 3" " "))
 {"a" "1", "b" "2", "c" "3"}
 ```
 
-===== Example#a53d55
+===== Example
 
 ```
 ; a hash map can be stored in a var by using `def`
@@ -43,7 +43,7 @@ user=> person
 {:age 24, :name "Steve", :salary 7886, :company "Acme"}
 ```
 
-===== Example#a53d55
+===== Example
 
 ```
 ;; Take a sequence of sequences (vector of vectors, and create a map

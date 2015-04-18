@@ -1,4 +1,4 @@
-===== Example#f65a11
+===== Example
 
 ```
 ;; An example of using the "thread-last" macro to get
@@ -20,7 +20,7 @@ user=> (reduce +
 
 ```
 
-===== Example#f65a11
+===== Example
 
 ```
 user=> (def c 5)

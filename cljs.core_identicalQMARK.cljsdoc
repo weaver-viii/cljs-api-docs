@@ -1,4 +1,4 @@
-===== Example#9c56f2
+===== Example
 
 ```
 user=> (def x 1)
@@ -15,7 +15,7 @@ user=> (identical? 'a 'a)
 false
 ```
 
-===== Example#9c56f2
+===== Example
 
 ```
 user=> (def x {:foo 1, :bar -3})

@@ -1,4 +1,4 @@
-===== Example#d255c9
+===== Example
 
 ```
 ;; `contains?` is straightforward for maps:
@@ -28,7 +28,7 @@
 
 ```
 
-===== Example#d255c9
+===== Example
 
 ```
 ;; Can be used to test set membership

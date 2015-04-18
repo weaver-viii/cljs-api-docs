@@ -1,4 +1,4 @@
-===== Example#3384c4
+===== Example
 
 ```
 ;; (quot m n) is the value of m/n, rounded towards 0 to the nearest integer.
@@ -24,7 +24,7 @@ ArithmeticException / by zero  clojure.lang.Numbers.quotient (Numbers.java:1764)
 
 ```
 
-===== Example#3384c4
+===== Example
 
 ```
 ;; note that the "/" function and the quot function are not equivalent

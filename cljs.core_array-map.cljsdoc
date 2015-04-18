@@ -1,11 +1,11 @@
-===== Example#2c0793
+===== Example
 
 ```
 user=> (array-map [1 2] [3 4 5])
 {[1 2] [3 4 5]}
 ```
 
-===== Example#2c0793
+===== Example
 
 ```
 user=> (array-map :a 10)
@@ -22,7 +22,7 @@ user=> (apply assoc {} [:a 10 :b 20 :c 30]) ;same result using assoc
 
 ```
 
-===== Example#2c0793
+===== Example
 
 ```
 user=> (keys (assoc (array-map :foo 10 :bar 20) :baz 30))

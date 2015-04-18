@@ -1,4 +1,4 @@
-===== Example#1f29d5
+===== Example
 
 ```
 (false? false) ;=> true

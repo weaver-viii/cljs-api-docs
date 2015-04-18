@@ -1,4 +1,4 @@
-===== Example#4b76ed
+===== Example
 
 ```
 user=> (def large-vec (vec (range 0 10000)))
@@ -14,7 +14,7 @@ user=> (time (peek large-vec))
 
 ```
 
-===== Example#4b76ed
+===== Example
 
 ```
 user=> (peek '(:a :b :c))

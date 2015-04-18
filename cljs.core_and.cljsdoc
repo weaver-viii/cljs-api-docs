@@ -1,4 +1,4 @@
-===== Example#ef8642
+===== Example
 
 ```
 user=> (and true true)
@@ -26,7 +26,7 @@ user=> (and (constantly true) (> 2 1))
 true
 ```
 
-===== Example#ef8642
+===== Example
 
 ```
 ;; See examples for "if" explaining Clojure's idea of logical true

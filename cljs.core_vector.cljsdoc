@@ -1,4 +1,4 @@
-===== Example#deccef
+===== Example
 
 ```
 ;; create an empty vector the long way
@@ -34,7 +34,7 @@ true
 
 ```
 
-===== Example#deccef
+===== Example
 
 ```
 ;; Destructuring with a vector, inside a "let" form, a simple case (a symbol
@@ -59,7 +59,7 @@ user=> (let [[first-element second-element third-element fourth-element] my-vect
 "first=1 second=2 third=3 fourth=4"
 ```
 
-===== Example#deccef
+===== Example
 
 ```
 ;; Destructuring with a vector, inside a "let" form, more complex cases:

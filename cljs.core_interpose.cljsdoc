@@ -1,4 +1,4 @@
-===== Example#8b71e8
+===== Example
 
 ```
 ;; The quintessential interpose example:
@@ -16,7 +16,7 @@ user> (join ", " my-strings)
 => "one, two, three"
 ```
 
-===== Example#8b71e8
+===== Example
 
 ```
 ;This example converts what would be comma-separated values into pipe '|' ;separated values for alternate database loads. By switching delimiters, 

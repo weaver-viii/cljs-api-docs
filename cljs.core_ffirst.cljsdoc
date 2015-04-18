@@ -1,4 +1,4 @@
-===== Example#28eb31
+===== Example
 
 ```
 user=> (ffirst '([]))
@@ -11,7 +11,7 @@ user=> (ffirst '([a b c] [b a c]))
 a
 ```
 
-===== Example#28eb31
+===== Example
 
 ```
 user=> (first {:b 2 :a 1 :c 3})

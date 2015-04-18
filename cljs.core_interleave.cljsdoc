@@ -1,4 +1,4 @@
-===== Example#087651
+===== Example
 
 ```
 ;; This example takes a list of keys and a separate list of values and 
@@ -11,7 +11,7 @@
 
 ```
 
-===== Example#087651
+===== Example
 
 ```
 ;; Simple example:
@@ -19,7 +19,7 @@
 ;;=> (:a 1 :b 2 :c 3)
 ```
 
-===== Example#087651
+===== Example
 
 ```
 ;; The shortest input stops interleave:
@@ -31,7 +31,7 @@
 ;;=> (:a 1 :b 2)
 ```
 
-===== Example#087651
+===== Example
 
 ```
 (def s1 [[:000-00-0000 "TYPE 1" "JACKSON" "FRED"]
@@ -44,7 +44,7 @@
 ;;    :000-00-0002 "TYPE 4")
 ```
 
-===== Example#087651
+===== Example
 
 ```
 (def s1 [[:000-00-0000 "TYPE 1" "JACKSON" "FRED"]

@@ -1,4 +1,4 @@
-===== Example#689a09
+===== Example
 
 ```
 ;; build tuples over sets with the same cardinality 
@@ -11,14 +11,14 @@
 
 ```
 
-===== Example#689a09
+===== Example
 
 ```
 ;; See examples for "if" explaining Clojure's idea of logical true
 ;; and logical false.
 ```
 
-===== Example#689a09
+===== Example
 
 ```
 ;; when-not is similar to unless (in other languages).

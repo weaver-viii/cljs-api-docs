@@ -1,4 +1,4 @@
-===== Example#8e7b9d
+===== Example
 
 ```
 user=> (take 5 (repeat "x"))

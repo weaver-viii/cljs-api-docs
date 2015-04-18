@@ -1,4 +1,4 @@
-===== Example#8f3023
+===== Example
 
 ```
 (filter even? (range 10))

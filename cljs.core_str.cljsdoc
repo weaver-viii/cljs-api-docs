@@ -1,4 +1,4 @@
-===== Example#be7128
+===== Example
 
 ```
 user=> "some string"
@@ -26,7 +26,7 @@ user=> (str [1 2 3])
 
 ```
 
-===== Example#be7128
+===== Example
 
 ```
 ;; Destructuring with a string, getting just a few characters from it

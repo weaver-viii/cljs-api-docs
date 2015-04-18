@@ -1,4 +1,4 @@
-===== Example#edb5e1
+===== Example
 
 ```
 user=> (def a (atom 0))
@@ -30,7 +30,7 @@ user=> (deref d)
 3
 ```
 
-===== Example#edb5e1
+===== Example
 
 ```
 user=> (def a (promise))

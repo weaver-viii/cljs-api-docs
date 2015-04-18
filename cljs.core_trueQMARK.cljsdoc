@@ -1,4 +1,4 @@
-===== Example#ceffec
+===== Example
 
 ```
 user=> (true? true)

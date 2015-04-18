@@ -1,4 +1,4 @@
-===== Example#927b8b
+===== Example
 
 ```
 user=> (use 'clojure.pprint)

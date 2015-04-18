@@ -1,4 +1,4 @@
-===== Example#083be9
+===== Example
 
 ```
 ;; use make-hierarchy to build your own local hierarchy for derive, isa?, etc. 
@@ -23,7 +23,7 @@ user=> (ancestors h ::square)
 user=>
 ```
 
-===== Example#083be9
+===== Example
 
 ```
 ;; the above hierarchy can be built together with a thread macro:

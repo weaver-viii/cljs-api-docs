@@ -1,4 +1,4 @@
-===== Example#c5cbb2
+===== Example
 
 ```
 ;; Use of `->` (the "thread-first" macro) can help make code
@@ -45,7 +45,7 @@ user=> (:city (:address (:employer person)))
 
 ```
 
-===== Example#c5cbb2
+===== Example
 
 ```
 ;; Your own REPL! (Read Eval Print Loop)
@@ -88,7 +88,7 @@ user=> (->> (read) (eval) (println) (while true))
 
 ```
 
-===== Example#c5cbb2
+===== Example
 
 ```
 user=> (def c 5)

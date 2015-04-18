@@ -1,4 +1,4 @@
-===== Example#7c1ee7
+===== Example
 
 ```
 (nthrest (range 10) 5)
@@ -16,7 +16,7 @@
 ;;=> (5 6 7)
 ```
 
-===== Example#7c1ee7
+===== Example
 
 ```
 ;; drop is also similar, but lazy 

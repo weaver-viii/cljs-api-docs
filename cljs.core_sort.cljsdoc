@@ -1,4 +1,4 @@
-===== Example#47f1c7
+===== Example
 
 ```
 user=> (sort [3 1 2 4])
@@ -16,7 +16,7 @@ user=> (sort-by last {:b 1 :c 3 :a 2})
 ([:b 1] [:a 2] [:c 3])
 ```
 
-===== Example#47f1c7
+===== Example
 
 ```
 ;; make a struct 'goods'. it assumes that every goods has
@@ -50,7 +50,7 @@ user> (sort-by :price < data) ; compare this with the above.
 
 ```
 
-===== Example#47f1c7
+===== Example
 
 ```
 ;; Warning: You can sort a Java array and get back a sorted immutable Clojure

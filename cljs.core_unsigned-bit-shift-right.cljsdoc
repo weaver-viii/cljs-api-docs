@@ -1,4 +1,4 @@
-===== Example#0c5c6d
+===== Example
 
 ```
 user=> (format "%016x" -1)

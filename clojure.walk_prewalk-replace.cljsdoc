@@ -1,11 +1,11 @@
-===== Example#faa49e
+===== Example
 
 ```
 user=> (clojure.walk/prewalk-replace '{a b} '(c (d a)))
 (c (d b))
 ```
 
-===== Example#faa49e
+===== Example
 
 ```
 (use 'clojure.walk)

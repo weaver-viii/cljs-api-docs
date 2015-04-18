@@ -1,4 +1,4 @@
-===== Example#989d48
+===== Example
 
 ```
 user=> (vec '(1 2 3))
@@ -20,7 +20,7 @@ user=> (vec nil)
 []
 ```
 
-===== Example#989d48
+===== Example
 
 ```
 ;; Warning.  If the arg is a Java array, then the returned vector will alias it,
