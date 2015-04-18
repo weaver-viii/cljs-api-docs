@@ -1,4 +1,4 @@
-===== Example
+===== Example#eb2a3a
 
 ```
 ;successful test example
@@ -31,7 +31,7 @@ Ran 6 tests containing 10 assertions.
 {:type :summary, :test 6, :pass 10, :fail 0, :error 0}
 ```
 
-===== Example
+===== Example#eb2a3a
 
 ```
 ;failure test example

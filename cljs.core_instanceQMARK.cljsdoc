@@ -1,4 +1,4 @@
-===== Example
+===== Example#f13f2a
 
 ```
 user=> (instance? Long 1)
@@ -14,7 +14,7 @@ true
 
 ```
 
-===== Example
+===== Example#f13f2a
 
 ```
 user=> (def al (new java.util.ArrayList))
@@ -27,7 +27,7 @@ user=> (instance? java.lang.String al)
 false
 ```
 
-===== Example
+===== Example#f13f2a
 
 ```
 ;; Some things are more than what they seem to be at first glance

@@ -1,4 +1,4 @@
-===== Example
+===== Example#9024fb
 
 ```
 (try-expr "Can I call this function?" (= 1 1))

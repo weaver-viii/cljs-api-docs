@@ -1,4 +1,4 @@
-===== Example
+===== Example#b3a274
 
 ```
 user=> (import (java.awt.datatransfer Transferable DataFlavor)

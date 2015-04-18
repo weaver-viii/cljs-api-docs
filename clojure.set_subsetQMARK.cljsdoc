@@ -1,4 +1,4 @@
-===== Example
+===== Example#edc034
 
 ```
 user> (clojure.set/subset? #{2 3} #{1 2 3 4})

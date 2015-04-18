@@ -1,4 +1,4 @@
-===== Example
+===== Example#090942
 
 ```
 ;; prepend 1 to a list
@@ -10,7 +10,7 @@
 ;;=> ([1 2] 4 5 6)
 ```
 
-===== Example
+===== Example#090942
 
 ```
 ;; may return results of different types but always a seq

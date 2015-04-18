@@ -1,4 +1,4 @@
-===== Example
+===== Example#891fee
 
 ```
 (def xmlzipper (clojure.zip/xml-zip (clojure.xml/parse "resources/somedata.xml")))
@@ -14,7 +14,7 @@
 
 ```
 
-===== Example
+===== Example#891fee
 
 ```
 (require '[clojure.zip :as z])
@@ -46,7 +46,7 @@
 
 ```
 
-===== Example
+===== Example#891fee
 
 ```
 (require '[clojure.xml :as xml]

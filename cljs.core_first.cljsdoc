@@ -1,11 +1,11 @@
-===== Example
+===== Example#89c787
 
 ```
 (first '(:alpha :bravo :charlie))
 ;;=> :alpha
 ```
 
-===== Example
+===== Example#89c787
 
 ```
 ;; nil is a valid (but empty) collection.

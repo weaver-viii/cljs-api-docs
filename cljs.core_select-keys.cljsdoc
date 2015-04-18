@@ -1,4 +1,4 @@
-===== Example
+===== Example#d842fe
 
 ```
 user=> (select-keys {:a 1 :b 2} [:a])

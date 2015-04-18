@@ -1,4 +1,4 @@
-===== Example
+===== Example#96f752
 
 ```
 user=> (def *matcher* (re-matcher #"\d+" "abc12345def"))
@@ -20,7 +20,7 @@ user=> (re-find #"\d+" "abc12345def")
 
 ```
 
-===== Example
+===== Example#96f752
 
 ```
 ;; re-find can be used to iterate through re matches in the string
@@ -48,7 +48,7 @@ user=> (re-find matcher)
 nil
 ```
 
-===== Example
+===== Example#96f752
 
 ```
 ;; When there are parenthesized groups in the pattern and re-find
@@ -97,7 +97,7 @@ user=> (re-find #"(?:\S+):(\d+)" line)
 
 ```
 
-===== Example
+===== Example#96f752
 
 ```
 ;;It's possible to get variables out of your string with regexp
@@ -110,7 +110,7 @@ user=> (nth *1 1)
 ;;thanks kotarak @ stackoverflow.com for this one
 ```
 
-===== Example
+===== Example#96f752
 
 ```
 ;; If your input has line delimiters you can switch on multiline with (?m)
@@ -120,7 +120,7 @@ user=>(re-find #"(?im)^target.*$" testcase)
 "Target Line"
 ```
 
-===== Example
+===== Example#96f752
 
 ```
 ;; Note: See clojure.core/subs for discussion of behavior of substrings

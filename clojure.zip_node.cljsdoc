@@ -1,4 +1,4 @@
-===== Example
+===== Example#e84668
 
 ```
 user=>(require '[clojure.zip :as zip])

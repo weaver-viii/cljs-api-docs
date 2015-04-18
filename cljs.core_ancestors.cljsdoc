@@ -1,4 +1,4 @@
-===== Example
+===== Example#1472f1
 
 ```
 ;; make up a hierarchy a beagle is a sporting breed is a dog is a quadraped is an 
@@ -17,7 +17,7 @@ user=> (ancestors ::beagle)
 user=>
 ```
 
-===== Example
+===== Example#1472f1
 
 ```
 ;; use ancestors to show which classes ArrayList derives from and which

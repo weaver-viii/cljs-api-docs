@@ -1,4 +1,4 @@
-===== Example
+===== Example#a5faae
 
 ```
 ;; 2 is even, so `some` stops there, 3 and 4 are never tested
@@ -10,7 +10,7 @@
 ;;=> nil
 ```
 
-===== Example
+===== Example#a5faae
 
 ```
 (some true? [false false false])
@@ -24,7 +24,7 @@
 
 ```
 
-===== Example
+===== Example#a5faae
 
 ```
 (some #(= 5 %) [1 2 3 4 5])
@@ -34,7 +34,7 @@
 ;;=> nil
 ```
 
-===== Example
+===== Example#a5faae
 
 ```
 ;; the first logical true value is returned, i.e. anything but nil and false
@@ -43,7 +43,7 @@
 ;;=> 2
 ```
 
-===== Example
+===== Example#a5faae
 
 ```
 ;; a hash acts as a function returning nil when the
@@ -61,7 +61,7 @@
 ;;=> "two"
 ```
 
-===== Example
+===== Example#a5faae
 
 ```
 ;; some can be used as a substitute for (first (filter ...
@@ -76,7 +76,7 @@
 
 ```
 
-===== Example
+===== Example#a5faae
 
 ```
 ;; find a whether a word is in a list of words.
@@ -86,7 +86,7 @@
 ;;=> true
 ```
 
-===== Example
+===== Example#a5faae
 
 ```
 ;; here we see sets being used as a predicates
@@ -100,7 +100,7 @@
 
 ```
 
-===== Example
+===== Example#a5faae
 
 ```
 ;; be careful, 'nil' can occasionally be returned on success.

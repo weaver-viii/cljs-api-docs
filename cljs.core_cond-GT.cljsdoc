@@ -1,4 +1,4 @@
-===== Example
+===== Example#fc1a16
 
 ```
 
@@ -11,7 +11,7 @@
 ;; only the form  and not the test part of the clause.
 ```
 
-===== Example
+===== Example#fc1a16
 
 ```
 Useful when you want to conditionally evaluate expressions and thread them together. For instance, the following returns a vector containing the names (as symbols) of the implementing classes of instance.

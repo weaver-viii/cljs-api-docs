@@ -1,4 +1,4 @@
-===== Example
+===== Example#b709a4
 
 ```
 (def users [{:name "James" :age 26}  {:name "John" :age 43}])
@@ -19,7 +19,7 @@
 ;; From http://clojure-examples.appspot.com/clojure.core/assoc-in
 ```
 
-===== Example
+===== Example#b709a4
 
 ```
 ;; can be used to update a mutable item.
@@ -30,7 +30,7 @@ def ppl (atom {"persons" {"joe" {:age 1}}}))
 ;;=> {"persons" {"joe" {:age 1}, "bob" {:age 11}}}
 ```
 
-===== Example
+===== Example#b709a4
 
 ```
 ;; be careful with that empty path sequence, it's seldom what you want
@@ -38,7 +38,7 @@ def ppl (atom {"persons" {"joe" {:age 1}}}))
 ;;=> {nil {:k :v}}
 ```
 
-===== Example
+===== Example#b709a4
 
 ```
 ;; another example of updating a mutable item.

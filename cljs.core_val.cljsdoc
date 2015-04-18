@@ -1,4 +1,4 @@
-===== Example
+===== Example#b64880
 
 ```
 user=> (map val {:a 1 :b 2})
@@ -6,14 +6,14 @@ user=> (map val {:a 1 :b 2})
 
 ```
 
-===== Example
+===== Example#b64880
 
 ```
 (val (first {:one :two}))
 :two
 ```
 
-===== Example
+===== Example#b64880
 
 ```
 ;syntactic sugar for (val)

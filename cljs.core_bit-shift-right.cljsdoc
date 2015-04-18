@@ -1,4 +1,4 @@
-===== Example
+===== Example#ac01ef
 
 ```
 ;; Convert number into list of bits:
@@ -16,7 +16,7 @@
 
 ```
 
-===== Example
+===== Example#ac01ef
 
 ```
 (bit-shift-right 2r1101 0)     ;;=> 13

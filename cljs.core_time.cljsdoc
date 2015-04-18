@@ -1,4 +1,4 @@
-===== Example
+===== Example#8abcc0
 
 ```
 user> (time (Thread/sleep 100))
@@ -6,14 +6,14 @@ user> (time (Thread/sleep 100))
 nil
 ```
 
-===== Example
+===== Example#8abcc0
 
 ```
 ;when working with lazy seqs
 (time (doall (...)))
 ```
 
-===== Example
+===== Example#8abcc0
 
 ```
 ;; Time how long it takes to write a string to a file 100 times
@@ -27,7 +27,7 @@ user=> (time (time-test))
 "Elapsed time: 19.596371 msecs"
 ```
 
-===== Example
+===== Example#8abcc0
 
 ```
 user=> (time (Thread/sleep 1000))

@@ -1,4 +1,4 @@
-===== Example
+===== Example#03c5e8
 
 ```
 (make-array Integer/TYPE 3)
@@ -15,7 +15,7 @@
 ;    Void/TYPE
 ```
 
-===== Example
+===== Example#03c5e8
 
 ```
 user=> (pprint (make-array Double/TYPE 3))

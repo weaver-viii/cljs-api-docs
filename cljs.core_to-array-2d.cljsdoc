@@ -1,4 +1,4 @@
-===== Example
+===== Example#c58bac
 
 ```
 user> (def a (to-array-2d [[1 2 3][4 5 6]]))
@@ -22,7 +22,7 @@ nil
 user> 
 ```
 
-===== Example
+===== Example#c58bac
 
 ```
 ;; quick example of a ragged array where the length of each element of the 

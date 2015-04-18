@@ -1,4 +1,4 @@
-===== Example
+===== Example#d231ac
 
 ```
 user=> (def v (delay (do (println "start sleeping") 

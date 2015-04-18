@@ -1,4 +1,4 @@
-===== Example
+===== Example#e44c99
 
 ```
 user=> (re-seq #"\d" "clojure 1.1.0")
@@ -6,7 +6,7 @@ user=> (re-seq #"\d" "clojure 1.1.0")
 
 ```
 
-===== Example
+===== Example#e44c99
 
 ```
 ;; Get a sequence of words out of a string.
@@ -15,7 +15,7 @@ user=> (re-seq #"\w+" "mary had a little lamb")
 
 ```
 
-===== Example
+===== Example#e44c99
 
 ```
 ;; Parenthesized groups in the regex cause each returned match to be a
@@ -28,7 +28,7 @@ user=> (re-seq #"(\S+):(\d+)" line)
 
 ```
 
-===== Example
+===== Example#e44c99
 
 ```
 ;; Note: See clojure.core/subs for discussion of behavior of substrings

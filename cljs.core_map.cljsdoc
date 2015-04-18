@@ -1,4 +1,4 @@
-===== Example
+===== Example#683ca6
 
 ```
 (map inc [1 2 3 4 5])
@@ -35,7 +35,7 @@
 ;; From http://clojure-examples.appspot.com/clojure.core/map
 ```
 
-===== Example
+===== Example#683ca6
 
 ```
 user=> (map #(vector (first %) (* 2 (second %)))
@@ -47,7 +47,7 @@ user=> (into {} *1)
 
 ```
 
-===== Example
+===== Example#683ca6
 
 ```
 ;; Use a hash-map as a function to translate values in a collection from the 
@@ -61,7 +61,7 @@ user=> (filter identity (map {2 "two" 3 "three"} [5 3 2]))
 ("three" "two")
 ```
 
-===== Example
+===== Example#683ca6
 
 ```
 ;; mapping over a hash-map applies (into) first. 
@@ -81,7 +81,7 @@ nil nil)
 (:val :val1)
 ```
 
-===== Example
+===== Example#683ca6
 
 ```
 (map fn [a 4 x]
@@ -106,7 +106,7 @@ user=> (list (list 1 'a 4) (list 2 'b 5))
 ((1 a 4) (2 b 5))
 ```
 
-===== Example
+===== Example#683ca6
 
 ```
 ; map passed two collection arguments. From 4Clojure Problem #157

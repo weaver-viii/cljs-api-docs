@@ -1,4 +1,4 @@
-===== Example
+===== Example#b55f2d
 
 ```
 ;; Each node is a number or a seq, 
@@ -19,7 +19,7 @@ user=> (tree-seq seq? identity '((1 2 (3)) (4)))
 
 ```
 
-===== Example
+===== Example#b55f2d
 
 ```
 user=> (tree-seq map? #(interleave (keys %) (vals %)) {:a 1 :b {:c 3 :d 4 :e {:f 6 :g 7}}})
@@ -27,7 +27,7 @@ user=> (tree-seq map? #(interleave (keys %) (vals %)) {:a 1 :b {:c 3 :d 4 :e {:f
 ({:a 1, :b {:c 3, :d 4, :e {:f 6, :g 7}}} :a 1 :b {:c 3, :d 4, :e {:f 6, :g 7}} :c 3 :d 4 :e {:f 6, :g 7} :f 6 :g 7)
 ```
 
-===== Example
+===== Example#b55f2d
 
 ```
 ;; Each node is a (node-root child1 child2 ...),
@@ -44,7 +44,7 @@ user=> (map first (tree-seq next rest '(:A (:B (:D) (:E)) (:C (:F)))))
 (:A :B :D :E :C :F)
 ```
 
-===== Example
+===== Example#b55f2d
 
 ```
 ;; FYI, previous example doesn't always work:
@@ -54,7 +54,7 @@ user> (map first (tree-seq next rest '((1 2 (3)) (4))))
 
 ```
 
-===== Example
+===== Example#b55f2d
 
 ```
 user=> (tree-seq seq? seq [[1 2 [3]] [4]])
@@ -68,7 +68,7 @@ user=> (tree-seq seq? seq '((1 2 (3)) (4)))
 
 ```
 
-===== Example
+===== Example#b55f2d
 
 ```
 ;; Use tree-seq to recursively find all files 

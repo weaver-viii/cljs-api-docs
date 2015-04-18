@@ -1,4 +1,4 @@
-===== Example
+===== Example#b9de20
 
 ```
 user=> (def *files* (file-seq (java.io.File. "/tmp/")))

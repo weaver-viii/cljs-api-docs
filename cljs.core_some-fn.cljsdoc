@@ -1,4 +1,4 @@
-===== Example
+===== Example#7be62a
 
 ```
 <pre>
@@ -11,7 +11,7 @@ true
 </pre>
 ```
 
-===== Example
+===== Example#7be62a
 
 ```
 ;; `some-fn` is useful for when you'd use `some` (to find out if any
@@ -30,7 +30,7 @@ true
 ;; what it's looking for. The latter returns false.
 ```
 
-===== Example
+===== Example#7be62a
 
 ```
 ;;; http://en.wikipedia.org/wiki/Fizz_buzz

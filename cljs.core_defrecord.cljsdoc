@@ -1,4 +1,4 @@
-===== Example
+===== Example#e727dd
 
 ```
 ;; from Stu's examples:
@@ -29,7 +29,7 @@
 -> #:user.Person{:fname "Stu", :lname "Halloway", :address #:user.Address{:street "200 N Mangum", :city "Durham", :state "NC", :zip 27702}}
 ```
 
-===== Example
+===== Example#e727dd
 
 ```
 ;; This example shows how to implement a Java interface in defrecord.
@@ -70,7 +70,7 @@
 -> "foo-bar"
 ```
 
-===== Example
+===== Example#e727dd
 
 ```
 ;; prepare a protocol
@@ -94,7 +94,7 @@ user=> (drinky-drinky dude)
 ;; courtessy of Howard Lewis Ship - http://java.dzone.com/articles/changes-cascade-and-cautionary
 ```
 
-===== Example
+===== Example#e727dd
 
 ```
 ; If you define a defrecord in one namespace and want to use it
@@ -125,7 +125,7 @@ user=> (drinky-drinky dude)
   
 ```
 
-===== Example
+===== Example#e727dd
 
 ```
 ;; The map->Recordclass form works only in Clojure 1.3 or higher
@@ -149,7 +149,7 @@ user=> (drinky-drinky dude)
 -> #user.Baz{:a 10, :c 30, :b 20}
 ```
 
-===== Example
+===== Example#e727dd
 
 ```
 ;; Construct a record from a vector.

@@ -1,4 +1,4 @@
-===== Example
+===== Example#d7d7fb
 
 ```
 ;; default value of 'end' is infinity
@@ -40,7 +40,7 @@ user=> (range 10 -10 -1)
 
 ```
 
-===== Example
+===== Example#d7d7fb
 
 ```
 ;; Since clojure 1.2:
@@ -50,7 +50,7 @@ user=> (take 10 (range))
 
 ```
 
-===== Example
+===== Example#d7d7fb
 
 ```
 ;; finite range over java Integers

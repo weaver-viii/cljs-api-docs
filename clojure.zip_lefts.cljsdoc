@@ -1,4 +1,4 @@
-===== Example
+===== Example#eb2638
 
 ```
 (def vz (vector-zip [1 2 3 4 5]))

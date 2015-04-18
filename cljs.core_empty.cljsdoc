@@ -1,4 +1,4 @@
-===== Example
+===== Example#015f48
 
 ```
 (empty '(1 2)) ;; => ()
@@ -33,7 +33,7 @@ empty-q
 
 ```
 
-===== Example
+===== Example#015f48
 
 ```
 ;; The output will not necessarily be of the same JVM class as the input

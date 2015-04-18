@@ -1,11 +1,11 @@
-===== Example
+===== Example#eb6382
 
 ```
 user> (reverse "foo")
 "oof"
 ```
 
-===== Example
+===== Example#eb6382
 
 ```
 ;; clojure.string/reverse correctly treats UTF-16 surrogate pairs

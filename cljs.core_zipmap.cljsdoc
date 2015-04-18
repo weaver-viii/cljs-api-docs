@@ -1,4 +1,4 @@
-===== Example
+===== Example#49822b
 
 ```
 user=> (zipmap [:a :b :c :d :e] [1 2 3 4 5])
@@ -6,7 +6,7 @@ user=> (zipmap [:a :b :c :d :e] [1 2 3 4 5])
 
 ```
 
-===== Example
+===== Example#49822b
 
 ```
 ;; 4 is not included in the result

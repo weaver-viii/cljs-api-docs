@@ -1,4 +1,4 @@
-===== Example
+===== Example#f7bbcf
 
 ```
 (merge-with concat
@@ -14,7 +14,7 @@
 
 ```
 
-===== Example
+===== Example#f7bbcf
 
 ```
 ;; merge two maps using the addition function
@@ -25,7 +25,7 @@
 ;;=> {:c 0, :a 10, :b 100}
 ```
 
-===== Example
+===== Example#f7bbcf
 
 ```
 ;; 'merge-with' works with an arbitrary number of maps:
@@ -40,7 +40,7 @@
 ;;=> {:d 42, :c 15, :a 25, :b 200}
 ```
 
-===== Example
+===== Example#f7bbcf
 
 ```
 ;; Use union to merge sets of elements
@@ -52,7 +52,7 @@
 ;;=> {:c #{1 2 3}, :a #{1 2 3 7 8}, :b #{4 5 6}}
 ```
 
-===== Example
+===== Example#f7bbcf
 
 ```
 ;; Demonstrating difference between merge and merge-with
@@ -66,7 +66,7 @@
 ;;=> {:a 6}
 ```
 
-===== Example
+===== Example#f7bbcf
 
 ```
 ;; Use merge-with and merge to merge values that are one level deep maps.

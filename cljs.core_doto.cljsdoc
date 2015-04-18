@@ -1,4 +1,4 @@
-===== Example
+===== Example#d1b8c3
 
 ```
 ;; Note that even though println returns nil, doto still returns the HashMap object
@@ -11,7 +11,7 @@ user> (doto (java.util.HashMap.)
 
 ```
 
-===== Example
+===== Example#d1b8c3
 
 ```
 ;; quick demonstration of using a Collections function on the resulting ArrayList
@@ -27,7 +27,7 @@ user=> al
 user=>
 ```
 
-===== Example
+===== Example#d1b8c3
 
 ```
 ;; careful when calling 'dotimes' from within a 'doto' statement

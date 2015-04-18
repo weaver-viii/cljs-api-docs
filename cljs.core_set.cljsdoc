@@ -1,4 +1,4 @@
-===== Example
+===== Example#d2d2d5
 
 ```
 ;; returns distinct elements
@@ -25,7 +25,7 @@ user=> (set nil)
 #{}
 ```
 
-===== Example
+===== Example#d2d2d5
 
 ```
 (set [1 2 3 2 1 2 3])

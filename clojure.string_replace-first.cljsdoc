@@ -1,4 +1,4 @@
-===== Example
+===== Example#4a2943
 
 ```
 user=> (use '[clojure.string :only (replace-first)])
@@ -23,7 +23,7 @@ user=> (replace-first "Day need not be SHOUTED." #"(?i)day" "night")
 
 ```
 
-===== Example
+===== Example#4a2943
 
 ```
 user=> (use '[clojure.string :only (replace-first)])
@@ -40,7 +40,7 @@ user=> (replace-first "/path/to/file/name" #"^.*?/" "")
 
 ```
 
-===== Example
+===== Example#4a2943
 
 ```
 ;; Note: When replace-first or replace have a regex pattern as their
@@ -75,7 +75,7 @@ user=> (str/replace-first "fabulous fodder foo food" #"f(o+)(\S+)" (re-qr "$2$1"
 
 ```
 
-===== Example
+===== Example#4a2943
 
 ```
 ;; Note: See clojure.core/subs for discussion of behavior of substrings

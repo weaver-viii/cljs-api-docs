@@ -1,4 +1,4 @@
-===== Example
+===== Example#ca470d
 
 ```
 => (try
@@ -8,7 +8,7 @@
 "caught exception: Divide by zero"
 ```
 
-===== Example
+===== Example#ca470d
 
 ```
 ;; for Clojurescript use js/Object as type

@@ -1,4 +1,4 @@
-===== Example
+===== Example#ab3e7a
 
 ```
 <pre>user=> (empty? ())
@@ -7,7 +7,7 @@ user=> (empty? '(1))
 false</pre>
 ```
 
-===== Example
+===== Example#ab3e7a
 
 ```
 user=> (every? empty? ["" [] () '() {} #{} nil])
@@ -18,7 +18,7 @@ user=> (every? seq ["1" [1] '(1) {:1 1} #{1}])
 true
 ```
 
-===== Example
+===== Example#ab3e7a
 
 ```
 <pre>
@@ -27,7 +27,7 @@ user=> (drop-while empty? ["" [] "foobar"])
 </pre>
 ```
 
-===== Example
+===== Example#ab3e7a
 
 ```
 user=> (empty? nil)

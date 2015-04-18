@@ -1,4 +1,4 @@
-===== Example
+===== Example#f48cb8
 
 ```
 user> (defn foo [] (println "foo"))

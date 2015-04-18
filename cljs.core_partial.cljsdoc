@@ -1,4 +1,4 @@
-===== Example
+===== Example#e2140f
 
 ```
 user=> (def to-english (partial clojure.pprint/cl-format nil "~@(~@[~R~]~^ ~A.~)"))
@@ -9,7 +9,7 @@ user=> (to-english 1234567890)
 
 ```
 
-===== Example
+===== Example#e2140f
 
 ```
 user=> (def hundred-times (partial * 100))
@@ -29,7 +29,7 @@ user=> (add-hundred 5)
 
 ```
 
-===== Example
+===== Example#e2140f
 
 ```
 (def subtract-from-hundred (partial - 100))
@@ -41,7 +41,7 @@ user=> (subtract-from-hundred 10 20)   ; same as (- 100 10 20)
 70
 ```
 
-===== Example
+===== Example#e2140f
 
 ```
 ; Maps exponent to coefficient

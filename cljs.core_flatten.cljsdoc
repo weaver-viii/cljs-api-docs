@@ -1,4 +1,4 @@
-===== Example
+===== Example#f6d2d2
 
 ```
 user=> (flatten [1 [2 3]])

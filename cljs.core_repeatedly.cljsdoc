@@ -1,4 +1,4 @@
-===== Example
+===== Example#c63f57
 
 ```
 ;; these two functions are equivalent 
@@ -17,7 +17,7 @@
 (94 94 94 94 94)
 ```
 
-===== Example
+===== Example#c63f57
 
 ```
 (defn counter []  

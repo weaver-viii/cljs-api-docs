@@ -1,4 +1,4 @@
-===== Example
+===== Example#684694
 
 ```
 user=> (require '[clojure.string :as str])
@@ -13,7 +13,7 @@ user=> (str/split "q1w2e3r4t5y6u7i8o9p0" #"\d+" 5)
 
 ```
 
-===== Example
+===== Example#684694
 
 ```
 ;; Splits a string on space character and joins 
@@ -31,7 +31,7 @@ Fox
 nil
 ```
 
-===== Example
+===== Example#684694
 
 ```
 (use '[clojure.string :only (split triml)])
@@ -64,7 +64,7 @@ user=> (split "Some    words   with\tother whitespace      \n" #"\s")
 
 ```
 
-===== Example
+===== Example#684694
 
 ```
 (use '[clojure.string :only (split)])
@@ -107,7 +107,7 @@ user=> (split "root::0:0:admin:/var/root:" #":" 15)
 
 ```
 
-===== Example
+===== Example#684694
 
 ```
 (:require [clojure.string :as cstr])
@@ -118,7 +118,7 @@ user=> (split "root::0:0:admin:/var/root:" #":" 15)
 ["1321" "61"]
 ```
 
-===== Example
+===== Example#684694
 
 ```
 ;; Note: See clojure.core/subs for discussion of behavior of substrings

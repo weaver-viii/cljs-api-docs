@@ -1,4 +1,4 @@
-===== Example
+===== Example#f277a1
 
 ```
 user=> (lazy-cat [1 2 3] [4 5 6])
@@ -6,7 +6,7 @@ user=> (lazy-cat [1 2 3] [4 5 6])
 
 ```
 
-===== Example
+===== Example#f277a1
 
 ```
 ;; N.B. this example holds onto the head of a lazy seq which should generally be avoided
@@ -16,7 +16,7 @@ user=> (lazy-cat [1 2 3] [4 5 6])
 (take 10 fib-seq)
 ```
 
-===== Example
+===== Example#f277a1
 
 ```
 ;; When the producer function produces a collection, not an element,

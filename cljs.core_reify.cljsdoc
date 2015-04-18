@@ -1,4 +1,4 @@
-===== Example
+===== Example#84d498
 
 ```
 (ns foo)
@@ -44,7 +44,7 @@
 ;;; 4685            ; (apply + '(980 2370 1335))
 ```
 
-===== Example
+===== Example#84d498
 
 ```
 ;; Using a reified FileFilter implementation to obtain only directory files
@@ -56,7 +56,7 @@
 
 ```
 
-===== Example
+===== Example#84d498
 
 ```
 ;;;; This example shows how to reify a multi-arity protocol function
@@ -81,7 +81,7 @@
 
 ```
 
-===== Example
+===== Example#84d498
 
 ```
 ;; Note that nested class is referred via '$' 

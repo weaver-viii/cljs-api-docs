@@ -1,4 +1,4 @@
-===== Example
+===== Example#c32620
 
 ```
 ;; Here are the definitions.
@@ -20,7 +20,7 @@ user=> (binding [max mymax]
 10 ;because max is now acting as min
 ```
 
-===== Example
+===== Example#c32620
 
 ```
 ;; As of Clojure 1.3, vars need to be explicitly marked as ^:dynamic in order for
@@ -44,7 +44,7 @@ user=> (+ x y)
 2
 ```
 
-===== Example
+===== Example#c32620
 
 ```
 ;;Use t like a "template"
@@ -59,7 +59,7 @@ user=> (+ x y)
 => 11
 ```
 
-===== Example
+===== Example#c32620
 
 ```
 ; You can set! bindings. Useful in a stateful programming.
@@ -75,7 +75,7 @@ user=> d
 #<Unbound Unbound: #'user/d>
 ```
 
-===== Example
+===== Example#c32620
 
 ```
 ; Speed test. recur is the preferred way.

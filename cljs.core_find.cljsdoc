@@ -1,4 +1,4 @@
-===== Example
+===== Example#0f0d59
 
 ```
 (find {:a 1 :b 2 :c 3} :a)
@@ -9,7 +9,7 @@
 
 ```
 
-===== Example
+===== Example#0f0d59
 
 ```
 user=> (find [:a :b :c :d] 2)

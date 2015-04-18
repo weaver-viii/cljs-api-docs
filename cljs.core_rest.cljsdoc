@@ -1,11 +1,11 @@
-===== Example
+===== Example#3d37ad
 
 ```
 (rest [1 2 3 4 5])            ;;=> (2 3 4 5)
 (rest ["a" "b" "c" "d" "e"])  ;;=> ("b" "c" "d" "e")
 ```
 
-===== Example
+===== Example#3d37ad
 
 ```
 ;; For the most part rest must take a collection as its argument.
@@ -14,7 +14,7 @@
 ;;=> ()
 ```
 
-===== Example
+===== Example#3d37ad
 
 ```
 ;; There is one case where the input is not required to be a collection.
@@ -23,7 +23,7 @@
 ;;=> ()
 ```
 
-===== Example
+===== Example#3d37ad
 
 ```
 ;; A simple (re-)implementation of 'map' using 'rest' for recursing over a collection.  
@@ -37,7 +37,7 @@
 ;;=> (4 9 25 49 121 169)
 ```
 
-===== Example
+===== Example#3d37ad
 
 ```
 ;; Any collection can be used
@@ -48,7 +48,7 @@
 (rest {1 nil 2 nil 3 nil 4 nil 5 nil}) ;;=> ([2 nil] [3 nil] [4 nil] [5 nil])
 ```
 
-===== Example
+===== Example#3d37ad
 
 ```
 ;; Difference between next and rest:
