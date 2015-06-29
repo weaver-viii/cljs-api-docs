@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2814
+clojurescript @ r2816
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:9187-9206](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L9187-L9206)</ins>
+            └── <ins>[core.cljs:9187-9206](https://github.com/clojure/clojurescript/blob/r2816/src/cljs/cljs/core.cljs#L9187-L9206)</ins>
 </pre>
 
 
@@ -83,7 +83,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ex-info",
  :source {:code "(defn ex-info\n  ([msg data] (ex-info msg data nil))\n  ([msg data cause]\n    ;; this way each new ExceptionInfo instance will inherit\n    ;; stack property from newly created Error\n    (set! (.-prototype ExceptionInfo) (js/Error msg))\n    (set! (.. ExceptionInfo -prototype -name) \"ExceptionInfo\")\n    (set! (.. ExceptionInfo -prototype -constructor) ExceptionInfo)\n\n    ;; since we've changed the prototype, we need to\n    ;; re-establish protocol implementations here\n    (set! (.. ExceptionInfo -prototype -toString) pr-str*)\n    (extend-type ExceptionInfo\n      IPrintWithWriter\n      (-pr-writer [obj writer opts]\n        (pr-writer-ex-info obj writer opts)))\n    (ExceptionInfo. msg data cause)))",
           :repo "clojurescript",
-          :tag "r2814",
+          :tag "r2816",
           :filename "src/cljs/cljs/core.cljs",
           :lines [9187 9206]},
  :full-name "cljs.core/ex-info",

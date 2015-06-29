@@ -55,11 +55,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2814
+clojurescript @ r2816
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3309-3316](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L3309-L3316)</ins>
+            └── <ins>[core.cljs:3309-3316](https://github.com/clojure/clojurescript/blob/r2816/src/cljs/cljs/core.cljs#L3309-L3316)</ins>
 </pre>
 
 
@@ -90,7 +90,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_some",
  :source {:code "(defn some\n  [pred coll]\n    (when (seq coll)\n      (or (pred (first coll)) (recur pred (next coll)))))",
           :repo "clojurescript",
-          :tag "r2814",
+          :tag "r2816",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3309 3316]},
  :full-name "cljs.core/some",

@@ -56,11 +56,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2814
+clojurescript @ r2816
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:71-73](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L71-L73)</ins>
+            └── <ins>[core.cljs:71-73](https://github.com/clojure/clojurescript/blob/r2816/src/cljs/cljs/core.cljs#L71-L73)</ins>
 </pre>
 
 
@@ -86,7 +86,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_STARe",
  :source {:code "(def\n  ^{:doc \"bound in a repl thread to the most recent exception caught by the repl\"}\n  *e)",
           :repo "clojurescript",
-          :tag "r2814",
+          :tag "r2816",
           :filename "src/cljs/cljs/core.cljs",
           :lines [71 73]},
  :examples [{:id "bea858",

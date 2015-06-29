@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2814
+clojurescript @ r2816
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:551-556](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/test.cljs#L551-L556)</ins>
+            └── <ins>[test.cljs:551-556](https://github.com/clojure/clojurescript/blob/r2816/src/cljs/cljs/test.cljs#L551-L556)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_successfulQMARK",
  :source {:code "(defn successful?\n  [summary]\n  (and (zero? (:fail summary 0))\n       (zero? (:error summary 0))))",
           :repo "clojurescript",
-          :tag "r2814",
+          :tag "r2816",
           :filename "src/cljs/cljs/test.cljs",
           :lines [551 556]},
  :full-name "cljs.test/successful?",

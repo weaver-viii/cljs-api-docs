@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2814
+clojurescript @ r2816
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:9139-9141](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L9139-L9141)</ins>
+            └── <ins>[core.cljs:9139-9141](https://github.com/clojure/clojurescript/blob/r2816/src/cljs/cljs/core.cljs#L9139-L9141)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_methods",
  :source {:code "(defn methods\n  [multifn] (-methods multifn))",
           :repo "clojurescript",
-          :tag "r2814",
+          :tag "r2816",
           :filename "src/cljs/cljs/core.cljs",
           :lines [9139 9141]},
  :full-name "cljs.core/methods",

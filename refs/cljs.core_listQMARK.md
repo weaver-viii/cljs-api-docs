@@ -39,11 +39,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2814
+clojurescript @ r2816
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2476-2477](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L2476-L2477)</ins>
+            └── <ins>[core.cljs:2476-2477](https://github.com/clojure/clojurescript/blob/r2816/src/cljs/cljs/core.cljs#L2476-L2477)</ins>
 </pre>
 
 
@@ -71,7 +71,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_listQMARK",
  :source {:code "(defn ^boolean list? [x]\n  (satisfies? IList x))",
           :repo "clojurescript",
-          :tag "r2814",
+          :tag "r2816",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2476 2477]},
  :full-name "cljs.core/list?",
