@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2850
+clojurescript @ r2911
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:576-577](https://github.com/clojure/clojurescript/blob/r2850/src/cljs/cljs/core.cljs#L576-L577)</ins>
+            └── <ins>[core.cljs:576-577](https://github.com/clojure/clojurescript/blob/r2911/src/cljs/cljs/core.cljs#L576-L577)</ins>
 </pre>
 
 
@@ -45,11 +45,11 @@ clojurescript @ r2850
 ```
 
  <pre>
-clojurescript @ r2850
+clojurescript @ r2911
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:334-335](https://github.com/clojure/clojurescript/blob/r2850/src/clj/cljs/core.clj#L334-L335)</ins>
+            └── <ins>[core.clj:334-335](https://github.com/clojure/clojurescript/blob/r2911/src/clj/cljs/core.clj#L334-L335)</ins>
 </pre>
 
 ---
@@ -74,12 +74,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_symbolQMARK",
  :source {:code "(defn ^boolean symbol? [x]\n  (instance? Symbol x))",
           :repo "clojurescript",
-          :tag "r2850",
+          :tag "r2911",
           :filename "src/cljs/cljs/core.cljs",
           :lines [576 577]},
  :extra-sources ({:code "(defmacro symbol? [x]\n  (bool-expr `(instance? Symbol ~x)))",
                   :repo "clojurescript",
-                  :tag "r2850",
+                  :tag "r2911",
                   :filename "src/clj/cljs/core.clj",
                   :lines [334 335]}),
  :full-name "cljs.core/symbol?",

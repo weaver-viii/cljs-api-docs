@@ -68,11 +68,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2850
+clojurescript @ r2911
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1240-1252](https://github.com/clojure/clojurescript/blob/r2850/src/clj/cljs/core.clj#L1240-L1252)</ins>
+            └── <ins>[core.clj:1240-1252](https://github.com/clojure/clojurescript/blob/r2911/src/clj/cljs/core.clj#L1240-L1252)</ins>
 </pre>
 
 
@@ -120,7 +120,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_assert",
  :source {:code "(defmacro assert\n  ([x]\n     (when *assert*\n       `(when-not ~x\n          (throw (js/Error.\n                  (cljs.core/str \"Assert failed: \" (cljs.core/pr-str '~x)))))))\n  ([x message]\n     (when *assert*\n       `(when-not ~x\n          (throw (js/Error.\n                  (cljs.core/str \"Assert failed: \" ~message \"\\n\" (cljs.core/pr-str '~x))))))))",
           :repo "clojurescript",
-          :tag "r2850",
+          :tag "r2911",
           :filename "src/clj/cljs/core.clj",
           :lines [1240 1252]},
  :extra-sources ({:code "(defmacro assert\n  ([x]\n     (when *assert*\n       `(when-not ~x\n          (throw (new AssertionError (str \"Assert failed: \" (pr-str '~x)))))))\n  ([x message]\n     (when *assert*\n       `(when-not ~x\n          (throw (new AssertionError (str \"Assert failed: \" ~message \"\\n\" (pr-str '~x))))))))",

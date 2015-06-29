@@ -11,6 +11,9 @@
  <samp>
 (__analyze-source__ src-dir)<br>
 </samp>
+ <samp>
+(__analyze-source__ src-dir opts)<br>
+</samp>
 
 ---
 
@@ -28,19 +31,20 @@ Source code:
 
 ```clj
 (defn analyze-source
-  [src-dir]
-  (if-let [src-dir (and (not (empty? src-dir))
-                     (File. src-dir))]
-    (doseq [file (comp/cljs-files-in src-dir)]
-      (ana/analyze-file (str "file://" (.getAbsolutePath file))))))
+  ([src-dir] (analyze-source src-dir nil))
+  ([src-dir opts]
+    (if-let [src-dir (and (not (empty? src-dir))
+                       (File. src-dir))]
+      (doseq [file (comp/cljs-files-in src-dir)]
+        (ana/analyze-file (str "file://" (.getAbsolutePath file)) opts)))))
 ```
 
  <pre>
-clojurescript @ r2850
+clojurescript @ r2911
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:519-526](https://github.com/clojure/clojurescript/blob/r2850/src/clj/cljs/repl.clj#L519-L526)</ins>
+            └── <ins>[repl.clj:545-553](https://github.com/clojure/clojurescript/blob/r2911/src/clj/cljs/repl.clj#L545-L553)</ins>
 </pre>
 
 
@@ -59,15 +63,15 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.repl",
  :name "analyze-source",
- :signature ["[src-dir]"],
+ :signature ["[src-dir]" "[src-dir opts]"],
  :history [["+" "0.0-1503"]],
  :type "function",
  :full-name-encode "cljs.repl_analyze-source",
- :source {:code "(defn analyze-source\n  [src-dir]\n  (if-let [src-dir (and (not (empty? src-dir))\n                     (File. src-dir))]\n    (doseq [file (comp/cljs-files-in src-dir)]\n      (ana/analyze-file (str \"file://\" (.getAbsolutePath file))))))",
+ :source {:code "(defn analyze-source\n  ([src-dir] (analyze-source src-dir nil))\n  ([src-dir opts]\n    (if-let [src-dir (and (not (empty? src-dir))\n                       (File. src-dir))]\n      (doseq [file (comp/cljs-files-in src-dir)]\n        (ana/analyze-file (str \"file://\" (.getAbsolutePath file)) opts)))))",
           :repo "clojurescript",
-          :tag "r2850",
+          :tag "r2911",
           :filename "src/clj/cljs/repl.clj",
-          :lines [519 526]},
+          :lines [545 553]},
  :full-name "cljs.repl/analyze-source",
  :docstring "Given a source directory, analyzes all .cljs files. Used to populate\n(:cljs.analyzer/namespaces compiler-env) so as to support code reflection."}
 

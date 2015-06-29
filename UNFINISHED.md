@@ -5912,7 +5912,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/\*repl-opts\*</td>
-<td></td>
+<td>[ref](refs/cljs.repl_STARrepl-optsSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_STARrepl-optsSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6104,7 +6104,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/repl-caught</td>
-<td></td>
+<td>[ref](refs/cljs.repl_repl-caught.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_repl-caught.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6112,7 +6112,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/repl-prompt</td>
-<td></td>
+<td>[ref](refs/cljs.repl_repl-prompt.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_repl-prompt.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6152,7 +6152,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/self-require?</td>
-<td></td>
+<td>[ref](refs/cljs.repl_self-requireQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_self-requireQMARK.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7592,7 +7592,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.browser.net/IWebSocket</td>
-<td></td>
+<td>[ref](refs/clojure.browser.net_IWebSocket.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.browser.net_IWebSocket.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7616,7 +7616,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.browser.net/websocket-connection</td>
-<td></td>
+<td>[ref](refs/clojure.browser.net_websocket-connection.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.browser.net_websocket-connection.cljsdoc)</td>
 <td></td>
 <td></td>

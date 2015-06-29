@@ -2,8 +2,8 @@
 
  <table border="1">
 <tr>
-<td>__0.0-2850__ [all](HISTORY.md)</td>
-<td>2015-02-13</td>
+<td>__0.0-2911__ [all](HISTORY.md)</td>
+<td>2015-02-21</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.6.0</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-2850__ ([See Full History](HISTORY.md)):
+Changes from __0.0-2911__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
@@ -82,13 +82,61 @@ __Syntax API Changes__
 __Library API Changes__
 
  <table>
-<tr><td>_no symbols were added or removed in this version_</td></tr>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-macro-red.svg">
+</td>
+<td><samp>[~~cljs.repl/with-read-known~~](refs/cljs.repl_with-read-known.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-protocol-brightgreen.svg">
+</td>
+<td><samp>[clojure.browser.net/IWebSocket](refs/clojure.browser.net_IWebSocket.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[clojure.browser.net/websocket-connection](refs/clojure.browser.net_websocket-connection.md)</samp></td>
+</tr>
 </table>
 
 __Compiler API Changes__
 
  <table>
-<tr><td>_no symbols were added or removed in this version_</td></tr>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-dynamic var-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl/\*repl-opts\*](refs/cljs.repl_STARrepl-optsSTAR.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl/repl-caught](refs/cljs.repl_repl-caught.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl/repl-prompt](refs/cljs.repl_repl-prompt.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl/self-require?](refs/cljs.repl_self-requireQMARK.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-macro-red.svg">
+</td>
+<td><samp>[~~cljs.repl/with-read-known~~](refs/cljs.repl_with-read-known.md)</samp></td>
+</tr>
 </table>
 
 ---
@@ -5067,9 +5115,9 @@ application.
 </tr>
 <tr>
 <td></td>
-<td><samp>[with-read-known](refs/cljs.repl_with-read-known.md)</samp></td>
+<td><samp>[~~with-read-known~~](refs/cljs.repl_with-read-known.md)</samp></td>
 <td><samp>macro</samp></td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2719"><img valign="middle" alt="[+] 0.0-2719" src="https://img.shields.io/badge/+-0.0--2719-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2719"><img valign="middle" alt="[+] 0.0-2719" src="https://img.shields.io/badge/+-0.0--2719-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2911"><img valign="middle" alt="[×] 0.0-2911" src="https://img.shields.io/badge/×-0.0--2911-red.svg"></a> </td>
 </tr>
 </table>
 #### cljs.test
@@ -5575,6 +5623,12 @@ application.
 </tr>
 <tr>
 <td></td>
+<td><samp>[websocket-connection](refs/clojure.browser.net_websocket-connection.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2911"><img valign="middle" alt="[+] 0.0-2911" src="https://img.shields.io/badge/+-0.0--2911-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
 <td><samp>[xhr-connection](refs/clojure.browser.net_xhr-connection.md)</samp></td>
 <td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
@@ -5602,6 +5656,12 @@ application.
 <td><samp>[ICrossPageChannel](refs/clojure.browser.net_ICrossPageChannel.md)</samp></td>
 <td><samp>protocol</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[IWebSocket](refs/clojure.browser.net_IWebSocket.md)</samp></td>
+<td><samp>protocol</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2911"><img valign="middle" alt="[+] 0.0-2911" src="https://img.shields.io/badge/+-0.0--2911-lightgrey.svg"></a> </td>
 </tr>
 </table>
 #### clojure.browser.repl
@@ -6408,6 +6468,12 @@ self-compile.
 </tr>
 <tr>
 <td></td>
+<td><samp>[\*repl-opts\*](refs/cljs.repl_STARrepl-optsSTAR.md)</samp></td>
+<td><samp>dynamic var</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2911"><img valign="middle" alt="[+] 0.0-2911" src="https://img.shields.io/badge/+-0.0--2911-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
 <td><samp>[analyze-source](refs/cljs.repl_analyze-source.md)</samp></td>
 <td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1503"><img valign="middle" alt="[+] 0.0-1503" src="https://img.shields.io/badge/+-0.0--1503-lightgrey.svg"></a> </td>
@@ -6510,9 +6576,27 @@ self-compile.
 </tr>
 <tr>
 <td></td>
+<td><samp>[repl-caught](refs/cljs.repl_repl-caught.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2911"><img valign="middle" alt="[+] 0.0-2911" src="https://img.shields.io/badge/+-0.0--2911-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[repl-prompt](refs/cljs.repl_repl-prompt.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2911"><img valign="middle" alt="[+] 0.0-2911" src="https://img.shields.io/badge/+-0.0--2911-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
 <td><samp>[repl-read](refs/cljs.repl_repl-read.md)</samp></td>
 <td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2719"><img valign="middle" alt="[+] 0.0-2719" src="https://img.shields.io/badge/+-0.0--2719-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[self-require?](refs/cljs.repl_self-requireQMARK.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2911"><img valign="middle" alt="[+] 0.0-2911" src="https://img.shields.io/badge/+-0.0--2911-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td></td>
@@ -6540,9 +6624,9 @@ self-compile.
 </tr>
 <tr>
 <td></td>
-<td><samp>[with-read-known](refs/cljs.repl_with-read-known.md)</samp></td>
+<td><samp>[~~with-read-known~~](refs/cljs.repl_with-read-known.md)</samp></td>
 <td><samp>macro</samp></td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2719"><img valign="middle" alt="[+] 0.0-2719" src="https://img.shields.io/badge/+-0.0--2719-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2719"><img valign="middle" alt="[+] 0.0-2719" src="https://img.shields.io/badge/+-0.0--2719-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2911"><img valign="middle" alt="[×] 0.0-2911" src="https://img.shields.io/badge/×-0.0--2911-red.svg"></a> </td>
 </tr>
 <tr>
 <td></td>

@@ -75,11 +75,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2850
+clojurescript @ r2911
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1126-1137](https://github.com/clojure/clojurescript/blob/r2850/src/clj/cljs/core.clj#L1126-L1137)</ins>
+            └── <ins>[core.clj:1126-1137](https://github.com/clojure/clojurescript/blob/r2911/src/clj/cljs/core.clj#L1126-L1137)</ins>
 </pre>
 
 
@@ -106,7 +106,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_binding",
  :source {:code "(defmacro binding\n  [bindings & body]\n  (let [names (take-nth 2 bindings)]\n    (cljs.analyzer/confirm-bindings &env names)\n    `(with-redefs ~bindings ~@body)))",
           :repo "clojurescript",
-          :tag "r2850",
+          :tag "r2911",
           :filename "src/clj/cljs/core.clj",
           :lines [1126 1137]},
  :examples [{:id "7dd17f",

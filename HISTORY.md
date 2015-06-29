@@ -16,6 +16,29 @@
 <th>comp</th>
 </tr>
 <tr>
+<td>__[0.0-2911](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2911)__</td>
+<td>2015-02-21</td>
+<td><kbd>1.6.0</kbd></td>
+<td><kbd>0.8.10</kbd></td>
+<td><kbd>0.0-20140718-946a7d39</kbd></td>
+<td>
+<a href="#user-content-00-2911-syntax">
+ 
+</a>
+</td>
+<td>
+<a href="#user-content-00-2911-library">
+<img valign="middle" src="https://img.shields.io/badge/+-2-brightgreen.svg"> <img valign="middle" src="https://img.shields.io/badge/×-1-red.svg">
+</a>
+</td>
+<td>
+<a href="#user-content-00-2911-compiler">
+<img valign="middle" src="https://img.shields.io/badge/+-4-brightgreen.svg"> <img valign="middle" src="https://img.shields.io/badge/×-1-red.svg">
+</a>
+</td>
+</tr>
+
+<tr>
 <td>__[0.0-2850](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2850)__</td>
 <td>2015-02-13</td>
 <td><kbd>1.6.0</kbd></td>
@@ -2154,6 +2177,71 @@
 </td>
 </tr>
 
+</table>
+
+### 0.0-2911
+
+<a name="00-2911-syntax"></a> __Syntax API Changes__
+ <table>
+<tr><td>_no syntax forms were added or removed in this version_</td></tr>
+</table>
+
+<a name="00-2911-library"></a> __Library API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-macro-red.svg">
+</td>
+<td><samp>[~~cljs.repl/with-read-known~~](refs/cljs.repl_with-read-known.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-protocol-brightgreen.svg">
+</td>
+<td><samp>[clojure.browser.net/IWebSocket](refs/clojure.browser.net_IWebSocket.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[clojure.browser.net/websocket-connection](refs/clojure.browser.net_websocket-connection.md)</samp></td>
+</tr>
+</table>
+
+<a name="00-2911-compiler"></a> __Compiler API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-dynamic var-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl/\*repl-opts\*](refs/cljs.repl_STARrepl-optsSTAR.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl/repl-caught](refs/cljs.repl_repl-caught.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl/repl-prompt](refs/cljs.repl_repl-prompt.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl/self-require?](refs/cljs.repl_self-requireQMARK.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-macro-red.svg">
+</td>
+<td><samp>[~~cljs.repl/with-read-known~~](refs/cljs.repl_with-read-known.md)</samp></td>
+</tr>
 </table>
 
 ### 0.0-2850

@@ -78,11 +78,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2850
+clojurescript @ r2911
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1211-1230](https://github.com/clojure/clojurescript/blob/r2850/src/cljs/cljs/core.cljs#L1211-L1230)</ins>
+            └── <ins>[core.cljs:1211-1230](https://github.com/clojure/clojurescript/blob/r2911/src/cljs/cljs/core.cljs#L1211-L1230)</ins>
 </pre>
 
 
@@ -108,7 +108,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_count",
  :source {:code "(defn count\n  [coll]\n  (if-not (nil? coll)\n    (cond\n      (implements? ICounted coll)\n      (-count ^not-native coll)\n\n      (array? coll)\n      (alength coll)\n    \n      (string? coll)\n      (alength coll)\n\n      (native-satisfies? ICounted coll)\n      (-count coll)\n\n      :else (accumulating-seq-count coll))\n    0))",
           :repo "clojurescript",
-          :tag "r2850",
+          :tag "r2911",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1211 1230]},
  :examples [{:id "96e470",

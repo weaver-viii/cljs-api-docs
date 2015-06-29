@@ -31,19 +31,19 @@ Source code:
 
 ```clj
 (defn print-mapped-stacktrace
-  ([stacktrace] (print-mapped-stacktrace stacktrace nil))
+  ([stacktrace] (print-mapped-stacktrace stacktrace *repl-opts*))
   ([stacktrace opts]
     (doseq [{:keys [function file line column]}
             (mapped-stacktrace stacktrace opts)]
-      (println "\t" (str function " (" file ":" line ":" column ")")))))
+      ((:print opts) "\t" (str function " (" file ":" line ":" column ")")))))
 ```
 
  <pre>
-clojurescript @ r2850
+clojurescript @ r2911
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:261-268](https://github.com/clojure/clojurescript/blob/r2850/src/clj/cljs/repl.clj#L261-L268)</ins>
+            └── <ins>[repl.clj:262-269](https://github.com/clojure/clojurescript/blob/r2911/src/clj/cljs/repl.clj#L262-L269)</ins>
 </pre>
 
 
@@ -66,11 +66,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-2814"]],
  :type "function",
  :full-name-encode "cljs.repl_print-mapped-stacktrace",
- :source {:code "(defn print-mapped-stacktrace\n  ([stacktrace] (print-mapped-stacktrace stacktrace nil))\n  ([stacktrace opts]\n    (doseq [{:keys [function file line column]}\n            (mapped-stacktrace stacktrace opts)]\n      (println \"\\t\" (str function \" (\" file \":\" line \":\" column \")\")))))",
+ :source {:code "(defn print-mapped-stacktrace\n  ([stacktrace] (print-mapped-stacktrace stacktrace *repl-opts*))\n  ([stacktrace opts]\n    (doseq [{:keys [function file line column]}\n            (mapped-stacktrace stacktrace opts)]\n      ((:print opts) \"\\t\" (str function \" (\" file \":\" line \":\" column \")\")))))",
           :repo "clojurescript",
-          :tag "r2850",
+          :tag "r2911",
           :filename "src/clj/cljs/repl.clj",
-          :lines [261 268]},
+          :lines [262 269]},
  :full-name "cljs.repl/print-mapped-stacktrace",
  :docstring "Given a vector representing the canonicalized JavaScript stacktrace\nprint the ClojureScript stacktrace. See mapped-stacktrace."}
 

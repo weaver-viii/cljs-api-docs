@@ -33,11 +33,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2850
+clojurescript @ r2911
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:250-258](https://github.com/clojure/clojurescript/blob/r2850/src/cljs/cljs/reader.cljs#L250-L258)</ins>
+            └── <ins>[reader.cljs:250-258](https://github.com/clojure/clojurescript/blob/r2911/src/cljs/cljs/reader.cljs#L250-L258)</ins>
 </pre>
 
 
@@ -60,7 +60,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[rdr _]"],
  :source {:code "(defn read-dispatch\n  [rdr _]\n  (let [ch (read-char rdr)\n        dm (dispatch-macros ch)]\n    (if dm\n      (dm rdr _)\n      (if-let [obj (maybe-read-tagged-type rdr ch)]\n        obj\n        (reader-error rdr \"No dispatch macro for \" ch)))))",
           :repo "clojurescript",
-          :tag "r2850",
+          :tag "r2911",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [250 258]},
  :full-name "cljs.reader/read-dispatch",

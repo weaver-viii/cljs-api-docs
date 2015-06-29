@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2850
+clojurescript @ r2911
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3117-3124](https://github.com/clojure/clojurescript/blob/r2850/src/cljs/cljs/core.cljs#L3117-L3124)</ins>
+            └── <ins>[core.cljs:3117-3124](https://github.com/clojure/clojurescript/blob/r2911/src/cljs/cljs/core.cljs#L3117-L3124)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[coll]"],
  :source {:code "(defn iter [coll]\n  (cond\n    (nil? coll) (nil-iter)\n    (string? coll) (string-iter coll)\n    (array? coll) (array-iter coll)\n    (iterable? coll) (-iterator coll)\n    (seqable? coll) (seq-iter coll)\n    :else (throw (js/Error. (str \"Cannot create iterator from \" coll)))))",
           :repo "clojurescript",
-          :tag "r2850",
+          :tag "r2911",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3117 3124]},
  :full-name "cljs.core/iter",

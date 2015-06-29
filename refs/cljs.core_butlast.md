@@ -64,11 +64,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2850
+clojurescript @ r2911
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7661-7665](https://github.com/clojure/clojurescript/blob/r2850/src/cljs/cljs/core.cljs#L7661-L7665)</ins>
+            └── <ins>[core.cljs:7661-7665](https://github.com/clojure/clojurescript/blob/r2911/src/cljs/cljs/core.cljs#L7661-L7665)</ins>
 </pre>
 
 
@@ -100,7 +100,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_butlast",
  :source {:code "(defn butlast [s]\n  (loop [ret [] s s]\n    (if (next s)\n      (recur (conj ret (first s)) (next s))\n      (seq ret))))",
           :repo "clojurescript",
-          :tag "r2850",
+          :tag "r2911",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7661 7665]},
  :examples [{:id "7a4676",
