@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3148
+clojurescript @ r3149
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:270-271](https://github.com/clojure/clojurescript/blob/r3148/src/cljs/cljs/test.cljs#L270-L271)</ins>
+            └── <ins>[test.cljs:270-271](https://github.com/clojure/clojurescript/blob/r3149/src/cljs/cljs/test.cljs#L270-L271)</ins>
 </pre>
 
 
@@ -53,7 +53,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[]"],
  :source {:code "(defn clear-env! []\n  (set! *current-env* nil))",
           :repo "clojurescript",
-          :tag "r3148",
+          :tag "r3149",
           :filename "src/cljs/cljs/test.cljs",
           :lines [270 271]},
  :full-name "cljs.test/clear-env!",

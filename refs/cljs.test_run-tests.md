@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3148
+clojurescript @ r3149
 └── src
     └── clj
         └── cljs
-            └── <ins>[test.clj:281-290](https://github.com/clojure/clojurescript/blob/r3148/src/clj/cljs/test.clj#L281-L290)</ins>
+            └── <ins>[test.clj:281-290](https://github.com/clojure/clojurescript/blob/r3149/src/clj/cljs/test.clj#L281-L290)</ins>
 </pre>
 
 
@@ -76,7 +76,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_run-tests",
  :source {:code "(defmacro run-tests\n  ([] `(run-tests (cljs.test/empty-env) '~ana/*cljs-ns*))\n  ([env-or-ns]\n   (if (ns? env-or-ns)\n     `(run-tests (cljs.test/empty-env) ~env-or-ns)\n     `(run-tests ~env-or-ns '~ana/*cljs-ns*)))\n  ([env-or-ns & namespaces]\n   `(cljs.test/run-block (run-tests-block ~env-or-ns ~@namespaces))))",
           :repo "clojurescript",
-          :tag "r3148",
+          :tag "r3149",
           :filename "src/clj/cljs/test.clj",
           :lines [281 290]},
  :full-name "cljs.test/run-tests",

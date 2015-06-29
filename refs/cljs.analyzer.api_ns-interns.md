@@ -39,12 +39,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3148
+clojurescript @ r3149
 └── src
     └── clj
         └── cljs
             └── analyzer
-                └── <ins>[api.clj:39-46](https://github.com/clojure/clojurescript/blob/r3148/src/clj/cljs/analyzer/api.clj#L39-L46)</ins>
+                └── <ins>[api.clj:39-46](https://github.com/clojure/clojurescript/blob/r3149/src/clj/cljs/analyzer/api.clj#L39-L46)</ins>
 </pre>
 
 
@@ -69,7 +69,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.analyzer.api_ns-interns",
  :source {:code "(defn ns-interns\n  [ns]\n  {:pre [(symbol? ns)]}\n  (merge\n    (get-in @env/*compiler* [::ana/namespaces ns :macros])\n    (get-in @env/*compiler* [::ana/namespaces ns :defs])))",
           :repo "clojurescript",
-          :tag "r3148",
+          :tag "r3149",
           :filename "src/clj/cljs/analyzer/api.clj",
           :lines [39 46]},
  :full-name "cljs.analyzer.api/ns-interns",

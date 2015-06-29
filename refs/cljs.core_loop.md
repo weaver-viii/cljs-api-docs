@@ -82,11 +82,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3148
+clojurescript @ r3149
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:175-197](https://github.com/clojure/clojurescript/blob/r3148/src/clj/cljs/core.clj#L175-L197)</ins>
+            └── <ins>[core.clj:175-197](https://github.com/clojure/clojurescript/blob/r3149/src/clj/cljs/core.clj#L175-L197)</ins>
 </pre>
 
 
@@ -113,7 +113,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_loop",
  :source {:code "(defmacro loop\n  [bindings & body]\n    (assert-args\n      (vector? bindings) \"a vector for its binding\"\n      (even? (count bindings)) \"an even number of forms in binding vector\")\n    (let [db (destructure bindings)]\n      (if (= db bindings)\n        `(loop* ~bindings ~@body)\n        (let [vs (take-nth 2 (drop 1 bindings))\n              bs (take-nth 2 bindings)\n              gs (map (fn [b] (if (core/symbol? b) b (gensym))) bs)\n              bfs (reduce (fn [ret [b v g]]\n                            (if (core/symbol? b)\n                              (conj ret g v)\n                              (conj ret g v b g)))\n                          [] (map core/vector bs vs gs))]\n          `(let ~bfs\n             (loop* ~(vec (interleave gs gs))\n               (let ~(vec (interleave bs gs))\n                 ~@body)))))))",
           :repo "clojurescript",
-          :tag "r3148",
+          :tag "r3149",
           :filename "src/clj/cljs/core.clj",
           :lines [175 197]},
  :examples [{:id "60291e",

@@ -27,12 +27,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3148
+clojurescript @ r3149
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[event.cljs:77-79](https://github.com/clojure/clojurescript/blob/r3148/src/cljs/clojure/browser/event.cljs#L77-L79)</ins>
+                └── <ins>[event.cljs:77-79](https://github.com/clojure/clojurescript/blob/r3149/src/cljs/clojure/browser/event.cljs#L77-L79)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[src event]"],
  :source {:code "(defn dispatch-event\n  [src event]\n  (events/dispatchEvent src event))",
           :repo "clojurescript",
-          :tag "r3148",
+          :tag "r3149",
           :filename "src/cljs/clojure/browser/event.cljs",
           :lines [77 79]},
  :full-name "clojure.browser.event/dispatch-event",
