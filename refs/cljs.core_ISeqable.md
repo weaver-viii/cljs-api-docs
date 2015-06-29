@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1913
+clojurescript @ r1933
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:274-275](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/core.cljs#L274-L275)</ins>
+            └── <ins>[core.cljs:274-275](https://github.com/clojure/clojurescript/blob/r1933/src/cljs/cljs/core.cljs#L274-L275)</ins>
 </pre>
 
 
@@ -52,7 +52,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ISeqable",
  :source {:code "(defprotocol ISeqable\n  (-seq [o]))",
           :repo "clojurescript",
-          :tag "r1913",
+          :tag "r1933",
           :filename "src/cljs/cljs/core.cljs",
           :lines [274 275]},
  :methods [{:name "-seq", :signature ["[o]"], :docstring nil}],

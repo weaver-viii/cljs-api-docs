@@ -21,7 +21,7 @@
 Source code:
 
 ```clj
-(set! cljs.core.PersistentArrayMap/fromArray
+(set! cljs.core.PersistentArrayMap.fromArray
   (fn [arr ^boolean no-clone]
     (let [arr (if no-clone arr (aclone arr))] 
       (let [cnt (/ (alength arr) 2)]
@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1913
+clojurescript @ r1933
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4221-4225](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/core.cljs#L4221-L4225)</ins>
+            └── <ins>[core.cljs:4222-4226](https://github.com/clojure/clojurescript/blob/r1933/src/cljs/cljs/core.cljs#L4222-L4226)</ins>
 </pre>
 
 
@@ -57,11 +57,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "PersistentArrayMap",
  :type "function",
  :full-name-encode "cljs.core_PersistentArrayMapDOTfromArray",
- :source {:code "(set! cljs.core.PersistentArrayMap/fromArray\n  (fn [arr ^boolean no-clone]\n    (let [arr (if no-clone arr (aclone arr))] \n      (let [cnt (/ (alength arr) 2)]\n        (PersistentArrayMap. nil cnt arr nil)))))",
+ :source {:code "(set! cljs.core.PersistentArrayMap.fromArray\n  (fn [arr ^boolean no-clone]\n    (let [arr (if no-clone arr (aclone arr))] \n      (let [cnt (/ (alength arr) 2)]\n        (PersistentArrayMap. nil cnt arr nil)))))",
           :repo "clojurescript",
-          :tag "r1913",
+          :tag "r1933",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [4221 4225]},
+          :lines [4222 4226]},
  :full-name "cljs.core/PersistentArrayMap.fromArray"}
 
 ```

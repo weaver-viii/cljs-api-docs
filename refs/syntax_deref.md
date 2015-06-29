@@ -64,13 +64,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.7.8
+tools.reader @ tools.reader-0.7.9
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:543-562](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.8/src/main/clojure/clojure/tools/reader.clj#L543-L562)</ins>
+                    └── <ins>[reader.clj:551-570](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.9/src/main/clojure/clojure/tools/reader.clj#L551-L570)</ins>
 </pre>
 
 
@@ -84,13 +84,13 @@ tools.reader @ tools.reader-0.7.8
 ```
 
  <pre>
-tools.reader @ tools.reader-0.7.8
+tools.reader @ tools.reader-0.7.9
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:285-288](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.8/src/main/clojure/clojure/tools/reader.clj#L285-L288)</ins>
+                    └── <ins>[reader.clj:293-296](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.9/src/main/clojure/clojure/tools/reader.clj#L293-L296)</ins>
 </pre>
 
 ---
@@ -115,14 +115,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_deref",
  :source {:code "(defn- macros [ch]\n  (case ch\n    \\\" read-string*\n    \\: read-keyword\n    \\; read-comment\n    \\' (wrapping-reader 'quote)\n    \\@ (wrapping-reader 'clojure.core/deref)\n    \\^ read-meta\n    \\` read-syntax-quote ;;(wrapping-reader 'syntax-quote)\n    \\~ read-unquote\n    \\( read-list\n    \\) read-unmatched-delimiter\n    \\[ read-vector\n    \\] read-unmatched-delimiter\n    \\{ read-map\n    \\} read-unmatched-delimiter\n    \\\\ read-char*\n    \\% read-arg\n    \\# read-dispatch\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.7.8",
+          :tag "tools.reader-0.7.9",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [543 562]},
+          :lines [551 570]},
  :extra-sources [{:code "(defn- wrapping-reader\n  [sym]\n  (fn [rdr _]\n    (list sym (read rdr true nil true))))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.7.8",
+                  :tag "tools.reader-0.7.9",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [285 288]}],
+                  :lines [293 296]}],
  :syntax-form "@",
  :examples [{:id "08f886",
              :content "```clj\n(def a (atom 1))\n@a\n;;=> 1\n\n(deref a)\n;;=> 1\n```"}],

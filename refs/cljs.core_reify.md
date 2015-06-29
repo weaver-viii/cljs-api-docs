@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1913
+clojurescript @ r1933
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:529-545](https://github.com/clojure/clojurescript/blob/r1913/src/clj/cljs/core.clj#L529-L545)</ins>
+            └── <ins>[core.clj:529-545](https://github.com/clojure/clojurescript/blob/r1933/src/clj/cljs/core.clj#L529-L545)</ins>
 </pre>
 
 
@@ -73,7 +73,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_reify",
  :source {:code "(defmacro reify [& impls]\n  (let [t      (gensym \"t\")\n        meta-sym (gensym \"meta\")\n        this-sym (gensym \"_\")\n        locals (keys (:locals &env))\n        ns     (-> &env :ns :name)\n        munge  cljs.compiler/munge]\n    `(do\n       (when-not (exists? (. ~ns ~(symbol (core/str \"-\" t))))\n         (deftype ~t [~@locals ~meta-sym]\n           IWithMeta\n           (~'-with-meta [~this-sym ~meta-sym]\n             (new ~t ~@locals ~meta-sym))\n           IMeta\n           (~'-meta [~this-sym] ~meta-sym)\n           ~@impls))\n       (new ~t ~@locals nil))))",
           :repo "clojurescript",
-          :tag "r1913",
+          :tag "r1933",
           :filename "src/clj/cljs/core.clj",
           :lines [529 545]},
  :full-name "cljs.core/reify",

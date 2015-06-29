@@ -64,13 +64,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.7.8
+tools.reader @ tools.reader-0.7.9
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:564-575](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.8/src/main/clojure/clojure/tools/reader.clj#L564-L575)</ins>
+                    └── <ins>[reader.clj:572-583](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.9/src/main/clojure/clojure/tools/reader.clj#L572-L583)</ins>
 </pre>
 
 
@@ -84,13 +84,13 @@ tools.reader @ tools.reader-0.7.8
 ```
 
  <pre>
-tools.reader @ tools.reader-0.7.8
+tools.reader @ tools.reader-0.7.9
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:313-316](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.8/src/main/clojure/clojure/tools/reader.clj#L313-L316)</ins>
+                    └── <ins>[reader.clj:321-324](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.9/src/main/clojure/clojure/tools/reader.clj#L321-L324)</ins>
 </pre>
 
 ---
@@ -115,14 +115,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_ignore",
  :source {:code "(defn- dispatch-macros [ch]\n  (case ch\n    \\^ read-meta                ;deprecated\n    \\' (wrapping-reader 'var)\n    \\( read-fn\n    \\= read-eval\n    \\{ read-set\n    \\< (throwing-reader \"Unreadable form\")\n    \\\" read-regex\n    \\! read-comment\n    \\_ read-discard\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.7.8",
+          :tag "tools.reader-0.7.9",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [564 575]},
+          :lines [572 583]},
  :extra-sources [{:code "(defn- read-discard\n  [rdr _]\n  (read rdr true nil true)\n  rdr)",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.7.8",
+                  :tag "tools.reader-0.7.9",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [313 316]}],
+                  :lines [321 324]}],
  :syntax-form "#_",
  :examples [{:id "f36d7a",
              :content "```clj\n{:foo #_bar 2}\n;;=> {:foo 2}\n```\n\nTo comment out the last line of a function without worrying about commenting out\nthe trailing parentheses:\n\n```clj\n(defn foo []\n  (println \"hello\")\n  #_(println \"world\"))\n```"}],

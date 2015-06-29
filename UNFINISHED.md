@@ -8608,7 +8608,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>special/try</td>
-<td></td>
+<td>[ref](refs/special_try.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/special_try.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>

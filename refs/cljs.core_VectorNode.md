@@ -25,11 +25,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1913
+clojurescript @ r1933
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3090](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/core.cljs#L3090)</ins>
+            └── <ins>[core.cljs:3091](https://github.com/clojure/clojurescript/blob/r1933/src/cljs/cljs/core.cljs#L3091)</ins>
 </pre>
 
 
@@ -52,9 +52,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[edit arr]"],
  :source {:code "(deftype VectorNode [edit arr])",
           :repo "clojurescript",
-          :tag "r1913",
+          :tag "r1933",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3090]},
+          :lines [3091]},
  :full-name "cljs.core/VectorNode",
  :full-name-encode "cljs.core_VectorNode",
  :history [["+" "0.0-1211"]]}

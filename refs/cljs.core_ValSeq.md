@@ -47,7 +47,7 @@ Source code:
     (cons o coll))
 
   IEmptyableCollection
-  (-empty [coll] (with-meta cljs.core.List/EMPTY _meta))
+  (-empty [coll] (with-meta cljs.core.List.EMPTY _meta))
 
   IHash
   (-hash [coll] (hash-coll coll))
@@ -79,11 +79,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1913
+clojurescript @ r1933
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5888-5939](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/core.cljs#L5888-L5939)</ins>
+            └── <ins>[core.cljs:5889-5940](https://github.com/clojure/clojurescript/blob/r1933/src/cljs/cljs/core.cljs#L5889-L5940)</ins>
 </pre>
 
 
@@ -106,11 +106,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1820"]],
  :type "type",
  :full-name-encode "cljs.core_ValSeq",
- :source {:code "(deftype ValSeq [^not-native mseq _meta]\n  Object\n  (toString [coll]\n    (pr-str* coll))\n\n  IMeta\n  (-meta [coll] _meta)\n\n  IWithMeta\n  (-with-meta [coll new-meta] (ValSeq. mseq new-meta))\n\n  ISeqable\n  (-seq [coll] coll)\n\n  ISequential\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  ICollection\n  (-conj [coll o]\n    (cons o coll))\n\n  IEmptyableCollection\n  (-empty [coll] (with-meta cljs.core.List/EMPTY _meta))\n\n  IHash\n  (-hash [coll] (hash-coll coll))\n\n  ISeq\n  (-first [coll]\n    (let [^not-native me (-first mseq)]\n      (-val me)))\n\n  (-rest [coll]\n    (let [nseq (if (satisfies? INext mseq)\n                 (-next mseq)\n                 (next mseq))]\n      (if-not (nil? nseq)\n        (ValSeq. nseq _meta)\n        ())))\n\n  INext\n  (-next [coll]\n    (let [nseq (if (satisfies? INext mseq)\n                 (-next mseq)\n                 (next mseq))]\n      (when-not (nil? nseq)\n        (ValSeq. nseq _meta))))\n\n  IReduce\n  (-reduce [coll f] (seq-reduce f coll))\n  (-reduce [coll f start] (seq-reduce f start coll)))",
+ :source {:code "(deftype ValSeq [^not-native mseq _meta]\n  Object\n  (toString [coll]\n    (pr-str* coll))\n\n  IMeta\n  (-meta [coll] _meta)\n\n  IWithMeta\n  (-with-meta [coll new-meta] (ValSeq. mseq new-meta))\n\n  ISeqable\n  (-seq [coll] coll)\n\n  ISequential\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  ICollection\n  (-conj [coll o]\n    (cons o coll))\n\n  IEmptyableCollection\n  (-empty [coll] (with-meta cljs.core.List.EMPTY _meta))\n\n  IHash\n  (-hash [coll] (hash-coll coll))\n\n  ISeq\n  (-first [coll]\n    (let [^not-native me (-first mseq)]\n      (-val me)))\n\n  (-rest [coll]\n    (let [nseq (if (satisfies? INext mseq)\n                 (-next mseq)\n                 (next mseq))]\n      (if-not (nil? nseq)\n        (ValSeq. nseq _meta)\n        ())))\n\n  INext\n  (-next [coll]\n    (let [nseq (if (satisfies? INext mseq)\n                 (-next mseq)\n                 (next mseq))]\n      (when-not (nil? nseq)\n        (ValSeq. nseq _meta))))\n\n  IReduce\n  (-reduce [coll f] (seq-reduce f coll))\n  (-reduce [coll f start] (seq-reduce f start coll)))",
           :repo "clojurescript",
-          :tag "r1913",
+          :tag "r1933",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [5888 5939]},
+          :lines [5889 5940]},
  :full-name "cljs.core/ValSeq",
  :clj-symbol "clojure.lang/ValSeq"}
 

@@ -1,10 +1,10 @@
-## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> cljs.core/try
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> ~~cljs.core/try~~
 
  <table border="1">
 <tr>
 
 <td>macro</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1933"><img valign="middle" alt="[×] 0.0-1933" src="https://img.shields.io/badge/×-0.0--1933-red.svg"></a> </td>
 <td>
 [<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.core/try</samp>](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/try)
 </td>
@@ -84,7 +84,7 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "cljs.core",
  :name "try",
  :signature ["[& forms]"],
- :history [["+" "0.0-927"]],
+ :history [["+" "0.0-927"] ["-" "0.0-1933"]],
  :type "macro",
  :full-name-encode "cljs.core_try",
  :source {:code "(defmacro try\n  [& forms]\n  (let [catch? #(and (seq? %) (= (first %) 'catch))\n        [body catches] (split-with (complement catch?) forms)\n        [catches fin] (split-with catch? catches)\n        e (gensym \"e\")]\n    (assert (every? #(clojure.core/> (count %) 2) catches) \"catch block must specify a prototype and a name\")\n    (if (seq catches)\n      `(~'try*\n        ~@body\n        (catch ~e\n            (cond\n             ~@(mapcat\n                (fn [[_ type name & cb]]\n                  `[(instance? ~type ~e) (let [~name ~e] ~@cb)])\n                catches)\n             :else (throw ~e)))\n        ~@fin)\n      `(~'try*\n        ~@body\n        ~@fin))))",
@@ -94,7 +94,8 @@ __Meta__ - To retrieve the API data for this symbol:
           :lines [1004 1032]},
  :full-name "cljs.core/try",
  :clj-symbol "clojure.core/try",
- :docstring "(try expr* catch-clause* finally-clause?)\n\n Special Form\n\n catch-clause => (catch protoname name expr*)\n finally-clause => (finally expr*)\n\nCatches and handles JavaScript exceptions."}
+ :docstring "(try expr* catch-clause* finally-clause?)\n\n Special Form\n\n catch-clause => (catch protoname name expr*)\n finally-clause => (finally expr*)\n\nCatches and handles JavaScript exceptions.",
+ :removed {:in "0.0-1933", :last-seen "0.0-1913"}}
 
 ```
 

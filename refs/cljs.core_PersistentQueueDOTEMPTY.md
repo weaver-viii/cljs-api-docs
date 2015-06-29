@@ -19,15 +19,15 @@
 Source code:
 
 ```clj
-(set! cljs.core.PersistentQueue/EMPTY (PersistentQueue. nil 0 nil [] 0))
+(set! cljs.core.PersistentQueue.EMPTY (PersistentQueue. nil 0 nil [] 0))
 ```
 
  <pre>
-clojurescript @ r1913
+clojurescript @ r1933
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3803](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/core.cljs#L3803)</ins>
+            └── <ins>[core.cljs:3804](https://github.com/clojure/clojurescript/blob/r1933/src/cljs/cljs/core.cljs#L3804)</ins>
 </pre>
 
 
@@ -50,11 +50,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "PersistentQueue",
  :type "var",
  :full-name-encode "cljs.core_PersistentQueueDOTEMPTY",
- :source {:code "(set! cljs.core.PersistentQueue/EMPTY (PersistentQueue. nil 0 nil [] 0))",
+ :source {:code "(set! cljs.core.PersistentQueue.EMPTY (PersistentQueue. nil 0 nil [] 0))",
           :repo "clojurescript",
-          :tag "r1913",
+          :tag "r1933",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3803]},
+          :lines [3804]},
  :full-name "cljs.core/PersistentQueue.EMPTY",
  :clj-symbol "clojure.lang/PersistentQueue.EMPTY"}
 

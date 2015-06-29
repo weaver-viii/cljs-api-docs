@@ -2,8 +2,8 @@
 
  <table border="1">
 <tr>
-<td>__0.0-1913__ [all](HISTORY.md)</td>
-<td>2013-10-05</td>
+<td>__0.0-1933__ [all](HISTORY.md)</td>
+<td>2013-10-11</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.5.1</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-1913__ ([See Full History](HISTORY.md)):
+Changes from __0.0-1933__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
@@ -82,7 +82,25 @@ __Syntax API Changes__
 __Library API Changes__
 
  <table>
-<tr><td>_no symbols were added or removed in this version_</td></tr>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-macro-red.svg">
+</td>
+<td><samp>[~~cljs.core/try~~](refs/cljs.core_try.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-special form-brightgreen.svg">
+</td>
+<td><samp>[special/try](refs/special_try.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-special form-red.svg">
+</td>
+<td><samp>[~~special/try\*~~](refs/special_trySTAR.md)</samp></td>
+</tr>
 </table>
 
 __Compiler API Changes__
@@ -597,10 +615,16 @@ application.
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
 </tr>
 <tr>
-<td></td>
-<td><samp>[try\*](refs/special_trySTAR.md)</samp></td>
+<td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/try)</td>
+<td><samp>[try](refs/special_try.md)</samp></td>
 <td><samp>special form</samp></td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1933"><img valign="middle" alt="[+] 0.0-1933" src="https://img.shields.io/badge/+-0.0--1933-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[~~try\*~~](refs/special_trySTAR.md)</samp></td>
+<td><samp>special form</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1933"><img valign="middle" alt="[×] 0.0-1933" src="https://img.shields.io/badge/×-0.0--1933-red.svg"></a> </td>
 </tr>
 </table>
 #### specialrepl
@@ -2916,9 +2940,9 @@ application.
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/try)</td>
-<td><samp>[try](refs/cljs.core_try.md)</samp></td>
+<td><samp>[~~try~~](refs/cljs.core_try.md)</samp></td>
 <td><samp>macro</samp></td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1933"><img valign="middle" alt="[×] 0.0-1933" src="https://img.shields.io/badge/×-0.0--1933-red.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/type)</td>

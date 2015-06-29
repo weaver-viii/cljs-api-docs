@@ -19,16 +19,16 @@
 Source code:
 
 ```clj
-(set! cljs.core.PersistentTreeSet/EMPTY
-  (PersistentTreeSet. nil cljs.core.PersistentTreeMap/EMPTY 0))
+(set! cljs.core.PersistentTreeSet.EMPTY
+  (PersistentTreeSet. nil cljs.core.PersistentTreeMap.EMPTY 0))
 ```
 
  <pre>
-clojurescript @ r1913
+clojurescript @ r1933
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6172-6173](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/core.cljs#L6172-L6173)</ins>
+            └── <ins>[core.cljs:6173-6174](https://github.com/clojure/clojurescript/blob/r1933/src/cljs/cljs/core.cljs#L6173-L6174)</ins>
 </pre>
 
 
@@ -51,11 +51,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "PersistentTreeSet",
  :type "var",
  :full-name-encode "cljs.core_PersistentTreeSetDOTEMPTY",
- :source {:code "(set! cljs.core.PersistentTreeSet/EMPTY\n  (PersistentTreeSet. nil cljs.core.PersistentTreeMap/EMPTY 0))",
+ :source {:code "(set! cljs.core.PersistentTreeSet.EMPTY\n  (PersistentTreeSet. nil cljs.core.PersistentTreeMap.EMPTY 0))",
           :repo "clojurescript",
-          :tag "r1913",
+          :tag "r1933",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6172 6173]},
+          :lines [6173 6174]},
  :full-name "cljs.core/PersistentTreeSet.EMPTY",
  :clj-symbol "clojure.lang/PersistentTreeSet.EMPTY"}
 

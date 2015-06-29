@@ -24,8 +24,10 @@ Source code:
   (let [context (:context env)
         frame (first *recur-frames*)
         exprs (disallowing-recur (vec (map #(analyze (assoc env :context :expr) %) exprs)))]
-    (assert frame "Can't recur here")
-    (assert (= (count exprs) (count (:params frame))) "recur argument count mismatch")
+    (when-not frame 
+      (throw (error env "Can't recur here")))
+    (when-not (= (count exprs) (count (:params frame))) 
+      (throw (error env "recur argument count mismatch")))
     (reset! (:flag frame) true)
     (assoc {:env env :op :recur :form form}
       :frame frame
@@ -34,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1913
+clojurescript @ r1933
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:573-584](https://github.com/clojure/clojurescript/blob/r1913/src/clj/cljs/analyzer.clj#L573-L584)</ins>
+            └── <ins>[analyzer.clj:596-609](https://github.com/clojure/clojurescript/blob/r1933/src/clj/cljs/analyzer.clj#L596-L609)</ins>
 </pre>
 
 
@@ -58,11 +60,11 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "special",
  :name "recur",
  :type "special form",
- :source {:code "(defmethod parse 'recur\n  [op env [_ & exprs :as form] _]\n  (let [context (:context env)\n        frame (first *recur-frames*)\n        exprs (disallowing-recur (vec (map #(analyze (assoc env :context :expr) %) exprs)))]\n    (assert frame \"Can't recur here\")\n    (assert (= (count exprs) (count (:params frame))) \"recur argument count mismatch\")\n    (reset! (:flag frame) true)\n    (assoc {:env env :op :recur :form form}\n      :frame frame\n      :exprs exprs\n      :children exprs)))",
+ :source {:code "(defmethod parse 'recur\n  [op env [_ & exprs :as form] _]\n  (let [context (:context env)\n        frame (first *recur-frames*)\n        exprs (disallowing-recur (vec (map #(analyze (assoc env :context :expr) %) exprs)))]\n    (when-not frame \n      (throw (error env \"Can't recur here\")))\n    (when-not (= (count exprs) (count (:params frame))) \n      (throw (error env \"recur argument count mismatch\")))\n    (reset! (:flag frame) true)\n    (assoc {:env env :op :recur :form form}\n      :frame frame\n      :exprs exprs\n      :children exprs)))",
           :repo "clojurescript",
-          :tag "r1913",
+          :tag "r1933",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [573 584]},
+          :lines [596 609]},
  :full-name "special/recur",
  :full-name-encode "special_recur",
  :clj-symbol "clojure.core/recur",

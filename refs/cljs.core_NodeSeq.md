@@ -39,13 +39,13 @@ Source code:
   (-conj [coll o] (cons o coll))
 
   IEmptyableCollection
-  (-empty [coll] (with-meta cljs.core.List/EMPTY meta))
+  (-empty [coll] (with-meta cljs.core.List.EMPTY meta))
 
   ICollection
   (-conj [coll o] (cons o coll))
 
   IEmptyableCollection
-  (-empty [coll] (with-meta cljs.core.List/EMPTY meta))
+  (-empty [coll] (with-meta cljs.core.List.EMPTY meta))
 
   ISequential
   ISeq
@@ -74,11 +74,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1913
+clojurescript @ r1933
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4804-4850](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/core.cljs#L4804-L4850)</ins>
+            └── <ins>[core.cljs:4805-4851](https://github.com/clojure/clojurescript/blob/r1933/src/cljs/cljs/core.cljs#L4805-L4851)</ins>
 </pre>
 
 
@@ -101,11 +101,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1211"]],
  :type "type",
  :full-name-encode "cljs.core_NodeSeq",
- :source {:code "(deftype NodeSeq [meta nodes i s ^:mutable __hash]\n  Object\n  (toString [coll]\n    (pr-str* coll))\n\n  IMeta\n  (-meta [coll] meta)\n\n  IWithMeta\n  (-with-meta [coll meta] (NodeSeq. meta nodes i s __hash))\n\n  ICollection\n  (-conj [coll o] (cons o coll))\n\n  IEmptyableCollection\n  (-empty [coll] (with-meta cljs.core.List/EMPTY meta))\n\n  ICollection\n  (-conj [coll o] (cons o coll))\n\n  IEmptyableCollection\n  (-empty [coll] (with-meta cljs.core.List/EMPTY meta))\n\n  ISequential\n  ISeq\n  (-first [coll]\n    (if (nil? s)\n      [(aget nodes i) (aget nodes (inc i))]\n      (first s)))\n\n  (-rest [coll]\n    (if (nil? s)\n      (create-inode-seq nodes (+ i 2) nil)\n      (create-inode-seq nodes i (next s))))\n\n  ISeqable\n  (-seq [this] this)\n\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  IHash\n  (-hash [coll] (caching-hash coll hash-coll __hash))\n\n  IReduce\n  (-reduce [coll f] (seq-reduce f coll))\n  (-reduce [coll f start] (seq-reduce f start coll)))",
+ :source {:code "(deftype NodeSeq [meta nodes i s ^:mutable __hash]\n  Object\n  (toString [coll]\n    (pr-str* coll))\n\n  IMeta\n  (-meta [coll] meta)\n\n  IWithMeta\n  (-with-meta [coll meta] (NodeSeq. meta nodes i s __hash))\n\n  ICollection\n  (-conj [coll o] (cons o coll))\n\n  IEmptyableCollection\n  (-empty [coll] (with-meta cljs.core.List.EMPTY meta))\n\n  ICollection\n  (-conj [coll o] (cons o coll))\n\n  IEmptyableCollection\n  (-empty [coll] (with-meta cljs.core.List.EMPTY meta))\n\n  ISequential\n  ISeq\n  (-first [coll]\n    (if (nil? s)\n      [(aget nodes i) (aget nodes (inc i))]\n      (first s)))\n\n  (-rest [coll]\n    (if (nil? s)\n      (create-inode-seq nodes (+ i 2) nil)\n      (create-inode-seq nodes i (next s))))\n\n  ISeqable\n  (-seq [this] this)\n\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  IHash\n  (-hash [coll] (caching-hash coll hash-coll __hash))\n\n  IReduce\n  (-reduce [coll f] (seq-reduce f coll))\n  (-reduce [coll f start] (seq-reduce f start coll)))",
           :repo "clojurescript",
-          :tag "r1913",
+          :tag "r1933",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [4804 4850]},
+          :lines [4805 4851]},
  :full-name "cljs.core/NodeSeq",
  :clj-symbol "clojure.lang/NodeSeq"}
 

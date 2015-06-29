@@ -19,16 +19,16 @@
 Source code:
 
 ```clj
-(set! cljs.core.PersistentHashSet/EMPTY
-  (PersistentHashSet. nil cljs.core.PersistentArrayMap/EMPTY 0))
+(set! cljs.core.PersistentHashSet.EMPTY
+  (PersistentHashSet. nil cljs.core.PersistentArrayMap.EMPTY 0))
 ```
 
  <pre>
-clojurescript @ r1913
+clojurescript @ r1933
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6050-6051](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/core.cljs#L6050-L6051)</ins>
+            └── <ins>[core.cljs:6051-6052](https://github.com/clojure/clojurescript/blob/r1933/src/cljs/cljs/core.cljs#L6051-L6052)</ins>
 </pre>
 
 
@@ -51,11 +51,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "PersistentHashSet",
  :type "var",
  :full-name-encode "cljs.core_PersistentHashSetDOTEMPTY",
- :source {:code "(set! cljs.core.PersistentHashSet/EMPTY\n  (PersistentHashSet. nil cljs.core.PersistentArrayMap/EMPTY 0))",
+ :source {:code "(set! cljs.core.PersistentHashSet.EMPTY\n  (PersistentHashSet. nil cljs.core.PersistentArrayMap.EMPTY 0))",
           :repo "clojurescript",
-          :tag "r1913",
+          :tag "r1933",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6050 6051]},
+          :lines [6051 6052]},
  :full-name "cljs.core/PersistentHashSet.EMPTY",
  :clj-symbol "clojure.lang/PersistentHashSet.EMPTY"}
 

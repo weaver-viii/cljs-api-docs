@@ -40,11 +40,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1913
+clojurescript @ r1933
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1366-1374](https://github.com/clojure/clojurescript/blob/r1913/src/clj/cljs/core.clj#L1366-L1374)</ins>
+            └── <ins>[core.clj:1336-1344](https://github.com/clojure/clojurescript/blob/r1933/src/clj/cljs/core.clj#L1336-L1344)</ins>
 </pre>
 
 
@@ -69,9 +69,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_with-out-str",
  :source {:code "(defmacro with-out-str\n  [& body]\n  `(let [sb# (goog.string/StringBuffer.)]\n     (binding [cljs.core/*print-fn* (fn [x#] (.append sb# x#))]\n       ~@body)\n     (cljs.core/str sb#)))",
           :repo "clojurescript",
-          :tag "r1913",
+          :tag "r1933",
           :filename "src/clj/cljs/core.clj",
-          :lines [1366 1374]},
+          :lines [1336 1344]},
  :full-name "cljs.core/with-out-str",
  :clj-symbol "clojure.core/with-out-str",
  :docstring "Evaluates exprs in a context in which *print-fn* is bound to .append\non a fresh StringBuffer.  Returns the string created by any nested\nprinting calls."}

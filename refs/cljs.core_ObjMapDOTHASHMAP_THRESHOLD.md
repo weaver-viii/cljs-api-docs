@@ -16,15 +16,15 @@
 Source code:
 
 ```clj
-(set! cljs.core.ObjMap/HASHMAP_THRESHOLD 8)
+(set! cljs.core.ObjMap.HASHMAP_THRESHOLD 8)
 ```
 
  <pre>
-clojurescript @ r1913
+clojurescript @ r1933
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3975](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/core.cljs#L3975)</ins>
+            └── <ins>[core.cljs:3976](https://github.com/clojure/clojurescript/blob/r1933/src/cljs/cljs/core.cljs#L3976)</ins>
 </pre>
 
 
@@ -45,11 +45,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "ObjMap.HASHMAP_THRESHOLD",
  :type "var",
  :parent-type "ObjMap",
- :source {:code "(set! cljs.core.ObjMap/HASHMAP_THRESHOLD 8)",
+ :source {:code "(set! cljs.core.ObjMap.HASHMAP_THRESHOLD 8)",
           :repo "clojurescript",
-          :tag "r1913",
+          :tag "r1933",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3975]},
+          :lines [3976]},
  :full-name "cljs.core/ObjMap.HASHMAP_THRESHOLD",
  :full-name-encode "cljs.core_ObjMapDOTHASHMAP_THRESHOLD",
  :history [["+" "0.0-1211"]]}

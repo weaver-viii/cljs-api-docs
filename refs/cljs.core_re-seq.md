@@ -51,11 +51,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1913
+clojurescript @ r1933
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6560-6567](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/core.cljs#L6560-L6567)</ins>
+            └── <ins>[core.cljs:6561-6568](https://github.com/clojure/clojurescript/blob/r1933/src/cljs/cljs/core.cljs#L6561-L6568)</ins>
 </pre>
 
 
@@ -86,9 +86,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_re-seq",
  :source {:code "(defn re-seq\n  [re s]\n  (let [match-data (re-find re s)\n        match-idx (.search s re)\n        match-str (if (coll? match-data) (first match-data) match-data)\n        post-match (subs s (+ match-idx (count match-str)))]\n    (when match-data (lazy-seq (cons match-data (re-seq re post-match))))))",
           :repo "clojurescript",
-          :tag "r1913",
+          :tag "r1933",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6560 6567]},
+          :lines [6561 6568]},
  :full-name "cljs.core/re-seq",
  :clj-symbol "clojure.core/re-seq",
  :docstring "Returns a lazy sequence of successive matches of re in s."}
