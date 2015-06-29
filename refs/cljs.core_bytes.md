@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1859
+clojurescript @ r1877
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1616](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L1616)</ins>
+            └── <ins>[core.cljs:1614](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L1614)</ins>
 </pre>
 
 
@@ -57,9 +57,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bytes",
  :source {:code "(defn bytes [x] x)",
           :repo "clojurescript",
-          :tag "r1859",
+          :tag "r1877",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1616]},
+          :lines [1614]},
  :full-name "cljs.core/bytes",
  :clj-symbol "clojure.core/bytes"}
 

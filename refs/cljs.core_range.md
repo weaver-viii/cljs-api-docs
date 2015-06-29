@@ -57,11 +57,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1859
+clojurescript @ r1877
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6401-6408](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L6401-L6408)</ins>
+            └── <ins>[core.cljs:6408-6415](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L6408-L6415)</ins>
 </pre>
 
 
@@ -88,9 +88,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_range",
  :source {:code "(defn range\n  ([] (range 0 js/Number.MAX_VALUE 1))\n  ([end] (range 0 end 1))\n  ([start end] (range start end 1))\n  ([start end step] (Range. nil start end step nil)))",
           :repo "clojurescript",
-          :tag "r1859",
+          :tag "r1877",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6401 6408]},
+          :lines [6408 6415]},
  :full-name "cljs.core/range",
  :clj-symbol "clojure.core/range",
  :docstring "Returns a lazy seq of nums from start (inclusive) to end\n(exclusive), by step, where start defaults to 0, step to 1,\nand end to infinity."}

@@ -49,11 +49,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1859
+clojurescript @ r1877
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2315-2333](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L2315-L2333)</ins>
+            └── <ins>[core.cljs:2317-2335](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L2317-L2335)</ins>
 </pre>
 
 
@@ -78,9 +78,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_double-array",
  :source {:code "(defn double-array\n  ([size-or-seq]\n     (if (number? size-or-seq)\n       (double-array size-or-seq nil)\n       (into-array size-or-seq)))\n  ([size init-val-or-seq]\n     (let [a (make-array size)]\n       (if (seq? init-val-or-seq)\n         (let [s (seq init-val-or-seq)]\n           (loop [i 0 s s]\n             (if (and s (< i size))\n               (do\n                 (aset a i (first s))\n                 (recur (inc i) (next s)))\n               a)))\n         (do\n           (dotimes [i size]\n             (aset a i init-val-or-seq))\n           a)))))",
           :repo "clojurescript",
-          :tag "r1859",
+          :tag "r1877",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2315 2333]},
+          :lines [2317 2335]},
  :full-name "cljs.core/double-array",
  :clj-symbol "clojure.core/double-array"}
 

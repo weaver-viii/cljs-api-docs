@@ -33,19 +33,15 @@ Source code:
   [x]
   (if (satisfies? INamed x false)
     (-namespace ^not-native x)
-    (if (keyword? x)
-      (let [i (.lastIndexOf x "/" (- (alength x) 2))]
-        (when (> i -1)
-          (subs x 2 i)))
-      (throw (js/Error. (str "Doesn't support namespace: " x))))))
+    (throw (js/Error. (str "Doesn't support namespace: " x)))))
 ```
 
  <pre>
-clojurescript @ r1859
+clojurescript @ r1877
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6238-6247](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L6238-L6247)</ins>
+            └── <ins>[core.cljs:6249-6254](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L6249-L6254)</ins>
 </pre>
 
 
@@ -68,11 +64,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.core_namespace",
- :source {:code "(defn namespace\n  [x]\n  (if (satisfies? INamed x false)\n    (-namespace ^not-native x)\n    (if (keyword? x)\n      (let [i (.lastIndexOf x \"/\" (- (alength x) 2))]\n        (when (> i -1)\n          (subs x 2 i)))\n      (throw (js/Error. (str \"Doesn't support namespace: \" x))))))",
+ :source {:code "(defn namespace\n  [x]\n  (if (satisfies? INamed x false)\n    (-namespace ^not-native x)\n    (throw (js/Error. (str \"Doesn't support namespace: \" x)))))",
           :repo "clojurescript",
-          :tag "r1859",
+          :tag "r1877",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6238 6247]},
+          :lines [6249 6254]},
  :full-name "cljs.core/namespace",
  :clj-symbol "clojure.core/namespace",
  :docstring "Returns the namespace String of a symbol or keyword, or nil if not present."}

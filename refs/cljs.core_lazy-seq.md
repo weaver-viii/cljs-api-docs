@@ -40,11 +40,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1859
+clojurescript @ r1877
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:881-882](https://github.com/clojure/clojurescript/blob/r1859/src/clj/cljs/core.clj#L881-L882)</ins>
+            └── <ins>[core.clj:884-885](https://github.com/clojure/clojurescript/blob/r1877/src/clj/cljs/core.clj#L884-L885)</ins>
 </pre>
 
 
@@ -74,9 +74,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_lazy-seq",
  :source {:code "(defmacro lazy-seq [& body]\n  `(new cljs.core/LazySeq nil false (fn [] ~@body) nil))",
           :repo "clojurescript",
-          :tag "r1859",
+          :tag "r1877",
           :filename "src/clj/cljs/core.clj",
-          :lines [881 882]},
+          :lines [884 885]},
  :full-name "cljs.core/lazy-seq",
  :clj-symbol "clojure.core/lazy-seq"}
 

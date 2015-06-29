@@ -31,20 +31,15 @@ Source code:
 ```clj
 (defn format
   [fmt & args]
-  (let [args (map (fn [x]
-                    (if (or (keyword? x) (symbol? x))
-                      (str x)
-                      x))
-                args)]
-    (apply gstring/format fmt args)))
+  (apply gstring/format fmt args))
 ```
 
  <pre>
-clojurescript @ r1859
+clojurescript @ r1877
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1787-1795](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L1787-L1795)</ins>
+            └── <ins>[core.cljs:1771-1774](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L1771-L1774)</ins>
 </pre>
 
 
@@ -67,11 +62,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1443"]],
  :type "function",
  :full-name-encode "cljs.core_format",
- :source {:code "(defn format\n  [fmt & args]\n  (let [args (map (fn [x]\n                    (if (or (keyword? x) (symbol? x))\n                      (str x)\n                      x))\n                args)]\n    (apply gstring/format fmt args)))",
+ :source {:code "(defn format\n  [fmt & args]\n  (apply gstring/format fmt args))",
           :repo "clojurescript",
-          :tag "r1859",
+          :tag "r1877",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1787 1795]},
+          :lines [1771 1774]},
  :full-name "cljs.core/format",
  :clj-symbol "clojure.core/format",
  :docstring "Formats a string using goog.string.format."}

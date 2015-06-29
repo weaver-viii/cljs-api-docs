@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1859
+clojurescript @ r1877
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:834-837](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L834-L837)</ins>
+            └── <ins>[core.cljs:836-839](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L836-L839)</ins>
 </pre>
 
 
@@ -76,9 +76,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_empty",
  :source {:code "(defn empty\n  [coll]\n  (-empty coll))",
           :repo "clojurescript",
-          :tag "r1859",
+          :tag "r1877",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [834 837]},
+          :lines [836 839]},
  :full-name "cljs.core/empty",
  :clj-symbol "clojure.core/empty",
  :docstring "Returns an empty collection of the same category as coll, or nil"}

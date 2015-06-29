@@ -52,11 +52,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1859
+clojurescript @ r1877
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6938-6945](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L6938-L6945)</ins>
+            └── <ins>[core.cljs:6933-6940](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L6933-L6940)</ins>
 </pre>
 
 
@@ -83,9 +83,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_compare-and-setBANG",
  :source {:code "(defn compare-and-set!\n  [a oldval newval]\n  (if (= (.-state a) oldval)\n    (do (reset! a newval) true)\n    false))",
           :repo "clojurescript",
-          :tag "r1859",
+          :tag "r1877",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6938 6945]},
+          :lines [6933 6940]},
  :full-name "cljs.core/compare-and-set!",
  :clj-symbol "clojure.core/compare-and-set!",
  :docstring "Atomically sets the value of atom to newval if and only if the\ncurrent value of the atom is identical to oldval. Returns true if\nset happened, else false."}

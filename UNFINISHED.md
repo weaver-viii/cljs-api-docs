@@ -3104,7 +3104,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/keyword-identical?</td>
-<td></td>
+<td>[ref](refs/cljs.core_keyword-identicalQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_keyword-identicalQMARK.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4256,7 +4256,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/set-from-indexed-seq</td>
-<td></td>
+<td>[ref](refs/cljs.core_set-from-indexed-seq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_set-from-indexed-seq.cljsdoc)</td>
 <td></td>
 <td></td>

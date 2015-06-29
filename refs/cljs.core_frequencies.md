@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1859
+clojurescript @ r1877
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6433-6440](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L6433-L6440)</ins>
+            └── <ins>[core.cljs:6440-6447](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L6440-L6447)</ins>
 </pre>
 
 
@@ -81,9 +81,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_frequencies",
  :source {:code "(defn frequencies\n  [coll]\n  (persistent!\n   (reduce (fn [counts x]\n             (assoc! counts x (inc (get counts x 0))))\n           (transient {}) coll)))",
           :repo "clojurescript",
-          :tag "r1859",
+          :tag "r1877",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6433 6440]},
+          :lines [6440 6447]},
  :full-name "cljs.core/frequencies",
  :clj-symbol "clojure.core/frequencies",
  :docstring "Returns a map from distinct items in coll to the number of times\nthey appear."}

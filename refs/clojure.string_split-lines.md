@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1859
+clojurescript @ r1877
 └── src
     └── cljs
         └── clojure
-            └── <ins>[string.cljs:101-104](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/clojure/string.cljs#L101-L104)</ins>
+            └── <ins>[string.cljs:127-130](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/clojure/string.cljs#L127-L130)</ins>
 </pre>
 
 
@@ -76,9 +76,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.string_split-lines",
  :source {:code "(defn split-lines\n  [s]\n  (split s #\"\\n|\\r\\n\"))",
           :repo "clojurescript",
-          :tag "r1859",
+          :tag "r1877",
           :filename "src/cljs/clojure/string.cljs",
-          :lines [101 104]},
+          :lines [127 130]},
  :full-name "clojure.string/split-lines",
  :clj-symbol "clojure.string/split-lines",
  :docstring "Splits s on \n or \r\n."}

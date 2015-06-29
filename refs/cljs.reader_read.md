@@ -49,11 +49,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1859
+clojurescript @ r1877
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:413-430](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/reader.cljs#L413-L430)</ins>
+            └── <ins>[reader.cljs:412-429](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/reader.cljs#L412-L429)</ins>
 </pre>
 
 
@@ -78,9 +78,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.reader_read",
  :source {:code "(defn read\n  [reader eof-is-error sentinel is-recursive]\n  (let [ch (read-char reader)]\n    (cond\n     (nil? ch) (if eof-is-error (reader-error reader \"EOF while reading\") sentinel)\n     (whitespace? ch) (recur reader eof-is-error sentinel is-recursive)\n     (comment-prefix? ch) (recur (read-comment reader ch) eof-is-error sentinel is-recursive)\n     :else (let [f (macros ch)\n                 res\n                 (cond\n                  f (f reader ch)\n                  (number-literal? reader ch) (read-number reader ch)\n                  :else (read-symbol reader ch))]\n     (if (identical? res reader)\n       (recur reader eof-is-error sentinel is-recursive)\n       res)))))",
           :repo "clojurescript",
-          :tag "r1859",
+          :tag "r1877",
           :filename "src/cljs/cljs/reader.cljs",
-          :lines [413 430]},
+          :lines [412 429]},
  :full-name "cljs.reader/read",
  :clj-symbol "clojure.core/read",
  :docstring "Reads the first object from a PushbackReader. Returns the object read.\nIf EOF, throws if eof-is-error is true. Otherwise returns sentinel."}

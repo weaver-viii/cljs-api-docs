@@ -63,11 +63,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1859
+clojurescript @ r1877
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6042-6077](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L6042-L6077)</ins>
+            └── <ins>[core.cljs:6058-6093](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L6058-L6093)</ins>
 </pre>
 
 
@@ -92,9 +92,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_TransientHashSet",
  :source {:code "(deftype TransientHashSet [^:mutable transient-map]\n  ITransientCollection\n  (-conj! [tcoll o]\n    (set! transient-map (assoc! transient-map o nil))\n    tcoll)\n\n  (-persistent! [tcoll]\n    (PersistentHashSet. nil (persistent! transient-map) nil))\n\n  ITransientSet\n  (-disjoin! [tcoll v]\n    (set! transient-map (dissoc! transient-map v))\n    tcoll)\n\n  ICounted\n  (-count [tcoll] (count transient-map))\n\n  ILookup\n  (-lookup [tcoll v]\n    (-lookup tcoll v nil))\n\n  (-lookup [tcoll v not-found]\n    (if (identical? (-lookup transient-map v lookup-sentinel) lookup-sentinel)\n      not-found\n      v))\n\n  IFn\n  (-invoke [tcoll k]\n    (if (identical? (-lookup transient-map k lookup-sentinel) lookup-sentinel)\n      nil\n      k))\n\n  (-invoke [tcoll k not-found]\n    (if (identical? (-lookup transient-map k lookup-sentinel) lookup-sentinel)\n      not-found\n      k)))",
           :repo "clojurescript",
-          :tag "r1859",
+          :tag "r1877",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6042 6077]},
+          :lines [6058 6093]},
  :full-name "cljs.core/TransientHashSet",
  :clj-symbol "clojure.lang/TransientHashSet"}
 

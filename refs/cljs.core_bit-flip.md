@@ -62,11 +62,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1859
+clojurescript @ r1877
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1676-1679](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L1676-L1679)</ins>
+            └── <ins>[core.cljs:1674-1677](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L1674-L1677)</ins>
 </pre>
 
 
@@ -78,11 +78,11 @@ clojurescript @ r1859
 ```
 
  <pre>
-clojurescript @ r1859
+clojurescript @ r1877
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:441-442](https://github.com/clojure/clojurescript/blob/r1859/src/clj/cljs/core.clj#L441-L442)</ins>
+            └── <ins>[core.clj:444-445](https://github.com/clojure/clojurescript/blob/r1877/src/clj/cljs/core.clj#L444-L445)</ins>
 </pre>
 
 ---
@@ -108,14 +108,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-flip",
  :source {:code "(defn bit-flip\n  [x n]\n  (cljs.core/bit-flip x n))",
           :repo "clojurescript",
-          :tag "r1859",
+          :tag "r1877",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1676 1679]},
+          :lines [1674 1677]},
  :extra-sources ({:code "(defmacro bit-flip [x n]\n  (list 'js* \"(~{} ^ (1 << ~{}))\" x n))",
                   :repo "clojurescript",
-                  :tag "r1859",
+                  :tag "r1877",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [441 442]}),
+                  :lines [444 445]}),
  :examples [{:id "5d7ee0",
              :content "Bits can be entered using radix notation:\n\n```clj\n(bit-flip 2r1111 2)\n;;=> 11\n;; 11 = 2r1011\n```\n\nSame numbers in decimal:\n\n```clj\n(bit-flip 15 2)\n;;=> 11\n```"}],
  :full-name "cljs.core/bit-flip",

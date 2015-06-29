@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1859
+clojurescript @ r1877
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7047-7049](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L7047-L7049)</ins>
+            └── <ins>[core.cljs:7042-7044](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L7042-L7044)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_delayQMARK",
  :source {:code "(defn ^boolean delay?\n  [x] (instance? cljs.core.Delay x))",
           :repo "clojurescript",
-          :tag "r1859",
+          :tag "r1877",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7047 7049]},
+          :lines [7042 7044]},
  :full-name "cljs.core/delay?",
  :clj-symbol "clojure.core/delay?",
  :docstring "returns true if x is a Delay created with delay"}

@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1859
+clojurescript @ r1877
 └── src
     └── cljs
         └── clojure
-            └── <ins>[string.cljs:106-109](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/clojure/string.cljs#L106-L109)</ins>
+            └── <ins>[string.cljs:132-135](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/clojure/string.cljs#L132-L135)</ins>
 </pre>
 
 
@@ -68,9 +68,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.string_trim",
  :source {:code "(defn trim\n    [s]\n    (gstring/trim s))",
           :repo "clojurescript",
-          :tag "r1859",
+          :tag "r1877",
           :filename "src/cljs/clojure/string.cljs",
-          :lines [106 109]},
+          :lines [132 135]},
  :full-name "clojure.string/trim",
  :clj-symbol "clojure.string/trim",
  :docstring "Removes whitespace from both ends of string."}

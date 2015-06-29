@@ -55,11 +55,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1859
+clojurescript @ r1877
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2908-2914](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L2908-L2914)</ins>
+            └── <ins>[core.cljs:2910-2916](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L2910-L2916)</ins>
 </pre>
 
 
@@ -86,9 +86,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_mapcat",
  :source {:code "(defn mapcat\n  ([f coll]\n    (flatten1 (map f coll)))\n  ([f coll & colls]\n    (flatten1 (apply map f coll colls))))",
           :repo "clojurescript",
-          :tag "r1859",
+          :tag "r1877",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2908 2914]},
+          :lines [2910 2916]},
  :full-name "cljs.core/mapcat",
  :clj-symbol "clojure.core/mapcat",
  :docstring "Returns the result of applying concat to the result of applying map\nto f and colls.  Thus function f should return a collection."}
