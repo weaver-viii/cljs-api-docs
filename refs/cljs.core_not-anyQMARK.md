@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2173
+clojurescript @ r2197
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2660-2663](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L2660-L2663)</ins>
+            └── <ins>[core.cljs:2673-2676](https://github.com/clojure/clojurescript/blob/r2197/src/cljs/cljs/core.cljs#L2673-L2676)</ins>
 </pre>
 
 
@@ -76,9 +76,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_not-anyQMARK",
  :source {:code "(defn ^boolean not-any?\n  [pred coll] (not (some pred coll)))",
           :repo "clojurescript",
-          :tag "r2173",
+          :tag "r2197",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2660 2663]},
+          :lines [2673 2676]},
  :full-name "cljs.core/not-any?",
  :clj-symbol "clojure.core/not-any?",
  :docstring "Returns false if (pred x) is logical true for any x in coll,\nelse true."}

@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2173
+clojurescript @ r2197
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1639-1642](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L1639-L1642)</ins>
+            └── <ins>[core.cljs:1652-1655](https://github.com/clojure/clojurescript/blob/r2197/src/cljs/cljs/core.cljs#L1652-L1655)</ins>
 </pre>
 
 
@@ -60,11 +60,11 @@ clojurescript @ r2173
 ```
 
  <pre>
-clojurescript @ r2173
+clojurescript @ r2197
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:489-490](https://github.com/clojure/clojurescript/blob/r2173/src/clj/cljs/core.clj#L489-L490)</ins>
+            └── <ins>[core.clj:495-496](https://github.com/clojure/clojurescript/blob/r2197/src/clj/cljs/core.clj#L495-L496)</ins>
 </pre>
 
 ---
@@ -90,14 +90,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_int",
  :source {:code "(defn int\n  [x]\n  (bit-or x 0))",
           :repo "clojurescript",
-          :tag "r2173",
+          :tag "r2197",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1639 1642]},
+          :lines [1652 1655]},
  :extra-sources ({:code "(defmacro ^::ana/numeric int [x]\n  `(bit-or ~x 0))",
                   :repo "clojurescript",
-                  :tag "r2173",
+                  :tag "r2197",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [489 490]}),
+                  :lines [495 496]}),
  :full-name "cljs.core/int",
  :clj-symbol "clojure.core/int",
  :docstring "Coerce to int by stripping decimal places."}

@@ -70,11 +70,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2173
+clojurescript @ r2197
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2720-2732](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L2720-L2732)</ins>
+            └── <ins>[core.cljs:2733-2745](https://github.com/clojure/clojurescript/blob/r2197/src/cljs/cljs/core.cljs#L2733-L2745)</ins>
 </pre>
 
 
@@ -105,9 +105,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_partial",
  :source {:code "(defn partial\n  ([f] f)\n  ([f arg1]\n   (fn [& args] (apply f arg1 args)))\n  ([f arg1 arg2]\n   (fn [& args] (apply f arg1 arg2 args)))\n  ([f arg1 arg2 arg3]\n   (fn [& args] (apply f arg1 arg2 arg3 args)))\n  ([f arg1 arg2 arg3 & more]\n   (fn [& args] (apply f arg1 arg2 arg3 (concat more args)))))",
           :repo "clojurescript",
-          :tag "r2173",
+          :tag "r2197",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2720 2732]},
+          :lines [2733 2745]},
  :full-name "cljs.core/partial",
  :clj-symbol "clojure.core/partial",
  :docstring "Takes a function f and fewer than the normal arguments to f, and\nreturns a fn that takes a variable number of additional args. When\ncalled, the returned function calls f with args + additional args."}

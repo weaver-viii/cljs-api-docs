@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2173
+clojurescript @ r2197
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7678-7681](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L7678-L7681)</ins>
+            └── <ins>[core.cljs:7708-7711](https://github.com/clojure/clojurescript/blob/r2197/src/cljs/cljs/core.cljs#L7708-L7711)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_get-method",
  :source {:code "(defn get-method\n  [multifn dispatch-val] (-get-method multifn dispatch-val))",
           :repo "clojurescript",
-          :tag "r2173",
+          :tag "r2197",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7678 7681]},
+          :lines [7708 7711]},
  :full-name "cljs.core/get-method",
  :clj-symbol "clojure.core/get-method",
  :docstring "Given a multimethod and a dispatch value, returns the dispatch fn\nthat would apply to that value, or nil if none apply and no default"}

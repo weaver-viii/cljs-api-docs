@@ -53,11 +53,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2173
+clojurescript @ r2197
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7429-7447](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L7429-L7447)</ins>
+            └── <ins>[core.cljs:7457-7475](https://github.com/clojure/clojurescript/blob/r2197/src/cljs/cljs/core.cljs#L7457-L7475)</ins>
 </pre>
 
 
@@ -83,9 +83,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_isaQMARK",
  :source {:code "(defn ^boolean isa?\n  ([child parent] (isa? @(get-global-hierarchy) child parent))\n  ([h child parent]\n     (or (= child parent)\n         ;; (and (class? parent) (class? child)\n         ;;    (. ^Class parent isAssignableFrom child))\n         (contains? ((:ancestors h) child) parent)\n         ;;(and (class? child) (some #(contains? ((:ancestors h) %) parent) (supers child)))\n         (and (vector? parent) (vector? child)\n              (== (count parent) (count child))\n              (loop [ret true i 0]\n                (if (or (not ret) (== i (count parent)))\n                  ret\n                  (recur (isa? h (child i) (parent i)) (inc i))))))))",
           :repo "clojurescript",
-          :tag "r2173",
+          :tag "r2197",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7429 7447]},
+          :lines [7457 7475]},
  :full-name "cljs.core/isa?",
  :clj-symbol "clojure.core/isa?",
  :docstring "Returns true if (= child parent), or child is directly or indirectly derived from\nparent, either via a JavaScript type inheritance relationship or a\nrelationship established via derive. h must be a hierarchy obtained\nfrom make-hierarchy, if not supplied defaults to the global\nhierarchy"}

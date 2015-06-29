@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2173
+clojurescript @ r2197
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1582-1587](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L1582-L1587)</ins>
+            └── <ins>[core.cljs:1595-1600](https://github.com/clojure/clojurescript/blob/r2197/src/cljs/cljs/core.cljs#L1595-L1600)</ins>
 </pre>
 
 
@@ -59,11 +59,11 @@ clojurescript @ r2173
 ```
 
  <pre>
-clojurescript @ r2173
+clojurescript @ r2197
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:367-368](https://github.com/clojure/clojurescript/blob/r2173/src/clj/cljs/core.clj#L367-L368)</ins>
+            └── <ins>[core.clj:373-374](https://github.com/clojure/clojurescript/blob/r2197/src/clj/cljs/core.clj#L373-L374)</ins>
 </pre>
 
 ---
@@ -88,14 +88,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-divide-int",
  :source {:code "(defn ^number unchecked-divide-int\n  ([x] (unchecked-divide-int 1 x))\n  ([x y] (cljs.core/divide x y)) ;; FIXME: waiting on cljs.core//\n  ([x y & more] (reduce unchecked-divide-int (unchecked-divide-int x y) more)))",
           :repo "clojurescript",
-          :tag "r2173",
+          :tag "r2197",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1582 1587]},
+          :lines [1595 1600]},
  :extra-sources ({:code "(defmacro ^::ana/numeric unchecked-divide-int\n  ([& xs] `(/ ~@xs)))",
                   :repo "clojurescript",
-                  :tag "r2173",
+                  :tag "r2197",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [367 368]}),
+                  :lines [373 374]}),
  :full-name "cljs.core/unchecked-divide-int",
  :clj-symbol "clojure.core/unchecked-divide-int",
  :docstring "If no denominators are supplied, returns 1/numerator,\nelse returns numerator divided by all of the denominators."}

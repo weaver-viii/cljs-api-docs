@@ -48,11 +48,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2173
+clojurescript @ r2197
 └── src
     └── cljs
         └── clojure
-            └── <ins>[set.cljs:138-142](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/clojure/set.cljs#L138-L142)</ins>
+            └── <ins>[set.cljs:138-142](https://github.com/clojure/clojurescript/blob/r2197/src/cljs/clojure/set.cljs#L138-L142)</ins>
 </pre>
 
 
@@ -79,7 +79,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.set_supersetQMARK",
  :source {:code "(defn superset? \n  [set1 set2]\n  (and (>= (count set1) (count set2))\n       (every? #(contains? set1 %) set2)))",
           :repo "clojurescript",
-          :tag "r2173",
+          :tag "r2197",
           :filename "src/cljs/clojure/set.cljs",
           :lines [138 142]},
  :full-name "clojure.set/superset?",

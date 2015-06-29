@@ -48,11 +48,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2173
+clojurescript @ r2197
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:88-89](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L88-L89)</ins>
+            └── <ins>[core.cljs:88-89](https://github.com/clojure/clojurescript/blob/r2197/src/cljs/cljs/core.cljs#L88-L89)</ins>
 </pre>
 
 
@@ -60,15 +60,17 @@ clojurescript @ r2173
 
 ```clj
 (defmacro array? [x]
-  (bool-expr (core/list 'js* "~{} instanceof Array" x)))
+  (if (= :nodejs (:target @env/*compiler*))
+    (bool-expr `(.isArray js/Array ~x))
+    (bool-expr (core/list 'js* "~{} instanceof Array" x))))
 ```
 
  <pre>
-clojurescript @ r2173
+clojurescript @ r2197
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:287-288](https://github.com/clojure/clojurescript/blob/r2173/src/clj/cljs/core.clj#L287-L288)</ins>
+            └── <ins>[core.clj:291-294](https://github.com/clojure/clojurescript/blob/r2197/src/clj/cljs/core.clj#L291-L294)</ins>
 </pre>
 
 ---
@@ -95,14 +97,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_arrayQMARK",
  :source {:code "(defn ^boolean array? [x]\n  (cljs.core/array? x))",
           :repo "clojurescript",
-          :tag "r2173",
+          :tag "r2197",
           :filename "src/cljs/cljs/core.cljs",
           :lines [88 89]},
- :extra-sources ({:code "(defmacro array? [x]\n  (bool-expr (core/list 'js* \"~{} instanceof Array\" x)))",
+ :extra-sources ({:code "(defmacro array? [x]\n  (if (= :nodejs (:target @env/*compiler*))\n    (bool-expr `(.isArray js/Array ~x))\n    (bool-expr (core/list 'js* \"~{} instanceof Array\" x))))",
                   :repo "clojurescript",
-                  :tag "r2173",
+                  :tag "r2197",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [287 288]}),
+                  :lines [291 294]}),
  :examples [{:id "39913c",
              :content "```clj\n(array? #js [1 2 3])\n;;=> true\n\n(array? [1 2 3])\n;;=> false\n\n(array? \"hi\")\n;;=> false\n```"}],
  :full-name "cljs.core/array?"}
