@@ -27,12 +27,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3126
+clojurescript @ r3148
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[nashorn.clj:134-136](https://github.com/clojure/clojurescript/blob/r3126/src/clj/cljs/repl/nashorn.clj#L134-L136)</ins>
+                └── <ins>[nashorn.clj:134-136](https://github.com/clojure/clojurescript/blob/r3148/src/clj/cljs/repl/nashorn.clj#L134-L136)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[engine ns]"],
  :source {:code "(defn load-ns [engine ns]\n  (eval-str engine\n    (format \"goog.require(\\\"%s\\\");\" (comp/munge (first ns)))))",
           :repo "clojurescript",
-          :tag "r3126",
+          :tag "r3148",
           :filename "src/clj/cljs/repl/nashorn.clj",
           :lines [134 136]},
  :full-name "cljs.repl.nashorn/load-ns",

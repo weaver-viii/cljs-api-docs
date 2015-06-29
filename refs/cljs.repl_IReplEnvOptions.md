@@ -21,11 +21,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3126
+clojurescript @ r3148
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:99-100](https://github.com/clojure/clojurescript/blob/r3126/src/clj/cljs/repl.clj#L99-L100)</ins>
+            └── <ins>[repl.clj:103-104](https://github.com/clojure/clojurescript/blob/r3148/src/clj/cljs/repl.clj#L103-L104)</ins>
 </pre>
 
 
@@ -48,9 +48,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_IReplEnvOptions",
  :source {:code "(defprotocol IReplEnvOptions\n  (-repl-options [repl-env] \"Return default REPL options for a REPL Env\"))",
           :repo "clojurescript",
-          :tag "r3126",
+          :tag "r3148",
           :filename "src/clj/cljs/repl.clj",
-          :lines [99 100]},
+          :lines [103 104]},
  :methods [{:name "-repl-options",
             :signature ["[repl-env]"],
             :docstring "Return default REPL options for a REPL Env"}],

@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3126
+clojurescript @ r3148
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:295-300](https://github.com/clojure/clojurescript/blob/r3126/src/cljs/cljs/test.cljs#L295-L300)</ins>
+            └── <ins>[test.cljs:295-300](https://github.com/clojure/clojurescript/blob/r3148/src/cljs/cljs/test.cljs#L295-L300)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_inc-report-counterBANG",
  :source {:code "(defn inc-report-counter!\n  [name]\n  (if (:report-counters (get-current-env))\n    (update-current-env! [:report-counters name] (fnil inc 0))))",
           :repo "clojurescript",
-          :tag "r3126",
+          :tag "r3148",
           :filename "src/cljs/cljs/test.cljs",
           :lines [295 300]},
  :full-name "cljs.test/inc-report-counter!",

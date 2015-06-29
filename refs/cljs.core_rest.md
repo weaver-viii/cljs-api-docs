@@ -73,11 +73,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3126
+clojurescript @ r3148
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:964-975](https://github.com/clojure/clojurescript/blob/r3126/src/cljs/cljs/core.cljs#L964-L975)</ins>
+            └── <ins>[core.cljs:964-975](https://github.com/clojure/clojurescript/blob/r3148/src/cljs/cljs/core.cljs#L964-L975)</ins>
 </pre>
 
 
@@ -108,7 +108,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_rest",
  :source {:code "(defn ^seq rest\n  [coll]\n  (if-not (nil? coll)\n    (if (implements? ISeq coll)\n      (-rest ^not-native coll)\n      (let [s (seq coll)]\n        (if s\n          (-rest ^not-native s)\n          ())))\n    ()))",
           :repo "clojurescript",
-          :tag "r3126",
+          :tag "r3148",
           :filename "src/cljs/cljs/core.cljs",
           :lines [964 975]},
  :examples [{:id "0869af",

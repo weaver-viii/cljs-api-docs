@@ -48,11 +48,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3126
+clojurescript @ r3148
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4773-4778](https://github.com/clojure/clojurescript/blob/r3126/src/cljs/cljs/core.cljs#L4773-L4778)</ins>
+            └── <ins>[core.cljs:4773-4778](https://github.com/clojure/clojurescript/blob/r3148/src/cljs/cljs/core.cljs#L4773-L4778)</ins>
 </pre>
 
 
@@ -72,11 +72,11 @@ clojurescript @ r3126
 ```
 
  <pre>
-clojurescript @ r3126
+clojurescript @ r3148
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1696-1705](https://github.com/clojure/clojurescript/blob/r3126/src/clj/cljs/core.clj#L1696-L1705)</ins>
+            └── <ins>[core.clj:1696-1705](https://github.com/clojure/clojurescript/blob/r3148/src/clj/cljs/core.clj#L1696-L1705)</ins>
 </pre>
 
 ---
@@ -105,12 +105,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_vector",
  :source {:code "(defn vector\n  [& args]\n  (if (and (instance? IndexedSeq args) (zero? (.-i args)))\n    (.fromArray PersistentVector (.-arr args) true)\n    (vec args)))",
           :repo "clojurescript",
-          :tag "r3126",
+          :tag "r3148",
           :filename "src/cljs/cljs/core.cljs",
           :lines [4773 4778]},
  :extra-sources ({:code "(defmacro vector\n  ([] '(.-EMPTY cljs.core/PersistentVector))\n  ([& xs]\n    (let [cnt (count xs)]\n      (if (core/< cnt 32)\n        `(cljs.core/PersistentVector. nil ~cnt 5\n           (.-EMPTY-NODE cljs.core/PersistentVector) (array ~@xs) nil)\n        (vary-meta\n          `(.fromArray cljs.core/PersistentVector (array ~@xs) true)\n          assoc :tag 'cljs.core/PersistentVector)))))",
                   :repo "clojurescript",
-                  :tag "r3126",
+                  :tag "r3148",
                   :filename "src/clj/cljs/core.clj",
                   :lines [1696 1705]}),
  :full-name "cljs.core/vector",

@@ -44,12 +44,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3126
+clojurescript @ r3148
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[server.clj:45-57](https://github.com/clojure/clojurescript/blob/r3126/src/clj/cljs/repl/server.clj#L45-L57)</ins>
+                └── <ins>[server.clj:41-53](https://github.com/clojure/clojurescript/blob/r3148/src/clj/cljs/repl/server.clj#L41-L53)</ins>
 </pre>
 
 
@@ -74,9 +74,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.server_dispatch-on",
  :source {:code "(defn dispatch-on\n  ([method pred handler]\n    (dispatch-on method {:pred pred :handler handler}))\n  ([method {:as m}]\n    (swap! handlers\n      (fn [old]\n        (update-in old [method] #(conj (vec %) m))))))",
           :repo "clojurescript",
-          :tag "r3126",
+          :tag "r3148",
           :filename "src/clj/cljs/repl/server.clj",
-          :lines [45 57]},
+          :lines [41 53]},
  :full-name "cljs.repl.server/dispatch-on",
  :docstring "Registers a handler to be dispatched based on a request method and a\npredicate.\n\npred should be a function that accepts an options map, a connection,\nand a request map and returns a boolean value based on whether or not\nthat request should be dispatched to the related handler."}
 

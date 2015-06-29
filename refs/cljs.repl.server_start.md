@@ -29,17 +29,20 @@ Source code:
 (defn start
   [opts]
   (let [ss (ServerSocket. (:port opts))]
-    (future (server-loop opts ss))
+    (.start
+      (Thread.
+        ((ns-resolve 'clojure.core 'binding-conveyor-fn)
+          (fn [] (server-loop opts ss)))))
     (swap! state (fn [old] (assoc old :socket ss :port (:port opts))))))
 ```
 
  <pre>
-clojurescript @ r3126
+clojurescript @ r3148
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[server.clj:168-173](https://github.com/clojure/clojurescript/blob/r3126/src/clj/cljs/repl/server.clj#L168-L173)</ins>
+                └── <ins>[server.clj:167-175](https://github.com/clojure/clojurescript/blob/r3148/src/clj/cljs/repl/server.clj#L167-L175)</ins>
 </pre>
 
 
@@ -62,11 +65,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1503"]],
  :type "function",
  :full-name-encode "cljs.repl.server_start",
- :source {:code "(defn start\n  [opts]\n  (let [ss (ServerSocket. (:port opts))]\n    (future (server-loop opts ss))\n    (swap! state (fn [old] (assoc old :socket ss :port (:port opts))))))",
+ :source {:code "(defn start\n  [opts]\n  (let [ss (ServerSocket. (:port opts))]\n    (.start\n      (Thread.\n        ((ns-resolve 'clojure.core 'binding-conveyor-fn)\n          (fn [] (server-loop opts ss)))))\n    (swap! state (fn [old] (assoc old :socket ss :port (:port opts))))))",
           :repo "clojurescript",
-          :tag "r3126",
+          :tag "r3148",
           :filename "src/clj/cljs/repl/server.clj",
-          :lines [168 173]},
+          :lines [167 175]},
  :full-name "cljs.repl.server/start",
  :docstring "Start the server on the specified port."}
 

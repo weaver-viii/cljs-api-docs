@@ -49,11 +49,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3126
+clojurescript @ r3148
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4115-4118](https://github.com/clojure/clojurescript/blob/r3126/src/cljs/cljs/core.cljs#L4115-L4118)</ins>
+            └── <ins>[core.cljs:4115-4118](https://github.com/clojure/clojurescript/blob/r3148/src/cljs/cljs/core.cljs#L4115-L4118)</ins>
 </pre>
 
 
@@ -80,7 +80,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_drop-last",
  :source {:code "(defn drop-last\n  ([s] (drop-last 1 s))\n  ([n s] (map (fn [x _] x) s (drop n s))))",
           :repo "clojurescript",
-          :tag "r3126",
+          :tag "r3148",
           :filename "src/cljs/cljs/core.cljs",
           :lines [4115 4118]},
  :full-name "cljs.core/drop-last",

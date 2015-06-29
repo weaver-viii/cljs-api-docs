@@ -35,12 +35,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3126
+clojurescript @ r3148
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:215-225](https://github.com/clojure/clojurescript/blob/r3126/src/clj/cljs/repl/browser.clj#L215-L225)</ins>
+                └── <ins>[browser.clj:214-224](https://github.com/clojure/clojurescript/blob/r3148/src/clj/cljs/repl/browser.clj#L214-L224)</ins>
 </pre>
 
 
@@ -63,9 +63,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[file opts]"],
  :source {:code "(defn parse-file [file opts]\n  (if (re-find #\"http://localhost:9000/\" file)\n    (-> file\n      (string/replace #\"http://localhost:9000/\" \"\")\n      (string/replace (Pattern/compile (str \"^\" (util/output-directory opts) \"/\")) \"\"))\n    (if-let [asset-root (:asset-root opts)]\n      (string/replace file asset-root \"\")\n      (throw\n        (ex-info (str \"Could not relativize URL \" file)\n          {:type :parse-stacktrace\n           :reason :relativize-url})))))",
           :repo "clojurescript",
-          :tag "r3126",
+          :tag "r3148",
           :filename "src/clj/cljs/repl/browser.clj",
-          :lines [215 225]},
+          :lines [214 224]},
  :full-name "cljs.repl.browser/parse-file",
  :full-name-encode "cljs.repl.browser_parse-file",
  :history [["+" "0.0-3053"]]}

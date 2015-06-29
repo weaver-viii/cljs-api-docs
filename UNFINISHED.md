@@ -5928,7 +5928,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/canonicalize-specs</td>
-<td></td>
+<td>[ref](refs/cljs.repl_canonicalize-specs.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_canonicalize-specs.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5936,7 +5936,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/decorate-specs</td>
-<td></td>
+<td>[ref](refs/cljs.repl_decorate-specs.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_decorate-specs.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5952,7 +5952,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/err-out</td>
-<td></td>
+<td>[ref](refs/cljs.repl_err-out.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_err-out.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6096,7 +6096,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/repl-quit-prompt</td>
-<td></td>
+<td>[ref](refs/cljs.repl_repl-quit-prompt.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_repl-quit-prompt.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6256,7 +6256,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.browser/es</td>
-<td></td>
+<td>[ref](refs/cljs.repl.browser_es.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.browser_es.cljsdoc)</td>
 <td></td>
 <td></td>

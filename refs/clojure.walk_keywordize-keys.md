@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3126
+clojurescript @ r3148
 └── src
     └── cljs
         └── clojure
-            └── <ins>[walk.cljs:64-70](https://github.com/clojure/clojurescript/blob/r3126/src/cljs/clojure/walk.cljs#L64-L70)</ins>
+            └── <ins>[walk.cljs:64-70](https://github.com/clojure/clojurescript/blob/r3148/src/cljs/clojure/walk.cljs#L64-L70)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.walk_keywordize-keys",
  :source {:code "(defn keywordize-keys\n  [m]\n  (let [f (fn [[k v]] (if (string? k) [(keyword k) v] [k v]))]\n    ;; only apply to maps\n    (postwalk (fn [x] (if (map? x) (into {} (map f x)) x)) m)))",
           :repo "clojurescript",
-          :tag "r3126",
+          :tag "r3148",
           :filename "src/cljs/clojure/walk.cljs",
           :lines [64 70]},
  :full-name "clojure.walk/keywordize-keys",

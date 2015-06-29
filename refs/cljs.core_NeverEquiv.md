@@ -30,11 +30,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3126
+clojurescript @ r3148
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5280-5285](https://github.com/clojure/clojurescript/blob/r3126/src/cljs/cljs/core.cljs#L5280-L5285)</ins>
+            └── <ins>[core.cljs:5280-5285](https://github.com/clojure/clojurescript/blob/r3148/src/cljs/cljs/core.cljs#L5280-L5285)</ins>
 </pre>
 
 
@@ -57,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[]"],
  :source {:code "(deftype NeverEquiv []\n  Object\n  (equiv [this other]\n    (-equiv this other))\n  IEquiv\n  (-equiv [o other] false))",
           :repo "clojurescript",
-          :tag "r3126",
+          :tag "r3148",
           :filename "src/cljs/cljs/core.cljs",
           :lines [5280 5285]},
  :full-name "cljs.core/NeverEquiv",

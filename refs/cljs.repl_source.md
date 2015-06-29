@@ -63,11 +63,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3126
+clojurescript @ r3148
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:1063-1070](https://github.com/clojure/clojurescript/blob/r3126/src/clj/cljs/repl.clj#L1063-L1070)</ins>
+            └── <ins>[repl.clj:1113-1120](https://github.com/clojure/clojurescript/blob/r3148/src/clj/cljs/repl.clj#L1113-L1120)</ins>
 </pre>
 
 
@@ -94,9 +94,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_source",
  :source {:code "(defmacro source\n  [n]\n  `(println ~(or (source-fn &env n) (str \"Source not found\"))))",
           :repo "clojurescript",
-          :tag "r3126",
+          :tag "r3148",
           :filename "src/clj/cljs/repl.clj",
-          :lines [1063 1070]},
+          :lines [1113 1120]},
  :examples [{:id "94c94c",
              :content "```clj\n(source comment)\n;; Prints:\n;; (defmacro comment\n;;   \"Ignores body, yields nil\"\n;;   {:added \"1.0\"}\n;;   [& body])\n;;\n;;=> nil\n```"}],
  :full-name "cljs.repl/source",

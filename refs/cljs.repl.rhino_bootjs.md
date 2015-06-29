@@ -27,12 +27,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3126
+clojurescript @ r3148
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[rhino.clj:22-29](https://github.com/clojure/clojurescript/blob/r3126/src/clj/cljs/repl/rhino.clj#L22-L29)</ins>
+                └── <ins>[rhino.clj:22-29](https://github.com/clojure/clojurescript/blob/r3148/src/clj/cljs/repl/rhino.clj#L22-L29)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :return-type String,
  :source {:code "(def ^String bootjs\n  (str \"var global = this;\\n\"\n       \"var CLOSURE_IMPORT_SCRIPT = function(src) {\\n\"\n       \"    var ns = \\\"cljs.repl.rhino\\\",\"\n       \"        name = \\\"load-file\\\",\"\n       \"        loadFile = Packages.clojure.lang.RT[\\\"var\\\"](ns,name);\\n\"\n       \"    if(src) loadFile.invoke(___repl_env, __repl_opts, src);\\n\"\n       \"};\\n\"))",
           :repo "clojurescript",
-          :tag "r3126",
+          :tag "r3148",
           :filename "src/clj/cljs/repl/rhino.clj",
           :lines [22 29]},
  :full-name "cljs.repl.rhino/bootjs",
