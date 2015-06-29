@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2411
+clojurescript @ r2496
 └── src
     └── cljs
         └── clojure
-            └── <ins>[string.cljs:141-144](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/clojure/string.cljs#L141-L144)</ins>
+            └── <ins>[string.cljs:152-155](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/clojure/string.cljs#L152-L155)</ins>
 </pre>
 
 
@@ -68,9 +68,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.string_triml",
  :source {:code "(defn triml\n    [s]\n    (gstring/trimLeft s))",
           :repo "clojurescript",
-          :tag "r2411",
+          :tag "r2496",
           :filename "src/cljs/clojure/string.cljs",
-          :lines [141 144]},
+          :lines [152 155]},
  :full-name "clojure.string/triml",
  :clj-symbol "clojure.string/triml",
  :docstring "Removes whitespace from the left side of string."}

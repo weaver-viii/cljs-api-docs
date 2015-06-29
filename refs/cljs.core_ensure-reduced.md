@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2411
+clojurescript @ r2496
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:830-833](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L830-L833)</ins>
+            └── <ins>[core.cljs:839-842](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/core.cljs#L839-L842)</ins>
 </pre>
 
 
@@ -61,9 +61,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ensure-reduced",
  :source {:code "(defn ensure-reduced\n  [x]\n  (if (reduced? x) x (reduced x)))",
           :repo "clojurescript",
-          :tag "r2411",
+          :tag "r2496",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [830 833]},
+          :lines [839 842]},
  :full-name "cljs.core/ensure-reduced",
  :docstring "If x is already reduced?, returns it, else returns (reduced x)"}
 

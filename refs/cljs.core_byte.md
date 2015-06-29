@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2411
+clojurescript @ r2496
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1869](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L1869)</ins>
+            └── <ins>[core.cljs:1878](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/core.cljs#L1878)</ins>
 </pre>
 
 
@@ -43,11 +43,11 @@ clojurescript @ r2411
 ```
 
  <pre>
-clojurescript @ r2411
+clojurescript @ r2496
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:357](https://github.com/clojure/clojurescript/blob/r2411/src/clj/cljs/core.clj#L357)</ins>
+            └── <ins>[core.clj:360](https://github.com/clojure/clojurescript/blob/r2496/src/clj/cljs/core.clj#L360)</ins>
 </pre>
 
 ---
@@ -72,14 +72,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_byte",
  :source {:code "(defn ^number byte [x] x)",
           :repo "clojurescript",
-          :tag "r2411",
+          :tag "r2496",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1869]},
+          :lines [1878]},
  :extra-sources ({:code "(defmacro byte [x] x)",
                   :repo "clojurescript",
-                  :tag "r2411",
+                  :tag "r2496",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [357]}),
+                  :lines [360]}),
  :full-name "cljs.core/byte",
  :clj-symbol "clojure.core/byte"}
 

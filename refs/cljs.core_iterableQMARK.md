@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2411
+clojurescript @ r2496
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:625-626](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L625-L626)</ins>
+            └── <ins>[core.cljs:634-635](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/core.cljs#L634-L635)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[x]"],
  :source {:code "(defn iterable? [x]\n  (satisfies? IIterable x))",
           :repo "clojurescript",
-          :tag "r2411",
+          :tag "r2496",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [625 626]},
+          :lines [634 635]},
  :full-name "cljs.core/iterable?",
  :full-name-encode "cljs.core_iterableQMARK",
  :history [["+" "0.0-2356"]]}

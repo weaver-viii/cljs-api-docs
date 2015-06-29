@@ -59,11 +59,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2411
+clojurescript @ r2496
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6984-6988](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L6984-L6988)</ins>
+            └── <ins>[core.cljs:7042-7046](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/core.cljs#L7042-L7046)</ins>
 </pre>
 
 
@@ -82,11 +82,11 @@ clojurescript @ r2411
 ```
 
  <pre>
-clojurescript @ r2411
+clojurescript @ r2496
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1425-1433](https://github.com/clojure/clojurescript/blob/r2411/src/clj/cljs/core.clj#L1425-L1433)</ins>
+            └── <ins>[core.clj:1429-1437](https://github.com/clojure/clojurescript/blob/r2496/src/clj/cljs/core.clj#L1429-L1437)</ins>
 </pre>
 
 ---
@@ -114,14 +114,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_array-map",
  :source {:code "(defn array-map\n  [& keyvals]\n  (.fromArray cljs.core/PersistentArrayMap (apply array keyvals) true false))",
           :repo "clojurescript",
-          :tag "r2411",
+          :tag "r2496",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6984 6988]},
+          :lines [7042 7046]},
  :extra-sources ({:code "(defmacro array-map\n  ([] '(.-EMPTY cljs.core/PersistentArrayMap))\n  ([& kvs]\n     (let [keys (map first (partition 2 kvs))]\n       (if (core/and (every? #(= (:op %) :constant)\n                       (map #(cljs.analyzer/analyze &env %) keys))\n                     (= (count (into #{} keys)) (count keys)))\n         `(cljs.core/PersistentArrayMap. nil ~(clojure.core// (count kvs) 2) (array ~@kvs) nil)\n         `(.fromArray cljs.core/PersistentArrayMap (array ~@kvs) true false)))))",
                   :repo "clojurescript",
-                  :tag "r2411",
+                  :tag "r2496",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [1425 1433]}),
+                  :lines [1429 1437]}),
  :examples [{:id "198026",
              :content "```clj\n(array-map :a 10)\n;;=> {:a 10}\n\n(array-map :a 10 :b 20)\n;;=> {:a 10 :b 20}\n```"}],
  :full-name "cljs.core/array-map",

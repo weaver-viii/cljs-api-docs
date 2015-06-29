@@ -20,12 +20,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2411
+clojurescript @ r2496
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[rhino.clj:18](https://github.com/clojure/clojurescript/blob/r2411/src/clj/cljs/repl/rhino.clj#L18)</ins>
+                └── <ins>[rhino.clj:18](https://github.com/clojure/clojurescript/blob/r2496/src/clj/cljs/repl/rhino.clj#L18)</ins>
 </pre>
 
 
@@ -47,7 +47,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def current-repl-env (atom nil))",
           :repo "clojurescript",
-          :tag "r2411",
+          :tag "r2496",
           :filename "src/clj/cljs/repl/rhino.clj",
           :lines [18]},
  :full-name "cljs.repl.rhino/current-repl-env",

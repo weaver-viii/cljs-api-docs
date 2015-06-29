@@ -112,11 +112,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2411
+clojurescript @ r2496
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:221-237](https://github.com/clojure/clojurescript/blob/r2411/src/clj/cljs/core.clj#L221-L237)</ins>
+            └── <ins>[core.clj:221-237](https://github.com/clojure/clojurescript/blob/r2496/src/clj/cljs/core.clj#L221-L237)</ins>
 </pre>
 
 
@@ -143,7 +143,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_and",
  :source {:code "(defmacro and\n  ([] true)\n  ([x] x)\n  ([x & next]\n    (let [forms (concat [x] next)]\n      (if (every? #(simple-test-expr? &env %)\n            (map #(cljs.analyzer/analyze &env %) forms))\n        (let [and-str (->> (repeat (count forms) \"(~{})\")\n                        (interpose \" && \")\n                        (apply core/str))]\n          (bool-expr `(~'js* ~and-str ~@forms)))\n        `(let [and# ~x]\n           (if and# (and ~@next) and#))))))",
           :repo "clojurescript",
-          :tag "r2411",
+          :tag "r2496",
           :filename "src/clj/cljs/core.clj",
           :lines [221 237]},
  :examples [{:id "a39a73",

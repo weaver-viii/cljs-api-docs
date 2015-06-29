@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2411
+clojurescript @ r2496
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:386-389](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/reader.cljs#L386-L389)</ins>
+            └── <ins>[reader.cljs:389-392](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/reader.cljs#L389-L392)</ins>
 </pre>
 
 
@@ -55,9 +55,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[rdr _]"],
  :source {:code "(defn read-discard\n  [rdr _]\n  (read rdr true nil true)\n  rdr)",
           :repo "clojurescript",
-          :tag "r2411",
+          :tag "r2496",
           :filename "src/cljs/cljs/reader.cljs",
-          :lines [386 389]},
+          :lines [389 392]},
  :full-name "cljs.reader/read-discard",
  :full-name-encode "cljs.reader_read-discard",
  :history [["+" "0.0-927"]]}

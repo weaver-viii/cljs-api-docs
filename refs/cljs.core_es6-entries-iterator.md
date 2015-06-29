@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2411
+clojurescript @ r2496
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5025-5026](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L5025-L5026)</ins>
+            └── <ins>[core.cljs:5083-5084](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/core.cljs#L5083-L5084)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[coll]"],
  :source {:code "(defn es6-entries-iterator [coll]\n  (ES6EntriesIterator. (seq coll)))",
           :repo "clojurescript",
-          :tag "r2411",
+          :tag "r2496",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [5025 5026]},
+          :lines [5083 5084]},
  :full-name "cljs.core/es6-entries-iterator",
  :full-name-encode "cljs.core_es6-entries-iterator",
  :history [["+" "0.0-2371"]]}

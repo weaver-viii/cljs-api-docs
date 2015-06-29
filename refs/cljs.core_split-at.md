@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2411
+clojurescript @ r2496
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3748-3751](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L3748-L3751)</ins>
+            └── <ins>[core.cljs:3806-3809](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/core.cljs#L3806-L3809)</ins>
 </pre>
 
 
@@ -75,9 +75,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_split-at",
  :source {:code "(defn split-at\n  [n coll]\n  [(take n coll) (drop n coll)])",
           :repo "clojurescript",
-          :tag "r2411",
+          :tag "r2496",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3748 3751]},
+          :lines [3806 3809]},
  :full-name "cljs.core/split-at",
  :clj-symbol "clojure.core/split-at",
  :docstring "Returns a vector of [(take n coll) (drop n coll)]"}

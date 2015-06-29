@@ -26,12 +26,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2411
+clojurescript @ r2496
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:125-126](https://github.com/clojure/clojurescript/blob/r2411/src/clj/cljs/repl/browser.clj#L125-L126)</ins>
+                └── <ins>[browser.clj:125-126](https://github.com/clojure/clojurescript/blob/r2496/src/clj/cljs/repl/browser.clj#L125-L126)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[{:keys [expecting fns]} order f]"],
  :source {:code "(defn add-in-order [{:keys [expecting fns]} order f]\n  {:expecting (or expecting order) :fns (assoc fns order f)})",
           :repo "clojurescript",
-          :tag "r2411",
+          :tag "r2496",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [125 126]},
  :full-name "cljs.repl.browser/add-in-order",

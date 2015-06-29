@@ -79,7 +79,8 @@ Source code:
         tag (-> sym meta :tag)
         protocol (-> sym meta :protocol)
         dynamic (-> sym meta :dynamic)
-        ns-name (-> env :ns :name)]
+        ns-name (-> env :ns :name)
+        locals (:locals env)]
     (when (namespace sym)
       (throw (error env "Can't def ns-qualified name")))
     (when-let [doc (:doc args)]
@@ -93,19 +94,14 @@ Source code:
                   (swap! env/*compiler* update-in [::namespaces ns-name :excludes] conj sym)
                   (update-in env [:ns :excludes] conj sym))
                 env)
-          name (:name (resolve-var (dissoc env :locals) sym))
-          var-expr (assoc (analyze (-> env (dissoc :locals)
-                                       (assoc :context :expr)
-                                       (assoc :def-var true))
-                                   sym)
-                     :op :var)
+          var-name (:name (resolve-var (dissoc env :locals) sym))
           init-expr (when (contains? args :init)
                       (swap! env/*compiler* assoc-in [::namespaces ns-name :defs sym]
                         (merge
-                          {:name name}
+                          {:name var-name}
                           sym-meta
                           (when dynamic {:dynamic true})
-                          (source-info name env)))
+                          (source-info var-name env)))
                       (disallowing-recur
                         (analyze (assoc env :context :expr) (:init args) sym)))
           fn-var? (and init-expr (= (:op init-expr) :fn))
@@ -113,7 +109,7 @@ Source code:
                 (or (:ret-tag init-expr) tag)
                 tag)
           export-as (when-let [export-val (-> sym meta :export)]
-                      (if (= true export-val) name export-val))
+                      (if (= true export-val) var-name export-val))
           doc (or (:doc args) (-> sym meta :doc))]
       (when-let [v (get-in @env/*compiler* [::namespaces ns-name :defs sym])]
         (when (and (not (-> sym meta :declared))
@@ -121,11 +117,11 @@ Source code:
           (warning :fn-var env {:ns-name ns-name :sym sym})))
       (swap! env/*compiler* assoc-in [::namespaces ns-name :defs sym]
         (merge 
-          {:name name}
+          {:name var-name}
           sym-meta
           (when doc {:doc doc})
           (when dynamic {:dynamic true})
-          (source-info name env)
+          (source-info var-name env)
           ;; the protocol a protocol fn belongs to
           (when protocol
             {:protocol protocol})
@@ -135,24 +131,34 @@ Source code:
              :info (-> protocol-symbol meta :protocol-info)
              :impls #{}})
           (when fn-var?
-            {:fn-var true
-             ;; protocol implementation context
-             :protocol-impl (:protocol-impl init-expr)
-             ;; inline protocol implementation context
-             :protocol-inline (:protocol-inline init-expr)
-             :variadic (:variadic init-expr)
-             :max-fixed-arity (:max-fixed-arity init-expr)
-             :method-params (map #(vec (map :name (:params %))) (:methods init-expr))
-             :methods (map (fn [method]
-                             (let [tag (infer-tag env (assoc method :op :method))]
-                               (cond-> (select-keys method
-                                         [:max-fixed-arity :variadic])
-                                 tag (assoc :tag tag))))
-                        (:methods init-expr))})
+            (let [params (map #(vec (map :name (:params %))) (:methods init-expr))]
+              {:fn-var true
+               ;; protocol implementation context
+               :protocol-impl (:protocol-impl init-expr)
+               ;; inline protocol implementation context
+               :protocol-inline (:protocol-inline init-expr)
+               :variadic (:variadic init-expr)
+               :max-fixed-arity (:max-fixed-arity init-expr)
+               :method-params params
+               :arglists (:arglists sym-meta)
+               :methods (map (fn [method]
+                               (let [tag (infer-tag env (assoc method :op :method))]
+                                 (cond-> (select-keys method
+                                           [:max-fixed-arity :variadic])
+                                   tag (assoc :tag tag))))
+                          (:methods init-expr))}) )
           (when (and fn-var? tag)
             {:ret-tag tag})))
       (merge {:env env :op :def :form form
-              :name name :var var-expr :doc doc :init init-expr}
+              :name var-name
+              :var (assoc (analyze (-> env (dissoc :locals)
+                                     ;; if there's :test var metadata will need locals
+                                     (assoc :test-locals locals)
+                                     (assoc :context :expr)
+                                     (assoc :def-var true))
+                            sym)
+                     :op :var)
+              :doc doc :init init-expr}
         (when tag
           (if fn-var?
             {:ret-tag tag}
@@ -163,11 +169,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2411
+clojurescript @ r2496
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:600-692](https://github.com/clojure/clojurescript/blob/r2411/src/clj/cljs/analyzer.clj#L600-L692)</ins>
+            └── <ins>[analyzer.clj:614-712](https://github.com/clojure/clojurescript/blob/r2496/src/clj/cljs/analyzer.clj#L614-L712)</ins>
 </pre>
 
 
@@ -195,11 +201,11 @@ __Meta__ - To retrieve the API data for this symbol:
            "cljs.core/defmacro"
            "cljs.core/defmulti"],
  :full-name-encode "special_def",
- :source {:code "(defmethod parse 'def\n  [op env form name _]\n  (let [pfn (fn\n              ([_ sym] {:sym sym})\n              ([_ sym init] {:sym sym :init init})\n              ([_ sym doc init] {:sym sym :doc doc :init init}))\n        args (apply pfn form)\n        sym (:sym args)\n        sym-meta (meta sym)\n        tag (-> sym meta :tag)\n        protocol (-> sym meta :protocol)\n        dynamic (-> sym meta :dynamic)\n        ns-name (-> env :ns :name)]\n    (when (namespace sym)\n      (throw (error env \"Can't def ns-qualified name\")))\n    (when-let [doc (:doc args)]\n      (when-not (string? doc)\n        (throw (error env \"Too many arguments to def\"))))\n    (let [env (if (or (and (not= ns-name 'cljs.core)\n                           (core-name? env sym))\n                      (get-in @env/*compiler* [::namespaces ns-name :uses sym]))\n                (let [ev (resolve-existing-var (dissoc env :locals) sym)]\n                  (warning :redef env {:ev ev :sym sym :ns-name ns-name})\n                  (swap! env/*compiler* update-in [::namespaces ns-name :excludes] conj sym)\n                  (update-in env [:ns :excludes] conj sym))\n                env)\n          name (:name (resolve-var (dissoc env :locals) sym))\n          var-expr (assoc (analyze (-> env (dissoc :locals)\n                                       (assoc :context :expr)\n                                       (assoc :def-var true))\n                                   sym)\n                     :op :var)\n          init-expr (when (contains? args :init)\n                      (swap! env/*compiler* assoc-in [::namespaces ns-name :defs sym]\n                        (merge\n                          {:name name}\n                          sym-meta\n                          (when dynamic {:dynamic true})\n                          (source-info name env)))\n                      (disallowing-recur\n                        (analyze (assoc env :context :expr) (:init args) sym)))\n          fn-var? (and init-expr (= (:op init-expr) :fn))\n          tag (if fn-var?\n                (or (:ret-tag init-expr) tag)\n                tag)\n          export-as (when-let [export-val (-> sym meta :export)]\n                      (if (= true export-val) name export-val))\n          doc (or (:doc args) (-> sym meta :doc))]\n      (when-let [v (get-in @env/*compiler* [::namespaces ns-name :defs sym])]\n        (when (and (not (-> sym meta :declared))\n                   (and (:fn-var v) (not fn-var?)))\n          (warning :fn-var env {:ns-name ns-name :sym sym})))\n      (swap! env/*compiler* assoc-in [::namespaces ns-name :defs sym]\n        (merge \n          {:name name}\n          sym-meta\n          (when doc {:doc doc})\n          (when dynamic {:dynamic true})\n          (source-info name env)\n          ;; the protocol a protocol fn belongs to\n          (when protocol\n            {:protocol protocol})\n          ;; symbol for reified protocol\n          (when-let [protocol-symbol (-> sym meta :protocol-symbol)]\n            {:protocol-symbol protocol-symbol\n             :info (-> protocol-symbol meta :protocol-info)\n             :impls #{}})\n          (when fn-var?\n            {:fn-var true\n             ;; protocol implementation context\n             :protocol-impl (:protocol-impl init-expr)\n             ;; inline protocol implementation context\n             :protocol-inline (:protocol-inline init-expr)\n             :variadic (:variadic init-expr)\n             :max-fixed-arity (:max-fixed-arity init-expr)\n             :method-params (map #(vec (map :name (:params %))) (:methods init-expr))\n             :methods (map (fn [method]\n                             (let [tag (infer-tag env (assoc method :op :method))]\n                               (cond-> (select-keys method\n                                         [:max-fixed-arity :variadic])\n                                 tag (assoc :tag tag))))\n                        (:methods init-expr))})\n          (when (and fn-var? tag)\n            {:ret-tag tag})))\n      (merge {:env env :op :def :form form\n              :name name :var var-expr :doc doc :init init-expr}\n        (when tag\n          (if fn-var?\n            {:ret-tag tag}\n            {:tag tag}))\n        (when dynamic {:dynamic true})\n        (when export-as {:export export-as})\n        (when init-expr {:children [init-expr]})))))",
+ :source {:code "(defmethod parse 'def\n  [op env form name _]\n  (let [pfn (fn\n              ([_ sym] {:sym sym})\n              ([_ sym init] {:sym sym :init init})\n              ([_ sym doc init] {:sym sym :doc doc :init init}))\n        args (apply pfn form)\n        sym (:sym args)\n        sym-meta (meta sym)\n        tag (-> sym meta :tag)\n        protocol (-> sym meta :protocol)\n        dynamic (-> sym meta :dynamic)\n        ns-name (-> env :ns :name)\n        locals (:locals env)]\n    (when (namespace sym)\n      (throw (error env \"Can't def ns-qualified name\")))\n    (when-let [doc (:doc args)]\n      (when-not (string? doc)\n        (throw (error env \"Too many arguments to def\"))))\n    (let [env (if (or (and (not= ns-name 'cljs.core)\n                           (core-name? env sym))\n                      (get-in @env/*compiler* [::namespaces ns-name :uses sym]))\n                (let [ev (resolve-existing-var (dissoc env :locals) sym)]\n                  (warning :redef env {:ev ev :sym sym :ns-name ns-name})\n                  (swap! env/*compiler* update-in [::namespaces ns-name :excludes] conj sym)\n                  (update-in env [:ns :excludes] conj sym))\n                env)\n          var-name (:name (resolve-var (dissoc env :locals) sym))\n          init-expr (when (contains? args :init)\n                      (swap! env/*compiler* assoc-in [::namespaces ns-name :defs sym]\n                        (merge\n                          {:name var-name}\n                          sym-meta\n                          (when dynamic {:dynamic true})\n                          (source-info var-name env)))\n                      (disallowing-recur\n                        (analyze (assoc env :context :expr) (:init args) sym)))\n          fn-var? (and init-expr (= (:op init-expr) :fn))\n          tag (if fn-var?\n                (or (:ret-tag init-expr) tag)\n                tag)\n          export-as (when-let [export-val (-> sym meta :export)]\n                      (if (= true export-val) var-name export-val))\n          doc (or (:doc args) (-> sym meta :doc))]\n      (when-let [v (get-in @env/*compiler* [::namespaces ns-name :defs sym])]\n        (when (and (not (-> sym meta :declared))\n                   (and (:fn-var v) (not fn-var?)))\n          (warning :fn-var env {:ns-name ns-name :sym sym})))\n      (swap! env/*compiler* assoc-in [::namespaces ns-name :defs sym]\n        (merge \n          {:name var-name}\n          sym-meta\n          (when doc {:doc doc})\n          (when dynamic {:dynamic true})\n          (source-info var-name env)\n          ;; the protocol a protocol fn belongs to\n          (when protocol\n            {:protocol protocol})\n          ;; symbol for reified protocol\n          (when-let [protocol-symbol (-> sym meta :protocol-symbol)]\n            {:protocol-symbol protocol-symbol\n             :info (-> protocol-symbol meta :protocol-info)\n             :impls #{}})\n          (when fn-var?\n            (let [params (map #(vec (map :name (:params %))) (:methods init-expr))]\n              {:fn-var true\n               ;; protocol implementation context\n               :protocol-impl (:protocol-impl init-expr)\n               ;; inline protocol implementation context\n               :protocol-inline (:protocol-inline init-expr)\n               :variadic (:variadic init-expr)\n               :max-fixed-arity (:max-fixed-arity init-expr)\n               :method-params params\n               :arglists (:arglists sym-meta)\n               :methods (map (fn [method]\n                               (let [tag (infer-tag env (assoc method :op :method))]\n                                 (cond-> (select-keys method\n                                           [:max-fixed-arity :variadic])\n                                   tag (assoc :tag tag))))\n                          (:methods init-expr))}) )\n          (when (and fn-var? tag)\n            {:ret-tag tag})))\n      (merge {:env env :op :def :form form\n              :name var-name\n              :var (assoc (analyze (-> env (dissoc :locals)\n                                     ;; if there's :test var metadata will need locals\n                                     (assoc :test-locals locals)\n                                     (assoc :context :expr)\n                                     (assoc :def-var true))\n                            sym)\n                     :op :var)\n              :doc doc :init init-expr}\n        (when tag\n          (if fn-var?\n            {:ret-tag tag}\n            {:tag tag}))\n        (when dynamic {:dynamic true})\n        (when export-as {:export export-as})\n        (when init-expr {:children [init-expr]})))))",
           :repo "clojurescript",
-          :tag "r2411",
+          :tag "r2496",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [600 692]},
+          :lines [614 712]},
  :examples [{:id "a5f898",
              :content "```clj\n(def a)\na\n;;=> nil\n\n(def b 42)\nb\n;;=> 42\n\n(def c \"an optional docstring\" 42)\nc\n;;=> 42\n```"}],
  :full-name "special/def",

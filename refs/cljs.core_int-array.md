@@ -49,11 +49,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2411
+clojurescript @ r2496
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2700-2718](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L2700-L2718)</ins>
+            └── <ins>[core.cljs:2721-2739](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/core.cljs#L2721-L2739)</ins>
 </pre>
 
 
@@ -78,9 +78,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_int-array",
  :source {:code "(defn int-array\n  ([size-or-seq]\n     (if (number? size-or-seq)\n       (int-array size-or-seq nil)\n       (into-array size-or-seq)))\n  ([size init-val-or-seq]\n     (let [a (make-array size)]\n       (if (seq? init-val-or-seq)\n         (let [s (seq init-val-or-seq)]\n           (loop [i 0 s s]\n             (if (and s (< i size))\n               (do\n                 (aset a i (first s))\n                 (recur (inc i) (next s)))\n               a)))\n         (do\n           (dotimes [i size]\n             (aset a i init-val-or-seq))\n           a)))))",
           :repo "clojurescript",
-          :tag "r2411",
+          :tag "r2496",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2700 2718]},
+          :lines [2721 2739]},
  :full-name "cljs.core/int-array",
  :clj-symbol "clojure.core/int-array"}
 
