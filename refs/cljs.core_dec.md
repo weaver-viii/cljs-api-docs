@@ -42,11 +42,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:849-851](https://github.com/clojure/clojurescript/blob/r927/src/cljs/cljs/core.cljs#L849-L851)</ins>
+            └── <ins>[core.cljs:889-891](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L889-L891)</ins>
 </pre>
 
 
@@ -58,11 +58,11 @@ clojurescript @ r927
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:103-104](https://github.com/clojure/clojurescript/blob/r927/src/clj/cljs/core.clj#L103-L104)</ins>
+            └── <ins>[core.clj:112-113](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/core.clj#L112-L113)</ins>
 </pre>
 
 ---
@@ -88,14 +88,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_dec",
  :source {:code "(defn dec\n  [x] (- x 1))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [849 851]},
+          :lines [889 891]},
  :extra-sources ({:code "(defmacro dec [x]\n  `(- ~x 1))",
                   :repo "clojurescript",
-                  :tag "r927",
+                  :tag "r971",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [103 104]}),
+                  :lines [112 113]}),
  :full-name "cljs.core/dec",
  :clj-symbol "clojure.core/dec",
  :docstring "Returns a number one less than num."}

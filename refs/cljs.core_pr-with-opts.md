@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2840-2849](https://github.com/clojure/clojurescript/blob/r927/src/cljs/cljs/core.cljs#L2840-L2849)</ins>
+            └── <ins>[core.cljs:2885-2894](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L2885-L2894)</ins>
 </pre>
 
 
@@ -67,9 +67,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_pr-with-opts",
  :source {:code "(defn pr-with-opts\n  [objs opts]\n  (let [first-obj (first objs)]\n    (doseq [obj objs]\n      (when-not (identical? obj first-obj)\n        (string-print \" \"))\n      (doseq [string (pr-seq obj opts)]\n        (string-print string)))))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2840 2849]},
+          :lines [2885 2894]},
  :full-name "cljs.core/pr-with-opts",
  :docstring "Prints a sequence of objects using string-print, observing all\nthe options given in opts"}
 

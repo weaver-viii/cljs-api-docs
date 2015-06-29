@@ -16,6 +16,29 @@
 <th>comp</th>
 </tr>
 <tr>
+<td>__[0.0-971](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-971)__</td>
+<td>2012-01-27</td>
+<td><kbd>1.3.0</kbd></td>
+<td><kbd></kbd></td>
+<td><kbd>20110323-r790</kbd></td>
+<td>
+<a href="#user-content-00-971-syntax">
+ 
+</a>
+</td>
+<td>
+<a href="#user-content-00-971-library">
+<img valign="middle" src="https://img.shields.io/badge/+-2-brightgreen.svg"> 
+</a>
+</td>
+<td>
+<a href="#user-content-00-971-compiler">
+ 
+</a>
+</td>
+</tr>
+
+<tr>
 <td>__[0.0-927](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927)__</td>
 <td>2012-01-20</td>
 <td><kbd>1.3.0</kbd></td>
@@ -38,6 +61,35 @@
 </td>
 </tr>
 
+</table>
+
+### 0.0-971
+
+<a name="00-971-syntax"></a> __Syntax API Changes__
+ <table>
+<tr><td>_no syntax forms were added or removed in this version_</td></tr>
+</table>
+
+<a name="00-971-library"></a> __Library API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-protocol-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/IFn](refs/cljs.core_IFn.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/type](refs/cljs.core_type.md)</samp></td>
+</tr>
+</table>
+
+<a name="00-971-compiler"></a> __Compiler API Changes__
+ <table>
+<tr><td>_no symbols were added or removed in this version_</td></tr>
 </table>
 
 ### 0.0-927

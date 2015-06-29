@@ -25,11 +25,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1974](https://github.com/clojure/clojurescript/blob/r927/src/cljs/cljs/core.cljs#L1974)</ins>
+            └── <ins>[core.cljs:2020](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L2020)</ins>
 </pre>
 
 
@@ -55,9 +55,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_VectorDOTfromArray",
  :source {:code "(set! cljs.core.Vector/fromArray (fn [xs] (Vector. nil xs)))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1974]},
+          :lines [2020]},
  :full-name "cljs.core/Vector.fromArray"}
 
 ```

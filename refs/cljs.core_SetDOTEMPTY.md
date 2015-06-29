@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2469](https://github.com/clojure/clojurescript/blob/r927/src/cljs/cljs/core.cljs#L2469)</ins>
+            └── <ins>[core.cljs:2519](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L2519)</ins>
 </pre>
 
 
@@ -47,9 +47,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "Set",
  :source {:code "(set! cljs.core.Set/EMPTY (Set. nil (hash-map)))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2469]},
+          :lines [2519]},
  :full-name "cljs.core/Set.EMPTY",
  :full-name-encode "cljs.core_SetDOTEMPTY",
  :history [["+" "0.0-927"]]}

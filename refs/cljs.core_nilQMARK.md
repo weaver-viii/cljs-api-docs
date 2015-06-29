@@ -30,21 +30,26 @@ See Also:
 
 ---
 
+Source docstring:
+
+```
+Returns true if x is nil, false otherwise.
+```
 
 Source code:
 
 ```clj
-(defn nil? [x]
-  "Returns true if x is nil, false otherwise."
+(defn nil?
+  [x]
   (identical? x nil))
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:183-185](https://github.com/clojure/clojurescript/blob/r927/src/cljs/cljs/core.cljs#L183-L185)</ins>
+            └── <ins>[core.cljs:214-217](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L214-L217)</ins>
 </pre>
 
 
@@ -69,13 +74,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/true?" "cljs.core/false?" "cljs.core/identity"],
  :full-name-encode "cljs.core_nilQMARK",
- :source {:code "(defn nil? [x]\n  \"Returns true if x is nil, false otherwise.\"\n  (identical? x nil))",
+ :source {:code "(defn nil?\n  [x]\n  (identical? x nil))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [183 185]},
+          :lines [214 217]},
  :full-name "cljs.core/nil?",
- :clj-symbol "clojure.core/nil?"}
+ :clj-symbol "clojure.core/nil?",
+ :docstring "Returns true if x is nil, false otherwise."}
 
 ```
 

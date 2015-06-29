@@ -64,21 +64,21 @@ Source code:
 ```clj
 (defn <=
   ([x] true)
-  ([x y] (js* "(~{x} <= ~{y})"))
+  ([x y] (cljs.core/<= x y))
   ([x y & more]
-   (if (<= x y)
+   (if (cljs.core/<= x y)
      (if (next more)
        (recur y (first more) (next more))
-       (<= y (first more)))
+       (cljs.core/<= y (first more)))
      false)))
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:813-823](https://github.com/clojure/clojurescript/blob/r927/src/cljs/cljs/core.cljs#L813-L823)</ins>
+            └── <ins>[core.cljs:853-863](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L853-L863)</ins>
 </pre>
 
 
@@ -92,11 +92,11 @@ clojurescript @ r927
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:83-86](https://github.com/clojure/clojurescript/blob/r927/src/clj/cljs/core.clj#L83-L86)</ins>
+            └── <ins>[core.clj:92-95](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/core.clj#L92-L95)</ins>
 </pre>
 
 ---
@@ -120,16 +120,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/<"],
  :full-name-encode "cljs.core_LTEQ",
- :source {:code "(defn <=\n  ([x] true)\n  ([x y] (js* \"(~{x} <= ~{y})\"))\n  ([x y & more]\n   (if (<= x y)\n     (if (next more)\n       (recur y (first more) (next more))\n       (<= y (first more)))\n     false)))",
+ :source {:code "(defn <=\n  ([x] true)\n  ([x y] (cljs.core/<= x y))\n  ([x y & more]\n   (if (cljs.core/<= x y)\n     (if (next more)\n       (recur y (first more) (next more))\n       (cljs.core/<= y (first more)))\n     false)))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [813 823]},
+          :lines [853 863]},
  :extra-sources ({:code "(defmacro <=\n  ([x] true)\n  ([x y] (list 'js* \"(~{} <= ~{})\" x y))\n  ([x y & more] `(and (<= ~x ~y) (<= ~y ~@more))))",
                   :repo "clojurescript",
-                  :tag "r927",
+                  :tag "r971",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [83 86]}),
+                  :lines [92 95]}),
  :examples [{:id "adb3fd",
              :content "```clj\n(<= 1 2)\n;;=> true\n\n(<= 2 2)\n;;=> true\n\n(<= 3 2)\n;;=> false\n\n(<= 2 3 4 5 6)\n;;=> true\n```"}],
  :full-name "cljs.core/<=",

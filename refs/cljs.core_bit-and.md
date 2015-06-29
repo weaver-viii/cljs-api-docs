@@ -59,15 +59,15 @@ Source code:
 
 ```clj
 (defn bit-and
-  [x y] (js* "(~{x} & ~{y})"))
+  [x y] (cljs.core/bit-and x y))
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:902-904](https://github.com/clojure/clojurescript/blob/r927/src/cljs/cljs/core.cljs#L902-L904)</ins>
+            └── <ins>[core.cljs:942-944](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L942-L944)</ins>
 </pre>
 
 
@@ -80,11 +80,11 @@ clojurescript @ r927
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:134-136](https://github.com/clojure/clojurescript/blob/r927/src/clj/cljs/core.clj#L134-L136)</ins>
+            └── <ins>[core.clj:143-145](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/core.clj#L143-L145)</ins>
 </pre>
 
 ---
@@ -108,16 +108,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/bit-or"],
  :full-name-encode "cljs.core_bit-and",
- :source {:code "(defn bit-and\n  [x y] (js* \"(~{x} & ~{y})\"))",
+ :source {:code "(defn bit-and\n  [x y] (cljs.core/bit-and x y))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [902 904]},
+          :lines [942 944]},
  :extra-sources ({:code "(defmacro bit-and\n  ([x y] (list 'js* \"(~{} & ~{})\" x y))\n  ([x y & more] `(bit-and (bit-and ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r927",
+                  :tag "r971",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [134 136]}),
+                  :lines [143 145]}),
  :examples [{:id "3c0470",
              :content "Bits can be entered using radix notation:\n\n```clj\n(bit-and 2r1100 2r1010)\n;;=> 8\n;; 8 = 2r1000\n```\n\nSame numbers in decimal:\n\n```clj\n(bit-and 12 10)\n;;=> 8\n```"}],
  :full-name "cljs.core/bit-and",

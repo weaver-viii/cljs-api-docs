@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── clj
         └── cljs
-            └── <ins>[compiler.clj:758-767](https://github.com/clojure/clojurescript/blob/r927/src/clj/cljs/compiler.clj#L758-L767)</ins>
+            └── <ins>[compiler.clj:762-771](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/compiler.clj#L762-L771)</ins>
 </pre>
 
 
@@ -58,9 +58,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "special form",
  :source {:code "(defmethod parse 'recur\n  [op env [_ & exprs] _]\n  (let [context (:context env)\n        frame (first *recur-frames*)]\n    (assert frame \"Can't recur here\")\n    (assert (= (count exprs) (count (:names frame))) \"recur argument count mismatch\")\n    (reset! (:flag frame) true)\n    (assoc {:env env :op :recur}\n      :frame frame\n      :exprs (disallowing-recur (vec (map #(analyze (assoc env :context :expr) %) exprs))))))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/clj/cljs/compiler.clj",
-          :lines [758 767]},
+          :lines [762 771]},
  :full-name "special/recur",
  :full-name-encode "special_recur",
  :clj-symbol "clojure.core/recur",

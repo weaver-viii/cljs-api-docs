@@ -60,17 +60,17 @@ Source code:
 
 ```clj
 (defn -
-  ([x] (js* "(- ~{x})"))
-  ([x y] (js* "(~{x} - ~{y})"))
-  ([x y & more] (reduce - (- x y) more)))
+  ([x] (cljs.core/- x))
+  ([x y] (cljs.core/- x y))
+  ([x y & more] (reduce - (cljs.core/- x y) more)))
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:780-785](https://github.com/clojure/clojurescript/blob/r927/src/cljs/cljs/core.cljs#L780-L785)</ins>
+            └── <ins>[core.cljs:820-825](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L820-L825)</ins>
 </pre>
 
 
@@ -85,11 +85,11 @@ clojurescript @ r927
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:60-64](https://github.com/clojure/clojurescript/blob/r927/src/clj/cljs/core.clj#L60-L64)</ins>
+            └── <ins>[core.clj:69-73](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/core.clj#L69-L73)</ins>
 </pre>
 
 ---
@@ -113,16 +113,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/+"],
  :full-name-encode "cljs.core_-",
- :source {:code "(defn -\n  ([x] (js* \"(- ~{x})\"))\n  ([x y] (js* \"(~{x} - ~{y})\"))\n  ([x y & more] (reduce - (- x y) more)))",
+ :source {:code "(defn -\n  ([x] (cljs.core/- x))\n  ([x y] (cljs.core/- x y))\n  ([x y & more] (reduce - (cljs.core/- x y) more)))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [780 785]},
+          :lines [820 825]},
  :extra-sources ({:code "(defmacro -\n  ([] 0)\n  ([x] (list 'js* \"(- ~{})\" x))\n  ([x y] (list 'js* \"(~{} - ~{})\" x y))\n  ([x y & more] `(- (- ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r927",
+                  :tag "r971",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [60 64]}),
+                  :lines [69 73]}),
  :examples [{:id "0a974e",
              :content "```clj\n(- 1)\n;;=> -1\n\n(- 6 3)\n;;=> 3\n\n(- 10 3 2)\n;;=> 5\n```"}],
  :full-name "cljs.core/-",

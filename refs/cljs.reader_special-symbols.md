@@ -23,11 +23,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:243-246](https://github.com/clojure/clojurescript/blob/r927/src/cljs/cljs/reader.cljs#L243-L246)</ins>
+            └── <ins>[reader.cljs:243-246](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/reader.cljs#L243-L246)</ins>
 </pre>
 
 
@@ -49,7 +49,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def special-symbols\n  {\"nil\" nil\n   \"true\" true\n   \"false\" false})",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [243 246]},
  :full-name "cljs.reader/special-symbols",

@@ -60,15 +60,15 @@ Source code:
 
 ```clj
 (defn bit-xor
-  [x y] (js* "(~{x} ^ ~{y})"))
+  [x y] (cljs.core/bit-xor x y))
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:898-900](https://github.com/clojure/clojurescript/blob/r927/src/cljs/cljs/core.cljs#L898-L900)</ins>
+            └── <ins>[core.cljs:938-940](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L938-L940)</ins>
 </pre>
 
 
@@ -81,11 +81,11 @@ clojurescript @ r927
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:142-144](https://github.com/clojure/clojurescript/blob/r927/src/clj/cljs/core.clj#L142-L144)</ins>
+            └── <ins>[core.clj:151-153](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/core.clj#L151-L153)</ins>
 </pre>
 
 ---
@@ -109,16 +109,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/bit-and" "cljs.core/bit-or"],
  :full-name-encode "cljs.core_bit-xor",
- :source {:code "(defn bit-xor\n  [x y] (js* \"(~{x} ^ ~{y})\"))",
+ :source {:code "(defn bit-xor\n  [x y] (cljs.core/bit-xor x y))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [898 900]},
+          :lines [938 940]},
  :extra-sources ({:code "(defmacro bit-xor\n  ([x y] (list 'js* \"(~{} ^ ~{})\" x y))\n  ([x y & more] `(bit-xor (bit-xor ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r927",
+                  :tag "r971",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [142 144]}),
+                  :lines [151 153]}),
  :examples [{:id "3ccd99",
              :content "Bits can be entered using radix notation:\n\n```clj\n(bit-xor 2r1100 2r1010)\n;;=> 6\n;; 6 = 2r0110\n```\n\nSame numbers in decimal:\n\n```clj\n(bit-xor 12 10)\n;;=> 6\n```"}],
  :full-name "cljs.core/bit-xor",

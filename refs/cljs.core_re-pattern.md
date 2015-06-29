@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2794-2797](https://github.com/clojure/clojurescript/blob/r927/src/cljs/cljs/core.cljs#L2794-L2797)</ins>
+            └── <ins>[core.cljs:2839-2842](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L2839-L2842)</ins>
 </pre>
 
 
@@ -68,9 +68,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_re-pattern",
  :source {:code "(defn re-pattern\n  [s]\n  (js/RegExp. s))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2794 2797]},
+          :lines [2839 2842]},
  :full-name "cljs.core/re-pattern",
  :clj-symbol "clojure.core/re-pattern",
  :docstring "Returns an instance of RegExp which has compiled the provided string."}

@@ -39,11 +39,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:165-172](https://github.com/clojure/clojurescript/blob/r927/src/cljs/clojure/zip.cljs#L165-L172)</ins>
+            └── <ins>[zip.cljs:165-172](https://github.com/clojure/clojurescript/blob/r971/src/cljs/clojure/zip.cljs#L165-L172)</ins>
 </pre>
 
 
@@ -68,7 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_insert-left",
  :source {:code "(defn insert-left\n  [loc item]\n    (let [[node {l :l :as path}] loc]\n      (if (nil? path)\n        (throw \"Insert at top\")\n        (with-meta [node (assoc path :l (conj l item) :changed? true)] (meta loc)))))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [165 172]},
  :full-name "clojure.zip/insert-left",

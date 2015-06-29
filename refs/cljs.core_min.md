@@ -61,17 +61,17 @@ Source code:
 ```clj
 (defn min
   ([x] x)
-  ([x y] (js* "((~{x} < ~{y}) ? x : y)"))
+  ([x y] (cljs.core/min x y))
   ([x y & more]
-   (reduce min (min x y) more)))
+   (reduce min (cljs.core/min x y) more)))
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:860-865](https://github.com/clojure/clojurescript/blob/r927/src/cljs/cljs/core.cljs#L860-L865)</ins>
+            └── <ins>[core.cljs:900-905](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L900-L905)</ins>
 </pre>
 
 
@@ -85,11 +85,11 @@ clojurescript @ r927
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:123-126](https://github.com/clojure/clojurescript/blob/r927/src/clj/cljs/core.clj#L123-L126)</ins>
+            └── <ins>[core.clj:132-135](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/core.clj#L132-L135)</ins>
 </pre>
 
 ---
@@ -113,16 +113,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/max" "cljs.core/min-key"],
  :full-name-encode "cljs.core_min",
- :source {:code "(defn min\n  ([x] x)\n  ([x y] (js* \"((~{x} < ~{y}) ? x : y)\"))\n  ([x y & more]\n   (reduce min (min x y) more)))",
+ :source {:code "(defn min\n  ([x] x)\n  ([x y] (cljs.core/min x y))\n  ([x y & more]\n   (reduce min (cljs.core/min x y) more)))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [860 865]},
+          :lines [900 905]},
  :extra-sources ({:code "(defmacro min\n  ([x] x)\n  ([x y] (list 'js* \"((~{} < ~{}) ? ~{} : ~{})\" x y x y))\n  ([x y & more] `(min (min ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r927",
+                  :tag "r971",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [123 126]}),
+                  :lines [132 135]}),
  :examples [{:id "ab2de5",
              :content "```clj\n(min 1 2 3 4)\n;; => 1\n```\n\nApply it to a collection:\n\n```clj\n(apply min [1 2 3 4])\n;; => 1\n```"}],
  :full-name "cljs.core/min",

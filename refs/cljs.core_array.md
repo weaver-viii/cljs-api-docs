@@ -72,11 +72,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:71-75](https://github.com/clojure/clojurescript/blob/r927/src/cljs/cljs/core.cljs#L71-L75)</ins>
+            └── <ins>[core.cljs:71-75](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L71-L75)</ins>
 </pre>
 
 
@@ -105,7 +105,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_array",
  :source {:code "(defn array\n  [var-args]            ;; [& items]\n  (js* \"Array.prototype.slice.call(arguments)\"))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/cljs/cljs/core.cljs",
           :lines [71 75]},
  :examples [{:id "3a546d",

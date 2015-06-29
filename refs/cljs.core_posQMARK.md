@@ -39,15 +39,15 @@ Source code:
 
 ```clj
 (defn pos?
-  [n] (< 0 n))
+  [n] (cljs.core/pos? n))
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:959-961](https://github.com/clojure/clojurescript/blob/r927/src/cljs/cljs/core.cljs#L959-L961)</ins>
+            └── <ins>[core.cljs:998-1000](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L998-L1000)</ins>
 </pre>
 
 
@@ -59,11 +59,11 @@ clojurescript @ r927
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:112-113](https://github.com/clojure/clojurescript/blob/r927/src/clj/cljs/core.clj#L112-L113)</ins>
+            └── <ins>[core.clj:121-122](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/core.clj#L121-L122)</ins>
 </pre>
 
 ---
@@ -87,16 +87,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/neg?" "cljs.core/zero?"],
  :full-name-encode "cljs.core_posQMARK",
- :source {:code "(defn pos?\n  [n] (< 0 n))",
+ :source {:code "(defn pos?\n  [n] (cljs.core/pos? n))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [959 961]},
+          :lines [998 1000]},
  :extra-sources ({:code "(defmacro pos? [x]\n  `(> ~x 0))",
                   :repo "clojurescript",
-                  :tag "r927",
+                  :tag "r971",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [112 113]}),
+                  :lines [121 122]}),
  :full-name "cljs.core/pos?",
  :clj-symbol "clojure.core/pos?",
  :docstring "Returns true if num is greater than zero, else false"}

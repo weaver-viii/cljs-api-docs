@@ -57,15 +57,15 @@ Source code:
 ```clj
 (defn bit-test
   [x n]
-  (js* "((~{x} & (1 << ~{n})) != 0)"))
+  (cljs.core/bit-test x n))
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:933-936](https://github.com/clojure/clojurescript/blob/r927/src/cljs/cljs/core.cljs#L933-L936)</ins>
+            └── <ins>[core.cljs:973-976](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L973-L976)</ins>
 </pre>
 
 
@@ -77,11 +77,11 @@ clojurescript @ r927
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:156-157](https://github.com/clojure/clojurescript/blob/r927/src/clj/cljs/core.clj#L156-L157)</ins>
+            └── <ins>[core.clj:165-166](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/core.clj#L165-L166)</ins>
 </pre>
 
 ---
@@ -104,16 +104,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.core_bit-test",
- :source {:code "(defn bit-test\n  [x n]\n  (js* \"((~{x} & (1 << ~{n})) != 0)\"))",
+ :source {:code "(defn bit-test\n  [x n]\n  (cljs.core/bit-test x n))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [933 936]},
+          :lines [973 976]},
  :extra-sources ({:code "(defmacro bit-test [x n]\n  (list 'js* \"((~{} & (1 << ~{})) != 0)\" x n))",
                   :repo "clojurescript",
-                  :tag "r927",
+                  :tag "r971",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [156 157]}),
+                  :lines [165 166]}),
  :examples [{:id "f64664",
              :content "Bits can be entered using radix notation:\n\n```clj\n(bit-test 2r0100 2)\n;;=> true\n\n(bit-test 2r0100 1)\n;;=> false\n```\n\nSame numbers in decimal:\n\n```clj\n(bit-test 4 2)\n;;=> true\n\n(bit-test 4 1)\n;;=> false\n```"}],
  :full-name "cljs.core/bit-test",

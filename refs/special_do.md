@@ -25,11 +25,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── clj
         └── cljs
-            └── <ins>[compiler.clj:721-723](https://github.com/clojure/clojurescript/blob/r927/src/clj/cljs/compiler.clj#L721-L723)</ins>
+            └── <ins>[compiler.clj:725-727](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/compiler.clj#L725-L727)</ins>
 </pre>
 
 
@@ -51,9 +51,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "special form",
  :source {:code "(defmethod parse 'do\n  [op env [_ & exprs] _]\n  (merge {:env env :op :do} (analyze-block env exprs)))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/clj/cljs/compiler.clj",
-          :lines [721 723]},
+          :lines [725 727]},
  :full-name "special/do",
  :full-name-encode "special_do",
  :clj-symbol "clojure.core/do",

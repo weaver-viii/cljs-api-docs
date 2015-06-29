@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:85-94](https://github.com/clojure/clojurescript/blob/r927/src/clj/cljs/repl.clj#L85-L94)</ins>
+            └── <ins>[repl.clj:86-95](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/repl.clj#L86-L95)</ins>
 </pre>
 
 
@@ -61,9 +61,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[repl-env filename stream]"],
  :source {:code "(defn load-stream [repl-env filename stream]\n  (with-open [r (io/reader stream)]\n    (let [env {:ns (@comp/namespaces comp/*cljs-ns*) :context :statement :locals {}}\n          pbr (clojure.lang.LineNumberingPushbackReader. r)\n          eof (Object.)]\n      (loop [r (read pbr false eof false)]\n        (let [env (assoc env :ns (@comp/namespaces comp/*cljs-ns*))]\n          (when-not (identical? eof r)\n            (evaluate-form repl-env env filename r)\n            (recur (read pbr false eof false))))))))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/clj/cljs/repl.clj",
-          :lines [85 94]},
+          :lines [86 95]},
  :full-name "cljs.repl/load-stream",
  :full-name-encode "cljs.repl_load-stream",
  :history [["+" "0.0-927"]]}

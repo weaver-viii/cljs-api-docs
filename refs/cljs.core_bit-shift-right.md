@@ -57,15 +57,15 @@ Source code:
 
 ```clj
 (defn bit-shift-right
-  [x n] (js* "(~{x} >> ~{n})"))
+  [x n] (cljs.core/bit-shift-right x n))
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:943-945](https://github.com/clojure/clojurescript/blob/r927/src/cljs/cljs/core.cljs#L943-L945)</ins>
+            └── <ins>[core.cljs:982-984](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L982-L984)</ins>
 </pre>
 
 
@@ -77,11 +77,11 @@ clojurescript @ r927
 ```
 
  <pre>
-clojurescript @ r927
+clojurescript @ r971
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:162-163](https://github.com/clojure/clojurescript/blob/r927/src/clj/cljs/core.clj#L162-L163)</ins>
+            └── <ins>[core.clj:171-172](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/core.clj#L171-L172)</ins>
 </pre>
 
 ---
@@ -106,16 +106,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :related ["cljs.core/bit-shift-left"
            "cljs.core/unsigned-bit-shift-right"],
  :full-name-encode "cljs.core_bit-shift-right",
- :source {:code "(defn bit-shift-right\n  [x n] (js* \"(~{x} >> ~{n})\"))",
+ :source {:code "(defn bit-shift-right\n  [x n] (cljs.core/bit-shift-right x n))",
           :repo "clojurescript",
-          :tag "r927",
+          :tag "r971",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [943 945]},
+          :lines [982 984]},
  :extra-sources ({:code "(defmacro bit-shift-right [x n]\n  (list 'js* \"(~{} >> ~{})\" x n))",
                   :repo "clojurescript",
-                  :tag "r927",
+                  :tag "r971",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [162 163]}),
+                  :lines [171 172]}),
  :examples [{:id "5b75af",
              :content "Bits can be entered using radix notation:\n\n```clj\n(bit-shift-right 2r1010 1)\n;;=> 5\n;; 5 = 2r0101\n```\n\nSame numbers in decimal:\n\n```clj\n(bit-shift-right 10 1)\n;;=> 5\n```"}],
  :full-name "cljs.core/bit-shift-right",
