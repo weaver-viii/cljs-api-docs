@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2227
+clojurescript @ r2234
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7463-7472](https://github.com/clojure/clojurescript/blob/r2227/src/cljs/cljs/core.cljs#L7463-L7472)</ins>
+            └── <ins>[core.cljs:7508-7517](https://github.com/clojure/clojurescript/blob/r2234/src/cljs/cljs/core.cljs#L7508-L7517)</ins>
 </pre>
 
 
@@ -85,9 +85,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_group-by",
  :source {:code "(defn group-by\n  [f coll]\n  (reduce\n   (fn [ret x]\n     (let [k (f x)]\n       (assoc ret k (conj (get ret k []) x))))\n   {} coll))",
           :repo "clojurescript",
-          :tag "r2227",
+          :tag "r2234",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7463 7472]},
+          :lines [7508 7517]},
  :full-name "cljs.core/group-by",
  :clj-symbol "clojure.core/group-by",
  :docstring "Returns a map of the elements of coll keyed by the result of\nf on each element. The value at each key will be a vector of the\ncorresponding elements, in the order they appeared in coll."}

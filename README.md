@@ -2,8 +2,8 @@
 
  <table border="1">
 <tr>
-<td>__0.0-2227__ [all](HISTORY.md)</td>
-<td>2014-05-22</td>
+<td>__0.0-2234__ [all](HISTORY.md)</td>
+<td>2014-06-13</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.5.1</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-2227__ ([See Full History](HISTORY.md)):
+Changes from __0.0-2234__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
@@ -85,9 +85,9 @@ __Library API Changes__
 
 <tr>
 <td>
-<img valign="middle" src="https://img.shields.io/badge/+-special form-brightgreen.svg">
+<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
 </td>
-<td><samp>[special/case\*](refs/special_caseSTAR.md)</samp></td>
+<td><samp>[cljs.core/MetaFn](refs/cljs.core_MetaFn.md)</samp></td>
 </tr>
 </table>
 
@@ -3787,6 +3787,12 @@ application.
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
 </tr>
 <tr>
+<td></td>
+<td><samp>[MetaFn](refs/cljs.core_MetaFn.md)</samp></td>
+<td><samp>type</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2234"><img valign="middle" alt="[+] 0.0-2234" src="https://img.shields.io/badge/+-0.0--2234-lightgrey.svg"></a> </td>
+</tr>
+<tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](https://github.com/clojure/clojure/blob//src/jvm/clojure/lang/MultiFn.java)</td>
 <td><samp>[MultiFn](refs/cljs.core_MultiFn.md)</samp></td>
 <td><samp>type</samp></td>
@@ -4127,13 +4133,13 @@ application.
 <tr>
 <td></td>
 <td><samp>[\*default-data-reader-fn\*](refs/cljs.reader_STARdefault-data-reader-fnSTAR.md)</samp></td>
-<td><samp>var</samp></td>
+<td><samp>dynamic var</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1576"><img valign="middle" alt="[+] 0.0-1576" src="https://img.shields.io/badge/+-0.0--1576-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td></td>
 <td><samp>[\*tag-table\*](refs/cljs.reader_STARtag-tableSTAR.md)</samp></td>
-<td><samp>var</samp></td>
+<td><samp>dynamic var</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1236"><img valign="middle" alt="[+] 0.0-1236" src="https://img.shields.io/badge/+-0.0--1236-lightgrey.svg"></a> </td>
 </tr>
 <tr>

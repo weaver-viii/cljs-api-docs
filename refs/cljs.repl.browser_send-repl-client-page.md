@@ -36,12 +36,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2227
+clojurescript @ r2234
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:51-62](https://github.com/clojure/clojurescript/blob/r2227/src/clj/cljs/repl/browser.clj#L51-L62)</ins>
+                └── <ins>[browser.clj:51-62](https://github.com/clojure/clojurescript/blob/r2234/src/clj/cljs/repl/browser.clj#L51-L62)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[request conn opts]"],
  :source {:code "(defn send-repl-client-page\n  [request conn opts]\n  (server/send-and-close conn 200\n    (str \"<html><head><meta charset=\\\"UTF-8\\\"></head><body>\n          <script type=\\\"text/javascript\\\">\"\n         (repl-client-js)\n         \"</script>\"\n         \"<script type=\\\"text/javascript\\\">\n          clojure.browser.repl.client.start(\\\"http://\" (-> request :headers :host) \"\\\");\n          </script>\"\n         \"</body></html>\")\n    \"text/html\"))",
           :repo "clojurescript",
-          :tag "r2227",
+          :tag "r2234",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [51 62]},
  :full-name "cljs.repl.browser/send-repl-client-page",

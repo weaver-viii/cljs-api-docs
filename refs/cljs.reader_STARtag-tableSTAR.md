@@ -3,7 +3,7 @@
  <table border="1">
 <tr>
 
-<td>var</td>
+<td>dynamic var</td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1236"><img valign="middle" alt="[+] 0.0-1236" src="https://img.shields.io/badge/+-0.0--1236-lightgrey.svg"></a> </td>
 </tr>
 </table>
@@ -16,18 +16,19 @@
 Source code:
 
 ```clj
-(def *tag-table* (atom {"inst"  read-date
-                        "uuid"  read-uuid
-                        "queue" read-queue
-                        "js"    read-js}))
+(def ^:dynamic *tag-table*
+  (atom {"inst"  read-date
+         "uuid"  read-uuid
+         "queue" read-queue
+         "js"    read-js}))
 ```
 
  <pre>
-clojurescript @ r2227
+clojurescript @ r2234
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:547-550](https://github.com/clojure/clojurescript/blob/r2227/src/cljs/cljs/reader.cljs#L547-L550)</ins>
+            └── <ins>[reader.cljs:547-551](https://github.com/clojure/clojurescript/blob/r2234/src/cljs/cljs/reader.cljs#L547-L551)</ins>
 </pre>
 
 
@@ -46,12 +47,12 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.reader",
  :name "*tag-table*",
- :type "var",
- :source {:code "(def *tag-table* (atom {\"inst\"  read-date\n                        \"uuid\"  read-uuid\n                        \"queue\" read-queue\n                        \"js\"    read-js}))",
+ :type "dynamic var",
+ :source {:code "(def ^:dynamic *tag-table*\n  (atom {\"inst\"  read-date\n         \"uuid\"  read-uuid\n         \"queue\" read-queue\n         \"js\"    read-js}))",
           :repo "clojurescript",
-          :tag "r2227",
+          :tag "r2234",
           :filename "src/cljs/cljs/reader.cljs",
-          :lines [547 550]},
+          :lines [547 551]},
  :full-name "cljs.reader/*tag-table*",
  :full-name-encode "cljs.reader_STARtag-tableSTAR",
  :history [["+" "0.0-1236"]]}

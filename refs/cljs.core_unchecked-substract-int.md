@@ -40,11 +40,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2227
+clojurescript @ r2234
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1640-1645](https://github.com/clojure/clojurescript/blob/r2227/src/cljs/cljs/core.cljs#L1640-L1645)</ins>
+            └── <ins>[core.cljs:1685-1690](https://github.com/clojure/clojurescript/blob/r2234/src/cljs/cljs/core.cljs#L1685-L1690)</ins>
 </pre>
 
 
@@ -70,9 +70,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-substract-int",
  :source {:code "(defn ^number unchecked-substract-int\n  ([x] (cljs.core/unchecked-subtract-int x))\n  ([x y] (cljs.core/unchecked-subtract-int x y))\n  ([x y & more] (reduce unchecked-substract-int (cljs.core/unchecked-subtract-int x y) more)))",
           :repo "clojurescript",
-          :tag "r2227",
+          :tag "r2234",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1640 1645]},
+          :lines [1685 1690]},
  :full-name "cljs.core/unchecked-substract-int",
  :docstring "If no ys are supplied, returns the negation of x, else subtracts\nthe ys from x and returns the result."}
 

@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2227
+clojurescript @ r2234
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5994-6001](https://github.com/clojure/clojurescript/blob/r2227/src/cljs/cljs/core.cljs#L5994-L6001)</ins>
+            └── <ins>[core.cljs:6039-6046](https://github.com/clojure/clojurescript/blob/r2234/src/cljs/cljs/core.cljs#L6039-L6046)</ins>
 </pre>
 
 
@@ -73,11 +73,11 @@ clojurescript @ r2227
 ```
 
  <pre>
-clojurescript @ r2227
+clojurescript @ r2234
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1415-1423](https://github.com/clojure/clojurescript/blob/r2227/src/clj/cljs/core.clj#L1415-L1423)</ins>
+            └── <ins>[core.clj:1415-1423](https://github.com/clojure/clojurescript/blob/r2234/src/clj/cljs/core.clj#L1415-L1423)</ins>
 </pre>
 
 ---
@@ -103,12 +103,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash-map",
  :source {:code "(defn hash-map\n  [& keyvals]\n  (loop [in (seq keyvals), out (transient cljs.core.PersistentHashMap.EMPTY)]\n    (if in\n      (recur (nnext in) (assoc! out (first in) (second in)))\n      (persistent! out))))",
           :repo "clojurescript",
-          :tag "r2227",
+          :tag "r2234",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [5994 6001]},
+          :lines [6039 6046]},
  :extra-sources ({:code "(defmacro hash-map\n  ([] `cljs.core.PersistentHashMap.EMPTY)\n  ([& kvs]\n    (let [pairs (partition 2 kvs)\n          ks    (map first pairs)\n          vs    (map second pairs)]\n      (vary-meta\n        `(cljs.core.PersistentHashMap.fromArrays (array ~@ks) (array ~@vs))\n        assoc :tag 'cljs.core/PersistentHashMap))))",
                   :repo "clojurescript",
-                  :tag "r2227",
+                  :tag "r2234",
                   :filename "src/clj/cljs/core.clj",
                   :lines [1415 1423]}),
  :full-name "cljs.core/hash-map",

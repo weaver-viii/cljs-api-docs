@@ -1080,7 +1080,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/MetaFn</td>
-<td></td>
+<td>[ref](refs/cljs.core_MetaFn.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_MetaFn.cljsdoc)</td>
 <td></td>
 <td></td>

@@ -62,11 +62,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2227
+clojurescript @ r2234
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1728-1731](https://github.com/clojure/clojurescript/blob/r2227/src/cljs/cljs/core.cljs#L1728-L1731)</ins>
+            └── <ins>[core.cljs:1773-1776](https://github.com/clojure/clojurescript/blob/r2234/src/cljs/cljs/core.cljs#L1773-L1776)</ins>
 </pre>
 
 
@@ -78,11 +78,11 @@ clojurescript @ r2227
 ```
 
  <pre>
-clojurescript @ r2227
+clojurescript @ r2234
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:527-528](https://github.com/clojure/clojurescript/blob/r2227/src/clj/cljs/core.clj#L527-L528)</ins>
+            └── <ins>[core.clj:527-528](https://github.com/clojure/clojurescript/blob/r2234/src/clj/cljs/core.clj#L527-L528)</ins>
 </pre>
 
 ---
@@ -108,12 +108,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-clear",
  :source {:code "(defn bit-clear\n  [x n]\n  (cljs.core/bit-clear x n))",
           :repo "clojurescript",
-          :tag "r2227",
+          :tag "r2234",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1728 1731]},
+          :lines [1773 1776]},
  :extra-sources ({:code "(defmacro ^::ana/numeric bit-clear [x n]\n  (core/list 'js* \"(~{} & ~(1 << ~{}))\" x n))",
                   :repo "clojurescript",
-                  :tag "r2227",
+                  :tag "r2234",
                   :filename "src/clj/cljs/core.clj",
                   :lines [527 528]}),
  :examples [{:id "0f6748",

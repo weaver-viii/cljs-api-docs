@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2227
+clojurescript @ r2234
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1131-1135](https://github.com/clojure/clojurescript/blob/r2227/src/cljs/cljs/core.cljs#L1131-L1135)</ins>
+            └── <ins>[core.cljs:1176-1180](https://github.com/clojure/clojurescript/blob/r2234/src/cljs/cljs/core.cljs#L1176-L1180)</ins>
 </pre>
 
 
@@ -78,9 +78,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_emptyQMARK",
  :source {:code "(defn ^boolean empty?\n  [coll] (or (nil? coll)\n             (not (seq coll))))",
           :repo "clojurescript",
-          :tag "r2227",
+          :tag "r2234",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1131 1135]},
+          :lines [1176 1180]},
  :full-name "cljs.core/empty?",
  :clj-symbol "clojure.core/empty?",
  :docstring "Returns true if coll has no items - same as (not (seq coll)).\nPlease use the idiom (seq x) rather than (not (empty? x))"}
