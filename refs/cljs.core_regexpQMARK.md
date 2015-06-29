@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2725
+clojurescript @ r2727
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8058-8059](https://github.com/clojure/clojurescript/blob/r2725/src/cljs/cljs/core.cljs#L8058-L8059)</ins>
+            └── <ins>[core.cljs:8058-8059](https://github.com/clojure/clojurescript/blob/r2727/src/cljs/cljs/core.cljs#L8058-L8059)</ins>
 </pre>
 
 
@@ -53,7 +53,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[o]"],
  :source {:code "(defn regexp? [o]\n  (instance? js/RegExp o))",
           :repo "clojurescript",
-          :tag "r2725",
+          :tag "r2727",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8058 8059]},
  :full-name "cljs.core/regexp?",

@@ -64,11 +64,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2725
+clojurescript @ r2727
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:439-442](https://github.com/clojure/clojurescript/blob/r2725/src/clj/cljs/repl.clj#L439-L442)</ins>
+            └── <ins>[repl.clj:439-442](https://github.com/clojure/clojurescript/blob/r2727/src/clj/cljs/repl.clj#L439-L442)</ins>
 </pre>
 
 
@@ -95,7 +95,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_doc",
  :source {:code "(defmacro doc\n  [sym]\n  `(cljs.repl/print-doc (meta (var ~sym))))",
           :repo "clojurescript",
-          :tag "r2725",
+          :tag "r2727",
           :filename "src/clj/cljs/repl.clj",
           :lines [439 442]},
  :examples [{:id "4d2768",

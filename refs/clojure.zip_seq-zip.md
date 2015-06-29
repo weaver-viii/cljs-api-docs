@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2725
+clojurescript @ r2727
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:34-40](https://github.com/clojure/clojurescript/blob/r2725/src/cljs/clojure/zip.cljs#L34-L40)</ins>
+            └── <ins>[zip.cljs:34-40](https://github.com/clojure/clojurescript/blob/r2727/src/cljs/clojure/zip.cljs#L34-L40)</ins>
 </pre>
 
 
@@ -67,7 +67,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_seq-zip",
  :source {:code "(defn seq-zip\n  [root]\n    (zipper seq?\n            identity\n            (fn [node children] (with-meta children (meta node)))\n            root))",
           :repo "clojurescript",
-          :tag "r2725",
+          :tag "r2727",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [34 40]},
  :full-name "clojure.zip/seq-zip",
