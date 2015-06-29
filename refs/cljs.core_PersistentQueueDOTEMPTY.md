@@ -23,11 +23,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2190](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L2190)</ins>
+            └── <ins>[core.cljs:2189](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L2189)</ins>
 </pre>
 
 
@@ -52,9 +52,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_PersistentQueueDOTEMPTY",
  :source {:code "(set! cljs.core.PersistentQueue/EMPTY (PersistentQueue. nil 0 nil []))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2190]},
+          :lines [2189]},
  :full-name "cljs.core/PersistentQueue.EMPTY",
  :clj-symbol "clojure.lang/PersistentQueue.EMPTY"}
 

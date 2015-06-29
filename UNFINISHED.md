@@ -6040,7 +6040,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/default-special-fns</td>
-<td></td>
+<td>[ref](refs/cljs.repl_default-special-fns.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_default-special-fns.cljsdoc)</td>
 <td></td>
 <td></td>

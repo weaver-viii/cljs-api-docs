@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1193-1194](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L1193-L1194)</ins>
+            └── <ins>[core.cljs:1194-1195](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L1194-L1195)</ins>
 </pre>
 
 
@@ -69,9 +69,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_list",
  :source {:code "(defn list [& items]\n  (reduce conj () (reverse items)))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1193 1194]},
+          :lines [1194 1195]},
  :full-name "cljs.core/list",
  :clj-symbol "clojure.core/list"}
 

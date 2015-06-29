@@ -27,12 +27,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[dom.cljs:145-147](https://github.com/clojure/clojurescript/blob/r971/src/cljs/clojure/browser/dom.cljs#L145-L147)</ins>
+                └── <ins>[dom.cljs:145-147](https://github.com/clojure/clojurescript/blob/r993/src/cljs/clojure/browser/dom.cljs#L145-L147)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[e]"],
  :source {:code "(defn click-element\n  [e]\n  (.click (ensure-element e) ()))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/cljs/clojure/browser/dom.cljs",
           :lines [145 147]},
  :full-name "clojure.browser.dom/click-element",

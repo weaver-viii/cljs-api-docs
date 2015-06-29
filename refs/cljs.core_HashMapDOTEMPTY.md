@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2402](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L2402)</ins>
+            └── <ins>[core.cljs:2409](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L2409)</ins>
 </pre>
 
 
@@ -47,9 +47,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "HashMap",
  :source {:code "(set! cljs.core.HashMap/EMPTY (HashMap. nil 0 (js-obj)))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2402]},
+          :lines [2409]},
  :full-name "cljs.core/HashMap.EMPTY",
  :full-name-encode "cljs.core_HashMapDOTEMPTY",
  :history [["+" "0.0-927"]]}

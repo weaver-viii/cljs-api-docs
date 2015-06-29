@@ -130,11 +130,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:206-212](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L206-L212)</ins>
+            └── <ins>[core.cljs:206-212](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L206-L212)</ins>
 </pre>
 
 
@@ -161,7 +161,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_EQ",
  :source {:code "(defn =\n  [x y]\n  (-equiv x y))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/cljs/cljs/core.cljs",
           :lines [206 212]},
  :examples [{:id "edffb6",

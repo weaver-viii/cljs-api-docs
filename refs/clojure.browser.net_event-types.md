@@ -27,12 +27,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[net.cljs:23-30](https://github.com/clojure/clojurescript/blob/r971/src/cljs/clojure/browser/net.cljs#L23-L30)</ins>
+                └── <ins>[net.cljs:23-30](https://github.com/clojure/clojurescript/blob/r993/src/cljs/clojure/browser/net.cljs#L23-L30)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def event-types\n  (into {}\n        (map\n         (fn [[k v]]\n           [(keyword (. k (toLowerCase)))\n            v])\n         (merge\n          (js->clj goog.net.EventType)))))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/cljs/clojure/browser/net.cljs",
           :lines [23 30]},
  :full-name "clojure.browser.net/event-types",

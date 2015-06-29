@@ -64,11 +64,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1893-1910](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L1893-L1910)</ins>
+            └── <ins>[core.cljs:1892-1909](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L1892-L1909)</ins>
 </pre>
 
 
@@ -98,9 +98,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_get-in",
  :source {:code "(defn get-in\n  ([m ks]\n     (reduce get m ks))\n  ([m ks not-found]\n     (loop [sentinel lookup-sentinel\n            m m\n            ks (seq ks)]\n       (if ks\n         (let [m (get m (first ks) sentinel)]\n           (if (identical? sentinel m)\n             not-found\n             (recur sentinel m (next ks))))\n         m))))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1893 1910]},
+          :lines [1892 1909]},
  :full-name "cljs.core/get-in",
  :clj-symbol "clojure.core/get-in",
  :docstring "Returns the value in a nested associative structure,\nwhere ks is a sequence of ke(ys. Returns nil if the key is not present,\nor the not-found value if supplied."}

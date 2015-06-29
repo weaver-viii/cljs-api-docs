@@ -40,7 +40,7 @@ Source code:
                                  pfn-prefix (subs (str psym) 0 (clojure.core/inc (.lastIndexOf (str psym) ".")))]
                              (cons `(aset ~psym ~t true)
                                    (map (fn [[f & meths]]
-                                          `(aset ~(symbol (str pfn-prefix f)) ~t (fn* ~@meths)))
+                                          `(aset ~(symbol (str pfn-prefix f)) ~t (fn ~@meths)))
                                         sigs))))]
         `(do ~@(mapcat assign-impls impl-map)))
       (let [t (resolve tsym)
@@ -54,7 +54,7 @@ Source code:
                                                       (list (with-meta (vec args) (meta sig))
                                                             (list* 'this-as tname body))))]
                                  (map (fn [[f & meths]]
-                                        `(set! ~(symbol (str prototype-prefix f)) (fn* ~@(map adapt-params meths))))
+                                        `(set! ~(symbol (str prototype-prefix f)) (fn ~@(map adapt-params meths))))
                                       sigs))
                                (cons `(set! ~(symbol (str prototype-prefix pprefix)) true)
                                      (map (fn [[f & meths]]
@@ -62,24 +62,26 @@ Source code:
                                                   pf (if ifn?
                                                        (str prototype-prefix 'call)
                                                        (str prototype-prefix pprefix f))
-                                                  adapt-params (fn [[[tname :as args] & body]]
-                                                                 `(~args
-                                                                   (~'js* "~{} = this" ~tname)
-                                                                   ~@body))
+                                                  adapt-params (fn [[[targ & args :as sig] & body]]
+                                                                 (let [tsym (gensym "tsym")]
+                                                                   `(~(with-meta (vec (cons tsym args)) (meta sig))
+                                                                     (this-as ~tsym
+                                                                              (let [~targ ~tsym]
+                                                                                ~@body)))))
                                                   meths (if ifn?
                                                           (map adapt-params meths)
                                                           meths)]
-                                              `(set! ~(symbol pf) (fn* ~@meths))))
+                                              `(set! ~(symbol pf) (fn ~@meths))))
                                           sigs)))))]
         `(do ~@(mapcat assign-impls impl-map))))))
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:210-257](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/core.clj#L210-L257)</ins>
+            └── <ins>[core.clj:211-260](https://github.com/clojure/clojurescript/blob/r993/src/clj/cljs/core.clj#L211-L260)</ins>
 </pre>
 
 
@@ -102,11 +104,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "macro",
  :full-name-encode "cljs.core_extend-type",
- :source {:code "(defmacro extend-type [tsym & impls]\n  (let [resolve #(let [ret (:name (cljs.compiler/resolve-var (dissoc &env :locals) %))]\n                   (assert ret (str \"Can't resolve: \" %))\n                   ret)\n        impl-map (loop [ret {} s impls]\n                   (if (seq s)\n                     (recur (assoc ret (first s) (take-while seq? (next s)))\n                            (drop-while seq? (next s)))\n                     ret))]\n    (if (base-type tsym)\n      (let [t (base-type tsym)\n            assign-impls (fn [[p sigs]]\n                           (let [psym (resolve p)\n                                 pfn-prefix (subs (str psym) 0 (clojure.core/inc (.lastIndexOf (str psym) \".\")))]\n                             (cons `(aset ~psym ~t true)\n                                   (map (fn [[f & meths]]\n                                          `(aset ~(symbol (str pfn-prefix f)) ~t (fn* ~@meths)))\n                                        sigs))))]\n        `(do ~@(mapcat assign-impls impl-map)))\n      (let [t (resolve tsym)\n            prototype-prefix (str t \".prototype.\")\n            assign-impls (fn [[p sigs]]\n                           (let [psym (resolve p)\n                                 pprefix (protocol-prefix psym)]\n                             (if (= p 'Object)\n                               (let [adapt-params (fn [[sig & body]]\n                                                    (let [[tname & args] sig]\n                                                      (list (with-meta (vec args) (meta sig))\n                                                            (list* 'this-as tname body))))]\n                                 (map (fn [[f & meths]]\n                                        `(set! ~(symbol (str prototype-prefix f)) (fn* ~@(map adapt-params meths))))\n                                      sigs))\n                               (cons `(set! ~(symbol (str prototype-prefix pprefix)) true)\n                                     (map (fn [[f & meths]]\n                                            (let [ifn? (= psym 'cljs.core.IFn)\n                                                  pf (if ifn?\n                                                       (str prototype-prefix 'call)\n                                                       (str prototype-prefix pprefix f))\n                                                  adapt-params (fn [[[tname :as args] & body]]\n                                                                 `(~args\n                                                                   (~'js* \"~{} = this\" ~tname)\n                                                                   ~@body))\n                                                  meths (if ifn?\n                                                          (map adapt-params meths)\n                                                          meths)]\n                                              `(set! ~(symbol pf) (fn* ~@meths))))\n                                          sigs)))))]\n        `(do ~@(mapcat assign-impls impl-map))))))",
+ :source {:code "(defmacro extend-type [tsym & impls]\n  (let [resolve #(let [ret (:name (cljs.compiler/resolve-var (dissoc &env :locals) %))]\n                   (assert ret (str \"Can't resolve: \" %))\n                   ret)\n        impl-map (loop [ret {} s impls]\n                   (if (seq s)\n                     (recur (assoc ret (first s) (take-while seq? (next s)))\n                            (drop-while seq? (next s)))\n                     ret))]\n    (if (base-type tsym)\n      (let [t (base-type tsym)\n            assign-impls (fn [[p sigs]]\n                           (let [psym (resolve p)\n                                 pfn-prefix (subs (str psym) 0 (clojure.core/inc (.lastIndexOf (str psym) \".\")))]\n                             (cons `(aset ~psym ~t true)\n                                   (map (fn [[f & meths]]\n                                          `(aset ~(symbol (str pfn-prefix f)) ~t (fn ~@meths)))\n                                        sigs))))]\n        `(do ~@(mapcat assign-impls impl-map)))\n      (let [t (resolve tsym)\n            prototype-prefix (str t \".prototype.\")\n            assign-impls (fn [[p sigs]]\n                           (let [psym (resolve p)\n                                 pprefix (protocol-prefix psym)]\n                             (if (= p 'Object)\n                               (let [adapt-params (fn [[sig & body]]\n                                                    (let [[tname & args] sig]\n                                                      (list (with-meta (vec args) (meta sig))\n                                                            (list* 'this-as tname body))))]\n                                 (map (fn [[f & meths]]\n                                        `(set! ~(symbol (str prototype-prefix f)) (fn ~@(map adapt-params meths))))\n                                      sigs))\n                               (cons `(set! ~(symbol (str prototype-prefix pprefix)) true)\n                                     (map (fn [[f & meths]]\n                                            (let [ifn? (= psym 'cljs.core.IFn)\n                                                  pf (if ifn?\n                                                       (str prototype-prefix 'call)\n                                                       (str prototype-prefix pprefix f))\n                                                  adapt-params (fn [[[targ & args :as sig] & body]]\n                                                                 (let [tsym (gensym \"tsym\")]\n                                                                   `(~(with-meta (vec (cons tsym args)) (meta sig))\n                                                                     (this-as ~tsym\n                                                                              (let [~targ ~tsym]\n                                                                                ~@body)))))\n                                                  meths (if ifn?\n                                                          (map adapt-params meths)\n                                                          meths)]\n                                              `(set! ~(symbol pf) (fn ~@meths))))\n                                          sigs)))))]\n        `(do ~@(mapcat assign-impls impl-map))))))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/clj/cljs/core.clj",
-          :lines [210 257]},
+          :lines [211 260]},
  :full-name "cljs.core/extend-type",
  :clj-symbol "clojure.core/extend-type"}
 

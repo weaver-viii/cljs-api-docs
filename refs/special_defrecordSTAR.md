@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── clj
         └── cljs
-            └── <ins>[compiler.clj:862-873](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/compiler.clj#L862-L873)</ins>
+            └── <ins>[compiler.clj:902-913](https://github.com/clojure/clojurescript/blob/r993/src/clj/cljs/compiler.clj#L902-L913)</ins>
 </pre>
 
 
@@ -57,9 +57,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "special form",
  :source {:code "(defmethod parse 'defrecord*\n  [_ env [_ tsym fields] _]\n  (let [t (munge (:name (resolve-var (dissoc env :locals) tsym)))]\n    (swap! namespaces update-in [(-> env :ns :name) :defs tsym]\n           (fn [m]\n             (let [m (assoc (or m {}) :name t)]\n               (if-let [line (:line env)]\n                 (-> m\n                     (assoc :file *cljs-file*)\n                     (assoc :line line))\n                 m))))\n    {:env env :op :defrecord* :t t :fields fields}))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/clj/cljs/compiler.clj",
-          :lines [862 873]},
+          :lines [902 913]},
  :full-name "special/defrecord*",
  :full-name-encode "special_defrecordSTAR",
  :history [["+" "0.0-927"]]}

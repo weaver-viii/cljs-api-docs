@@ -87,11 +87,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:434-457](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/core.clj#L434-L457)</ins>
+            └── <ins>[core.clj:437-460](https://github.com/clojure/clojurescript/blob/r993/src/clj/cljs/core.clj#L437-L460)</ins>
 </pre>
 
 
@@ -118,9 +118,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_binding",
  :source {:code "(defmacro binding\n  [bindings & body]\n  (let [names (take-nth 2 bindings)\n        vals (take-nth 2 (drop 1 bindings))\n        tempnames (map (comp gensym name) names)\n        binds (map vector names vals)\n        resets (reverse (map vector names tempnames))]\n    `(let [~@(interleave tempnames names)]\n       (try\n        ~@(map\n           (fn [[k v]] (list 'set! k v))\n           binds)\n        ~@body\n        (finally\n         ~@(map\n            (fn [[k v]] (list 'set! k v))\n            resets))))))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/clj/cljs/core.clj",
-          :lines [434 457]},
+          :lines [437 460]},
  :examples [{:id "7dd17f",
              :content "```clj\n(def ^:dynamic *foo* 1)\n\n(defn do-something []\n  (println *foo*))\n\n(binding [*foo* 2]\n  (do-something))\n;;=> prints 2\n\n*foo*\n;;=> 1\n```"}],
  :full-name "cljs.core/binding",

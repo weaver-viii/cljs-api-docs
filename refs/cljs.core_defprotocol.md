@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:395-417](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/core.clj#L395-L417)</ins>
+            └── <ins>[core.clj:398-420](https://github.com/clojure/clojurescript/blob/r993/src/clj/cljs/core.clj#L398-L420)</ins>
 </pre>
 
 
@@ -79,9 +79,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_defprotocol",
  :source {:code "(defmacro defprotocol [psym & doc+methods]\n  (let [p (:name (cljs.compiler/resolve-var (dissoc &env :locals) psym))\n        ns-name (-> &env :ns :name)\n        fqn (fn [n] (symbol (str ns-name \".\" n)))\n        prefix (protocol-prefix p)\n        methods (if (string? (first doc+methods)) (next doc+methods) doc+methods)\n        expand-sig (fn [fname slot sig]\n                     `(~sig\n                       (if (and ~(first sig) (. ~(first sig) ~(symbol (str \"-\" slot)))) ;; Property access needed here.\n                         (. ~(first sig) ~slot ~@sig)\n                         ((or\n                           (aget ~(fqn fname) (goog.typeOf ~(first sig)))\n                           (aget ~(fqn fname) \"_\")\n                           (throw (missing-protocol\n                                    ~(str psym \".\" fname) ~(first sig))))\n                          ~@sig))))\n        method (fn [[fname & sigs]]\n                 (let [sigs (take-while vector? sigs)\n                       slot (symbol (str prefix (name fname)))]\n                   `(defn ~fname ~@(map #(expand-sig fname slot %) sigs))))]\n    `(do\n       (def ~psym (~'js* \"{}\"))\n       ~@(map method methods))))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/clj/cljs/core.clj",
-          :lines [395 417]},
+          :lines [398 420]},
  :full-name "cljs.core/defprotocol",
  :clj-symbol "clojure.core/defprotocol"}
 

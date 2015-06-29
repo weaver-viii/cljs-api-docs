@@ -65,16 +65,16 @@ Source code:
 ```clj
 (defn /
   ([x] (/ 1 x))
-  ([x y] (/ x y))
+  ([x y] (js* "(~{x} / ~{y})")) ;; FIXME: waiting on cljs.core//
   ([x y & more] (reduce / (/ x y) more)))
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:834-839](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L834-L839)</ins>
+            └── <ins>[core.cljs:831-836](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L831-L836)</ins>
 </pre>
 
 
@@ -82,18 +82,17 @@ clojurescript @ r971
 
 ```clj
 (defmacro /
-  ([] 1)
-  ([x] `(/ 1 x))
+  ([x] `(/ 1 ~x))
   ([x y] (list 'js* "(~{} / ~{})" x y))
   ([x y & more] `(/ (/ ~x ~y) ~@more)))
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:81-85](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/core.clj#L81-L85)</ins>
+            └── <ins>[core.clj:83-86](https://github.com/clojure/clojurescript/blob/r993/src/clj/cljs/core.clj#L83-L86)</ins>
 </pre>
 
 ---
@@ -117,16 +116,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/*" "cljs.core/quot"],
  :full-name-encode "cljs.core_SLASH",
- :source {:code "(defn /\n  ([x] (/ 1 x))\n  ([x y] (/ x y))\n  ([x y & more] (reduce / (/ x y) more)))",
+ :source {:code "(defn /\n  ([x] (/ 1 x))\n  ([x y] (js* \"(~{x} / ~{y})\")) ;; FIXME: waiting on cljs.core//\n  ([x y & more] (reduce / (/ x y) more)))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [834 839]},
- :extra-sources ({:code "(defmacro /\n  ([] 1)\n  ([x] `(/ 1 x))\n  ([x y] (list 'js* \"(~{} / ~{})\" x y))\n  ([x y & more] `(/ (/ ~x ~y) ~@more)))",
+          :lines [831 836]},
+ :extra-sources ({:code "(defmacro /\n  ([x] `(/ 1 ~x))\n  ([x y] (list 'js* \"(~{} / ~{})\" x y))\n  ([x y & more] `(/ (/ ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r971",
+                  :tag "r993",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [81 85]}),
+                  :lines [83 86]}),
  :examples [{:id "824bb7",
              :content "```clj\n(/ 6 3)\n;;=> 2\n\n(/ 6 3 2)\n;;=> 1\n\n(/ 10)\n;;=> 0.1\n\n(/ 1 3)\n;;=> 0.3333333333333333\n```"}],
  :full-name "cljs.core//",

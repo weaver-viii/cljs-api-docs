@@ -51,11 +51,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:407-413](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L407-L413)</ins>
+            └── <ins>[core.cljs:404-410](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L404-L410)</ins>
 </pre>
 
 
@@ -82,9 +82,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_seq",
  :source {:code "(defn seq\n  [coll]\n  (when coll\n    (-seq coll)))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [407 413]},
+          :lines [404 410]},
  :full-name "cljs.core/seq",
  :clj-symbol "clojure.core/seq",
  :docstring "Returns a seq on the collection. If the collection is\nempty, returns nil.  (seq nil) returns nil. seq also works on\nStrings."}

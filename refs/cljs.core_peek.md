@@ -88,11 +88,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:558-562](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L558-L562)</ins>
+            └── <ins>[core.cljs:555-559](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L555-L559)</ins>
 </pre>
 
 
@@ -119,9 +119,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_peek",
  :source {:code "(defn peek\n  [coll]\n  (-peek coll))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [558 562]},
+          :lines [555 559]},
  :examples [{:id "4abc4c",
              :content "With vectors:\n\n```clj\n(peek [1 2 3])\n;;=> 3\n\n(peek [1 2])\n;;=> 2\n\n(peek [1])\n;;=> 1\n\n(peek [])\n;;=> nil\n```"}
             {:id "d50bd0",

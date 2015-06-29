@@ -29,12 +29,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:182-186](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/repl/browser.clj#L182-L186)</ins>
+                └── <ins>[browser.clj:182-186](https://github.com/clojure/clojurescript/blob/r993/src/clj/cljs/repl/browser.clj#L182-L186)</ins>
 </pre>
 
 
@@ -57,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[opts conn request]"],
  :source {:code "(defn handle-get [opts conn request]\n  (let [path (:path request)]\n    (if (.startsWith path \"/repl\")\n      (send-repl-client-page opts conn request)\n      (send-404 conn (:path request)))))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [182 186]},
  :full-name "cljs.repl.browser/handle-get",

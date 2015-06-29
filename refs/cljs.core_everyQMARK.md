@@ -48,11 +48,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1443-1450](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L1443-L1450)</ins>
+            └── <ins>[core.cljs:1442-1449](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L1442-L1449)</ins>
 </pre>
 
 
@@ -79,9 +79,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_everyQMARK",
  :source {:code "(defn every?\n  [pred coll]\n  (cond\n   (nil? (seq coll)) true\n   (pred (first coll)) (recur pred (next coll))\n   :else false))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1443 1450]},
+          :lines [1442 1449]},
  :full-name "cljs.core/every?",
  :clj-symbol "clojure.core/every?",
  :docstring "Returns true if (pred x) is logical true for every x in coll, else\nfalse."}

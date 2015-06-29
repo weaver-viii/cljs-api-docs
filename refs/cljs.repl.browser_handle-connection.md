@@ -33,12 +33,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:230-238](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/repl/browser.clj#L230-L238)</ins>
+                └── <ins>[browser.clj:230-238](https://github.com/clojure/clojurescript/blob/r993/src/clj/cljs/repl/browser.clj#L230-L238)</ins>
 </pre>
 
 
@@ -61,7 +61,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[opts conn]"],
  :source {:code "(defn handle-connection\n  [opts conn]\n  (let [rdr (BufferedReader. (InputStreamReader. (.getInputStream conn)))]\n    (if-let [request (read-request rdr)]\n      (case (:method request)\n        :get (handle-get opts conn request)\n        :post (handle-post conn (read-string (:content request)))\n        (.close conn))\n      (.close conn))))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [230 238]},
  :full-name "cljs.repl.browser/handle-connection",

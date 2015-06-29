@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:514-519](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L514-L519)</ins>
+            └── <ins>[core.cljs:511-516](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L511-L516)</ins>
 </pre>
 
 
@@ -81,9 +81,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_get",
  :source {:code "(defn get\n  ([o k]\n     (-lookup o k))\n  ([o k not-found]\n     (-lookup o k not-found)))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [514 519]},
+          :lines [511 516]},
  :full-name "cljs.core/get",
  :clj-symbol "clojure.core/get",
  :docstring "Returns the value mapped to key, not-found or nil if key not present."}

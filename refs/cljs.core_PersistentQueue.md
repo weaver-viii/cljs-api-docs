@@ -72,11 +72,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2144-2188](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L2144-L2188)</ins>
+            └── <ins>[core.cljs:2143-2187](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L2143-L2187)</ins>
 </pre>
 
 
@@ -101,9 +101,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_PersistentQueue",
  :source {:code "(deftype PersistentQueue [meta count front rear]\n  IWithMeta\n  (-with-meta [coll meta] (PersistentQueue. meta count front rear))\n\n  IMeta\n  (-meta [coll] meta)\n\n  ISeq\n  (-first [coll] (first front))\n  (-rest [coll] (rest (seq coll)))\n\n  IStack\n  (-peek [coll] (-first front))\n  (-pop [coll]\n    (if front\n      (if-let [f1 (next front)]\n        (PersistentQueue. meta (dec count) f1 rear)\n        (PersistentQueue. meta (dec count) (seq rear) []))\n      coll))\n\n  ICollection\n  (-conj [coll o]\n    (if front\n      (PersistentQueue. meta (inc count) front (conj (or rear []) o))\n      (PersistentQueue. meta (inc count) (conj front o) [])))\n\n  IEmptyableCollection\n  (-empty [coll] cljs.core.PersistentQueue/EMPTY)\n\n  ISequential\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  IHash\n  (-hash [coll] (hash-coll coll))\n\n  ISeqable\n  (-seq [coll]\n    (let [rear (seq rear)]\n      (if (or front rear)\n        (PersistentQueueSeq. nil front (seq rear))\n        cljs.core.List/EMPTY)))\n\n  ICounted\n  (-count [coll] count))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2144 2188]},
+          :lines [2143 2187]},
  :full-name "cljs.core/PersistentQueue",
  :clj-symbol "clojure.lang/PersistentQueue"}
 

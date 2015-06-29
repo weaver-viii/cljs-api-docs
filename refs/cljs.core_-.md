@@ -66,11 +66,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:820-825](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L820-L825)</ins>
+            └── <ins>[core.cljs:817-822](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L817-L822)</ins>
 </pre>
 
 
@@ -78,18 +78,17 @@ clojurescript @ r971
 
 ```clj
 (defmacro -
-  ([] 0)
   ([x] (list 'js* "(- ~{})" x))
   ([x y] (list 'js* "(~{} - ~{})" x y))
   ([x y & more] `(- (- ~x ~y) ~@more)))
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:69-73](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/core.clj#L69-L73)</ins>
+            └── <ins>[core.clj:72-75](https://github.com/clojure/clojurescript/blob/r993/src/clj/cljs/core.clj#L72-L75)</ins>
 </pre>
 
 ---
@@ -115,14 +114,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_-",
  :source {:code "(defn -\n  ([x] (cljs.core/- x))\n  ([x y] (cljs.core/- x y))\n  ([x y & more] (reduce - (cljs.core/- x y) more)))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [820 825]},
- :extra-sources ({:code "(defmacro -\n  ([] 0)\n  ([x] (list 'js* \"(- ~{})\" x))\n  ([x y] (list 'js* \"(~{} - ~{})\" x y))\n  ([x y & more] `(- (- ~x ~y) ~@more)))",
+          :lines [817 822]},
+ :extra-sources ({:code "(defmacro -\n  ([x] (list 'js* \"(- ~{})\" x))\n  ([x y] (list 'js* \"(~{} - ~{})\" x y))\n  ([x y & more] `(- (- ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r971",
+                  :tag "r993",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [69 73]}),
+                  :lines [72 75]}),
  :examples [{:id "0a974e",
              :content "```clj\n(- 1)\n;;=> -1\n\n(- 6 3)\n;;=> 3\n\n(- 10 3 2)\n;;=> 5\n```"}],
  :full-name "cljs.core/-",

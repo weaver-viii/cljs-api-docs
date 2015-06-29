@@ -56,11 +56,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1742-1751](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L1742-L1751)</ins>
+            └── <ins>[core.cljs:1741-1750](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L1741-L1750)</ins>
 </pre>
 
 
@@ -87,9 +87,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_drop-while",
  :source {:code "(defn drop-while\n  [pred coll]\n  (let [step (fn [pred coll]\n               (let [s (seq coll)]\n                 (if (and s (pred (first s)))\n                   (recur pred (rest s))\n                   s)))]\n    (lazy-seq (step pred coll))))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1742 1751]},
+          :lines [1741 1750]},
  :full-name "cljs.core/drop-while",
  :clj-symbol "clojure.core/drop-while",
  :docstring "Returns a lazy sequence of the items in coll starting from the first\nitem for which (pred item) returns nil."}

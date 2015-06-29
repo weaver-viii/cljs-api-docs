@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:201-204](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L201-L204)</ins>
+            └── <ins>[core.cljs:201-204](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L201-L204)</ins>
 </pre>
 
 
@@ -60,11 +60,11 @@ clojurescript @ r971
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:54-55](https://github.com/clojure/clojurescript/blob/r971/src/clj/cljs/core.clj#L54-L55)</ins>
+            └── <ins>[core.clj:57-58](https://github.com/clojure/clojurescript/blob/r993/src/clj/cljs/core.clj#L57-L58)</ins>
 </pre>
 
 ---
@@ -90,14 +90,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_identicalQMARK",
  :source {:code "(defn identical?\n  [x y]\n  (cljs.core/identical? x y))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/cljs/cljs/core.cljs",
           :lines [201 204]},
  :extra-sources ({:code "(defmacro identical? [a b]\n  (list 'js* \"(~{} === ~{})\" a b))",
                   :repo "clojurescript",
-                  :tag "r971",
+                  :tag "r993",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [54 55]}),
+                  :lines [57 58]}),
  :full-name "cljs.core/identical?",
  :clj-symbol "clojure.core/identical?",
  :docstring "Tests if 2 arguments are the same object"}

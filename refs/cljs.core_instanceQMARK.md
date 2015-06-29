@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r971
+clojurescript @ r993
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:655-656](https://github.com/clojure/clojurescript/blob/r971/src/cljs/cljs/core.cljs#L655-L656)</ins>
+            └── <ins>[core.cljs:652-653](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L652-L653)</ins>
 </pre>
 
 
@@ -68,9 +68,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_instanceQMARK",
  :source {:code "(defn instance? [t o]\n  (js* \"(~{o} != null && (~{o} instanceof ~{t} || ~{o}.constructor === ~{t} || ~{t} === Object))\"))",
           :repo "clojurescript",
-          :tag "r971",
+          :tag "r993",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [655 656]},
+          :lines [652 653]},
  :full-name "cljs.core/instance?",
  :clj-symbol "clojure.core/instance?"}
 
