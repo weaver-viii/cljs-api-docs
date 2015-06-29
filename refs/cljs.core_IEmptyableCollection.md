@@ -21,11 +21,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:121-122](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L121-L122)</ins>
+            └── <ins>[core.cljs:121-122](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L121-L122)</ins>
 </pre>
 
 
@@ -48,7 +48,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IEmptyableCollection",
  :source {:code "(defprotocol IEmptyableCollection\n  (-empty [coll]))",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/cljs/cljs/core.cljs",
           :lines [121 122]},
  :methods [{:name "-empty", :signature ["[coll]"], :docstring nil}],

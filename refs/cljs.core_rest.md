@@ -66,11 +66,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:419-423](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L419-L423)</ins>
+            └── <ins>[core.cljs:419-423](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L419-L423)</ins>
 </pre>
 
 
@@ -100,7 +100,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_rest",
  :source {:code "(defn rest\n  [coll]\n  (-rest (seq coll)))",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/cljs/cljs/core.cljs",
           :lines [419 423]},
  :examples [{:id "0869af",

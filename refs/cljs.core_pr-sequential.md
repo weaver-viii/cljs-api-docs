@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3035-3039](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L3035-L3039)</ins>
+            └── <ins>[core.cljs:3035-3039](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L3035-L3039)</ins>
 </pre>
 
 
@@ -56,7 +56,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[print-one begin sep end opts coll]"],
  :source {:code "(defn pr-sequential [print-one begin sep end opts coll]\n  (concat [begin]\n          (flatten1\n            (interpose [sep] (map #(print-one % opts) coll)))\n          [end]))",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3035 3039]},
  :full-name "cljs.core/pr-sequential",

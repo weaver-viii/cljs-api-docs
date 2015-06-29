@@ -25,11 +25,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:331-336](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/reader.cljs#L331-L336)</ins>
+            └── <ins>[reader.cljs:331-336](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/reader.cljs#L331-L336)</ins>
 </pre>
 
 
@@ -51,7 +51,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def dispatch-macros\n  {\"{\" read-set\n   \"<\" (throwing-reader \"Unreadable form\")\n   \"\\\"\" read-regex\n   \"!\" read-comment\n   \"_\" read-discard})",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [331 336]},
  :full-name "cljs.reader/dispatch-macros",

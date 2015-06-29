@@ -29,12 +29,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:160-164](https://github.com/clojure/clojurescript/blob/r1006/src/clj/cljs/repl/browser.clj#L160-L164)</ins>
+                └── <ins>[browser.clj:160-164](https://github.com/clojure/clojurescript/blob/r1011/src/clj/cljs/repl/browser.clj#L160-L164)</ins>
 </pre>
 
 
@@ -57,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[rdr]"],
  :source {:code "(defn read-request [rdr]\n  (let [line (.readLine rdr)]\n    (cond (.startsWith line \"POST\") (read-post line rdr)\n          (.startsWith line \"GET\") (read-get line rdr)\n          :else {:method :unknown :content line})))",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [160 164]},
  :full-name "cljs.repl.browser/read-request",

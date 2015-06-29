@@ -59,11 +59,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:748-760](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L748-L760)</ins>
+            └── <ins>[core.cljs:748-760](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L748-L760)</ins>
 </pre>
 
 
@@ -90,7 +90,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_sort",
  :source {:code "(defn sort\n  ([coll]\n   (sort compare coll))\n  ([comp coll]\n   (if (seq coll)\n     (let [a (to-array coll)]\n       ;; matching Clojure's stable sort, though docs don't promise it\n       (garray/stableSort a (fn->comparator comp))\n       (seq a))\n     ())))",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/cljs/cljs/core.cljs",
           :lines [748 760]},
  :full-name "cljs.core/sort",

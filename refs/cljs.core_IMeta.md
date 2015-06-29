@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:165-166](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L165-L166)</ins>
+            └── <ins>[core.cljs:165-166](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L165-L166)</ins>
 </pre>
 
 
@@ -52,7 +52,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IMeta",
  :source {:code "(defprotocol IMeta\n  (-meta [o]))",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/cljs/cljs/core.cljs",
           :lines [165 166]},
  :methods [{:name "-meta", :signature ["[o]"], :docstring nil}],

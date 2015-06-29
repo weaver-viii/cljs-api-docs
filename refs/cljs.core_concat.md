@@ -69,11 +69,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1349-1367](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L1349-L1367)</ins>
+            └── <ins>[core.cljs:1349-1367](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L1349-L1367)</ins>
 </pre>
 
 
@@ -100,7 +100,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_concat",
  :source {:code "(defn concat\n  ([] (lazy-seq nil))\n  ([x] (lazy-seq x))\n  ([x y]\n    (lazy-seq\n      (let [s (seq x)]\n        (if s\n          (cons (first s) (concat (rest s) y))\n          y))))\n  ([x y & zs]\n     (let [cat (fn cat [xys zs]\n                 (lazy-seq\n                   (let [xys (seq xys)]\n                     (if xys\n                       (cons (first xys) (cat (rest xys) zs))\n                       (when zs\n                         (cat (first zs) (next zs)))))))]\n       (cat (concat x y) zs))))",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1349 1367]},
  :full-name "cljs.core/concat",

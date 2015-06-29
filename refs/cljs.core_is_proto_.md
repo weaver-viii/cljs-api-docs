@@ -27,11 +27,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:48-50](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L48-L50)</ins>
+            └── <ins>[core.cljs:48-50](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L48-L50)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[x]"],
  :source {:code "(defn is_proto_\n  [x]\n  (js* \"(~{x}).constructor.prototype === ~{x}\"))",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/cljs/cljs/core.cljs",
           :lines [48 50]},
  :full-name "cljs.core/is_proto_",

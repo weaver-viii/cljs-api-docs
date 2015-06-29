@@ -27,11 +27,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:368-370](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L368-L370)</ins>
+            └── <ins>[core.cljs:368-370](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L368-L370)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[prim i]"],
  :source {:code "(defn prim-seq [prim i]\n  (when-not (= 0 (.-length prim))\n    (IndexedSeq. prim i)))",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/cljs/cljs/core.cljs",
           :lines [368 370]},
  :full-name "cljs.core/prim-seq",

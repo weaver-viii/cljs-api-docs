@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:389-396](https://github.com/clojure/clojurescript/blob/r1006/src/clj/cljs/core.clj#L389-L396)</ins>
+            └── <ins>[core.clj:389-396](https://github.com/clojure/clojurescript/blob/r1011/src/clj/cljs/core.clj#L389-L396)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_defrecord",
  :source {:code "(defmacro defrecord [rsym fields & impls]\n  (let [r (:name (cljs.compiler/resolve-var (dissoc &env :locals) rsym))]\n    `(let []\n       ~(emit-defrecord rsym r fields impls)\n       (set! (.-cljs$core$IPrintable$_pr_seq ~r) (fn [this#] (list ~(str r))))\n       ~(build-positional-factory rsym r fields)\n       ~(build-map-factory rsym r fields)\n       ~r)))",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/clj/cljs/core.clj",
           :lines [389 396]},
  :full-name "cljs.core/defrecord",

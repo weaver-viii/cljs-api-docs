@@ -30,11 +30,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:674-676](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L674-L676)</ins>
+            └── <ins>[core.cljs:674-676](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L674-L676)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_symbolQMARK",
  :source {:code "(defn symbol? [x]\n  (and (goog/isString x)\n       (= (.charAt x 0) \\uFDD1)))",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/cljs/cljs/core.cljs",
           :lines [674 676]},
  :full-name "cljs.core/symbol?",

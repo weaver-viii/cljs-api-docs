@@ -60,11 +60,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1578-1588](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L1578-L1588)</ins>
+            └── <ins>[core.cljs:1578-1588](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L1578-L1588)</ins>
 </pre>
 
 
@@ -93,7 +93,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_keep",
  :source {:code "(defn keep\n  ([f coll]\n   (lazy-seq\n    (when-let [s (seq coll)]\n      (let [x (f (first s))]\n        (if (nil? x)\n          (keep f (rest s))\n          (cons x (keep f (rest s)))))))))",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1578 1588]},
  :full-name "cljs.core/keep",

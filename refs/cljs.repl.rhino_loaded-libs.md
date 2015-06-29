@@ -20,12 +20,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[rhino.clj:19](https://github.com/clojure/clojurescript/blob/r1006/src/clj/cljs/repl/rhino.clj#L19)</ins>
+                └── <ins>[rhino.clj:19](https://github.com/clojure/clojurescript/blob/r1011/src/clj/cljs/repl/rhino.clj#L19)</ins>
 </pre>
 
 
@@ -47,7 +47,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def loaded-libs (atom #{}))",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/clj/cljs/repl/rhino.clj",
           :lines [19]},
  :full-name "cljs.repl.rhino/loaded-libs",

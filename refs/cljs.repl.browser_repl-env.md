@@ -32,12 +32,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:320-327](https://github.com/clojure/clojurescript/blob/r1006/src/clj/cljs/repl/browser.clj#L320-L327)</ins>
+                └── <ins>[browser.clj:320-327](https://github.com/clojure/clojurescript/blob/r1011/src/clj/cljs/repl/browser.clj#L320-L327)</ins>
 </pre>
 
 
@@ -60,7 +60,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[& {:as opts}]"],
  :source {:code "(defn repl-env [& {:as opts}]\n  (let [opts (merge {:port 9000 :optimizations :simple :working-dir \".repl\"} opts)]\n    (do (swap! server-state\n               (fn [old] (assoc old :client-js\n                               (future (create-client-js-file\n                                        opts\n                                        (io/file (:working-dir opts) \"client.js\"))))))\n        opts)))",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [320 327]},
  :full-name "cljs.repl.browser/repl-env",

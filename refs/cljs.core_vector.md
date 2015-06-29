@@ -39,11 +39,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2026](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L2026)</ins>
+            └── <ins>[core.cljs:2206](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L2206)</ins>
 </pre>
 
 
@@ -73,9 +73,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_vector",
  :source {:code "(defn vector [& args] (vec args))",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2026]},
+          :lines [2206]},
  :full-name "cljs.core/vector",
  :clj-symbol "clojure.core/vector"}
 

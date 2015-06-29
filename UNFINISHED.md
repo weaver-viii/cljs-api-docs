@@ -3880,7 +3880,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/print-str</td>
-<td></td>
+<td>[ref](refs/cljs.core_print-str.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_print-str.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3904,7 +3904,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/println-str</td>
-<td></td>
+<td>[ref](refs/cljs.core_println-str.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_println-str.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3920,7 +3920,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/prn-str</td>
-<td></td>
+<td>[ref](refs/cljs.core_prn-str.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_prn-str.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3928,7 +3928,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/prn-str-with-opts</td>
-<td></td>
+<td>[ref](refs/cljs.core_prn-str-with-opts.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_prn-str-with-opts.cljsdoc)</td>
 <td></td>
 <td></td>

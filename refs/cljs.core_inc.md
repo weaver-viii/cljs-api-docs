@@ -42,11 +42,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:302-304](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L302-L304)</ins>
+            └── <ins>[core.cljs:302-304](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L302-L304)</ins>
 </pre>
 
 
@@ -58,11 +58,11 @@ clojurescript @ r1006
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:116-117](https://github.com/clojure/clojurescript/blob/r1006/src/clj/cljs/core.clj#L116-L117)</ins>
+            └── <ins>[core.clj:116-117](https://github.com/clojure/clojurescript/blob/r1011/src/clj/cljs/core.clj#L116-L117)</ins>
 </pre>
 
 ---
@@ -88,12 +88,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_inc",
  :source {:code "(defn inc\n  [x] (cljs.core/+ x 1))",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/cljs/cljs/core.cljs",
           :lines [302 304]},
  :extra-sources ({:code "(defmacro inc [x]\n  `(+ ~x 1))",
                   :repo "clojurescript",
-                  :tag "r1006",
+                  :tag "r1011",
                   :filename "src/clj/cljs/core.clj",
                   :lines [116 117]}),
  :full-name "cljs.core/inc",

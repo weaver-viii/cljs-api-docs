@@ -56,11 +56,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1565-1576](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L1565-L1576)</ins>
+            └── <ins>[core.cljs:1565-1576](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L1565-L1576)</ins>
 </pre>
 
 
@@ -87,7 +87,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_map-indexed",
  :source {:code "(defn map-indexed\n  [f coll]\n  (let [mapi (fn mpi [idx coll]\n               (lazy-seq\n                (when-let [s (seq coll)]\n                  (cons (f idx (first s))\n                        (mpi (inc idx) (rest s))))))]\n    (mapi 0 coll)))",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1565 1576]},
  :full-name "cljs.core/map-indexed",

@@ -55,11 +55,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1006
+clojurescript @ r1011
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2293-2323](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L2293-L2323)</ins>
+            └── <ins>[core.cljs:2293-2323](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L2293-L2323)</ins>
 </pre>
 
 
@@ -82,7 +82,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[meta front rear]"],
  :source {:code "(deftype PersistentQueueSeq [meta front rear]\n  IWithMeta\n  (-with-meta [coll meta] (PersistentQueueSeq. meta front rear))\n\n  IMeta\n  (-meta [coll] meta)\n\n  ISeq\n  (-first [coll] (-first front))\n  (-rest  [coll]\n    (if-let [f1 (next front)]\n      (PersistentQueueSeq. meta f1 rear)\n      (if (nil? rear)\n        (-empty coll)\n        (PersistentQueueSeq. meta rear nil))))\n\n  ICollection\n  (-conj [coll o] (cons o coll))\n\n  IEmptyableCollection\n  (-empty [coll] (with-meta cljs.core.List/EMPTY meta))\n\n  ISequential\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  IHash\n  (-hash [coll] (hash-coll coll))\n\n  ISeqable\n  (-seq [coll] coll))",
           :repo "clojurescript",
-          :tag "r1006",
+          :tag "r1011",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2293 2323]},
  :full-name "cljs.core/PersistentQueueSeq",
