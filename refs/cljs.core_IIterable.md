@@ -21,11 +21,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2719
+clojurescript @ r2723
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:421-422](https://github.com/clojure/clojurescript/blob/r2719/src/cljs/cljs/core.cljs#L421-L422)</ins>
+            └── <ins>[core.cljs:421-422](https://github.com/clojure/clojurescript/blob/r2723/src/cljs/cljs/core.cljs#L421-L422)</ins>
 </pre>
 
 
@@ -48,7 +48,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IIterable",
  :source {:code "(defprotocol IIterable\n  (-iterator [coll]))",
           :repo "clojurescript",
-          :tag "r2719",
+          :tag "r2723",
           :filename "src/cljs/cljs/core.cljs",
           :lines [421 422]},
  :methods [{:name "-iterator", :signature ["[coll]"], :docstring nil}],

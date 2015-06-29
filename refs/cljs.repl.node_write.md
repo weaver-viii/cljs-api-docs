@@ -28,12 +28,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2719
+clojurescript @ r2723
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[node.clj:33-36](https://github.com/clojure/clojurescript/blob/r2719/src/clj/cljs/repl/node.clj#L33-L36)</ins>
+                └── <ins>[node.clj:33-36](https://github.com/clojure/clojurescript/blob/r2723/src/clj/cljs/repl/node.clj#L33-L36)</ins>
 </pre>
 
 
@@ -56,7 +56,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[out js]"],
  :source {:code "(defn write [^BufferedWriter out ^String js]\n  (.write out js)\n  (.write out (int 0)) ;; terminator\n  (.flush out))",
           :repo "clojurescript",
-          :tag "r2719",
+          :tag "r2723",
           :filename "src/clj/cljs/repl/node.clj",
           :lines [33 36]},
  :full-name "cljs.repl.node/write",

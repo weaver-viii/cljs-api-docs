@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2719
+clojurescript @ r2723
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:431-434](https://github.com/clojure/clojurescript/blob/r2719/src/clj/cljs/repl.clj#L431-L434)</ins>
+            └── <ins>[repl.clj:431-434](https://github.com/clojure/clojurescript/blob/r2723/src/clj/cljs/repl.clj#L431-L434)</ins>
 </pre>
 
 
@@ -61,7 +61,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_repl",
  :source {:code "(defn repl\n  [repl-env & {:as opts}]\n  (repl* repl-env opts))",
           :repo "clojurescript",
-          :tag "r2719",
+          :tag "r2723",
           :filename "src/clj/cljs/repl.clj",
           :lines [431 434]},
  :full-name "cljs.repl/repl",

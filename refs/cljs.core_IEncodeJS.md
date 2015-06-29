@@ -23,11 +23,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2719
+clojurescript @ r2723
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8621-8624](https://github.com/clojure/clojurescript/blob/r2719/src/cljs/cljs/core.cljs#L8621-L8624)</ins>
+            └── <ins>[core.cljs:8621-8624](https://github.com/clojure/clojurescript/blob/r2723/src/cljs/cljs/core.cljs#L8621-L8624)</ins>
 </pre>
 
 
@@ -50,7 +50,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IEncodeJS",
  :source {:code "(defprotocol IEncodeJS\n  (-clj->js [x] \"Recursively transforms clj values to JavaScript\")\n  (-key->js [x] \"Transforms map keys to valid JavaScript keys. Arbitrary keys are\n  encoded to their string representation via (pr-str x)\"))",
           :repo "clojurescript",
-          :tag "r2719",
+          :tag "r2723",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8621 8624]},
  :methods [{:name "-clj->js",

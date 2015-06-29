@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2719
+clojurescript @ r2723
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3110-3111](https://github.com/clojure/clojurescript/blob/r2719/src/cljs/cljs/core.cljs#L3110-L3111)</ins>
+            └── <ins>[core.cljs:3110-3111](https://github.com/clojure/clojurescript/blob/r2723/src/cljs/cljs/core.cljs#L3110-L3111)</ins>
 </pre>
 
 
@@ -53,7 +53,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[coll]"],
  :source {:code "(defn seq-iter [coll]\n  (SeqIter. INIT coll))",
           :repo "clojurescript",
-          :tag "r2719",
+          :tag "r2723",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3110 3111]},
  :full-name "cljs.core/seq-iter",
