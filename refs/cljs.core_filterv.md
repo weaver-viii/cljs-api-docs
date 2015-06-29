@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2760
+clojurescript @ r2814
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4047-4054](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/core.cljs#L4047-L4054)</ins>
+            └── <ins>[core.cljs:4051-4058](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L4051-L4058)</ins>
 </pre>
 
 
@@ -74,9 +74,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_filterv",
  :source {:code "(defn filterv\n  [pred coll]\n  (-> (reduce (fn [v o] (if (pred o) (conj! v o) v))\n              (transient [])\n              coll)\n      persistent!))",
           :repo "clojurescript",
-          :tag "r2760",
+          :tag "r2814",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [4047 4054]},
+          :lines [4051 4058]},
  :full-name "cljs.core/filterv",
  :clj-symbol "clojure.core/filterv",
  :docstring "Returns a vector of the items in coll for which\n(pred item) returns true. pred must be free of side-effects."}

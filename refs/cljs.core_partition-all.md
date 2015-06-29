@@ -79,11 +79,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2760
+clojurescript @ r2814
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7709-7738](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/core.cljs#L7709-L7738)</ins>
+            └── <ins>[core.cljs:7713-7742](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L7713-L7742)</ins>
 </pre>
 
 
@@ -110,9 +110,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_partition-all",
  :source {:code "(defn partition-all\n  ([n]\n   (fn [rf]\n     (let [a (array-list)]\n       (fn\n         ([] (rf))\n         ([result]\n            (let [result (if (.isEmpty a)\n                           result\n                           (let [v (vec (.toArray a))]\n                             ;;clear first!\n                             (.clear a)\n                             (unreduced (rf result v))))]\n              (rf result)))\n         ([result input]\n            (.add a input)\n            (if (== n (.size a))\n              (let [v (vec (.toArray a))]\n                (.clear a)\n                (rf result v))\n              result))))))\n  ([n coll]\n     (partition-all n n coll))\n  ([n step coll]\n     (lazy-seq\n      (when-let [s (seq coll)]\n        (cons (take n s) (partition-all n step (drop step s)))))))",
           :repo "clojurescript",
-          :tag "r2760",
+          :tag "r2814",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7709 7738]},
+          :lines [7713 7742]},
  :full-name "cljs.core/partition-all",
  :clj-symbol "clojure.core/partition-all",
  :docstring "Returns a lazy sequence of lists like partition, but may include\npartitions with fewer than n items at the end.  Returns a stateful\ntransducer when no collection is provided."}

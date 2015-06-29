@@ -69,11 +69,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2760
+clojurescript @ r2814
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1168-1174](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/core.cljs#L1168-L1174)</ins>
+            └── <ins>[core.cljs:1172-1178](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L1172-L1178)</ins>
 </pre>
 
 
@@ -104,9 +104,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_last",
  :source {:code "(defn last\n  [s]\n  (let [sn (next s)]\n    (if-not (nil? sn)\n      (recur sn)\n      (first s))))",
           :repo "clojurescript",
-          :tag "r2760",
+          :tag "r2814",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1168 1174]},
+          :lines [1172 1178]},
  :examples [{:id "eb0836",
              :content "```clj\n(last [1 2 3])\n;;=> 3\n\n(last [1 2])\n;;=> 2\n\n(last [1])\n;;=> 1\n\n(last [])\n;;=> nil\n```"}],
  :full-name "cljs.core/last",

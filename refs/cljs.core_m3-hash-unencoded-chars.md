@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2760
+clojurescript @ r2814
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:490-502](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/core.cljs#L490-L502)</ins>
+            └── <ins>[core.cljs:494-506](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L494-L506)</ins>
 </pre>
 
 
@@ -67,9 +67,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_m3-hash-unencoded-chars",
  :source {:code "(defn ^number m3-hash-unencoded-chars [in]\n  (let [h1 (loop [i 1 h1 m3-seed]\n             (if (< i (alength in))\n               (recur (+ i 2)\n                 (m3-mix-H1 h1\n                   (m3-mix-K1\n                     (bit-or (.charCodeAt in (dec i))\n                       (bit-shift-left (.charCodeAt in i) 16)))))\n               h1))\n        h1 (if (== (bit-and (alength in) 1) 1)\n             (bit-xor h1 (m3-mix-K1 (.charCodeAt in (dec (alength in)))))\n             h1)]\n    (m3-fmix h1 (imul 2 (alength in)))))",
           :repo "clojurescript",
-          :tag "r2760",
+          :tag "r2814",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [490 502]},
+          :lines [494 506]},
  :full-name "cljs.core/m3-hash-unencoded-chars"}
 
 ```

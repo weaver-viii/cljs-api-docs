@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2760
+clojurescript @ r2814
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2147-2152](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/core.cljs#L2147-L2152)</ins>
+            └── <ins>[core.cljs:2151-2156](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L2151-L2156)</ins>
 </pre>
 
 
@@ -84,9 +84,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-count",
  :source {:code "(defn bit-count\n  [v]\n  (let [v (- v (bit-and (bit-shift-right v 1) 0x55555555))\n        v (+ (bit-and v 0x33333333) (bit-and (bit-shift-right v 2) 0x33333333))]\n    (bit-shift-right (* (bit-and (+ v (bit-shift-right v 4)) 0xF0F0F0F) 0x1010101) 24)))",
           :repo "clojurescript",
-          :tag "r2760",
+          :tag "r2814",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2147 2152]},
+          :lines [2151 2156]},
  :examples [{:id "35c78c",
              :content "Bits can be entered using radix notation:\n\n```clj\n(bit-count 2r1011)\n;;=> 3\n```\n\nSame number in decimal:\n\n```clj\n(bit-count 11)\n;;=> 3\n```"}],
  :full-name "cljs.core/bit-count",

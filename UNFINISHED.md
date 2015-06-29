@@ -1607,14 +1607,6 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 <td></td>
 </tr>
 <tr>
-<td>cljs.core/\*e</td>
-<td></td>
-<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_STARe.cljsdoc)</td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-</tr>
-<tr>
 <td>cljs.core/\*flush-on-newline\*</td>
 <td>[ref](refs/cljs.core_STARflush-on-newlineSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_STARflush-on-newlineSTAR.cljsdoc)</td>
@@ -6000,7 +5992,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/js-src->cljs-src</td>
-<td></td>
+<td>[ref](refs/cljs.repl_js-src-GTcljs-src.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_js-src-GTcljs-src.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6032,7 +6024,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/mapped-line-and-column</td>
-<td></td>
+<td>[ref](refs/cljs.repl_mapped-line-and-column.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_mapped-line-and-column.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6064,7 +6056,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/ns-info</td>
-<td></td>
+<td>[ref](refs/cljs.repl_ns-info.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_ns-info.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6080,7 +6072,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/print-mapped-stacktrace</td>
-<td></td>
+<td>[ref](refs/cljs.repl_print-mapped-stacktrace.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_print-mapped-stacktrace.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6096,7 +6088,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/read-source-map</td>
-<td></td>
+<td>[ref](refs/cljs.repl_read-source-map.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_read-source-map.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6568,7 +6560,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.nashorn/bootstrap-repl</td>
-<td></td>
+<td>[ref](refs/cljs.repl.nashorn_bootstrap-repl.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.nashorn_bootstrap-repl.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6576,7 +6568,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.nashorn/create-engine</td>
-<td></td>
+<td>[ref](refs/cljs.repl.nashorn_create-engine.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.nashorn_create-engine.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6584,7 +6576,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.nashorn/eval-resource</td>
-<td></td>
+<td>[ref](refs/cljs.repl.nashorn_eval-resource.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.nashorn_eval-resource.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6592,7 +6584,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.nashorn/eval-str</td>
-<td></td>
+<td>[ref](refs/cljs.repl.nashorn_eval-str.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.nashorn_eval-str.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6600,7 +6592,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.nashorn/init-engine</td>
-<td></td>
+<td>[ref](refs/cljs.repl.nashorn_init-engine.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.nashorn_init-engine.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6608,7 +6600,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.nashorn/load-js-file</td>
-<td></td>
+<td>[ref](refs/cljs.repl.nashorn_load-js-file.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.nashorn_load-js-file.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6616,7 +6608,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.nashorn/load-ns</td>
-<td></td>
+<td>[ref](refs/cljs.repl.nashorn_load-ns.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.nashorn_load-ns.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6624,7 +6616,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.nashorn/repl-env</td>
-<td></td>
+<td>[ref](refs/cljs.repl.nashorn_repl-env.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.nashorn_repl-env.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6640,7 +6632,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.nashorn/repl-filename</td>
-<td></td>
+<td>[ref](refs/cljs.repl.nashorn_repl-filename.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.nashorn_repl-filename.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6680,7 +6672,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.node/platform-path</td>
-<td></td>
+<td>[ref](refs/cljs.repl.node_platform-path.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.node_platform-path.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6712,7 +6704,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.node/seq->js-array</td>
-<td></td>
+<td>[ref](refs/cljs.repl.node_seq-GTjs-array.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.node_seq-GTjs-array.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6984,7 +6976,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.test/IAsyncTest</td>
-<td></td>
+<td>[ref](refs/cljs.test_IAsyncTest.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.test_IAsyncTest.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7024,7 +7016,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.test/async</td>
-<td></td>
+<td>[ref](refs/cljs.test_async.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.test_async.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7032,7 +7024,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.test/async?</td>
-<td></td>
+<td>[ref](refs/cljs.test_asyncQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.test_asyncQMARK.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7040,7 +7032,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.test/block</td>
-<td></td>
+<td>[ref](refs/cljs.test_block.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.test_block.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7104,7 +7096,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.test/get-and-clear-env!</td>
-<td></td>
+<td>[ref](refs/cljs.test_get-and-clear-envBANG.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.test_get-and-clear-envBANG.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7184,7 +7176,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.test/run-block</td>
-<td></td>
+<td>[ref](refs/cljs.test_run-block.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.test_run-block.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7200,7 +7192,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.test/run-tests-block</td>
-<td></td>
+<td>[ref](refs/cljs.test_run-tests-block.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.test_run-tests-block.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7232,7 +7224,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.test/test-all-vars-block</td>
-<td></td>
+<td>[ref](refs/cljs.test_test-all-vars-block.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.test_test-all-vars-block.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7248,7 +7240,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.test/test-ns-block</td>
-<td></td>
+<td>[ref](refs/cljs.test_test-ns-block.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.test_test-ns-block.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7264,7 +7256,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.test/test-var-block</td>
-<td></td>
+<td>[ref](refs/cljs.test_test-var-block.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.test_test-var-block.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7280,7 +7272,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.test/test-vars-block</td>
-<td></td>
+<td>[ref](refs/cljs.test_test-vars-block.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.test_test-vars-block.cljsdoc)</td>
 <td></td>
 <td></td>

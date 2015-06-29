@@ -27,11 +27,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2760
+clojurescript @ r2814
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3260-3262](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/core.cljs#L3260-L3262)</ins>
+            └── <ins>[core.cljs:3264-3266](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L3264-L3266)</ins>
 </pre>
 
 
@@ -57,9 +57,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_LazyTransformerDOTcreate",
  :source {:code "(set! (.-create LazyTransformer)\n  (fn [xform coll]\n    (LazyTransformer. (stepper xform (iter coll)) nil nil nil)))",
           :repo "clojurescript",
-          :tag "r2760",
+          :tag "r2814",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3260 3262]},
+          :lines [3264 3266]},
  :full-name "cljs.core/LazyTransformer.create"}
 
 ```

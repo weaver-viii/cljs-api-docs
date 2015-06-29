@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2760
+clojurescript @ r2814
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3604-3607](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/core.cljs#L3604-L3607)</ins>
+            └── <ins>[core.cljs:3608-3611](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L3608-L3611)</ins>
 </pre>
 
 
@@ -61,9 +61,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_volatileBANG",
  :source {:code "(defn volatile!\n  [val]\n  (Volatile. val))",
           :repo "clojurescript",
-          :tag "r2760",
+          :tag "r2814",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3604 3607]},
+          :lines [3608 3611]},
  :full-name "cljs.core/volatile!",
  :docstring "Creates and returns a Volatile with an initial value of val."}
 

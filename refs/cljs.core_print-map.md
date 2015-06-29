@@ -33,11 +33,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2760
+clojurescript @ r2814
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8316-8324](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/core.cljs#L8316-L8324)</ins>
+            └── <ins>[core.cljs:8324-8332](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L8324-L8332)</ins>
 </pre>
 
 
@@ -60,9 +60,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[m print-one writer opts]"],
  :source {:code "(defn print-map [m print-one writer opts]\n  (pr-sequential-writer\n    writer\n    (fn [e w opts]\n      (do (print-one (key e) w opts)\n          (-write w \\space)\n          (print-one (val e) w opts)))\n    \"{\" \", \" \"}\"\n    opts (seq m)))",
           :repo "clojurescript",
-          :tag "r2760",
+          :tag "r2814",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [8316 8324]},
+          :lines [8324 8332]},
  :full-name "cljs.core/print-map",
  :full-name-encode "cljs.core_print-map",
  :history [["+" "0.0-2120"]]}

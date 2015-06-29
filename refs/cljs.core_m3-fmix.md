@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2760
+clojurescript @ r2814
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:474-481](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/core.cljs#L474-L481)</ins>
+            └── <ins>[core.cljs:478-485](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L478-L485)</ins>
 </pre>
 
 
@@ -62,9 +62,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_m3-fmix",
  :source {:code "(defn ^number m3-fmix [h1 len]\n  (as-> h1 h1\n    (bit-xor h1 len)\n    (bit-xor h1 (unsigned-bit-shift-right h1 16))\n    (imul h1 0x85ebca6b)\n    (bit-xor h1 (unsigned-bit-shift-right h1 13))\n    (imul h1 0xc2b2ae35)\n    (bit-xor h1 (unsigned-bit-shift-right h1 16))))",
           :repo "clojurescript",
-          :tag "r2760",
+          :tag "r2814",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [474 481]},
+          :lines [478 485]},
  :full-name "cljs.core/m3-fmix"}
 
 ```

@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2760
+clojurescript @ r2814
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3047-3052](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/core.cljs#L3047-L3052)</ins>
+            └── <ins>[core.cljs:3051-3056](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L3051-L3056)</ins>
 </pre>
 
 
@@ -86,9 +86,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_notEQ",
  :source {:code "(defn ^boolean not=\n  ([x] false)\n  ([x y] (not (= x y)))\n  ([x y & more]\n   (not (apply = x y more))))",
           :repo "clojurescript",
-          :tag "r2760",
+          :tag "r2814",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3047 3052]},
+          :lines [3051 3056]},
  :full-name "cljs.core/not=",
  :clj-symbol "clojure.core/not=",
  :docstring "Same as (not (= obj1 obj2))"}

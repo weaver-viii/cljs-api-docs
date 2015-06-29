@@ -70,11 +70,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2760
+clojurescript @ r2814
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3841-3864](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/core.cljs#L3841-L3864)</ins>
+            └── <ins>[core.cljs:3845-3868](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L3845-L3868)</ins>
 </pre>
 
 
@@ -101,9 +101,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_drop-while",
  :source {:code "(defn drop-while\n  ([pred]\n     (fn [rf]\n       (let [da (volatile! true)]\n         (fn\n           ([] (rf))\n           ([result] (rf result))\n           ([result input]\n              (let [drop? @da]\n                (if (and drop? (pred input))\n                  result\n                  (do\n                    (vreset! da nil)\n                    (rf result input)))))))))\n  ([pred coll]\n     (let [step (fn [pred coll]\n                  (let [s (seq coll)]\n                    (if (and s (pred (first s)))\n                      (recur pred (rest s))\n                      s)))]\n       (lazy-seq (step pred coll)))))",
           :repo "clojurescript",
-          :tag "r2760",
+          :tag "r2814",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3841 3864]},
+          :lines [3845 3868]},
  :full-name "cljs.core/drop-while",
  :clj-symbol "clojure.core/drop-while",
  :docstring "Returns a lazy sequence of the items in coll starting from the\nfirst item for which (pred item) returns logical false.  Returns a\nstateful transducer when no collection is provided."}

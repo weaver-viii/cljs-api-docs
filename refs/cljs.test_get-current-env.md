@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2760
+clojurescript @ r2814
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:226-227](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/test.cljs#L226-L227)</ins>
+            └── <ins>[test.cljs:246-247](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/test.cljs#L246-L247)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[]"],
  :source {:code "(defn get-current-env []\n  (or *current-env* (empty-env)))",
           :repo "clojurescript",
-          :tag "r2760",
+          :tag "r2814",
           :filename "src/cljs/cljs/test.cljs",
-          :lines [226 227]},
+          :lines [246 247]},
  :full-name "cljs.test/get-current-env",
  :full-name-encode "cljs.test_get-current-env",
  :history [["+" "0.0-2496"]]}

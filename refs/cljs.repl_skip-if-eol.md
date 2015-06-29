@@ -41,11 +41,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2760
+clojurescript @ r2814
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:30-42](https://github.com/clojure/clojurescript/blob/r2760/src/clj/cljs/repl.clj#L30-L42)</ins>
+            └── <ins>[repl.clj:33-45](https://github.com/clojure/clojurescript/blob/r2814/src/clj/cljs/repl.clj#L33-L45)</ins>
 </pre>
 
 
@@ -70,9 +70,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_skip-if-eol",
  :source {:code "(defn skip-if-eol\n  [s]\n  (let [c (.read s)]\n    (cond\n      (= c (int \\newline)) :line-start\n      (= c -1) :stream-end\n      :else (do (.unread s c) :body))))",
           :repo "clojurescript",
-          :tag "r2760",
+          :tag "r2814",
           :filename "src/clj/cljs/repl.clj",
-          :lines [30 42]},
+          :lines [33 45]},
  :full-name "cljs.repl/skip-if-eol",
  :docstring "If the next character on stream s is a newline, skips it, otherwise\nleaves the stream untouched. Returns :line-start, :stream-end, or :body\nto indicate the relative location of the next character on s. The stream\nmust either be an instance of LineNumberingPushbackReader or duplicate\nits behavior of both supporting .unread and collapsing all of CR, LF, and\nCRLF to a single \\newline."}
 

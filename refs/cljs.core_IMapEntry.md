@@ -25,11 +25,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2760
+clojurescript @ r2814
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:294-296](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/core.cljs#L294-L296)</ins>
+            └── <ins>[core.cljs:298-300](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/core.cljs#L298-L300)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IMapEntry",
  :source {:code "(defprotocol IMapEntry\n  (-key [coll])\n  (-val [coll]))",
           :repo "clojurescript",
-          :tag "r2760",
+          :tag "r2814",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [294 296]},
+          :lines [298 300]},
  :methods [{:name "-key", :signature ["[coll]"], :docstring nil}
            {:name "-val", :signature ["[coll]"], :docstring nil}],
  :full-name "cljs.core/IMapEntry",

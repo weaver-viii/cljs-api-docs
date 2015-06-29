@@ -25,6 +25,8 @@ Source docstring:
 ```
 Composes a collection of fixtures, in order.  Always returns a valid
 fixture function, even if the collection is empty.
+
+NOTE: Incompatible with map fixtures.
 ```
 
 Source code:
@@ -36,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2760
+clojurescript @ r2814
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:389-393](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/test.cljs#L389-L393)</ins>
+            └── <ins>[test.cljs:467-473](https://github.com/clojure/clojurescript/blob/r2814/src/cljs/cljs/test.cljs#L467-L473)</ins>
 </pre>
 
 
@@ -65,12 +67,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_join-fixtures",
  :source {:code "(defn join-fixtures\n  [fixtures]\n  (reduce compose-fixtures default-fixture fixtures))",
           :repo "clojurescript",
-          :tag "r2760",
+          :tag "r2814",
           :filename "src/cljs/cljs/test.cljs",
-          :lines [389 393]},
+          :lines [467 473]},
  :full-name "cljs.test/join-fixtures",
  :clj-symbol "clojure.test/join-fixtures",
- :docstring "Composes a collection of fixtures, in order.  Always returns a valid\nfixture function, even if the collection is empty."}
+ :docstring "Composes a collection of fixtures, in order.  Always returns a valid\nfixture function, even if the collection is empty.\n\nNOTE: Incompatible with map fixtures."}
 
 ```
 
