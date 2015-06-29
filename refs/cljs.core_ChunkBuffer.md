@@ -40,11 +40,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2067
+clojurescript @ r2069
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2174-2186](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L2174-L2186)</ins>
+            └── <ins>[core.cljs:2174-2186](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L2174-L2186)</ins>
 </pre>
 
 
@@ -69,7 +69,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ChunkBuffer",
  :source {:code "(deftype ChunkBuffer [^:mutable buf ^:mutable end]\n  Object\n  (add [_ o]\n    (aset buf end o)\n    (set! end (inc end)))\n\n  (chunk [_ o]\n    (let [ret (ArrayChunk. buf 0 end)]\n      (set! buf nil)\n      ret))\n\n  ICounted\n  (-count [_] end))",
           :repo "clojurescript",
-          :tag "r2067",
+          :tag "r2069",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2174 2186]},
  :full-name "cljs.core/ChunkBuffer",

@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2067
+clojurescript @ r2069
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1483-1499](https://github.com/clojure/clojurescript/blob/r2067/src/clj/cljs/core.clj#L1483-L1499)</ins>
+            └── <ins>[core.clj:1483-1499](https://github.com/clojure/clojurescript/blob/r2069/src/clj/cljs/core.clj#L1483-L1499)</ins>
 </pre>
 
 
@@ -74,7 +74,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_simple-benchmark",
  :source {:code "(defmacro simple-benchmark\n  [bindings expr iterations & {:keys [print-fn] :or {print-fn 'println}}]\n  (let [bs-str   (pr-str bindings)\n        expr-str (pr-str expr)]\n    `(let ~bindings\n       (let [start#   (.getTime (js/Date.))\n             ret#     (dotimes [_# ~iterations] ~expr)\n             end#     (.getTime (js/Date.))\n             elapsed# (- end# start#)]\n         (~print-fn (str ~bs-str \", \" ~expr-str \", \"\n                         ~iterations \" runs, \" elapsed# \" msecs\"))))))",
           :repo "clojurescript",
-          :tag "r2067",
+          :tag "r2069",
           :filename "src/clj/cljs/core.clj",
           :lines [1483 1499]},
  :full-name "cljs.core/simple-benchmark",

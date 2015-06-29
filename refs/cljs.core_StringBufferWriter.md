@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2067
+clojurescript @ r2069
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:374-377](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L374-L377)</ins>
+            └── <ins>[core.cljs:374-377](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L374-L377)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[sb]"],
  :source {:code "(deftype StringBufferWriter [sb]\n  IWriter\n  (-write [_ s] (.append sb s))\n  (-flush [_] nil))",
           :repo "clojurescript",
-          :tag "r2067",
+          :tag "r2069",
           :filename "src/cljs/cljs/core.cljs",
           :lines [374 377]},
  :full-name "cljs.core/StringBufferWriter",

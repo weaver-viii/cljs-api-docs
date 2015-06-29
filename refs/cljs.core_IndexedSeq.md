@@ -85,11 +85,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2067
+clojurescript @ r2069
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:686-743](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L686-L743)</ins>
+            └── <ins>[core.cljs:686-743](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L686-L743)</ins>
 </pre>
 
 
@@ -114,7 +114,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IndexedSeq",
  :source {:code "(deftype IndexedSeq [arr i]\n  Object\n  (toString [coll]\n   (pr-str* coll))\n\n  ISeqable\n  (-seq [this] this)\n\n  ASeq\n  ISeq\n  (-first [_] (aget arr i))\n  (-rest [_] (if (< (inc i) (alength arr))\n               (IndexedSeq. arr (inc i))\n               (list)))\n\n  INext\n  (-next [_] (if (< (inc i) (alength arr))\n               (IndexedSeq. arr (inc i))\n               nil))\n\n  ICounted\n  (-count [_] (- (alength arr) i))\n\n  IIndexed\n  (-nth [coll n]\n    (let [i (+ n i)]\n      (when (< i (alength arr))\n        (aget arr i))))\n  (-nth [coll n not-found]\n    (let [i (+ n i)]\n      (if (< i (alength arr))\n        (aget arr i)\n        not-found)))\n\n  ISequential\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  ICollection\n  (-conj [coll o] (cons o coll))\n\n  IEmptyableCollection\n  (-empty [coll] cljs.core.List.EMPTY)\n\n  IReduce\n  (-reduce [coll f]\n    (array-reduce arr f (aget arr i) (inc i)))\n  (-reduce [coll f start]\n    (array-reduce arr f start i))\n\n  IHash\n  (-hash [coll] (hash-coll coll))\n\n  IReversible\n  (-rseq [coll]\n    (let [c (-count coll)]\n      (if (pos? c)\n        (RSeq. coll (dec c) nil)))))",
           :repo "clojurescript",
-          :tag "r2067",
+          :tag "r2069",
           :filename "src/cljs/cljs/core.cljs",
           :lines [686 743]},
  :full-name "cljs.core/IndexedSeq",

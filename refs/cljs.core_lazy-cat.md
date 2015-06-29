@@ -63,11 +63,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2067
+clojurescript @ r2069
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1538-1545](https://github.com/clojure/clojurescript/blob/r2067/src/clj/cljs/core.clj#L1538-L1545)</ins>
+            └── <ins>[core.clj:1538-1545](https://github.com/clojure/clojurescript/blob/r2069/src/clj/cljs/core.clj#L1538-L1545)</ins>
 </pre>
 
 
@@ -94,7 +94,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_lazy-cat",
  :source {:code "(defmacro lazy-cat\n  [& colls]\n  `(concat ~@(map #(core/list `lazy-seq %) colls)))",
           :repo "clojurescript",
-          :tag "r2067",
+          :tag "r2069",
           :filename "src/clj/cljs/core.clj",
           :lines [1538 1545]},
  :full-name "cljs.core/lazy-cat",

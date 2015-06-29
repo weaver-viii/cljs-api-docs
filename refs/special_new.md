@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2067
+clojurescript @ r2069
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:834-849](https://github.com/clojure/clojurescript/blob/r2067/src/clj/cljs/analyzer.clj#L834-L849)</ins>
+            └── <ins>[analyzer.clj:839-854](https://github.com/clojure/clojurescript/blob/r2069/src/clj/cljs/analyzer.clj#L839-L854)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "special form",
  :source {:code "(defmethod parse 'new\n  [_ env [_ ctor & args :as form] _]\n  (when-not (symbol? ctor) \n    (throw (error env \"First arg to new must be a symbol\")))\n  (disallowing-recur\n   (let [enve (assoc env :context :expr)\n         ctorexpr (analyze enve ctor)\n         argexprs (vec (map #(analyze enve %) args))\n         known-num-fields (:num-fields (resolve-existing-var env ctor))\n         argc (count args)]\n     (when (and (:fn-arity *cljs-warnings*)\n                (not (-> ctor meta :internal-ctor))\n                known-num-fields (not= known-num-fields argc))\n       (warning :fn-arity env {:argc argc :ctor ctor}))\n     {:env env :op :new :form form :ctor ctorexpr :args argexprs\n      :children (into [ctorexpr] argexprs) :tag (-> ctorexpr :info :name)})))",
           :repo "clojurescript",
-          :tag "r2067",
+          :tag "r2069",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [834 849]},
+          :lines [839 854]},
  :full-name "special/new",
  :full-name-encode "special_new",
  :clj-symbol "clojure.core/new",

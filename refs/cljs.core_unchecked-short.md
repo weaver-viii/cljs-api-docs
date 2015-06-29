@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2067
+clojurescript @ r2069
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1541](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L1541)</ins>
+            └── <ins>[core.cljs:1541](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1541)</ins>
 </pre>
 
 
@@ -43,11 +43,11 @@ clojurescript @ r2067
 ```
 
  <pre>
-clojurescript @ r2067
+clojurescript @ r2069
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:343](https://github.com/clojure/clojurescript/blob/r2067/src/clj/cljs/core.clj#L343)</ins>
+            └── <ins>[core.clj:343](https://github.com/clojure/clojurescript/blob/r2069/src/clj/cljs/core.clj#L343)</ins>
 </pre>
 
 ---
@@ -71,12 +71,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-short",
  :source {:code "(defn unchecked-short [x] x)",
           :repo "clojurescript",
-          :tag "r2067",
+          :tag "r2069",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1541]},
  :extra-sources ({:code "(defmacro unchecked-short [x] x)",
                   :repo "clojurescript",
-                  :tag "r2067",
+                  :tag "r2069",
                   :filename "src/clj/cljs/core.clj",
                   :lines [343]}),
  :full-name "cljs.core/unchecked-short",

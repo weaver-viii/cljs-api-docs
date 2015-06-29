@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2067
+clojurescript @ r2069
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5998-6002](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L5998-L6002)</ins>
+            └── <ins>[core.cljs:5998-6002](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L5998-L6002)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_vals",
  :source {:code "(defn vals\n  [hash-map]\n  (when-let [mseq (seq hash-map)]\n    (ValSeq. mseq nil)))",
           :repo "clojurescript",
-          :tag "r2067",
+          :tag "r2069",
           :filename "src/cljs/cljs/core.cljs",
           :lines [5998 6002]},
  :full-name "cljs.core/vals",

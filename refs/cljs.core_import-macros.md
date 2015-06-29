@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2067
+clojurescript @ r2069
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:43-50](https://github.com/clojure/clojurescript/blob/r2067/src/clj/cljs/core.clj#L43-L50)</ins>
+            └── <ins>[core.clj:43-50](https://github.com/clojure/clojurescript/blob/r2069/src/clj/cljs/core.clj#L43-L50)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[ns [& vars]]"],
  :source {:code "(defmacro import-macros [ns [& vars]]\n  (core/let [ns (find-ns ns)\n             vars (map #(ns-resolve ns %) vars)\n             syms (map (core/fn [^clojure.lang.Var v] (core/-> v .sym (with-meta {:macro true}))) vars)\n             defs (map (core/fn [sym var]\n                                `(def ~sym (deref ~var))) syms vars)]\n            `(do ~@defs\n                 :imported)))",
           :repo "clojurescript",
-          :tag "r2067",
+          :tag "r2069",
           :filename "src/clj/cljs/core.clj",
           :lines [43 50]},
  :full-name "cljs.core/import-macros",

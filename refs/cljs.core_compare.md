@@ -88,11 +88,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2067
+clojurescript @ r2069
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1272-1291](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L1272-L1291)</ins>
+            └── <ins>[core.cljs:1272-1291](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1272-L1291)</ins>
 </pre>
 
 
@@ -121,7 +121,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_compare",
  :source {:code "(defn compare\n  [x y]\n  (cond\n   (identical? x y) 0\n\n   (nil? x) -1\n\n   (nil? y) 1\n\n   (identical? (type x) (type y))\n   (if (implements? IComparable x)\n     (-compare ^not-native x y)\n     (garray/defaultCompare x y))\n\n   :else\n   (throw (js/Error. \"compare on non-nil objects of different types\"))))",
           :repo "clojurescript",
-          :tag "r2067",
+          :tag "r2069",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1272 1291]},
  :examples [{:id "e13fa0",
