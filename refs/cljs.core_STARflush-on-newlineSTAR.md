@@ -23,11 +23,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1978
+clojurescript @ r2014
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:29](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/cljs/core.cljs#L29)</ins>
+            └── <ins>[core.cljs:32](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L32)</ins>
 </pre>
 
 
@@ -49,9 +49,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "dynamic var",
  :source {:code "(def ^:dynamic *flush-on-newline* true)",
           :repo "clojurescript",
-          :tag "r1978",
+          :tag "r2014",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [29]},
+          :lines [32]},
  :full-name "cljs.core/*flush-on-newline*",
  :full-name-encode "cljs.core_STARflush-on-newlineSTAR",
  :clj-symbol "clojure.core/*flush-on-newline*",

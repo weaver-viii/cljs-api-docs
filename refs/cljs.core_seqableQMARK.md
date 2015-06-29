@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1978
+clojurescript @ r2014
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1184-1187](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/cljs/core.cljs#L1184-L1187)</ins>
+            └── <ins>[core.cljs:1187-1190](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L1187-L1190)</ins>
 </pre>
 
 
@@ -62,9 +62,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_seqableQMARK",
  :source {:code "(defn ^boolean seqable?\n  [s]\n  (satisfies? ISeqable s))",
           :repo "clojurescript",
-          :tag "r1978",
+          :tag "r2014",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1184 1187]},
+          :lines [1187 1190]},
  :full-name "cljs.core/seqable?",
  :docstring "Return true if s satisfies ISeqable"}
 

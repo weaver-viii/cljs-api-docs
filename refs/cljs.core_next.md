@@ -62,17 +62,17 @@ Source code:
 (defn ^seq next
   [coll]
   (when-not (nil? coll)
-    (if (satisfies? INext coll false)
+    (if (implements? INext coll)
       (-next ^not-native coll)
       (seq (rest coll)))))
 ```
 
  <pre>
-clojurescript @ r1978
+clojurescript @ r2014
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:470-477](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/cljs/core.cljs#L470-L477)</ins>
+            └── <ins>[core.cljs:473-480](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L473-L480)</ins>
 </pre>
 
 
@@ -98,11 +98,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/rest" "cljs.core/first" "cljs.core/fnext"],
  :full-name-encode "cljs.core_next",
- :source {:code "(defn ^seq next\n  [coll]\n  (when-not (nil? coll)\n    (if (satisfies? INext coll false)\n      (-next ^not-native coll)\n      (seq (rest coll)))))",
+ :source {:code "(defn ^seq next\n  [coll]\n  (when-not (nil? coll)\n    (if (implements? INext coll)\n      (-next ^not-native coll)\n      (seq (rest coll)))))",
           :repo "clojurescript",
-          :tag "r1978",
+          :tag "r2014",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [470 477]},
+          :lines [473 480]},
  :examples [{:id "7db59a",
              :content "```clj\n(next [1 2 3])\n;;=> (2 3)\n\n(next [1 2])\n;;=> (2)\n\n(next [1])\n;;=> nil\n\n(next [])\n;;=> nil\n```"}],
  :full-name "cljs.core/next",

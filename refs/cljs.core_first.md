@@ -59,7 +59,7 @@ Source code:
 (defn first
   [coll]
   (when-not (nil? coll)
-    (if (satisfies? ISeq coll false)
+    (if (implements? ISeq coll)
       (-first ^not-native coll)
       (let [s (seq coll)]
         (when-not (nil? s)
@@ -67,11 +67,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1978
+clojurescript @ r2014
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:446-455](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/cljs/core.cljs#L446-L455)</ins>
+            └── <ins>[core.cljs:449-458](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L449-L458)</ins>
 </pre>
 
 
@@ -101,11 +101,11 @@ __Meta__ - To retrieve the API data for this symbol:
            "cljs.core/take"
            "cljs.core/ffirst"],
  :full-name-encode "cljs.core_first",
- :source {:code "(defn first\n  [coll]\n  (when-not (nil? coll)\n    (if (satisfies? ISeq coll false)\n      (-first ^not-native coll)\n      (let [s (seq coll)]\n        (when-not (nil? s)\n          (-first s))))))",
+ :source {:code "(defn first\n  [coll]\n  (when-not (nil? coll)\n    (if (implements? ISeq coll)\n      (-first ^not-native coll)\n      (let [s (seq coll)]\n        (when-not (nil? s)\n          (-first s))))))",
           :repo "clojurescript",
-          :tag "r1978",
+          :tag "r2014",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [446 455]},
+          :lines [449 458]},
  :examples [{:id "40e413",
              :content "```clj\n(first [1 2 3])\n;;=> 1\n\n(first [])\n;;=> nil\n```"}],
  :full-name "cljs.core/first",

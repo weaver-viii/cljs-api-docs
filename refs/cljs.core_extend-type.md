@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1978
+clojurescript @ r2014
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:731-738](https://github.com/clojure/clojurescript/blob/r1978/src/clj/cljs/core.clj#L731-L738)</ins>
+            └── <ins>[core.clj:732-739](https://github.com/clojure/clojurescript/blob/r2014/src/clj/cljs/core.clj#L732-L739)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_extend-type",
  :source {:code "(defmacro extend-type [type-sym & impls]\n  (let [env &env\n        resolve (partial resolve-var env)\n        impl-map (->impl-map impls)\n        [type assign-impls] (if-let [type (base-type type-sym)]\n                              [type base-assign-impls]\n                              [(resolve type-sym) proto-assign-impls])]\n    `(do ~@(mapcat #(assign-impls env resolve type-sym type %) impl-map))))",
           :repo "clojurescript",
-          :tag "r1978",
+          :tag "r2014",
           :filename "src/clj/cljs/core.clj",
-          :lines [731 738]},
+          :lines [732 739]},
  :full-name "cljs.core/extend-type",
  :clj-symbol "clojure.core/extend-type"}
 

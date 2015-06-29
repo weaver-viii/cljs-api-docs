@@ -40,7 +40,7 @@ Source code:
 ```clj
 (defn name
   [x]
-  (if (satisfies? INamed x false)
+  (if (implements? INamed x)
     (-name ^not-native x)
     (if (string? x)
       x
@@ -48,11 +48,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1978
+clojurescript @ r2014
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6248-6255](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/cljs/core.cljs#L6248-L6255)</ins>
+            └── <ins>[core.cljs:6251-6258](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L6251-L6258)</ins>
 </pre>
 
 
@@ -76,11 +76,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.core_name",
- :source {:code "(defn name\n  [x]\n  (if (satisfies? INamed x false)\n    (-name ^not-native x)\n    (if (string? x)\n      x\n      (throw (js/Error. (str \"Doesn't support name: \" x))))))",
+ :source {:code "(defn name\n  [x]\n  (if (implements? INamed x)\n    (-name ^not-native x)\n    (if (string? x)\n      x\n      (throw (js/Error. (str \"Doesn't support name: \" x))))))",
           :repo "clojurescript",
-          :tag "r1978",
+          :tag "r2014",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6248 6255]},
+          :lines [6251 6258]},
  :full-name "cljs.core/name",
  :clj-symbol "clojure.core/name",
  :docstring "Returns the name String of a string, symbol or keyword."}

@@ -112,11 +112,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1978
+clojurescript @ r2014
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:220-236](https://github.com/clojure/clojurescript/blob/r1978/src/clj/cljs/core.clj#L220-L236)</ins>
+            └── <ins>[core.clj:221-237](https://github.com/clojure/clojurescript/blob/r2014/src/clj/cljs/core.clj#L221-L237)</ins>
 </pre>
 
 
@@ -143,9 +143,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_or",
  :source {:code "(defmacro or\n  ([] nil)\n  ([x] x)\n  ([x & next]\n    (let [forms (concat [x] next)]\n      (if (every? simple-test-expr?\n            (map #(cljs.analyzer/analyze &env %) forms))\n        (let [or-str (->> (repeat (count forms) \"(~{})\")\n                        (interpose \" || \")\n                        (apply core/str))]\n          (bool-expr `(~'js* ~or-str ~@forms)))\n        `(let [or# ~x]\n           (if or# or# (or ~@next)))))))",
           :repo "clojurescript",
-          :tag "r1978",
+          :tag "r2014",
           :filename "src/clj/cljs/core.clj",
-          :lines [220 236]},
+          :lines [221 237]},
  :examples [{:id "d50433",
              :content "```clj\n(or)\n;;=> nil\n\n(or false)\n;;=> false\n\n(or true)\n;;=> true\n\n(or true true)\n;;=> true\n\n(or true false)\n;;=> true\n\n(or false false)\n;;=> false\n```"}
             {:id "62f291",

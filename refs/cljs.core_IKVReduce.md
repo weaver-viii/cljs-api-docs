@@ -21,11 +21,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1978
+clojurescript @ r2014
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:265-266](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/cljs/core.cljs#L265-L266)</ins>
+            └── <ins>[core.cljs:268-269](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L268-L269)</ins>
 </pre>
 
 
@@ -48,9 +48,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IKVReduce",
  :source {:code "(defprotocol IKVReduce\n  (-kv-reduce [coll f init]))",
           :repo "clojurescript",
-          :tag "r1978",
+          :tag "r2014",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [265 266]},
+          :lines [268 269]},
  :methods [{:name "-kv-reduce",
             :signature ["[coll f init]"],
             :docstring nil}],

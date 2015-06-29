@@ -40,11 +40,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1978
+clojurescript @ r2014
 └── src
     └── cljs
         └── clojure
-            └── <ins>[set.cljs:88-96](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/clojure/set.cljs#L88-L96)</ins>
+            └── <ins>[set.cljs:88-96](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/clojure/set.cljs#L88-L96)</ins>
 </pre>
 
 
@@ -69,7 +69,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.set_index",
  :source {:code "(defn index\n  [xrel ks]\n    (reduce\n     (fn [m x]\n       (let [ik (select-keys x ks)]\n         (assoc m ik (conj (get m ik #{}) x))))\n     {} xrel))",
           :repo "clojurescript",
-          :tag "r1978",
+          :tag "r2014",
           :filename "src/cljs/clojure/set.cljs",
           :lines [88 96]},
  :full-name "clojure.set/index",

@@ -29,20 +29,19 @@ Source code:
          argexprs (vec (map #(analyze enve %) args))
          known-num-fields (:num-fields (resolve-existing-var env ctor))
          argc (count args)]
-     (when (and known-num-fields (not= known-num-fields argc))
-       (warning env
-         (str "WARNING: Wrong number of args (" argc ") passed to " ctor)))
+     (when (and known-num-fields (not= known-num-fields argc) (:fn-arity *cljs-warnings*))
+       (warning :fn-arity env {:argc argc :ctor ctor}))
 
      {:env env :op :new :form form :ctor ctorexpr :args argexprs
       :children (into [ctorexpr] argexprs)})))
 ```
 
  <pre>
-clojurescript @ r1978
+clojurescript @ r2014
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:627-642](https://github.com/clojure/clojurescript/blob/r1978/src/clj/cljs/analyzer.clj#L627-L642)</ins>
+            └── <ins>[analyzer.clj:735-749](https://github.com/clojure/clojurescript/blob/r2014/src/clj/cljs/analyzer.clj#L735-L749)</ins>
 </pre>
 
 
@@ -62,11 +61,11 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "special",
  :name "new",
  :type "special form",
- :source {:code "(defmethod parse 'new\n  [_ env [_ ctor & args :as form] _]\n  (when-not (symbol? ctor) \n    (throw (error env \"First arg to new must be a symbol\")))\n  (disallowing-recur\n   (let [enve (assoc env :context :expr)\n         ctorexpr (analyze enve ctor)\n         argexprs (vec (map #(analyze enve %) args))\n         known-num-fields (:num-fields (resolve-existing-var env ctor))\n         argc (count args)]\n     (when (and known-num-fields (not= known-num-fields argc))\n       (warning env\n         (str \"WARNING: Wrong number of args (\" argc \") passed to \" ctor)))\n\n     {:env env :op :new :form form :ctor ctorexpr :args argexprs\n      :children (into [ctorexpr] argexprs)})))",
+ :source {:code "(defmethod parse 'new\n  [_ env [_ ctor & args :as form] _]\n  (when-not (symbol? ctor) \n    (throw (error env \"First arg to new must be a symbol\")))\n  (disallowing-recur\n   (let [enve (assoc env :context :expr)\n         ctorexpr (analyze enve ctor)\n         argexprs (vec (map #(analyze enve %) args))\n         known-num-fields (:num-fields (resolve-existing-var env ctor))\n         argc (count args)]\n     (when (and known-num-fields (not= known-num-fields argc) (:fn-arity *cljs-warnings*))\n       (warning :fn-arity env {:argc argc :ctor ctor}))\n\n     {:env env :op :new :form form :ctor ctorexpr :args argexprs\n      :children (into [ctorexpr] argexprs)})))",
           :repo "clojurescript",
-          :tag "r1978",
+          :tag "r2014",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [627 642]},
+          :lines [735 749]},
  :full-name "special/new",
  :full-name-encode "special_new",
  :clj-symbol "clojure.core/new",

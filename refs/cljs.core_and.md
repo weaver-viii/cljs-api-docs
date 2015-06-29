@@ -112,11 +112,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1978
+clojurescript @ r2014
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:202-218](https://github.com/clojure/clojurescript/blob/r1978/src/clj/cljs/core.clj#L202-L218)</ins>
+            └── <ins>[core.clj:203-219](https://github.com/clojure/clojurescript/blob/r2014/src/clj/cljs/core.clj#L203-L219)</ins>
 </pre>
 
 
@@ -143,9 +143,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_and",
  :source {:code "(defmacro and\n  ([] true)\n  ([x] x)\n  ([x & next]\n    (let [forms (concat [x] next)]\n      (if (every? simple-test-expr?\n            (map #(cljs.analyzer/analyze &env %) forms))\n        (let [and-str (->> (repeat (count forms) \"(~{})\")\n                        (interpose \" && \")\n                        (apply core/str))]\n          (bool-expr `(~'js* ~and-str ~@forms)))\n        `(let [and# ~x]\n           (if and# (and ~@next) and#))))))",
           :repo "clojurescript",
-          :tag "r1978",
+          :tag "r2014",
           :filename "src/clj/cljs/core.clj",
-          :lines [202 218]},
+          :lines [203 219]},
  :examples [{:id "a39a73",
              :content "```clj\n(and)\n;;=> true\n\n(and false)\n;;=> false\n\n(and true)\n;;=> true\n\n(and true true)\n;;=> true\n\n(and true false)\n;;=> false\n\n(and false false)\n;;=> false\n```"}
             {:id "766638",

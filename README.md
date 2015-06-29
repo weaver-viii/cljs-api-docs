@@ -2,8 +2,8 @@
 
  <table border="1">
 <tr>
-<td>__0.0-1978__ [all](HISTORY.md)</td>
-<td>2013-10-28</td>
+<td>__0.0-2014__ [all](HISTORY.md)</td>
+<td>2013-11-06</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.5.1</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-1978__ ([See Full History](HISTORY.md)):
+Changes from __0.0-2014__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
@@ -82,7 +82,19 @@ __Syntax API Changes__
 __Library API Changes__
 
  <table>
-<tr><td>_no symbols were added or removed in this version_</td></tr>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-var-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/\*clojurescript-version\*](refs/cljs.core_STARclojurescript-versionSTAR.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/implements?](refs/cljs.core_implementsQMARK.md)</samp></td>
+</tr>
 </table>
 
 __Compiler API Changes__
@@ -669,6 +681,12 @@ application.
 <td><samp>[\*3](refs/cljs.core_STAR3.md)</samp></td>
 <td><samp>var</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/*clojure-version*)</td>
+<td><samp>[\*clojurescript-version\*](refs/cljs.core_STARclojurescript-versionSTAR.md)</samp></td>
+<td><samp>var</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2014"><img valign="middle" alt="[+] 0.0-2014" src="https://img.shields.io/badge/+-0.0--2014-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/*flush-on-newline*)</td>
@@ -1719,6 +1737,12 @@ application.
 <td><samp>[ifn?](refs/cljs.core_ifnQMARK.md)</samp></td>
 <td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1211"><img valign="middle" alt="[+] 0.0-1211" src="https://img.shields.io/badge/+-0.0--1211-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[implements?](refs/cljs.core_implementsQMARK.md)</samp></td>
+<td><samp>macro</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2014"><img valign="middle" alt="[+] 0.0-2014" src="https://img.shields.io/badge/+-0.0--2014-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td></td>

@@ -16,6 +16,29 @@
 <th>comp</th>
 </tr>
 <tr>
+<td>__[0.0-2014](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2014)__</td>
+<td>2013-11-06</td>
+<td><kbd>1.5.1</kbd></td>
+<td><kbd>0.7.10</kbd></td>
+<td><kbd>0.0-20130212-95c19e7f0f5f</kbd></td>
+<td>
+<a href="#user-content-00-2014-syntax">
+ 
+</a>
+</td>
+<td>
+<a href="#user-content-00-2014-library">
+<img valign="middle" src="https://img.shields.io/badge/+-2-brightgreen.svg"> 
+</a>
+</td>
+<td>
+<a href="#user-content-00-2014-compiler">
+ 
+</a>
+</td>
+</tr>
+
+<tr>
 <td>__[0.0-1978](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1978)__</td>
 <td>2013-10-28</td>
 <td><kbd>1.5.1</kbd></td>
@@ -912,6 +935,35 @@
 </td>
 </tr>
 
+</table>
+
+### 0.0-2014
+
+<a name="00-2014-syntax"></a> __Syntax API Changes__
+ <table>
+<tr><td>_no syntax forms were added or removed in this version_</td></tr>
+</table>
+
+<a name="00-2014-library"></a> __Library API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-var-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/\*clojurescript-version\*](refs/cljs.core_STARclojurescript-versionSTAR.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/implements?](refs/cljs.core_implementsQMARK.md)</samp></td>
+</tr>
+</table>
+
+<a name="00-2014-compiler"></a> __Compiler API Changes__
+ <table>
+<tr><td>_no symbols were added or removed in this version_</td></tr>
 </table>
 
 ### 0.0-1978

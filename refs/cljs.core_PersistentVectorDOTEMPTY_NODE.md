@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1978
+clojurescript @ r2014
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3318](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/cljs/core.cljs#L3318)</ins>
+            └── <ins>[core.cljs:3321](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L3321)</ins>
 </pre>
 
 
@@ -47,9 +47,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "PersistentVector",
  :source {:code "(set! cljs.core.PersistentVector.EMPTY_NODE (VectorNode. nil (make-array 32)))",
           :repo "clojurescript",
-          :tag "r1978",
+          :tag "r2014",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3318]},
+          :lines [3321]},
  :full-name "cljs.core/PersistentVector.EMPTY_NODE",
  :full-name-encode "cljs.core_PersistentVectorDOTEMPTY_NODE",
  :history [["+" "0.0-1006"]]}

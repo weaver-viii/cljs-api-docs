@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1978
+clojurescript @ r2014
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2144-2145](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/cljs/core.cljs#L2144-L2145)</ins>
+            └── <ins>[core.cljs:2147-2148](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L2147-L2148)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[capacity]"],
  :source {:code "(defn chunk-buffer [capacity]\n  (ChunkBuffer. (make-array capacity) 0))",
           :repo "clojurescript",
-          :tag "r1978",
+          :tag "r2014",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2144 2145]},
+          :lines [2147 2148]},
  :full-name "cljs.core/chunk-buffer",
  :full-name-encode "cljs.core_chunk-buffer",
  :history [["+" "0.0-1424"]]}

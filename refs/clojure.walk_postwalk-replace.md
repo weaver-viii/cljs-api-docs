@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1978
+clojurescript @ r2014
 └── src
     └── cljs
         └── clojure
-            └── <ins>[walk.cljs:88-94](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/clojure/walk.cljs#L88-L94)</ins>
+            └── <ins>[walk.cljs:88-94](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/clojure/walk.cljs#L88-L94)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.walk_postwalk-replace",
  :source {:code "(defn postwalk-replace\n  [smap form]\n  (postwalk (fn [x] (if (contains? smap x) (smap x) x)) form))",
           :repo "clojurescript",
-          :tag "r1978",
+          :tag "r2014",
           :filename "src/cljs/clojure/walk.cljs",
           :lines [88 94]},
  :full-name "clojure.walk/postwalk-replace",

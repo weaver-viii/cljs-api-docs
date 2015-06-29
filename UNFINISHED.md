@@ -1600,7 +1600,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/\*clojurescript-version\*</td>
-<td></td>
+<td>[ref](refs/cljs.core_STARclojurescript-versionSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_STARclojurescript-versionSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2840,7 +2840,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/implements?</td>
-<td></td>
+<td>[ref](refs/cljs.core_implementsQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_implementsQMARK.cljsdoc)</td>
 <td></td>
 <td></td>

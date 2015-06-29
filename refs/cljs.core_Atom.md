@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1978
+clojurescript @ r2014
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6864-6890](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/cljs/core.cljs#L6864-L6890)</ins>
+            └── <ins>[core.cljs:6867-6893](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L6867-L6893)</ins>
 </pre>
 
 
@@ -83,9 +83,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_Atom",
  :source {:code "(deftype Atom [state meta validator watches]\n  IEquiv\n  (-equiv [o other] (identical? o other))\n\n  IDeref\n  (-deref [_] state)\n\n  IMeta\n  (-meta [_] meta)\n\n  IPrintWithWriter\n  (-pr-writer [a writer opts]\n    (-write writer \"#<Atom: \")\n    (pr-writer state writer opts)\n    (-write writer \">\"))\n\n  IWatchable\n  (-notify-watches [this oldval newval]\n    (doseq [[key f] watches]\n      (f key this oldval newval)))\n  (-add-watch [this key f]\n    (set! (.-watches this) (assoc watches key f)))\n  (-remove-watch [this key]\n    (set! (.-watches this) (dissoc watches key)))\n\n  IHash\n  (-hash [this] (goog/getUid this)))",
           :repo "clojurescript",
-          :tag "r1978",
+          :tag "r2014",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6864 6890]},
+          :lines [6867 6893]},
  :full-name "cljs.core/Atom",
  :clj-symbol "clojure.lang/Atom"}
 

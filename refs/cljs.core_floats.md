@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1978
+clojurescript @ r2014
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1615](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/cljs/core.cljs#L1615)</ins>
+            └── <ins>[core.cljs:1618](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L1618)</ins>
 </pre>
 
 
@@ -57,9 +57,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_floats",
  :source {:code "(defn floats [x] x)",
           :repo "clojurescript",
-          :tag "r1978",
+          :tag "r2014",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1615]},
+          :lines [1618]},
  :full-name "cljs.core/floats",
  :clj-symbol "clojure.core/floats"}
 
