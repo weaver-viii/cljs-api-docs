@@ -23,11 +23,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2758
+clojurescript @ r2760
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:273](https://github.com/clojure/clojurescript/blob/r2758/src/cljs/cljs/core.cljs#L273)</ins>
+            └── <ins>[core.cljs:273](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/core.cljs#L273)</ins>
 </pre>
 
 
@@ -50,7 +50,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ASeq",
  :source {:code "(defprotocol ASeq)",
           :repo "clojurescript",
-          :tag "r2758",
+          :tag "r2760",
           :filename "src/cljs/cljs/core.cljs",
           :lines [273]},
  :full-name "cljs.core/ASeq",

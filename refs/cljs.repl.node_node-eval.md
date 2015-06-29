@@ -44,12 +44,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2758
+clojurescript @ r2760
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[node.clj:50-65](https://github.com/clojure/clojurescript/blob/r2758/src/clj/cljs/repl/node.clj#L50-L65)</ins>
+                └── <ins>[node.clj:50-65](https://github.com/clojure/clojurescript/blob/r2760/src/clj/cljs/repl/node.clj#L50-L65)</ins>
 </pre>
 
 
@@ -74,7 +74,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.node_node-eval",
  :source {:code "(defn node-eval\n  [repl-env js]\n  (let [{:keys [in out]} @(:socket repl-env)]\n    ;; escape backslash for Node.js under Windows\n    (write out (string/replace js \"\\\\\" \"\\\\\\\\\"))\n    (let [result (json/read-str\n                   (read-response in) :key-fn keyword)]\n      (condp = (:status result)\n        \"success\"\n        {:status :success\n         :value (:value result)}\n\n        \"exception\"\n        {:status :exception\n         :value (:value result)}))))",
           :repo "clojurescript",
-          :tag "r2758",
+          :tag "r2760",
           :filename "src/clj/cljs/repl/node.clj",
           :lines [50 65]},
  :full-name "cljs.repl.node/node-eval",

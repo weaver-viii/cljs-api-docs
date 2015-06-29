@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2758
+clojurescript @ r2760
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:395-408](https://github.com/clojure/clojurescript/blob/r2758/src/cljs/cljs/test.cljs#L395-L408)</ins>
+            └── <ins>[test.cljs:395-408](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/test.cljs#L395-L408)</ins>
 </pre>
 
 
@@ -74,7 +74,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_test-vars",
  :source {:code "(defn test-vars\n  [vars]\n  (doseq [[ns vars] (group-by (comp :ns meta) vars)]\n    (let [env (get-current-env)\n          once-fixture-fn (join-fixtures (get-in env [:once-fixtures ns]))\n          each-fixture-fn (join-fixtures (get-in env [:each-fixtures ns]))]\n      (once-fixture-fn\n        (fn []\n          (doseq [v vars]\n            (when (:test (meta v))\n              (each-fixture-fn (fn [] (test-var v))))))))))",
           :repo "clojurescript",
-          :tag "r2758",
+          :tag "r2760",
           :filename "src/cljs/cljs/test.cljs",
           :lines [395 408]},
  :full-name "cljs.test/test-vars",

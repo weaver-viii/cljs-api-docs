@@ -31,12 +31,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2758
+clojurescript @ r2760
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[node.clj:169-175](https://github.com/clojure/clojurescript/blob/r2758/src/clj/cljs/repl/node.clj#L169-L175)</ins>
+                └── <ins>[node.clj:169-175](https://github.com/clojure/clojurescript/blob/r2760/src/clj/cljs/repl/node.clj#L169-L175)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[options]"],
  :source {:code "(defn repl-env* [options]\n  (let [{:keys [host port]}\n        (merge\n          {:host \"localhost\"\n           :port (+ 49000 (rand-int 10000))}\n          options)]\n    (NodeEnv. host port (atom nil) (atom nil))))",
           :repo "clojurescript",
-          :tag "r2758",
+          :tag "r2760",
           :filename "src/clj/cljs/repl/node.clj",
           :lines [169 175]},
  :full-name "cljs.repl.node/repl-env*",

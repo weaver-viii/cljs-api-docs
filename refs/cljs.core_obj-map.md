@@ -40,11 +40,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2758
+clojurescript @ r2760
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7141-7152](https://github.com/clojure/clojurescript/blob/r2758/src/cljs/cljs/core.cljs#L7141-L7152)</ins>
+            └── <ins>[core.cljs:7141-7152](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/core.cljs#L7141-L7152)</ins>
 </pre>
 
 
@@ -69,7 +69,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_obj-map",
  :source {:code "(defn obj-map\n  [& keyvals]\n  (let [ks  (array)\n        obj (js-obj)]\n    (loop [kvs (seq keyvals)]\n      (if kvs\n        (do (.push ks (first kvs))\n            (aset obj (first kvs) (second kvs))\n            (recur (nnext kvs)))\n        (.fromObject ObjMap ks obj)))))",
           :repo "clojurescript",
-          :tag "r2758",
+          :tag "r2760",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7141 7152]},
  :full-name "cljs.core/obj-map",

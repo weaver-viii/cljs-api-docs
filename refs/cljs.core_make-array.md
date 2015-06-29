@@ -41,11 +41,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2758
+clojurescript @ r2760
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:163-167](https://github.com/clojure/clojurescript/blob/r2758/src/cljs/cljs/core.cljs#L163-L167)</ins>
+            └── <ins>[core.cljs:163-167](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/core.cljs#L163-L167)</ins>
 </pre>
 
 
@@ -62,11 +62,11 @@ clojurescript @ r2758
 ```
 
  <pre>
-clojurescript @ r2758
+clojurescript @ r2760
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1406-1412](https://github.com/clojure/clojurescript/blob/r2758/src/clj/cljs/core.clj#L1406-L1412)</ins>
+            └── <ins>[core.clj:1406-1412](https://github.com/clojure/clojurescript/blob/r2760/src/clj/cljs/core.clj#L1406-L1412)</ins>
 </pre>
 
 ---
@@ -93,12 +93,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_make-array",
  :source {:code "(defn ^array make-array\n  ([size]\n     (js/Array. size))\n  ([type size]\n     (make-array size)))",
           :repo "clojurescript",
-          :tag "r2758",
+          :tag "r2760",
           :filename "src/cljs/cljs/core.cljs",
           :lines [163 167]},
  :extra-sources ({:code "(defmacro make-array\n  [size]\n  (vary-meta\n    (if (core/number? size)\n      `(array ~@(take size (repeat nil)))\n      `(js/Array. ~size))\n    assoc :tag 'array))",
                   :repo "clojurescript",
-                  :tag "r2758",
+                  :tag "r2760",
                   :filename "src/clj/cljs/core.clj",
                   :lines [1406 1412]}),
  :full-name "cljs.core/make-array",

@@ -30,11 +30,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2758
+clojurescript @ r2760
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:890-892](https://github.com/clojure/clojurescript/blob/r2758/src/cljs/cljs/core.cljs#L890-L892)</ins>
+            └── <ins>[core.cljs:890-892](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/core.cljs#L890-L892)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_Reduced",
  :source {:code "(deftype Reduced [val]\n  IDeref\n  (-deref [o] val))",
           :repo "clojurescript",
-          :tag "r2758",
+          :tag "r2760",
           :filename "src/cljs/cljs/core.cljs",
           :lines [890 892]},
  :full-name "cljs.core/Reduced",

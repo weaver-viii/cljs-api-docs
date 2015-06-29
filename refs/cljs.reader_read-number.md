@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2758
+clojurescript @ r2760
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:281-291](https://github.com/clojure/clojurescript/blob/r2758/src/cljs/cljs/reader.cljs#L281-L291)</ins>
+            └── <ins>[reader.cljs:281-291](https://github.com/clojure/clojurescript/blob/r2760/src/cljs/cljs/reader.cljs#L281-L291)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[reader initch]"],
  :source {:code "(defn read-number\n  [reader initch]\n  (loop [buffer (gstring/StringBuffer. initch)\n         ch (read-char reader)]\n    (if (or (nil? ch) (whitespace? ch) (macros ch))\n      (do\n        (unread reader ch)\n        (let [s (.toString buffer)]\n          (or (match-number s)\n              (reader-error reader \"Invalid number format [\" s \"]\"))))\n      (recur (do (.append buffer ch) buffer) (read-char reader)))))",
           :repo "clojurescript",
-          :tag "r2758",
+          :tag "r2760",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [281 291]},
  :full-name "cljs.reader/read-number",
