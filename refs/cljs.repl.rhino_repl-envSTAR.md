@@ -33,13 +33,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── clojure
             └── cljs
                 └── repl
-                    └── <ins>[rhino.clj:211-219](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/repl/rhino.clj#L211-L219)</ins>
+                    └── <ins>[rhino.clj:211-219](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/repl/rhino.clj#L211-L219)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[opts]"],
  :source {:code "(defn repl-env*\n  [opts]\n  (let [cx (Context/enter)]\n    ;; just avoid the 64K method limit\n    ;; Rhino is slow even with optimizations enabled\n    (.setOptimizationLevel cx -1)\n    (merge (RhinoEnv.)\n      {:cx cx\n       :scope (.initStandardObjects cx)})))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/clojure/cljs/repl/rhino.clj",
           :lines [211 219]},
  :full-name "cljs.repl.rhino/repl-env*",

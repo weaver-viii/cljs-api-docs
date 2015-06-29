@@ -47,12 +47,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
-        └── clojure
+        └── cljs
             └── cljs
-                └── <ins>[test.clj:353-365](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/test.clj#L353-L365)</ins>
+                └── <ins>[test.clj:354-366](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/test.clj#L354-L366)</ins>
 </pre>
 
 
@@ -77,9 +77,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_test-ns",
  :source {:code "(defmacro test-ns\n  ([ns] `(cljs.test/test-ns (cljs.test/empty-env) ~ns))\n  ([env [quote ns :as form]]\n   `(cljs.test/run-block\n     (concat (cljs.test/test-ns-block ~env ~form)\n             [(fn []\n                (cljs.test/clear-env!))]))))",
           :repo "clojurescript",
-          :tag "r3269",
-          :filename "src/main/clojure/cljs/test.clj",
-          :lines [353 365]},
+          :tag "r3291",
+          :filename "src/main/cljs/cljs/test.clj",
+          :lines [354 366]},
  :full-name "cljs.test/test-ns",
  :clj-symbol "clojure.test/test-ns",
  :docstring "If the namespace defines a function named test-ns-hook, calls that.\nOtherwise, calls test-all-vars on the namespace.  'ns' is a\nnamespace object or a symbol.\n\nInternally binds *report-counters* to a ref initialized to\n*initial-report-counters*.  "}

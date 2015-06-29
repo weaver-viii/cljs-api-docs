@@ -31,12 +31,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:9498-9500](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/core.cljs#L9498-L9500)</ins>
+                └── <ins>[core.cljs:9499-9501](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L9499-L9501)</ins>
 </pre>
 
 
@@ -61,9 +61,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_dispatch-fn",
  :source {:code "(defn dispatch-fn\n  [multifn] (-dispatch-fn multifn))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [9498 9500]},
+          :lines [9499 9501]},
  :full-name "cljs.core/dispatch-fn",
  :docstring "Given a multimethod, return it's dispatch-fn."}
 

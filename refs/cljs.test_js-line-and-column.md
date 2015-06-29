@@ -29,12 +29,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[test.cljs:347-351](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/test.cljs#L347-L351)</ins>
+                └── <ins>[test.cljs:348-352](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/test.cljs#L348-L352)</ins>
 </pre>
 
 
@@ -57,9 +57,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[stack-element]"],
  :source {:code "(defn js-line-and-column [stack-element]\n  (let [parts (.split stack-element \":\")\n        cnt   (count parts)]\n    [(js/parseInt (nth parts (- cnt 2)))\n     (js/parseInt (nth parts (dec cnt)))]))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/cljs/cljs/test.cljs",
-          :lines [347 351]},
+          :lines [348 352]},
  :full-name "cljs.test/js-line-and-column",
  :full-name-encode "cljs.test_js-line-and-column",
  :history [["+" "0.0-2496"]]}

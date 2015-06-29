@@ -1,0 +1,82 @@
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> cljs.build.api/source-on-disk
+
+ <table border="1">
+<tr>
+
+<td>function</td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-3291"><img valign="middle" alt="[+] 0.0-3291" src="https://img.shields.io/badge/+-0.0--3291-lightgrey.svg"></a> </td>
+</tr>
+</table>
+
+ <samp>
+(__source-on-disk__ opts ijs)<br>
+</samp>
+
+---
+
+
+
+
+Source docstring:
+
+```
+Ensure that the given IJavaScript exists on disk in the output directory.
+Return updated IJavaScript with the new location if necessary.
+```
+
+Source code:
+
+```clj
+(defn source-on-disk
+  [opts ijs]
+  (closure/source-on-disk opts ijs))
+```
+
+ <pre>
+clojurescript @ r3291
+└── src
+    └── main
+        └── clojure
+            └── cljs
+                └── build
+                    └── <ins>[api.clj:106-110](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/build/api.clj#L106-L110)</ins>
+</pre>
+
+
+---
+
+__Meta__ - To retrieve the API data for this symbol:
+
+```clj
+;; from Clojure REPL
+(require '[clojure.edn :as edn])
+(-> (slurp "https://raw.githubusercontent.com/cljsinfo/cljs-api-docs/catalog/cljs-api.edn")
+    (edn/read-string)
+    (get-in [:symbols "cljs.build.api/source-on-disk"]))
+```
+
+```clj
+{:ns "cljs.build.api",
+ :name "source-on-disk",
+ :signature ["[opts ijs]"],
+ :history [["+" "0.0-3291"]],
+ :type "function",
+ :full-name-encode "cljs.build.api_source-on-disk",
+ :source {:code "(defn source-on-disk\n  [opts ijs]\n  (closure/source-on-disk opts ijs))",
+          :repo "clojurescript",
+          :tag "r3291",
+          :filename "src/main/clojure/cljs/build/api.clj",
+          :lines [106 110]},
+ :full-name "cljs.build.api/source-on-disk",
+ :docstring "Ensure that the given IJavaScript exists on disk in the output directory.\nReturn updated IJavaScript with the new location if necessary."}
+
+```
+
+---
+
+__Contributions__ to this document are accepted as Pull Requests to the following file:
+
+ <pre>
+[cljsdoc/cljs.build.api_source-on-disk.cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.build.api_source-on-disk.cljsdoc)
+</pre>
+

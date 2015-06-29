@@ -34,12 +34,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:3908-3910](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/core.cljs#L3908-L3910)</ins>
+                └── <ins>[core.cljs:3908-3910](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L3908-L3910)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_volatileQMARK",
  :source {:code "(defn volatile?\n  [x] (instance? Volatile x))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [3908 3910]},
  :full-name "cljs.core/volatile?",

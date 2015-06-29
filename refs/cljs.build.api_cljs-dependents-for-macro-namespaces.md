@@ -48,13 +48,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── clojure
             └── cljs
                 └── build
-                    └── <ins>[api.clj:48-67](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/build/api.clj#L48-L67)</ins>
+                    └── <ins>[api.clj:49-68](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/build/api.clj#L49-L68)</ins>
 </pre>
 
 
@@ -79,9 +79,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.build.api_cljs-dependents-for-macro-namespaces",
  :source {:code "(defn cljs-dependents-for-macro-namespaces\n  [namespaces]\n  (map :name\n       (let [namespaces-set (set namespaces)]\n         (filter (fn [x] (not-empty\n                         (intersection namespaces-set (-> x :require-macros vals set))))\n                 (vals (:cljs.analyzer/namespaces @env/*compiler*))))))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/clojure/cljs/build/api.clj",
-          :lines [48 67]},
+          :lines [49 68]},
  :full-name "cljs.build.api/cljs-dependents-for-macro-namespaces",
  :docstring "Takes a list of Clojure (.clj) namespaces that define macros and\nreturns a list ClojureScript (.cljs) namespaces that depend on those macro\nnamespaces.\n\nFor example where example.macros is defined in the clojure file\n\"example/macros.clj\" and both 'example.core and 'example.util are\nClojureScript namespaces that require and use the macros from\n'example.macros :\n(cljs-dependents-for-macro-namespaces 'example.macros) ->\n('example.core 'example.util)\n\nThis must be called when cljs.env/*compiler* is bound to the\ncompile env that you are inspecting. See cljs.env/with-compile-env."}
 

@@ -34,12 +34,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:8125-8134](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/core.cljs#L8125-L8134)</ins>
+                └── <ins>[core.cljs:8125-8134](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L8125-L8134)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[i end step]"],
  :source {:code "(deftype RangeIterator [^:mutable i end step]\n  Object\n  (hasNext [_]\n    (if (pos? step)\n      (< i end)\n      (> i end)))\n  (next [_]\n    (let [ret i]\n      (set! i (+ i step))\n      ret)))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [8125 8134]},
  :full-name "cljs.core/RangeIterator",

@@ -50,12 +50,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[core.clj:358-361](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/core.clj#L358-L361)</ins>
+                └── <ins>[core.clj:358-361](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/core.clj#L358-L361)</ins>
 </pre>
 
 
@@ -81,7 +81,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_js-debugger",
  :source {:code "(defmacro js-debugger\n  []\n  (core/list 'js* \"debugger;\"))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/clojure/cljs/core.clj",
           :lines [358 361]},
  :examples [{:id "87f2fa",

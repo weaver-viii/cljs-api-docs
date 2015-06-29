@@ -37,13 +37,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── clojure
             └── cljs
                 └── compiler
-                    └── <ins>[api.clj:35-40](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/compiler/api.clj#L35-L40)</ins>
+                    └── <ins>[api.clj:35-40](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/compiler/api.clj#L35-L40)</ins>
 </pre>
 
 
@@ -68,7 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.compiler.api_requires-compilationQMARK",
  :source {:code "(defn requires-compilation?\n  ([src dest]\n   (comp/requires-compilation? src dest nil))\n  ([src dest opts]\n   (comp/requires-compilation? src dest opts)))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/clojure/cljs/compiler/api.clj",
           :lines [35 40]},
  :full-name "cljs.compiler.api/requires-compilation?",

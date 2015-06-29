@@ -36,12 +36,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[test.cljs:464-468](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/test.cljs#L464-L468)</ins>
+                └── <ins>[test.cljs:465-469](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/test.cljs#L465-L469)</ins>
 </pre>
 
 
@@ -66,9 +66,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_test-var",
  :source {:code "(defn test-var\n  [v]\n  (run-block (test-var-block v)))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/cljs/cljs/test.cljs",
-          :lines [464 468]},
+          :lines [465 469]},
  :full-name "cljs.test/test-var",
  :clj-symbol "clojure.test/test-var",
  :docstring "If v has a function in its :test metadata, calls that function,\nadd v to :testing-vars property of env."}

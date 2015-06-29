@@ -34,13 +34,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── clojure
             └── cljs
                 └── build
-                    └── <ins>[api.clj:69-74](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/build/api.clj#L69-L74)</ins>
+                    └── <ins>[api.clj:70-75](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/build/api.clj#L70-L75)</ins>
 </pre>
 
 
@@ -65,9 +65,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.build.api_cljs-ns-dependents",
  :source {:code "(defn cljs-ns-dependents\n  [ns]\n  (ana/ns-dependents ns))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/clojure/cljs/build/api.clj",
-          :lines [69 74]},
+          :lines [70 75]},
  :full-name "cljs.build.api/cljs-ns-dependents",
  :docstring "Given a namespace symbol return a seq of all dependent\nnamespaces sorted in dependency order. Will include\ntransient dependents."}
 

@@ -44,13 +44,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── clojure
             └── cljs
                 └── build
-                    └── <ins>[api.clj:99-114](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/build/api.clj#L99-L114)</ins>
+                    └── <ins>[api.clj:140-155](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/build/api.clj#L140-L155)</ins>
 </pre>
 
 
@@ -75,9 +75,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.build.api_inputs",
  :source {:code "(defn inputs\n  [& xs]\n  (reify\n    closure/Inputs\n    (-paths [_]\n      (map io/file xs))\n    closure/Compilable\n    (-compile [_ opts]\n      (letfn [(compile-input [x]\n                (let [compiled (closure/-compile x opts)]\n                  (if (sequential? compiled)\n                    compiled\n                    [compiled])))]\n        (mapcat compile-input xs)))))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/clojure/cljs/build/api.clj",
-          :lines [99 114]},
+          :lines [140 155]},
  :full-name "cljs.build.api/inputs",
  :docstring "Given a list of directories and files, return a compilable object that may\nbe passed to build or watch."}
 

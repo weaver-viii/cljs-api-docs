@@ -16,6 +16,29 @@
 <th>comp</th>
 </tr>
 <tr>
+<td>__[0.0-3291](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-3291)__</td>
+<td>2015-05-18</td>
+<td><kbd>1.7.0-beta2</kbd></td>
+<td><kbd>0.9.2</kbd></td>
+<td><kbd>0.0-20150505-021ed5b3</kbd></td>
+<td>
+<a href="#user-content-00-3291-syntax">
+ 
+</a>
+</td>
+<td>
+<a href="#user-content-00-3291-library">
+<img valign="middle" src="https://img.shields.io/badge/+-1-brightgreen.svg"> 
+</a>
+</td>
+<td>
+<a href="#user-content-00-3291-compiler">
+<img valign="middle" src="https://img.shields.io/badge/+-10-brightgreen.svg"> 
+</a>
+</td>
+</tr>
+
+<tr>
 <td>__[0.0-3269](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-3269)__</td>
 <td>2015-05-10</td>
 <td><kbd>1.7.0-beta2</kbd></td>
@@ -2775,6 +2798,89 @@
 </td>
 </tr>
 
+</table>
+
+### 0.0-3291
+
+<a name="00-3291-syntax"></a> __Syntax API Changes__
+ <table>
+<tr><td>_no syntax forms were added or removed in this version_</td></tr>
+</table>
+
+<a name="00-3291-library"></a> __Library API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/uuid](refs/cljs.core_uuid.md)</samp></td>
+</tr>
+</table>
+
+<a name="00-3291-compiler"></a> __Compiler API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+</td>
+<td><samp>[cljs.analyzer.api/no-warn](refs/cljs.analyzer.api_no-warn.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.build.api/add-dependencies](refs/cljs.build.api_add-dependencies.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.build.api/add-implicit-options](refs/cljs.build.api_add-implicit-options.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.build.api/compile](refs/cljs.build.api_compile.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.build.api/goog-dep-string](refs/cljs.build.api_goog-dep-string.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.build.api/ns->location](refs/cljs.build.api_ns-GTlocation.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.build.api/ns->source](refs/cljs.build.api_ns-GTsource.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.build.api/output-unoptimized](refs/cljs.build.api_output-unoptimized.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.build.api/source-on-disk](refs/cljs.build.api_source-on-disk.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-var-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl.browser/ext->mime-type](refs/cljs.repl.browser_ext-GTmime-type.md)</samp></td>
+</tr>
 </table>
 
 ### 0.0-3269

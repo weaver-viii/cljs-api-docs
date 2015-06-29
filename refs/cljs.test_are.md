@@ -54,12 +54,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
-        └── clojure
+        └── cljs
             └── cljs
-                └── <ins>[test.clj:167-189](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/test.clj#L167-L189)</ins>
+                └── <ins>[test.clj:167-189](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/test.clj#L167-L189)</ins>
 </pre>
 
 
@@ -84,8 +84,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_are",
  :source {:code "(defmacro are\n  [argv expr & args]\n  (if (or\n        ;; (are [] true) is meaningless but ok\n        (and (empty? argv) (empty? args))\n        ;; Catch wrong number of args\n        (and (pos? (count argv))\n          (pos? (count args))\n          (zero? (mod (count args) (count argv)))))\n    `(clojure.template/do-template ~argv (is ~expr) ~@args)\n    (throw (IllegalArgumentException. \"The number of args doesn't match are's argv.\"))))",
           :repo "clojurescript",
-          :tag "r3269",
-          :filename "src/main/clojure/cljs/test.clj",
+          :tag "r3291",
+          :filename "src/main/cljs/cljs/test.clj",
           :lines [167 189]},
  :full-name "cljs.test/are",
  :clj-symbol "clojure.test/are",

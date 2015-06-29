@@ -51,11 +51,11 @@ Source code:
 
         (array? o)
         (when (< k (.-length o))
-          (aget o k))
+          (aget o (int k)))
         
         (string? o)
         (when (< k (.-length o))
-          (aget o k))
+          (aget o (int k)))
 
         (native-satisfies? ILookup o)
         (-lookup o k)
@@ -85,12 +85,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:1567-1607](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/core.cljs#L1567-L1607)</ins>
+                └── <ins>[core.cljs:1567-1607](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L1567-L1607)</ins>
 </pre>
 
 
@@ -115,9 +115,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/get-in"],
  :full-name-encode "cljs.core_get",
- :source {:code "(defn get\n  ([o k]\n    (when-not (nil? o)\n      (cond\n        (implements? ILookup o)\n        (-lookup ^not-native o k)\n\n        (array? o)\n        (when (< k (.-length o))\n          (aget o k))\n        \n        (string? o)\n        (when (< k (.-length o))\n          (aget o k))\n\n        (native-satisfies? ILookup o)\n        (-lookup o k)\n        \n        :else nil)))\n  ([o k not-found]\n    (if-not (nil? o)\n      (cond\n        (implements? ILookup o)\n        (-lookup ^not-native o k not-found)\n\n        (array? o)\n        (if (< k (.-length o))\n          (aget o k)\n          not-found)\n        \n        (string? o)\n        (if (< k (.-length o))\n          (aget o k)\n          not-found)\n\n        (native-satisfies? ILookup o)\n        (-lookup o k not-found)\n\n        :else not-found)\n      not-found)))",
+ :source {:code "(defn get\n  ([o k]\n    (when-not (nil? o)\n      (cond\n        (implements? ILookup o)\n        (-lookup ^not-native o k)\n\n        (array? o)\n        (when (< k (.-length o))\n          (aget o (int k)))\n        \n        (string? o)\n        (when (< k (.-length o))\n          (aget o (int k)))\n\n        (native-satisfies? ILookup o)\n        (-lookup o k)\n        \n        :else nil)))\n  ([o k not-found]\n    (if-not (nil? o)\n      (cond\n        (implements? ILookup o)\n        (-lookup ^not-native o k not-found)\n\n        (array? o)\n        (if (< k (.-length o))\n          (aget o k)\n          not-found)\n        \n        (string? o)\n        (if (< k (.-length o))\n          (aget o k)\n          not-found)\n\n        (native-satisfies? ILookup o)\n        (-lookup o k not-found)\n\n        :else not-found)\n      not-found)))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [1567 1607]},
  :full-name "cljs.core/get",

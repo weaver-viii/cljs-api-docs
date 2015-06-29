@@ -50,12 +50,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:8909-8924](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/core.cljs#L8909-L8924)</ins>
+                └── <ins>[core.cljs:8909-8924](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L8909-L8924)</ins>
 </pre>
 
 
@@ -80,7 +80,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_dedupe",
  :source {:code "(defn dedupe\n  ([]\n   (fn [rf]\n     (let [pa (volatile! ::none)]\n       (fn\n         ([] (rf))\n         ([result] (rf result))\n         ([result input]\n            (let [prior @pa]\n              (vreset! pa input)\n              (if (= prior input)\n                result\n                (rf result input))))))))\n  ([coll] (sequence (dedupe) coll)))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [8909 8924]},
  :full-name "cljs.core/dedupe",

@@ -26,12 +26,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[repl.cljc:698-699](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/repl.cljc#L698-L699)</ins>
+                └── <ins>[repl.cljc:698-699](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/repl.cljc#L698-L699)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[]"],
  :source {:code "(defn repl-prompt []\n  (print (str ana/*cljs-ns* \"=> \")))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/clojure/cljs/repl.cljc",
           :lines [698 699]},
  :full-name "cljs.repl/repl-prompt",

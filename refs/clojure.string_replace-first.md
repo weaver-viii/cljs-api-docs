@@ -50,12 +50,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── cljs
             └── clojure
-                └── <ins>[string.cljs:40-47](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/clojure/string.cljs#L40-L47)</ins>
+                └── <ins>[string.cljs:40-47](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/clojure/string.cljs#L40-L47)</ins>
 </pre>
 
 
@@ -81,7 +81,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.string_replace-first",
  :source {:code "(defn replace-first\n  [s match replacement]\n  (.replace s match replacement))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/cljs/clojure/string.cljs",
           :lines [40 47]},
  :full-name "clojure.string/replace-first",

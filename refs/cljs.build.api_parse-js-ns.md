@@ -34,13 +34,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── clojure
             └── cljs
                 └── build
-                    └── <ins>[api.clj:76-81](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/build/api.clj#L76-L81)</ins>
+                    └── <ins>[api.clj:77-82](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/build/api.clj#L77-L82)</ins>
 </pre>
 
 
@@ -65,9 +65,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.build.api_parse-js-ns",
  :source {:code "(defn parse-js-ns\n  [f]\n  (closure/parse-js-ns f))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/clojure/cljs/build/api.clj",
-          :lines [76 81]},
+          :lines [77 82]},
  :full-name "cljs.build.api/parse-js-ns",
  :docstring "Given a Google Closure style JavaScript file or resource return the namespace\ninformation for the given file. Only returns the value extracted from the\nfirst provide statement."}
 

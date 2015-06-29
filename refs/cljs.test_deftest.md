@@ -48,12 +48,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
-        └── clojure
+        └── cljs
             └── cljs
-                └── <ins>[test.clj:204-220](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/test.clj#L204-L220)</ins>
+                └── <ins>[test.clj:204-220](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/test.clj#L204-L220)</ins>
 </pre>
 
 
@@ -78,8 +78,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_deftest",
  :source {:code "(defmacro deftest\n  [name & body]\n  (when ana/*load-tests*\n    `(do\n       (def ~(vary-meta name assoc :test `(fn [] ~@body))\n         (fn [] (cljs.test/test-var (.-cljs$lang$var ~name))))\n       (set! (.-cljs$lang$var ~name) (var ~name)))))",
           :repo "clojurescript",
-          :tag "r3269",
-          :filename "src/main/clojure/cljs/test.clj",
+          :tag "r3291",
+          :filename "src/main/cljs/cljs/test.clj",
           :lines [204 220]},
  :full-name "cljs.test/deftest",
  :clj-symbol "clojure.test/deftest",

@@ -29,12 +29,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[test.cljs:273-277](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/test.cljs#L273-L277)</ins>
+                └── <ins>[test.cljs:273-277](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/test.cljs#L273-L277)</ins>
 </pre>
 
 
@@ -57,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[]"],
  :source {:code "(defn get-and-clear-env! []\n  \"Like get-current-env, but cleans env before returning.\"\n  (let [env (cljs.test/get-current-env)]\n    (clear-env!)\n    env))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/cljs/cljs/test.cljs",
           :lines [273 277]},
  :full-name "cljs.test/get-and-clear-env!",

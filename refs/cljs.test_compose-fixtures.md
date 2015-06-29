@@ -38,12 +38,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[test.cljs:477-483](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/test.cljs#L477-L483)</ins>
+                └── <ins>[test.cljs:478-484](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/test.cljs#L478-L484)</ins>
 </pre>
 
 
@@ -68,9 +68,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_compose-fixtures",
  :source {:code "(defn compose-fixtures\n  [f1 f2]\n  (fn [g] (f1 (fn [] (f2 g)))))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/cljs/cljs/test.cljs",
-          :lines [477 483]},
+          :lines [478 484]},
  :full-name "cljs.test/compose-fixtures",
  :clj-symbol "clojure.test/compose-fixtures",
  :docstring "Composes two fixture functions, creating a new fixture function\nthat combines their behavior.\n\nNOTE: Incompatible with map fixtures."}

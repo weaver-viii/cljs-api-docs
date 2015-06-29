@@ -41,12 +41,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3269
+clojurescript @ r3291
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[pprint.clj:92-101](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/pprint.clj#L92-L101)</ins>
+                └── <ins>[pprint.clj:92-101](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/pprint.clj#L92-L101)</ins>
 </pre>
 
 
@@ -71,7 +71,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.pprint_print-length-loop",
  :source {:code "(defmacro print-length-loop\n  [bindings & body]\n  (let [count-var (gensym \"length-count\")\n        mod-body (pll-mod-body count-var body)]\n    `(loop ~(apply vector count-var 0 bindings)\n       (if (or (not cljs.core/*print-length*) (< ~count-var cljs.core/*print-length*))\n         (do ~@mod-body)\n         (~'-write cljs.pprint/*out* \"...\")))))",
           :repo "clojurescript",
-          :tag "r3269",
+          :tag "r3291",
           :filename "src/main/cljs/cljs/pprint.clj",
           :lines [92 101]},
  :full-name "cljs.pprint/print-length-loop",

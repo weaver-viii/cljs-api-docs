@@ -72,7 +72,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.analyzer.api/no-warn</td>
-<td></td>
+<td>[ref](refs/cljs.analyzer.api_no-warn.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.analyzer.api_no-warn.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -136,7 +136,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.build.api/add-dependencies</td>
-<td></td>
+<td>[ref](refs/cljs.build.api_add-dependencies.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.build.api_add-dependencies.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -144,7 +144,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.build.api/add-implicit-options</td>
-<td></td>
+<td>[ref](refs/cljs.build.api_add-implicit-options.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.build.api_add-implicit-options.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -176,7 +176,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.build.api/compile</td>
-<td></td>
+<td>[ref](refs/cljs.build.api_compile.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.build.api_compile.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -184,7 +184,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.build.api/goog-dep-string</td>
-<td></td>
+<td>[ref](refs/cljs.build.api_goog-dep-string.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.build.api_goog-dep-string.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -208,7 +208,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.build.api/ns->location</td>
-<td></td>
+<td>[ref](refs/cljs.build.api_ns-GTlocation.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.build.api_ns-GTlocation.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -216,7 +216,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.build.api/ns->source</td>
-<td></td>
+<td>[ref](refs/cljs.build.api_ns-GTsource.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.build.api_ns-GTsource.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -224,7 +224,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.build.api/output-unoptimized</td>
-<td></td>
+<td>[ref](refs/cljs.build.api_output-unoptimized.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.build.api_output-unoptimized.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -240,7 +240,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.build.api/source-on-disk</td>
-<td></td>
+<td>[ref](refs/cljs.build.api_source-on-disk.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.build.api_source-on-disk.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4928,7 +4928,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/uuid</td>
-<td></td>
+<td>[ref](refs/cljs.core_uuid.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_uuid.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6264,7 +6264,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.browser/ext->mime-type</td>
-<td></td>
+<td>[ref](refs/cljs.repl.browser_ext-GTmime-type.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.browser_ext-GTmime-type.cljsdoc)</td>
 <td></td>
 <td></td>
