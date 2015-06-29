@@ -73,16 +73,26 @@ Radix notation for using up to base 36.
 Source code:
 
 ```clj
-
+(defn- read-number
+  [reader initch]
+  (loop [sb (doto (StringBuilder.) (.append initch))
+         ch (read-char reader)]
+    (if (or (whitespace? ch) (macros ch) (nil? ch))
+      (let [s (str sb)]
+        (unread reader ch)
+        (or (match-number s)
+            (reader-error reader "Invalid number format [" s "]")))
+      (recur (doto sb (.append ch)) (read-char reader)))))
 ```
 
  <pre>
-clojure @ clojure-1.5.1
+tools.reader @ tools.reader-0.7.5
 └── src
-    └── jvm
+    └── main
         └── clojure
-            └── lang
-                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/jvm/clojure/lang/LispReader.java#L)</ins>
+            └── clojure
+                └── tools
+                    └── <ins>[reader.clj:192-201](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.5/src/main/clojure/clojure/tools/reader.clj#L192-L201)</ins>
 </pre>
 
 
@@ -105,10 +115,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "syntax",
  :full-name-encode "syntax_number",
- :source {:repo "clojure",
-          :tag "clojure-1.5.1",
-          :filename "src/jvm/clojure/lang/LispReader.java",
-          :lines [nil]},
+ :source {:code "(defn- read-number\n  [reader initch]\n  (loop [sb (doto (StringBuilder.) (.append initch))\n         ch (read-char reader)]\n    (if (or (whitespace? ch) (macros ch) (nil? ch))\n      (let [s (str sb)]\n        (unread reader ch)\n        (or (match-number s)\n            (reader-error reader \"Invalid number format [\" s \"]\")))\n      (recur (doto sb (.append ch)) (read-char reader)))))",
+          :repo "tools.reader",
+          :tag "tools.reader-0.7.5",
+          :filename "src/main/clojure/clojure/tools/reader.clj",
+          :lines [192 201]},
  :syntax-form " ",
  :examples [{:id "f96060",
              :content "```clj\n123\n;;=> 123\n\n123.45\n;;=> 123.45\n```\n\nScientific notation;\n\n```clj\n12e3\n;;=> 12000\n\n1.2e-3\n;;=> 0.0012\n```\n\nStandard hex and octal notations:\n\n```clj\n0x1f\n;;=> 31\n\n010\n;;=> 8\n```\n\nRadix notation for using up to base 36.\n\n```clj\n2r10111\n;;=> 23\n\n8r32\n;;=> 26\n\n16rFF\n;;=> 255\n\n36rZ\n;;=> 35\n```"}],

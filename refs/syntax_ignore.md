@@ -49,18 +49,49 @@ See Also:
 Source code:
 
 ```clj
-
+(defn- dispatch-macros [ch]
+  (case ch
+    \^ read-meta                ;deprecated
+    \' (wrapping-reader 'var)
+    \( read-fn
+    \= read-eval
+    \{ read-set
+    \< (throwing-reader "Unreadable form")
+    \" read-regex
+    \! read-comment
+    \_ read-discard
+    nil))
 ```
 
  <pre>
-clojure @ clojure-1.5.1
+tools.reader @ tools.reader-0.7.5
 └── src
-    └── jvm
+    └── main
         └── clojure
-            └── lang
-                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/jvm/clojure/lang/LispReader.java#L)</ins>
+            └── clojure
+                └── tools
+                    └── <ins>[reader.clj:565-576](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.5/src/main/clojure/clojure/tools/reader.clj#L565-L576)</ins>
 </pre>
 
+
+---
+
+```clj
+(defn- read-discard
+  [rdr _]
+  (read rdr true nil true)
+  rdr)
+```
+
+ <pre>
+tools.reader @ tools.reader-0.7.5
+└── src
+    └── main
+        └── clojure
+            └── clojure
+                └── tools
+                    └── <ins>[reader.clj:313-316](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.5/src/main/clojure/clojure/tools/reader.clj#L313-L316)</ins>
+</pre>
 
 ---
 
@@ -82,10 +113,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "syntax",
  :related ["syntax/comment" "cljs.core/comment"],
  :full-name-encode "syntax_ignore",
- :source {:repo "clojure",
-          :tag "clojure-1.5.1",
-          :filename "src/jvm/clojure/lang/LispReader.java",
-          :lines [nil]},
+ :source {:code "(defn- dispatch-macros [ch]\n  (case ch\n    \\^ read-meta                ;deprecated\n    \\' (wrapping-reader 'var)\n    \\( read-fn\n    \\= read-eval\n    \\{ read-set\n    \\< (throwing-reader \"Unreadable form\")\n    \\\" read-regex\n    \\! read-comment\n    \\_ read-discard\n    nil))",
+          :repo "tools.reader",
+          :tag "tools.reader-0.7.5",
+          :filename "src/main/clojure/clojure/tools/reader.clj",
+          :lines [565 576]},
+ :extra-sources [{:code "(defn- read-discard\n  [rdr _]\n  (read rdr true nil true)\n  rdr)",
+                  :repo "tools.reader",
+                  :tag "tools.reader-0.7.5",
+                  :filename "src/main/clojure/clojure/tools/reader.clj",
+                  :lines [313 316]}],
  :syntax-form "#_",
  :examples [{:id "f36d7a",
              :content "```clj\n{:foo #_bar 2}\n;;=> {:foo 2}\n```\n\nTo comment out the last line of a function without worrying about commenting out\nthe trailing parentheses:\n\n```clj\n(defn foo []\n  (println \"hello\")\n  #_(println \"world\"))\n```"}],

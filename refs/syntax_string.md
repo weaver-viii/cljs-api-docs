@@ -61,18 +61,63 @@ See Also:
 Source code:
 
 ```clj
-
+(defn- macros [ch]
+  (case ch
+    \" read-string*
+    \: read-keyword
+    \; read-comment
+    \' (wrapping-reader 'quote)
+    \@ (wrapping-reader 'clojure.core/deref)
+    \^ read-meta
+    \` read-syntax-quote ;;(wrapping-reader 'syntax-quote)
+    \~ read-unquote
+    \( read-list
+    \) read-unmatched-delimiter
+    \[ read-vector
+    \] read-unmatched-delimiter
+    \{ read-map
+    \} read-unmatched-delimiter
+    \\ read-char*
+    \% read-arg
+    \# read-dispatch
+    nil))
 ```
 
  <pre>
-clojure @ clojure-1.5.1
+tools.reader @ tools.reader-0.7.5
 └── src
-    └── jvm
+    └── main
         └── clojure
-            └── lang
-                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/jvm/clojure/lang/LispReader.java#L)</ins>
+            └── clojure
+                └── tools
+                    └── <ins>[reader.clj:544-563](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.5/src/main/clojure/clojure/tools/reader.clj#L544-L563)</ins>
 </pre>
 
+
+---
+
+```clj
+(defn- read-string*
+  [reader _]
+  (loop [sb (StringBuilder.)
+         ch (read-char reader)]
+    (case ch
+      nil (reader-error reader "EOF while reading string")
+      \\ (recur (doto sb (.append (escape-char sb reader)))
+                (read-char reader))
+      \" (str sb)
+      (recur (doto sb (.append ch)) (read-char reader)))))
+```
+
+ <pre>
+tools.reader @ tools.reader-0.7.5
+└── src
+    └── main
+        └── clojure
+            └── clojure
+                └── tools
+                    └── <ins>[reader.clj:228-237](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.5/src/main/clojure/clojure/tools/reader.clj#L228-L237)</ins>
+</pre>
 
 ---
 
@@ -94,10 +139,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "syntax",
  :related ["cljs.core/str"],
  :full-name-encode "syntax_string",
- :source {:repo "clojure",
-          :tag "clojure-1.5.1",
-          :filename "src/jvm/clojure/lang/LispReader.java",
-          :lines [nil]},
+ :source {:code "(defn- macros [ch]\n  (case ch\n    \\\" read-string*\n    \\: read-keyword\n    \\; read-comment\n    \\' (wrapping-reader 'quote)\n    \\@ (wrapping-reader 'clojure.core/deref)\n    \\^ read-meta\n    \\` read-syntax-quote ;;(wrapping-reader 'syntax-quote)\n    \\~ read-unquote\n    \\( read-list\n    \\) read-unmatched-delimiter\n    \\[ read-vector\n    \\] read-unmatched-delimiter\n    \\{ read-map\n    \\} read-unmatched-delimiter\n    \\\\ read-char*\n    \\% read-arg\n    \\# read-dispatch\n    nil))",
+          :repo "tools.reader",
+          :tag "tools.reader-0.7.5",
+          :filename "src/main/clojure/clojure/tools/reader.clj",
+          :lines [544 563]},
+ :extra-sources [{:code "(defn- read-string*\n  [reader _]\n  (loop [sb (StringBuilder.)\n         ch (read-char reader)]\n    (case ch\n      nil (reader-error reader \"EOF while reading string\")\n      \\\\ (recur (doto sb (.append (escape-char sb reader)))\n                (read-char reader))\n      \\\" (str sb)\n      (recur (doto sb (.append ch)) (read-char reader)))))",
+                  :repo "tools.reader",
+                  :tag "tools.reader-0.7.5",
+                  :filename "src/main/clojure/clojure/tools/reader.clj",
+                  :lines [228 237]}],
  :syntax-form "\"\"",
  :examples [{:id "eb97ac",
              :content "```clj\n\"foo\"\n;;=> \"foo\"\n\n\"hello\n     world\"\n;;=> \"hello\\n     world\"\n```\n\nCharacters can be escaped:\n\n```clj\n(println \"foo\\nbar\")\n;; prints:\n;;   foo\n;;   bar\n```"}],

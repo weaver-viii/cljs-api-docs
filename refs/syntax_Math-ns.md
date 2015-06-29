@@ -18,18 +18,6 @@
 
 Source code:
 
-```clj
-
-```
-
- <pre>
-clojure @ clojure-1.5.1
-└── src
-    └── jvm
-        └── clojure
-            └── lang
-                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/jvm/clojure/lang/LispReader.java#L)</ins>
-</pre>
 
 
 ---
@@ -47,16 +35,12 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "syntax",
  :name "Math-ns",
- :history [["+" "0.0-927"]],
- :type "special namespace",
- :full-name-encode "syntax_Math-ns",
- :source {:repo "clojure",
-          :tag "clojure-1.5.1",
-          :filename "src/jvm/clojure/lang/LispReader.java",
-          :lines [nil]},
  :syntax-form "Math/",
+ :type "special namespace",
+ :clj-doc "http://clojure.org/java_interop#toc6",
  :full-name "syntax/Math-ns",
- :clj-doc "http://clojure.org/java_interop#toc6"}
+ :full-name-encode "syntax_Math-ns",
+ :history [["+" "0.0-927"]]}
 
 ```
 

@@ -40,11 +40,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1847
+clojurescript @ r1853
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1355-1363](https://github.com/clojure/clojurescript/blob/r1847/src/clj/cljs/core.clj#L1355-L1363)</ins>
+            └── <ins>[core.clj:1355-1363](https://github.com/clojure/clojurescript/blob/r1853/src/clj/cljs/core.clj#L1355-L1363)</ins>
 </pre>
 
 
@@ -69,7 +69,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_with-out-str",
  :source {:code "(defmacro with-out-str\n  [& body]\n  `(let [sb# (goog.string/StringBuffer.)]\n     (binding [cljs.core/*print-fn* (fn [x#] (.append sb# x#))]\n       ~@body)\n     (cljs.core/str sb#)))",
           :repo "clojurescript",
-          :tag "r1847",
+          :tag "r1853",
           :filename "src/clj/cljs/core.clj",
           :lines [1355 1363]},
  :full-name "cljs.core/with-out-str",

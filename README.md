@@ -2,8 +2,8 @@
 
  <table border="1">
 <tr>
-<td>__0.0-1847__ [all](HISTORY.md)</td>
-<td>2013-07-23</td>
+<td>__0.0-1853__ [all](HISTORY.md)</td>
+<td>2013-08-05</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.5.1</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
@@ -71,18 +71,36 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-1847__ ([See Full History](HISTORY.md)):
+Changes from __0.0-1853__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
  <table>
-<tr><td>_no syntax forms were added or removed in this version_</td></tr>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-special symbol-brightgreen.svg">
+</td>
+<td><samp>[syntax/Infinity](refs/syntax_Infinity.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-special symbol-brightgreen.svg">
+</td>
+<td><samp>[syntax/NaN](refs/syntax_NaN.md)</samp></td>
+</tr>
 </table>
 
 __Library API Changes__
 
  <table>
-<tr><td>_no symbols were added or removed in this version_</td></tr>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.reader/parse-and-validate-timestamp](refs/cljs.reader_parse-and-validate-timestamp.md)</samp></td>
+</tr>
 </table>
 
 __Compiler API Changes__
@@ -361,6 +379,22 @@ available in [edn]
 <td><samp>nil<br></samp></td>
 <td><samp>special symbol</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+</tr>
+<tr valign=top>
+<td></td>
+<td></td>
+<td><samp>[NaN](refs/syntax_NaN.md)</samp></td>
+<td><samp>NaN<br></samp></td>
+<td><samp>special symbol</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1853"><img valign="middle" alt="[+] 0.0-1853" src="https://img.shields.io/badge/+-0.0--1853-lightgrey.svg"></a> </td>
+</tr>
+<tr valign=top>
+<td></td>
+<td></td>
+<td><samp>[Infinity](refs/syntax_Infinity.md)</samp></td>
+<td><samp>Infinity<br>-Infinity<br>+Infinity<br></samp></td>
+<td><samp>special symbol</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1853"><img valign="middle" alt="[+] 0.0-1853" src="https://img.shields.io/badge/+-0.0--1853-lightgrey.svg"></a> </td>
 </tr>
 <tr valign=top>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](https://github.com/clojure/clojure/blob/clojure-1.6.0/src/clj/clojure/core.clj#L6947)</td>
@@ -4027,6 +4061,12 @@ application.
 <td><samp>[not-implemented](refs/cljs.reader_not-implemented.md)</samp></td>
 <td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[parse-and-validate-timestamp](refs/cljs.reader_parse-and-validate-timestamp.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1853"><img valign="middle" alt="[+] 0.0-1853" src="https://img.shields.io/badge/+-0.0--1853-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td></td>

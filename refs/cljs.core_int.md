@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1847
+clojurescript @ r1853
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1577-1580](https://github.com/clojure/clojurescript/blob/r1847/src/cljs/cljs/core.cljs#L1577-L1580)</ins>
+            └── <ins>[core.cljs:1580-1583](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L1580-L1583)</ins>
 </pre>
 
 
@@ -60,11 +60,11 @@ clojurescript @ r1847
 ```
 
  <pre>
-clojurescript @ r1847
+clojurescript @ r1853
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:427-428](https://github.com/clojure/clojurescript/blob/r1847/src/clj/cljs/core.clj#L427-L428)</ins>
+            └── <ins>[core.clj:427-428](https://github.com/clojure/clojurescript/blob/r1853/src/clj/cljs/core.clj#L427-L428)</ins>
 </pre>
 
 ---
@@ -90,12 +90,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_int",
  :source {:code "(defn int\n  [x]\n  (bit-or x 0))",
           :repo "clojurescript",
-          :tag "r1847",
+          :tag "r1853",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1577 1580]},
+          :lines [1580 1583]},
  :extra-sources ({:code "(defmacro int [x]\n  `(bit-or ~x 0))",
                   :repo "clojurescript",
-                  :tag "r1847",
+                  :tag "r1853",
                   :filename "src/clj/cljs/core.clj",
                   :lines [427 428]}),
  :full-name "cljs.core/int",

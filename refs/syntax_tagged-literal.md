@@ -22,16 +22,28 @@
 Source code:
 
 ```clj
-
+(defn- read-tagged [rdr initch]
+  (let [tag (read rdr true nil false)]
+    (if-not (symbol? tag)
+      (reader-error rdr "Reader tag must be a symbol"))
+    (if-let [f (or (*data-readers* tag)
+                   (default-data-readers tag))]
+      (read-tagged* rdr tag f)
+      (if (.contains (name tag) ".")
+        (read-ctor rdr tag)
+        (if-let [f *default-data-reader-fn*]
+          (f tag (read rdr true nil true))
+          (reader-error rdr "No reader function for tag " (name tag)))))))
 ```
 
  <pre>
-clojure @ clojure-1.5.1
+tools.reader @ tools.reader-0.7.5
 └── src
-    └── jvm
+    └── main
         └── clojure
-            └── lang
-                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/jvm/clojure/lang/LispReader.java#L)</ins>
+            └── clojure
+                └── tools
+                    └── <ins>[reader.clj:614-625](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.5/src/main/clojure/clojure/tools/reader.clj#L614-L625)</ins>
 </pre>
 
 
@@ -53,10 +65,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1211"]],
  :type "syntax",
  :full-name-encode "syntax_tagged-literal",
- :source {:repo "clojure",
-          :tag "clojure-1.5.1",
-          :filename "src/jvm/clojure/lang/LispReader.java",
-          :lines [nil]},
+ :source {:code "(defn- read-tagged [rdr initch]\n  (let [tag (read rdr true nil false)]\n    (if-not (symbol? tag)\n      (reader-error rdr \"Reader tag must be a symbol\"))\n    (if-let [f (or (*data-readers* tag)\n                   (default-data-readers tag))]\n      (read-tagged* rdr tag f)\n      (if (.contains (name tag) \".\")\n        (read-ctor rdr tag)\n        (if-let [f *default-data-reader-fn*]\n          (f tag (read rdr true nil true))\n          (reader-error rdr \"No reader function for tag \" (name tag)))))))",
+          :repo "tools.reader",
+          :tag "tools.reader-0.7.5",
+          :filename "src/main/clojure/clojure/tools/reader.clj",
+          :lines [614 625]},
  :syntax-form "#",
  :edn-doc "https://github.com/edn-format/edn#tagged-elements",
  :full-name "syntax/tagged-literal",

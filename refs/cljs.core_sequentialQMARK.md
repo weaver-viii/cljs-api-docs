@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1847
+clojurescript @ r1853
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1092-1094](https://github.com/clojure/clojurescript/blob/r1847/src/cljs/cljs/core.cljs#L1092-L1094)</ins>
+            └── <ins>[core.cljs:1095-1097](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L1095-L1097)</ins>
 </pre>
 
 
@@ -77,9 +77,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_sequentialQMARK",
  :source {:code "(defn ^boolean sequential?\n  [x] (satisfies? ISequential x))",
           :repo "clojurescript",
-          :tag "r1847",
+          :tag "r1853",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1092 1094]},
+          :lines [1095 1097]},
  :full-name "cljs.core/sequential?",
  :clj-symbol "clojure.core/sequential?",
  :docstring "Returns true if coll satisfies ISequential"}

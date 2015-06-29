@@ -5568,7 +5568,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.reader/parse-and-validate-timestamp</td>
-<td></td>
+<td>[ref](refs/cljs.reader_parse-and-validate-timestamp.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.reader_parse-and-validate-timestamp.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -8680,7 +8680,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>syntax/Infinity</td>
-<td></td>
+<td>[ref](refs/syntax_Infinity.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/syntax_Infinity.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -8696,7 +8696,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>syntax/NaN</td>
-<td></td>
+<td>[ref](refs/syntax_NaN.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/syntax_NaN.cljsdoc)</td>
 <td></td>
 <td></td>
