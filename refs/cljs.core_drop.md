@@ -57,11 +57,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1896
+clojurescript @ r1909
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2799-2807](https://github.com/clojure/clojurescript/blob/r1896/src/cljs/cljs/core.cljs#L2799-L2807)</ins>
+            └── <ins>[core.cljs:2819-2827](https://github.com/clojure/clojurescript/blob/r1909/src/cljs/cljs/core.cljs#L2819-L2827)</ins>
 </pre>
 
 
@@ -92,9 +92,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_drop",
  :source {:code "(defn drop\n  [n coll]\n  (let [step (fn [n coll]\n               (let [s (seq coll)]\n                 (if (and (pos? n) s)\n                   (recur (dec n) (rest s))\n                   s)))]\n    (lazy-seq (step n coll))))",
           :repo "clojurescript",
-          :tag "r1896",
+          :tag "r1909",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2799 2807]},
+          :lines [2819 2827]},
  :full-name "cljs.core/drop",
  :clj-symbol "clojure.core/drop",
  :docstring "Returns a lazy sequence of all but the first n items in coll."}

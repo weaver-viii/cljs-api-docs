@@ -72,11 +72,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1896
+clojurescript @ r1909
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:130-134](https://github.com/clojure/clojurescript/blob/r1896/src/cljs/cljs/core.cljs#L130-L134)</ins>
+            └── <ins>[core.cljs:130-134](https://github.com/clojure/clojurescript/blob/r1909/src/cljs/cljs/core.cljs#L130-L134)</ins>
 </pre>
 
 
@@ -92,11 +92,11 @@ clojurescript @ r1896
 ```
 
  <pre>
-clojurescript @ r1896
+clojurescript @ r1909
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1191-1196](https://github.com/clojure/clojurescript/blob/r1896/src/clj/cljs/core.clj#L1191-L1196)</ins>
+            └── <ins>[core.clj:1191-1196](https://github.com/clojure/clojurescript/blob/r1909/src/clj/cljs/core.clj#L1191-L1196)</ins>
 </pre>
 
 ---
@@ -124,12 +124,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_array",
  :source {:code "(defn array\n  [var-args]            ;; [& items]\n  (.call (.-slice (.-prototype js/Array)) (cljs.core/js-arguments)))",
           :repo "clojurescript",
-          :tag "r1896",
+          :tag "r1909",
           :filename "src/cljs/cljs/core.cljs",
           :lines [130 134]},
  :extra-sources ({:code "(defmacro array [& rest]\n  (let [xs-str (->> (repeat \"~{}\")\n                    (take (count rest))\n                    (interpose \",\")\n                    (apply core/str))]\n    (list* 'js* (core/str \"[\" xs-str \"]\") rest)))",
                   :repo "clojurescript",
-                  :tag "r1896",
+                  :tag "r1909",
                   :filename "src/clj/cljs/core.clj",
                   :lines [1191 1196]}),
  :examples [{:id "3a546d",

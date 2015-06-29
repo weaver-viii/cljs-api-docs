@@ -41,8 +41,9 @@ Source code:
   (invoke [kw coll not-found]
     (if (nil? coll)
       not-found
-      (when (satisfies? ILookup coll)
-        (-lookup coll kw not-found))))
+      (if (satisfies? ILookup coll)
+        (-lookup coll kw not-found)
+        not-found)))
   IHash
   (-hash [_]
     ; This was checking if _hash == -1, should it stay that way?
@@ -60,11 +61,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1896
+clojurescript @ r1909
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2007-2039](https://github.com/clojure/clojurescript/blob/r1896/src/cljs/cljs/core.cljs#L2007-L2039)</ins>
+            └── <ins>[core.cljs:2009-2042](https://github.com/clojure/clojurescript/blob/r1909/src/cljs/cljs/core.cljs#L2009-L2042)</ins>
 </pre>
 
 
@@ -87,11 +88,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1424"]],
  :type "type",
  :full-name-encode "cljs.core_Keyword",
- :source {:code "(deftype Keyword [ns name fqn ^:mutable _hash]\n  Object\n  (toString [_] (str \":\" fqn))\n  \n  IEquiv\n  (-equiv [_ other]\n    (if (instance? Keyword other)\n      (identical? fqn (.-fqn other))\n      false))\n  IFn\n  (invoke [kw coll]\n    (when-not (nil? coll)\n      (when (satisfies? ILookup coll)\n        (-lookup coll kw nil))))\n  (invoke [kw coll not-found]\n    (if (nil? coll)\n      not-found\n      (when (satisfies? ILookup coll)\n        (-lookup coll kw not-found))))\n  IHash\n  (-hash [_]\n    ; This was checking if _hash == -1, should it stay that way?\n    (if (nil? _hash)\n      (do\n        (set! _hash (+ (hash-combine (hash ns) (hash name))\n                        0x9e3779b9))\n        _hash)\n      _hash))\n  INamed\n  (-name [_] name)\n  (-namespace [_] ns)\n  IPrintWithWriter\n  (-pr-writer [o writer _] (-write writer (str \":\" fqn))))",
+ :source {:code "(deftype Keyword [ns name fqn ^:mutable _hash]\n  Object\n  (toString [_] (str \":\" fqn))\n  \n  IEquiv\n  (-equiv [_ other]\n    (if (instance? Keyword other)\n      (identical? fqn (.-fqn other))\n      false))\n  IFn\n  (invoke [kw coll]\n    (when-not (nil? coll)\n      (when (satisfies? ILookup coll)\n        (-lookup coll kw nil))))\n  (invoke [kw coll not-found]\n    (if (nil? coll)\n      not-found\n      (if (satisfies? ILookup coll)\n        (-lookup coll kw not-found)\n        not-found)))\n  IHash\n  (-hash [_]\n    ; This was checking if _hash == -1, should it stay that way?\n    (if (nil? _hash)\n      (do\n        (set! _hash (+ (hash-combine (hash ns) (hash name))\n                        0x9e3779b9))\n        _hash)\n      _hash))\n  INamed\n  (-name [_] name)\n  (-namespace [_] ns)\n  IPrintWithWriter\n  (-pr-writer [o writer _] (-write writer (str \":\" fqn))))",
           :repo "clojurescript",
-          :tag "r1896",
+          :tag "r1909",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2007 2039]},
+          :lines [2009 2042]},
  :full-name "cljs.core/Keyword",
  :clj-symbol "clojure.lang/Keyword"}
 

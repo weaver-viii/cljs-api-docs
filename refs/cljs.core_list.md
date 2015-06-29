@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1896
+clojurescript @ r1909
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1936-1949](https://github.com/clojure/clojurescript/blob/r1896/src/cljs/cljs/core.cljs#L1936-L1949)</ins>
+            └── <ins>[core.cljs:1938-1951](https://github.com/clojure/clojurescript/blob/r1909/src/cljs/cljs/core.cljs#L1938-L1951)</ins>
 </pre>
 
 
@@ -81,9 +81,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_list",
  :source {:code "(defn list [& xs]\n  (let [arr (if (instance? IndexedSeq xs)\n              (.-arr xs)\n              (let [arr (array)]\n                (loop [^not-native xs xs]\n                  (if-not (nil? xs)\n                    (do\n                      (.push arr (-first xs))\n                      (recur (-next xs)))\n                    arr))))]\n    (loop [i (alength arr) ^not-native r ()]\n      (if (> i 0)\n        (recur (dec i) (-conj r (aget arr (dec i))))\n        r))))",
           :repo "clojurescript",
-          :tag "r1896",
+          :tag "r1909",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1936 1949]},
+          :lines [1938 1951]},
  :full-name "cljs.core/list",
  :clj-symbol "clojure.core/list"}
 

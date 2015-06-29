@@ -36,15 +36,15 @@ Source code:
 
 ```clj
 (defmacro lazy-seq [& body]
-  `(new cljs.core/LazySeq nil false (fn [] ~@body) nil))
+  `(new cljs.core/LazySeq nil (fn [] ~@body) nil nil))
 ```
 
  <pre>
-clojurescript @ r1896
+clojurescript @ r1909
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:887-888](https://github.com/clojure/clojurescript/blob/r1896/src/clj/cljs/core.clj#L887-L888)</ins>
+            └── <ins>[core.clj:887-888](https://github.com/clojure/clojurescript/blob/r1909/src/clj/cljs/core.clj#L887-L888)</ins>
 </pre>
 
 
@@ -72,9 +72,9 @@ __Meta__ - To retrieve the API data for this symbol:
            "cljs.core/doall"
            "cljs.core/iterate"],
  :full-name-encode "cljs.core_lazy-seq",
- :source {:code "(defmacro lazy-seq [& body]\n  `(new cljs.core/LazySeq nil false (fn [] ~@body) nil))",
+ :source {:code "(defmacro lazy-seq [& body]\n  `(new cljs.core/LazySeq nil (fn [] ~@body) nil nil))",
           :repo "clojurescript",
-          :tag "r1896",
+          :tag "r1909",
           :filename "src/clj/cljs/core.clj",
           :lines [887 888]},
  :full-name "cljs.core/lazy-seq",

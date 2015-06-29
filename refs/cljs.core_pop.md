@@ -87,11 +87,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1896
+clojurescript @ r1909
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1036-1041](https://github.com/clojure/clojurescript/blob/r1896/src/cljs/cljs/core.cljs#L1036-L1041)</ins>
+            └── <ins>[core.cljs:1036-1041](https://github.com/clojure/clojurescript/blob/r1909/src/cljs/cljs/core.cljs#L1036-L1041)</ins>
 </pre>
 
 
@@ -118,7 +118,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_pop",
  :source {:code "(defn pop\n  [coll]\n  (-pop coll))",
           :repo "clojurescript",
-          :tag "r1896",
+          :tag "r1909",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1036 1041]},
  :examples [{:id "6bd9f7",

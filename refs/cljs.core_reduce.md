@@ -98,11 +98,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1896
+clojurescript @ r1909
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1338-1379](https://github.com/clojure/clojurescript/blob/r1896/src/cljs/cljs/core.cljs#L1338-L1379)</ins>
+            └── <ins>[core.cljs:1338-1379](https://github.com/clojure/clojurescript/blob/r1909/src/cljs/cljs/core.cljs#L1338-L1379)</ins>
 </pre>
 
 
@@ -131,7 +131,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_reduce",
  :source {:code "(defn reduce\n  ([f coll]\n     (cond\n       (satisfies? IReduce coll false)\n       (-reduce ^not-native coll f)\n\n       (array? coll)\n       (array-reduce coll f)\n\n       (string? coll)\n       (array-reduce coll f)\n       \n       (type_satisfies_ IReduce coll)\n       (-reduce coll f)\n\n       :else\n       (seq-reduce f coll)))\n  ([f val coll]\n     (cond\n       (satisfies? IReduce coll false)\n       (-reduce ^not-native coll f val)\n\n       (array? coll)\n       (array-reduce coll f val)\n      \n       (string? coll)\n       (array-reduce coll f val)\n       \n       (type_satisfies_ IReduce coll)\n       (-reduce coll f val)\n\n       :else\n       (seq-reduce f val coll))))",
           :repo "clojurescript",
-          :tag "r1896",
+          :tag "r1909",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1338 1379]},
  :full-name "cljs.core/reduce",

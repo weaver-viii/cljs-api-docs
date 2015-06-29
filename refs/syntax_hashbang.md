@@ -34,13 +34,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.7.6
+tools.reader @ tools.reader-0.7.8
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:564-575](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.6/src/main/clojure/clojure/tools/reader.clj#L564-L575)</ins>
+                    └── <ins>[reader.clj:564-575](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.8/src/main/clojure/clojure/tools/reader.clj#L564-L575)</ins>
 </pre>
 
 
@@ -53,7 +53,7 @@ tools.reader @ tools.reader-0.7.6
 ```
 
  <pre>
-tools.reader @ tools.reader-0.7.6
+tools.reader @ tools.reader-0.7.8
 └── src
     └── main
         └── clojure
@@ -61,7 +61,7 @@ tools.reader @ tools.reader-0.7.6
                 └── tools
                     └── reader
                         └── impl
-                            └── <ins>[commons.clj:112-114](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.6/src/main/clojure/clojure/tools/reader/impl/commons.clj#L112-L114)</ins>
+                            └── <ins>[commons.clj:112-114](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.8/src/main/clojure/clojure/tools/reader/impl/commons.clj#L112-L114)</ins>
 </pre>
 
 ---
@@ -84,12 +84,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_hashbang",
  :source {:code "(defn- dispatch-macros [ch]\n  (case ch\n    \\^ read-meta                ;deprecated\n    \\' (wrapping-reader 'var)\n    \\( read-fn\n    \\= read-eval\n    \\{ read-set\n    \\< (throwing-reader \"Unreadable form\")\n    \\\" read-regex\n    \\! read-comment\n    \\_ read-discard\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.7.6",
+          :tag "tools.reader-0.7.8",
           :filename "src/main/clojure/clojure/tools/reader.clj",
           :lines [564 575]},
  :extra-sources [{:code "(defn read-comment\n  [rdr & _]\n  (skip-line rdr _))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.7.6",
+                  :tag "tools.reader-0.7.8",
                   :filename "src/main/clojure/clojure/tools/reader/impl/commons.clj",
                   :lines [112 114]}],
  :syntax-form "#!",

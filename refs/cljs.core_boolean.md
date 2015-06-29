@@ -52,11 +52,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1896
+clojurescript @ r1909
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1187-1188](https://github.com/clojure/clojurescript/blob/r1896/src/cljs/cljs/core.cljs#L1187-L1188)</ins>
+            └── <ins>[core.cljs:1187-1188](https://github.com/clojure/clojurescript/blob/r1909/src/cljs/cljs/core.cljs#L1187-L1188)</ins>
 </pre>
 
 
@@ -84,7 +84,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_boolean",
  :source {:code "(defn ^boolean boolean [x]\n  (if x true false))",
           :repo "clojurescript",
-          :tag "r1896",
+          :tag "r1909",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1187 1188]},
  :examples [{:id "9edf3a",
