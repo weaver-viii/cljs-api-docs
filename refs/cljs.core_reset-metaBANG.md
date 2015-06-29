@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1844
+clojurescript @ r1847
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6924-6927](https://github.com/clojure/clojurescript/blob/r1844/src/cljs/cljs/core.cljs#L6924-L6927)</ins>
+            └── <ins>[core.cljs:6924-6927](https://github.com/clojure/clojurescript/blob/r1847/src/cljs/cljs/core.cljs#L6924-L6927)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_reset-metaBANG",
  :source {:code "(defn reset-meta!\n  [iref m]\n  (set! (.-meta iref) m))",
           :repo "clojurescript",
-          :tag "r1844",
+          :tag "r1847",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6924 6927]},
  :full-name "cljs.core/reset-meta!",

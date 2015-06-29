@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1844
+clojurescript @ r1847
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2217-2220](https://github.com/clojure/clojurescript/blob/r1844/src/cljs/cljs/core.cljs#L2217-L2220)</ins>
+            └── <ins>[core.cljs:2217-2220](https://github.com/clojure/clojurescript/blob/r1847/src/cljs/cljs/core.cljs#L2217-L2220)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[s]"],
  :source {:code "(defn chunk-next [s]\n  (if (satisfies? IChunkedNext s false)\n    (-chunked-next s)\n    (seq (-chunked-rest s))))",
           :repo "clojurescript",
-          :tag "r1844",
+          :tag "r1847",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2217 2220]},
  :full-name "cljs.core/chunk-next",

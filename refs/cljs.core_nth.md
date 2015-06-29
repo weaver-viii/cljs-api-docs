@@ -97,11 +97,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1844
+clojurescript @ r1847
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:878-923](https://github.com/clojure/clojurescript/blob/r1844/src/cljs/cljs/core.cljs#L878-L923)</ins>
+            └── <ins>[core.cljs:878-923](https://github.com/clojure/clojurescript/blob/r1847/src/cljs/cljs/core.cljs#L878-L923)</ins>
 </pre>
 
 
@@ -131,7 +131,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_nth",
  :source {:code "(defn nth\n  ([coll n]\n     (when-not (nil? coll)\n       (cond\n         (satisfies? IIndexed coll false)\n         (-nth ^not-native coll (.floor js/Math n))\n\n         (array? coll)\n         (when (< n (.-length coll))\n           (aget coll n))\n         \n         (string? coll)\n         (when (< n (.-length coll))\n           (aget coll n))\n\n         (type_satisfies_ IIndexed coll)\n         (-nth coll n)\n         \n         :else\n         (linear-traversal-nth coll (.floor js/Math n)))))\n  ([coll n not-found]\n     (if-not (nil? coll)\n       (cond\n         (satisfies? IIndexed coll false)\n         (-nth ^not-native coll (.floor js/Math n) not-found)\n\n         (array? coll)\n         (if (< n (.-length coll))\n           (aget coll n)\n           not-found)\n         \n         (string? coll)\n         (if (< n (.-length coll))\n           (aget coll n)\n           not-found)\n         \n         (type_satisfies_ IIndexed coll)\n         (-nth coll n)\n\n         :else\n         (linear-traversal-nth coll (.floor js/Math n) not-found))\n       not-found)))",
           :repo "clojurescript",
-          :tag "r1844",
+          :tag "r1847",
           :filename "src/cljs/cljs/core.cljs",
           :lines [878 923]},
  :full-name "cljs.core/nth",

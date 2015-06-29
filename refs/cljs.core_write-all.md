@@ -27,11 +27,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1844
+clojurescript @ r1847
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6517-6519](https://github.com/clojure/clojurescript/blob/r1844/src/cljs/cljs/core.cljs#L6517-L6519)</ins>
+            └── <ins>[core.cljs:6517-6519](https://github.com/clojure/clojurescript/blob/r1847/src/cljs/cljs/core.cljs#L6517-L6519)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[writer & ss]"],
  :source {:code "(defn write-all [writer & ss]\n  (doseq [s ss]\n    (-write writer s)))",
           :repo "clojurescript",
-          :tag "r1844",
+          :tag "r1847",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6517 6519]},
  :full-name "cljs.core/write-all",

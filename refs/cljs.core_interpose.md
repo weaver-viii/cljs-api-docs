@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1844
+clojurescript @ r1847
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2860-2862](https://github.com/clojure/clojurescript/blob/r1844/src/cljs/cljs/core.cljs#L2860-L2862)</ins>
+            └── <ins>[core.cljs:2860-2862](https://github.com/clojure/clojurescript/blob/r1847/src/cljs/cljs/core.cljs#L2860-L2862)</ins>
 </pre>
 
 
@@ -74,7 +74,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_interpose",
  :source {:code "(defn interpose\n  [sep coll] (drop 1 (interleave (repeat sep) coll)))",
           :repo "clojurescript",
-          :tag "r1844",
+          :tag "r1847",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2860 2862]},
  :full-name "cljs.core/interpose",

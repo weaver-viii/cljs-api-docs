@@ -63,11 +63,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1844
+clojurescript @ r1847
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2456-2460](https://github.com/clojure/clojurescript/blob/r1844/src/cljs/cljs/core.cljs#L2456-L2460)</ins>
+            └── <ins>[core.cljs:2456-2460](https://github.com/clojure/clojurescript/blob/r1847/src/cljs/cljs/core.cljs#L2456-L2460)</ins>
 </pre>
 
 
@@ -94,7 +94,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_vary-meta",
  :source {:code "(defn vary-meta\n [obj f & args]\n (with-meta obj (apply f (meta obj) args)))",
           :repo "clojurescript",
-          :tag "r1844",
+          :tag "r1847",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2456 2460]},
  :examples [{:id "8cca62",

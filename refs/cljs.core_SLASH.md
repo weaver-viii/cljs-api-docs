@@ -70,11 +70,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1844
+clojurescript @ r1847
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1407-1412](https://github.com/clojure/clojurescript/blob/r1844/src/cljs/cljs/core.cljs#L1407-L1412)</ins>
+            └── <ins>[core.cljs:1407-1412](https://github.com/clojure/clojurescript/blob/r1847/src/cljs/cljs/core.cljs#L1407-L1412)</ins>
 </pre>
 
 
@@ -88,11 +88,11 @@ clojurescript @ r1844
 ```
 
  <pre>
-clojurescript @ r1844
+clojurescript @ r1847
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:346-349](https://github.com/clojure/clojurescript/blob/r1844/src/clj/cljs/core.clj#L346-L349)</ins>
+            └── <ins>[core.clj:346-349](https://github.com/clojure/clojurescript/blob/r1847/src/clj/cljs/core.clj#L346-L349)</ins>
 </pre>
 
 ---
@@ -118,12 +118,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_SLASH",
  :source {:code "(defn /\n  ([x] (/ 1 x))\n  ([x y] (cljs.core/divide x y)) ;; FIXME: waiting on cljs.core//\n  ([x y & more] (reduce / (/ x y) more)))",
           :repo "clojurescript",
-          :tag "r1844",
+          :tag "r1847",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1407 1412]},
  :extra-sources ({:code "(defmacro /\n  ([x] `(/ 1 ~x))\n  ([x y] (list 'js* \"(~{} / ~{})\" x y))\n  ([x y & more] `(/ (/ ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r1844",
+                  :tag "r1847",
                   :filename "src/clj/cljs/core.clj",
                   :lines [346 349]}),
  :examples [{:id "824bb7",

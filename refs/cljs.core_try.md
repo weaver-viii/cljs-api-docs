@@ -60,11 +60,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1844
+clojurescript @ r1847
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:989-1017](https://github.com/clojure/clojurescript/blob/r1844/src/clj/cljs/core.clj#L989-L1017)</ins>
+            └── <ins>[core.clj:989-1017](https://github.com/clojure/clojurescript/blob/r1847/src/clj/cljs/core.clj#L989-L1017)</ins>
 </pre>
 
 
@@ -89,7 +89,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_try",
  :source {:code "(defmacro try\n  [& forms]\n  (let [catch? #(and (seq? %) (= (first %) 'catch))\n        [body catches] (split-with (complement catch?) forms)\n        [catches fin] (split-with catch? catches)\n        e (gensym \"e\")]\n    (assert (every? #(clojure.core/> (count %) 2) catches) \"catch block must specify a prototype and a name\")\n    (if (seq catches)\n      `(~'try*\n        ~@body\n        (catch ~e\n            (cond\n             ~@(mapcat\n                (fn [[_ type name & cb]]\n                  `[(instance? ~type ~e) (let [~name ~e] ~@cb)])\n                catches)\n             :else (throw ~e)))\n        ~@fin)\n      `(~'try*\n        ~@body\n        ~@fin))))",
           :repo "clojurescript",
-          :tag "r1844",
+          :tag "r1847",
           :filename "src/clj/cljs/core.clj",
           :lines [989 1017]},
  :full-name "cljs.core/try",
