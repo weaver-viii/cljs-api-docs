@@ -76,13 +76,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.9
+tools.reader @ tools.reader-0.8.10
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:624-635](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.9/src/main/clojure/clojure/tools/reader.clj#L624-L635)</ins>
+                    └── <ins>[reader.clj:612-623](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.10/src/main/clojure/clojure/tools/reader.clj#L612-L623)</ins>
 </pre>
 
 
@@ -108,7 +108,7 @@ tools.reader @ tools.reader-0.8.9
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.9
+tools.reader @ tools.reader-0.8.10
 └── src
     └── main
         └── clojure
@@ -116,7 +116,7 @@ tools.reader @ tools.reader-0.8.9
                 └── tools
                     └── reader
                         └── impl
-                            └── <ins>[commons.clj:129-144](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.9/src/main/clojure/clojure/tools/reader/impl/commons.clj#L129-L144)</ins>
+                            └── <ins>[commons.clj:129-144](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.10/src/main/clojure/clojure/tools/reader/impl/commons.clj#L129-L144)</ins>
 </pre>
 
 ---
@@ -144,12 +144,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_regex",
  :source {:code "(defn- dispatch-macros [ch]\n  (case ch\n    \\^ read-meta                ;deprecated\n    \\' (wrapping-reader 'var)\n    \\( read-fn\n    \\= read-eval\n    \\{ read-set\n    \\< (throwing-reader \"Unreadable form\")\n    \\\" read-regex\n    \\! read-comment\n    \\_ read-discard\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.9",
+          :tag "tools.reader-0.8.10",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [624 635]},
+          :lines [612 623]},
  :extra-sources [{:code "(defn read-regex\n  [rdr ch]\n  (let [sb (StringBuilder.)]\n    (loop [ch (read-char rdr)]\n      (if (identical? \\\" ch)\n        (Pattern/compile (str sb))\n        (if (nil? ch)\n          (reader-error rdr \"EOF while reading regex\")\n          (do\n            (.append sb ch )\n            (when (identical? \\\\ ch)\n              (let [ch (read-char rdr)]\n                (if (nil? ch)\n                  (reader-error rdr \"EOF while reading regex\"))\n                (.append sb ch)))\n            (recur (read-char rdr))))))))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.8.9",
+                  :tag "tools.reader-0.8.10",
                   :filename "src/main/clojure/clojure/tools/reader/impl/commons.clj",
                   :lines [129 144]}],
  :syntax-form "#\"\"",

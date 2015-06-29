@@ -42,11 +42,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4244-4247](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L4244-L4247)</ins>
+            └── <ins>[core.cljs:4341-4344](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L4341-L4344)</ins>
 </pre>
 
 
@@ -66,11 +66,11 @@ clojurescript @ r2371
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1434-1443](https://github.com/clojure/clojurescript/blob/r2371/src/clj/cljs/core.clj#L1434-L1443)</ins>
+            └── <ins>[core.clj:1414-1423](https://github.com/clojure/clojurescript/blob/r2411/src/clj/cljs/core.clj#L1414-L1423)</ins>
 </pre>
 
 ---
@@ -99,14 +99,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_vector",
  :source {:code "(defn vector [& args]\n  (if (and (instance? IndexedSeq args) (zero? (.-i args)))\n    (.fromArray PersistentVector (.-arr args) true)\n    (vec args)))",
           :repo "clojurescript",
-          :tag "r2371",
+          :tag "r2411",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [4244 4247]},
+          :lines [4341 4344]},
  :extra-sources ({:code "(defmacro vector\n  ([] '(.-EMPTY cljs.core/PersistentVector))\n  ([& xs]\n    (let [cnt (count xs)]\n      (if (core/< cnt 32)\n        `(cljs.core/PersistentVector. nil ~cnt 5\n           (.-EMPTY-NODE cljs.core/PersistentVector) (array ~@xs) nil)\n        (vary-meta\n          `(.fromArray cljs.core/PersistentVector (array ~@xs) true)\n          assoc :tag 'cljs.core/PersistentVector)))))",
                   :repo "clojurescript",
-                  :tag "r2371",
+                  :tag "r2411",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [1434 1443]}),
+                  :lines [1414 1423]}),
  :full-name "cljs.core/vector",
  :clj-symbol "clojure.core/vector"}
 

@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── cljs
         └── clojure
-            └── <ins>[string.cljs:147-157](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/clojure/string.cljs#L147-L157)</ins>
+            └── <ins>[string.cljs:151-161](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/clojure/string.cljs#L151-L161)</ins>
 </pre>
 
 
@@ -77,9 +77,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.string_trim-newline",
  :source {:code "(defn trim-newline\n  [s]\n  (loop [index (.-length s)]\n    (if (zero? index)\n      \"\"\n      (let [ch (get s (dec index))]\n        (if (or (= ch \\newline) (= ch \\return))\n          (recur (dec index))\n          (.substring s 0 index))))))",
           :repo "clojurescript",
-          :tag "r2371",
+          :tag "r2411",
           :filename "src/cljs/clojure/string.cljs",
-          :lines [147 157]},
+          :lines [151 161]},
  :full-name "clojure.string/trim-newline",
  :clj-symbol "clojure.string/trim-newline",
  :docstring "Removes all trailing newline \\n or return \\r characters from\nstring.  Similar to Perl's chomp."}

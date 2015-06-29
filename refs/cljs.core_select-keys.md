@@ -43,15 +43,15 @@ Source code:
              (assoc ret key entry)
              ret)
            (next keys)))
-        ret)))
+        (with-meta ret (meta map)))))
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7068-7080](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L7068-L7080)</ins>
+            └── <ins>[core.cljs:7182-7194](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L7182-L7194)</ins>
 </pre>
 
 
@@ -75,11 +75,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.core_select-keys",
- :source {:code "(defn select-keys\n  [map keyseq]\n    (loop [ret {} keys (seq keyseq)]\n      (if keys\n        (let [key   (first keys)\n              entry (get map key ::not-found)]\n          (recur\n           (if (not= entry ::not-found)\n             (assoc ret key entry)\n             ret)\n           (next keys)))\n        ret)))",
+ :source {:code "(defn select-keys\n  [map keyseq]\n    (loop [ret {} keys (seq keyseq)]\n      (if keys\n        (let [key   (first keys)\n              entry (get map key ::not-found)]\n          (recur\n           (if (not= entry ::not-found)\n             (assoc ret key entry)\n             ret)\n           (next keys)))\n        (with-meta ret (meta map)))))",
           :repo "clojurescript",
-          :tag "r2371",
+          :tag "r2411",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7068 7080]},
+          :lines [7182 7194]},
  :full-name "cljs.core/select-keys",
  :clj-symbol "clojure.core/select-keys",
  :docstring "Returns a map containing only those entries in map whose key is in keys"}

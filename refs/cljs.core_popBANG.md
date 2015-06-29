@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2804-2808](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L2804-L2808)</ins>
+            └── <ins>[core.cljs:2881-2885](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L2881-L2885)</ins>
 </pre>
 
 
@@ -65,9 +65,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_popBANG",
  :source {:code "(defn pop!\n  [tcoll]\n  (-pop! tcoll))",
           :repo "clojurescript",
-          :tag "r2371",
+          :tag "r2411",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2804 2808]},
+          :lines [2881 2885]},
  :full-name "cljs.core/pop!",
  :clj-symbol "clojure.core/pop!",
  :docstring "Removes the last item from a transient vector. If\nthe collection is empty, throws an exception. Returns coll"}

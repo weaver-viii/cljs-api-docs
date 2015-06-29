@@ -97,13 +97,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.9
+tools.reader @ tools.reader-0.8.10
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:603-622](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.9/src/main/clojure/clojure/tools/reader.clj#L603-L622)</ins>
+                    └── <ins>[reader.clj:591-610](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.10/src/main/clojure/clojure/tools/reader.clj#L591-L610)</ins>
 </pre>
 
 
@@ -132,13 +132,13 @@ tools.reader @ tools.reader-0.8.9
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.9
+tools.reader @ tools.reader-0.8.10
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:320-338](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.9/src/main/clojure/clojure/tools/reader.clj#L320-L338)</ins>
+                    └── <ins>[reader.clj:315-333](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.10/src/main/clojure/clojure/tools/reader.clj#L315-L333)</ins>
 </pre>
 
 ---
@@ -163,14 +163,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_keyword",
  :source {:code "(defn- macros [ch]\n  (case ch\n    \\\" read-string*\n    \\: read-keyword\n    \\; read-comment\n    \\' (wrapping-reader 'quote)\n    \\@ (wrapping-reader 'clojure.core/deref)\n    \\^ read-meta\n    \\` read-syntax-quote ;;(wrapping-reader 'syntax-quote)\n    \\~ read-unquote\n    \\( read-list\n    \\) read-unmatched-delimiter\n    \\[ read-vector\n    \\] read-unmatched-delimiter\n    \\{ read-map\n    \\} read-unmatched-delimiter\n    \\\\ read-char*\n    \\% read-arg\n    \\# read-dispatch\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.9",
+          :tag "tools.reader-0.8.10",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [603 622]},
+          :lines [591 610]},
  :extra-sources [{:code "(defn- read-keyword\n  [reader initch]\n  (let [ch (read-char reader)]\n    (if-not (whitespace? ch)\n      (let [token (read-token reader ch)\n            s (parse-symbol token)]\n        (if s\n          (let [^String ns (s 0)\n                ^String name (s 1)]\n            (if (identical? \\: (nth token 0))\n              (if ns\n                (let [ns (resolve-ns (symbol (subs ns 1)))]\n                  (if ns\n                    (keyword (str ns) name)\n                    (reader-error reader \"Invalid token: :\" token)))\n                (keyword (str *ns*) (subs name 1)))\n              (keyword ns name)))\n          (reader-error reader \"Invalid token: :\" token)))\n      (reader-error reader \"Invalid token: :\"))))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.8.9",
+                  :tag "tools.reader-0.8.10",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [320 338]}],
+                  :lines [315 333]}],
  :syntax-form ":",
  :examples [{:id "e5fdbe",
              :content "```clj\n:foo\n;;=> :foo\n\n::foo\n;;=> :user/foo\n\n:a/foo\n;;=> :a/foo\n```"}

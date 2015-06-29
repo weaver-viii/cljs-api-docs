@@ -21,11 +21,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:388-389](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L388-L389)</ins>
+            └── <ins>[core.cljs:399-400](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L399-L400)</ins>
 </pre>
 
 
@@ -48,9 +48,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IReset",
  :source {:code "(defprotocol IReset\n  (-reset! [o new-value]))",
           :repo "clojurescript",
-          :tag "r2371",
+          :tag "r2411",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [388 389]},
+          :lines [399 400]},
  :methods [{:name "-reset!",
             :signature ["[o new-value]"],
             :docstring nil}],

@@ -21,11 +21,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:379-380](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L379-L380)</ins>
+            └── <ins>[core.cljs:390-391](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L390-L391)</ins>
 </pre>
 
 
@@ -48,9 +48,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IChunkedNext",
  :source {:code "(defprotocol IChunkedNext\n  (-chunked-next [coll]))",
           :repo "clojurescript",
-          :tag "r2371",
+          :tag "r2411",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [379 380]},
+          :lines [390 391]},
  :methods [{:name "-chunked-next",
             :signature ["[coll]"],
             :docstring nil}],

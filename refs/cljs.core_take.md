@@ -62,7 +62,7 @@ Source code:
                              (rf result input)
                              result)]
                 (if (not (pos? nn))
-                  (reduced result)
+                  (ensure-reduced result)
                   result)))))))
   ([n coll]
      (lazy-seq
@@ -72,11 +72,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3576-3599](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L3576-L3599)</ins>
+            └── <ins>[core.cljs:3655-3678](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L3655-L3678)</ins>
 </pre>
 
 
@@ -104,11 +104,11 @@ __Meta__ - To retrieve the API data for this symbol:
            "cljs.core/take-last"
            "cljs.core/take-nth"],
  :full-name-encode "cljs.core_take",
- :source {:code "(defn take\n  ([n]\n     (fn [rf]\n       (let [na (atom n)]\n         (fn\n           ([] (rf))\n           ([result] (rf result))\n           ([result input]\n              (let [n @na\n                    nn (swap! na dec)\n                    result (if (pos? n)\n                             (rf result input)\n                             result)]\n                (if (not (pos? nn))\n                  (reduced result)\n                  result)))))))\n  ([n coll]\n     (lazy-seq\n       (when (pos? n)\n         (when-let [s (seq coll)]\n           (cons (first s) (take (dec n) (rest s))))))))",
+ :source {:code "(defn take\n  ([n]\n     (fn [rf]\n       (let [na (atom n)]\n         (fn\n           ([] (rf))\n           ([result] (rf result))\n           ([result input]\n              (let [n @na\n                    nn (swap! na dec)\n                    result (if (pos? n)\n                             (rf result input)\n                             result)]\n                (if (not (pos? nn))\n                  (ensure-reduced result)\n                  result)))))))\n  ([n coll]\n     (lazy-seq\n       (when (pos? n)\n         (when-let [s (seq coll)]\n           (cons (first s) (take (dec n) (rest s))))))))",
           :repo "clojurescript",
-          :tag "r2371",
+          :tag "r2411",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3576 3599]},
+          :lines [3655 3678]},
  :full-name "cljs.core/take",
  :clj-symbol "clojure.core/take",
  :docstring "Returns a lazy sequence of the first n items in coll, or all items if\nthere are fewer than n.  Returns a stateful transducer when\nno collection is provided."}

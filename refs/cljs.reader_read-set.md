@@ -27,11 +27,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:378-380](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/reader.cljs#L378-L380)</ins>
+            └── <ins>[reader.cljs:378-380](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/reader.cljs#L378-L380)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[rdr _]"],
  :source {:code "(defn read-set\n  [rdr _]\n  (set (read-delimited-list \"}\" rdr true)))",
           :repo "clojurescript",
-          :tag "r2371",
+          :tag "r2411",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [378 380]},
  :full-name "cljs.reader/read-set",

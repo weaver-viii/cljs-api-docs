@@ -62,13 +62,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.9
+tools.reader @ tools.reader-0.8.10
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:624-635](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.9/src/main/clojure/clojure/tools/reader.clj#L624-L635)</ins>
+                    └── <ins>[reader.clj:612-623](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.10/src/main/clojure/clojure/tools/reader.clj#L612-L623)</ins>
 </pre>
 
 
@@ -79,9 +79,7 @@ tools.reader @ tools.reader-0.8.9
   [rdr _]
   (let [[start-line start-column] (when (indexing-reader? rdr)
                                     [(get-line-number rdr) (int (dec (get-column-number rdr)))])
-        the-set (if gensym-env
-                  (SyntaxQuotedSet. (read-delimited \} rdr true))
-                  (PersistentHashSet/createWithCheck (read-delimited \} rdr true)))
+        the-set (PersistentHashSet/createWithCheck (read-delimited \} rdr true))
         [end-line end-column] (when (indexing-reader? rdr)
                                 [(get-line-number rdr) (int (get-column-number rdr))])]
     (with-meta the-set
@@ -96,13 +94,13 @@ tools.reader @ tools.reader-0.8.9
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.9
+tools.reader @ tools.reader-0.8.10
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:364-381](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.9/src/main/clojure/clojure/tools/reader.clj#L364-L381)</ins>
+                    └── <ins>[reader.clj:358-373](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.10/src/main/clojure/clojure/tools/reader.clj#L358-L373)</ins>
 </pre>
 
 ---
@@ -129,14 +127,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_set",
  :source {:code "(defn- dispatch-macros [ch]\n  (case ch\n    \\^ read-meta                ;deprecated\n    \\' (wrapping-reader 'var)\n    \\( read-fn\n    \\= read-eval\n    \\{ read-set\n    \\< (throwing-reader \"Unreadable form\")\n    \\\" read-regex\n    \\! read-comment\n    \\_ read-discard\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.9",
+          :tag "tools.reader-0.8.10",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [624 635]},
- :extra-sources [{:code "(defn- read-set\n  [rdr _]\n  (let [[start-line start-column] (when (indexing-reader? rdr)\n                                    [(get-line-number rdr) (int (dec (get-column-number rdr)))])\n        the-set (if gensym-env\n                  (SyntaxQuotedSet. (read-delimited \\} rdr true))\n                  (PersistentHashSet/createWithCheck (read-delimited \\} rdr true)))\n        [end-line end-column] (when (indexing-reader? rdr)\n                                [(get-line-number rdr) (int (get-column-number rdr))])]\n    (with-meta the-set\n      (when start-line\n        (merge\n         (when-let [file (get-file-name rdr)]\n           {:file file})\n         {:line start-line\n          :column start-column\n          :end-line end-line\n          :end-column end-column})))))",
+          :lines [612 623]},
+ :extra-sources [{:code "(defn- read-set\n  [rdr _]\n  (let [[start-line start-column] (when (indexing-reader? rdr)\n                                    [(get-line-number rdr) (int (dec (get-column-number rdr)))])\n        the-set (PersistentHashSet/createWithCheck (read-delimited \\} rdr true))\n        [end-line end-column] (when (indexing-reader? rdr)\n                                [(get-line-number rdr) (int (get-column-number rdr))])]\n    (with-meta the-set\n      (when start-line\n        (merge\n         (when-let [file (get-file-name rdr)]\n           {:file file})\n         {:line start-line\n          :column start-column\n          :end-line end-line\n          :end-column end-column})))))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.8.9",
+                  :tag "tools.reader-0.8.10",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [364 381]}],
+                  :lines [358 373]}],
  :syntax-form "#{}",
  :examples [{:id "f11ab6",
              :content "```clj\n#{1 2 3}\n;;=> #{1 2 3}\n```\n\nDuplicate values will cause an error:\n\n```clj\n#{1 1 2 3}\n;; Error: Duplicate key: 1\n```"}],

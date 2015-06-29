@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── cljs
         └── clojure
-            └── <ins>[string.cljs:58-61](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/clojure/string.cljs#L58-L61)</ins>
+            └── <ins>[string.cljs:62-65](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/clojure/string.cljs#L62-L65)</ins>
 </pre>
 
 
@@ -68,9 +68,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.string_lower-case",
  :source {:code "(defn lower-case\n  [s]\n  (.toLowerCase s))",
           :repo "clojurescript",
-          :tag "r2371",
+          :tag "r2411",
           :filename "src/cljs/clojure/string.cljs",
-          :lines [58 61]},
+          :lines [62 65]},
  :full-name "clojure.string/lower-case",
  :clj-symbol "clojure.string/lower-case",
  :docstring "Converts string to all lower-case."}

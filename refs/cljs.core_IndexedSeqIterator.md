@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:865-872](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L865-L872)</ins>
+            └── <ins>[core.cljs:920-927](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L920-L927)</ins>
 </pre>
 
 
@@ -59,9 +59,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[arr i]"],
  :source {:code "(deftype IndexedSeqIterator [arr ^:mutable i]\n  Object\n  (hasNext [_]\n    (< i (alength arr)))\n  (next [_]\n    (let [ret (aget arr i)]\n      (set! i (inc i))\n      ret)))",
           :repo "clojurescript",
-          :tag "r2371",
+          :tag "r2411",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [865 872]},
+          :lines [920 927]},
  :full-name "cljs.core/IndexedSeqIterator",
  :full-name-encode "cljs.core_IndexedSeqIterator",
  :history [["+" "0.0-2371"]]}

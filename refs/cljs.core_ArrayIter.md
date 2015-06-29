@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2923-2930](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L2923-L2930)</ins>
+            └── <ins>[core.cljs:3000-3007](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L3000-L3007)</ins>
 </pre>
 
 
@@ -59,9 +59,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[arr i]"],
  :source {:code "(deftype ArrayIter [arr ^:mutable i]\n  Object\n  (hasNext [_] (< i (alength arr)))\n  (next [_]\n    (let [ret (aget arr i)]\n      (set! i (inc i))\n      ret))\n  (remove [_] (js/Error. \"Unsupported operation\")))",
           :repo "clojurescript",
-          :tag "r2371",
+          :tag "r2411",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2923 2930]},
+          :lines [3000 3007]},
  :full-name "cljs.core/ArrayIter",
  :full-name-encode "cljs.core_ArrayIter",
  :history [["+" "0.0-2301"]]}

@@ -40,11 +40,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:596-605](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L596-L605)</ins>
+            └── <ins>[core.cljs:610-619](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L610-L619)</ins>
 </pre>
 
 
@@ -69,9 +69,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_symbol",
  :source {:code "(defn symbol\n  ([name]\n     (if (symbol? name)\n       name\n       (symbol nil name)))\n  ([ns name]\n     (let [sym-str (if-not (nil? ns)\n                     (str ns \"/\" name)\n                     name)]\n       (Symbol. ns name sym-str nil nil))))",
           :repo "clojurescript",
-          :tag "r2371",
+          :tag "r2411",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [596 605]},
+          :lines [610 619]},
  :full-name "cljs.core/symbol",
  :clj-symbol "clojure.core/symbol"}
 

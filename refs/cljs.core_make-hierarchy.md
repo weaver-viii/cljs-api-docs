@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8453-8455](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L8453-L8455)</ins>
+            └── <ins>[core.cljs:8576-8578](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L8576-L8578)</ins>
 </pre>
 
 
@@ -63,9 +63,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_make-hierarchy",
  :source {:code "(defn make-hierarchy\n  [] {:parents {} :descendants {} :ancestors {}})",
           :repo "clojurescript",
-          :tag "r2371",
+          :tag "r2411",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [8453 8455]},
+          :lines [8576 8578]},
  :full-name "cljs.core/make-hierarchy",
  :clj-symbol "clojure.core/make-hierarchy",
  :docstring "Creates a hierarchy object for use with derive, isa? etc."}

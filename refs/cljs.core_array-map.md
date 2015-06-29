@@ -55,15 +55,15 @@ Source code:
 ```clj
 (defn array-map
   [& keyvals]
-  (PersistentArrayMap. nil (quot (count keyvals) 2) (apply array keyvals) nil))
+  (.fromArray cljs.core/PersistentArrayMap (apply array keyvals) true false))
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6874-6878](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L6874-L6878)</ins>
+            └── <ins>[core.cljs:6984-6988](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L6984-L6988)</ins>
 </pre>
 
 
@@ -73,26 +73,20 @@ clojurescript @ r2371
 (defmacro array-map
   ([] '(.-EMPTY cljs.core/PersistentArrayMap))
   ([& kvs]
-    (core/cond
-      (core/> (count kvs) 16)
-      `(hash-map ~@kvs)
-      
-      (let [keys (map first (partition 2 kvs))]
-        (core/and (every? #(= (:op %) :constant)
-                    (map #(cljs.analyzer/analyze &env %) keys))
-                  (= (count (into #{} keys)) (count keys))))
-      `(cljs.core/PersistentArrayMap. nil ~(clojure.core// (count kvs) 2) (array ~@kvs) nil)
-
-      :else
-      `(.fromArray cljs.core/PersistentArrayMap (array ~@kvs) true false))))
+     (let [keys (map first (partition 2 kvs))]
+       (if (core/and (every? #(= (:op %) :constant)
+                       (map #(cljs.analyzer/analyze &env %) keys))
+                     (= (count (into #{} keys)) (count keys)))
+         `(cljs.core/PersistentArrayMap. nil ~(clojure.core// (count kvs) 2) (array ~@kvs) nil)
+         `(.fromArray cljs.core/PersistentArrayMap (array ~@kvs) true false)))))
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1445-1459](https://github.com/clojure/clojurescript/blob/r2371/src/clj/cljs/core.clj#L1445-L1459)</ins>
+            └── <ins>[core.clj:1425-1433](https://github.com/clojure/clojurescript/blob/r2411/src/clj/cljs/core.clj#L1425-L1433)</ins>
 </pre>
 
 ---
@@ -118,16 +112,16 @@ __Meta__ - To retrieve the API data for this symbol:
            "cljs.core/hash-map"
            "cljs.core/sorted-map"],
  :full-name-encode "cljs.core_array-map",
- :source {:code "(defn array-map\n  [& keyvals]\n  (PersistentArrayMap. nil (quot (count keyvals) 2) (apply array keyvals) nil))",
+ :source {:code "(defn array-map\n  [& keyvals]\n  (.fromArray cljs.core/PersistentArrayMap (apply array keyvals) true false))",
           :repo "clojurescript",
-          :tag "r2371",
+          :tag "r2411",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6874 6878]},
- :extra-sources ({:code "(defmacro array-map\n  ([] '(.-EMPTY cljs.core/PersistentArrayMap))\n  ([& kvs]\n    (core/cond\n      (core/> (count kvs) 16)\n      `(hash-map ~@kvs)\n      \n      (let [keys (map first (partition 2 kvs))]\n        (core/and (every? #(= (:op %) :constant)\n                    (map #(cljs.analyzer/analyze &env %) keys))\n                  (= (count (into #{} keys)) (count keys))))\n      `(cljs.core/PersistentArrayMap. nil ~(clojure.core// (count kvs) 2) (array ~@kvs) nil)\n\n      :else\n      `(.fromArray cljs.core/PersistentArrayMap (array ~@kvs) true false))))",
+          :lines [6984 6988]},
+ :extra-sources ({:code "(defmacro array-map\n  ([] '(.-EMPTY cljs.core/PersistentArrayMap))\n  ([& kvs]\n     (let [keys (map first (partition 2 kvs))]\n       (if (core/and (every? #(= (:op %) :constant)\n                       (map #(cljs.analyzer/analyze &env %) keys))\n                     (= (count (into #{} keys)) (count keys)))\n         `(cljs.core/PersistentArrayMap. nil ~(clojure.core// (count kvs) 2) (array ~@kvs) nil)\n         `(.fromArray cljs.core/PersistentArrayMap (array ~@kvs) true false)))))",
                   :repo "clojurescript",
-                  :tag "r2371",
+                  :tag "r2411",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [1445 1459]}),
+                  :lines [1425 1433]}),
  :examples [{:id "198026",
              :content "```clj\n(array-map :a 10)\n;;=> {:a 10}\n\n(array-map :a 10 :b 20)\n;;=> {:a 10 :b 20}\n```"}],
  :full-name "cljs.core/array-map",

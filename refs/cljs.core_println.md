@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8015-8020](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L8015-L8020)</ins>
+            └── <ins>[core.cljs:8135-8140](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L8135-L8140)</ins>
 </pre>
 
 
@@ -66,9 +66,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_println",
  :source {:code "(defn println\n  [& objs]\n  (pr-with-opts objs (assoc (pr-opts) :readably false))\n  (when *print-newline*\n    (newline (pr-opts))))",
           :repo "clojurescript",
-          :tag "r2371",
+          :tag "r2411",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [8015 8020]},
+          :lines [8135 8140]},
  :full-name "cljs.core/println",
  :clj-symbol "clojure.core/println",
  :docstring "Same as print followed by (newline)"}

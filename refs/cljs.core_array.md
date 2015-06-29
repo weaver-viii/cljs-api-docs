@@ -72,11 +72,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:166-170](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L166-L170)</ins>
+            └── <ins>[core.cljs:171-175](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/cljs/core.cljs#L171-L175)</ins>
 </pre>
 
 
@@ -94,11 +94,11 @@ clojurescript @ r2371
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1412-1419](https://github.com/clojure/clojurescript/blob/r2371/src/clj/cljs/core.clj#L1412-L1419)</ins>
+            └── <ins>[core.clj:1392-1399](https://github.com/clojure/clojurescript/blob/r2411/src/clj/cljs/core.clj#L1392-L1399)</ins>
 </pre>
 
 ---
@@ -127,14 +127,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_array",
  :source {:code "(defn ^array array\n  [var-args]            ;; [& items]\n  (.. js/Array -prototype -slice (call (cljs.core/js-arguments))))",
           :repo "clojurescript",
-          :tag "r2371",
+          :tag "r2411",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [166 170]},
+          :lines [171 175]},
  :extra-sources ({:code "(defmacro array [& rest]\n  (let [xs-str (->> (repeat \"~{}\")\n                    (take (count rest))\n                    (interpose \",\")\n                    (apply core/str))]\n    (vary-meta\n      (list* 'js* (core/str \"[\" xs-str \"]\") rest)\n      assoc :tag 'array)))",
                   :repo "clojurescript",
-                  :tag "r2371",
+                  :tag "r2411",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [1412 1419]}),
+                  :lines [1392 1399]}),
  :examples [{:id "3a546d",
              :content "```clj\n(array 1 2 3)\n;;=> #js [1 2 3]\n\n(apply array [1 2 3])\n;;=> #js [1 2 3]\n\n#js [1 2 3]\n;;=> #js [1 2 3]\n```"}
             {:id "cca945",

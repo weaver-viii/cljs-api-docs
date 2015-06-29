@@ -34,15 +34,16 @@ Source code:
 ```clj
 (defn reverse
   [s]
-  (.. s (split "") (reverse) (join "")))
+  (-> (.replace s re-surrogate-pair "$2$1")
+      (.. (split "") (reverse) (join ""))))
 ```
 
  <pre>
-clojurescript @ r2371
+clojurescript @ r2411
 └── src
     └── cljs
         └── clojure
-            └── <ins>[string.cljs:18-21](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/clojure/string.cljs#L18-L21)</ins>
+            └── <ins>[string.cljs:21-25](https://github.com/clojure/clojurescript/blob/r2411/src/cljs/clojure/string.cljs#L21-L25)</ins>
 </pre>
 
 
@@ -66,11 +67,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "clojure.string_reverse",
- :source {:code "(defn reverse\n  [s]\n  (.. s (split \"\") (reverse) (join \"\")))",
+ :source {:code "(defn reverse\n  [s]\n  (-> (.replace s re-surrogate-pair \"$2$1\")\n      (.. (split \"\") (reverse) (join \"\"))))",
           :repo "clojurescript",
-          :tag "r2371",
+          :tag "r2411",
           :filename "src/cljs/clojure/string.cljs",
-          :lines [18 21]},
+          :lines [21 25]},
  :full-name "clojure.string/reverse",
  :clj-symbol "clojure.string/reverse",
  :docstring "Returns s with its characters reversed."}
