@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2127
+clojurescript @ r2134
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1536](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/core.cljs#L1536)</ins>
+            └── <ins>[core.cljs:1552](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/cljs/core.cljs#L1552)</ins>
 </pre>
 
 
@@ -43,11 +43,11 @@ clojurescript @ r2127
 ```
 
  <pre>
-clojurescript @ r2127
+clojurescript @ r2134
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:341](https://github.com/clojure/clojurescript/blob/r2127/src/clj/cljs/core.clj#L341)</ins>
+            └── <ins>[core.clj:338](https://github.com/clojure/clojurescript/blob/r2134/src/clj/cljs/core.clj#L338)</ins>
 </pre>
 
 ---
@@ -72,14 +72,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_float",
  :source {:code "(defn ^number float [x] x)",
           :repo "clojurescript",
-          :tag "r2127",
+          :tag "r2134",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1536]},
+          :lines [1552]},
  :extra-sources ({:code "(defmacro float [x] x)",
                   :repo "clojurescript",
-                  :tag "r2127",
+                  :tag "r2134",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [341]}),
+                  :lines [338]}),
  :full-name "cljs.core/float",
  :clj-symbol "clojure.core/float"}
 

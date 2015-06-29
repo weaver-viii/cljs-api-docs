@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2127
+clojurescript @ r2134
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:135-140](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/clojure/zip.cljs#L135-L140)</ins>
+            └── <ins>[zip.cljs:135-140](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/clojure/zip.cljs#L135-L140)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_right",
  :source {:code "(defn right\n  [loc]\n    (let [[node {l :l  [r & rnext :as rs] :r :as path}] loc]\n      (when (and path rs)\n        (with-meta [r (assoc path :l (conj l node) :r rnext)] (meta loc)))))",
           :repo "clojurescript",
-          :tag "r2127",
+          :tag "r2134",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [135 140]},
  :full-name "clojure.zip/right",

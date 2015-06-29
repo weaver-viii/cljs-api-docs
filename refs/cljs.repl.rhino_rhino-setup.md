@@ -40,12 +40,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2127
+clojurescript @ r2134
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[rhino.clj:94-109](https://github.com/clojure/clojurescript/blob/r2127/src/clj/cljs/repl/rhino.clj#L94-L109)</ins>
+                └── <ins>[rhino.clj:94-109](https://github.com/clojure/clojurescript/blob/r2134/src/clj/cljs/repl/rhino.clj#L94-L109)</ins>
 </pre>
 
 
@@ -68,7 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[repl-env]"],
  :source {:code "(defn rhino-setup [repl-env]\n  (let [env (ana/empty-env)\n        scope (:scope repl-env)]\n    (repl/load-file repl-env \"cljs/core.cljs\")\n    (swap! (:loaded-libs repl-env) conj \"cljs.core\")\n    (repl/evaluate-form repl-env\n                        env\n                        \"<cljs repl>\"\n                        '(ns cljs.user))\n    (ScriptableObject/putProperty scope\n                                  \"out\"\n                                  (Context/javaToJS *out* scope))\n    (repl/evaluate-form repl-env\n                        env\n                        \"<cljs repl>\"\n                        '(set! *print-fn* (fn [x] (.write js/out x))))))",
           :repo "clojurescript",
-          :tag "r2127",
+          :tag "r2134",
           :filename "src/clj/cljs/repl/rhino.clj",
           :lines [94 109]},
  :full-name "cljs.repl.rhino/rhino-setup",

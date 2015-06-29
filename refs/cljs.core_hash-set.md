@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2127
+clojurescript @ r2134
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6273-6275](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/core.cljs#L6273-L6275)</ins>
+            └── <ins>[core.cljs:6324-6326](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/cljs/core.cljs#L6324-L6326)</ins>
 </pre>
 
 
@@ -58,7 +58,8 @@ clojurescript @ r2127
 (defmacro hash-set
   ([] `cljs.core.PersistentHashSet.EMPTY)
   ([& xs]
-    (if (core/and (every? #(= (:op %) :constant)
+    (if (core/and (core/<= (count xs) 8)
+                  (every? #(= (:op %) :constant)
                     (map #(cljs.analyzer/analyze &env %) xs))
                   (= (count (into #{} xs)) (count xs)))
       `(cljs.core.PersistentHashSet. nil
@@ -70,11 +71,11 @@ clojurescript @ r2127
 ```
 
  <pre>
-clojurescript @ r2127
+clojurescript @ r2134
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1348-1359](https://github.com/clojure/clojurescript/blob/r2127/src/clj/cljs/core.clj#L1348-L1359)</ins>
+            └── <ins>[core.clj:1345-1357](https://github.com/clojure/clojurescript/blob/r2134/src/clj/cljs/core.clj#L1345-L1357)</ins>
 </pre>
 
 ---
@@ -100,14 +101,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash-set",
  :source {:code "(defn hash-set\n  ([] #{})\n  ([& keys] (set keys)))",
           :repo "clojurescript",
-          :tag "r2127",
+          :tag "r2134",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6273 6275]},
- :extra-sources ({:code "(defmacro hash-set\n  ([] `cljs.core.PersistentHashSet.EMPTY)\n  ([& xs]\n    (if (core/and (every? #(= (:op %) :constant)\n                    (map #(cljs.analyzer/analyze &env %) xs))\n                  (= (count (into #{} xs)) (count xs)))\n      `(cljs.core.PersistentHashSet. nil\n         (cljs.core.PersistentArrayMap. nil ~(count xs) (array ~@(interleave xs (repeat nil))) nil)\n         nil)\n      (vary-meta\n        `(cljs.core.PersistentHashSet.fromArray (array ~@xs) true)\n        assoc :tag 'cljs.core/PersistentHashSet))))",
+          :lines [6324 6326]},
+ :extra-sources ({:code "(defmacro hash-set\n  ([] `cljs.core.PersistentHashSet.EMPTY)\n  ([& xs]\n    (if (core/and (core/<= (count xs) 8)\n                  (every? #(= (:op %) :constant)\n                    (map #(cljs.analyzer/analyze &env %) xs))\n                  (= (count (into #{} xs)) (count xs)))\n      `(cljs.core.PersistentHashSet. nil\n         (cljs.core.PersistentArrayMap. nil ~(count xs) (array ~@(interleave xs (repeat nil))) nil)\n         nil)\n      (vary-meta\n        `(cljs.core.PersistentHashSet.fromArray (array ~@xs) true)\n        assoc :tag 'cljs.core/PersistentHashSet))))",
                   :repo "clojurescript",
-                  :tag "r2127",
+                  :tag "r2134",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [1348 1359]}),
+                  :lines [1345 1357]}),
  :full-name "cljs.core/hash-set",
  :clj-symbol "clojure.core/hash-set"}
 

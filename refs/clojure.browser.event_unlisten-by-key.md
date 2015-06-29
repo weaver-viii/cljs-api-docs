@@ -27,12 +27,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2127
+clojurescript @ r2134
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[event.cljs:71-73](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/clojure/browser/event.cljs#L71-L73)</ins>
+                └── <ins>[event.cljs:71-73](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/clojure/browser/event.cljs#L71-L73)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[key]"],
  :source {:code "(defn unlisten-by-key\n  [key]\n  (goog.events/unlistenByKey key))",
           :repo "clojurescript",
-          :tag "r2127",
+          :tag "r2134",
           :filename "src/cljs/clojure/browser/event.cljs",
           :lines [71 73]},
  :full-name "clojure.browser.event/unlisten-by-key",

@@ -600,7 +600,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ICloneable</td>
-<td></td>
+<td>[ref](refs/cljs.core_ICloneable.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ICloneable.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1944,7 +1944,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/clone</td>
-<td></td>
+<td>[ref](refs/cljs.core_clone.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_clone.cljsdoc)</td>
 <td></td>
 <td></td>

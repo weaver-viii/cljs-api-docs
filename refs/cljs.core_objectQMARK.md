@@ -30,32 +30,19 @@ Source code:
 
 ```clj
 (defn ^boolean object? [x]
-  (cljs.core/object? x))
+  (if-not (nil? x)
+    (identical? (.-constructor x) js/Object)
+    false))
 ```
 
  <pre>
-clojurescript @ r2127
+clojurescript @ r2134
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:91-92](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/core.cljs#L91-L92)</ins>
+            └── <ins>[core.cljs:98-101](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/cljs/core.cljs#L98-L101)</ins>
 </pre>
 
-
----
-
-```clj
-(defmacro object? [x]
-  (bool-expr (core/list 'js* "~{}.constructor === Object" x)))
-```
-
- <pre>
-clojurescript @ r2127
-└── src
-    └── clj
-        └── cljs
-            └── <ins>[core.clj:282-283](https://github.com/clojure/clojurescript/blob/r2127/src/clj/cljs/core.clj#L282-L283)</ins>
-</pre>
 
 ---
 
@@ -79,16 +66,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/array?"],
  :full-name-encode "cljs.core_objectQMARK",
- :source {:code "(defn ^boolean object? [x]\n  (cljs.core/object? x))",
+ :source {:code "(defn ^boolean object? [x]\n  (if-not (nil? x)\n    (identical? (.-constructor x) js/Object)\n    false))",
           :repo "clojurescript",
-          :tag "r2127",
+          :tag "r2134",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [91 92]},
- :extra-sources ({:code "(defmacro object? [x]\n  (bool-expr (core/list 'js* \"~{}.constructor === Object\" x)))",
-                  :repo "clojurescript",
-                  :tag "r2127",
-                  :filename "src/clj/cljs/core.clj",
-                  :lines [282 283]}),
+          :lines [98 101]},
  :full-name "cljs.core/object?"}
 
 ```

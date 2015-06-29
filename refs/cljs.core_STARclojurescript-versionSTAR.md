@@ -23,11 +23,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2127
+clojurescript @ r2134
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:16](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/core.cljs#L16)</ins>
+            └── <ins>[core.cljs:16](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/cljs/core.cljs#L16)</ins>
 </pre>
 
 
@@ -49,7 +49,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def *clojurescript-version*)",
           :repo "clojurescript",
-          :tag "r2127",
+          :tag "r2134",
           :filename "src/cljs/cljs/core.cljs",
           :lines [16]},
  :full-name "cljs.core/*clojurescript-version*",

@@ -25,11 +25,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2127
+clojurescript @ r2134
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:352-354](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/core.cljs#L352-L354)</ins>
+            └── <ins>[core.cljs:357-359](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/cljs/core.cljs#L357-L359)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ITransientVector",
  :source {:code "(defprotocol ITransientVector\n  (^clj -assoc-n! [tcoll n val])\n  (^clj -pop! [tcoll]))",
           :repo "clojurescript",
-          :tag "r2127",
+          :tag "r2134",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [352 354]},
+          :lines [357 359]},
  :methods [{:name "-assoc-n!",
             :signature ["[tcoll n val]"],
             :docstring nil}

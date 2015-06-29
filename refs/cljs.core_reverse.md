@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2127
+clojurescript @ r2134
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1973-1978](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/core.cljs#L1973-L1978)</ins>
+            └── <ins>[core.cljs:1995-2000](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/cljs/core.cljs#L1995-L2000)</ins>
 </pre>
 
 
@@ -76,9 +76,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_reverse",
  :source {:code "(defn reverse\n  [coll]\n  (if (reversible? coll)\n    (rseq coll)\n    (reduce conj () coll)))",
           :repo "clojurescript",
-          :tag "r2127",
+          :tag "r2134",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1973 1978]},
+          :lines [1995 2000]},
  :full-name "cljs.core/reverse",
  :clj-symbol "clojure.core/reverse",
  :docstring "Returns a seq of the items in coll in reverse order. Not lazy."}

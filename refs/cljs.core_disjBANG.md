@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2127
+clojurescript @ r2134
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2484-2485](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/core.cljs#L2484-L2485)</ins>
+            └── <ins>[core.cljs:2512-2513](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/cljs/core.cljs#L2512-L2513)</ins>
 </pre>
 
 
@@ -58,9 +58,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_disjBANG",
  :source {:code "(defn disj! [tcoll val]\n  (-disjoin! tcoll val))",
           :repo "clojurescript",
-          :tag "r2127",
+          :tag "r2134",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2484 2485]},
+          :lines [2512 2513]},
  :full-name "cljs.core/disj!",
  :clj-symbol "clojure.core/disj!"}
 

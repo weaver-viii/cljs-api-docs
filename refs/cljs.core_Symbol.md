@@ -27,6 +27,8 @@ Source code:
 (deftype Symbol [ns name str ^:mutable _hash _meta]
   Object
   (toString [_] str)
+  ICloneable
+  (-clone [_] (Symbol. ns name str _hash _meta))
   IEquiv
   (-equiv [_ other]
     (if (instance? Symbol other)
@@ -52,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2127
+clojurescript @ r2134
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:418-442](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/core.cljs#L418-L442)</ins>
+            └── <ins>[core.cljs:423-449](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/cljs/core.cljs#L423-L449)</ins>
 </pre>
 
 
@@ -79,11 +81,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1798"]],
  :type "type",
  :full-name-encode "cljs.core_Symbol",
- :source {:code "(deftype Symbol [ns name str ^:mutable _hash _meta]\n  Object\n  (toString [_] str)\n  IEquiv\n  (-equiv [_ other]\n    (if (instance? Symbol other)\n      (identical? str (.-str other))\n      false))\n  IFn\n  (-invoke [sym coll]\n    (-lookup coll sym nil))\n  (-invoke [sym coll not-found]\n    (-lookup coll sym not-found))\n  IMeta\n  (-meta [_] _meta)\n  IWithMeta\n  (-with-meta [_ new-meta] (Symbol. ns name str _hash new-meta))\n  IHash\n  (-hash [sym]\n    (caching-hash sym hash-symbol _hash))\n  INamed\n  (-name [_] name)\n  (-namespace [_] ns)\n  IPrintWithWriter\n  (-pr-writer [o writer _] (-write writer str)))",
+ :source {:code "(deftype Symbol [ns name str ^:mutable _hash _meta]\n  Object\n  (toString [_] str)\n  ICloneable\n  (-clone [_] (Symbol. ns name str _hash _meta))\n  IEquiv\n  (-equiv [_ other]\n    (if (instance? Symbol other)\n      (identical? str (.-str other))\n      false))\n  IFn\n  (-invoke [sym coll]\n    (-lookup coll sym nil))\n  (-invoke [sym coll not-found]\n    (-lookup coll sym not-found))\n  IMeta\n  (-meta [_] _meta)\n  IWithMeta\n  (-with-meta [_ new-meta] (Symbol. ns name str _hash new-meta))\n  IHash\n  (-hash [sym]\n    (caching-hash sym hash-symbol _hash))\n  INamed\n  (-name [_] name)\n  (-namespace [_] ns)\n  IPrintWithWriter\n  (-pr-writer [o writer _] (-write writer str)))",
           :repo "clojurescript",
-          :tag "r2127",
+          :tag "r2134",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [418 442]},
+          :lines [423 449]},
  :full-name "cljs.core/Symbol",
  :clj-symbol "clojure.lang/Symbol"}
 
