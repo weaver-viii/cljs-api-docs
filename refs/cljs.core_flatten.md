@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3290-3296](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/core.cljs#L3290-L3296)</ins>
+            └── <ins>[core.cljs:3743-3749](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L3743-L3749)</ins>
 </pre>
 
 
@@ -74,9 +74,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_flatten",
  :source {:code "(defn flatten\n  [x]\n  (filter #(not (sequential? %))\n          (rest (tree-seq sequential? seq x))))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3290 3296]},
+          :lines [3743 3749]},
  :full-name "cljs.core/flatten",
  :clj-symbol "clojure.core/flatten",
  :docstring "Takes any nested combination of sequential things (lists, vectors,\netc.) and returns their contents as a single, flat sequence.\n(flatten nil) returns nil."}

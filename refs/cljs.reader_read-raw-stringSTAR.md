@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:302-315](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/reader.cljs#L302-L315)</ins>
+            └── <ins>[reader.cljs:303-316](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/reader.cljs#L303-L316)</ins>
 </pre>
 
 
@@ -65,9 +65,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[reader _]"],
  :source {:code "(defn read-raw-string*\n  [reader _]\n  (loop [buffer (gstring/StringBuffer.)\n         ch (read-char reader)]\n    (cond\n      (nil? ch) (reader-error reader \"EOF while reading\")\n      (identical? \"\\\\\" ch) (do (.append buffer ch)\n                             (let [nch (read-char reader)]\n                               (if (nil? nch)\n                                 (reader-error reader \"EOF while reading\")\n                                 (recur (doto buffer (.append nch))\n                                        (read-char reader)))))\n      (identical? \"\\\"\" ch) (.toString buffer)\n      :else (recur (doto buffer (.append ch)) (read-char reader)))))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/cljs/reader.cljs",
-          :lines [302 315]},
+          :lines [303 316]},
  :full-name "cljs.reader/read-raw-string*",
  :full-name-encode "cljs.reader_read-raw-stringSTAR",
  :history [["+" "0.0-2261"]]}

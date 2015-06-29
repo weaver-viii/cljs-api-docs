@@ -31,15 +31,15 @@ Source code:
   (set! *print-newline* false)
   (set! *print-fn*
     (fn [& args]
-      (.apply js/console.log js/console (into-array args)))))
+      (.apply (.-log js/console) js/console (into-array args)))))
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:49-55](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/core.cljs#L49-L55)</ins>
+            └── <ins>[core.cljs:49-55](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L49-L55)</ins>
 </pre>
 
 
@@ -62,9 +62,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-2060"]],
  :type "function",
  :full-name-encode "cljs.core_enable-console-printBANG",
- :source {:code "(defn enable-console-print!\n  []\n  (set! *print-newline* false)\n  (set! *print-fn*\n    (fn [& args]\n      (.apply js/console.log js/console (into-array args)))))",
+ :source {:code "(defn enable-console-print!\n  []\n  (set! *print-newline* false)\n  (set! *print-fn*\n    (fn [& args]\n      (.apply (.-log js/console) js/console (into-array args)))))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/cljs/core.cljs",
           :lines [49 55]},
  :full-name "cljs.core/enable-console-print!",

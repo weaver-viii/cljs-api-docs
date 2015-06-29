@@ -12,6 +12,12 @@
 </table>
 
  <samp>
+(__conj!__)<br>
+</samp>
+ <samp>
+(__conj!__ coll)<br>
+</samp>
+ <samp>
 (__conj!__ tcoll val)<br>
 </samp>
  <samp>
@@ -34,6 +40,8 @@ Source code:
 
 ```clj
 (defn conj!
+  ([] (transient []))
+  ([coll] coll)
   ([tcoll val]
     (-conj! tcoll val))
   ([tcoll val & vals]
@@ -44,11 +52,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2703-2712](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/core.cljs#L2703-L2712)</ins>
+            └── <ins>[core.cljs:2735-2746](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L2735-L2746)</ins>
 </pre>
 
 
@@ -67,15 +75,15 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "conj!",
- :signature ["[tcoll val]" "[tcoll val & vals]"],
+ :signature ["[]" "[coll]" "[tcoll val]" "[tcoll val & vals]"],
  :history [["+" "0.0-1211"]],
  :type "function",
  :full-name-encode "cljs.core_conjBANG",
- :source {:code "(defn conj!\n  ([tcoll val]\n    (-conj! tcoll val))\n  ([tcoll val & vals]\n    (let [ntcoll (-conj! tcoll val)]\n      (if vals\n        (recur ntcoll (first vals) (next vals))\n        ntcoll))))",
+ :source {:code "(defn conj!\n  ([] (transient []))\n  ([coll] coll)\n  ([tcoll val]\n    (-conj! tcoll val))\n  ([tcoll val & vals]\n    (let [ntcoll (-conj! tcoll val)]\n      (if vals\n        (recur ntcoll (first vals) (next vals))\n        ntcoll))))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2703 2712]},
+          :lines [2735 2746]},
  :full-name "cljs.core/conj!",
  :clj-symbol "clojure.core/conj!",
  :docstring "Adds x to the transient collection, and return coll. The 'addition'\nmay happen at different 'places' depending on the concrete type."}

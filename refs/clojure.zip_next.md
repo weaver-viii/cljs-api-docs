@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:206-219](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/clojure/zip.cljs#L206-L219)</ins>
+            └── <ins>[zip.cljs:206-219](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/clojure/zip.cljs#L206-L219)</ins>
 </pre>
 
 
@@ -74,7 +74,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_next",
  :source {:code "(defn next\n  [loc]\n    (if (= :end (loc 1))\n      loc\n      (or \n       (and (branch? loc) (down loc))\n       (right loc)\n       (loop [p loc]\n         (if (up p)\n           (or (right (up p)) (recur (up p)))\n           [(node p) :end])))))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [206 219]},
  :full-name "clojure.zip/next",

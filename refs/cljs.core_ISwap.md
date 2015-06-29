@@ -21,11 +21,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7472-7473](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/core.cljs#L7472-L7473)</ins>
+            └── <ins>[core.cljs:390-391](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L390-L391)</ins>
 </pre>
 
 
@@ -48,9 +48,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ISwap",
  :source {:code "(defprotocol ISwap\n  (-swap! [o f] [o f a] [o f a b] [o f a b xs]))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7472 7473]},
+          :lines [390 391]},
  :methods [{:name "-swap!",
             :signature ["[o f]" "[o f a]" "[o f a b]" "[o f a b xs]"],
             :docstring nil}],

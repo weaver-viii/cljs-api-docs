@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7170-7171](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/core.cljs#L7170-L7171)</ins>
+            └── <ins>[core.cljs:7714-7715](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L7714-L7715)</ins>
 </pre>
 
 
@@ -58,9 +58,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_flush",
  :source {:code "(defn flush [] ;stub\n  nil)",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7170 7171]},
+          :lines [7714 7715]},
  :full-name "cljs.core/flush",
  :clj-symbol "clojure.core/flush"}
 

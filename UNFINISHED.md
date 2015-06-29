@@ -344,7 +344,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ArrayIter</td>
-<td></td>
+<td>[ref](refs/cljs.core_ArrayIter.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ArrayIter.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -352,7 +352,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ArrayList</td>
-<td></td>
+<td>[ref](refs/cljs.core_ArrayList.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ArrayList.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1000,7 +1000,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/Iteration</td>
-<td></td>
+<td>[ref](refs/cljs.core_Iteration.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_Iteration.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1040,7 +1040,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/LazyTransformer</td>
-<td></td>
+<td>[ref](refs/cljs.core_LazyTransformer.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_LazyTransformer.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1048,7 +1048,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/LazyTransformer.create</td>
-<td></td>
+<td>[ref](refs/cljs.core_LazyTransformerDOTcreate.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_LazyTransformerDOTcreate.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1056,7 +1056,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/LazyTransformer.createMulti</td>
-<td></td>
+<td>[ref](refs/cljs.core_LazyTransformerDOTcreateMulti.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_LazyTransformerDOTcreateMulti.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1096,7 +1096,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/MultiStepper</td>
-<td></td>
+<td>[ref](refs/cljs.core_MultiStepper.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_MultiStepper.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1168,7 +1168,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentArrayMap.HASHMAP-THRESHOLD</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentArrayMapDOTHASHMAP-THRESHOLD.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentArrayMapDOTHASHMAP-THRESHOLD.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1352,7 +1352,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentVector.EMPTY-NODE</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentVectorDOTEMPTY-NODE.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentVectorDOTEMPTY-NODE.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1424,7 +1424,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/SeqIter</td>
-<td></td>
+<td>[ref](refs/cljs.core_SeqIter.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_SeqIter.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1456,7 +1456,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/Stepper</td>
-<td></td>
+<td>[ref](refs/cljs.core_Stepper.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_Stepper.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1472,7 +1472,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/StringIter</td>
-<td></td>
+<td>[ref](refs/cljs.core_StringIter.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_StringIter.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1744,7 +1744,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/array-iter</td>
-<td></td>
+<td>[ref](refs/cljs.core_array-iter.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_array-iter.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1752,7 +1752,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/array-list</td>
-<td></td>
+<td>[ref](refs/cljs.core_array-list.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_array-list.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2104,7 +2104,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/dedupe</td>
-<td></td>
+<td>[ref](refs/cljs.core_dedupe.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_dedupe.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2568,7 +2568,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/flatmap</td>
-<td></td>
+<td>[ref](refs/cljs.core_flatmap.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_flatmap.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2968,7 +2968,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/iter</td>
-<td></td>
+<td>[ref](refs/cljs.core_iter.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_iter.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2992,7 +2992,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/iteration</td>
-<td></td>
+<td>[ref](refs/cljs.core_iteration.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_iteration.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3136,7 +3136,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/lazy-transformer</td>
-<td></td>
+<td>[ref](refs/cljs.core_lazy-transformer.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_lazy-transformer.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3448,7 +3448,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/multi-stepper</td>
-<td></td>
+<td>[ref](refs/cljs.core_multi-stepper.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_multi-stepper.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3488,7 +3488,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/nil-iter</td>
-<td></td>
+<td>[ref](refs/cljs.core_nil-iter.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_nil-iter.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3904,7 +3904,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/random-sample</td>
-<td></td>
+<td>[ref](refs/cljs.core_random-sample.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_random-sample.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4160,7 +4160,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/run!</td>
-<td></td>
+<td>[ref](refs/cljs.core_runBANG.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_runBANG.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4200,7 +4200,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/seq-iter</td>
-<td></td>
+<td>[ref](refs/cljs.core_seq-iter.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_seq-iter.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4464,7 +4464,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/stepper</td>
-<td></td>
+<td>[ref](refs/cljs.core_stepper.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_stepper.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4496,7 +4496,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/string-iter</td>
-<td></td>
+<td>[ref](refs/cljs.core_string-iter.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_string-iter.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4664,7 +4664,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/transduce</td>
-<td></td>
+<td>[ref](refs/cljs.core_transduce.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_transduce.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7496,7 +7496,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.browser.event/IEventType</td>
-<td></td>
+<td>[ref](refs/clojure.browser.event_IEventType.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.browser.event_IEventType.cljsdoc)</td>
 <td></td>
 <td></td>

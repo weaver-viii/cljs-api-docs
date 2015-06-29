@@ -28,19 +28,19 @@ Source code:
   ([src type fn]
      (unlisten src type fn false))
   ([src type fn capture?]
-     (goog.events/unlisten src
-                           (get (event-types src) type type)
-                           fn
-                           capture?)))
+     (events/unlisten src
+                      (get (event-types src) type type)
+                      fn
+                      capture?)))
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[event.cljs:62-69](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/clojure/browser/event.cljs#L62-L69)</ins>
+                └── <ins>[event.cljs:61-68](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/clojure/browser/event.cljs#L61-L68)</ins>
 </pre>
 
 
@@ -61,11 +61,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "unlisten",
  :type "function",
  :signature ["[src type fn]" "[src type fn capture?]"],
- :source {:code "(defn unlisten\n  ([src type fn]\n     (unlisten src type fn false))\n  ([src type fn capture?]\n     (goog.events/unlisten src\n                           (get (event-types src) type type)\n                           fn\n                           capture?)))",
+ :source {:code "(defn unlisten\n  ([src type fn]\n     (unlisten src type fn false))\n  ([src type fn capture?]\n     (events/unlisten src\n                      (get (event-types src) type type)\n                      fn\n                      capture?)))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/clojure/browser/event.cljs",
-          :lines [62 69]},
+          :lines [61 68]},
  :full-name "clojure.browser.event/unlisten",
  :full-name-encode "clojure.browser.event_unlisten",
  :history [["+" "0.0-927"]]}

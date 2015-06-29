@@ -19,15 +19,15 @@
 Source code:
 
 ```clj
-(set! cljs.core.PersistentTreeMap.EMPTY (PersistentTreeMap. compare nil 0 nil 0))
+(set! (.-EMPTY PersistentTreeMap) (PersistentTreeMap. compare nil 0 nil 0))
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6293](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/core.cljs#L6293)</ins>
+            └── <ins>[core.cljs:6750](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L6750)</ins>
 </pre>
 
 
@@ -50,11 +50,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "PersistentTreeMap",
  :type "var",
  :full-name-encode "cljs.core_PersistentTreeMapDOTEMPTY",
- :source {:code "(set! cljs.core.PersistentTreeMap.EMPTY (PersistentTreeMap. compare nil 0 nil 0))",
+ :source {:code "(set! (.-EMPTY PersistentTreeMap) (PersistentTreeMap. compare nil 0 nil 0))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6293]},
+          :lines [6750]},
  :full-name "cljs.core/PersistentTreeMap.EMPTY",
  :clj-symbol "clojure.lang/PersistentTreeMap.EMPTY"}
 

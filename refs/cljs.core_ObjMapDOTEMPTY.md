@@ -16,15 +16,15 @@
 Source code:
 
 ```clj
-(set! cljs.core.ObjMap.EMPTY (ObjMap. nil (array) (js-obj) 0 0))
+(set! (.-EMPTY ObjMap) (ObjMap. nil (array) (js-obj) 0 0))
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4350](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/core.cljs#L4350)</ins>
+            └── <ins>[core.cljs:4807](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L4807)</ins>
 </pre>
 
 
@@ -45,11 +45,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "ObjMap.EMPTY",
  :type "var",
  :parent-type "ObjMap",
- :source {:code "(set! cljs.core.ObjMap.EMPTY (ObjMap. nil (array) (js-obj) 0 0))",
+ :source {:code "(set! (.-EMPTY ObjMap) (ObjMap. nil (array) (js-obj) 0 0))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [4350]},
+          :lines [4807]},
  :full-name "cljs.core/ObjMap.EMPTY",
  :full-name-encode "cljs.core_ObjMapDOTEMPTY",
  :history [["+" "0.0-927"]]}

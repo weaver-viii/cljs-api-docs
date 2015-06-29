@@ -21,29 +21,29 @@
 Source code:
 
 ```clj
-(set! cljs.core.PersistentHashSet.fromArray
+(set! (.-fromArray PersistentHashSet)
   (fn [items ^boolean no-clone]
     (let [len (alength items)]
-      (if (<= len cljs.core.PersistentArrayMap.HASHMAP_THRESHOLD)
+      (if (<= len (.-HASHMAP-THRESHOLD PersistentArrayMap))
         (let [arr (if no-clone items (aclone items))]
           (loop [i 0
-                 out (transient cljs.core.PersistentArrayMap.EMPTY)]
+                 out (transient (.-EMPTY PersistentArrayMap))]
             (if (< i len)
               (recur (inc i) (-assoc! out (aget items i) nil))
-              (cljs.core.PersistentHashSet. nil (-persistent! out) nil))))
+              (PersistentHashSet. nil (-persistent! out) nil))))
        (loop [i 0
-              out (transient cljs.core.PersistentHashSet.EMPTY)]
+              out (transient (.-EMPTY PersistentHashSet))]
          (if (< i len)
            (recur (inc i) (-conj! out (aget items i)))
            (-persistent! out)))))))
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6593-6607](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/core.cljs#L6593-L6607)</ins>
+            └── <ins>[core.cljs:7050-7064](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L7050-L7064)</ins>
 </pre>
 
 
@@ -67,11 +67,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "PersistentHashSet",
  :type "function",
  :full-name-encode "cljs.core_PersistentHashSetDOTfromArray",
- :source {:code "(set! cljs.core.PersistentHashSet.fromArray\n  (fn [items ^boolean no-clone]\n    (let [len (alength items)]\n      (if (<= len cljs.core.PersistentArrayMap.HASHMAP_THRESHOLD)\n        (let [arr (if no-clone items (aclone items))]\n          (loop [i 0\n                 out (transient cljs.core.PersistentArrayMap.EMPTY)]\n            (if (< i len)\n              (recur (inc i) (-assoc! out (aget items i) nil))\n              (cljs.core.PersistentHashSet. nil (-persistent! out) nil))))\n       (loop [i 0\n              out (transient cljs.core.PersistentHashSet.EMPTY)]\n         (if (< i len)\n           (recur (inc i) (-conj! out (aget items i)))\n           (-persistent! out)))))))",
+ :source {:code "(set! (.-fromArray PersistentHashSet)\n  (fn [items ^boolean no-clone]\n    (let [len (alength items)]\n      (if (<= len (.-HASHMAP-THRESHOLD PersistentArrayMap))\n        (let [arr (if no-clone items (aclone items))]\n          (loop [i 0\n                 out (transient (.-EMPTY PersistentArrayMap))]\n            (if (< i len)\n              (recur (inc i) (-assoc! out (aget items i) nil))\n              (PersistentHashSet. nil (-persistent! out) nil))))\n       (loop [i 0\n              out (transient (.-EMPTY PersistentHashSet))]\n         (if (< i len)\n           (recur (inc i) (-conj! out (aget items i)))\n           (-persistent! out)))))))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6593 6607]},
+          :lines [7050 7064]},
  :full-name "cljs.core/PersistentHashSet.fromArray"}
 
 ```

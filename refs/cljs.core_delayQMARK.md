@@ -30,15 +30,15 @@ Source code:
 
 ```clj
 (defn ^boolean delay?
-  [x] (instance? cljs.core.Delay x))
+  [x] (instance? Delay x))
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7672-7674](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/core.cljs#L7672-L7674)</ins>
+            └── <ins>[core.cljs:8097-8099](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L8097-L8099)</ins>
 </pre>
 
 
@@ -62,11 +62,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.core_delayQMARK",
- :source {:code "(defn ^boolean delay?\n  [x] (instance? cljs.core.Delay x))",
+ :source {:code "(defn ^boolean delay?\n  [x] (instance? Delay x))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7672 7674]},
+          :lines [8097 8099]},
  :full-name "cljs.core/delay?",
  :clj-symbol "clojure.core/delay?",
  :docstring "returns true if x is a Delay created with delay"}

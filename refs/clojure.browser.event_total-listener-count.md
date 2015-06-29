@@ -22,16 +22,16 @@ Source code:
 
 ```clj
 (defn total-listener-count []
-  (goog.events/getTotalListenerCount))
+  (events/getTotalListenerCount))
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[event.cljs:85-86](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/clojure/browser/event.cljs#L85-L86)</ins>
+                └── <ins>[event.cljs:84-85](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/clojure/browser/event.cljs#L84-L85)</ins>
 </pre>
 
 
@@ -52,11 +52,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "total-listener-count",
  :type "function",
  :signature ["[]"],
- :source {:code "(defn total-listener-count []\n  (goog.events/getTotalListenerCount))",
+ :source {:code "(defn total-listener-count []\n  (events/getTotalListenerCount))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/clojure/browser/event.cljs",
-          :lines [85 86]},
+          :lines [84 85]},
  :full-name "clojure.browser.event/total-listener-count",
  :full-name-encode "clojure.browser.event_total-listener-count",
  :history [["+" "0.0-927"]]}

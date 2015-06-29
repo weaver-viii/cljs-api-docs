@@ -37,16 +37,16 @@ Source code:
 ```clj
 (defn vector [& args]
   (if (and (instance? IndexedSeq args) (zero? (.-i args)))
-    (cljs.core.PersistentVector.fromArray (.-arr args) true)
+    (.fromArray PersistentVector (.-arr args) true)
     (vec args)))
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3691-3694](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/core.cljs#L3691-L3694)</ins>
+            └── <ins>[core.cljs:4148-4151](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L4148-L4151)</ins>
 </pre>
 
 
@@ -54,23 +54,23 @@ clojurescript @ r2280
 
 ```clj
 (defmacro vector
-  ([] `cljs.core.PersistentVector.EMPTY)
+  ([] '(.-EMPTY cljs.core/PersistentVector))
   ([& xs]
     (let [cnt (count xs)]
       (if (core/< cnt 32)
-        `(cljs.core.PersistentVector. nil ~cnt 5
-           cljs.core.PersistentVector.EMPTY_NODE (array ~@xs) nil)
+        `(cljs.core/PersistentVector. nil ~cnt 5
+           (.-EMPTY-NODE cljs.core/PersistentVector) (array ~@xs) nil)
         (vary-meta
-          `(cljs.core.PersistentVector.fromArray (array ~@xs) true)
+          `(.fromArray cljs.core/PersistentVector (array ~@xs) true)
           assoc :tag 'cljs.core/PersistentVector)))))
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1392-1401](https://github.com/clojure/clojurescript/blob/r2280/src/clj/cljs/core.clj#L1392-L1401)</ins>
+            └── <ins>[core.clj:1392-1401](https://github.com/clojure/clojurescript/blob/r2301/src/clj/cljs/core.clj#L1392-L1401)</ins>
 </pre>
 
 ---
@@ -97,14 +97,14 @@ __Meta__ - To retrieve the API data for this symbol:
            "cljs.core/pop"
            "cljs.core/into"],
  :full-name-encode "cljs.core_vector",
- :source {:code "(defn vector [& args]\n  (if (and (instance? IndexedSeq args) (zero? (.-i args)))\n    (cljs.core.PersistentVector.fromArray (.-arr args) true)\n    (vec args)))",
+ :source {:code "(defn vector [& args]\n  (if (and (instance? IndexedSeq args) (zero? (.-i args)))\n    (.fromArray PersistentVector (.-arr args) true)\n    (vec args)))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3691 3694]},
- :extra-sources ({:code "(defmacro vector\n  ([] `cljs.core.PersistentVector.EMPTY)\n  ([& xs]\n    (let [cnt (count xs)]\n      (if (core/< cnt 32)\n        `(cljs.core.PersistentVector. nil ~cnt 5\n           cljs.core.PersistentVector.EMPTY_NODE (array ~@xs) nil)\n        (vary-meta\n          `(cljs.core.PersistentVector.fromArray (array ~@xs) true)\n          assoc :tag 'cljs.core/PersistentVector)))))",
+          :lines [4148 4151]},
+ :extra-sources ({:code "(defmacro vector\n  ([] '(.-EMPTY cljs.core/PersistentVector))\n  ([& xs]\n    (let [cnt (count xs)]\n      (if (core/< cnt 32)\n        `(cljs.core/PersistentVector. nil ~cnt 5\n           (.-EMPTY-NODE cljs.core/PersistentVector) (array ~@xs) nil)\n        (vary-meta\n          `(.fromArray cljs.core/PersistentVector (array ~@xs) true)\n          assoc :tag 'cljs.core/PersistentVector)))))",
                   :repo "clojurescript",
-                  :tag "r2280",
+                  :tag "r2301",
                   :filename "src/clj/cljs/core.clj",
                   :lines [1392 1401]}),
  :full-name "cljs.core/vector",

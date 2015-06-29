@@ -28,16 +28,16 @@ Source code:
 ```clj
 (defn xhr-connection
   []
-  (goog.net.XhrIo.))
+  (XhrIo.))
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[net.cljs:83-86](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/clojure/browser/net.cljs#L83-L86)</ins>
+                └── <ins>[net.cljs:81-84](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/clojure/browser/net.cljs#L81-L84)</ins>
 </pre>
 
 
@@ -60,11 +60,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "clojure.browser.net_xhr-connection",
- :source {:code "(defn xhr-connection\n  []\n  (goog.net.XhrIo.))",
+ :source {:code "(defn xhr-connection\n  []\n  (XhrIo.))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/clojure/browser/net.cljs",
-          :lines [83 86]},
+          :lines [81 84]},
  :full-name "clojure.browser.net/xhr-connection",
  :docstring "Returns an XhrIo connection"}
 

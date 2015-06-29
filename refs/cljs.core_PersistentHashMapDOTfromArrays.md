@@ -21,21 +21,21 @@
 Source code:
 
 ```clj
-(set! cljs.core.PersistentHashMap.fromArrays
+(set! (.-fromArrays PersistentHashMap)
   (fn [ks vs]
     (let [len (alength ks)]
-      (loop [i 0 ^not-native out (transient cljs.core.PersistentHashMap.EMPTY)]
+      (loop [i 0 ^not-native out (transient (.-EMPTY PersistentHashMap))]
         (if (< i len)
           (recur (inc i) (-assoc! out (aget ks i) (aget vs i)))
           (persistent! out))))))
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5520-5526](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/core.cljs#L5520-L5526)</ins>
+            └── <ins>[core.cljs:5977-5983](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L5977-L5983)</ins>
 </pre>
 
 
@@ -59,11 +59,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "PersistentHashMap",
  :type "function",
  :full-name-encode "cljs.core_PersistentHashMapDOTfromArrays",
- :source {:code "(set! cljs.core.PersistentHashMap.fromArrays\n  (fn [ks vs]\n    (let [len (alength ks)]\n      (loop [i 0 ^not-native out (transient cljs.core.PersistentHashMap.EMPTY)]\n        (if (< i len)\n          (recur (inc i) (-assoc! out (aget ks i) (aget vs i)))\n          (persistent! out))))))",
+ :source {:code "(set! (.-fromArrays PersistentHashMap)\n  (fn [ks vs]\n    (let [len (alength ks)]\n      (loop [i 0 ^not-native out (transient (.-EMPTY PersistentHashMap))]\n        (if (< i len)\n          (recur (inc i) (-assoc! out (aget ks i) (aget vs i)))\n          (persistent! out))))))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [5520 5526]},
+          :lines [5977 5983]},
  :full-name "cljs.core/PersistentHashMap.fromArrays"}
 
 ```

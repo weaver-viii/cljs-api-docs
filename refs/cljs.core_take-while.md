@@ -40,25 +40,35 @@ Source docstring:
 ```
 Returns a lazy sequence of successive items from coll while
 (pred item) returns true. pred must be free of side-effects.
+Returns a transducer when no collection is provided.
 ```
 
 Source code:
 
 ```clj
 (defn take-while
-  [pred coll]
-  (lazy-seq
-   (when-let [s (seq coll)]
-     (when (pred (first s))
-       (cons (first s) (take-while pred (rest s)))))))
+  ([pred]
+     (fn [f1]
+       (fn
+         ([] (f1))
+         ([result] (f1 result))
+         ([result input]
+            (if (pred input)
+              (f1 result input)
+              (reduced result))))))
+  ([pred coll]
+     (lazy-seq
+       (when-let [s (seq coll)]
+         (when (pred (first s))
+           (cons (first s) (take-while pred (rest s))))))))
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6855-6862](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/core.cljs#L6855-L6862)</ins>
+            └── <ins>[core.cljs:7348-7365](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L7348-L7365)</ins>
 </pre>
 
 
@@ -83,14 +93,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/drop-while" "cljs.core/split-with"],
  :full-name-encode "cljs.core_take-while",
- :source {:code "(defn take-while\n  [pred coll]\n  (lazy-seq\n   (when-let [s (seq coll)]\n     (when (pred (first s))\n       (cons (first s) (take-while pred (rest s)))))))",
+ :source {:code "(defn take-while\n  ([pred]\n     (fn [f1]\n       (fn\n         ([] (f1))\n         ([result] (f1 result))\n         ([result input]\n            (if (pred input)\n              (f1 result input)\n              (reduced result))))))\n  ([pred coll]\n     (lazy-seq\n       (when-let [s (seq coll)]\n         (when (pred (first s))\n           (cons (first s) (take-while pred (rest s))))))))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6855 6862]},
+          :lines [7348 7365]},
  :full-name "cljs.core/take-while",
  :clj-symbol "clojure.core/take-while",
- :docstring "Returns a lazy sequence of successive items from coll while\n(pred item) returns true. pred must be free of side-effects."}
+ :docstring "Returns a lazy sequence of successive items from coll while\n(pred item) returns true. pred must be free of side-effects.\nReturns a transducer when no collection is provided."}
 
 ```
 

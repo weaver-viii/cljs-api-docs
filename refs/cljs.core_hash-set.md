@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6760-6762](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/core.cljs#L6760-L6762)</ins>
+            └── <ins>[core.cljs:7217-7219](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L7217-L7219)</ins>
 </pre>
 
 
@@ -56,26 +56,26 @@ clojurescript @ r2280
 
 ```clj
 (defmacro hash-set
-  ([] `cljs.core.PersistentHashSet.EMPTY)
+  ([] `(.-EMPTY cljs.core/PersistentHashSet))
   ([& xs]
     (if (core/and (core/<= (count xs) 8)
                   (every? #(= (:op %) :constant)
                     (map #(cljs.analyzer/analyze &env %) xs))
                   (= (count (into #{} xs)) (count xs)))
-      `(cljs.core.PersistentHashSet. nil
-         (cljs.core.PersistentArrayMap. nil ~(count xs) (array ~@(interleave xs (repeat nil))) nil)
+      `(cljs.core/PersistentHashSet. nil
+         (cljs.core/PersistentArrayMap. nil ~(count xs) (array ~@(interleave xs (repeat nil))) nil)
          nil)
       (vary-meta
-        `(cljs.core.PersistentHashSet.fromArray (array ~@xs) true)
+        `(.fromArray cljs.core/PersistentHashSet (array ~@xs) true)
         assoc :tag 'cljs.core/PersistentHashSet))))
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1429-1441](https://github.com/clojure/clojurescript/blob/r2280/src/clj/cljs/core.clj#L1429-L1441)</ins>
+            └── <ins>[core.clj:1429-1441](https://github.com/clojure/clojurescript/blob/r2301/src/clj/cljs/core.clj#L1429-L1441)</ins>
 </pre>
 
 ---
@@ -101,12 +101,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash-set",
  :source {:code "(defn hash-set\n  ([] #{})\n  ([& keys] (set keys)))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6760 6762]},
- :extra-sources ({:code "(defmacro hash-set\n  ([] `cljs.core.PersistentHashSet.EMPTY)\n  ([& xs]\n    (if (core/and (core/<= (count xs) 8)\n                  (every? #(= (:op %) :constant)\n                    (map #(cljs.analyzer/analyze &env %) xs))\n                  (= (count (into #{} xs)) (count xs)))\n      `(cljs.core.PersistentHashSet. nil\n         (cljs.core.PersistentArrayMap. nil ~(count xs) (array ~@(interleave xs (repeat nil))) nil)\n         nil)\n      (vary-meta\n        `(cljs.core.PersistentHashSet.fromArray (array ~@xs) true)\n        assoc :tag 'cljs.core/PersistentHashSet))))",
+          :lines [7217 7219]},
+ :extra-sources ({:code "(defmacro hash-set\n  ([] `(.-EMPTY cljs.core/PersistentHashSet))\n  ([& xs]\n    (if (core/and (core/<= (count xs) 8)\n                  (every? #(= (:op %) :constant)\n                    (map #(cljs.analyzer/analyze &env %) xs))\n                  (= (count (into #{} xs)) (count xs)))\n      `(cljs.core/PersistentHashSet. nil\n         (cljs.core/PersistentArrayMap. nil ~(count xs) (array ~@(interleave xs (repeat nil))) nil)\n         nil)\n      (vary-meta\n        `(.fromArray cljs.core/PersistentHashSet (array ~@xs) true)\n        assoc :tag 'cljs.core/PersistentHashSet))))",
                   :repo "clojurescript",
-                  :tag "r2280",
+                  :tag "r2301",
                   :filename "src/clj/cljs/core.clj",
                   :lines [1429 1441]}),
  :full-name "cljs.core/hash-set",

@@ -19,15 +19,15 @@
 Source code:
 
 ```clj
-(set! cljs.core.PersistentArrayMap.EMPTY (PersistentArrayMap. nil 0 (array) nil))
+(set! (.-EMPTY PersistentArrayMap) (PersistentArrayMap. nil 0 (array) nil))
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4670](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/core.cljs#L4670)</ins>
+            └── <ins>[core.cljs:5127](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L5127)</ins>
 </pre>
 
 
@@ -50,11 +50,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "PersistentArrayMap",
  :type "var",
  :full-name-encode "cljs.core_PersistentArrayMapDOTEMPTY",
- :source {:code "(set! cljs.core.PersistentArrayMap.EMPTY (PersistentArrayMap. nil 0 (array) nil))",
+ :source {:code "(set! (.-EMPTY PersistentArrayMap) (PersistentArrayMap. nil 0 (array) nil))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [4670]},
+          :lines [5127]},
  :full-name "cljs.core/PersistentArrayMap.EMPTY",
  :clj-symbol "clojure.lang/PersistentArrayMap.EMPTY"}
 

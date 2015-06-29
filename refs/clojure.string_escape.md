@@ -42,7 +42,7 @@ Source code:
 ```clj
 (defn escape
   [s cmap]
-  (let [buffer (gstring/StringBuffer.)
+  (let [buffer (StringBuffer.)
         length (.-length s)]
     (loop [index 0]
       (if (= length index)
@@ -55,11 +55,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── clojure
-            └── <ins>[string.cljs:164-180](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/clojure/string.cljs#L164-L180)</ins>
+            └── <ins>[string.cljs:164-180](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/clojure/string.cljs#L164-L180)</ins>
 </pre>
 
 
@@ -83,9 +83,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "clojure.string_escape",
- :source {:code "(defn escape\n  [s cmap]\n  (let [buffer (gstring/StringBuffer.)\n        length (.-length s)]\n    (loop [index 0]\n      (if (= length index)\n        (. buffer (toString))\n        (let [ch (.charAt s index)]\n          (if-let [replacement (get cmap ch)]\n            (.append buffer (str replacement))\n            (.append buffer ch))\n          (recur (inc index)))))))",
+ :source {:code "(defn escape\n  [s cmap]\n  (let [buffer (StringBuffer.)\n        length (.-length s)]\n    (loop [index 0]\n      (if (= length index)\n        (. buffer (toString))\n        (let [ch (.charAt s index)]\n          (if-let [replacement (get cmap ch)]\n            (.append buffer (str replacement))\n            (.append buffer ch))\n          (recur (inc index)))))))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/clojure/string.cljs",
           :lines [164 180]},
  :full-name "clojure.string/escape",

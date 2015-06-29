@@ -1,10 +1,10 @@
-## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> cljs.core/PersistentArrayMap.HASHMAP_THRESHOLD
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> ~~cljs.core/PersistentArrayMap.HASHMAP_THRESHOLD~~
 
  <table border="1">
 <tr>
 
 <td>var</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1211"><img valign="middle" alt="[+] 0.0-1211" src="https://img.shields.io/badge/+-0.0--1211-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1211"><img valign="middle" alt="[+] 0.0-1211" src="https://img.shields.io/badge/+-0.0--1211-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2301"><img valign="middle" alt="[×] 0.0-2301" src="https://img.shields.io/badge/×-0.0--2301-red.svg"></a> </td>
 </tr>
 </table>
 
@@ -43,16 +43,17 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "PersistentArrayMap.HASHMAP_THRESHOLD",
- :type "var",
+ :history [["+" "0.0-1211"] ["-" "0.0-2301"]],
  :parent-type "PersistentArrayMap",
+ :type "var",
+ :full-name-encode "cljs.core_PersistentArrayMapDOTHASHMAP_THRESHOLD",
  :source {:code "(set! cljs.core.PersistentArrayMap.HASHMAP_THRESHOLD 8)",
           :repo "clojurescript",
           :tag "r2280",
           :filename "src/cljs/cljs/core.cljs",
           :lines [4672]},
  :full-name "cljs.core/PersistentArrayMap.HASHMAP_THRESHOLD",
- :full-name-encode "cljs.core_PersistentArrayMapDOTHASHMAP_THRESHOLD",
- :history [["+" "0.0-1211"]]}
+ :removed {:in "0.0-2301", :last-seen "0.0-2280"}}
 
 ```
 

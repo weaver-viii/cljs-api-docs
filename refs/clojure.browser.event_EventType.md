@@ -1,10 +1,10 @@
-## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> clojure.browser.event/EventType
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> ~~clojure.browser.event/EventType~~
 
  <table border="1">
 <tr>
 
 <td>protocol</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2301"><img valign="middle" alt="[×] 0.0-2301" src="https://img.shields.io/badge/×-0.0--2301-red.svg"></a> </td>
 </tr>
 </table>
 
@@ -45,6 +45,7 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "clojure.browser.event",
  :name "EventType",
+ :history [["+" "0.0-927"] ["-" "0.0-2301"]],
  :type "protocol",
  :full-name-encode "clojure.browser.event_EventType",
  :source {:code "(defprotocol EventType\n  (event-types [this]))",
@@ -56,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
             :signature ["[this]"],
             :docstring nil}],
  :full-name "clojure.browser.event/EventType",
- :history [["+" "0.0-927"]]}
+ :removed {:in "0.0-2301", :last-seen "0.0-2280"}}
 
 ```
 

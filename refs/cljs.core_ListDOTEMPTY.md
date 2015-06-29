@@ -19,15 +19,15 @@
 Source code:
 
 ```clj
-(set! cljs.core.List.EMPTY (EmptyList. nil))
+(set! (.-EMPTY List) (EmptyList. nil))
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2183](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/core.cljs#L2183)</ins>
+            └── <ins>[core.cljs:2215](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L2215)</ins>
 </pre>
 
 
@@ -50,11 +50,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "List",
  :type "var",
  :full-name-encode "cljs.core_ListDOTEMPTY",
- :source {:code "(set! cljs.core.List.EMPTY (EmptyList. nil))",
+ :source {:code "(set! (.-EMPTY List) (EmptyList. nil))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2183]},
+          :lines [2215]},
  :full-name "cljs.core/List.EMPTY",
  :clj-symbol "clojure.lang/PersistentList.EMPTY"}
 

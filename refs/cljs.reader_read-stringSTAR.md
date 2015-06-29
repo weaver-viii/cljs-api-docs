@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2280
+clojurescript @ r2301
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:291-300](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/reader.cljs#L291-L300)</ins>
+            └── <ins>[reader.cljs:292-301](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/reader.cljs#L292-L301)</ins>
 </pre>
 
 
@@ -61,9 +61,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[reader _]"],
  :source {:code "(defn read-string*\n  [reader _]\n  (loop [buffer (gstring/StringBuffer.)\n         ch (read-char reader)]\n    (cond\n     (nil? ch) (reader-error reader \"EOF while reading\")\n     (identical? \"\\\\\" ch) (recur (do (.append buffer (escape-char buffer reader)) buffer)\n                        (read-char reader))\n     (identical? \\\" ch) (. buffer (toString))\n     :default (recur (do (.append buffer ch) buffer) (read-char reader)))))",
           :repo "clojurescript",
-          :tag "r2280",
+          :tag "r2301",
           :filename "src/cljs/cljs/reader.cljs",
-          :lines [291 300]},
+          :lines [292 301]},
  :full-name "cljs.reader/read-string*",
  :full-name-encode "cljs.reader_read-stringSTAR",
  :history [["+" "0.0-1236"]]}
