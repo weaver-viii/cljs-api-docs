@@ -26,12 +26,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2843
+clojurescript @ r2850
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[nashorn.clj:73-74](https://github.com/clojure/clojurescript/blob/r2843/src/clj/cljs/repl/nashorn.clj#L73-L74)</ins>
+                └── <ins>[nashorn.clj:73-74](https://github.com/clojure/clojurescript/blob/r2850/src/clj/cljs/repl/nashorn.clj#L73-L74)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[engine s]"],
  :source {:code "(defn eval-str [^ScriptEngine engine ^String s]\n  (.eval engine s))",
           :repo "clojurescript",
-          :tag "r2843",
+          :tag "r2850",
           :filename "src/clj/cljs/repl/nashorn.clj",
           :lines [73 74]},
  :full-name "cljs.repl.nashorn/eval-str",

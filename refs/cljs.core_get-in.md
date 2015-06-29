@@ -66,11 +66,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2843
+clojurescript @ r2850
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4082-4101](https://github.com/clojure/clojurescript/blob/r2843/src/cljs/cljs/core.cljs#L4082-L4101)</ins>
+            └── <ins>[core.cljs:4082-4101](https://github.com/clojure/clojurescript/blob/r2850/src/cljs/cljs/core.cljs#L4082-L4101)</ins>
 </pre>
 
 
@@ -100,7 +100,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_get-in",
  :source {:code "(defn get-in\n  ([m ks]\n     (get-in m ks nil))\n  ([m ks not-found]\n     (loop [sentinel lookup-sentinel\n            m m\n            ks (seq ks)]\n       (if ks\n         (if (not (satisfies? ILookup m))\n           not-found\n           (let [m (get m (first ks) sentinel)]\n             (if (identical? sentinel m)\n               not-found\n               (recur sentinel m (next ks)))))\n         m))))",
           :repo "clojurescript",
-          :tag "r2843",
+          :tag "r2850",
           :filename "src/cljs/cljs/core.cljs",
           :lines [4082 4101]},
  :full-name "cljs.core/get-in",

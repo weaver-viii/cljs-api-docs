@@ -74,11 +74,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2843
+clojurescript @ r2850
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1546-1588](https://github.com/clojure/clojurescript/blob/r2843/src/clj/cljs/core.clj#L1546-L1588)</ins>
+            └── <ins>[core.clj:1546-1588](https://github.com/clojure/clojurescript/blob/r2850/src/clj/cljs/core.clj#L1546-L1588)</ins>
 </pre>
 
 
@@ -103,7 +103,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_defmulti",
  :source {:code "(defmacro defmulti\n  [mm-name & options]\n  (let [docstring   (if (core/string? (first options))\n                      (first options)\n                      nil)\n        options     (if (core/string? (first options))\n                      (next options)\n                      options)\n        m           (if (map? (first options))\n                      (first options)\n                      {})\n        options     (if (map? (first options))\n                      (next options)\n                      options)\n        dispatch-fn (first options)\n        options     (next options)\n        m           (if docstring\n                      (assoc m :doc docstring)\n                      m)\n        m           (if (meta mm-name)\n                      (conj (meta mm-name) m)\n                      m)\n        mm-ns (-> &env :ns :name core/str)] \n    (when (= (count options) 1)\n      (throw (Exception. \"The syntax for defmulti has changed. Example: (defmulti name dispatch-fn :default dispatch-value)\")))\n    (let [options   (apply core/hash-map options)\n          default   (core/get options :default :default)]\n      (check-valid-options options :default :hierarchy)\n      `(def ~(with-meta mm-name m)\n         (let [method-table# (atom {})\n               prefer-table# (atom {})\n               method-cache# (atom {})\n               cached-hierarchy# (atom {})\n               hierarchy# (get ~options :hierarchy (cljs.core/get-global-hierarchy))]\n           (cljs.core/MultiFn. (cljs.core/symbol ~mm-ns ~(name mm-name)) ~dispatch-fn ~default hierarchy#\n                               method-table# prefer-table# method-cache# cached-hierarchy#))))))",
           :repo "clojurescript",
-          :tag "r2843",
+          :tag "r2850",
           :filename "src/clj/cljs/core.clj",
           :lines [1546 1588]},
  :full-name "cljs.core/defmulti",

@@ -74,11 +74,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2843
+clojurescript @ r2850
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2877-2900](https://github.com/clojure/clojurescript/blob/r2843/src/cljs/cljs/core.cljs#L2877-L2900)</ins>
+            └── <ins>[core.cljs:2877-2900](https://github.com/clojure/clojurescript/blob/r2850/src/cljs/cljs/core.cljs#L2877-L2900)</ins>
 </pre>
 
 
@@ -105,7 +105,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_concat",
  :source {:code "(defn concat\n  ([] (lazy-seq nil))\n  ([x] (lazy-seq x))\n  ([x y]\n    (lazy-seq\n      (let [s (seq x)]\n        (if s\n          (if (chunked-seq? s)\n            (chunk-cons (chunk-first s) (concat (chunk-rest s) y))\n            (cons (first s) (concat (rest s) y)))\n          y))))\n  ([x y & zs]\n     (let [cat (fn cat [xys zs]\n                 (lazy-seq\n                   (let [xys (seq xys)]\n                     (if xys\n                       (if (chunked-seq? xys)\n                         (chunk-cons (chunk-first xys)\n                                     (cat (chunk-rest xys) zs))\n                         (cons (first xys) (cat (rest xys) zs)))\n                       (when zs\n                         (cat (first zs) (next zs)))))))]\n       (cat (concat x y) zs))))",
           :repo "clojurescript",
-          :tag "r2843",
+          :tag "r2850",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2877 2900]},
  :full-name "cljs.core/concat",

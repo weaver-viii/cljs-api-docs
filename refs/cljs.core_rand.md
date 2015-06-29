@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2843
+clojurescript @ r2850
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8737-8741](https://github.com/clojure/clojurescript/blob/r2843/src/cljs/cljs/core.cljs#L8737-L8741)</ins>
+            └── <ins>[core.cljs:8737-8741](https://github.com/clojure/clojurescript/blob/r2850/src/cljs/cljs/core.cljs#L8737-L8741)</ins>
 </pre>
 
 
@@ -81,7 +81,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_rand",
  :source {:code "(defn rand\n  ([] (rand 1))\n  ([n] (* (Math/random) n)))",
           :repo "clojurescript",
-          :tag "r2843",
+          :tag "r2850",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8737 8741]},
  :full-name "cljs.core/rand",

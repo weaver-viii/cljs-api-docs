@@ -27,11 +27,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2843
+clojurescript @ r2850
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8932-8939](https://github.com/clojure/clojurescript/blob/r2843/src/cljs/cljs/core.cljs#L8932-L8939)</ins>
+            └── <ins>[core.cljs:8932-8939](https://github.com/clojure/clojurescript/blob/r2850/src/cljs/cljs/core.cljs#L8932-L8939)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IMultiFn",
  :source {:code "(defprotocol IMultiFn\n  (-reset [mf])\n  (-add-method [mf dispatch-val method])\n  (-remove-method [mf dispatch-val])\n  (-prefer-method [mf dispatch-val dispatch-val-y])\n  (-get-method [mf dispatch-val])\n  (-methods [mf])\n  (-prefers [mf]))",
           :repo "clojurescript",
-          :tag "r2843",
+          :tag "r2850",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8932 8939]},
  :methods [{:name "-reset", :signature ["[mf]"], :docstring nil}

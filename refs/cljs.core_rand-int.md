@@ -42,11 +42,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2843
+clojurescript @ r2850
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8743-8745](https://github.com/clojure/clojurescript/blob/r2843/src/cljs/cljs/core.cljs#L8743-L8745)</ins>
+            └── <ins>[core.cljs:8743-8745](https://github.com/clojure/clojurescript/blob/r2850/src/cljs/cljs/core.cljs#L8743-L8745)</ins>
 </pre>
 
 
@@ -73,7 +73,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_rand-int",
  :source {:code "(defn rand-int\n  [n] (Math/floor (* (Math/random) n)))",
           :repo "clojurescript",
-          :tag "r2843",
+          :tag "r2850",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8743 8745]},
  :full-name "cljs.core/rand-int",

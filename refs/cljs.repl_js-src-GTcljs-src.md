@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2843
+clojurescript @ r2850
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:179-186](https://github.com/clojure/clojurescript/blob/r2843/src/clj/cljs/repl.clj#L179-L186)</ins>
+            └── <ins>[repl.clj:179-186](https://github.com/clojure/clojurescript/blob/r2850/src/clj/cljs/repl.clj#L179-L186)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_js-src-GTcljs-src",
  :source {:code "(defn ^File js-src->cljs-src\n  [f]\n  (let [f (io/file f)\n        dir (.getParentFile f)\n        name (.getName f)]\n    (io/file dir (string/replace name \".js\" \".cljs\"))))",
           :repo "clojurescript",
-          :tag "r2843",
+          :tag "r2850",
           :filename "src/clj/cljs/repl.clj",
           :lines [179 186]},
  :full-name "cljs.repl/js-src->cljs-src",

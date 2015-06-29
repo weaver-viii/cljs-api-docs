@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2843
+clojurescript @ r2850
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:84-89](https://github.com/clojure/clojurescript/blob/r2843/src/clj/cljs/repl.clj#L84-L89)</ins>
+            └── <ins>[repl.clj:84-89](https://github.com/clojure/clojurescript/blob/r2850/src/clj/cljs/repl.clj#L84-L89)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_with-read-known",
  :source {:code "(defmacro with-read-known\n  [& body]\n  `(binding [*read-eval* (if (= :unknown *read-eval*) true *read-eval*)]\n     ~@body))",
           :repo "clojurescript",
-          :tag "r2843",
+          :tag "r2850",
           :filename "src/clj/cljs/repl.clj",
           :lines [84 89]},
  :full-name "cljs.repl/with-read-known",

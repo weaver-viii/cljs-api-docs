@@ -34,12 +34,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2843
+clojurescript @ r2850
 └── src
     └── clj
         └── cljs
             └── build
-                └── <ins>[api.clj:66-71](https://github.com/clojure/clojurescript/blob/r2843/src/clj/cljs/build/api.clj#L66-L71)</ins>
+                └── <ins>[api.clj:66-71](https://github.com/clojure/clojurescript/blob/r2850/src/clj/cljs/build/api.clj#L66-L71)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.build.api_cljs-ns-dependents",
  :source {:code "(defn cljs-ns-dependents\n  [ns]\n  (ana/ns-dependents ns))",
           :repo "clojurescript",
-          :tag "r2843",
+          :tag "r2850",
           :filename "src/clj/cljs/build/api.clj",
           :lines [66 71]},
  :full-name "cljs.build.api/cljs-ns-dependents",

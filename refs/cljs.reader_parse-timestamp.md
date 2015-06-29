@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2843
+clojurescript @ r2850
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:517-524](https://github.com/clojure/clojurescript/blob/r2843/src/cljs/cljs/reader.cljs#L517-L524)</ins>
+            └── <ins>[reader.cljs:517-524](https://github.com/clojure/clojurescript/blob/r2850/src/cljs/cljs/reader.cljs#L517-L524)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[ts]"],
  :source {:code "(defn parse-timestamp\n  [ts]\n  (if-let [[years months days hours minutes seconds ms offset]\n           (parse-and-validate-timestamp ts)]\n    (js/Date.\n     (- (.UTC js/Date years (dec months) days hours minutes seconds ms)\n        (* offset 60 1000)))\n    (reader-error nil (str \"Unrecognized date/time syntax: \" ts))))",
           :repo "clojurescript",
-          :tag "r2843",
+          :tag "r2850",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [517 524]},
  :full-name "cljs.reader/parse-timestamp",
