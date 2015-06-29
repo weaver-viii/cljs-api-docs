@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1886
+clojurescript @ r1889
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:335-336](https://github.com/clojure/clojurescript/blob/r1886/src/clj/cljs/core.clj#L335-L336)</ins>
+            └── <ins>[core.clj:335-336](https://github.com/clojure/clojurescript/blob/r1889/src/clj/cljs/core.clj#L335-L336)</ins>
 </pre>
 
 
@@ -58,7 +58,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-subtract",
  :source {:code "(defmacro unchecked-subtract\n  ([& xs] `(- ~@xs)))",
           :repo "clojurescript",
-          :tag "r1886",
+          :tag "r1889",
           :filename "src/clj/cljs/core.clj",
           :lines [335 336]},
  :full-name "cljs.core/unchecked-subtract",

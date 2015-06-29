@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1886
+clojurescript @ r1889
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5932-5938](https://github.com/clojure/clojurescript/blob/r1886/src/cljs/cljs/core.cljs#L5932-L5938)</ins>
+            └── <ins>[core.cljs:5932-5938](https://github.com/clojure/clojurescript/blob/r1889/src/cljs/cljs/core.cljs#L5932-L5938)</ins>
 </pre>
 
 
@@ -81,7 +81,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_merge",
  :source {:code "(defn merge\n  [& maps]\n  (when (some identity maps)\n    (reduce #(conj (or %1 {}) %2) maps)))",
           :repo "clojurescript",
-          :tag "r1886",
+          :tag "r1889",
           :filename "src/cljs/cljs/core.cljs",
           :lines [5932 5938]},
  :full-name "cljs.core/merge",

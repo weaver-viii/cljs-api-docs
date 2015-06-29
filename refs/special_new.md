@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1886
+clojurescript @ r1889
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:589-603](https://github.com/clojure/clojurescript/blob/r1886/src/clj/cljs/analyzer.clj#L589-L603)</ins>
+            └── <ins>[analyzer.clj:589-603](https://github.com/clojure/clojurescript/blob/r1889/src/clj/cljs/analyzer.clj#L589-L603)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "special form",
  :source {:code "(defmethod parse 'new\n  [_ env [_ ctor & args :as form] _]\n  (assert (symbol? ctor) \"First arg to new must be a symbol\")\n  (disallowing-recur\n   (let [enve (assoc env :context :expr)\n         ctorexpr (analyze enve ctor)\n         argexprs (vec (map #(analyze enve %) args))\n         known-num-fields (:num-fields (resolve-existing-var env ctor))\n         argc (count args)]\n     (when (and known-num-fields (not= known-num-fields argc))\n       (warning env\n         (str \"WARNING: Wrong number of args (\" argc \") passed to \" ctor)))\n\n     {:env env :op :new :form form :ctor ctorexpr :args argexprs\n      :children (into [ctorexpr] argexprs)})))",
           :repo "clojurescript",
-          :tag "r1886",
+          :tag "r1889",
           :filename "src/clj/cljs/analyzer.clj",
           :lines [589 603]},
  :full-name "special/new",

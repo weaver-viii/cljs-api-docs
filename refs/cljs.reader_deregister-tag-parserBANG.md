@@ -30,11 +30,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1886
+clojurescript @ r1889
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:560-565](https://github.com/clojure/clojurescript/blob/r1886/src/cljs/cljs/reader.cljs#L560-L565)</ins>
+            └── <ins>[reader.cljs:560-565](https://github.com/clojure/clojurescript/blob/r1889/src/cljs/cljs/reader.cljs#L560-L565)</ins>
 </pre>
 
 
@@ -57,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[tag]"],
  :source {:code "(defn deregister-tag-parser!\n  [tag]\n  (let [tag (str tag)\n        old-parser (get @*tag-table* tag)]\n    (swap! *tag-table* dissoc tag)\n    old-parser))",
           :repo "clojurescript",
-          :tag "r1886",
+          :tag "r1889",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [560 565]},
  :full-name "cljs.reader/deregister-tag-parser!",

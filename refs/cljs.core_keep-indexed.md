@@ -70,11 +70,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1886
+clojurescript @ r1889
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2652-2673](https://github.com/clojure/clojurescript/blob/r1886/src/cljs/cljs/core.cljs#L2652-L2673)</ins>
+            └── <ins>[core.cljs:2652-2673](https://github.com/clojure/clojurescript/blob/r1889/src/cljs/cljs/core.cljs#L2652-L2673)</ins>
 </pre>
 
 
@@ -101,7 +101,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_keep-indexed",
  :source {:code "(defn keep-indexed\n  ([f coll]\n     (letfn [(keepi [idx coll]\n               (lazy-seq\n                (when-let [s (seq coll)]\n                  (if (chunked-seq? s)\n                    (let [c (chunk-first s)\n                          size (count c)\n                          b (chunk-buffer size)]\n                      (dotimes [i size]\n                        (let [x (f (+ idx i) (-nth c i))]\n                          (when-not (nil? x)\n                            (chunk-append b x))))\n                      (chunk-cons (chunk b) (keepi (+ idx size) (chunk-rest s))))\n                    (let [x (f idx (first s))]\n                      (if (nil? x)\n                        (keepi (inc idx) (rest s))\n                        (cons x (keepi (inc idx) (rest s)))))))))]\n       (keepi 0 coll))))",
           :repo "clojurescript",
-          :tag "r1886",
+          :tag "r1889",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2652 2673]},
  :full-name "cljs.core/keep-indexed",
