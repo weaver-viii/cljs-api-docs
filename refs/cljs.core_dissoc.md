@@ -61,7 +61,8 @@ Source code:
 (defn dissoc
   ([coll] coll)
   ([coll k]
-     (-dissoc coll k))
+    (when-not (nil? coll)
+      (-dissoc coll k)))
   ([coll k & ks]
     (when-not (nil? coll)
       (let [ret (dissoc coll k)]
@@ -71,11 +72,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2120
+clojurescript @ r2127
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:994-1005](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L994-L1005)</ins>
+            └── <ins>[core.cljs:994-1006](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/core.cljs#L994-L1006)</ins>
 </pre>
 
 
@@ -100,11 +101,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/assoc" "cljs.core/disj" "cljs.core/select-keys"],
  :full-name-encode "cljs.core_dissoc",
- :source {:code "(defn dissoc\n  ([coll] coll)\n  ([coll k]\n     (-dissoc coll k))\n  ([coll k & ks]\n    (when-not (nil? coll)\n      (let [ret (dissoc coll k)]\n        (if ks\n          (recur ret (first ks) (next ks))\n          ret)))))",
+ :source {:code "(defn dissoc\n  ([coll] coll)\n  ([coll k]\n    (when-not (nil? coll)\n      (-dissoc coll k)))\n  ([coll k & ks]\n    (when-not (nil? coll)\n      (let [ret (dissoc coll k)]\n        (if ks\n          (recur ret (first ks) (next ks))\n          ret)))))",
           :repo "clojurescript",
-          :tag "r2120",
+          :tag "r2127",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [994 1005]},
+          :lines [994 1006]},
  :examples [{:id "fd6ae9",
              :content "```clj\n(dissoc {:key \"value\" :key2 \"value2\"} :key)\n;;=> {:key2 \"value2\"}\n```"}],
  :full-name "cljs.core/dissoc",

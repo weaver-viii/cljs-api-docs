@@ -40,11 +40,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2120
+clojurescript @ r2127
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:50-58](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/clojure/zip.cljs#L50-L58)</ins>
+            └── <ins>[zip.cljs:50-58](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/clojure/zip.cljs#L50-L58)</ins>
 </pre>
 
 
@@ -69,7 +69,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_xml-zip",
  :source {:code "(defn xml-zip\n  [root]\n    (zipper (complement string?) \n            (comp seq :content)\n            (fn [node children]\n              (assoc node :content (and children (apply vector children))))\n            root))",
           :repo "clojurescript",
-          :tag "r2120",
+          :tag "r2127",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [50 58]},
  :full-name "clojure.zip/xml-zip",

@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2120
+clojurescript @ r2127
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2319-2328](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L2319-L2328)</ins>
+            └── <ins>[core.cljs:2321-2330](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/core.cljs#L2321-L2330)</ins>
 </pre>
 
 
@@ -81,9 +81,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_to-array-2d",
  :source {:code "(defn to-array-2d\n  [coll]\n    (let [ret (make-array (count coll))]\n      (loop [i 0 xs (seq coll)]\n        (when xs\n          (aset ret i (to-array (first xs)))\n          (recur (inc i) (next xs))))\n      ret))",
           :repo "clojurescript",
-          :tag "r2120",
+          :tag "r2127",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2319 2328]},
+          :lines [2321 2330]},
  :full-name "cljs.core/to-array-2d",
  :clj-symbol "clojure.core/to-array-2d",
  :docstring "Returns a (potentially-ragged) 2-dimensional array\ncontaining the contents of coll."}

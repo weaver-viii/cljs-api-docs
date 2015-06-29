@@ -58,11 +58,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2120
+clojurescript @ r2127
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2046-2076](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L2046-L2076)</ins>
+            └── <ins>[core.cljs:2048-2078](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/core.cljs#L2048-L2078)</ins>
 </pre>
 
 
@@ -87,9 +87,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_Keyword",
  :source {:code "(deftype Keyword [ns name fqn ^:mutable _hash]\n  Object\n  (toString [_] (str \":\" fqn))\n  \n  IEquiv\n  (-equiv [_ other]\n    (if (instance? Keyword other)\n      (identical? fqn (.-fqn other))\n      false))\n  IFn\n  (-invoke [kw coll]\n    (get coll kw))\n  (-invoke [kw coll not-found]\n    (get coll kw not-found))\n\n  IHash\n  (-hash [_]\n    ; This was checking if _hash == -1, should it stay that way?\n    (if (nil? _hash)\n      (do\n        (set! _hash (+ (hash-combine (hash ns) (hash name))\n                        0x9e3779b9))\n        _hash)\n      _hash))\n\n  INamed\n  (-name [_] name)\n  (-namespace [_] ns)\n\n  IPrintWithWriter\n  (-pr-writer [o writer _] (-write writer (str \":\" fqn))))",
           :repo "clojurescript",
-          :tag "r2120",
+          :tag "r2127",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2046 2076]},
+          :lines [2048 2078]},
  :full-name "cljs.core/Keyword",
  :clj-symbol "clojure.lang/Keyword"}
 

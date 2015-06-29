@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2120
+clojurescript @ r2127
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5942-5945](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L5942-L5945)</ins>
+            └── <ins>[core.cljs:5954-5957](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/core.cljs#L5954-L5957)</ins>
 </pre>
 
 
@@ -74,9 +74,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_key",
  :source {:code "(defn key\n  [map-entry]\n  (-key map-entry))",
           :repo "clojurescript",
-          :tag "r2120",
+          :tag "r2127",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [5942 5945]},
+          :lines [5954 5957]},
  :full-name "cljs.core/key",
  :clj-symbol "clojure.core/key",
  :docstring "Returns the key of the map entry."}

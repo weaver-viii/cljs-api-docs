@@ -49,11 +49,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2120
+clojurescript @ r2127
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2875-2878](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L2875-L2878)</ins>
+            └── <ins>[core.cljs:2887-2890](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/core.cljs#L2887-L2890)</ins>
 </pre>
 
 
@@ -80,9 +80,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_drop-last",
  :source {:code "(defn drop-last\n  ([s] (drop-last 1 s))\n  ([n s] (map (fn [x _] x) s (drop n s))))",
           :repo "clojurescript",
-          :tag "r2120",
+          :tag "r2127",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2875 2878]},
+          :lines [2887 2890]},
  :full-name "cljs.core/drop-last",
  :clj-symbol "clojure.core/drop-last",
  :docstring "Return a lazy sequence of all but the last n (default 1) items in coll"}

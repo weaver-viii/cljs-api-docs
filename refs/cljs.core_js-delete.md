@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2120
+clojurescript @ r2127
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1163-1164](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L1163-L1164)</ins>
+            └── <ins>[core.cljs:1165-1166](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/core.cljs#L1165-L1166)</ins>
 </pre>
 
 
@@ -63,11 +63,11 @@ clojurescript @ r2120
 ```
 
  <pre>
-clojurescript @ r2120
+clojurescript @ r2127
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:270-271](https://github.com/clojure/clojurescript/blob/r2120/src/clj/cljs/core.clj#L270-L271)</ins>
+            └── <ins>[core.clj:270-271](https://github.com/clojure/clojurescript/blob/r2127/src/clj/cljs/core.clj#L270-L271)</ins>
 </pre>
 
 ---
@@ -93,12 +93,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_js-delete",
  :source {:code "(defn js-delete [obj key]\n  (cljs.core/js-delete obj key))",
           :repo "clojurescript",
-          :tag "r2120",
+          :tag "r2127",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1163 1164]},
+          :lines [1165 1166]},
  :extra-sources ({:code "(defmacro js-delete [obj key]\n  (core/list 'js* \"delete ~{}[~{}]\" obj key))",
                   :repo "clojurescript",
-                  :tag "r2120",
+                  :tag "r2127",
                   :filename "src/clj/cljs/core.clj",
                   :lines [270 271]}),
  :examples [{:id "5b24ea",

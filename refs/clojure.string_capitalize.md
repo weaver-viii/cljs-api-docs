@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2120
+clojurescript @ r2127
 └── src
     └── cljs
         └── clojure
-            └── <ins>[string.cljs:63-70](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/clojure/string.cljs#L63-L70)</ins>
+            └── <ins>[string.cljs:63-70](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/clojure/string.cljs#L63-L70)</ins>
 </pre>
 
 
@@ -73,7 +73,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.string_capitalize",
  :source {:code "(defn capitalize\n  [s]\n  (if (< (count s) 2)\n    (upper-case s)\n    (str (upper-case (subs s 0 1))\n         (lower-case (subs s 1)))))",
           :repo "clojurescript",
-          :tag "r2120",
+          :tag "r2127",
           :filename "src/cljs/clojure/string.cljs",
           :lines [63 70]},
  :full-name "clojure.string/capitalize",

@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2120
+clojurescript @ r2127
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1148-1149](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L1148-L1149)</ins>
+            └── <ins>[core.cljs:1150-1151](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/core.cljs#L1150-L1151)</ins>
 </pre>
 
 
@@ -56,9 +56,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_chunked-seqQMARK",
  :source {:code "(defn ^boolean chunked-seq?\n  [x] (implements? IChunkedSeq x))",
           :repo "clojurescript",
-          :tag "r2120",
+          :tag "r2127",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1148 1149]},
+          :lines [1150 1151]},
  :full-name "cljs.core/chunked-seq?"}
 
 ```

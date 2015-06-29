@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2120
+clojurescript @ r2127
 └── src
     └── cljs
         └── cljs
-            └── <ins>[nodejs.cljs:7](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/nodejs.cljs#L7)</ins>
+            └── <ins>[nodejs.cljs:7](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/nodejs.cljs#L7)</ins>
 </pre>
 
 
@@ -46,7 +46,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def require (js* \"require\"))",
           :repo "clojurescript",
-          :tag "r2120",
+          :tag "r2127",
           :filename "src/cljs/cljs/nodejs.cljs",
           :lines [7]},
  :full-name "cljs.nodejs/require",

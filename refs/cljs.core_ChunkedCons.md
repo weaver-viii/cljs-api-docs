@@ -86,11 +86,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2120
+clojurescript @ r2127
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2225-2283](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L2225-L2283)</ins>
+            └── <ins>[core.cljs:2227-2285](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/core.cljs#L2227-L2285)</ins>
 </pre>
 
 
@@ -115,9 +115,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ChunkedCons",
  :source {:code "(deftype ChunkedCons [chunk more meta ^:mutable __hash]\n  Object\n  (toString [coll]\n    (pr-str* coll))\n  \n  IWithMeta\n  (-with-meta [coll m]\n    (ChunkedCons. chunk more m __hash))\n\n  IMeta\n  (-meta [coll] meta)\n\n  ISequential\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  ISeqable\n  (-seq [coll] coll)\n\n  ASeq\n  ISeq\n  (-first [coll] (-nth chunk 0))\n  (-rest [coll]\n    (if (> (-count chunk) 1)\n      (ChunkedCons. (-drop-first chunk) more meta nil)\n      (if (nil? more)\n        ()\n        more)))\n\n  INext\n  (-next [coll]\n    (if (> (-count chunk) 1)\n      (ChunkedCons. (-drop-first chunk) more meta nil)\n      (let [more (-seq more)]\n        (when-not (nil? more)\n          more))))\n\n  IChunkedSeq\n  (-chunked-first [coll] chunk)\n  (-chunked-rest [coll]\n    (if (nil? more)\n      ()\n      more))\n\n  IChunkedNext\n  (-chunked-next [coll]\n    (if (nil? more)\n      nil\n      more))\n\n  ICollection\n  (-conj [this o]\n    (cons o this))\n\n  IEmptyableCollection\n  (-empty [coll] (with-meta cljs.core.List.EMPTY meta))\n\n  IHash\n  (-hash [coll] (caching-hash coll hash-coll __hash)))",
           :repo "clojurescript",
-          :tag "r2120",
+          :tag "r2127",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2225 2283]},
+          :lines [2227 2285]},
  :full-name "cljs.core/ChunkedCons",
  :clj-symbol "clojure.lang/ChunkedCons"}
 

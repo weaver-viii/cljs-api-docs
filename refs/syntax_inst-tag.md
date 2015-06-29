@@ -30,11 +30,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2120
+clojurescript @ r2127
 └── src
     └── clj
         └── cljs
-            └── <ins>[tagged_literals.clj:44-48](https://github.com/clojure/clojurescript/blob/r2120/src/clj/cljs/tagged_literals.clj#L44-L48)</ins>
+            └── <ins>[tagged_literals.clj:44-48](https://github.com/clojure/clojurescript/blob/r2127/src/clj/cljs/tagged_literals.clj#L44-L48)</ins>
 </pre>
 
 
@@ -52,11 +52,11 @@ clojurescript @ r2120
 ```
 
  <pre>
-clojurescript @ r2120
+clojurescript @ r2127
 └── src
     └── clj
         └── cljs
-            └── <ins>[tagged_literals.clj:19-26](https://github.com/clojure/clojurescript/blob/r2120/src/clj/cljs/tagged_literals.clj#L19-L26)</ins>
+            └── <ins>[tagged_literals.clj:19-26](https://github.com/clojure/clojurescript/blob/r2127/src/clj/cljs/tagged_literals.clj#L19-L26)</ins>
 </pre>
 
 ---
@@ -79,12 +79,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_inst-tag",
  :source {:code "(def ^:dynamic *cljs-data-readers*\n  {'queue read-queue\n   'uuid  read-uuid\n   'inst  read-inst\n   'js    read-js})",
           :repo "clojurescript",
-          :tag "r2120",
+          :tag "r2127",
           :filename "src/clj/cljs/tagged_literals.clj",
           :lines [44 48]},
  :extra-sources [{:code "(defn read-inst\n  [form]\n  (when-not (string? form)\n    (throw (RuntimeException. \"Instance literal expects a string for its timestamp.\")))\n  (try\n    (inst/read-instant-date form)\n    (catch Throwable e\n      (throw (RuntimeException. (.getMessage e))))))",
                   :repo "clojurescript",
-                  :tag "r2120",
+                  :tag "r2127",
                   :filename "src/clj/cljs/tagged_literals.clj",
                   :lines [19 26]}],
  :syntax-form "#inst \"\"",

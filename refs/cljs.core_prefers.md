@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2120
+clojurescript @ r2127
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7552-7554](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L7552-L7554)</ins>
+            └── <ins>[core.cljs:7564-7566](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/core.cljs#L7564-L7566)</ins>
 </pre>
 
 
@@ -63,9 +63,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_prefers",
  :source {:code "(defn prefers\n  [multifn] (-prefers multifn))",
           :repo "clojurescript",
-          :tag "r2120",
+          :tag "r2127",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7552 7554]},
+          :lines [7564 7566]},
  :full-name "cljs.core/prefers",
  :clj-symbol "clojure.core/prefers",
  :docstring "Given a multimethod, returns a map of preferred value -> set of other values"}

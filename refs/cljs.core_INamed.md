@@ -25,11 +25,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2120
+clojurescript @ r2127
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:372-374](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L372-L374)</ins>
+            └── <ins>[core.cljs:372-374](https://github.com/clojure/clojurescript/blob/r2127/src/cljs/cljs/core.cljs#L372-L374)</ins>
 </pre>
 
 
@@ -53,7 +53,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_INamed",
  :source {:code "(defprotocol INamed\n  (^string -name [x])\n  (^string -namespace [x]))",
           :repo "clojurescript",
-          :tag "r2120",
+          :tag "r2127",
           :filename "src/cljs/cljs/core.cljs",
           :lines [372 374]},
  :methods [{:name "-name", :signature ["[x]"], :docstring nil}

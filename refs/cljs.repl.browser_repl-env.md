@@ -70,12 +70,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2120
+clojurescript @ r2127
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:225-266](https://github.com/clojure/clojurescript/blob/r2120/src/clj/cljs/repl/browser.clj#L225-L266)</ins>
+                └── <ins>[browser.clj:225-266](https://github.com/clojure/clojurescript/blob/r2127/src/clj/cljs/repl/browser.clj#L225-L266)</ins>
 </pre>
 
 
@@ -100,7 +100,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.browser_repl-env",
  :source {:code "(defn repl-env\n  [& {:as opts}]\n  (let [compiler-env (cljs.env/default-compiler-env)\n        opts (merge (BrowserEnv.)\n                    {:port          9000\n                     :optimizations :simple\n                     :working-dir   \".repl\"\n                     :serve-static  true\n                     :static-dir    [\".\" \"out/\"]\n                     :preloaded-libs   []\n                     :src           \"src/\"\n                     :cljs.env/compiler compiler-env\n                     :source-map    true}\n                    opts)]\n    (cljs.env/with-compiler-env compiler-env\n      (reset! preloaded-libs (set (concat (always-preload) (map str (:preloaded-libs opts)))))\n        (reset! loaded-libs @preloaded-libs)\n        (swap! browser-state\n               (fn [old] (assoc old :client-js\n                               (future (create-client-js-file\n                                        opts\n                                        (io/file (:working-dir opts) \"client.js\"))))))\n        opts)))",
           :repo "clojurescript",
-          :tag "r2120",
+          :tag "r2127",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [225 266]},
  :full-name "cljs.repl.browser/repl-env",
