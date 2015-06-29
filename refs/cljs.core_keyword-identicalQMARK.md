@@ -37,11 +37,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:2801-2809](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L2801-L2809)</ins>
+            └── cljs
+                └── <ins>[core.cljs:2811-2819](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L2811-L2819)</ins>
 </pre>
 
 
@@ -67,9 +68,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_keyword-identicalQMARK",
  :source {:code "(defn ^boolean keyword-identical?\n  [x y]\n  (if (identical? x y)\n    true\n    (if (and (keyword? x)\n             (keyword? y))\n      (identical? (.-fqn x) (.-fqn y))\n      false)))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
-          :lines [2801 2809]},
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
+          :lines [2811 2819]},
  :full-name "cljs.core/keyword-identical?",
  :docstring "Efficient test to determine that two keywords are identical."}
 

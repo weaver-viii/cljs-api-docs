@@ -30,11 +30,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[tagged_literals.clj:44-48](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/tagged_literals.clj#L44-L48)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[tagged_literals.clj:44-48](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/tagged_literals.clj#L44-L48)</ins>
 </pre>
 
 
@@ -52,11 +53,12 @@ clojurescript @ r3211
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[tagged_literals.clj:10-17](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/tagged_literals.clj#L10-L17)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[tagged_literals.clj:10-17](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/tagged_literals.clj#L10-L17)</ins>
 </pre>
 
 ---
@@ -79,13 +81,13 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_uuid-literal",
  :source {:code "(def ^:dynamic *cljs-data-readers*\n  {'queue read-queue\n   'uuid  read-uuid\n   'inst  read-inst\n   'js    read-js})",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/tagged_literals.clj",
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/tagged_literals.clj",
           :lines [44 48]},
  :extra-sources [{:code "(defn read-uuid\n  [form]\n  (when-not (string? form)\n    (throw (RuntimeException. \"UUID literal expects a string as its representation.\")))\n  (try\n    (java.util.UUID/fromString form)\n    (catch Throwable e\n      (throw (RuntimeException. (.getMessage e))))))",
                   :repo "clojurescript",
-                  :tag "r3211",
-                  :filename "src/clj/cljs/tagged_literals.clj",
+                  :tag "r3255",
+                  :filename "src/main/clojure/cljs/tagged_literals.clj",
                   :lines [10 17]}],
  :syntax-form "#uuid \"\"",
  :edn-doc "https://github.com/edn-format/edn#uuid-f81d4fae-7dec-11d0-a765-00a0c91e6bf6",

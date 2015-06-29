@@ -32,11 +32,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:48-53](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L48-L53)</ins>
+            └── cljs
+                └── <ins>[core.cljs:48-53](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L48-L53)</ins>
 </pre>
 
 
@@ -59,8 +60,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "dynamic var",
  :source {:code "(def\n  ^{:dynamic true\n    :doc \"When set to logical false will drop newlines from printing calls.\n  This is to work around the implicit newlines emitted by standard JavaScript\n  console objects.\"}\n  *print-newline* true)",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
           :lines [48 53]},
  :full-name "cljs.core/*print-newline*",
  :full-name-encode "cljs.core_STARprint-newlineSTAR",

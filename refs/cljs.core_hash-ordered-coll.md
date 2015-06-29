@@ -41,11 +41,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:1053-1062](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L1053-L1062)</ins>
+            └── cljs
+                └── <ins>[core.cljs:1058-1067](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L1058-L1067)</ins>
 </pre>
 
 
@@ -71,9 +72,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash-ordered-coll",
  :source {:code "(defn ^number hash-ordered-coll\n  [coll]\n  (loop [n 0 hash-code 1 coll (seq coll)]\n    (if-not (nil? coll)\n      (recur (inc n) (bit-or (+ (imul 31 hash-code) (hash (first coll))) 0)\n        (next coll))\n      (mix-collection-hash hash-code n))))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
-          :lines [1053 1062]},
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
+          :lines [1058 1067]},
  :full-name "cljs.core/hash-ordered-coll",
  :clj-symbol "clojure.core/hash-ordered-coll",
  :docstring "Returns the hash code, consistent with =, for an external ordered\ncollection implementing Iterable.\nSee http://clojure.org/data_structures#hash for full algorithms."}

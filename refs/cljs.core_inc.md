@@ -42,11 +42,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:1120-1122](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L1120-L1122)</ins>
+            └── cljs
+                └── <ins>[core.cljs:1125-1127](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L1125-L1127)</ins>
 </pre>
 
 
@@ -58,11 +59,12 @@ clojurescript @ r3211
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[core.clj:530-531](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/core.clj#L530-L531)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[core.clj:530-531](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/core.clj#L530-L531)</ins>
 </pre>
 
 ---
@@ -88,13 +90,13 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_inc",
  :source {:code "(defn inc\n  [x] (cljs.core/+ x 1))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
-          :lines [1120 1122]},
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
+          :lines [1125 1127]},
  :extra-sources ({:code "(defmacro ^::ana/numeric inc [x]\n  `(+ ~x 1))",
                   :repo "clojurescript",
-                  :tag "r3211",
-                  :filename "src/clj/cljs/core.clj",
+                  :tag "r3255",
+                  :filename "src/main/clojure/cljs/core.clj",
                   :lines [530 531]}),
  :full-name "cljs.core/inc",
  :clj-symbol "clojure.core/inc",

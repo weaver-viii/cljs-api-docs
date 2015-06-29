@@ -36,11 +36,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[test.clj:330-334](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/test.clj#L330-L334)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[test.clj:330-334](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/test.clj#L330-L334)</ins>
 </pre>
 
 
@@ -65,8 +66,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_test-all-vars",
  :source {:code "(defmacro test-all-vars\n  [[quote ns :as form]]\n  `(cljs.test/run-block (test-all-vars-block ~form)))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/test.clj",
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/test.clj",
           :lines [330 334]},
  :full-name "cljs.test/test-all-vars",
  :clj-symbol "clojure.test/test-all-vars",

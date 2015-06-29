@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.7.0-beta1
+clojure @ clojure-1.7.0-beta2
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:6056-6064](https://github.com/clojure/clojure/blob/clojure-1.7.0-beta1/src/clj/clojure/core.clj#L6056-L6064)</ins>
+            └── <ins>[core.clj:6056-6064](https://github.com/clojure/clojure/blob/clojure-1.7.0-beta2/src/clj/clojure/core.clj#L6056-L6064)</ins>
 </pre>
 
 
@@ -81,7 +81,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_while",
  :source {:code "(defmacro while\n  [test & body]\n  `(loop []\n     (when ~test\n       ~@body\n       (recur))))",
           :repo "clojure",
-          :tag "clojure-1.7.0-beta1",
+          :tag "clojure-1.7.0-beta2",
           :filename "src/clj/clojure/core.clj",
           :lines [6056 6064]},
  :full-name "cljs.core/while",

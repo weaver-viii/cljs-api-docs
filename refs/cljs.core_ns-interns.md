@@ -41,11 +41,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[core.clj:2003-2012](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/core.clj#L2003-L2012)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[core.clj:2005-2014](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/core.clj#L2005-L2014)</ins>
 </pre>
 
 
@@ -70,9 +71,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ns-interns",
  :source {:code "(defmacro ns-interns\n  [[quote ns]]\n  (core/assert (core/and (= quote 'quote) (core/symbol? ns))\n    \"Argument to ns-interns must be a quoted symbol\")\n  `(into {}\n     [~@(map\n          (fn [[sym _]]\n            `[(symbol ~(name sym)) (var ~(symbol (name ns) (name sym)))])\n          (get-in @env/*compiler* [:cljs.analyzer/namespaces ns :defs]))]))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/core.clj",
-          :lines [2003 2012]},
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/core.clj",
+          :lines [2005 2014]},
  :full-name "cljs.core/ns-interns",
  :clj-symbol "clojure.core/ns-interns",
  :docstring "Returns a map of the intern mappings for the namespace."}

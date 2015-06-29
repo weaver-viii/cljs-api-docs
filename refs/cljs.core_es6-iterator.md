@@ -32,11 +32,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:1014-1017](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L1014-L1017)</ins>
+            └── cljs
+                └── <ins>[core.cljs:1019-1022](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L1019-L1022)</ins>
 </pre>
 
 
@@ -61,9 +62,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_es6-iterator",
  :source {:code "(defn es6-iterator\n  [coll]\n  (ES6Iterator. (seq coll)))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
-          :lines [1014 1017]},
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
+          :lines [1019 1022]},
  :full-name "cljs.core/es6-iterator",
  :docstring "EXPERIMENTAL: Return a ES2015 compatible iterator for coll."}
 

@@ -36,11 +36,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:9579-9586](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L9579-L9586)</ins>
+            └── cljs
+                └── <ins>[core.cljs:9592-9599](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L9592-L9599)</ins>
 </pre>
 
 
@@ -65,9 +66,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ex-cause",
  :source {:code "(defn ex-cause\n  [ex]\n  (when (instance? ExceptionInfo ex)\n    (.-cause ex)))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
-          :lines [9579 9586]},
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
+          :lines [9592 9599]},
  :full-name "cljs.core/ex-cause",
  :docstring "Alpha - subject to change.\nReturns exception cause (an Error / ExceptionInfo) if ex is an\nExceptionInfo.\nOtherwise returns nil."}
 

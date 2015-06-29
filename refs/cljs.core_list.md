@@ -56,11 +56,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:2674-2689](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L2674-L2689)</ins>
+            └── cljs
+                └── <ins>[core.cljs:2684-2699](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L2684-L2699)</ins>
 </pre>
 
 
@@ -74,11 +75,12 @@ clojurescript @ r3211
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[core.clj:1740-1743](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/core.clj#L1740-L1743)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[core.clj:1742-1745](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/core.clj#L1742-L1745)</ins>
 </pre>
 
 ---
@@ -104,14 +106,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_list",
  :source {:code "(defn list\n  [& xs]\n  (let [arr (if (and (instance? IndexedSeq xs) (zero? (.-i xs)))\n              (.-arr xs)\n              (let [arr (array)]\n                (loop [^not-native xs xs]\n                  (if-not (nil? xs)\n                    (do\n                      (.push arr (-first xs))\n                      (recur (-next xs)))\n                    arr))))]\n    (loop [i (alength arr) ^not-native r ()]\n      (if (> i 0)\n        (recur (dec i) (-conj r (aget arr (dec i))))\n        r))))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
-          :lines [2674 2689]},
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
+          :lines [2684 2699]},
  :extra-sources ({:code "(defmacro list\n  ([] '(.-EMPTY cljs.core/List))\n  ([x & xs]\n    `(-conj (list ~@xs) ~x)))",
                   :repo "clojurescript",
-                  :tag "r3211",
-                  :filename "src/clj/cljs/core.clj",
-                  :lines [1740 1743]}),
+                  :tag "r3255",
+                  :filename "src/main/clojure/cljs/core.clj",
+                  :lines [1742 1745]}),
  :full-name "cljs.core/list",
  :clj-symbol "clojure.core/list",
  :docstring "Creates a new list containing the items."}

@@ -32,11 +32,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:920-923](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L920-L923)</ins>
+            └── cljs
+                └── <ins>[core.cljs:925-928](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L925-L928)</ins>
 </pre>
 
 
@@ -61,9 +62,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_clone",
  :source {:code "(defn clone\n  [value]\n  (-clone value))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
-          :lines [920 923]},
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
+          :lines [925 928]},
  :full-name "cljs.core/clone",
  :docstring "Clone the supplied value which must implement ICloneable."}
 

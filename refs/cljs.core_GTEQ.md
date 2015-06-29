@@ -74,11 +74,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:2168-2178](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L2168-L2178)</ins>
+            └── cljs
+                └── <ins>[core.cljs:2178-2188](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L2178-L2188)</ins>
 </pre>
 
 
@@ -92,11 +93,12 @@ clojurescript @ r3211
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[core.clj:517-520](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/core.clj#L517-L520)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[core.clj:517-520](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/core.clj#L517-L520)</ins>
 </pre>
 
 ---
@@ -123,13 +125,13 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_GTEQ",
  :source {:code "(defn ^boolean >=\n  ([x] true)\n  ([x y] (cljs.core/>= x y))\n  ([x y & more]\n   (if (cljs.core/>= x y)\n     (if (next more)\n       (recur y (first more) (next more))\n       (cljs.core/>= y (first more)))\n     false)))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
-          :lines [2168 2178]},
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
+          :lines [2178 2188]},
  :extra-sources ({:code "(defmacro ^::ana/numeric >=\n  ([x] true)\n  ([x y] (bool-expr (core/list 'js* \"(~{} >= ~{})\" x y)))\n  ([x y & more] `(and (>= ~x ~y) (>= ~y ~@more))))",
                   :repo "clojurescript",
-                  :tag "r3211",
-                  :filename "src/clj/cljs/core.clj",
+                  :tag "r3255",
+                  :filename "src/main/clojure/cljs/core.clj",
                   :lines [517 520]}),
  :examples [{:id "de73d7",
              :content "```clj\n(>= 2 1)\n;;=> true\n\n(>= 2 2)\n;;=> true\n\n(>= 1 2)\n;;=> false\n\n(>= 6 5 4 3 2)\n;;=> true\n```"}],

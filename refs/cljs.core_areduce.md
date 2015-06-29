@@ -60,11 +60,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[core.clj:1837-1846](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/core.clj#L1837-L1846)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[core.clj:1839-1848](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/core.clj#L1839-L1848)</ins>
 </pre>
 
 
@@ -91,9 +92,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_areduce",
  :source {:code "(defmacro areduce\n  [a idx ret init expr]\n  `(let [a# ~a]\n     (loop  [~idx 0 ~ret ~init]\n       (if (< ~idx  (alength a#))\n         (recur (inc ~idx) ~expr)\n         ~ret))))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/core.clj",
-          :lines [1837 1846]},
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/core.clj",
+          :lines [1839 1848]},
  :examples [{:id "20a389",
              :content "```clj\n(def a #js [1 2 3])\n(areduce a i ret 0 (+ ret (aget a i)))\n;;=> 6\n```"}],
  :full-name "cljs.core/areduce",

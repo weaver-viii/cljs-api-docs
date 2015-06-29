@@ -36,11 +36,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[test.clj:18-22](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/test.clj#L18-L22)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[test.clj:18-22](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/test.clj#L18-L22)</ins>
 </pre>
 
 
@@ -65,8 +66,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_functionQMARK",
  :source {:code "(defn function?\n  [menv x]\n  (and (symbol? x) (:fn-var (ana-api/resolve menv x))))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/test.clj",
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/test.clj",
           :lines [18 22]},
  :full-name "cljs.test/function?",
  :clj-symbol "clojure.test/function?",

@@ -27,11 +27,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[reader.cljs:385-387](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/reader.cljs#L385-L387)</ins>
+            └── cljs
+                └── <ins>[reader.cljs:385-387](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/reader.cljs#L385-L387)</ins>
 </pre>
 
 
@@ -54,8 +55,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[rdr ch]"],
  :source {:code "(defn read-regex\n  [rdr ch]\n  (-> (read-raw-string* rdr ch) re-pattern))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/reader.cljs",
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/reader.cljs",
           :lines [385 387]},
  :full-name "cljs.reader/read-regex",
  :full-name-encode "cljs.reader_read-regex",

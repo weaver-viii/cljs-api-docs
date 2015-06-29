@@ -37,11 +37,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[test.cljs:374-386](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/test.cljs#L374-L386)</ins>
+            └── cljs
+                └── <ins>[test.cljs:374-386](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/test.cljs#L374-L386)</ins>
 </pre>
 
 
@@ -64,8 +65,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[exception depth]"],
  :source {:code "(defn file-and-line [exception depth]\n  ;; TODO: flesh out\n  (if-let [stack-element (and (string? (.-stack exception))\n                              (some-> (.-stack exception)\n                                      string/split-lines\n                                      (get depth)\n                                      string/trim))]\n    (let [fname (js-filename stack-element)\n          [line column] (js-line-and-column stack-element)\n          [fname line column] (mapped-line-and-column fname line column)]\n      {:file fname :line line :column column})\n    {:file (.-fileName exception)\n     :line (.-lineNumber exception)}))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/test.cljs",
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/test.cljs",
           :lines [374 386]},
  :full-name "cljs.test/file-and-line",
  :full-name-encode "cljs.test_file-and-line",

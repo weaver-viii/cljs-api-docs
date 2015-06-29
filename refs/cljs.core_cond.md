@@ -62,11 +62,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.7.0-beta1
+clojure @ clojure-1.7.0-beta2
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:562-575](https://github.com/clojure/clojure/blob/clojure-1.7.0-beta1/src/clj/clojure/core.clj#L562-L575)</ins>
+            └── <ins>[core.clj:562-575](https://github.com/clojure/clojure/blob/clojure-1.7.0-beta2/src/clj/clojure/core.clj#L562-L575)</ins>
 </pre>
 
 
@@ -93,7 +93,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_cond",
  :source {:code "(defmacro cond\n  [& clauses]\n    (when clauses\n      (list 'if (first clauses)\n            (if (next clauses)\n                (second clauses)\n                (throw (IllegalArgumentException.\n                         \"cond requires an even number of forms\")))\n            (cons 'clojure.core/cond (next (next clauses))))))",
           :repo "clojure",
-          :tag "clojure-1.7.0-beta1",
+          :tag "clojure-1.7.0-beta2",
           :filename "src/clj/clojure/core.clj",
           :lines [562 575]},
  :full-name "cljs.core/cond",

@@ -26,20 +26,21 @@ Evaluate a file on the classpath in the engine.
 Source code:
 
 ```clj
-(defn eval-resource 
-  [engine path debug]
-  (let [r (io/resource path)]
-    (eval-str engine (slurp r))
-    (when debug (println "loaded: " path))))
+(defn eval-resource
+      [engine path debug]
+      (let [r (io/resource path)]
+        (eval-str engine (slurp r))
+        (when debug (println "loaded: " path))))
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── repl
-                └── <ins>[nashorn.clj:60-65](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/repl/nashorn.clj#L60-L65)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── repl
+                    └── <ins>[nashorn.clj:47-52](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/repl/nashorn.clj#L47-L52)</ins>
 </pre>
 
 
@@ -62,11 +63,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-2814"]],
  :type "function",
  :full-name-encode "cljs.repl.nashorn_eval-resource",
- :source {:code "(defn eval-resource \n  [engine path debug]\n  (let [r (io/resource path)]\n    (eval-str engine (slurp r))\n    (when debug (println \"loaded: \" path))))",
+ :source {:code "(defn eval-resource\n      [engine path debug]\n      (let [r (io/resource path)]\n        (eval-str engine (slurp r))\n        (when debug (println \"loaded: \" path))))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/repl/nashorn.clj",
-          :lines [60 65]},
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/repl/nashorn.clj",
+          :lines [47 52]},
  :full-name "cljs.repl.nashorn/eval-resource",
  :docstring "Evaluate a file on the classpath in the engine."}
 

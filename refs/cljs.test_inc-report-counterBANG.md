@@ -34,11 +34,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[test.cljs:295-300](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/test.cljs#L295-L300)</ins>
+            └── cljs
+                └── <ins>[test.cljs:295-300](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/test.cljs#L295-L300)</ins>
 </pre>
 
 
@@ -63,8 +64,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_inc-report-counterBANG",
  :source {:code "(defn inc-report-counter!\n  [name]\n  (if (:report-counters (get-current-env))\n    (update-current-env! [:report-counters name] (fnil inc 0))))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/test.cljs",
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/test.cljs",
           :lines [295 300]},
  :full-name "cljs.test/inc-report-counter!",
  :docstring "Increments the named counter in *report-counters*, a ref to a map.\nDoes nothing if *report-counters* is nil."}

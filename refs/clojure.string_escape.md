@@ -55,11 +55,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
-        └── clojure
-            └── <ins>[string.cljs:179-195](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/clojure/string.cljs#L179-L195)</ins>
+    └── main
+        └── cljs
+            └── clojure
+                └── <ins>[string.cljs:179-195](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/clojure/string.cljs#L179-L195)</ins>
 </pre>
 
 
@@ -85,8 +86,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.string_escape",
  :source {:code "(defn escape\n  [s cmap]\n  (let [buffer (StringBuffer.)\n        length (.-length s)]\n    (loop [index 0]\n      (if (= length index)\n        (. buffer (toString))\n        (let [ch (.charAt s index)]\n          (if-let [replacement (get cmap ch)]\n            (.append buffer (str replacement))\n            (.append buffer ch))\n          (recur (inc index)))))))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/clojure/string.cljs",
+          :tag "r3255",
+          :filename "src/main/cljs/clojure/string.cljs",
           :lines [179 195]},
  :full-name "clojure.string/escape",
  :clj-symbol "clojure.string/escape",

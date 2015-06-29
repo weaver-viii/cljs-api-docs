@@ -44,12 +44,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
-        └── clojure
-            └── browser
-                └── <ins>[repl.cljs:43-58](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/clojure/browser/repl.cljs#L43-L58)</ins>
+    └── main
+        └── cljs
+            └── clojure
+                └── browser
+                    └── <ins>[repl.cljs:43-58](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/clojure/browser/repl.cljs#L43-L58)</ins>
 </pre>
 
 
@@ -74,8 +75,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.repl_evaluate-javascript",
  :source {:code "(defn evaluate-javascript\n  [conn block]\n  (let [result\n        (try\n          {:status :success\n           :value (str (js* \"eval(~{block})\"))}\n          (catch :default e\n            {:status :exception\n             :ua-product (get-ua-product)\n             :value (str e)\n             :stacktrace\n             (if (.hasOwnProperty e \"stack\")\n               (.-stack e)\n               \"No stacktrace available.\")}))]\n    (pr-str result)))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/clojure/browser/repl.cljs",
+          :tag "r3255",
+          :filename "src/main/cljs/clojure/browser/repl.cljs",
           :lines [43 58]},
  :full-name "clojure.browser.repl/evaluate-javascript",
  :docstring "Process a single block of JavaScript received from the server"}

@@ -1,10 +1,10 @@
-## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> cljs.pprint/PrettyFlush
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> ~~cljs.pprint/PrettyFlush~~
 
  <table border="1">
 <tr>
 
 <td>protocol</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2496"><img valign="middle" alt="[+] 0.0-2496" src="https://img.shields.io/badge/+-0.0--2496-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2496"><img valign="middle" alt="[+] 0.0-2496" src="https://img.shields.io/badge/+-0.0--2496-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-3255"><img valign="middle" alt="[×] 0.0-3255" src="https://img.shields.io/badge/×-0.0--3255-red.svg"></a> </td>
 </tr>
 </table>
 
@@ -43,6 +43,7 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.pprint",
  :name "PrettyFlush",
+ :history [["+" "0.0-2496"] ["-" "0.0-3255"]],
  :type "protocol",
  :full-name-encode "cljs.pprint_PrettyFlush",
  :source {:code "(defprotocol PrettyFlush (ppflush [this]))",
@@ -52,7 +53,7 @@ __Meta__ - To retrieve the API data for this symbol:
           :lines [120]},
  :methods [{:name "ppflush", :signature ["[this]"], :docstring nil}],
  :full-name "cljs.pprint/PrettyFlush",
- :history [["+" "0.0-2496"]]}
+ :removed {:in "0.0-3255", :last-seen "0.0-3211"}}
 
 ```
 

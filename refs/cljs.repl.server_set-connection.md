@@ -42,12 +42,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── repl
-                └── <ins>[server.clj:24-37](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/repl/server.clj#L24-L37)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── repl
+                    └── <ins>[server.clj:24-37](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/repl/server.clj#L24-L37)</ins>
 </pre>
 
 
@@ -72,8 +73,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.server_set-connection",
  :source {:code "(defn set-connection\n  [conn]\n  (if-let [promised-conn (:promised-conn @state)]\n    (do\n      (swap! state\n        (fn [old]\n          (-> old\n            (assoc :connection nil)\n            (assoc :promised-conn nil))))\n      (deliver promised-conn conn))\n    (swap! state (fn [old] (assoc old :connection conn)))))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/repl/server.clj",
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/repl/server.clj",
           :lines [24 37]},
  :full-name "cljs.repl.server/set-connection",
  :docstring "Given a new available connection, either use it to deliver the\nconnection which was promised or store the connection for later\nuse."}

@@ -40,12 +40,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── repl
-                └── <ins>[browser.clj:301-316](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/repl/browser.clj#L301-L316)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── repl
+                    └── <ins>[browser.clj:301-316](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/repl/browser.clj#L301-L316)</ins>
 </pre>
 
 
@@ -68,8 +69,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[st-el opts]"],
  :source {:code "(defn safari-st-el->frame\n  [st-el opts]\n  (let [[function flc] (if (re-find #\"@\" st-el)\n                         (string/split st-el #\"@\")\n                         [nil st-el])\n        [file line column] (parse-file-line-column flc)]\n    (if (and file function line column)\n      {:file (parse-file file opts)\n       :function function\n       :line line\n       :column column}\n      (when-not (string/blank? function)\n        {:file nil\n         :function (string/trim function)\n         :line nil\n         :column nil}))))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/repl/browser.clj",
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/repl/browser.clj",
           :lines [301 316]},
  :full-name "cljs.repl.browser/safari-st-el->frame",
  :full-name-encode "cljs.repl.browser_safari-st-el-GTframe",

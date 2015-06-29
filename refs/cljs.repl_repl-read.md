@@ -53,11 +53,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[repl.clj:77-98](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/repl.clj#L77-L98)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[repl.cljc:77-98](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/repl.cljc#L77-L98)</ins>
 </pre>
 
 
@@ -83,8 +84,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_repl-read",
  :source {:code "(defn repl-read\n  ([request-prompt request-exit]\n   (repl-read request-prompt request-exit *repl-opts*))\n  ([request-prompt request-exit opts]\n   (binding [*in* (if (true? (:source-map-inline opts))\n                    ((:reader opts))\n                    *in*)]\n     (or ({:line-start request-prompt :stream-end request-exit}\n          (skip-whitespace *in*))\n        (let [input (reader/read {:read-cond :allow :features #{:cljs}} *in*)]\n          (skip-if-eol *in*)\n          input)))))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/repl.clj",
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/repl.cljc",
           :lines [77 98]},
  :full-name "cljs.repl/repl-read",
  :docstring "Default :read hook for repl. Reads from *in* which must either be an\ninstance of LineNumberingPushbackReader or duplicate its behavior of both\nsupporting .unread and collapsing all of CR, LF, and CRLF into a single\n\\newline. repl-read:\n  - skips whitespace, then\n    - returns request-prompt on start of line, or\n    - returns request-exit on end of stream, or\n    - reads an object from the input stream, then\n      - skips the next input character if it's end of line, then\n      - returns the object."}

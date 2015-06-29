@@ -33,11 +33,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[repl.clj:134-147](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/repl.clj#L134-L147)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[repl.cljc:134-147](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/repl.cljc#L134-L147)</ins>
 </pre>
 
 
@@ -60,8 +61,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_IParseStacktrace",
  :source {:code "(defprotocol IParseStacktrace\n  (-parse-stacktrace [repl-env stacktrace error build-options]\n    \"Given the original JavaScript stacktrace string, the entire original error\n     value and current compiler build options, parse the stacktrace into the\n     canonical form:\n\n     [{:file <string>\n       :function <string>\n       :line <integer>\n       :column <integer>}*]\n\n     :file must be a URL path (without protocol) relative to :output-dir. If\n     no source file can be supplied (such as REPL defs), :file may be a custom\n     identifier string surrounded by angle brackets, i.e. \\\"<cljs repl>\\\".\"))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/repl.clj",
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/repl.cljc",
           :lines [134 147]},
  :methods [{:name "-parse-stacktrace",
             :signature ["[repl-env stacktrace error build-options]"],

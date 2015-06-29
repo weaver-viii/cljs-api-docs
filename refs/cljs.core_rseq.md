@@ -48,11 +48,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:2661-2665](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L2661-L2665)</ins>
+            └── cljs
+                └── <ins>[core.cljs:2671-2675](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L2671-L2675)</ins>
 </pre>
 
 
@@ -80,9 +81,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_rseq",
  :source {:code "(defn ^seq rseq\n  [coll]\n  (-rseq coll))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
-          :lines [2661 2665]},
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
+          :lines [2671 2675]},
  :full-name "cljs.core/rseq",
  :clj-symbol "clojure.core/rseq",
  :docstring "Returns, in constant time, a seq of the items in rev (which\ncan be a vector or sorted-map), in reverse order. If rev is empty returns nil"}

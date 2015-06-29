@@ -32,11 +32,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:561-565](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L561-L565)</ins>
+            └── cljs
+                └── <ins>[core.cljs:561-565](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L561-L565)</ins>
 </pre>
 
 
@@ -60,8 +61,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ITransientAssociative",
  :source {:code "(defprotocol ITransientAssociative\n  \"Protocol for adding associativity to transient collections.\"\n  (^clj -assoc! [tcoll key val]\n    \"Returns a new transient collection of tcoll with a mapping from key to\n     val added to it.\"))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
           :lines [561 565]},
  :methods [{:name "-assoc!",
             :signature ["[tcoll key val]"],

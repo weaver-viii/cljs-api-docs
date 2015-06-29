@@ -20,12 +20,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── repl
-                └── <ins>[browser.clj:23](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/repl/browser.clj#L23)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── repl
+                    └── <ins>[browser.clj:23](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/repl/browser.clj#L23)</ins>
 </pre>
 
 
@@ -47,8 +48,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "dynamic var",
  :source {:code "(def ^:dynamic browser-state nil)",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/repl/browser.clj",
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/repl/browser.clj",
           :lines [23]},
  :full-name "cljs.repl.browser/browser-state",
  :full-name-encode "cljs.repl.browser_browser-state",

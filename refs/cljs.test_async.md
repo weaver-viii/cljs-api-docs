@@ -46,11 +46,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[test.clj:222-239](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/test.clj#L222-L239)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[test.clj:222-239](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/test.clj#L222-L239)</ins>
 </pre>
 
 
@@ -75,8 +76,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_async",
  :source {:code "(defmacro async\n  [done & body]\n  `(reify\n     cljs.test/IAsyncTest\n     cljs.core/IFn\n     (~'-invoke [_# ~done]\n       ~@body)))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/test.clj",
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/test.clj",
           :lines [222 239]},
  :full-name "cljs.test/async",
  :docstring "Wraps body as a CPS function that can be returned from a test to\ncontinue asynchronously.  Binds done to a function that must be\ninvoked once and from an async context after any assertions.\n\n(deftest example-with-timeout\n  (async done\n    (js/setTimeout (fn []\n                     ;; make assertions in async context...\n                     (done) ;; ...then call done\n                     )\n                   0)))"}

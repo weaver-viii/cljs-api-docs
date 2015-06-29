@@ -36,12 +36,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── analyzer
-                └── <ins>[api.clj:120-124](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/analyzer/api.clj#L120-L124)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── analyzer
+                    └── <ins>[api.clj:120-124](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/analyzer/api.clj#L120-L124)</ins>
 </pre>
 
 
@@ -66,8 +67,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.analyzer.api_remove-ns",
  :source {:code "(defn remove-ns\n  [ns]\n  {:pre [(symbol? ns)]}\n  (swap! env/*compiler* update-in [::ana/namespaces] dissoc ns))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/analyzer/api.clj",
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/analyzer/api.clj",
           :lines [120 124]},
  :full-name "cljs.analyzer.api/remove-ns",
  :clj-symbol "clojure.core/remove-ns",

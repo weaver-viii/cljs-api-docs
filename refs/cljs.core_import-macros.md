@@ -51,11 +51,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[core.clj:48-74](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/core.clj#L48-L74)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[core.clj:48-74](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/core.clj#L48-L74)</ins>
 </pre>
 
 
@@ -78,8 +79,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[ns [& vars]]"],
  :source {:code "(defmacro import-macros [ns [& vars]]\n  (core/let [ns (find-ns ns)\n             vars (map #(ns-resolve ns %) vars)\n             syms (map\n                    (core/fn [^clojure.lang.Var v]\n                      (core/-> v .sym\n                        (with-meta\n                          (merge\n                            {:macro true}\n                            (update-in (select-keys (meta v) [:arglists :doc :file :line])\n                              [:arglists] (core/fn [arglists] `(quote ~arglists)))))))\n                    vars)\n             defs (map\n                    (core/fn [sym var]\n                      (core/let [{:keys [arglists doc file line]} (meta sym)]\n                        `(do\n                           (def ~sym (deref ~var))\n                           ;for AOT compilation\n                           (alter-meta! (var ~sym) assoc\n                             :macro true\n                             :arglists ~arglists\n                             :doc ~doc\n                             :file ~file\n                             :line ~line))))\n                    syms vars)]\n    `(do ~@defs\n         :imported)))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/core.clj",
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/core.clj",
           :lines [48 74]},
  :full-name "cljs.core/import-macros",
  :full-name-encode "cljs.core_import-macros",

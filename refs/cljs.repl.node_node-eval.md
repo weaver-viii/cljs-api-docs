@@ -44,12 +44,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── repl
-                └── <ins>[node.clj:52-67](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/repl/node.clj#L52-L67)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── repl
+                    └── <ins>[node.clj:52-67](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/repl/node.clj#L52-L67)</ins>
 </pre>
 
 
@@ -74,8 +75,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.node_node-eval",
  :source {:code "(defn node-eval\n  [repl-env js]\n  (let [{:keys [in out]} @(:socket repl-env)]\n    ;; escape backslash for Node.js under Windows\n    (write out js)\n    (let [result (json/read-str\n                   (read-response in) :key-fn keyword)]\n      (condp = (:status result)\n        \"success\"\n        {:status :success\n         :value (:value result)}\n\n        \"exception\"\n        {:status :exception\n         :value (:value result)}))))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/repl/node.clj",
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/repl/node.clj",
           :lines [52 67]},
  :full-name "cljs.repl.node/node-eval",
  :docstring "Evaluate a JavaScript string in the Node REPL process."}

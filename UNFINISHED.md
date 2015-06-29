@@ -280,7 +280,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.compiler.api/cljs-files-in</td>
-<td></td>
+<td>[ref](refs/cljs.compiler.api_cljs-files-in.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.compiler.api_cljs-files-in.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -288,7 +288,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.compiler.api/compile-file</td>
-<td></td>
+<td>[ref](refs/cljs.compiler.api_compile-file.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.compiler.api_compile-file.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -296,7 +296,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.compiler.api/compile-root</td>
-<td></td>
+<td>[ref](refs/cljs.compiler.api_compile-root.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.compiler.api_compile-root.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -304,7 +304,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.compiler.api/emit</td>
-<td></td>
+<td>[ref](refs/cljs.compiler.api_emit.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.compiler.api_emit.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -312,7 +312,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.compiler.api/requires-compilation?</td>
-<td></td>
+<td>[ref](refs/cljs.compiler.api_requires-compilationQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.compiler.api_requires-compilationQMARK.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -320,7 +320,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.compiler.api/with-core-cljs</td>
-<td></td>
+<td>[ref](refs/cljs.compiler.api_with-core-cljs.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.compiler.api_with-core-cljs.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1496,7 +1496,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/TaggedLiteral</td>
-<td></td>
+<td>[ref](refs/cljs.core_TaggedLiteral.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_TaggedLiteral.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3952,7 +3952,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/record?</td>
-<td></td>
+<td>[ref](refs/cljs.core_recordQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_recordQMARK.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4544,7 +4544,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/tagged-literal</td>
-<td></td>
+<td>[ref](refs/cljs.core_tagged-literal.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_tagged-literal.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4552,7 +4552,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/tagged-literal?</td>
-<td></td>
+<td>[ref](refs/cljs.core_tagged-literalQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_tagged-literalQMARK.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4952,7 +4952,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/var?</td>
-<td></td>
+<td>[ref](refs/cljs.core_varQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_varQMARK.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5136,7 +5136,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/IPrettyFlush</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_IPrettyFlush.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_IPrettyFlush.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5152,7 +5152,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/\*out\*</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_STARoutSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_STARoutSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5160,7 +5160,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/\*print-base\*</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_STARprint-baseSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_STARprint-baseSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5168,7 +5168,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/\*print-miser-width\*</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_STARprint-miser-widthSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_STARprint-miser-widthSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5176,7 +5176,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/\*print-pprint-dispatch\*</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_STARprint-pprint-dispatchSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_STARprint-pprint-dispatchSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5184,7 +5184,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/\*print-pretty\*</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_STARprint-prettySTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_STARprint-prettySTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5192,7 +5192,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/\*print-radix\*</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_STARprint-radixSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_STARprint-radixSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5200,7 +5200,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/\*print-right-margin\*</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_STARprint-right-marginSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_STARprint-right-marginSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5208,7 +5208,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/\*print-suppress-namespaces\*</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_STARprint-suppress-namespacesSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_STARprint-suppress-namespacesSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5216,7 +5216,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/char-code</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_char-code.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_char-code.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5224,7 +5224,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/cl-format</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_cl-format.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_cl-format.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5232,7 +5232,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/deftype</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_deftype.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_deftype.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5240,7 +5240,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/float?</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_floatQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_floatQMARK.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5248,7 +5248,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/formatter</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_formatter.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_formatter.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5256,7 +5256,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/formatter-out</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_formatter-out.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_formatter-out.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5264,7 +5264,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/fresh-line</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_fresh-line.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_fresh-line.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5272,7 +5272,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/get-pretty-writer</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_get-pretty-writer.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_get-pretty-writer.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5280,7 +5280,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/getf</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_getf.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_getf.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5288,7 +5288,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/pp</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_pp.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_pp.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5296,7 +5296,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/pprint</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_pprint.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_pprint.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5304,7 +5304,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/pprint-indent</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_pprint-indent.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_pprint-indent.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5312,7 +5312,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/pprint-logical-block</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_pprint-logical-block.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_pprint-logical-block.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5320,7 +5320,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/pprint-newline</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_pprint-newline.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_pprint-newline.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5328,7 +5328,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/pprint-set</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_pprint-set.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_pprint-set.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5336,7 +5336,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/pprint-tab</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_pprint-tab.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_pprint-tab.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5344,7 +5344,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/print-length-loop</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_print-length-loop.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_print-length-loop.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5352,7 +5352,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/print-table</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_print-table.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_print-table.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5360,7 +5360,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/set-pprint-dispatch</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_set-pprint-dispatch.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_set-pprint-dispatch.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5368,7 +5368,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/setf</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_setf.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_setf.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5376,7 +5376,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/with-pprint-dispatch</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_with-pprint-dispatch.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_with-pprint-dispatch.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5384,7 +5384,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/with-pretty-writer</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_with-pretty-writer.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_with-pretty-writer.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5392,7 +5392,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/write</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_write.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_write.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5400,7 +5400,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.pprint/write-out</td>
-<td></td>
+<td>[ref](refs/cljs.pprint_write-out.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.pprint_write-out.cljsdoc)</td>
 <td></td>
 <td></td>

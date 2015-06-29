@@ -28,11 +28,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:337-340](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L337-L340)</ins>
+            └── cljs
+                └── <ins>[core.cljs:337-340](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L337-L340)</ins>
 </pre>
 
 
@@ -56,8 +57,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ICloneable",
  :source {:code "(defprotocol ICloneable\n  \"Protocol for cloning a value.\"\n  (^clj -clone [value]\n    \"Creates a clone of value.\"))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
           :lines [337 340]},
  :methods [{:name "-clone",
             :signature ["[value]"],

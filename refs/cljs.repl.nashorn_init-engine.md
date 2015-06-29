@@ -22,33 +22,34 @@ Source code:
 
 ```clj
 (defn init-engine [engine output-dir debug]
-  (eval-resource engine "goog/base.js" debug)
-  (eval-resource engine "goog/deps.js" debug)
-  (eval-str engine "var global = this") ; required by React
-  (eval-str engine
-    (format
-      (str "var nashorn_load = function(path) {"
-           "  var outputPath = \"%s\" + \"/\" + path;"
-           (when debug "  print(\"loading: \" + outputPath) ; ")
-           "  load(outputPath);"
-           "};")
-      output-dir))
-  (eval-str engine
-    (str "goog.global.CLOSURE_IMPORT_SCRIPT = function(path) {"
-         " nashorn_load(\"goog/\" + path);"
-         " return true;"
-         "};"))
-  (eval-str engine "goog.global.isProvided_ = function(name) { return false; };")
-  engine)
+      (eval-resource engine "goog/base.js" debug)
+      (eval-resource engine "goog/deps.js" debug)
+      (eval-str engine "var global = this") ; required by React
+      (eval-str engine
+        (format
+          (str "var nashorn_load = function(path) {"
+            "  var outputPath = \"%s\" + \"/\" + path;"
+            (when debug "  print(\"loading: \" + outputPath) ; ")
+            "  load(outputPath);"
+            "};")
+          output-dir))
+      (eval-str engine
+        (str "goog.global.CLOSURE_IMPORT_SCRIPT = function(path) {"
+          " nashorn_load(\"goog/\" + path);"
+          " return true;"
+          "};"))
+      (eval-str engine "goog.global.isProvided_ = function(name) { return false; };")
+      engine)
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── repl
-                └── <ins>[nashorn.clj:67-85](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/repl/nashorn.clj#L67-L85)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── repl
+                    └── <ins>[nashorn.clj:54-72](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/repl/nashorn.clj#L54-L72)</ins>
 </pre>
 
 
@@ -69,11 +70,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "init-engine",
  :type "function",
  :signature ["[engine output-dir debug]"],
- :source {:code "(defn init-engine [engine output-dir debug]\n  (eval-resource engine \"goog/base.js\" debug)\n  (eval-resource engine \"goog/deps.js\" debug)\n  (eval-str engine \"var global = this\") ; required by React\n  (eval-str engine\n    (format\n      (str \"var nashorn_load = function(path) {\"\n           \"  var outputPath = \\\"%s\\\" + \\\"/\\\" + path;\"\n           (when debug \"  print(\\\"loading: \\\" + outputPath) ; \")\n           \"  load(outputPath);\"\n           \"};\")\n      output-dir))\n  (eval-str engine\n    (str \"goog.global.CLOSURE_IMPORT_SCRIPT = function(path) {\"\n         \" nashorn_load(\\\"goog/\\\" + path);\"\n         \" return true;\"\n         \"};\"))\n  (eval-str engine \"goog.global.isProvided_ = function(name) { return false; };\")\n  engine)",
+ :source {:code "(defn init-engine [engine output-dir debug]\n      (eval-resource engine \"goog/base.js\" debug)\n      (eval-resource engine \"goog/deps.js\" debug)\n      (eval-str engine \"var global = this\") ; required by React\n      (eval-str engine\n        (format\n          (str \"var nashorn_load = function(path) {\"\n            \"  var outputPath = \\\"%s\\\" + \\\"/\\\" + path;\"\n            (when debug \"  print(\\\"loading: \\\" + outputPath) ; \")\n            \"  load(outputPath);\"\n            \"};\")\n          output-dir))\n      (eval-str engine\n        (str \"goog.global.CLOSURE_IMPORT_SCRIPT = function(path) {\"\n          \" nashorn_load(\\\"goog/\\\" + path);\"\n          \" return true;\"\n          \"};\"))\n      (eval-str engine \"goog.global.isProvided_ = function(name) { return false; };\")\n      engine)",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/repl/nashorn.clj",
-          :lines [67 85]},
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/repl/nashorn.clj",
+          :lines [54 72]},
  :full-name "cljs.repl.nashorn/init-engine",
  :full-name-encode "cljs.repl.nashorn_init-engine",
  :history [["+" "0.0-2814"]]}

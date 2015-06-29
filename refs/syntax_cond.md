@@ -35,13 +35,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.9.1
+tools.reader @ tools.reader-0.9.2
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:748-760](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.1/src/main/clojure/clojure/tools/reader.clj#L748-L760)</ins>
+                    └── <ins>[reader.clj:753-765](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.2/src/main/clojure/clojure/tools/reader.clj#L753-L765)</ins>
 </pre>
 
 
@@ -67,13 +67,13 @@ tools.reader @ tools.reader-0.9.1
 ```
 
  <pre>
-tools.reader @ tools.reader-0.9.1
+tools.reader @ tools.reader-0.9.2
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:483-498](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.1/src/main/clojure/clojure/tools/reader.clj#L483-L498)</ins>
+                    └── <ins>[reader.clj:488-503](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.2/src/main/clojure/clojure/tools/reader.clj#L488-L503)</ins>
 </pre>
 
 ---
@@ -96,14 +96,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_cond",
  :source {:code "(defn- dispatch-macros [ch]\n  (case ch\n    \\^ read-meta                ;deprecated\n    \\' (wrapping-reader 'var)\n    \\( read-fn\n    \\= read-eval\n    \\{ read-set\n    \\< (throwing-reader \"Unreadable form\")\n    \\\" read-regex\n    \\! read-comment\n    \\_ read-discard\n    \\? read-cond\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.9.1",
+          :tag "tools.reader-0.9.2",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [748 760]},
+          :lines [753 765]},
  :extra-sources [{:code "(defn- read-cond\n  [rdr _ opts pending-forms]\n  (when (not (and opts (#{:allow :preserve} (:read-cond opts))))\n    (throw (RuntimeException. \"Conditional read not allowed\")))\n  (if-let [ch (read-char rdr)]\n    (let [splicing (= ch \\@)\n          ch (if splicing (read-char rdr) ch)]\n      (if-let [ch (if (whitespace? ch) (read-past whitespace? rdr) ch)]\n        (if (not= ch \\()\n          (throw (RuntimeException. \"read-cond body must be a list\"))\n          (binding [*suppress-read* (or *suppress-read* (= :preserve (:read-cond opts)))]\n            (if *suppress-read*\n              (reader-conditional (read-list rdr ch opts pending-forms) splicing)\n              (read-cond-delimited rdr splicing opts pending-forms))))\n        (reader-error rdr \"EOF while reading character\")))\n    (reader-error rdr \"EOF while reading character\")))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.9.1",
+                  :tag "tools.reader-0.9.2",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [483 498]}],
+                  :lines [488 503]}],
  :syntax-form "#?",
  :full-name "syntax/cond",
  :clj-doc "http://clojure.org/reader#toc5"}

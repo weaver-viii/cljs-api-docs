@@ -68,11 +68,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[core.clj:1566-1578](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/core.clj#L1566-L1578)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[core.clj:1568-1580](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/core.clj#L1568-L1580)</ins>
 </pre>
 
 
@@ -91,11 +92,11 @@ clojurescript @ r3211
 ```
 
  <pre>
-clojure @ clojure-1.7.0-beta1
+clojure @ clojure-1.7.0-beta2
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:4608-4619](https://github.com/clojure/clojure/blob/clojure-1.7.0-beta1/src/clj/clojure/core.clj#L4608-L4619)</ins>
+            └── <ins>[core.clj:4608-4619](https://github.com/clojure/clojure/blob/clojure-1.7.0-beta2/src/clj/clojure/core.clj#L4608-L4619)</ins>
 </pre>
 
 ---
@@ -120,12 +121,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_assert",
  :source {:code "(defmacro assert\n  ([x]\n     (when *assert*\n       `(when-not ~x\n          (throw (js/Error.\n                  (cljs.core/str \"Assert failed: \" (cljs.core/pr-str '~x)))))))\n  ([x message]\n     (when *assert*\n       `(when-not ~x\n          (throw (js/Error.\n                  (cljs.core/str \"Assert failed: \" ~message \"\\n\" (cljs.core/pr-str '~x))))))))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/core.clj",
-          :lines [1566 1578]},
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/core.clj",
+          :lines [1568 1580]},
  :extra-sources ({:code "(defmacro assert\n  ([x]\n     (when *assert*\n       `(when-not ~x\n          (throw (new AssertionError (str \"Assert failed: \" (pr-str '~x)))))))\n  ([x message]\n     (when *assert*\n       `(when-not ~x\n          (throw (new AssertionError (str \"Assert failed: \" ~message \"\\n\" (pr-str '~x))))))))",
                   :repo "clojure",
-                  :tag "clojure-1.7.0-beta1",
+                  :tag "clojure-1.7.0-beta2",
                   :filename "src/clj/clojure/core.clj",
                   :lines [4608 4619]}),
  :examples [{:id "1dc16f",

@@ -33,11 +33,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:533-537](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L533-L537)</ins>
+            └── cljs
+                └── <ins>[core.cljs:533-537](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L533-L537)</ins>
 </pre>
 
 
@@ -61,8 +62,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IPending",
  :source {:code "(defprotocol IPending\n  \"Protocol for types which can have a deferred realization. Currently only\n  implemented by Delay.\"\n  (^boolean -realized? [d]\n    \"Returns true if a value for d has been produced, false otherwise.\"))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
           :lines [533 537]},
  :methods [{:name "-realized?",
             :signature ["[d]"],

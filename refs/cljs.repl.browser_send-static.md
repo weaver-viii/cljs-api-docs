@@ -59,12 +59,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── repl
-                └── <ins>[browser.clj:65-99](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/repl/browser.clj#L65-L99)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── repl
+                    └── <ins>[browser.clj:65-99](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/repl/browser.clj#L65-L99)</ins>
 </pre>
 
 
@@ -87,8 +88,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[{path :path, :as request} conn opts]"],
  :source {:code "(defn send-static [{path :path :as request} conn opts]\n  (if (and (:static-dir opts)\n           (not= \"/favicon.ico\" path))\n    (let [path   (if (= \"/\" path) \"/index.html\" path)\n          st-dir (:static-dir opts)\n          local-path\n          (cond->\n            (seq (for [x (if (string? st-dir) [st-dir] st-dir)\n                       :when (.exists (io/file (str x path)))]\n                   (str x path)))\n            (complement nil?) first)\n          local-path\n          (if (nil? local-path)\n            (cond\n              (re-find #\".jar\" path)\n              (io/resource (second (string/split path #\".jar!/\")))\n              (re-find (Pattern/compile (System/getProperty \"user.dir\")) path)\n              (io/file (string/replace path (str (System/getProperty \"user.dir\") \"/\") \"\"))\n              :else nil)\n            local-path)]\n      (if local-path\n        (server/send-and-close conn 200 (slurp local-path)\n          (condp #(.endsWith %2 %1) path\n            \".html\" \"text/html\"\n            \".css\" \"text/css\"\n            \".html\" \"text/html\"\n            \".jpg\" \"image/jpeg\"\n            \".js\" \"text/javascript\"\n            \".cljs\" \"text/x-clojure\"\n            \".cljc\" \"text/x-clojure\"\n            \".map\" \"application/json\"\n            \".png\" \"image/png\"\n            \"text/plain\"))\n        (server/send-404 conn path)))\n    (server/send-404 conn path)))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/repl/browser.clj",
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/repl/browser.clj",
           :lines [65 99]},
  :full-name "cljs.repl.browser/send-static",
  :full-name-encode "cljs.repl.browser_send-static",

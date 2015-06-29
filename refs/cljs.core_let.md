@@ -71,11 +71,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[core.clj:212-222](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/core.clj#L212-L222)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[core.clj:212-222](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/core.clj#L212-L222)</ins>
 </pre>
 
 
@@ -102,8 +103,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_let",
  :source {:code "(defmacro let\n  [bindings & body]\n  (assert-args\n     (vector? bindings) \"a vector for its binding\"\n     (even? (count bindings)) \"an even number of forms in binding vector\")\n  `(let* ~(destructure bindings) ~@body))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/core.clj",
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/core.clj",
           :lines [212 222]},
  :full-name "cljs.core/let",
  :clj-symbol "clojure.core/let",

@@ -41,11 +41,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[repl.clj:203-215](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/repl.clj#L203-L215)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[repl.cljc:203-215](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/repl.cljc#L203-L215)</ins>
 </pre>
 
 
@@ -71,8 +72,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_js-src-GTcljs-src",
  :source {:code "(defn ^File js-src->cljs-src\n  [f]\n  (let [f (io/file f)\n        dir (.getParentFile f)\n        base-name (string/replace (.getName f) \".js\" \"\")\n        cljsf (io/file dir (str base-name \".cljs\"))]\n    (if (.exists cljsf)\n      cljsf\n      (let [cljcf (io/file dir (str base-name \".cljc\"))]\n        (if (.exists cljcf)\n          cljcf)))))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/repl.clj",
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/repl.cljc",
           :lines [203 215]},
  :full-name "cljs.repl/js-src->cljs-src",
  :docstring "Map a JavaScript output file back to the original ClojureScript source\nfile (.cljs or .cljc)."}

@@ -35,11 +35,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:41-46](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L41-L46)</ins>
+            └── cljs
+                └── <ins>[core.cljs:41-46](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L41-L46)</ins>
 </pre>
 
 
@@ -63,8 +64,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_STARflush-on-newlineSTAR",
  :source {:code "(def\n  ^{:dynamic true\n    :doc \"When set to true, output will be flushed whenever a newline is printed.\n\n  Defaults to true.\"}\n  *flush-on-newline* true)",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
           :lines [41 46]},
  :full-name "cljs.core/*flush-on-newline*",
  :clj-symbol "clojure.core/*flush-on-newline*",

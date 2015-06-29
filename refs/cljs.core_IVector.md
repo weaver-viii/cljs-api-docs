@@ -31,11 +31,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:434-437](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L434-L437)</ins>
+            └── cljs
+                └── <ins>[core.cljs:434-437](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L434-L437)</ins>
 </pre>
 
 
@@ -59,8 +60,8 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IVector",
  :source {:code "(defprotocol IVector\n  \"Protocol for adding vector functionality to collections.\"\n  (^clj -assoc-n [coll n val]\n    \"Returns a new vector with value val added at position n.\"))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
           :lines [434 437]},
  :methods [{:name "-assoc-n",
             :signature ["[coll n val]"],

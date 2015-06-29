@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.7.0-beta1
+clojure @ clojure-1.7.0-beta2
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:4717-4721](https://github.com/clojure/clojure/blob/clojure-1.7.0-beta1/src/clj/clojure/core.clj#L4717-L4721)</ins>
+            └── <ins>[core.clj:4717-4721](https://github.com/clojure/clojure/blob/clojure-1.7.0-beta2/src/clj/clojure/core.clj#L4717-L4721)</ins>
 </pre>
 
 
@@ -77,7 +77,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_defn-",
  :source {:code "(defmacro defn-\n  [name & decls]\n    (list* `defn (with-meta name (assoc (meta name) :private true)) decls))",
           :repo "clojure",
-          :tag "clojure-1.7.0-beta1",
+          :tag "clojure-1.7.0-beta2",
           :filename "src/clj/clojure/core.clj",
           :lines [4717 4721]},
  :full-name "cljs.core/defn-",

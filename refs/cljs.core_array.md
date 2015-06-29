@@ -78,11 +78,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:255-265](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L255-L265)</ins>
+            └── cljs
+                └── <ins>[core.cljs:255-265](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L255-L265)</ins>
 </pre>
 
 
@@ -100,11 +101,12 @@ clojurescript @ r3211
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[core.clj:1723-1730](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/core.clj#L1723-L1730)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[core.clj:1725-1732](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/core.clj#L1725-L1732)</ins>
 </pre>
 
 ---
@@ -133,14 +135,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_array",
  :source {:code "(defn ^array array\n  [var-args]            ;; [& items]\n  (let [a (js/Array. (alength (cljs.core/js-arguments)))]\n    (loop [i 0]\n      (if (< i (alength a))\n        (do\n          (aset a i (aget (cljs.core/js-arguments) i))\n          (recur (inc i)))\n        a))))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
           :lines [255 265]},
  :extra-sources ({:code "(defmacro array [& rest]\n  (let [xs-str (->> (repeat \"~{}\")\n                    (take (count rest))\n                    (interpose \",\")\n                    (apply core/str))]\n    (vary-meta\n      (list* 'js* (core/str \"[\" xs-str \"]\") rest)\n      assoc :tag 'array)))",
                   :repo "clojurescript",
-                  :tag "r3211",
-                  :filename "src/clj/cljs/core.clj",
-                  :lines [1723 1730]}),
+                  :tag "r3255",
+                  :filename "src/main/clojure/cljs/core.clj",
+                  :lines [1725 1732]}),
  :examples [{:id "3a546d",
              :content "```clj\n(array 1 2 3)\n;;=> #js [1 2 3]\n\n(apply array [1 2 3])\n;;=> #js [1 2 3]\n\n#js [1 2 3]\n;;=> #js [1 2 3]\n```"}
             {:id "cca945",

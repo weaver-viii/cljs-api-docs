@@ -65,11 +65,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:2356-2360](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L2356-L2360)</ins>
+            └── cljs
+                └── <ins>[core.cljs:2366-2370](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L2366-L2370)</ins>
 </pre>
 
 
@@ -82,11 +83,12 @@ clojurescript @ r3211
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[core.clj:560-562](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/core.clj#L560-L562)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[core.clj:560-562](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/core.clj#L560-L562)</ins>
 </pre>
 
 ---
@@ -112,13 +114,13 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-and",
  :source {:code "(defn bit-and\n  ([x y] (cljs.core/bit-and x y))\n  ([x y & more]\n     (reduce bit-and (cljs.core/bit-and x y) more)))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
-          :lines [2356 2360]},
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
+          :lines [2366 2370]},
  :extra-sources ({:code "(defmacro ^::ana/numeric bit-and\n  ([x y] (core/list 'js* \"(~{} & ~{})\" x y))\n  ([x y & more] `(bit-and (bit-and ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r3211",
-                  :filename "src/clj/cljs/core.clj",
+                  :tag "r3255",
+                  :filename "src/main/clojure/cljs/core.clj",
                   :lines [560 562]}),
  :examples [{:id "3c0470",
              :content "Bits can be entered using radix notation:\n\n```clj\n(bit-and 2r1100 2r1010)\n;;=> 8\n;; 8 = 2r1000\n```\n\nSame numbers in decimal:\n\n```clj\n(bit-and 12 10)\n;;=> 8\n```"}],

@@ -94,11 +94,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[core.cljs:276-281](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L276-L281)</ins>
+            └── cljs
+                └── <ins>[core.cljs:276-281](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L276-L281)</ins>
 </pre>
 
 
@@ -115,11 +116,12 @@ clojurescript @ r3211
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[core.clj:414-420](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/core.clj#L414-L420)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[core.clj:414-420](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/core.clj#L414-L420)</ins>
 </pre>
 
 ---
@@ -145,13 +147,13 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_aset",
  :source {:code "(defn aset\n  ([array i val]\n    (cljs.core/aset array i val))\n  ([array idx idx2 & idxv]\n    (apply aset (aget array idx) idx2 idxv)))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/core.cljs",
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/core.cljs",
           :lines [276 281]},
  :extra-sources ({:code "(defmacro aset\n  ([a i v]\n    (core/list 'js* \"(~{}[~{}] = ~{})\" a i v))\n  ([a idx idx2 & idxv]\n    (let [n    (core/dec (count idxv))\n          astr (apply core/str (repeat n \"[~{}]\"))]\n      `(~'js* ~(core/str \"(~{}[~{}][~{}]\" astr \" = ~{})\") ~a ~idx ~idx2 ~@idxv))))",
                   :repo "clojurescript",
-                  :tag "r3211",
-                  :filename "src/clj/cljs/core.clj",
+                  :tag "r3255",
+                  :filename "src/main/clojure/cljs/core.clj",
                   :lines [414 420]}),
  :examples [{:id "d1aa58",
              :content "```js\n// JavaScript\nvar a = {\"foo\": 3, \"bar\": [4, 5]};\n\na[\"foo\"] = 4;\na;\n//=> {\"foo\": 4, \"bar\": [4, 5]}\n\na[\"bar\"][0] = 6;\na;\n//=> {\"foo\": 4, \"bar\": [6, 5]}\n```\n\n```clj\n;; ClojureScript\n(def a #js {:foo 3, :bar #js [4 5]})\n\n(aset a \"foo\" 4)\na\n;;=> #js {:foo 4, :bar #js [4 5]}\n\n(aset a \"bar\" 0 6)\na\n;;=> #js {:foo 4, :bar #js [6 5]}\n```"}

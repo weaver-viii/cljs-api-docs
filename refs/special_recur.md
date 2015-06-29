@@ -48,11 +48,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── clj
-        └── cljs
-            └── <ins>[analyzer.clj:1139-1152](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/analyzer.clj#L1139-L1152)</ins>
+    └── main
+        └── clojure
+            └── cljs
+                └── <ins>[analyzer.cljc:1164-1177](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/analyzer.cljc#L1164-L1177)</ins>
 </pre>
 
 
@@ -77,9 +78,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "special_recur",
  :source {:code "(defmethod parse 'recur\n  [op env [_ & exprs :as form] _ _]\n  (let [context (:context env)\n        frame (first *recur-frames*)\n        exprs (disallowing-recur (vec (map #(analyze (assoc env :context :expr) %) exprs)))]\n    (when-not frame \n      (throw (error env \"Can't recur here\")))\n    (when-not (= (count exprs) (count (:params frame))) \n      (throw (error env \"recur argument count mismatch\")))\n    (reset! (:flag frame) true)\n    (assoc {:env env :op :recur :form form}\n      :frame frame\n      :exprs exprs\n      :children exprs)))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/clj/cljs/analyzer.clj",
-          :lines [1139 1152]},
+          :tag "r3255",
+          :filename "src/main/clojure/cljs/analyzer.cljc",
+          :lines [1164 1177]},
  :full-name "special/recur",
  :clj-symbol "clojure.core/recur",
  :docstring "Evaluates the exprs in order, then, in parallel, rebinds\nthe bindings of the recursion point to the values of the exprs.\nExecution then jumps back to the recursion point, a loop or fn method."}

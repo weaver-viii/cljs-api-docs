@@ -16,6 +16,29 @@
 <th>comp</th>
 </tr>
 <tr>
+<td>__[0.0-3255](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-3255)__</td>
+<td>2015-05-08</td>
+<td><kbd>1.7.0-beta2</kbd></td>
+<td><kbd>0.9.2</kbd></td>
+<td><kbd>0.0-20150505-021ed5b3</kbd></td>
+<td>
+<a href="#user-content-00-3255-syntax">
+ 
+</a>
+</td>
+<td>
+<a href="#user-content-00-3255-library">
+<img valign="middle" src="https://img.shields.io/badge/+-38-brightgreen.svg"> <img valign="middle" src="https://img.shields.io/badge/×-1-red.svg">
+</a>
+</td>
+<td>
+<a href="#user-content-00-3255-compiler">
+<img valign="middle" src="https://img.shields.io/badge/+-6-brightgreen.svg"> 
+</a>
+</td>
+</tr>
+
+<tr>
 <td>__[0.0-3211](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-3211)__</td>
 <td>2015-04-23</td>
 <td><kbd>1.7.0-beta1</kbd></td>
@@ -2683,6 +2706,293 @@
 </td>
 </tr>
 
+</table>
+
+### 0.0-3255
+
+<a name="00-3255-syntax"></a> __Syntax API Changes__
+ <table>
+<tr><td>_no syntax forms were added or removed in this version_</td></tr>
+</table>
+
+<a name="00-3255-library"></a> __Library API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/TaggedLiteral](refs/cljs.core_TaggedLiteral.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/record?](refs/cljs.core_recordQMARK.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/tagged-literal](refs/cljs.core_tagged-literal.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/tagged-literal?](refs/cljs.core_tagged-literalQMARK.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/var?](refs/cljs.core_varQMARK.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-dynamic var-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/\*out\*](refs/cljs.pprint_STARoutSTAR.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-dynamic var-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/\*print-base\*](refs/cljs.pprint_STARprint-baseSTAR.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-dynamic var-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/\*print-miser-width\*](refs/cljs.pprint_STARprint-miser-widthSTAR.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-dynamic var-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/\*print-pprint-dispatch\*](refs/cljs.pprint_STARprint-pprint-dispatchSTAR.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-dynamic var-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/\*print-pretty\*](refs/cljs.pprint_STARprint-prettySTAR.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-dynamic var-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/\*print-radix\*](refs/cljs.pprint_STARprint-radixSTAR.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-dynamic var-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/\*print-right-margin\*](refs/cljs.pprint_STARprint-right-marginSTAR.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-dynamic var-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/\*print-suppress-namespaces\*](refs/cljs.pprint_STARprint-suppress-namespacesSTAR.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-protocol-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/IPrettyFlush](refs/cljs.pprint_IPrettyFlush.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-protocol-red.svg">
+</td>
+<td><samp>[~~cljs.pprint/PrettyFlush~~](refs/cljs.pprint_PrettyFlush.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/char-code](refs/cljs.pprint_char-code.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/cl-format](refs/cljs.pprint_cl-format.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/deftype](refs/cljs.pprint_deftype.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/float?](refs/cljs.pprint_floatQMARK.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/formatter](refs/cljs.pprint_formatter.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/formatter-out](refs/cljs.pprint_formatter-out.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/fresh-line](refs/cljs.pprint_fresh-line.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/get-pretty-writer](refs/cljs.pprint_get-pretty-writer.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/getf](refs/cljs.pprint_getf.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/pp](refs/cljs.pprint_pp.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/pprint](refs/cljs.pprint_pprint.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/pprint-indent](refs/cljs.pprint_pprint-indent.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/pprint-logical-block](refs/cljs.pprint_pprint-logical-block.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/pprint-newline](refs/cljs.pprint_pprint-newline.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-var-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/pprint-set](refs/cljs.pprint_pprint-set.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/pprint-tab](refs/cljs.pprint_pprint-tab.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/print-length-loop](refs/cljs.pprint_print-length-loop.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/print-table](refs/cljs.pprint_print-table.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/set-pprint-dispatch](refs/cljs.pprint_set-pprint-dispatch.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/setf](refs/cljs.pprint_setf.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/with-pprint-dispatch](refs/cljs.pprint_with-pprint-dispatch.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/with-pretty-writer](refs/cljs.pprint_with-pretty-writer.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/write](refs/cljs.pprint_write.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.pprint/write-out](refs/cljs.pprint_write-out.md)</samp></td>
+</tr>
+</table>
+
+<a name="00-3255-compiler"></a> __Compiler API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.compiler.api/cljs-files-in](refs/cljs.compiler.api_cljs-files-in.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.compiler.api/compile-file](refs/cljs.compiler.api_compile-file.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.compiler.api/compile-root](refs/cljs.compiler.api_compile-root.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.compiler.api/emit](refs/cljs.compiler.api_emit.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.compiler.api/requires-compilation?](refs/cljs.compiler.api_requires-compilationQMARK.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.compiler.api/with-core-cljs](refs/cljs.compiler.api_with-core-cljs.md)</samp></td>
+</tr>
 </table>
 
 ### 0.0-3211

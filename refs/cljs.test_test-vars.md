@@ -37,11 +37,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3211
+clojurescript @ r3255
 └── src
-    └── cljs
+    └── main
         └── cljs
-            └── <ins>[test.cljs:542-547](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/test.cljs#L542-L547)</ins>
+            └── cljs
+                └── <ins>[test.cljs:557-562](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/test.cljs#L557-L562)</ins>
 </pre>
 
 
@@ -66,9 +67,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_test-vars",
  :source {:code "(defn test-vars\n  [vars]\n  (run-block (test-vars-block vars)))",
           :repo "clojurescript",
-          :tag "r3211",
-          :filename "src/cljs/cljs/test.cljs",
-          :lines [542 547]},
+          :tag "r3255",
+          :filename "src/main/cljs/cljs/test.cljs",
+          :lines [557 562]},
  :full-name "cljs.test/test-vars",
  :clj-symbol "clojure.test/test-vars",
  :docstring "Groups vars by their namespace and runs test-vars on them with\nappropriate fixtures assuming they are present in the current\ntesting environment."}
