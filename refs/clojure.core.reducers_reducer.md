@@ -43,12 +43,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1835
+clojurescript @ r1843
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:55-66](https://github.com/clojure/clojurescript/blob/r1835/src/cljs/clojure/core/reducers.cljs#L55-L66)</ins>
+                └── <ins>[reducers.cljs:55-66](https://github.com/clojure/clojurescript/blob/r1843/src/cljs/clojure/core/reducers.cljs#L55-L66)</ins>
 </pre>
 
 
@@ -73,7 +73,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.core.reducers_reducer",
  :source {:code "(defn reducer\n  ([coll xf]\n     (reify\n       cljs.core/IReduce\n       (-reduce [this f1]\n         (-reduce this f1 (f1)))\n       (-reduce [_ f1 init]\n         (-reduce coll (xf f1) init)))))",
           :repo "clojurescript",
-          :tag "r1835",
+          :tag "r1843",
           :filename "src/cljs/clojure/core/reducers.cljs",
           :lines [55 66]},
  :full-name "clojure.core.reducers/reducer",

@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1835
+clojurescript @ r1843
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1649-1651](https://github.com/clojure/clojurescript/blob/r1835/src/cljs/cljs/core.cljs#L1649-L1651)</ins>
+            └── <ins>[core.cljs:1663-1665](https://github.com/clojure/clojurescript/blob/r1843/src/cljs/cljs/core.cljs#L1663-L1665)</ins>
 </pre>
 
 
@@ -70,11 +70,11 @@ clojurescript @ r1835
 ```
 
  <pre>
-clojurescript @ r1835
+clojurescript @ r1843
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:402-403](https://github.com/clojure/clojurescript/blob/r1835/src/clj/cljs/core.clj#L402-L403)</ins>
+            └── <ins>[core.clj:411-412](https://github.com/clojure/clojurescript/blob/r1843/src/clj/cljs/core.clj#L411-L412)</ins>
 </pre>
 
 ---
@@ -99,14 +99,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-not",
  :source {:code "(defn bit-not\n  [x] (cljs.core/bit-not x))",
           :repo "clojurescript",
-          :tag "r1835",
+          :tag "r1843",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1649 1651]},
+          :lines [1663 1665]},
  :extra-sources ({:code "(defmacro bit-not [x]\n  (list 'js* \"(~ ~{})\" x))",
                   :repo "clojurescript",
-                  :tag "r1835",
+                  :tag "r1843",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [402 403]}),
+                  :lines [411 412]}),
  :examples [{:id "d4c5e3",
              :content "Bits can be entered using radix notation:\n\n```clj\n(bit-not 2r1100)\n;;=> -13\n```\n\nSame numbers in decimal:\n\n```clj\n(bit-not 12)\n;;=> -13\n```"}],
  :full-name "cljs.core/bit-not",

@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1835
+clojurescript @ r1843
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1608-1612](https://github.com/clojure/clojurescript/blob/r1835/src/cljs/cljs/core.cljs#L1608-L1612)</ins>
+            └── <ins>[core.cljs:1622-1626](https://github.com/clojure/clojurescript/blob/r1843/src/cljs/cljs/core.cljs#L1622-L1626)</ins>
 </pre>
 
 
@@ -78,9 +78,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_rem",
  :source {:code "(defn rem\n  [n d]\n  (let [q (quot n d)]\n    (- n (* d q))))",
           :repo "clojurescript",
-          :tag "r1835",
+          :tag "r1843",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1608 1612]},
+          :lines [1622 1626]},
  :full-name "cljs.core/rem",
  :clj-symbol "clojure.core/rem",
  :docstring "remainder of dividing numerator by denominator."}

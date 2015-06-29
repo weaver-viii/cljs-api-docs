@@ -23,11 +23,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1835
+clojurescript @ r1843
 └── src
     └── clj
         └── cljs
-            └── <ins>[tagged_literals.clj:27-30](https://github.com/clojure/clojurescript/blob/r1835/src/clj/cljs/tagged_literals.clj#L27-L30)</ins>
+            └── <ins>[tagged_literals.clj:27-30](https://github.com/clojure/clojurescript/blob/r1843/src/clj/cljs/tagged_literals.clj#L27-L30)</ins>
 </pre>
 
 
@@ -41,11 +41,11 @@ clojurescript @ r1835
 ```
 
  <pre>
-clojurescript @ r1835
+clojurescript @ r1843
 └── src
     └── clj
         └── cljs
-            └── <ins>[tagged_literals.clj:4-7](https://github.com/clojure/clojurescript/blob/r1835/src/clj/cljs/tagged_literals.clj#L4-L7)</ins>
+            └── <ins>[tagged_literals.clj:4-7](https://github.com/clojure/clojurescript/blob/r1843/src/clj/cljs/tagged_literals.clj#L4-L7)</ins>
 </pre>
 
 ---
@@ -68,12 +68,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_queue-tag",
  :source {:code "(def ^:dynamic *cljs-data-readers*\n  {'queue read-queue\n   'uuid  read-uuid\n   'inst  read-inst})",
           :repo "clojurescript",
-          :tag "r1835",
+          :tag "r1843",
           :filename "src/clj/cljs/tagged_literals.clj",
           :lines [27 30]},
  :extra-sources [{:code "(defn read-queue\n  [form]\n  (assert (vector? form) \"Queue literal expects a vector for its elements.\")\n  (list 'cljs.core/into 'cljs.core.PersistentQueue/EMPTY form))",
                   :repo "clojurescript",
-                  :tag "r1835",
+                  :tag "r1843",
                   :filename "src/clj/cljs/tagged_literals.clj",
                   :lines [4 7]}],
  :syntax-form "#queue []",

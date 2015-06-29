@@ -42,11 +42,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1835
+clojurescript @ r1843
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7095-7097](https://github.com/clojure/clojurescript/blob/r1835/src/cljs/cljs/core.cljs#L7095-L7097)</ins>
+            └── <ins>[core.cljs:7115-7117](https://github.com/clojure/clojurescript/blob/r1843/src/cljs/cljs/core.cljs#L7115-L7117)</ins>
 </pre>
 
 
@@ -58,11 +58,11 @@ clojurescript @ r1835
 ```
 
  <pre>
-clojurescript @ r1835
+clojurescript @ r1843
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1619-1621](https://github.com/clojure/clojurescript/blob/r1835/src/cljs/cljs/core.cljs#L1619-L1621)</ins>
+            └── <ins>[core.cljs:1633-1635](https://github.com/clojure/clojurescript/blob/r1843/src/cljs/cljs/core.cljs#L1633-L1635)</ins>
 </pre>
 
 ---
@@ -88,14 +88,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_rand-int",
  :source {:code "(defn rand-int\n  [n] (Math/floor (* (Math/random) n)))",
           :repo "clojurescript",
-          :tag "r1835",
+          :tag "r1843",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7095 7097]},
+          :lines [7115 7117]},
  :extra-sources ({:code "(defn rand-int\n  [n] (fix (rand n)))",
                   :repo "clojurescript",
-                  :tag "r1835",
+                  :tag "r1843",
                   :filename "src/cljs/cljs/core.cljs",
-                  :lines [1619 1621]}),
+                  :lines [1633 1635]}),
  :full-name "cljs.core/rand-int",
  :clj-symbol "clojure.core/rand-int",
  :docstring "Returns a random integer between 0 (inclusive) and n (exclusive)."}

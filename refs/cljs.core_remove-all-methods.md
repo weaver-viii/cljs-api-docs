@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1835
+clojurescript @ r1843
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7360-7363](https://github.com/clojure/clojurescript/blob/r1835/src/cljs/cljs/core.cljs#L7360-L7363)</ins>
+            └── <ins>[core.cljs:7380-7383](https://github.com/clojure/clojurescript/blob/r1843/src/cljs/cljs/core.cljs#L7380-L7383)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_remove-all-methods",
  :source {:code "(defn remove-all-methods\n [multifn]\n (-reset multifn))",
           :repo "clojurescript",
-          :tag "r1835",
+          :tag "r1843",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7360 7363]},
+          :lines [7380 7383]},
  :full-name "cljs.core/remove-all-methods",
  :clj-symbol "clojure.core/remove-all-methods",
  :docstring "Removes all of the methods of multimethod."}

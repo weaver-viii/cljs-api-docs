@@ -41,11 +41,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1835
+clojurescript @ r1843
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:124-133](https://github.com/clojure/clojurescript/blob/r1835/src/cljs/clojure/zip.cljs#L124-L133)</ins>
+            └── <ins>[zip.cljs:124-133](https://github.com/clojure/clojurescript/blob/r1843/src/cljs/clojure/zip.cljs#L124-L133)</ins>
 </pre>
 
 
@@ -70,7 +70,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_root",
  :source {:code "(defn root\n  [loc]\n    (if (= :end (loc 1))\n      (node loc)\n      (let [p (up loc)]\n        (if p\n          (recur p)\n          (node loc)))))",
           :repo "clojurescript",
-          :tag "r1835",
+          :tag "r1843",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [124 133]},
  :full-name "clojure.zip/root",
