@@ -29,8 +29,7 @@ Source code:
          argexprs (vec (map #(analyze enve %) args))
          known-num-fields (:num-fields (resolve-existing-var env ctor))
          argc (count args)]
-     (when (and (:fn-arity *cljs-warnings*)
-                (not (-> ctor meta :internal-ctor))
+     (when (and (not (-> ctor meta :internal-ctor))
                 known-num-fields (not= known-num-fields argc))
        (warning :fn-arity env {:argc argc :ctor ctor}))
      {:env env :op :new :form form :ctor ctorexpr :args argexprs
@@ -46,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:884-907](https://github.com/clojure/clojurescript/blob/r2156/src/clj/cljs/analyzer.clj#L884-L907)</ins>
+            └── <ins>[analyzer.clj:880-902](https://github.com/clojure/clojurescript/blob/r2173/src/clj/cljs/analyzer.clj#L880-L902)</ins>
 </pre>
 
 
@@ -70,11 +69,11 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "special",
  :name "new",
  :type "special form",
- :source {:code "(defmethod parse 'new\n  [_ env [_ ctor & args :as form] _]\n  (when-not (symbol? ctor) \n    (throw (error env \"First arg to new must be a symbol\")))\n  (disallowing-recur\n   (let [enve (assoc env :context :expr)\n         ctorexpr (analyze enve ctor)\n         argexprs (vec (map #(analyze enve %) args))\n         known-num-fields (:num-fields (resolve-existing-var env ctor))\n         argc (count args)]\n     (when (and (:fn-arity *cljs-warnings*)\n                (not (-> ctor meta :internal-ctor))\n                known-num-fields (not= known-num-fields argc))\n       (warning :fn-arity env {:argc argc :ctor ctor}))\n     {:env env :op :new :form form :ctor ctorexpr :args argexprs\n      :children (into [ctorexpr] argexprs)\n      :tag (let [name (-> ctorexpr :info :name)]\n             (or ('{js/Object object\n                    js/String string\n                    js/Array  array\n                    js/Number number\n                    js/Function function\n                    js/Boolean boolean} name)\n                 name))})))",
+ :source {:code "(defmethod parse 'new\n  [_ env [_ ctor & args :as form] _]\n  (when-not (symbol? ctor) \n    (throw (error env \"First arg to new must be a symbol\")))\n  (disallowing-recur\n   (let [enve (assoc env :context :expr)\n         ctorexpr (analyze enve ctor)\n         argexprs (vec (map #(analyze enve %) args))\n         known-num-fields (:num-fields (resolve-existing-var env ctor))\n         argc (count args)]\n     (when (and (not (-> ctor meta :internal-ctor))\n                known-num-fields (not= known-num-fields argc))\n       (warning :fn-arity env {:argc argc :ctor ctor}))\n     {:env env :op :new :form form :ctor ctorexpr :args argexprs\n      :children (into [ctorexpr] argexprs)\n      :tag (let [name (-> ctorexpr :info :name)]\n             (or ('{js/Object object\n                    js/String string\n                    js/Array  array\n                    js/Number number\n                    js/Function function\n                    js/Boolean boolean} name)\n                 name))})))",
           :repo "clojurescript",
-          :tag "r2156",
+          :tag "r2173",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [884 907]},
+          :lines [880 902]},
  :full-name "special/new",
  :full-name-encode "special_new",
  :clj-symbol "clojure.core/new",

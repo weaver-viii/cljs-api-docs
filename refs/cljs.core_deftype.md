@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:833-855](https://github.com/clojure/clojurescript/blob/r2156/src/clj/cljs/core.clj#L833-L855)</ins>
+            └── <ins>[core.clj:837-859](https://github.com/clojure/clojurescript/blob/r2173/src/clj/cljs/core.clj#L837-L859)</ins>
 </pre>
 
 
@@ -79,9 +79,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_deftype",
  :source {:code "(defmacro deftype [t fields & impls]\n  (let [r (:name (cljs.analyzer/resolve-var (dissoc &env :locals) t))\n        [fpps pmasks] (prepare-protocol-masks &env impls)\n        protocols (collect-protocols impls &env)\n        t (vary-meta t assoc\n            :protocols protocols\n            :skip-protocol-flag fpps) ]\n    (if (seq impls)\n      `(do\n         (deftype* ~t ~fields ~pmasks)\n         (set! (.-cljs$lang$type ~t) true)\n         (set! (.-cljs$lang$ctorStr ~t) ~(core/str r))\n         (set! (.-cljs$lang$ctorPrWriter ~t) (fn [this# writer# opt#] (-write writer# ~(core/str r))))\n         (extend-type ~t ~@(dt->et t impls fields true))\n         ~(build-positional-factory t r fields)\n         ~t)\n      `(do\n         (deftype* ~t ~fields ~pmasks)\n         (set! (.-cljs$lang$type ~t) true)\n         (set! (.-cljs$lang$ctorStr ~t) ~(core/str r))\n         (set! (.-cljs$lang$ctorPrWriter ~t) (fn [this# writer# opts#] (-write writer# ~(core/str r))))\n         ~(build-positional-factory t r fields)\n         ~t))))",
           :repo "clojurescript",
-          :tag "r2156",
+          :tag "r2173",
           :filename "src/clj/cljs/core.clj",
-          :lines [833 855]},
+          :lines [837 859]},
  :full-name "cljs.core/deftype",
  :clj-symbol "clojure.core/deftype"}
 

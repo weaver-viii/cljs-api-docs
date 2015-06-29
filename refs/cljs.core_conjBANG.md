@@ -23,26 +23,32 @@
 
 
 
+Source docstring:
+
+```
+Adds x to the transient collection, and return coll. The 'addition'
+may happen at different 'places' depending on the concrete type.
+```
 
 Source code:
 
 ```clj
 (defn conj!
   ([tcoll val]
-   (-conj! tcoll val))
+    (-conj! tcoll val))
   ([tcoll val & vals]
-   (let [ntcoll (-conj! tcoll val)]
-     (if vals
-       (recur ntcoll (first vals) (next vals))
-       ntcoll))))
+    (let [ntcoll (-conj! tcoll val)]
+      (if vals
+        (recur ntcoll (first vals) (next vals))
+        ntcoll))))
 ```
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2498-2505](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L2498-L2505)</ins>
+            └── <ins>[core.cljs:2504-2513](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L2504-L2513)</ins>
 </pre>
 
 
@@ -65,13 +71,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1211"]],
  :type "function",
  :full-name-encode "cljs.core_conjBANG",
- :source {:code "(defn conj!\n  ([tcoll val]\n   (-conj! tcoll val))\n  ([tcoll val & vals]\n   (let [ntcoll (-conj! tcoll val)]\n     (if vals\n       (recur ntcoll (first vals) (next vals))\n       ntcoll))))",
+ :source {:code "(defn conj!\n  ([tcoll val]\n    (-conj! tcoll val))\n  ([tcoll val & vals]\n    (let [ntcoll (-conj! tcoll val)]\n      (if vals\n        (recur ntcoll (first vals) (next vals))\n        ntcoll))))",
           :repo "clojurescript",
-          :tag "r2156",
+          :tag "r2173",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2498 2505]},
+          :lines [2504 2513]},
  :full-name "cljs.core/conj!",
- :clj-symbol "clojure.core/conj!"}
+ :clj-symbol "clojure.core/conj!",
+ :docstring "Adds x to the transient collection, and return coll. The 'addition'\nmay happen at different 'places' depending on the concrete type."}
 
 ```
 

@@ -61,11 +61,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:809-812](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L809-L812)</ins>
+            └── <ins>[core.cljs:809-812](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L809-L812)</ins>
 </pre>
 
 
@@ -92,7 +92,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_fnext",
  :source {:code "(defn fnext\n  [coll]\n  (first (next coll)))",
           :repo "clojurescript",
-          :tag "r2156",
+          :tag "r2173",
           :filename "src/cljs/cljs/core.cljs",
           :lines [809 812]},
  :examples [{:id "92383f",

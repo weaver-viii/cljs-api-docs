@@ -568,7 +568,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/IAtom</td>
-<td></td>
+<td>[ref](refs/cljs.core_IAtom.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_IAtom.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -832,7 +832,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/IReset</td>
-<td></td>
+<td>[ref](refs/cljs.core_IReset.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_IReset.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -896,7 +896,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ISwap</td>
-<td></td>
+<td>[ref](refs/cljs.core_ISwap.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ISwap.cljsdoc)</td>
 <td></td>
 <td></td>

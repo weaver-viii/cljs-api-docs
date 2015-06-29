@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:126-130](https://github.com/clojure/clojurescript/blob/r2156/src/clj/cljs/repl.clj#L126-L130)</ins>
+            └── <ins>[repl.clj:127-131](https://github.com/clojure/clojurescript/blob/r2173/src/clj/cljs/repl.clj#L127-L131)</ins>
 </pre>
 
 
@@ -56,9 +56,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[repl-env filename res]"],
  :source {:code "(defn load-stream [repl-env filename res]\n  (let [env (ana/empty-env)]\n    (doseq [form (ana/forms-seq res filename)]\n      (let [env (assoc env :ns (ana/get-namespace ana/*cljs-ns*))]\n        (evaluate-form repl-env env filename form)))))",
           :repo "clojurescript",
-          :tag "r2156",
+          :tag "r2173",
           :filename "src/clj/cljs/repl.clj",
-          :lines [126 130]},
+          :lines [127 131]},
  :full-name "cljs.repl/load-stream",
  :full-name-encode "cljs.repl_load-stream",
  :history [["+" "0.0-927"]]}

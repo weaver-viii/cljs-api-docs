@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1779-1780](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L1779-L1780)</ins>
+            └── <ins>[core.cljs:1779-1780](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L1779-L1780)</ins>
 </pre>
 
 
@@ -54,11 +54,11 @@ clojurescript @ r2156
 ```
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:445-446](https://github.com/clojure/clojurescript/blob/r2156/src/clj/cljs/core.clj#L445-L446)</ins>
+            └── <ins>[core.clj:449-450](https://github.com/clojure/clojurescript/blob/r2173/src/clj/cljs/core.clj#L449-L450)</ins>
 </pre>
 
 ---
@@ -85,14 +85,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_zeroQMARK",
  :source {:code "(defn ^boolean zero? [n]\n  (cljs.core/zero? n))",
           :repo "clojurescript",
-          :tag "r2156",
+          :tag "r2173",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1779 1780]},
  :extra-sources ({:code "(defmacro ^::ana/numeric zero? [x]\n  `(== ~x 0))",
                   :repo "clojurescript",
-                  :tag "r2156",
+                  :tag "r2173",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [445 446]}),
+                  :lines [449 450]}),
  :full-name "cljs.core/zero?",
  :clj-symbol "clojure.core/zero?"}
 

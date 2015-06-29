@@ -20,20 +20,28 @@
 
 
 
+Source docstring:
+
+```
+Returns a new, persistent version of the transient collection, in
+constant time. The transient collection cannot be used after this
+call, any such use will throw an exception.
+```
 
 Source code:
 
 ```clj
-(defn persistent! [tcoll]
+(defn persistent!
+  [tcoll]
   (-persistent! tcoll))
 ```
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2495-2496](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L2495-L2496)</ins>
+            └── <ins>[core.cljs:2497-2502](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L2497-L2502)</ins>
 </pre>
 
 
@@ -56,13 +64,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1211"]],
  :type "function",
  :full-name-encode "cljs.core_persistentBANG",
- :source {:code "(defn persistent! [tcoll]\n  (-persistent! tcoll))",
+ :source {:code "(defn persistent!\n  [tcoll]\n  (-persistent! tcoll))",
           :repo "clojurescript",
-          :tag "r2156",
+          :tag "r2173",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2495 2496]},
+          :lines [2497 2502]},
  :full-name "cljs.core/persistent!",
- :clj-symbol "clojure.core/persistent!"}
+ :clj-symbol "clojure.core/persistent!",
+ :docstring "Returns a new, persistent version of the transient collection, in\nconstant time. The transient collection cannot be used after this\ncall, any such use will throw an exception."}
 
 ```
 

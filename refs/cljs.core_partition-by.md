@@ -57,11 +57,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6582-6591](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L6582-L6591)</ins>
+            └── <ins>[core.cljs:6608-6617](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L6608-L6617)</ins>
 </pre>
 
 
@@ -90,9 +90,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_partition-by",
  :source {:code "(defn partition-by\n  [f coll]\n  (lazy-seq\n   (when-let [s (seq coll)]\n     (let [fst (first s)\n           fv (f fst)\n           run (cons fst (take-while #(= fv (f %)) (next s)))]\n       (cons run (partition-by f (seq (drop (count run) s))))))))",
           :repo "clojurescript",
-          :tag "r2156",
+          :tag "r2173",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6582 6591]},
+          :lines [6608 6617]},
  :full-name "cljs.core/partition-by",
  :clj-symbol "clojure.core/partition-by",
  :docstring "Applies f to each value in coll, splitting it each time f returns\na new value.  Returns a lazy seq of partitions."}

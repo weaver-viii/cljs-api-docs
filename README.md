@@ -2,8 +2,8 @@
 
  <table border="1">
 <tr>
-<td>__0.0-2156__ [all](HISTORY.md)</td>
-<td>2014-01-29</td>
+<td>__0.0-2173__ [all](HISTORY.md)</td>
+<td>2014-02-22</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.5.1</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-2156__ ([See Full History](HISTORY.md)):
+Changes from __0.0-2173__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
@@ -85,27 +85,21 @@ __Library API Changes__
 
 <tr>
 <td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+<img valign="middle" src="https://img.shields.io/badge/+-protocol-brightgreen.svg">
 </td>
-<td><samp>[cljs.core/cloneable?](refs/cljs.core_cloneableQMARK.md)</samp></td>
+<td><samp>[cljs.core/IAtom](refs/cljs.core_IAtom.md)</samp></td>
 </tr>
 <tr>
 <td>
-<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+<img valign="middle" src="https://img.shields.io/badge/+-protocol-brightgreen.svg">
 </td>
-<td><samp>[cljs.core/defonce](refs/cljs.core_defonce.md)</samp></td>
+<td><samp>[cljs.core/IReset](refs/cljs.core_IReset.md)</samp></td>
 </tr>
 <tr>
 <td>
-<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+<img valign="middle" src="https://img.shields.io/badge/+-protocol-brightgreen.svg">
 </td>
-<td><samp>[cljs.core/specify!](refs/cljs.core_specifyBANG.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
-</td>
-<td><samp>[cljs.nodejs/enable-util-print!](refs/cljs.nodejs_enable-util-printBANG.md)</samp></td>
+<td><samp>[cljs.core/ISwap](refs/cljs.core_ISwap.md)</samp></td>
 </tr>
 </table>
 
@@ -3349,6 +3343,12 @@ application.
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
 </tr>
 <tr>
+<td></td>
+<td><samp>[IAtom](refs/cljs.core_IAtom.md)</samp></td>
+<td><samp>protocol</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2173"><img valign="middle" alt="[+] 0.0-2173" src="https://img.shields.io/badge/+-0.0--2173-lightgrey.svg"></a> </td>
+</tr>
+<tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](https://github.com/clojure/clojure/blob//src/jvm/clojure/lang/IChunk.java)</td>
 <td><samp>[IChunk](refs/cljs.core_IChunk.md)</samp></td>
 <td><samp>protocol</samp></td>
@@ -3535,6 +3535,12 @@ application.
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
 </tr>
 <tr>
+<td></td>
+<td><samp>[IReset](refs/cljs.core_IReset.md)</samp></td>
+<td><samp>protocol</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2173"><img valign="middle" alt="[+] 0.0-2173" src="https://img.shields.io/badge/+-0.0--2173-lightgrey.svg"></a> </td>
+</tr>
+<tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](https://github.com/clojure/clojure/blob//src/jvm/clojure/lang/Reversible.java)</td>
 <td><samp>[IReversible](refs/cljs.core_IReversible.md)</samp></td>
 <td><samp>protocol</samp></td>
@@ -3575,6 +3581,12 @@ application.
 <td><samp>[IStack](refs/cljs.core_IStack.md)</samp></td>
 <td><samp>protocol</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[ISwap](refs/cljs.core_ISwap.md)</samp></td>
+<td><samp>protocol</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2173"><img valign="middle" alt="[+] 0.0-2173" src="https://img.shields.io/badge/+-0.0--2173-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](https://github.com/clojure/clojure/blob//src/jvm/clojure/lang/ITransientAssociative.java)</td>

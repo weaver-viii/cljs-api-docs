@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7646-7657](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L7646-L7657)</ins>
+            └── <ins>[core.cljs:7689-7700](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L7689-L7700)</ins>
 </pre>
 
 
@@ -63,9 +63,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[uuid]"],
  :source {:code "(deftype UUID [uuid]\n  IEquiv\n  (-equiv [_ other]\n    (and (instance? UUID other) (identical? uuid (.-uuid other))))\n\n  IPrintWithWriter\n  (-pr-writer [_ writer _]\n    (-write writer (str \"#uuid \\\"\" uuid \"\\\"\")))\n\n  IHash\n  (-hash [this]\n    (goog.string/hashCode (pr-str this))))",
           :repo "clojurescript",
-          :tag "r2156",
+          :tag "r2173",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7646 7657]},
+          :lines [7689 7700]},
  :full-name "cljs.core/UUID",
  :full-name-encode "cljs.core_UUID",
  :history [["+" "0.0-1424"]]}

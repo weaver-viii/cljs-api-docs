@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1098-1116](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L1098-L1116)</ins>
+            └── <ins>[core.cljs:1098-1116](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L1098-L1116)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash",
  :source {:code "(defn hash [o]\n  (cond\n    (implements? IHash o)\n    (-hash ^not-native o)\n\n    (number? o)\n    (js-mod (.floor js/Math o) 2147483647)\n\n    (true? o) 1\n\n    (false? o) 0\n\n    (string? o)\n    (check-string-hash-cache o)\n\n    (nil? o) 0\n\n    :else\n    (-hash o)))",
           :repo "clojurescript",
-          :tag "r2156",
+          :tag "r2173",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1098 1116]},
  :full-name "cljs.core/hash",

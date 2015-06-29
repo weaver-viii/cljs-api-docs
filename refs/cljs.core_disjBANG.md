@@ -23,26 +23,32 @@
 
 
 
+Source docstring:
+
+```
+disj[oin]. Returns a transient set of the same (hashed/sorted) type, that
+does not contain key(s).
+```
 
 Source code:
 
 ```clj
 (defn disj!
   ([tcoll val]
-   (-disjoin! tcoll val))
+    (-disjoin! tcoll val))
   ([tcoll val & vals]
-   (let [ntcoll (-disjoin! tcoll val)]
-     (if vals
-       (recur ntcoll (first vals) (next vals))
-       ntcoll))))
+    (let [ntcoll (-disjoin! tcoll val)]
+      (if vals
+        (recur ntcoll (first vals) (next vals))
+        ntcoll))))
 ```
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2528-2535](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L2528-L2535)</ins>
+            └── <ins>[core.cljs:2543-2552](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L2543-L2552)</ins>
 </pre>
 
 
@@ -65,13 +71,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1211"]],
  :type "function",
  :full-name-encode "cljs.core_disjBANG",
- :source {:code "(defn disj!\n  ([tcoll val]\n   (-disjoin! tcoll val))\n  ([tcoll val & vals]\n   (let [ntcoll (-disjoin! tcoll val)]\n     (if vals\n       (recur ntcoll (first vals) (next vals))\n       ntcoll))))",
+ :source {:code "(defn disj!\n  ([tcoll val]\n    (-disjoin! tcoll val))\n  ([tcoll val & vals]\n    (let [ntcoll (-disjoin! tcoll val)]\n      (if vals\n        (recur ntcoll (first vals) (next vals))\n        ntcoll))))",
           :repo "clojurescript",
-          :tag "r2156",
+          :tag "r2173",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2528 2535]},
+          :lines [2543 2552]},
  :full-name "cljs.core/disj!",
- :clj-symbol "clojure.core/disj!"}
+ :clj-symbol "clojure.core/disj!",
+ :docstring "disj[oin]. Returns a transient set of the same (hashed/sorted) type, that\ndoes not contain key(s)."}
 
 ```
 

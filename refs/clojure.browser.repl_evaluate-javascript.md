@@ -29,7 +29,7 @@ Source code:
 (defn evaluate-javascript
   [conn block]
   (let [result (try {:status :success :value (str (js* "eval(~{block})"))}
-                    (catch js/Error e
+                    (catch :default e
                       {:status :exception :value (pr-str e)
                        :stacktrace (if (.hasOwnProperty e "stack")
                                      (.-stack e)
@@ -38,12 +38,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[repl.cljs:27-36](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/clojure/browser/repl.cljs#L27-L36)</ins>
+                └── <ins>[repl.cljs:27-36](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/clojure/browser/repl.cljs#L27-L36)</ins>
 </pre>
 
 
@@ -66,9 +66,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "clojure.browser.repl_evaluate-javascript",
- :source {:code "(defn evaluate-javascript\n  [conn block]\n  (let [result (try {:status :success :value (str (js* \"eval(~{block})\"))}\n                    (catch js/Error e\n                      {:status :exception :value (pr-str e)\n                       :stacktrace (if (.hasOwnProperty e \"stack\")\n                                     (.-stack e)\n                                     \"No stacktrace available.\")}))]\n    (pr-str result)))",
+ :source {:code "(defn evaluate-javascript\n  [conn block]\n  (let [result (try {:status :success :value (str (js* \"eval(~{block})\"))}\n                    (catch :default e\n                      {:status :exception :value (pr-str e)\n                       :stacktrace (if (.hasOwnProperty e \"stack\")\n                                     (.-stack e)\n                                     \"No stacktrace available.\")}))]\n    (pr-str result)))",
           :repo "clojurescript",
-          :tag "r2156",
+          :tag "r2173",
           :filename "src/cljs/clojure/browser/repl.cljs",
           :lines [27 36]},
  :full-name "clojure.browser.repl/evaluate-javascript",

@@ -23,26 +23,31 @@
 
 
 
+Source docstring:
+
+```
+Returns a transient map that doesn't contain a mapping for key(s).
+```
 
 Source code:
 
 ```clj
 (defn dissoc!
   ([tcoll key]
-   (-dissoc! tcoll key))
+    (-dissoc! tcoll key))
   ([tcoll key & ks]
-   (let [ntcoll (-dissoc! tcoll key)]
-     (if ks
-       (recur ntcoll (first ks) (next ks))
-       ntcoll))))
+    (let [ntcoll (-dissoc! tcoll key)]
+      (if ks
+        (recur ntcoll (first ks) (next ks))
+        ntcoll))))
 ```
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2516-2523](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L2516-L2523)</ins>
+            └── <ins>[core.cljs:2527-2535](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L2527-L2535)</ins>
 </pre>
 
 
@@ -65,13 +70,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1211"]],
  :type "function",
  :full-name-encode "cljs.core_dissocBANG",
- :source {:code "(defn dissoc!\n  ([tcoll key]\n   (-dissoc! tcoll key))\n  ([tcoll key & ks]\n   (let [ntcoll (-dissoc! tcoll key)]\n     (if ks\n       (recur ntcoll (first ks) (next ks))\n       ntcoll))))",
+ :source {:code "(defn dissoc!\n  ([tcoll key]\n    (-dissoc! tcoll key))\n  ([tcoll key & ks]\n    (let [ntcoll (-dissoc! tcoll key)]\n      (if ks\n        (recur ntcoll (first ks) (next ks))\n        ntcoll))))",
           :repo "clojurescript",
-          :tag "r2156",
+          :tag "r2173",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2516 2523]},
+          :lines [2527 2535]},
  :full-name "cljs.core/dissoc!",
- :clj-symbol "clojure.core/dissoc!"}
+ :clj-symbol "clojure.core/dissoc!",
+ :docstring "Returns a transient map that doesn't contain a mapping for key(s)."}
 
 ```
 

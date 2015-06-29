@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7465-7484](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L7465-L7484)</ins>
+            └── <ins>[core.cljs:7508-7527](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L7508-L7527)</ins>
 </pre>
 
 
@@ -83,9 +83,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_underive",
  :source {:code "(defn underive\n  ([tag parent]\n    (swap-global-hierarchy! underive tag parent)\n    nil)\n  ([h tag parent]\n    (let [parentMap (:parents h)\n          childsParents (if (parentMap tag)\n                          (disj (parentMap tag) parent) #{})\n          newParents (if (not-empty childsParents)\n                      (assoc parentMap tag childsParents)\n                      (dissoc parentMap tag))\n          deriv-seq (flatten (map #(cons (first %) (interpose (first %) (second %)))\n                                  (seq newParents)))]\n      (if (contains? (parentMap tag) parent)\n        (reduce #(apply derive %1 %2) (make-hierarchy)\n                (partition 2 deriv-seq))\n        h))))",
           :repo "clojurescript",
-          :tag "r2156",
+          :tag "r2173",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7465 7484]},
+          :lines [7508 7527]},
  :full-name "cljs.core/underive",
  :clj-symbol "clojure.core/underive",
  :docstring "Removes a parent/child relationship between parent and\ntag. h must be a hierarchy obtained from make-hierarchy, if not\nsupplied defaults to, and modifies, the global hierarchy."}

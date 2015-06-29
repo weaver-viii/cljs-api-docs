@@ -32,12 +32,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[net.cljs:32-44](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/clojure/browser/net.cljs#L32-L44)</ins>
+                └── <ins>[net.cljs:32-44](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/clojure/browser/net.cljs#L32-L44)</ins>
 </pre>
 
 
@@ -60,7 +60,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.net_IConnection",
  :source {:code "(defprotocol IConnection\n  (connect\n    [this]\n    [this opt1]\n    [this opt1 opt2]\n    [this opt1 opt2 opt3])\n  (transmit\n    [this opt]\n    [this opt opt2]\n    [this opt opt2 opt3]\n    [this opt opt2 opt3 opt4]\n    [this opt opt2 opt3 opt4 opt5])\n  (close [this]))",
           :repo "clojurescript",
-          :tag "r2156",
+          :tag "r2173",
           :filename "src/cljs/clojure/browser/net.cljs",
           :lines [32 44]},
  :methods [{:name "connect",

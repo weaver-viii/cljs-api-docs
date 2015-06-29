@@ -39,11 +39,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:763-774](https://github.com/clojure/clojurescript/blob/r2156/src/clj/cljs/core.clj#L763-L774)</ins>
+            └── <ins>[core.clj:767-778](https://github.com/clojure/clojurescript/blob/r2173/src/clj/cljs/core.clj#L767-L778)</ins>
 </pre>
 
 
@@ -68,9 +68,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_extend-type",
  :source {:code "(defmacro extend-type [type-sym & impls]\n  (let [env &env\n        resolve (partial resolve-var env)\n        impl-map (->impl-map impls)\n        [type assign-impls] (if-let [type (base-type type-sym)]\n                              [type base-assign-impls]\n                              [(resolve type-sym) proto-assign-impls])]\n    (when (core/and (:extending-base-js-type cljs.analyzer/*cljs-warnings*)\n                    (js-base-type type-sym))\n      (cljs.analyzer/warning :extending-base-js-type env\n          {:current-symbol type-sym :suggested-symbol (js-base-type type-sym)}))\n    `(do ~@(mapcat #(assign-impls env resolve type-sym type %) impl-map))))",
           :repo "clojurescript",
-          :tag "r2156",
+          :tag "r2173",
           :filename "src/clj/cljs/core.clj",
-          :lines [763 774]},
+          :lines [767 778]},
  :full-name "cljs.core/extend-type",
  :clj-symbol "clojure.core/extend-type"}
 

@@ -49,11 +49,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2156
+clojurescript @ r2173
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2418-2436](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L2418-L2436)</ins>
+            └── <ins>[core.cljs:2418-2436](https://github.com/clojure/clojurescript/blob/r2173/src/cljs/cljs/core.cljs#L2418-L2436)</ins>
 </pre>
 
 
@@ -78,7 +78,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_object-array",
  :source {:code "(defn object-array\n  ([size-or-seq]\n     (if (number? size-or-seq)\n       (object-array size-or-seq nil)\n       (into-array size-or-seq)))\n  ([size init-val-or-seq]\n     (let [a (make-array size)]\n       (if (seq? init-val-or-seq)\n         (let [s (seq init-val-or-seq)]\n           (loop [i 0 s s]\n             (if (and s (< i size))\n               (do\n                 (aset a i (first s))\n                 (recur (inc i) (next s)))\n               a)))\n         (do\n           (dotimes [i size]\n             (aset a i init-val-or-seq))\n           a)))))",
           :repo "clojurescript",
-          :tag "r2156",
+          :tag "r2173",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2418 2436]},
  :full-name "cljs.core/object-array",
