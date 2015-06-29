@@ -41,11 +41,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1513
+clojurescript @ r1535
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1656-1657](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/core.cljs#L1656-L1657)</ins>
+            └── <ins>[core.cljs:1656-1657](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/core.cljs#L1656-L1657)</ins>
 </pre>
 
 
@@ -72,7 +72,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_rseq",
  :source {:code "(defn rseq [coll]\n  (-rseq coll))",
           :repo "clojurescript",
-          :tag "r1513",
+          :tag "r1535",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1656 1657]},
  :full-name "cljs.core/rseq",

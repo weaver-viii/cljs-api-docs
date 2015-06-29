@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1513
+clojurescript @ r1535
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:87-90](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/clojure/zip.cljs#L87-L90)</ins>
+            └── <ins>[zip.cljs:87-90](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/clojure/zip.cljs#L87-L90)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_lefts",
  :source {:code "(defn lefts\n  [loc]\n    (seq (:l (loc 1))))",
           :repo "clojurescript",
-          :tag "r1513",
+          :tag "r1535",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [87 90]},
  :full-name "clojure.zip/lefts",

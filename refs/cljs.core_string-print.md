@@ -27,11 +27,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1513
+clojurescript @ r1535
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6180-6182](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/core.cljs#L6180-L6182)</ins>
+            └── <ins>[core.cljs:6180-6182](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/core.cljs#L6180-L6182)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[x]"],
  :source {:code "(defn string-print [x]\n  (*print-fn* x)\n  nil)",
           :repo "clojurescript",
-          :tag "r1513",
+          :tag "r1535",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6180 6182]},
  :full-name "cljs.core/string-print",

@@ -90,11 +90,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1513
+clojurescript @ r1535
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3085-3147](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/core.cljs#L3085-L3147)</ins>
+            └── <ins>[core.cljs:3085-3147](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/core.cljs#L3085-L3147)</ins>
 </pre>
 
 
@@ -119,7 +119,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ChunkedSeq",
  :source {:code "(deftype ChunkedSeq [vec node i off meta ^:mutable __hash]\n  IWithMeta\n  (-with-meta [coll m]\n    (chunked-seq vec node i off m))\n  (-meta [coll] meta)\n\n  ISeqable\n  (-seq [coll] coll)\n\n  ISequential\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  ASeq\n  ISeq\n  (-first [coll]\n    (aget node off))\n  (-rest [coll]\n    (if (< (inc off) (alength node))\n      (let [s (chunked-seq vec node i (inc off))]\n        (if (nil? s)\n          ()\n          s))\n      (-chunked-rest coll)))\n\n  INext\n  (-next [coll]\n    (if (< (inc off) (alength node))\n      (let [s (chunked-seq vec node i (inc off))]\n        (if (nil? s)\n          nil\n          s))\n      (-chunked-next coll)))\n\n  ICollection\n  (-conj [coll o]\n    (cons o coll))\n\n  IEmptyableCollection\n  (-empty [coll]\n    (with-meta cljs.core.PersistentVector/EMPTY meta))\n\n  IChunkedSeq\n  (-chunked-first [coll]\n    (array-chunk node off))\n  (-chunked-rest [coll]\n    (let [l (alength node)\n          s (when (< (+ i l) (-count vec))\n              (chunked-seq vec (+ i l) 0))]\n      (if (nil? s)\n        ()\n        s)))\n\n  IChunkedNext\n  (-chunked-next [coll]\n    (let [l (alength node)\n          s (when (< (+ i l) (-count vec))\n              (chunked-seq vec (+ i l) 0))]\n      (if (nil? s)\n        nil\n        s)))\n  IHash\n  (-hash [coll] (caching-hash coll hash-coll __hash)))",
           :repo "clojurescript",
-          :tag "r1513",
+          :tag "r1535",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3085 3147]},
  :full-name "cljs.core/ChunkedSeq",

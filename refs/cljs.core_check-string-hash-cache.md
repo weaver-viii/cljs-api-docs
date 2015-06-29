@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1513
+clojurescript @ r1535
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:889-896](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/core.cljs#L889-L896)</ins>
+            └── <ins>[core.cljs:889-896](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/core.cljs#L889-L896)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[k]"],
  :source {:code "(defn check-string-hash-cache [k]\n  (when (> string-hash-cache-count 255)\n    (set! string-hash-cache (js-obj))\n    (set! string-hash-cache-count 0))\n  (let [h (aget string-hash-cache k)]\n    (if-not (nil? h)\n      h\n      (add-to-string-hash-cache k))))",
           :repo "clojurescript",
-          :tag "r1513",
+          :tag "r1535",
           :filename "src/cljs/cljs/core.cljs",
           :lines [889 896]},
  :full-name "cljs.core/check-string-hash-cache",

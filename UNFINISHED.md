@@ -5136,7 +5136,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/with-out-str</td>
-<td></td>
+<td>[ref](refs/cljs.core_with-out-str.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_with-out-str.cljsdoc)</td>
 <td></td>
 <td></td>

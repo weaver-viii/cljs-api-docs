@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1513
+clojurescript @ r1535
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:74-78](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/reader.cljs#L74-L78)</ins>
+            └── <ins>[reader.cljs:74-78](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/reader.cljs#L74-L78)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.reader_macro-terminatingQMARK",
  :source {:code "(defn ^boolean macro-terminating? [ch]\n  (and (not (identical? ch \"#\"))\n       (not (identical? ch \\'))\n       (not (identical? ch \":\"))\n       (macros ch)))",
           :repo "clojurescript",
-          :tag "r1513",
+          :tag "r1535",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [74 78]},
  :full-name "cljs.reader/macro-terminating?"}

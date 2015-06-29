@@ -69,11 +69,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1513
+clojurescript @ r1535
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2100-2101](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/core.cljs#L2100-L2101)</ins>
+            └── <ins>[core.cljs:2100-2101](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/core.cljs#L2100-L2101)</ins>
 </pre>
 
 
@@ -100,7 +100,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_assocBANG",
  :source {:code "(defn assoc! [tcoll key val]\n  (-assoc! tcoll key val))",
           :repo "clojurescript",
-          :tag "r1513",
+          :tag "r1535",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2100 2101]},
  :examples [{:id "7d1e6b",

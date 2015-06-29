@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1513
+clojurescript @ r1535
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:459-462](https://github.com/clojure/clojurescript/blob/r1513/src/clj/cljs/analyzer.clj#L459-L462)</ins>
+            └── <ins>[analyzer.clj:459-462](https://github.com/clojure/clojurescript/blob/r1535/src/clj/cljs/analyzer.clj#L459-L462)</ins>
 </pre>
 
 
@@ -52,7 +52,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "special form",
  :source {:code "(defmethod parse 'do\n  [op env [_ & exprs :as form] _]\n  (let [block (analyze-block env exprs)]\n    (merge {:env env :op :do :form form :children (block-children block)} block)))",
           :repo "clojurescript",
-          :tag "r1513",
+          :tag "r1535",
           :filename "src/clj/cljs/analyzer.clj",
           :lines [459 462]},
  :full-name "special/do",

@@ -66,11 +66,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1513
+clojurescript @ r1535
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2729-2738](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/core.cljs#L2729-L2738)</ins>
+            └── <ins>[core.cljs:2729-2738](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/core.cljs#L2729-L2738)</ins>
 </pre>
 
 
@@ -101,7 +101,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_update-in",
  :source {:code "(defn update-in\n  ([m [k & ks] f & args]\n   (if ks\n     (assoc m k (apply update-in (get m k) ks f args))\n     (assoc m k (apply f (get m k) args)))))",
           :repo "clojurescript",
-          :tag "r1513",
+          :tag "r1535",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2729 2738]},
  :full-name "cljs.core/update-in",

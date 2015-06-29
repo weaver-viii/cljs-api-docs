@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1513
+clojurescript @ r1535
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2638-2644](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/core.cljs#L2638-L2644)</ins>
+            └── <ins>[core.cljs:2638-2644](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/core.cljs#L2638-L2644)</ins>
 </pre>
 
 
@@ -74,7 +74,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_flatten",
  :source {:code "(defn flatten\n  [x]\n  (filter #(not (sequential? %))\n          (rest (tree-seq sequential? seq x))))",
           :repo "clojurescript",
-          :tag "r1513",
+          :tag "r1535",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2638 2644]},
  :full-name "cljs.core/flatten",

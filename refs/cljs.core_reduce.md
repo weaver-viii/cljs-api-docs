@@ -74,11 +74,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1513
+clojurescript @ r1535
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1173-1190](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/core.cljs#L1173-L1190)</ins>
+            └── <ins>[core.cljs:1173-1190](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/core.cljs#L1173-L1190)</ins>
 </pre>
 
 
@@ -107,7 +107,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_reduce",
  :source {:code "(defn reduce\n  ([f coll]\n     (if (satisfies? IReduce coll)\n       (-reduce coll f)\n       (seq-reduce f coll)))\n  ([f val coll]\n     (if (satisfies? IReduce coll)\n       (-reduce coll f val)\n       (seq-reduce f val coll))))",
           :repo "clojurescript",
-          :tag "r1513",
+          :tag "r1535",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1173 1190]},
  :full-name "cljs.core/reduce",

@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1513
+clojurescript @ r1535
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2542-2544](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/core.cljs#L2542-L2544)</ins>
+            └── <ins>[core.cljs:2542-2544](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/core.cljs#L2542-L2544)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_replicate",
  :source {:code "(defn replicate\n  [n x] (take n (repeat x)))",
           :repo "clojurescript",
-          :tag "r1513",
+          :tag "r1535",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2542 2544]},
  :full-name "cljs.core/replicate",

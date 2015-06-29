@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1513
+clojurescript @ r1535
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6013-6016](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/core.cljs#L6013-L6016)</ins>
+            └── <ins>[core.cljs:6013-6016](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/core.cljs#L6013-L6016)</ins>
 </pre>
 
 
@@ -80,7 +80,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_split-with",
  :source {:code "(defn split-with\n  [pred coll]\n  [(take-while pred coll) (drop-while pred coll)])",
           :repo "clojurescript",
-          :tag "r1513",
+          :tag "r1535",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6013 6016]},
  :full-name "cljs.core/split-with",

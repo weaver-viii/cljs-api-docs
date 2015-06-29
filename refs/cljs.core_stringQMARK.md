@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1513
+clojurescript @ r1535
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1012-1015](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/core.cljs#L1012-L1015)</ins>
+            └── <ins>[core.cljs:1012-1015](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/core.cljs#L1012-L1015)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_stringQMARK",
  :source {:code "(defn ^boolean string? [x]\n  (and ^boolean (goog/isString x)\n       (not (or (identical? (.charAt x 0) \\uFDD0)\n                (identical? (.charAt x 0) \\uFDD1)))))",
           :repo "clojurescript",
-          :tag "r1513",
+          :tag "r1535",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1012 1015]},
  :full-name "cljs.core/string?",

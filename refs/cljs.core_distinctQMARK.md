@@ -90,11 +90,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1513
+clojurescript @ r1535
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1061-1075](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/core.cljs#L1061-L1075)</ins>
+            └── <ins>[core.cljs:1061-1075](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/core.cljs#L1061-L1075)</ins>
 </pre>
 
 
@@ -122,7 +122,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_distinctQMARK",
  :source {:code "(defn ^boolean distinct?\n  ([x] true)\n  ([x y] (not (= x y)))\n  ([x y & more]\n     (if (not (= x y))\n     (loop [s #{x y} xs more]\n       (let [x (first xs)\n             etc (next xs)]\n         (if xs\n           (if (contains? s x)\n             false\n             (recur (conj s x) etc))\n           true)))\n     false)))",
           :repo "clojurescript",
-          :tag "r1513",
+          :tag "r1535",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1061 1075]},
  :examples [{:id "b32799",
