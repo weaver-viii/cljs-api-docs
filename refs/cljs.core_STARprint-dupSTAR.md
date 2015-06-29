@@ -23,11 +23,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2138
+clojurescript @ r2156
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:36](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/core.cljs#L36)</ins>
+            └── <ins>[core.cljs:36](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L36)</ins>
 </pre>
 
 
@@ -49,7 +49,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "dynamic var",
  :source {:code "(def ^:dynamic *print-dup* false)",
           :repo "clojurescript",
-          :tag "r2138",
+          :tag "r2156",
           :filename "src/cljs/cljs/core.cljs",
           :lines [36]},
  :full-name "cljs.core/*print-dup*",

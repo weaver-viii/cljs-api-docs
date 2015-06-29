@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2138
+clojurescript @ r2156
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1787-1793](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/core.cljs#L1787-L1793)</ins>
+            └── <ins>[core.cljs:1788-1794](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L1788-L1794)</ins>
 </pre>
 
 
@@ -81,9 +81,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_nthnext",
  :source {:code "(defn nthnext\n  [coll n]\n  (loop [n n xs (seq coll)]\n    (if (and xs (pos? n))\n      (recur (dec n) (next xs))\n      xs)))",
           :repo "clojurescript",
-          :tag "r2138",
+          :tag "r2156",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1787 1793]},
+          :lines [1788 1794]},
  :full-name "cljs.core/nthnext",
  :clj-symbol "clojure.core/nthnext",
  :docstring "Returns the nth next of coll, (seq coll) when n is 0."}

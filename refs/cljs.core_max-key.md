@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2138
+clojurescript @ r2156
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6395-6400](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/core.cljs#L6395-L6400)</ins>
+            └── <ins>[core.cljs:6417-6422](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L6417-L6422)</ins>
 </pre>
 
 
@@ -85,9 +85,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_max-key",
  :source {:code "(defn max-key\n  ([k x] x)\n  ([k x y] (if (> (k x) (k y)) x y))\n  ([k x y & more]\n   (reduce #(max-key k %1 %2) (max-key k x y) more)))",
           :repo "clojurescript",
-          :tag "r2138",
+          :tag "r2156",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6395 6400]},
+          :lines [6417 6422]},
  :full-name "cljs.core/max-key",
  :clj-symbol "clojure.core/max-key",
  :docstring "Returns the x for which (k x), a number, is greatest."}

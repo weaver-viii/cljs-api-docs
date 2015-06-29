@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2138
+clojurescript @ r2156
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:83-86](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/core.cljs#L83-L86)</ins>
+            └── <ins>[core.cljs:83-86](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L83-L86)</ins>
 </pre>
 
 
@@ -61,11 +61,11 @@ clojurescript @ r2138
 ```
 
  <pre>
-clojurescript @ r2138
+clojurescript @ r2156
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:241-242](https://github.com/clojure/clojurescript/blob/r2138/src/clj/cljs/core.clj#L241-L242)</ins>
+            └── <ins>[core.clj:245-246](https://github.com/clojure/clojurescript/blob/r2156/src/clj/cljs/core.clj#L245-L246)</ins>
 </pre>
 
 ---
@@ -92,14 +92,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_nilQMARK",
  :source {:code "(defn ^boolean nil?\n  [x]\n  (coercive-= x nil))",
           :repo "clojurescript",
-          :tag "r2138",
+          :tag "r2156",
           :filename "src/cljs/cljs/core.cljs",
           :lines [83 86]},
  :extra-sources ({:code "(defmacro nil? [x]\n  `(coercive-= ~x nil))",
                   :repo "clojurescript",
-                  :tag "r2138",
+                  :tag "r2156",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [241 242]}),
+                  :lines [245 246]}),
  :full-name "cljs.core/nil?",
  :clj-symbol "clojure.core/nil?",
  :docstring "Returns true if x is nil, false otherwise."}

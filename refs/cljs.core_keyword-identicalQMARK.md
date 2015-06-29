@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2138
+clojurescript @ r2156
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2111-2117](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/core.cljs#L2111-L2117)</ins>
+            └── <ins>[core.cljs:2109-2115](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L2109-L2115)</ins>
 </pre>
 
 
@@ -61,9 +61,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_keyword-identicalQMARK",
  :source {:code "(defn ^boolean keyword-identical? [x y]\n  (if (identical? x y)\n    true\n    (if (and (keyword? x)\n             (keyword? y))\n      (identical? (.-fqn x) (.-fqn y))\n      false)))",
           :repo "clojurescript",
-          :tag "r2138",
+          :tag "r2156",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2111 2117]},
+          :lines [2109 2115]},
  :full-name "cljs.core/keyword-identical?"}
 
 ```

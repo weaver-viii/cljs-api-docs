@@ -34,13 +34,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.0
+tools.reader @ tools.reader-0.8.3
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:599-610](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.0/src/main/clojure/clojure/tools/reader.clj#L599-L610)</ins>
+                    └── <ins>[reader.clj:599-610](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.3/src/main/clojure/clojure/tools/reader.clj#L599-L610)</ins>
 </pre>
 
 
@@ -79,13 +79,13 @@ tools.reader @ tools.reader-0.8.0
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.0
+tools.reader @ tools.reader-0.8.3
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:412-440](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.0/src/main/clojure/clojure/tools/reader.clj#L412-L440)</ins>
+                    └── <ins>[reader.clj:412-440](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.3/src/main/clojure/clojure/tools/reader.clj#L412-L440)</ins>
 </pre>
 
 ---
@@ -108,12 +108,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_eval",
  :source {:code "(defn- dispatch-macros [ch]\n  (case ch\n    \\^ read-meta                ;deprecated\n    \\' (wrapping-reader 'var)\n    \\( read-fn\n    \\= read-eval\n    \\{ read-set\n    \\< (throwing-reader \"Unreadable form\")\n    \\\" read-regex\n    \\! read-comment\n    \\_ read-discard\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.0",
+          :tag "tools.reader-0.8.3",
           :filename "src/main/clojure/clojure/tools/reader.clj",
           :lines [599 610]},
  :extra-sources [{:code "(defn- read-eval\n  [rdr _]\n  (when-not *read-eval*\n    (reader-error rdr \"#= not allowed when *read-eval* is false\"))\n  (let [o (read rdr true nil true)]\n    (if (symbol? o)\n      (RT/classForName (str ^Symbol o))\n      (if (list? o)\n        (let [fs (first o)\n              o (rest o)\n              fs-name (name fs)]\n          (cond\n           (= fs 'var) (let [vs (first o)]\n                         (RT/var (namespace vs) (name vs)))\n           (.endsWith fs-name \".\")\n           (let [args (to-array o)]\n             (-> fs-name (subs 0 (dec (count fs-name)))\n                RT/classForName (Reflector/invokeConstructor args)))\n\n           (Compiler/namesStaticMember fs)\n           (let [args (to-array o)]\n             (Reflector/invokeStaticMethod (namespace fs) fs-name args))\n\n           :else\n           (let [v (Compiler/maybeResolveIn *ns* fs)]\n             (if (var? v)\n               (apply v o)\n               (reader-error rdr \"Can't resolve \" fs)))))\n        (throw (IllegalArgumentException. \"Unsupported #= form\"))))))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.8.0",
+                  :tag "tools.reader-0.8.3",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
                   :lines [412 440]}],
  :syntax-form "#=",

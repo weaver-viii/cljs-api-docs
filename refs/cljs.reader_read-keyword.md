@@ -39,11 +39,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2138
+clojurescript @ r2156
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:325-339](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/reader.cljs#L325-L339)</ins>
+            └── <ins>[reader.cljs:325-339](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/reader.cljs#L325-L339)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[reader initch]"],
  :source {:code "(defn read-keyword\n  [reader initch]\n  (let [token (read-token reader (read-char reader))\n        a (re-matches* symbol-pattern token)\n        token (aget a 0)\n        ns (aget a 1)\n        name (aget a 2)]\n    (if (or (and (not (undefined? ns))\n                 (identical? (. ns (substring (- (.-length ns) 2) (.-length ns))) \":/\"))\n            (identical? (aget name (dec (.-length name))) \":\")\n            (not (== (.indexOf token \"::\" 1) -1)))\n      (reader-error reader \"Invalid token: \" token)\n      (if (and (not (nil? ns)) (> (.-length ns) 0))\n        (keyword (.substring ns 0 (.indexOf ns \"/\")) name)\n        (keyword token)))))",
           :repo "clojurescript",
-          :tag "r2138",
+          :tag "r2156",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [325 339]},
  :full-name "cljs.reader/read-keyword",

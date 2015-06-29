@@ -72,13 +72,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.0
+tools.reader @ tools.reader-0.8.3
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:578-597](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.0/src/main/clojure/clojure/tools/reader.clj#L578-L597)</ins>
+                    └── <ins>[reader.clj:578-597](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.3/src/main/clojure/clojure/tools/reader.clj#L578-L597)</ins>
 </pre>
 
 
@@ -107,13 +107,13 @@ tools.reader @ tools.reader-0.8.0
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.0
+tools.reader @ tools.reader-0.8.3
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:196-214](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.0/src/main/clojure/clojure/tools/reader.clj#L196-L214)</ins>
+                    └── <ins>[reader.clj:196-214](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.3/src/main/clojure/clojure/tools/reader.clj#L196-L214)</ins>
 </pre>
 
 ---
@@ -141,12 +141,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_map",
  :source {:code "(defn- macros [ch]\n  (case ch\n    \\\" read-string*\n    \\: read-keyword\n    \\; read-comment\n    \\' (wrapping-reader 'quote)\n    \\@ (wrapping-reader 'clojure.core/deref)\n    \\^ read-meta\n    \\` read-syntax-quote ;;(wrapping-reader 'syntax-quote)\n    \\~ read-unquote\n    \\( read-list\n    \\) read-unmatched-delimiter\n    \\[ read-vector\n    \\] read-unmatched-delimiter\n    \\{ read-map\n    \\} read-unmatched-delimiter\n    \\\\ read-char*\n    \\% read-arg\n    \\# read-dispatch\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.0",
+          :tag "tools.reader-0.8.3",
           :filename "src/main/clojure/clojure/tools/reader.clj",
           :lines [578 597]},
  :extra-sources [{:code "(defn- read-map\n  [rdr _]\n  (let [[start-line start-column] (when (indexing-reader? rdr)\n                                    [(get-line-number rdr) (int (dec (get-column-number rdr)))])\n        the-map (read-delimited \\} rdr true)\n        map-count (count the-map)\n        [end-line end-column] (when (indexing-reader? rdr)\n                                [(get-line-number rdr) (int (dec (get-column-number rdr)))])]\n    (when (odd? map-count)\n      (reader-error rdr \"Map literal must contain an even number of forms\"))\n    (with-meta\n      (if (zero? map-count)\n        {}\n        (RT/map (to-array the-map)))\n      (when start-line\n        {:line start-line\n         :column start-column\n         :end-line end-line\n         :end-column end-column}))))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.8.0",
+                  :tag "tools.reader-0.8.3",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
                   :lines [196 214]}],
  :syntax-form "{}",

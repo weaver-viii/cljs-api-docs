@@ -48,11 +48,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2138
+clojurescript @ r2156
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:793-796](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/core.cljs#L793-L796)</ins>
+            └── <ins>[core.cljs:794-797](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L794-L797)</ins>
 </pre>
 
 
@@ -82,9 +82,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_second",
  :source {:code "(defn second\n  [coll]\n  (first (next coll)))",
           :repo "clojurescript",
-          :tag "r2138",
+          :tag "r2156",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [793 796]},
+          :lines [794 797]},
  :full-name "cljs.core/second",
  :clj-symbol "clojure.core/second",
  :docstring "Same as (first (next x))"}

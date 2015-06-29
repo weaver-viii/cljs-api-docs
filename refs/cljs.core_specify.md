@@ -22,18 +22,16 @@ Source code:
 
 ```clj
 (defmacro specify [expr & impls]
-  (let [x (with-meta (gensym "x") {:extend :instance})]
-    `(let [~x (cljs.core/clone ~expr)]
-       (extend-type ~x ~@impls)
-       ~x)))
+  `(cljs.core/specify! (cljs.core/clone ~expr)
+     ~@impls))
 ```
 
  <pre>
-clojurescript @ r2138
+clojurescript @ r2156
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:606-610](https://github.com/clojure/clojurescript/blob/r2138/src/clj/cljs/core.clj#L606-L610)</ins>
+            └── <ins>[core.clj:616-618](https://github.com/clojure/clojurescript/blob/r2156/src/clj/cljs/core.clj#L616-L618)</ins>
 </pre>
 
 
@@ -54,11 +52,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "specify",
  :type "macro",
  :signature ["[expr & impls]"],
- :source {:code "(defmacro specify [expr & impls]\n  (let [x (with-meta (gensym \"x\") {:extend :instance})]\n    `(let [~x (cljs.core/clone ~expr)]\n       (extend-type ~x ~@impls)\n       ~x)))",
+ :source {:code "(defmacro specify [expr & impls]\n  `(cljs.core/specify! (cljs.core/clone ~expr)\n     ~@impls))",
           :repo "clojurescript",
-          :tag "r2138",
+          :tag "r2156",
           :filename "src/clj/cljs/core.clj",
-          :lines [606 610]},
+          :lines [616 618]},
  :full-name "cljs.core/specify",
  :full-name-encode "cljs.core_specify",
  :history [["+" "0.0-2138"]]}

@@ -67,13 +67,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.0
+tools.reader @ tools.reader-0.8.3
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:599-610](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.0/src/main/clojure/clojure/tools/reader.clj#L599-L610)</ins>
+                    └── <ins>[reader.clj:599-610](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.3/src/main/clojure/clojure/tools/reader.clj#L599-L610)</ins>
 </pre>
 
 
@@ -103,13 +103,13 @@ tools.reader @ tools.reader-0.8.0
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.0
+tools.reader @ tools.reader-0.8.3
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:359-378](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.0/src/main/clojure/clojure/tools/reader.clj#L359-L378)</ins>
+                    └── <ins>[reader.clj:359-378](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.3/src/main/clojure/clojure/tools/reader.clj#L359-L378)</ins>
 </pre>
 
 ---
@@ -134,12 +134,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_function",
  :source {:code "(defn- dispatch-macros [ch]\n  (case ch\n    \\^ read-meta                ;deprecated\n    \\' (wrapping-reader 'var)\n    \\( read-fn\n    \\= read-eval\n    \\{ read-set\n    \\< (throwing-reader \"Unreadable form\")\n    \\\" read-regex\n    \\! read-comment\n    \\_ read-discard\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.0",
+          :tag "tools.reader-0.8.3",
           :filename "src/main/clojure/clojure/tools/reader.clj",
           :lines [599 610]},
  :extra-sources [{:code "(defn- read-fn\n  [rdr _]\n  (if (thread-bound? #'arg-env)\n    (throw (IllegalStateException. \"Nested #()s are not allowed\")))\n  (binding [arg-env (sorted-map)]\n    (let [form (read (doto rdr (unread \\()) true nil true) ;; this sets bindings\n          rargs (rseq arg-env)\n          args (if rargs\n                 (let [higharg (key (first rargs))]\n                   (let [args (loop [i 1 args (transient [])]\n                                (if (> i higharg)\n                                  (persistent! args)\n                                  (recur (inc i) (conj! args (or (get arg-env i)\n                                                                 (garg i))))))\n                         args (if (arg-env -1)\n                                (conj args '& (arg-env -1))\n                                args)]\n                     args))\n                 [])]\n      (list 'fn* args form))))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.8.0",
+                  :tag "tools.reader-0.8.3",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
                   :lines [359 378]}],
  :syntax-form "#()",

@@ -58,11 +58,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2138
+clojurescript @ r2156
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6409-6417](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/core.cljs#L6409-L6417)</ins>
+            └── <ins>[core.cljs:6431-6439](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L6431-L6439)</ins>
 </pre>
 
 
@@ -89,9 +89,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_partition-all",
  :source {:code "(defn partition-all\n  ([n coll]\n     (partition-all n n coll))\n  ([n step coll]\n     (lazy-seq\n      (when-let [s (seq coll)]\n        (cons (take n s) (partition-all n step (drop step s)))))))",
           :repo "clojurescript",
-          :tag "r2138",
+          :tag "r2156",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6409 6417]},
+          :lines [6431 6439]},
  :full-name "cljs.core/partition-all",
  :clj-symbol "clojure.core/partition-all",
  :docstring "Returns a lazy sequence of lists like partition, but may include\npartitions with fewer than n items at the end."}

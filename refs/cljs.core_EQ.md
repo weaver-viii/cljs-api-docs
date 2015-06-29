@@ -140,11 +140,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2138
+clojurescript @ r2156
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:525-541](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/core.cljs#L525-L541)</ins>
+            └── <ins>[core.cljs:526-542](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L526-L542)</ins>
 </pre>
 
 
@@ -172,9 +172,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_EQ",
  :source {:code "(defn ^boolean =\n  ([x] true)\n  ([x y]\n    (if (nil? x)\n      (nil? y)\n      (or (identical? x y)\n        ^boolean (-equiv x y))))\n  ([x y & more]\n     (if (= x y)\n       (if (next more)\n         (recur y (first more) (next more))\n         (= y (first more)))\n       false)))",
           :repo "clojurescript",
-          :tag "r2138",
+          :tag "r2156",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [525 541]},
+          :lines [526 542]},
  :examples [{:id "edffb6",
              :content "```clj\n(= 1)\n;;=> true\n\n(= 1 1)\n;;=> true\n\n(= 1 2)\n;;=> false\n\n(= 1 1 1)\n;;=> true\n\n(= 1 1 2)\n;;=> false\n```"}
             {:id "a2d064",

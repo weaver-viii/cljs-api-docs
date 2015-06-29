@@ -1952,7 +1952,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/cloneable?</td>
-<td></td>
+<td>[ref](refs/cljs.core_cloneableQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_cloneableQMARK.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2160,7 +2160,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/defonce</td>
-<td></td>
+<td>[ref](refs/cljs.core_defonce.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_defonce.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4432,7 +4432,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/specify!</td>
-<td></td>
+<td>[ref](refs/cljs.core_specifyBANG.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_specifyBANG.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5136,7 +5136,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.nodejs/enable-util-print!</td>
-<td></td>
+<td>[ref](refs/cljs.nodejs_enable-util-printBANG.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.nodejs_enable-util-printBANG.cljsdoc)</td>
 <td></td>
 <td></td>

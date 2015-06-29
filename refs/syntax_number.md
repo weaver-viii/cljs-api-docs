@@ -86,13 +86,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.0
+tools.reader @ tools.reader-0.8.3
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:216-225](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.0/src/main/clojure/clojure/tools/reader.clj#L216-L225)</ins>
+                    └── <ins>[reader.clj:216-225](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.3/src/main/clojure/clojure/tools/reader.clj#L216-L225)</ins>
 </pre>
 
 
@@ -117,7 +117,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_number",
  :source {:code "(defn- read-number\n  [reader initch]\n  (loop [sb (doto (StringBuilder.) (.append initch))\n         ch (read-char reader)]\n    (if (or (whitespace? ch) (macros ch) (nil? ch))\n      (let [s (str sb)]\n        (unread reader ch)\n        (or (match-number s)\n            (reader-error reader \"Invalid number format [\" s \"]\")))\n      (recur (doto sb (.append ch)) (read-char reader)))))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.0",
+          :tag "tools.reader-0.8.3",
           :filename "src/main/clojure/clojure/tools/reader.clj",
           :lines [216 225]},
  :syntax-form " ",

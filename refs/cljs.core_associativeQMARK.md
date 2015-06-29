@@ -56,11 +56,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2138
+clojurescript @ r2156
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1137-1139](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/core.cljs#L1137-L1139)</ins>
+            └── <ins>[core.cljs:1138-1140](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L1138-L1140)</ins>
 </pre>
 
 
@@ -87,9 +87,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_associativeQMARK",
  :source {:code "(defn ^boolean associative?\n  [x] (satisfies? IAssociative x))",
           :repo "clojurescript",
-          :tag "r2138",
+          :tag "r2156",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1137 1139]},
+          :lines [1138 1140]},
  :examples [{:id "29a37f",
              :content "```clj\n(associative? [1 2 3])\n;;=> true\n\n(associative? {:a 1 :b 2})\n;;=> true\n\n(associative? #{1 2 3})\n;;=> false\n\n(associative? '(1 2 3))\n;;=> false\n```"}],
  :full-name "cljs.core/associative?",

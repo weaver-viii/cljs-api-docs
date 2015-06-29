@@ -79,11 +79,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2138
+clojurescript @ r2156
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1123-1128](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/core.cljs#L1123-L1128)</ins>
+            └── <ins>[core.cljs:1124-1129](https://github.com/clojure/clojurescript/blob/r2156/src/cljs/cljs/core.cljs#L1124-L1129)</ins>
 </pre>
 
 
@@ -111,9 +111,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_collQMARK",
  :source {:code "(defn ^boolean coll?\n  [x]\n  (if (nil? x)\n    false\n    (satisfies? ICollection x)))",
           :repo "clojurescript",
-          :tag "r2138",
+          :tag "r2156",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1123 1128]},
+          :lines [1124 1129]},
  :examples [{:id "d30884",
              :content "```clj\n(coll? [1 2 3])\n;;=> true\n\n(coll? '(1 2 3))\n;;=> true\n\n(coll? #{1 2 3})\n;;=> true\n\n(coll? {:foo 1 :bar 2})\n;;=> true\n```\n\nNot collections:\n\n```clj\n(coll? \"foo\")\n;;=> false\n\n(coll? 123)\n;;=> false\n\n(coll? nil)\n;;=> false\n```"}],
  :full-name "cljs.core/coll?",
