@@ -6,7 +6,7 @@
 <td>macro</td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
 <td>
-imported [<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.core/loop</samp>](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/loop)
+[<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.core/loop</samp>](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/loop)
 </td>
 </tr>
 </table>
@@ -70,7 +70,7 @@ Source code:
         (let [vs (take-nth 2 (drop 1 bindings))
               bs (take-nth 2 bindings)
               gs (map (fn [b] (if (symbol? b) b (gensym))) bs)
-              bfs (reduce1 (fn [ret [b v g]]
+              bfs (reduce (fn [ret [b v g]]
                             (if (symbol? b)
                               (conj ret g v)
                               (conj ret g v b g)))
@@ -82,30 +82,13 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.4.0
+clojurescript @ r1443
 └── src
     └── clj
-        └── clojure
-            └── <ins>[core.clj:4029-4052](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L4029-L4052)</ins>
+        └── cljs
+            └── <ins>[core.clj:127-149](https://github.com/clojure/clojurescript/blob/r1443/src/clj/cljs/core.clj#L127-L149)</ins>
 </pre>
 
-
----
-
-```clj
-(def
- ^{:macro true
-   :added "1.0"}
- loop (fn* loop [&form &env & decl] (cons 'loop* decl)))
-```
-
- <pre>
-clojure @ clojure-1.4.0
-└── src
-    └── clj
-        └── clojure
-            └── <ins>[core.clj:37-40](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L37-L40)</ins>
-</pre>
 
 ---
 
@@ -128,16 +111,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "macro",
  :related ["special/recur"],
  :full-name-encode "cljs.core_loop",
- :source {:code "(defmacro loop\n  [bindings & body]\n    (assert-args\n      (vector? bindings) \"a vector for its binding\"\n      (even? (count bindings)) \"an even number of forms in binding vector\")\n    (let [db (destructure bindings)]\n      (if (= db bindings)\n        `(loop* ~bindings ~@body)\n        (let [vs (take-nth 2 (drop 1 bindings))\n              bs (take-nth 2 bindings)\n              gs (map (fn [b] (if (symbol? b) b (gensym))) bs)\n              bfs (reduce1 (fn [ret [b v g]]\n                            (if (symbol? b)\n                              (conj ret g v)\n                              (conj ret g v b g)))\n                          [] (map vector bs vs gs))]\n          `(let ~bfs\n             (loop* ~(vec (interleave gs gs))\n               (let ~(vec (interleave bs gs))\n                 ~@body)))))))",
-          :repo "clojure",
-          :tag "clojure-1.4.0",
-          :filename "src/clj/clojure/core.clj",
-          :lines [4029 4052]},
- :extra-sources ({:code "(def\n ^{:macro true\n   :added \"1.0\"}\n loop (fn* loop [&form &env & decl] (cons 'loop* decl)))",
-                  :repo "clojure",
-                  :tag "clojure-1.4.0",
-                  :filename "src/clj/clojure/core.clj",
-                  :lines [37 40]}),
+ :source {:code "(defmacro loop\n  [bindings & body]\n    (assert-args\n      (vector? bindings) \"a vector for its binding\"\n      (even? (count bindings)) \"an even number of forms in binding vector\")\n    (let [db (destructure bindings)]\n      (if (= db bindings)\n        `(loop* ~bindings ~@body)\n        (let [vs (take-nth 2 (drop 1 bindings))\n              bs (take-nth 2 bindings)\n              gs (map (fn [b] (if (symbol? b) b (gensym))) bs)\n              bfs (reduce (fn [ret [b v g]]\n                            (if (symbol? b)\n                              (conj ret g v)\n                              (conj ret g v b g)))\n                          [] (map vector bs vs gs))]\n          `(let ~bfs\n             (loop* ~(vec (interleave gs gs))\n               (let ~(vec (interleave bs gs))\n                 ~@body)))))))",
+          :repo "clojurescript",
+          :tag "r1443",
+          :filename "src/clj/cljs/core.clj",
+          :lines [127 149]},
  :examples [{:id "60291e",
              :content "```clj\n(loop [x 0]\n  (when (< x 10)\n    (println x)\n    (recur (+ x 2))))\n;; Prints:\n;; 0\n;; 2\n;; 4\n;; 6\n;; 8\n;;\n;;=> nil\n```"}],
  :full-name "cljs.core/loop",

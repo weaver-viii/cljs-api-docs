@@ -6,7 +6,7 @@
 <td>macro</td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
 <td>
-imported [<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.core/let</samp>](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/let)
+[<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.core/let</samp>](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/let)
 </td>
 </tr>
 </table>
@@ -71,30 +71,13 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.4.0
+clojurescript @ r1443
 └── src
     └── clj
-        └── clojure
-            └── <ins>[core.clj:3957-3968](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L3957-L3968)</ins>
+        └── cljs
+            └── <ins>[core.clj:115-125](https://github.com/clojure/clojurescript/blob/r1443/src/clj/cljs/core.clj#L115-L125)</ins>
 </pre>
 
-
----
-
-```clj
-(def
-  ^{:macro true
-    :added "1.0"}
-  let (fn* let [&form &env & decl] (cons 'let* decl)))
-```
-
- <pre>
-clojure @ clojure-1.4.0
-└── src
-    └── clj
-        └── clojure
-            └── <ins>[core.clj:32-35](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L32-L35)</ins>
-</pre>
 
 ---
 
@@ -118,15 +101,10 @@ __Meta__ - To retrieve the API data for this symbol:
  :related ["cljs.core/letfn" "cljs.core/if-let"],
  :full-name-encode "cljs.core_let",
  :source {:code "(defmacro let\n  [bindings & body]\n  (assert-args\n     (vector? bindings) \"a vector for its binding\"\n     (even? (count bindings)) \"an even number of forms in binding vector\")\n  `(let* ~(destructure bindings) ~@body))",
-          :repo "clojure",
-          :tag "clojure-1.4.0",
-          :filename "src/clj/clojure/core.clj",
-          :lines [3957 3968]},
- :extra-sources ({:code "(def\n  ^{:macro true\n    :added \"1.0\"}\n  let (fn* let [&form &env & decl] (cons 'let* decl)))",
-                  :repo "clojure",
-                  :tag "clojure-1.4.0",
-                  :filename "src/clj/clojure/core.clj",
-                  :lines [32 35]}),
+          :repo "clojurescript",
+          :tag "r1443",
+          :filename "src/clj/cljs/core.clj",
+          :lines [115 125]},
  :full-name "cljs.core/let",
  :clj-symbol "clojure.core/let",
  :docstring "binding => binding-form init-expr\n\nEvaluates the exprs in a lexical context in which the symbols in\nthe binding-forms are bound to their respective init-exprs or parts\ntherein."}

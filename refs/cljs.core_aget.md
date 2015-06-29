@@ -98,11 +98,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1424
+clojurescript @ r1443
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:90-95](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L90-L95)</ins>
+            └── <ins>[core.cljs:92-97](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L92-L97)</ins>
 </pre>
 
 
@@ -118,11 +118,11 @@ clojurescript @ r1424
 ```
 
  <pre>
-clojurescript @ r1424
+clojurescript @ r1443
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:106-111](https://github.com/clojure/clojurescript/blob/r1424/src/clj/cljs/core.clj#L106-L111)</ins>
+            └── <ins>[core.clj:211-216](https://github.com/clojure/clojurescript/blob/r1443/src/clj/cljs/core.clj#L211-L216)</ins>
 </pre>
 
 ---
@@ -151,14 +151,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_aget",
  :source {:code "(defn aget\n  ([array i]\n     (cljs.core/aget array i))\n  ([array i & idxs]\n     (apply aget (aget array i) idxs)))",
           :repo "clojurescript",
-          :tag "r1424",
+          :tag "r1443",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [90 95]},
+          :lines [92 97]},
  :extra-sources ({:code "(defmacro aget\n  ([a i]\n     (list 'js* \"(~{}[~{}])\" a i))\n  ([a i & idxs]\n     (let [astr (apply core/str (repeat (count idxs) \"[~{}]\"))]\n      `(~'js* ~(core/str \"(~{}[~{}]\" astr \")\") ~a ~i ~@idxs))))",
                   :repo "clojurescript",
-                  :tag "r1424",
+                  :tag "r1443",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [106 111]}),
+                  :lines [211 216]}),
  :examples [{:id "e36007",
              :content "```js\n// JavaScript\nvar a = {\"foo\": [5, 6]};\n\na[\"foo\"];\n//=> [5, 6]\n\na[\"foo\"][0];\n//=> 5\n```\n\n```clj\n;; ClojureScript\n(def a #js {:foo #js [5 6]})\n\n(aget a \"foo\")\n;;=> #js [5 6]\n\n(aget a \"foo\" 0)\n;;=> 5\n```"}
             {:id "c9029e",

@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1424
+clojurescript @ r1443
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:910-914](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L910-L914)</ins>
+            └── <ins>[core.cljs:918-922](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L918-L922)</ins>
 </pre>
 
 
@@ -69,11 +69,11 @@ clojurescript @ r1424
 ```
 
  <pre>
-clojurescript @ r1424
+clojurescript @ r1443
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:880-887](https://github.com/clojure/clojurescript/blob/r1424/src/clj/cljs/core.clj#L880-L887)</ins>
+            └── <ins>[core.clj:978-985](https://github.com/clojure/clojurescript/blob/r1443/src/clj/cljs/core.clj#L978-L985)</ins>
 </pre>
 
 ---
@@ -99,14 +99,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_js-obj",
  :source {:code "(defn js-obj\n  ([]\n     (js* \"{}\"))\n  ([& keyvals]\n     (apply gobject/create keyvals)))",
           :repo "clojurescript",
-          :tag "r1424",
+          :tag "r1443",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [910 914]},
+          :lines [918 922]},
  :extra-sources ({:code "(defmacro js-obj [& rest]\n  (let [kvs-str (->> (repeat \"~{}:~{}\")\n                     (take (quot (count rest) 2))\n                     (interpose \",\")\n                     (apply core/str))]\n    (concat\n     (list 'js* (core/str \"{\" kvs-str \"}\"))\n     rest)))",
                   :repo "clojurescript",
-                  :tag "r1424",
+                  :tag "r1443",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [880 887]}),
+                  :lines [978 985]}),
  :examples [{:id "657cd7",
              :content "```clj\n(js-obj \"foo\" 1 \"bar\" 2)\n;;=> #js {:foo 1, :bar 2}\n```"}],
  :full-name "cljs.core/js-obj"}

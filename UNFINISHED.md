@@ -1264,7 +1264,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentHashSet.fromArray</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentHashSetDOTfromArray.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentHashSetDOTfromArray.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2680,7 +2680,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/format</td>
-<td></td>
+<td>[ref](refs/cljs.core_format.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_format.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2792,7 +2792,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/hash-set</td>
-<td></td>
+<td>[ref](refs/cljs.core_hash-set.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_hash-set.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -3408,7 +3408,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/memfn</td>
-<td></td>
+<td>[ref](refs/cljs.core_memfn.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_memfn.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3648,7 +3648,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/obj-map</td>
-<td></td>
+<td>[ref](refs/cljs.core_obj-map.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_obj-map.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3864,7 +3864,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/printf</td>
-<td></td>
+<td>[ref](refs/cljs.core_printf.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_printf.cljsdoc)</td>
 <td></td>
 <td></td>

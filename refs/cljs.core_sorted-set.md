@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1424
+clojurescript @ r1443
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5693-5696](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L5693-L5696)</ins>
+            └── <ins>[core.cljs:5734-5737](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L5734-L5737)</ins>
 </pre>
 
 
@@ -80,9 +80,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_sorted-set",
  :source {:code "(defn sorted-set\n  ([& keys]\n   (reduce -conj cljs.core.PersistentTreeSet/EMPTY keys)))",
           :repo "clojurescript",
-          :tag "r1424",
+          :tag "r1443",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [5693 5696]},
+          :lines [5734 5737]},
  :full-name "cljs.core/sorted-set",
  :clj-symbol "clojure.core/sorted-set",
  :docstring "Returns a new sorted set with supplied keys."}

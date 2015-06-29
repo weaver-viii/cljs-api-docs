@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1424
+clojurescript @ r1443
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:26-41](https://github.com/clojure/clojurescript/blob/r1424/src/clj/cljs/repl.clj#L26-L41)</ins>
+            └── <ins>[repl.clj:26-41](https://github.com/clojure/clojurescript/blob/r1443/src/clj/cljs/repl.clj#L26-L41)</ins>
 </pre>
 
 
@@ -73,7 +73,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_load-namespace",
  :source {:code "(defn load-namespace\n  [repl-env sym]\n  (let [sym (if (and (seq? sym)\n                     (= (first sym) 'quote))\n              (second sym)\n              sym)\n        opts {:output-dir (get repl-env :working-dir \".repl\")}\n        deps (->> (cljsc/add-dependencies opts {:requires [(name sym)] :type :seed})\n                  (remove (comp #{[\"goog\"]} :provides))\n                  (remove (comp #{:seed} :type))\n                  (map #(select-keys % [:provides :url])))]\n    (doseq [{:keys [url provides]} deps]\n      (-load repl-env provides url))))",
           :repo "clojurescript",
-          :tag "r1424",
+          :tag "r1443",
           :filename "src/clj/cljs/repl.clj",
           :lines [26 41]},
  :full-name "cljs.repl/load-namespace",

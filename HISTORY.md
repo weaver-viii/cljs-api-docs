@@ -16,6 +16,29 @@
 <th>comp</th>
 </tr>
 <tr>
+<td>__[0.0-1443](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1443)__</td>
+<td>2012-07-06</td>
+<td><kbd>1.4.0</kbd></td>
+<td><kbd></kbd></td>
+<td><kbd>20111110-r1376</kbd></td>
+<td>
+<a href="#user-content-00-1443-syntax">
+ 
+</a>
+</td>
+<td>
+<a href="#user-content-00-1443-library">
+<img valign="middle" src="https://img.shields.io/badge/+-6-brightgreen.svg"> 
+</a>
+</td>
+<td>
+<a href="#user-content-00-1443-compiler">
+ 
+</a>
+</td>
+</tr>
+
+<tr>
 <td>__[0.0-1424](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1424)__</td>
 <td>2012-06-16</td>
 <td><kbd>1.4.0</kbd></td>
@@ -199,6 +222,59 @@
 </td>
 </tr>
 
+</table>
+
+### 0.0-1443
+
+<a name="00-1443-syntax"></a> __Syntax API Changes__
+ <table>
+<tr><td>_no syntax forms were added or removed in this version_</td></tr>
+</table>
+
+<a name="00-1443-library"></a> __Library API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/PersistentHashSet.fromArray](refs/cljs.core_PersistentHashSetDOTfromArray.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/format](refs/cljs.core_format.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/hash-set](refs/cljs.core_hash-set.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/memfn](refs/cljs.core_memfn.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/obj-map](refs/cljs.core_obj-map.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/printf](refs/cljs.core_printf.md)</samp></td>
+</tr>
+</table>
+
+<a name="00-1443-compiler"></a> __Compiler API Changes__
+ <table>
+<tr><td>_no symbols were added or removed in this version_</td></tr>
 </table>
 
 ### 0.0-1424

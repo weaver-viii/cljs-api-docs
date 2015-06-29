@@ -67,11 +67,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1424
+clojurescript @ r1443
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:217-225](https://github.com/clojure/clojurescript/blob/r1424/src/clj/cljs/analyzer.clj#L217-L225)</ins>
+            └── <ins>[analyzer.clj:217-225](https://github.com/clojure/clojurescript/blob/r1443/src/clj/cljs/analyzer.clj#L217-L225)</ins>
 </pre>
 
 
@@ -101,7 +101,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "special_if",
  :source {:code "(defmethod parse 'if\n  [op env [_ test then else :as form] name]\n  (let [test-expr (disallowing-recur (analyze (assoc env :context :expr) test))\n        then-expr (analyze env then)\n        else-expr (analyze env else)]\n    {:env env :op :if :form form\n     :test test-expr :then then-expr :else else-expr\n     :unchecked @*unchecked-if*\n     :children [test-expr then-expr else-expr]}))",
           :repo "clojurescript",
-          :tag "r1424",
+          :tag "r1443",
           :filename "src/clj/cljs/analyzer.clj",
           :lines [217 225]},
  :examples [{:id "e591ff",

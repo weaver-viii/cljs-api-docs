@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1424
+clojurescript @ r1443
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1276-1279](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L1276-L1279)</ins>
+            └── <ins>[core.cljs:1281-1284](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L1281-L1284)</ins>
 </pre>
 
 
@@ -75,9 +75,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_int",
  :source {:code "(defn int\n  [x]\n  (fix x))",
           :repo "clojurescript",
-          :tag "r1424",
+          :tag "r1443",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1276 1279]},
+          :lines [1281 1284]},
  :full-name "cljs.core/int",
  :clj-symbol "clojure.core/int",
  :docstring "Coerce to int by stripping decimal places."}

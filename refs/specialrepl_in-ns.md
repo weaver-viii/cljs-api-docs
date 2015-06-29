@@ -51,11 +51,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1424
+clojurescript @ r1443
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:141-150](https://github.com/clojure/clojurescript/blob/r1424/src/clj/cljs/repl.clj#L141-L150)</ins>
+            └── <ins>[repl.clj:141-150](https://github.com/clojure/clojurescript/blob/r1443/src/clj/cljs/repl.clj#L141-L150)</ins>
 </pre>
 
 
@@ -81,7 +81,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "specialrepl_in-ns",
  :source {:code "(def default-special-fns\n  (let [load-file-fn (fn [repl-env file] (load-file repl-env file))]\n    {'in-ns (fn [_ quoted-ns]\n              (let [ns-name (second quoted-ns)]\n                (when-not (ana/get-namespace ns-name)\n                  (ana/set-namespace ns-name {:name ns-name}))\n                (set! ana/*cljs-ns* ns-name)))\n     'load-file load-file-fn\n     'clojure.core/load-file load-file-fn\n     'load-namespace (fn [repl-env ns] (load-namespace repl-env ns))}))",
           :repo "clojurescript",
-          :tag "r1424",
+          :tag "r1443",
           :filename "src/clj/cljs/repl.clj",
           :lines [141 150]},
  :examples [{:id "e81eb3", :content "```clj\n(in-ns 'foo.core)\n```"}],

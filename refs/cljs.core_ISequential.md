@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1424
+clojurescript @ r1443
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:218-219](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L218-L219)</ins>
+            └── <ins>[core.cljs:220-221](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L220-L221)</ins>
 </pre>
 
 
@@ -57,9 +57,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ISequential",
  :source {:code "(defprotocol ISequential\n  \"Marker interface indicating a persistent collection of sequential items\")",
           :repo "clojurescript",
-          :tag "r1424",
+          :tag "r1443",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [218 219]},
+          :lines [220 221]},
  :full-name "cljs.core/ISequential",
  :clj-symbol "clojure.lang/Sequential",
  :docstring "Marker interface indicating a persistent collection of sequential items"}

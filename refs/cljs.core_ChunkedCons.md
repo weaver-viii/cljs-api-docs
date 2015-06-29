@@ -68,11 +68,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1424
+clojurescript @ r1443
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1835-1875](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L1835-L1875)</ins>
+            └── <ins>[core.cljs:1849-1889](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L1849-L1889)</ins>
 </pre>
 
 
@@ -97,9 +97,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ChunkedCons",
  :source {:code "(deftype ChunkedCons [chunk more meta]\n  IWithMeta\n  (-with-meta [coll m]\n    (ChunkedCons. chunk more m))\n\n  IMeta\n  (-meta [coll] meta)\n\n  ISequential\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  ISeqable\n  (-seq [coll] coll)\n\n  ASeq\n  ISeq\n  (-first [coll] (-nth chunk 0))\n  (-rest [coll]\n    (if (> (-count chunk) 1)\n      (ChunkedCons. (-drop-first chunk) more meta)\n      (if (nil? more)\n        ()\n        more)))\n\n  IChunkedSeq\n  (-chunked-first [coll] chunk)\n  (-chunked-rest [coll]\n    (if (nil? more)\n      ()\n      more))\n\n  IChunkedNext\n  (-chunked-next [coll]\n    (if (nil? more)\n      nil\n      more))\n\n  ICollection\n  (-conj [this o]\n    (cons o this)))",
           :repo "clojurescript",
-          :tag "r1424",
+          :tag "r1443",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1835 1875]},
+          :lines [1849 1889]},
  :full-name "cljs.core/ChunkedCons",
  :clj-symbol "clojure.lang/ChunkedCons"}
 

@@ -41,11 +41,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1424
+clojurescript @ r1443
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:82-86](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L82-L86)</ins>
+            └── <ins>[core.cljs:84-88](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L84-L88)</ins>
 </pre>
 
 
@@ -72,9 +72,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_make-array",
  :source {:code "(defn make-array\n  ([size]\n     (js/Array. size))\n  ([type size]\n     (make-array size)))",
           :repo "clojurescript",
-          :tag "r1424",
+          :tag "r1443",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [82 86]},
+          :lines [84 88]},
  :full-name "cljs.core/make-array",
  :clj-symbol "clojure.core/make-array"}
 

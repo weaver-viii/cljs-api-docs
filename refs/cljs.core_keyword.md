@@ -41,11 +41,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1424
+clojurescript @ r1443
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1450-1456](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L1450-L1456)</ins>
+            └── <ins>[core.cljs:1460-1466](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L1460-L1466)</ins>
 </pre>
 
 
@@ -70,9 +70,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_keyword",
  :source {:code "(defn keyword\n  ([name] (cond (keyword? name) name\n                (symbol? name) (str* \"\\uFDD0\" \"'\" (subs name 2))\n                :else (str* \"\\uFDD0\" \"'\" name)))\n  ([ns name] (keyword (str* ns \"/\" name))))",
           :repo "clojurescript",
-          :tag "r1424",
+          :tag "r1443",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1450 1456]},
+          :lines [1460 1466]},
  :full-name "cljs.core/keyword",
  :clj-symbol "clojure.core/keyword",
  :docstring "Returns a Keyword with the given namespace and name.  Do not use :\nin the keyword strings, it will be added automatically."}

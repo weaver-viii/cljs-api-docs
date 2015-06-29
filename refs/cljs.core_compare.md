@@ -82,11 +82,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1424
+clojurescript @ r1443
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1038-1051](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L1038-L1051)</ins>
+            └── <ins>[core.cljs:1043-1056](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L1043-L1056)</ins>
 </pre>
 
 
@@ -115,9 +115,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_compare",
  :source {:code "(defn compare\n  [x y]\n  (cond\n   (identical? x y) 0\n   (nil? x) -1\n   (nil? y) 1\n   (identical? (type x) (type y)) (if (satisfies? IComparable x)\n                                    (-compare x y)\n                                    (garray/defaultCompare x y))\n   :else (throw (js/Error. \"compare on non-nil objects of different types\"))))",
           :repo "clojurescript",
-          :tag "r1424",
+          :tag "r1443",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1038 1051]},
+          :lines [1043 1056]},
  :examples [{:id "e13fa0",
              :content "```clj\n(compare 10 12)\n;;=> -1\n\n(compare 12 10)\n;;=> 1\n\n(compare 10 10)\n;;=> 0\n\n(compare 10 nil)\n;;=>  1\n\n(compare 10 (list 1 2 3))\n;; Error: compare on non-nil objects of different types\n```"}],
  :full-name "cljs.core/compare",

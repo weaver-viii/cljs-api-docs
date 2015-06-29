@@ -87,11 +87,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1424
+clojurescript @ r1443
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:811-816](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L811-L816)</ins>
+            └── <ins>[core.cljs:819-824](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L819-L824)</ins>
 </pre>
 
 
@@ -118,9 +118,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_pop",
  :source {:code "(defn pop\n  [coll]\n  (-pop coll))",
           :repo "clojurescript",
-          :tag "r1424",
+          :tag "r1443",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [811 816]},
+          :lines [819 824]},
  :examples [{:id "6bd9f7",
              :content "With vectors:\n\n```clj\n(pop [1 2 3])\n;;=> [1 2]\n\n(pop [1 2])\n;;=> [1]\n\n(pop [1])\n;;=> []\n\n(pop [])\n;; Error: Can't pop empty vector\n```"}
             {:id "81221f",

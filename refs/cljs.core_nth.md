@@ -67,11 +67,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1424
+clojurescript @ r1443
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:744-759](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L744-L759)</ins>
+            └── <ins>[core.cljs:752-767](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L752-L767)</ins>
 </pre>
 
 
@@ -101,9 +101,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_nth",
  :source {:code "(defn nth\n  ([coll n]\n     (when-not (nil? coll)\n       (if (satisfies? IIndexed coll)\n         (-nth coll (.floor js/Math n))\n         (linear-traversal-nth coll (.floor js/Math n)))))\n  ([coll n not-found]\n     (if-not (nil? coll)\n       (if (satisfies? IIndexed coll)\n         (-nth coll (.floor js/Math n) not-found)\n         (linear-traversal-nth coll (.floor js/Math n) not-found))\n       not-found)))",
           :repo "clojurescript",
-          :tag "r1424",
+          :tag "r1443",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [744 759]},
+          :lines [752 767]},
  :full-name "cljs.core/nth",
  :clj-symbol "clojure.core/nth",
  :docstring "Returns the value at the index. get returns nil if index out of\nbounds, nth throws an exception unless not-found is supplied.  nth\nalso works for strings, arrays, regex Matchers and Lists, and,\nin O(n) time, for sequences."}
