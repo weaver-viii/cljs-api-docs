@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3149
+clojurescript @ r3153
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:724](https://github.com/clojure/clojurescript/blob/r3149/src/cljs/cljs/core.cljs#L724)</ins>
+            └── <ins>[core.cljs:724](https://github.com/clojure/clojurescript/blob/r3153/src/cljs/cljs/core.cljs#L724)</ins>
 </pre>
 
 
@@ -46,7 +46,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def string-hash-cache-count 0)",
           :repo "clojurescript",
-          :tag "r3149",
+          :tag "r3153",
           :filename "src/cljs/cljs/core.cljs",
           :lines [724]},
  :full-name "cljs.core/string-hash-cache-count",

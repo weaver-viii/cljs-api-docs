@@ -35,17 +35,18 @@ Source code:
   ([stacktrace opts]
     (doseq [{:keys [function file line column]}
             (mapped-stacktrace stacktrace opts)]
-      ((:print opts) "\t"
-        (str (when function (str function " "))
-             "(" file (when line (str ":" line)) (when column (str ":" column)) ")")))))
+      (err-out
+        (println "\t"
+          (str (when function (str function " "))
+            "(" file (when line (str ":" line)) (when column (str ":" column)) ")"))))))
 ```
 
  <pre>
-clojurescript @ r3149
+clojurescript @ r3153
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:317-326](https://github.com/clojure/clojurescript/blob/r3149/src/clj/cljs/repl.clj#L317-L326)</ins>
+            └── <ins>[repl.clj:327-337](https://github.com/clojure/clojurescript/blob/r3153/src/clj/cljs/repl.clj#L327-L337)</ins>
 </pre>
 
 
@@ -68,11 +69,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-2814"]],
  :type "function",
  :full-name-encode "cljs.repl_print-mapped-stacktrace",
- :source {:code "(defn print-mapped-stacktrace\n  ([stacktrace] (print-mapped-stacktrace stacktrace *repl-opts*))\n  ([stacktrace opts]\n    (doseq [{:keys [function file line column]}\n            (mapped-stacktrace stacktrace opts)]\n      ((:print opts) \"\\t\"\n        (str (when function (str function \" \"))\n             \"(\" file (when line (str \":\" line)) (when column (str \":\" column)) \")\")))))",
+ :source {:code "(defn print-mapped-stacktrace\n  ([stacktrace] (print-mapped-stacktrace stacktrace *repl-opts*))\n  ([stacktrace opts]\n    (doseq [{:keys [function file line column]}\n            (mapped-stacktrace stacktrace opts)]\n      (err-out\n        (println \"\\t\"\n          (str (when function (str function \" \"))\n            \"(\" file (when line (str \":\" line)) (when column (str \":\" column)) \")\"))))))",
           :repo "clojurescript",
-          :tag "r3149",
+          :tag "r3153",
           :filename "src/clj/cljs/repl.clj",
-          :lines [317 326]},
+          :lines [327 337]},
  :full-name "cljs.repl/print-mapped-stacktrace",
  :docstring "Given a vector representing the canonicalized JavaScript stacktrace\nprint the ClojureScript stacktrace. See mapped-stacktrace."}
 

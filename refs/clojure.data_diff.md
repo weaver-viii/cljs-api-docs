@@ -49,11 +49,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3149
+clojurescript @ r3153
 └── src
     └── cljs
         └── clojure
-            └── <ins>[data.cljs:144-161](https://github.com/clojure/clojurescript/blob/r3149/src/cljs/clojure/data.cljs#L144-L161)</ins>
+            └── <ins>[data.cljs:144-161](https://github.com/clojure/clojurescript/blob/r3153/src/cljs/clojure/data.cljs#L144-L161)</ins>
 </pre>
 
 
@@ -78,7 +78,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.data_diff",
  :source {:code "(defn diff\n  [a b]\n  (if (= a b)\n    [nil nil a]\n    (if (= (equality-partition a) (equality-partition b))\n      (diff-similar a b)\n      (atom-diff a b))))",
           :repo "clojurescript",
-          :tag "r3149",
+          :tag "r3153",
           :filename "src/cljs/clojure/data.cljs",
           :lines [144 161]},
  :full-name "clojure.data/diff",

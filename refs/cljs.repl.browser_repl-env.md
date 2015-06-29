@@ -48,12 +48,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3149
+clojurescript @ r3153
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:554-573](https://github.com/clojure/clojurescript/blob/r3149/src/clj/cljs/repl/browser.clj#L554-L573)</ins>
+                └── <ins>[browser.clj:554-573](https://github.com/clojure/clojurescript/blob/r3153/src/clj/cljs/repl/browser.clj#L554-L573)</ins>
 </pre>
 
 
@@ -78,7 +78,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.browser_repl-env",
  :source {:code "(defn repl-env\n  [& {:as opts}]\n  (repl-env* opts))",
           :repo "clojurescript",
-          :tag "r3149",
+          :tag "r3153",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [554 573]},
  :full-name "cljs.repl.browser/repl-env",

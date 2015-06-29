@@ -20,12 +20,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3149
+clojurescript @ r3153
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[net.cljs:19](https://github.com/clojure/clojurescript/blob/r3149/src/cljs/clojure/browser/net.cljs#L19)</ins>
+                └── <ins>[net.cljs:19](https://github.com/clojure/clojurescript/blob/r3153/src/cljs/clojure/browser/net.cljs#L19)</ins>
 </pre>
 
 
@@ -47,7 +47,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def *timeout* 10000)",
           :repo "clojurescript",
-          :tag "r3149",
+          :tag "r3153",
           :filename "src/cljs/clojure/browser/net.cljs",
           :lines [19]},
  :full-name "clojure.browser.net/*timeout*",

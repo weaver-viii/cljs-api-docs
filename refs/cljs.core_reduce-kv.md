@@ -59,11 +59,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3149
+clojurescript @ r3153
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2055-2065](https://github.com/clojure/clojurescript/blob/r3149/src/cljs/cljs/core.cljs#L2055-L2065)</ins>
+            └── <ins>[core.cljs:2055-2065](https://github.com/clojure/clojurescript/blob/r3153/src/cljs/cljs/core.cljs#L2055-L2065)</ins>
 </pre>
 
 
@@ -90,7 +90,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_reduce-kv",
  :source {:code "(defn reduce-kv\n  ([f init coll]\n    (if-not (nil? coll)\n      (-kv-reduce coll f init)\n      init)))",
           :repo "clojurescript",
-          :tag "r3149",
+          :tag "r3153",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2055 2065]},
  :full-name "cljs.core/reduce-kv",

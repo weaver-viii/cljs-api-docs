@@ -112,11 +112,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3149
+clojurescript @ r3153
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:256-272](https://github.com/clojure/clojurescript/blob/r3149/src/clj/cljs/core.clj#L256-L272)</ins>
+            └── <ins>[core.clj:256-272](https://github.com/clojure/clojurescript/blob/r3153/src/clj/cljs/core.clj#L256-L272)</ins>
 </pre>
 
 
@@ -143,7 +143,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_or",
  :source {:code "(defmacro or\n  ([] nil)\n  ([x] x)\n  ([x & next]\n    (let [forms (concat [x] next)]\n      (if (every? #(simple-test-expr? &env %)\n            (map #(cljs.analyzer/analyze &env %) forms))\n        (let [or-str (->> (repeat (count forms) \"(~{})\")\n                        (interpose \" || \")\n                        (apply core/str))]\n          (bool-expr `(~'js* ~or-str ~@forms)))\n        `(let [or# ~x]\n           (if or# or# (or ~@next)))))))",
           :repo "clojurescript",
-          :tag "r3149",
+          :tag "r3153",
           :filename "src/clj/cljs/core.clj",
           :lines [256 272]},
  :examples [{:id "d50433",

@@ -20,12 +20,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3149
+clojurescript @ r3153
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[server.clj:8](https://github.com/clojure/clojurescript/blob/r3149/src/clj/cljs/repl/server.clj#L8)</ins>
+                └── <ins>[server.clj:8](https://github.com/clojure/clojurescript/blob/r3153/src/clj/cljs/repl/server.clj#L8)</ins>
 </pre>
 
 
@@ -47,7 +47,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "dynamic var",
  :source {:code "(def ^:dynamic state nil)",
           :repo "clojurescript",
-          :tag "r3149",
+          :tag "r3153",
           :filename "src/clj/cljs/repl/server.clj",
           :lines [8]},
  :full-name "cljs.repl.server/state",

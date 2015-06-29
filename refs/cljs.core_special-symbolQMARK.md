@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3149
+clojurescript @ r3153
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:9569-9573](https://github.com/clojure/clojurescript/blob/r3149/src/cljs/cljs/core.cljs#L9569-L9573)</ins>
+            └── <ins>[core.cljs:9569-9573](https://github.com/clojure/clojurescript/blob/r3153/src/cljs/cljs/core.cljs#L9569-L9573)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_special-symbolQMARK",
  :source {:code "(defn ^boolean special-symbol? [x]\n  (contains?\n    '#{if def fn* do let* loop* letfn* throw try\n       recur new set! ns deftype* defrecord* . js* & quote}\n    x))",
           :repo "clojurescript",
-          :tag "r3149",
+          :tag "r3153",
           :filename "src/cljs/cljs/core.cljs",
           :lines [9569 9573]},
  :full-name "cljs.core/special-symbol?",

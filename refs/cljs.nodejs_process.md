@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3149
+clojurescript @ r3153
 └── src
     └── cljs
         └── cljs
-            └── <ins>[nodejs.cljs:16](https://github.com/clojure/clojurescript/blob/r3149/src/cljs/cljs/nodejs.cljs#L16)</ins>
+            └── <ins>[nodejs.cljs:16](https://github.com/clojure/clojurescript/blob/r3153/src/cljs/cljs/nodejs.cljs#L16)</ins>
 </pre>
 
 
@@ -46,7 +46,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def process (js* \"process\"))",
           :repo "clojurescript",
-          :tag "r3149",
+          :tag "r3153",
           :filename "src/cljs/cljs/nodejs.cljs",
           :lines [16]},
  :full-name "cljs.nodejs/process",

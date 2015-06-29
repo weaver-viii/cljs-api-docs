@@ -27,11 +27,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3149
+clojurescript @ r3153
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:37-39](https://github.com/clojure/clojurescript/blob/r3149/src/clj/cljs/repl.clj#L37-L39)</ins>
+            └── <ins>[repl.clj:37-39](https://github.com/clojure/clojurescript/blob/r3153/src/clj/cljs/repl.clj#L37-L39)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[& body]"],
  :source {:code "(defmacro err-out [& body]\n  `(binding [*out* *err*]\n     ~@body))",
           :repo "clojurescript",
-          :tag "r3149",
+          :tag "r3153",
           :filename "src/clj/cljs/repl.clj",
           :lines [37 39]},
  :full-name "cljs.repl/err-out",
