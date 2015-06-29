@@ -34,13 +34,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── clojure
             └── cljs
                 └── build
-                    └── <ins>[api.clj:76-81](https://github.com/clojure/clojurescript/blob/r3264/src/main/clojure/cljs/build/api.clj#L76-L81)</ins>
+                    └── <ins>[api.clj:76-81](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/build/api.clj#L76-L81)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.build.api_parse-js-ns",
  :source {:code "(defn parse-js-ns\n  [f]\n  (closure/parse-js-ns f))",
           :repo "clojurescript",
-          :tag "r3264",
+          :tag "r3269",
           :filename "src/main/clojure/cljs/build/api.clj",
           :lines [76 81]},
  :full-name "cljs.build.api/parse-js-ns",

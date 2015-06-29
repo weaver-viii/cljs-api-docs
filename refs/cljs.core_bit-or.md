@@ -66,12 +66,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:2372-2376](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/core.cljs#L2372-L2376)</ins>
+                └── <ins>[core.cljs:2372-2376](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/core.cljs#L2372-L2376)</ins>
 </pre>
 
 
@@ -84,12 +84,12 @@ clojurescript @ r3264
 ```
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[core.clj:569-571](https://github.com/clojure/clojurescript/blob/r3264/src/main/clojure/cljs/core.clj#L569-L571)</ins>
+                └── <ins>[core.clj:569-571](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/core.clj#L569-L571)</ins>
 </pre>
 
 ---
@@ -115,12 +115,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-or",
  :source {:code "(defn bit-or\n  ([x y] (cljs.core/bit-or x y))\n  ([x y & more]\n     (reduce bit-or (cljs.core/bit-or x y) more)))",
           :repo "clojurescript",
-          :tag "r3264",
+          :tag "r3269",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [2372 2376]},
  :extra-sources ({:code "(defmacro ^::ana/numeric bit-or\n  ([x y] (core/list 'js* \"(~{} | ~{})\" x y))\n  ([x y & more] `(bit-or (bit-or ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r3264",
+                  :tag "r3269",
                   :filename "src/main/clojure/cljs/core.clj",
                   :lines [569 571]}),
  :examples [{:id "ecea10",

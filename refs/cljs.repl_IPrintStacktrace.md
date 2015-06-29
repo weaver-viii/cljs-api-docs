@@ -23,12 +23,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[repl.cljc:149-152](https://github.com/clojure/clojurescript/blob/r3264/src/main/clojure/cljs/repl.cljc#L149-L152)</ins>
+                └── <ins>[repl.cljc:149-152](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/repl.cljc#L149-L152)</ins>
 </pre>
 
 
@@ -51,7 +51,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_IPrintStacktrace",
  :source {:code "(defprotocol IPrintStacktrace\n  (-print-stacktrace [repl-env stacktrace error build-options]\n    \"Implementing REPL evaluation environments are given the opportunity to\n     print the mapped stacktrace themselves. This permits further processing.\"))",
           :repo "clojurescript",
-          :tag "r3264",
+          :tag "r3269",
           :filename "src/main/clojure/cljs/repl.cljc",
           :lines [149 152]},
  :methods [{:name "-print-stacktrace",

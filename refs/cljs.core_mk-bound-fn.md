@@ -29,12 +29,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:8089-8093](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/core.cljs#L8089-L8093)</ins>
+                └── <ins>[core.cljs:8089-8093](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/core.cljs#L8089-L8093)</ins>
 </pre>
 
 
@@ -57,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[sc test key]"],
  :source {:code "(defn mk-bound-fn\n  [sc test key]\n  (fn [e]\n    (let [comp (-comparator sc)]\n      (test (comp (-entry-key sc e) key) 0))))",
           :repo "clojurescript",
-          :tag "r3264",
+          :tag "r3269",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [8089 8093]},
  :full-name "cljs.core/mk-bound-fn",

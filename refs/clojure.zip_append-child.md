@@ -36,12 +36,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── cljs
             └── clojure
-                └── <ins>[zip.cljs:200-204](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/clojure/zip.cljs#L200-L204)</ins>
+                └── <ins>[zip.cljs:200-204](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/clojure/zip.cljs#L200-L204)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_append-child",
  :source {:code "(defn append-child\n  [loc item]\n    (replace loc (make-node loc (node loc) (concat (children loc) [item]))))",
           :repo "clojurescript",
-          :tag "r3264",
+          :tag "r3269",
           :filename "src/main/cljs/clojure/zip.cljs",
           :lines [200 204]},
  :full-name "clojure.zip/append-child",

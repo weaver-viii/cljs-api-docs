@@ -69,12 +69,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[repl.cljc:1172-1176](https://github.com/clojure/clojurescript/blob/r3264/src/main/clojure/cljs/repl.cljc#L1172-L1176)</ins>
+                └── <ins>[repl.cljc:1172-1176](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/repl.cljc#L1172-L1176)</ins>
 </pre>
 
 
@@ -101,7 +101,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_dir",
  :source {:code "(defmacro dir\n  [ns]\n  `(doseq [sym# (quote ~(sort (keys (ana-api/ns-publics ns))))]\n     (println sym#)))",
           :repo "clojurescript",
-          :tag "r3264",
+          :tag "r3269",
           :filename "src/main/clojure/cljs/repl.cljc",
           :lines [1172 1176]},
  :examples [{:id "9bf2b0",

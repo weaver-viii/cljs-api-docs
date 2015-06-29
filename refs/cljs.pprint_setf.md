@@ -32,12 +32,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[pprint.clj:34-37](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/pprint.clj#L34-L37)</ins>
+                └── <ins>[pprint.clj:34-37](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/pprint.clj#L34-L37)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.pprint_setf",
  :source {:code "(defmacro setf\n  [sym new-val]\n  `(swap! @~'this assoc ~sym ~new-val))",
           :repo "clojurescript",
-          :tag "r3264",
+          :tag "r3269",
           :filename "src/main/cljs/cljs/pprint.clj",
           :lines [34 37]},
  :full-name "cljs.pprint/setf",

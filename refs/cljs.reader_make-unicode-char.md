@@ -27,12 +27,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[reader.cljs:189-191](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/reader.cljs#L189-L191)</ins>
+                └── <ins>[reader.cljs:189-191](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/reader.cljs#L189-L191)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[code-str]"],
  :source {:code "(defn make-unicode-char [code-str]\n    (let [code (js/parseInt code-str 16)]\n      (.fromCharCode js/String code)))",
           :repo "clojurescript",
-          :tag "r3264",
+          :tag "r3269",
           :filename "src/main/cljs/cljs/reader.cljs",
           :lines [189 191]},
  :full-name "cljs.reader/make-unicode-char",

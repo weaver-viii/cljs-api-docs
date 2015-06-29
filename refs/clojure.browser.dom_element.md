@@ -37,13 +37,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── cljs
             └── clojure
                 └── browser
-                    └── <ins>[dom.cljs:81-90](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/clojure/browser/dom.cljs#L81-L90)</ins>
+                    └── <ins>[dom.cljs:81-90](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/clojure/browser/dom.cljs#L81-L90)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[tag-or-text]" "[tag & children]"],
  :source {:code "(defn element\n  ([tag-or-text]\n     (log \"(element \" tag-or-text \")\")\n     (-element tag-or-text))\n  ([tag & children]\n     (log \"(element \" tag \" \" children \")\")\n     (let [attrs (first children)]\n       (if (map? attrs)\n         (-element tag attrs (rest children))\n         (-element tag nil children)))))",
           :repo "clojurescript",
-          :tag "r3264",
+          :tag "r3269",
           :filename "src/main/cljs/clojure/browser/dom.cljs",
           :lines [81 90]},
  :full-name "clojure.browser.dom/element",

@@ -85,12 +85,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[repl.cljc:1090-1112](https://github.com/clojure/clojurescript/blob/r3264/src/main/clojure/cljs/repl.cljc#L1090-L1112)</ins>
+                └── <ins>[repl.cljc:1090-1112](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/repl.cljc#L1090-L1112)</ins>
 </pre>
 
 
@@ -117,7 +117,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_find-doc",
  :source {:code "(defmacro find-doc\n  [re-string-or-pattern]\n  (let [re (re-pattern re-string-or-pattern)\n        ms (concat\n             (mapcat\n               (fn [ns]\n                 (map\n                   (fn [m]\n                     (update-in (select-keys m [:ns :name :doc :forms :arglists :macro :url])\n                       [:name] #(if-not (nil? %) (clojure.core/name %) %)))\n                   (sort-by :name (vals (ana-api/ns-interns ns)))))\n               (ana-api/all-ns))\n             (map #(select-keys (ana-api/find-ns %) [:name :doc]) (ana-api/all-ns))\n             (map special-doc (keys special-doc-map)))\n        ms (for [m ms\n                 :when (and (:doc m)\n                            (or (re-find (re-matcher re (:doc m)))\n                                (re-find (re-matcher re (str (:name m))))))]\n             m)]\n    `(doseq [m# (quote ~ms)]\n       (cljs.repl/print-doc m#))))",
           :repo "clojurescript",
-          :tag "r3264",
+          :tag "r3269",
           :filename "src/main/clojure/cljs/repl.cljc",
           :lines [1090 1112]},
  :examples [{:id "50ec43",

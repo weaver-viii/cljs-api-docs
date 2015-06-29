@@ -26,13 +26,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── cljs
             └── clojure
                 └── browser
-                    └── <ins>[dom.cljs:98-99](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/clojure/browser/dom.cljs#L98-L99)</ins>
+                    └── <ins>[dom.cljs:98-99](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/clojure/browser/dom.cljs#L98-L99)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[id]"],
  :source {:code "(defn get-element [id]\n  (gdom/getElement (name id)))",
           :repo "clojurescript",
-          :tag "r3264",
+          :tag "r3269",
           :filename "src/main/cljs/clojure/browser/dom.cljs",
           :lines [98 99]},
  :full-name "clojure.browser.dom/get-element",

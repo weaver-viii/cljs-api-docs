@@ -44,12 +44,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[test.clj:336-351](https://github.com/clojure/clojurescript/blob/r3264/src/main/clojure/cljs/test.clj#L336-L351)</ins>
+                └── <ins>[test.clj:336-351](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/test.clj#L336-L351)</ins>
 </pre>
 
 
@@ -74,7 +74,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_test-ns-block",
  :source {:code "(defmacro test-ns-block\n  ([env [quote ns :as form]]\n   (assert (and (= quote 'quote) (symbol? ns)) \"Argument to test-ns must be a quoted symbol\")\n   (assert (ana-api/find-ns ns) (str \"Namespace \" ns \" does not exist\"))\n   `[(fn []\n       (cljs.test/set-env! ~env)\n       (cljs.test/do-report {:type :begin-test-ns, :ns ~form})\n       ;; If the namespace has a test-ns-hook function, call that:\n       ~(if-let [v (ana-api/ns-resolve ns 'test-ns-hook)]\n          `(~(symbol (name ns) \"test-ns-hook\"))\n          ;; Otherwise, just test every var in the namespace.\n          `(cljs.test/block (cljs.test/test-all-vars-block ~form))))\n     (fn []\n       (cljs.test/do-report {:type :end-test-ns, :ns ~form}))]))",
           :repo "clojurescript",
-          :tag "r3264",
+          :tag "r3269",
           :filename "src/main/clojure/cljs/test.clj",
           :lines [336 351]},
  :full-name "cljs.test/test-ns-block",

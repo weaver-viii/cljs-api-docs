@@ -40,12 +40,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[test.clj:191-199](https://github.com/clojure/clojurescript/blob/r3264/src/main/clojure/cljs/test.clj#L191-L199)</ins>
+                └── <ins>[test.clj:191-199](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/test.clj#L191-L199)</ins>
 </pre>
 
 
@@ -70,7 +70,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_testing",
  :source {:code "(defmacro testing\n  ([string & body]\n   `(do\n      (cljs.test/update-current-env! [:testing-contexts] conj ~string)\n      (let [ret# (do ~@body)]\n        (cljs.test/update-current-env! [:testing-contexts] rest)\n        ret#))))",
           :repo "clojurescript",
-          :tag "r3264",
+          :tag "r3269",
           :filename "src/main/clojure/cljs/test.clj",
           :lines [191 199]},
  :full-name "cljs.test/testing",

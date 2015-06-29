@@ -87,12 +87,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:8808-8831](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/core.cljs#L8808-L8831)</ins>
+                └── <ins>[core.cljs:8808-8831](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/core.cljs#L8808-L8831)</ins>
 </pre>
 
 
@@ -119,7 +119,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_add-watch",
  :source {:code "(defn add-watch\n  [iref key f]\n  (-add-watch iref key f)\n  iref)",
           :repo "clojurescript",
-          :tag "r3264",
+          :tag "r3269",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [8808 8831]},
  :examples [{:id "2f2fe0",

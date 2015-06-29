@@ -31,13 +31,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── clojure
             └── cljs
                 └── repl
-                    └── <ins>[server.clj:66-72](https://github.com/clojure/clojurescript/blob/r3264/src/main/clojure/cljs/repl/server.clj#L66-L72)</ins>
+                    └── <ins>[server.clj:66-72](https://github.com/clojure/clojurescript/blob/r3269/src/main/clojure/cljs/repl/server.clj#L66-L72)</ins>
 </pre>
 
 
@@ -60,7 +60,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[rdr]"],
  :source {:code "(defn read-headers [rdr]\n  (loop [next-line (.readLine rdr) header-lines []]\n    (if (= \"\" next-line)\n      header-lines ;; we're done reading headers\n      (recur\n        (.readLine rdr)\n        (conj header-lines next-line)))))",
           :repo "clojurescript",
-          :tag "r3264",
+          :tag "r3269",
           :filename "src/main/clojure/cljs/repl/server.clj",
           :lines [66 72]},
  :full-name "cljs.repl.server/read-headers",

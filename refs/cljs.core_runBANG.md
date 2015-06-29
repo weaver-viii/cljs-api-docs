@@ -36,12 +36,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:8960-8964](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/core.cljs#L8960-L8964)</ins>
+                └── <ins>[core.cljs:8960-8964](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/core.cljs#L8960-L8964)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_runBANG",
  :source {:code "(defn run!\n  [proc coll]\n  (reduce #(proc %2) nil coll))",
           :repo "clojurescript",
-          :tag "r3264",
+          :tag "r3269",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [8960 8964]},
  :full-name "cljs.core/run!",

@@ -28,12 +28,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3264
+clojurescript @ r3269
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[reader.cljs:366-369](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/reader.cljs#L366-L369)</ins>
+                └── <ins>[reader.cljs:366-369](https://github.com/clojure/clojurescript/blob/r3269/src/main/cljs/cljs/reader.cljs#L366-L369)</ins>
 </pre>
 
 
@@ -56,7 +56,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[msg]"],
  :source {:code "(defn throwing-reader\n  [msg]\n  (fn [rdr _]\n    (reader-error rdr msg)))",
           :repo "clojurescript",
-          :tag "r3264",
+          :tag "r3269",
           :filename "src/main/cljs/cljs/reader.cljs",
           :lines [366 369]},
  :full-name "cljs.reader/throwing-reader",
