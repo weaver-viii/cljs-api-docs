@@ -59,11 +59,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2498
+clojurescript @ r2505
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4597-4606](https://github.com/clojure/clojurescript/blob/r2498/src/cljs/cljs/core.cljs#L4597-L4606)</ins>
+            └── <ins>[core.cljs:4597-4606](https://github.com/clojure/clojurescript/blob/r2505/src/cljs/cljs/core.cljs#L4597-L4606)</ins>
 </pre>
 
 
@@ -90,7 +90,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_subvec",
  :source {:code "(defn subvec\n  ([v start]\n     (subvec v start (count v)))\n  ([v start end]\n     (build-subvec nil v start end nil)))",
           :repo "clojurescript",
-          :tag "r2498",
+          :tag "r2505",
           :filename "src/cljs/cljs/core.cljs",
           :lines [4597 4606]},
  :full-name "cljs.core/subvec",

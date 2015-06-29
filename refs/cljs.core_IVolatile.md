@@ -21,11 +21,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2498
+clojurescript @ r2505
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:405-406](https://github.com/clojure/clojurescript/blob/r2498/src/cljs/cljs/core.cljs#L405-L406)</ins>
+            └── <ins>[core.cljs:405-406](https://github.com/clojure/clojurescript/blob/r2505/src/cljs/cljs/core.cljs#L405-L406)</ins>
 </pre>
 
 
@@ -48,7 +48,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IVolatile",
  :source {:code "(defprotocol IVolatile\n  (-vreset! [o new-value]))",
           :repo "clojurescript",
-          :tag "r2498",
+          :tag "r2505",
           :filename "src/cljs/cljs/core.cljs",
           :lines [405 406]},
  :methods [{:name "-vreset!",

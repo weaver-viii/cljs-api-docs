@@ -53,11 +53,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2498
+clojurescript @ r2505
 └── src
     └── clj
         └── cljs
-            └── <ins>[test.clj:253-274](https://github.com/clojure/clojurescript/blob/r2498/src/clj/cljs/test.clj#L253-L274)</ins>
+            └── <ins>[test.clj:253-274](https://github.com/clojure/clojurescript/blob/r2505/src/clj/cljs/test.clj#L253-L274)</ins>
 </pre>
 
 
@@ -82,7 +82,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_test-all-vars",
  :source {:code "(defmacro test-all-vars\n  ([[quote ns]]\n   `(let [env# (cljs.test/get-current-env)]\n      (when (nil? env#)\n        (cljs.test/set-env! (cljs.test/empty-env)))\n      ~(when (ana-api/ns-resolve ns 'cljs-test-once-fixtures)\n         `(cljs.test/update-current-env! [:once-fixtures] assoc '~ns\n            ~(symbol (name ns) \"cljs-test-once-fixtures\")))\n      ~(when (ana-api/ns-resolve ns 'cljs-test-each-fixtures)\n         `(cljs.test/update-current-env! [:each-fixtures] assoc '~ns\n            ~(symbol (name ns) \"cljs-test-each-fixtures\")))\n      (cljs.test/test-vars\n        [~@(map\n             (fn [[k _]]\n               `(var ~(symbol (name ns) (name k))))\n             (filter\n               (fn [[_ v]] (:test v))\n               (ana-api/ns-interns ns)))])\n      (when (nil? env#)\n        (cljs.test/clear-env!)))))",
           :repo "clojurescript",
-          :tag "r2498",
+          :tag "r2505",
           :filename "src/clj/cljs/test.clj",
           :lines [253 274]},
  :full-name "cljs.test/test-all-vars",

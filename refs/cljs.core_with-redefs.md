@@ -52,11 +52,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2498
+clojurescript @ r2505
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1103-1123](https://github.com/clojure/clojurescript/blob/r2498/src/clj/cljs/core.clj#L1103-L1123)</ins>
+            └── <ins>[core.clj:1103-1123](https://github.com/clojure/clojurescript/blob/r2505/src/clj/cljs/core.clj#L1103-L1123)</ins>
 </pre>
 
 
@@ -81,7 +81,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_with-redefs",
  :source {:code "(defmacro with-redefs\n  [bindings & body]\n  (let [names (take-nth 2 bindings)\n        vals (take-nth 2 (drop 1 bindings))\n        tempnames (map (comp gensym name) names)\n        binds (map core/vector names vals)\n        resets (reverse (map core/vector names tempnames))\n        bind-value (fn [[k v]] (core/list 'set! k v))]\n    `(let [~@(interleave tempnames names)]\n       (try\n        ~@(map bind-value binds)\n        ~@body\n        (finally\n         ~@(map bind-value resets))))))",
           :repo "clojurescript",
-          :tag "r2498",
+          :tag "r2505",
           :filename "src/clj/cljs/core.clj",
           :lines [1103 1123]},
  :full-name "cljs.core/with-redefs",

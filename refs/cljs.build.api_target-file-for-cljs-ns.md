@@ -38,12 +38,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2498
+clojurescript @ r2505
 └── src
     └── clj
         └── cljs
             └── build
-                └── <ins>[api.clj:20-29](https://github.com/clojure/clojurescript/blob/r2498/src/clj/cljs/build/api.clj#L20-L29)</ins>
+                └── <ins>[api.clj:20-29](https://github.com/clojure/clojurescript/blob/r2505/src/clj/cljs/build/api.clj#L20-L29)</ins>
 </pre>
 
 
@@ -68,7 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.build.api_target-file-for-cljs-ns",
  :source {:code "(defn target-file-for-cljs-ns\n  [output-dir ns-sym]\n  (util/to-target-file (cljs.closure/output-directory { :output-dir output-dir })\n                       {:ns ns-sym }))",
           :repo "clojurescript",
-          :tag "r2498",
+          :tag "r2505",
           :filename "src/clj/cljs/build/api.clj",
           :lines [20 29]},
  :full-name "cljs.build.api/target-file-for-cljs-ns",

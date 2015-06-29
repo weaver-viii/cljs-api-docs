@@ -22,11 +22,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2498
+clojurescript @ r2505
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:1263-1265](https://github.com/clojure/clojurescript/blob/r2498/src/clj/cljs/analyzer.clj#L1263-L1265)</ins>
+            └── <ins>[analyzer.clj:1263-1265](https://github.com/clojure/clojurescript/blob/r2505/src/clj/cljs/analyzer.clj#L1263-L1265)</ins>
 </pre>
 
 
@@ -48,7 +48,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "special form",
  :source {:code "(defmethod parse 'defrecord*\n  [_ env form _ _]\n  (parse-type :defrecord* env form) )",
           :repo "clojurescript",
-          :tag "r2498",
+          :tag "r2505",
           :filename "src/clj/cljs/analyzer.clj",
           :lines [1263 1265]},
  :full-name "special/defrecord*",

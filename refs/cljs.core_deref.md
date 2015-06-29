@@ -41,11 +41,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2498
+clojurescript @ r2505
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:851-853](https://github.com/clojure/clojurescript/blob/r2498/src/cljs/cljs/core.cljs#L851-L853)</ins>
+            └── <ins>[core.cljs:851-853](https://github.com/clojure/clojurescript/blob/r2505/src/cljs/cljs/core.cljs#L851-L853)</ins>
 </pre>
 
 
@@ -72,7 +72,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_deref",
  :source {:code "(defn deref\n  [o]\n  (-deref o))",
           :repo "clojurescript",
-          :tag "r2498",
+          :tag "r2505",
           :filename "src/cljs/cljs/core.cljs",
           :lines [851 853]},
  :full-name "cljs.core/deref",

@@ -56,11 +56,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2498
+clojurescript @ r2505
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:289-290](https://github.com/clojure/clojurescript/blob/r2498/src/clj/cljs/core.clj#L289-L290)</ins>
+            └── <ins>[core.clj:289-290](https://github.com/clojure/clojurescript/blob/r2505/src/clj/cljs/core.clj#L289-L290)</ins>
 </pre>
 
 
@@ -87,7 +87,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_js-in",
  :source {:code "(defmacro js-in [key obj]\n  (core/list 'js* \"~{} in ~{}\" key obj))",
           :repo "clojurescript",
-          :tag "r2498",
+          :tag "r2505",
           :filename "src/clj/cljs/core.clj",
           :lines [289 290]},
  :examples [{:id "a45b18",

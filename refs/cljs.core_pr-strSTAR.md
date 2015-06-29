@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2498
+clojurescript @ r2505
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:418-426](https://github.com/clojure/clojurescript/blob/r2498/src/cljs/cljs/core.cljs#L418-L426)</ins>
+            └── <ins>[core.cljs:418-426](https://github.com/clojure/clojurescript/blob/r2505/src/cljs/cljs/core.cljs#L418-L426)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_pr-strSTAR",
  :source {:code "(defn pr-str*\n  [^not-native obj]\n  (let [sb (StringBuffer.)\n        writer (StringBufferWriter. sb)]\n    (-pr-writer obj writer (pr-opts))\n    (-flush writer)\n    (str sb)))",
           :repo "clojurescript",
-          :tag "r2498",
+          :tag "r2505",
           :filename "src/cljs/cljs/core.cljs",
           :lines [418 426]},
  :full-name "cljs.core/pr-str*",
