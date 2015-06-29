@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7246-7255](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L7246-L7255)</ins>
+            └── <ins>[core.cljs:7246-7255](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L7246-L7255)</ins>
 </pre>
 
 
@@ -85,7 +85,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_group-by",
  :source {:code "(defn group-by\n  [f coll]\n  (reduce\n   (fn [ret x]\n     (let [k (f x)]\n       (assoc ret k (conj (get ret k []) x))))\n   {} coll))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7246 7255]},
  :full-name "cljs.core/group-by",

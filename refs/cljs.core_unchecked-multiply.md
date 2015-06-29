@@ -38,7 +38,7 @@ Returns the product of nums. (*) returns 1.
 Source code:
 
 ```clj
-(defn unchecked-multiply
+(defn ^number unchecked-multiply
   ([] 1)
   ([x] x)
   ([x y] (cljs.core/unchecked-multiply x y))
@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1578-1583](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1578-L1583)</ins>
+            └── <ins>[core.cljs:1578-1583](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L1578-L1583)</ins>
 </pre>
 
 
@@ -62,11 +62,11 @@ clojurescript @ r2069
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:368-369](https://github.com/clojure/clojurescript/blob/r2069/src/clj/cljs/core.clj#L368-L369)</ins>
+            └── <ins>[core.clj:368-369](https://github.com/clojure/clojurescript/blob/r2075/src/clj/cljs/core.clj#L368-L369)</ins>
 </pre>
 
 ---
@@ -82,20 +82,21 @@ __Meta__ - To retrieve the API data for this symbol:
 ```
 
 ```clj
-{:ns "cljs.core",
+{:return-type number,
+ :ns "cljs.core",
  :name "unchecked-multiply",
  :signature ["[]" "[x]" "[x y]" "[x y & more]"],
  :history [["+" "0.0-1798"]],
  :type "function",
  :full-name-encode "cljs.core_unchecked-multiply",
- :source {:code "(defn unchecked-multiply\n  ([] 1)\n  ([x] x)\n  ([x y] (cljs.core/unchecked-multiply x y))\n  ([x y & more] (reduce unchecked-multiply (cljs.core/unchecked-multiply x y) more)))",
+ :source {:code "(defn ^number unchecked-multiply\n  ([] 1)\n  ([x] x)\n  ([x y] (cljs.core/unchecked-multiply x y))\n  ([x y & more] (reduce unchecked-multiply (cljs.core/unchecked-multiply x y) more)))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1578 1583]},
  :extra-sources ({:code "(defmacro ^::ana/numeric unchecked-multiply\n  ([& xs] `(* ~@xs)))",
                   :repo "clojurescript",
-                  :tag "r2069",
+                  :tag "r2075",
                   :filename "src/clj/cljs/core.clj",
                   :lines [368 369]}),
  :full-name "cljs.core/unchecked-multiply",

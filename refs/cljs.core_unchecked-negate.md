@@ -24,16 +24,16 @@
 Source code:
 
 ```clj
-(defn unchecked-negate [x]
+(defn ^number unchecked-negate [x]
   (cljs.core/unchecked-negate x))
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1592-1593](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1592-L1593)</ins>
+            └── <ins>[core.cljs:1592-1593](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L1592-L1593)</ins>
 </pre>
 
 
@@ -45,11 +45,11 @@ clojurescript @ r2069
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:374-375](https://github.com/clojure/clojurescript/blob/r2069/src/clj/cljs/core.clj#L374-L375)</ins>
+            └── <ins>[core.clj:374-375](https://github.com/clojure/clojurescript/blob/r2075/src/clj/cljs/core.clj#L374-L375)</ins>
 </pre>
 
 ---
@@ -65,20 +65,21 @@ __Meta__ - To retrieve the API data for this symbol:
 ```
 
 ```clj
-{:ns "cljs.core",
+{:return-type number,
+ :ns "cljs.core",
  :name "unchecked-negate",
  :signature ["[x]"],
  :history [["+" "0.0-1798"]],
  :type "function",
  :full-name-encode "cljs.core_unchecked-negate",
- :source {:code "(defn unchecked-negate [x]\n  (cljs.core/unchecked-negate x))",
+ :source {:code "(defn ^number unchecked-negate [x]\n  (cljs.core/unchecked-negate x))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1592 1593]},
  :extra-sources ({:code "(defmacro ^::ana/numeric unchecked-negate\n  ([x] `(- ~x)))",
                   :repo "clojurescript",
-                  :tag "r2069",
+                  :tag "r2075",
                   :filename "src/clj/cljs/core.clj",
                   :lines [374 375]}),
  :full-name "cljs.core/unchecked-negate",

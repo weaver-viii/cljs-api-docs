@@ -25,11 +25,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:361-363](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L361-L363)</ins>
+            └── <ins>[core.cljs:361-363](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L361-L363)</ins>
 </pre>
 
 
@@ -53,7 +53,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IChunkedSeq",
  :source {:code "(defprotocol IChunkedSeq\n  (-chunked-first [coll])\n  (-chunked-rest [coll]))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [361 363]},
  :methods [{:name "-chunked-first",

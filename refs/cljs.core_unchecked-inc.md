@@ -24,16 +24,16 @@
 Source code:
 
 ```clj
-(defn unchecked-inc [x]
+(defn ^number unchecked-inc [x]
   (cljs.core/unchecked-inc x))
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1572-1573](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1572-L1573)</ins>
+            └── <ins>[core.cljs:1572-1573](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L1572-L1573)</ins>
 </pre>
 
 
@@ -45,11 +45,11 @@ clojurescript @ r2069
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:362-363](https://github.com/clojure/clojurescript/blob/r2069/src/clj/cljs/core.clj#L362-L363)</ins>
+            └── <ins>[core.clj:362-363](https://github.com/clojure/clojurescript/blob/r2075/src/clj/cljs/core.clj#L362-L363)</ins>
 </pre>
 
 ---
@@ -65,20 +65,21 @@ __Meta__ - To retrieve the API data for this symbol:
 ```
 
 ```clj
-{:ns "cljs.core",
+{:return-type number,
+ :ns "cljs.core",
  :name "unchecked-inc",
  :signature ["[x]"],
  :history [["+" "0.0-1798"]],
  :type "function",
  :full-name-encode "cljs.core_unchecked-inc",
- :source {:code "(defn unchecked-inc [x]\n  (cljs.core/unchecked-inc x))",
+ :source {:code "(defn ^number unchecked-inc [x]\n  (cljs.core/unchecked-inc x))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1572 1573]},
  :extra-sources ({:code "(defmacro ^::ana/numeric unchecked-inc\n  ([x] `(inc ~x)))",
                   :repo "clojurescript",
-                  :tag "r2069",
+                  :tag "r2075",
                   :filename "src/clj/cljs/core.clj",
                   :lines [362 363]}),
  :full-name "cljs.core/unchecked-inc",

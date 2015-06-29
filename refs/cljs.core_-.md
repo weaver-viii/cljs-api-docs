@@ -59,18 +59,18 @@ the ys from x and returns the result.
 Source code:
 
 ```clj
-(defn -
+(defn ^number -
   ([x] (cljs.core/- x))
   ([x y] (cljs.core/- x y))
   ([x y & more] (reduce - (cljs.core/- x y) more)))
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1436-1441](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1436-L1441)</ins>
+            └── <ins>[core.cljs:1436-1441](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L1436-L1441)</ins>
 </pre>
 
 
@@ -84,11 +84,11 @@ clojurescript @ r2069
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:389-392](https://github.com/clojure/clojurescript/blob/r2069/src/clj/cljs/core.clj#L389-L392)</ins>
+            └── <ins>[core.clj:389-392](https://github.com/clojure/clojurescript/blob/r2075/src/clj/cljs/core.clj#L389-L392)</ins>
 </pre>
 
 ---
@@ -105,6 +105,7 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "If no `y`s are supplied, returns the negation of `x`, else subtracts the `y`s\nfrom `x` and returns the result.",
+ :return-type number,
  :ns "cljs.core",
  :name "-",
  :signature ["[x]" "[x y]" "[x y & more]"],
@@ -112,14 +113,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/+"],
  :full-name-encode "cljs.core_-",
- :source {:code "(defn -\n  ([x] (cljs.core/- x))\n  ([x y] (cljs.core/- x y))\n  ([x y & more] (reduce - (cljs.core/- x y) more)))",
+ :source {:code "(defn ^number -\n  ([x] (cljs.core/- x))\n  ([x y] (cljs.core/- x y))\n  ([x y & more] (reduce - (cljs.core/- x y) more)))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1436 1441]},
  :extra-sources ({:code "(defmacro ^::ana/numeric -\n  ([x] (core/list 'js* \"(- ~{})\" x))\n  ([x y] (core/list 'js* \"(~{} - ~{})\" x y))\n  ([x y & more] `(- (- ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r2069",
+                  :tag "r2075",
                   :filename "src/clj/cljs/core.clj",
                   :lines [389 392]}),
  :examples [{:id "0a974e",

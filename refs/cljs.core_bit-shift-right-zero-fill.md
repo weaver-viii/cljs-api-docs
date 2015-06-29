@@ -26,16 +26,16 @@ Bitwise shift right with zero fill
 Source code:
 
 ```clj
-(defn bit-shift-right-zero-fill
+(defn ^number bit-shift-right-zero-fill
   [x n] (cljs.core/bit-shift-right-zero-fill x n))
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1730-1732](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1730-L1732)</ins>
+            └── <ins>[core.cljs:1730-1732](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L1730-L1732)</ins>
 </pre>
 
 
@@ -47,11 +47,11 @@ clojurescript @ r2069
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:507-508](https://github.com/clojure/clojurescript/blob/r2069/src/clj/cljs/core.clj#L507-L508)</ins>
+            └── <ins>[core.clj:507-508](https://github.com/clojure/clojurescript/blob/r2075/src/clj/cljs/core.clj#L507-L508)</ins>
 </pre>
 
 ---
@@ -67,20 +67,21 @@ __Meta__ - To retrieve the API data for this symbol:
 ```
 
 ```clj
-{:ns "cljs.core",
+{:return-type number,
+ :ns "cljs.core",
  :name "bit-shift-right-zero-fill",
  :signature ["[x n]"],
  :history [["+" "0.0-1211"]],
  :type "function",
  :full-name-encode "cljs.core_bit-shift-right-zero-fill",
- :source {:code "(defn bit-shift-right-zero-fill\n  [x n] (cljs.core/bit-shift-right-zero-fill x n))",
+ :source {:code "(defn ^number bit-shift-right-zero-fill\n  [x n] (cljs.core/bit-shift-right-zero-fill x n))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1730 1732]},
  :extra-sources ({:code "(defmacro ^::ana/numeric bit-shift-right-zero-fill [x n]\n  (core/list 'js* \"(~{} >>> ~{})\" x n))",
                   :repo "clojurescript",
-                  :tag "r2069",
+                  :tag "r2075",
                   :filename "src/clj/cljs/core.clj",
                   :lines [507 508]}),
  :full-name "cljs.core/bit-shift-right-zero-fill",

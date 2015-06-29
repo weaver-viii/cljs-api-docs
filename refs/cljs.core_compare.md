@@ -69,7 +69,7 @@ of the same type and special-cases nil to be less than any other object.
 Source code:
 
 ```clj
-(defn compare
+(defn ^number compare
   [x y]
   (cond
    (identical? x y) 0
@@ -88,11 +88,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1272-1291](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1272-L1291)</ins>
+            └── <ins>[core.cljs:1272-1291](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L1272-L1291)</ins>
 </pre>
 
 
@@ -110,6 +110,7 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "Comparator.\n\nReturns a negative number, zero, or a positive number when `x` is logically\n\"less than\", \"equal to\", or \"greater than\" `y`.\n\nUses `IComparable` if available and `google.array.defaultCompare` for objects of\nthe same type. nil is treated as a special case and is always less than any\nother object.",
+ :return-type number,
  :ns "cljs.core",
  :name "compare",
  :signature ["[x y]"],
@@ -119,9 +120,9 @@ __Meta__ - To retrieve the API data for this symbol:
            "cljs.core/sorted-set-by"
            "cljs.core/sorted-map-by"],
  :full-name-encode "cljs.core_compare",
- :source {:code "(defn compare\n  [x y]\n  (cond\n   (identical? x y) 0\n\n   (nil? x) -1\n\n   (nil? y) 1\n\n   (identical? (type x) (type y))\n   (if (implements? IComparable x)\n     (-compare ^not-native x y)\n     (garray/defaultCompare x y))\n\n   :else\n   (throw (js/Error. \"compare on non-nil objects of different types\"))))",
+ :source {:code "(defn ^number compare\n  [x y]\n  (cond\n   (identical? x y) 0\n\n   (nil? x) -1\n\n   (nil? y) 1\n\n   (identical? (type x) (type y))\n   (if (implements? IComparable x)\n     (-compare ^not-native x y)\n     (garray/defaultCompare x y))\n\n   :else\n   (throw (js/Error. \"compare on non-nil objects of different types\"))))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1272 1291]},
  :examples [{:id "e13fa0",

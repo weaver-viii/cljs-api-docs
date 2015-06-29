@@ -48,12 +48,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:109-120](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/clojure/core/reducers.cljs#L109-L120)</ins>
+                └── <ins>[reducers.cljs:109-120](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/clojure/core/reducers.cljs#L109-L120)</ins>
 </pre>
 
 
@@ -78,7 +78,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.core.reducers_filter",
  :source {:code "(defcurried filter\n  \"Retains values in the reduction of coll for which (pred val)\n  returns logical true. Foldable.\"\n  {}\n  [pred coll]\n  (folder coll\n   (fn [f1]\n     (rfn [f1 k]\n          ([ret k v]\n             (if (pred k v)\n               (f1 ret k v)\n               ret))))))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/clojure/core/reducers.cljs",
           :lines [109 120]},
  :full-name "clojure.core.reducers/filter",

@@ -29,17 +29,17 @@ Coerce to long by stripping decimal places. Identical to `int'.
 Source code:
 
 ```clj
-(defn unchecked-long
+(defn ^number unchecked-long
   [x]
   (fix x))
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1637-1640](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1637-L1640)</ins>
+            └── <ins>[core.cljs:1637-1640](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L1637-L1640)</ins>
 </pre>
 
 
@@ -56,15 +56,16 @@ __Meta__ - To retrieve the API data for this symbol:
 ```
 
 ```clj
-{:ns "cljs.core",
+{:return-type number,
+ :ns "cljs.core",
  :name "unchecked-long",
  :signature ["[x]"],
  :history [["+" "0.0-1798"]],
  :type "function",
  :full-name-encode "cljs.core_unchecked-long",
- :source {:code "(defn unchecked-long\n  [x]\n  (fix x))",
+ :source {:code "(defn ^number unchecked-long\n  [x]\n  (fix x))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1637 1640]},
  :full-name "cljs.core/unchecked-long",

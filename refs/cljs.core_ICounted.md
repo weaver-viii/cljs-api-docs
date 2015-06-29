@@ -20,15 +20,15 @@ Source code:
 
 ```clj
 (defprotocol ICounted
-  (-count [coll] "constant time count"))
+  (^number -count [coll] "constant time count"))
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:220-221](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L220-L221)</ins>
+            └── <ins>[core.cljs:220-221](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L220-L221)</ins>
 </pre>
 
 
@@ -50,9 +50,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "protocol",
  :full-name-encode "cljs.core_ICounted",
- :source {:code "(defprotocol ICounted\n  (-count [coll] \"constant time count\"))",
+ :source {:code "(defprotocol ICounted\n  (^number -count [coll] \"constant time count\"))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [220 221]},
  :methods [{:name "-count",

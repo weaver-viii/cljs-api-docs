@@ -66,16 +66,16 @@ Bitwise and
 Source code:
 
 ```clj
-(defn bit-and-not
+(defn ^number bit-and-not
   [x y] (cljs.core/bit-and-not x y))
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1694-1696](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1694-L1696)</ins>
+            └── <ins>[core.cljs:1694-1696](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L1694-L1696)</ins>
 </pre>
 
 
@@ -88,11 +88,11 @@ clojurescript @ r2069
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:488-490](https://github.com/clojure/clojurescript/blob/r2069/src/clj/cljs/core.clj#L488-L490)</ins>
+            └── <ins>[core.clj:488-490](https://github.com/clojure/clojurescript/blob/r2075/src/clj/cljs/core.clj#L488-L490)</ins>
 </pre>
 
 ---
@@ -109,6 +109,7 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "Bitwise \"and\" `x` with bitwise \"not\" `y`.  Same as `x & ~y` in JavaScript.",
+ :return-type number,
  :ns "cljs.core",
  :name "bit-and-not",
  :signature ["[x y]" "[x y & more]"],
@@ -116,14 +117,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/bit-and" "cljs.core/bit-not"],
  :full-name-encode "cljs.core_bit-and-not",
- :source {:code "(defn bit-and-not\n  [x y] (cljs.core/bit-and-not x y))",
+ :source {:code "(defn ^number bit-and-not\n  [x y] (cljs.core/bit-and-not x y))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1694 1696]},
  :extra-sources ({:code "(defmacro ^::ana/numeric bit-and-not\n  ([x y] (core/list 'js* \"(~{} & ~~{})\" x y))\n  ([x y & more] `(bit-and-not (bit-and-not ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r2069",
+                  :tag "r2075",
                   :filename "src/clj/cljs/core.clj",
                   :lines [488 490]}),
  :examples [{:id "16f35d",

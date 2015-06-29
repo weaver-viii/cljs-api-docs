@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7505-7508](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L7505-L7508)</ins>
+            └── <ins>[core.cljs:7505-7508](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L7505-L7508)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_remove-method",
  :source {:code "(defn remove-method\n [multifn dispatch-val]\n (-remove-method multifn dispatch-val))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7505 7508]},
  :full-name "cljs.core/remove-method",

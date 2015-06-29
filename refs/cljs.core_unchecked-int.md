@@ -29,17 +29,17 @@ Coerce to int by stripping decimal places.
 Source code:
 
 ```clj
-(defn unchecked-int
+(defn ^number unchecked-int
   [x]
   (fix x))
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1627-1630](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1627-L1630)</ins>
+            └── <ins>[core.cljs:1627-1630](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L1627-L1630)</ins>
 </pre>
 
 
@@ -56,15 +56,16 @@ __Meta__ - To retrieve the API data for this symbol:
 ```
 
 ```clj
-{:ns "cljs.core",
+{:return-type number,
+ :ns "cljs.core",
  :name "unchecked-int",
  :signature ["[x]"],
  :history [["+" "0.0-1798"]],
  :type "function",
  :full-name-encode "cljs.core_unchecked-int",
- :source {:code "(defn unchecked-int\n  [x]\n  (fix x))",
+ :source {:code "(defn ^number unchecked-int\n  [x]\n  (fix x))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1627 1630]},
  :full-name "cljs.core/unchecked-int",

@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1791-1795](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1791-L1795)</ins>
+            └── <ins>[core.cljs:1791-1795](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L1791-L1795)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_subs",
  :source {:code "(defn subs\n  ([s start] (.substring s start))\n  ([s start end] (.substring s start end)))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1791 1795]},
  :full-name "cljs.core/subs",

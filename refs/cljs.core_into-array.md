@@ -33,7 +33,7 @@ See Also:
 Source code:
 
 ```clj
-(defn into-array
+(defn ^array into-array
   ([aseq]
      (into-array nil aseq))
   ([type aseq]
@@ -41,11 +41,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:185-189](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L185-L189)</ins>
+            └── <ins>[core.cljs:185-189](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L185-L189)</ins>
 </pre>
 
 
@@ -63,6 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "Returns a new JavaScript array from the elements of `aseq`.",
+ :return-type array,
  :ns "cljs.core",
  :name "into-array",
  :signature ["[aseq]"],
@@ -70,9 +71,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/to-array" "cljs.core/make-array"],
  :full-name-encode "cljs.core_into-array",
- :source {:code "(defn into-array\n  ([aseq]\n     (into-array nil aseq))\n  ([type aseq]\n     (reduce (fn [a x] (.push a x) a) (array) aseq)))",
+ :source {:code "(defn ^array into-array\n  ([aseq]\n     (into-array nil aseq))\n  ([type aseq]\n     (reduce (fn [a x] (.push a x) a) (array) aseq)))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [185 189]},
  :full-name "cljs.core/into-array",

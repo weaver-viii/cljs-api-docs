@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7084-7092](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L7084-L7092)</ins>
+            └── <ins>[core.cljs:7084-7092](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L7084-L7092)</ins>
 </pre>
 
 
@@ -72,7 +72,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_gensym",
  :source {:code "(defn gensym\n  ([] (gensym \"G__\"))\n  ([prefix-string]\n     (when (nil? gensym_counter)\n       (set! gensym_counter (atom 0)))\n     (symbol (str prefix-string (swap! gensym_counter inc)))))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7084 7092]},
  :full-name "cljs.core/gensym",

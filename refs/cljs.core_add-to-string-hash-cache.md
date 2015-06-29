@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1082-1086](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1082-L1086)</ins>
+            └── <ins>[core.cljs:1082-1086](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L1082-L1086)</ins>
 </pre>
 
 
@@ -56,7 +56,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[k]"],
  :source {:code "(defn add-to-string-hash-cache [k]\n  (let [h (goog.string/hashCode k)]\n    (aset string-hash-cache k h)\n    (set! string-hash-cache-count (inc string-hash-cache-count))\n    h))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1082 1086]},
  :full-name "cljs.core/add-to-string-hash-cache",

@@ -53,17 +53,17 @@ Modulus of num and div with original javascript behavior. i.e. bug for negative 
 Source code:
 
 ```clj
-(defn js-mod
+(defn ^number js-mod
   [n d]
   (cljs.core/js-mod n d))
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1651-1654](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1651-L1654)</ins>
+            └── <ins>[core.cljs:1651-1654](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L1651-L1654)</ins>
 </pre>
 
 
@@ -75,11 +75,11 @@ clojurescript @ r2069
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:462-463](https://github.com/clojure/clojurescript/blob/r2069/src/clj/cljs/core.clj#L462-L463)</ins>
+            └── <ins>[core.clj:462-463](https://github.com/clojure/clojurescript/blob/r2075/src/clj/cljs/core.clj#L462-L463)</ins>
 </pre>
 
 ---
@@ -96,6 +96,7 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "Returns the modulus of dividing numerator `n` by denominator `d`, with JavaScript's\noriginal behavior for negative numbers.\n\nReturns `NaN` when `d` is 0 (divide by 0 error).\n\nEquivalent to `x % y` in JavaScript.",
+ :return-type number,
  :ns "cljs.core",
  :name "js-mod",
  :signature ["[n d]"],
@@ -103,14 +104,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/mod"],
  :full-name-encode "cljs.core_js-mod",
- :source {:code "(defn js-mod\n  [n d]\n  (cljs.core/js-mod n d))",
+ :source {:code "(defn ^number js-mod\n  [n d]\n  (cljs.core/js-mod n d))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1651 1654]},
  :extra-sources ({:code "(defmacro ^::ana/numeric js-mod [num div]\n  (core/list 'js* \"(~{} % ~{})\" num div))",
                   :repo "clojurescript",
-                  :tag "r2069",
+                  :tag "r2075",
                   :filename "src/clj/cljs/core.clj",
                   :lines [462 463]}),
  :examples [{:id "75fa6d",

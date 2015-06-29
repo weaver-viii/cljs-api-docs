@@ -58,11 +58,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6344-6352](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L6344-L6352)</ins>
+            └── <ins>[core.cljs:6344-6352](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L6344-L6352)</ins>
 </pre>
 
 
@@ -89,7 +89,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_partition-all",
  :source {:code "(defn partition-all\n  ([n coll]\n     (partition-all n n coll))\n  ([n step coll]\n     (lazy-seq\n      (when-let [s (seq coll)]\n        (cons (take n s) (partition-all n step (drop step s)))))))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6344 6352]},
  :full-name "cljs.core/partition-all",

@@ -56,16 +56,16 @@ Bitwise shift right
 Source code:
 
 ```clj
-(defn bit-shift-right
+(defn ^number bit-shift-right
   [x n] (cljs.core/bit-shift-right x n))
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1726-1728](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1726-L1728)</ins>
+            └── <ins>[core.cljs:1726-1728](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L1726-L1728)</ins>
 </pre>
 
 
@@ -77,11 +77,11 @@ clojurescript @ r2069
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:504-505](https://github.com/clojure/clojurescript/blob/r2069/src/clj/cljs/core.clj#L504-L505)</ins>
+            └── <ins>[core.clj:504-505](https://github.com/clojure/clojurescript/blob/r2075/src/clj/cljs/core.clj#L504-L505)</ins>
 </pre>
 
 ---
@@ -98,6 +98,7 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "Bitwise shift right `n` bits.  Same as `x >> n` in JavaScript.",
+ :return-type number,
  :ns "cljs.core",
  :name "bit-shift-right",
  :signature ["[x n]"],
@@ -106,14 +107,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :related ["cljs.core/bit-shift-left"
            "cljs.core/unsigned-bit-shift-right"],
  :full-name-encode "cljs.core_bit-shift-right",
- :source {:code "(defn bit-shift-right\n  [x n] (cljs.core/bit-shift-right x n))",
+ :source {:code "(defn ^number bit-shift-right\n  [x n] (cljs.core/bit-shift-right x n))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1726 1728]},
  :extra-sources ({:code "(defmacro ^::ana/numeric bit-shift-right [x n]\n  (core/list 'js* \"(~{} >> ~{})\" x n))",
                   :repo "clojurescript",
-                  :tag "r2069",
+                  :tag "r2075",
                   :filename "src/clj/cljs/core.clj",
                   :lines [504 505]}),
  :examples [{:id "5b75af",

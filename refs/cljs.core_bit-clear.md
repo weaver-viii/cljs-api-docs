@@ -56,17 +56,17 @@ Clear bit at index n
 Source code:
 
 ```clj
-(defn bit-clear
+(defn ^number bit-clear
   [x n]
   (cljs.core/bit-clear x n))
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1698-1701](https://github.com/clojure/clojurescript/blob/r2069/src/cljs/cljs/core.cljs#L1698-L1701)</ins>
+            └── <ins>[core.cljs:1698-1701](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L1698-L1701)</ins>
 </pre>
 
 
@@ -78,11 +78,11 @@ clojurescript @ r2069
 ```
 
  <pre>
-clojurescript @ r2069
+clojurescript @ r2075
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:492-493](https://github.com/clojure/clojurescript/blob/r2069/src/clj/cljs/core.clj#L492-L493)</ins>
+            └── <ins>[core.clj:492-493](https://github.com/clojure/clojurescript/blob/r2075/src/clj/cljs/core.clj#L492-L493)</ins>
 </pre>
 
 ---
@@ -99,6 +99,7 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "Clear bit at index `n`.  Same as `x & ~(1 << y)` in JavaScript.",
+ :return-type number,
  :ns "cljs.core",
  :name "bit-clear",
  :signature ["[x n]"],
@@ -106,14 +107,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/bit-set" "cljs.core/bit-flip"],
  :full-name-encode "cljs.core_bit-clear",
- :source {:code "(defn bit-clear\n  [x n]\n  (cljs.core/bit-clear x n))",
+ :source {:code "(defn ^number bit-clear\n  [x n]\n  (cljs.core/bit-clear x n))",
           :repo "clojurescript",
-          :tag "r2069",
+          :tag "r2075",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1698 1701]},
  :extra-sources ({:code "(defmacro ^::ana/numeric bit-clear [x n]\n  (core/list 'js* \"(~{} & ~(1 << ~{}))\" x n))",
                   :repo "clojurescript",
-                  :tag "r2069",
+                  :tag "r2075",
                   :filename "src/clj/cljs/core.clj",
                   :lines [492 493]}),
  :examples [{:id "0f6748",
