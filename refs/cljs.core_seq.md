@@ -66,11 +66,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2024
+clojurescript @ r2027
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:426-447](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L426-L447)</ins>
+            └── <ins>[core.cljs:426-447](https://github.com/clojure/clojurescript/blob/r2027/src/cljs/cljs/core.cljs#L426-L447)</ins>
 </pre>
 
 
@@ -98,7 +98,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_seq",
  :source {:code "(defn ^seq seq\n  [coll]\n  (when-not (nil? coll)\n    (cond\n      (implements? ISeqable coll)\n      (-seq ^not-native coll)\n\n      (array? coll)\n      (when-not (zero? (alength coll))\n        (IndexedSeq. coll 0))\n\n      (string? coll)\n      (when-not (zero? (alength coll))\n        (IndexedSeq. coll 0))\n\n      (native-satisfies? ISeqable coll)\n      (-seq coll)\n\n      :else (throw (js/Error. (str coll \"is not ISeqable\"))))))",
           :repo "clojurescript",
-          :tag "r2024",
+          :tag "r2027",
           :filename "src/cljs/cljs/core.cljs",
           :lines [426 447]},
  :full-name "cljs.core/seq",

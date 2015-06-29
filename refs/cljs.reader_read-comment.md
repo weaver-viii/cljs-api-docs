@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2024
+clojurescript @ r2027
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:274](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/reader.cljs#L274)</ins>
+            └── <ins>[reader.cljs:274](https://github.com/clojure/clojurescript/blob/r2027/src/cljs/cljs/reader.cljs#L274)</ins>
 </pre>
 
 
@@ -46,7 +46,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def read-comment skip-line)",
           :repo "clojurescript",
-          :tag "r2024",
+          :tag "r2027",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [274]},
  :full-name "cljs.reader/read-comment",

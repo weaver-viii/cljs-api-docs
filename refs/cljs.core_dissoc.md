@@ -70,11 +70,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2024
+clojurescript @ r2027
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:989-999](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L989-L999)</ins>
+            └── <ins>[core.cljs:989-999](https://github.com/clojure/clojurescript/blob/r2027/src/cljs/cljs/core.cljs#L989-L999)</ins>
 </pre>
 
 
@@ -101,7 +101,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_dissoc",
  :source {:code "(defn dissoc\n  ([coll] coll)\n  ([coll k]\n     (-dissoc coll k))\n  ([coll k & ks]\n     (let [ret (dissoc coll k)]\n       (if ks\n         (recur ret (first ks) (next ks))\n         ret))))",
           :repo "clojurescript",
-          :tag "r2024",
+          :tag "r2027",
           :filename "src/cljs/cljs/core.cljs",
           :lines [989 999]},
  :examples [{:id "fd6ae9",

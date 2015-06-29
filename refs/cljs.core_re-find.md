@@ -48,11 +48,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2024
+clojurescript @ r2027
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6554-6564](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L6554-L6564)</ins>
+            └── <ins>[core.cljs:6554-6564](https://github.com/clojure/clojurescript/blob/r2027/src/cljs/cljs/core.cljs#L6554-L6564)</ins>
 </pre>
 
 
@@ -78,7 +78,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_re-find",
  :source {:code "(defn re-find\n  [re s]\n  (let [matches (.exec re s)]\n    (when-not (nil? matches)\n      (if (== (count matches) 1)\n        (first matches)\n        (vec matches)))))",
           :repo "clojurescript",
-          :tag "r2024",
+          :tag "r2027",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6554 6564]},
  :full-name "cljs.core/re-find",

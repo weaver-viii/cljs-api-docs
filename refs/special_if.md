@@ -69,11 +69,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2024
+clojurescript @ r2027
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:369-379](https://github.com/clojure/clojurescript/blob/r2024/src/clj/cljs/analyzer.clj#L369-L379)</ins>
+            └── <ins>[analyzer.clj:369-379](https://github.com/clojure/clojurescript/blob/r2027/src/clj/cljs/analyzer.clj#L369-L379)</ins>
 </pre>
 
 
@@ -103,7 +103,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "special_if",
  :source {:code "(defmethod parse 'if\n  [op env [_ test then else :as form] name]\n  (when (< (count form) 3)\n    (throw (error env \"Too few arguments to if\")))\n  (let [test-expr (disallowing-recur (analyze (assoc env :context :expr) test))\n        then-expr (analyze env then)\n        else-expr (analyze env else)]\n    {:env env :op :if :form form\n     :test test-expr :then then-expr :else else-expr\n     :unchecked @*unchecked-if*\n     :children [test-expr then-expr else-expr]}))",
           :repo "clojurescript",
-          :tag "r2024",
+          :tag "r2027",
           :filename "src/clj/cljs/analyzer.clj",
           :lines [369 379]},
  :examples [{:id "e591ff",

@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2024
+clojurescript @ r2027
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:64-67](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/clojure/zip.cljs#L64-L67)</ins>
+            └── <ins>[zip.cljs:64-67](https://github.com/clojure/clojurescript/blob/r2027/src/cljs/clojure/zip.cljs#L64-L67)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_branchQMARK",
  :source {:code "(defn branch?\n  [loc]\n    ((:zip/branch? (meta loc)) (node loc)))",
           :repo "clojurescript",
-          :tag "r2024",
+          :tag "r2027",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [64 67]},
  :full-name "clojure.zip/branch?",
