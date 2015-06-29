@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1934
+clojurescript @ r1978
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:605-618](https://github.com/clojure/clojurescript/blob/r1934/src/clj/cljs/analyzer.clj#L605-L618)</ins>
+            └── <ins>[analyzer.clj:608-621](https://github.com/clojure/clojurescript/blob/r1978/src/clj/cljs/analyzer.clj#L608-L621)</ins>
 </pre>
 
 
@@ -62,9 +62,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "special form",
  :source {:code "(defmethod parse 'recur\n  [op env [_ & exprs :as form] _]\n  (let [context (:context env)\n        frame (first *recur-frames*)\n        exprs (disallowing-recur (vec (map #(analyze (assoc env :context :expr) %) exprs)))]\n    (when-not frame \n      (throw (error env \"Can't recur here\")))\n    (when-not (= (count exprs) (count (:params frame))) \n      (throw (error env \"recur argument count mismatch\")))\n    (reset! (:flag frame) true)\n    (assoc {:env env :op :recur :form form}\n      :frame frame\n      :exprs exprs\n      :children exprs)))",
           :repo "clojurescript",
-          :tag "r1934",
+          :tag "r1978",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [605 618]},
+          :lines [608 621]},
  :full-name "special/recur",
  :full-name-encode "special_recur",
  :clj-symbol "clojure.core/recur",

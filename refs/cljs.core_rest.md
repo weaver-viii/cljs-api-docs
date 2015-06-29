@@ -66,18 +66,18 @@ Source code:
     (if (satisfies? ISeq coll false)
       (-rest ^not-native coll)
       (let [s (seq coll)]
-        (if-not (nil? s)
-          (-rest s)
+        (if s
+          (-rest ^not-native s)
           ())))
     ()))
 ```
 
  <pre>
-clojurescript @ r1934
+clojurescript @ r1978
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:457-468](https://github.com/clojure/clojurescript/blob/r1934/src/cljs/cljs/core.cljs#L457-L468)</ins>
+            └── <ins>[core.cljs:457-468](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/cljs/core.cljs#L457-L468)</ins>
 </pre>
 
 
@@ -106,9 +106,9 @@ __Meta__ - To retrieve the API data for this symbol:
            "cljs.core/drop"
            "cljs.core/pop"],
  :full-name-encode "cljs.core_rest",
- :source {:code "(defn ^seq rest\n  [coll]\n  (if-not (nil? coll)\n    (if (satisfies? ISeq coll false)\n      (-rest ^not-native coll)\n      (let [s (seq coll)]\n        (if-not (nil? s)\n          (-rest s)\n          ())))\n    ()))",
+ :source {:code "(defn ^seq rest\n  [coll]\n  (if-not (nil? coll)\n    (if (satisfies? ISeq coll false)\n      (-rest ^not-native coll)\n      (let [s (seq coll)]\n        (if s\n          (-rest ^not-native s)\n          ())))\n    ()))",
           :repo "clojurescript",
-          :tag "r1934",
+          :tag "r1978",
           :filename "src/cljs/cljs/core.cljs",
           :lines [457 468]},
  :examples [{:id "0869af",

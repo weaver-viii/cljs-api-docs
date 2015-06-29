@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1934
+clojurescript @ r1978
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2551](https://github.com/clojure/clojurescript/blob/r1934/src/cljs/cljs/core.cljs#L2551)</ins>
+            └── <ins>[core.cljs:2550](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/cljs/core.cljs#L2550)</ins>
 </pre>
 
 
@@ -67,9 +67,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_identity",
  :source {:code "(defn identity [x] x)",
           :repo "clojurescript",
-          :tag "r1934",
+          :tag "r1978",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2551]},
+          :lines [2550]},
  :full-name "cljs.core/identity",
  :clj-symbol "clojure.core/identity"}
 

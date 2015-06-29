@@ -36,7 +36,7 @@ Source code:
                       (net/transmit
                        repl-connection
                        :evaluate-javascript
-                       (.getResponseText e/currentTarget
+                       (.getResponseText (.-currentTarget e)
                                          ()))))
 
       (net/register-service repl-connection
@@ -57,12 +57,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1934
+clojurescript @ r1978
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[repl.cljs:60-88](https://github.com/clojure/clojurescript/blob/r1934/src/cljs/clojure/browser/repl.cljs#L60-L88)</ins>
+                └── <ins>[repl.cljs:60-88](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/clojure/browser/repl.cljs#L60-L88)</ins>
 </pre>
 
 
@@ -85,9 +85,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "clojure.browser.repl_start-evaluator",
- :source {:code "(defn start-evaluator\n  [url]\n  (if-let [repl-connection (net/xpc-connection)]\n    (let [connection (net/xhr-connection)]\n      (event/listen connection\n                    :success\n                    (fn [e]\n                      (net/transmit\n                       repl-connection\n                       :evaluate-javascript\n                       (.getResponseText e/currentTarget\n                                         ()))))\n\n      (net/register-service repl-connection\n                            :send-result\n                            (fn [data]\n                              (send-result connection url (wrap-message :result data))))\n\n      (net/register-service repl-connection\n                            :print\n                            (fn [data]\n                              (send-print url (wrap-message :print data))))\n      \n      (net/connect repl-connection\n                   (constantly nil))\n\n      (js/setTimeout #(send-result connection url (wrap-message :ready \"ready\")) 50))\n    (js/alert \"No 'xpc' param provided to child iframe.\")))",
+ :source {:code "(defn start-evaluator\n  [url]\n  (if-let [repl-connection (net/xpc-connection)]\n    (let [connection (net/xhr-connection)]\n      (event/listen connection\n                    :success\n                    (fn [e]\n                      (net/transmit\n                       repl-connection\n                       :evaluate-javascript\n                       (.getResponseText (.-currentTarget e)\n                                         ()))))\n\n      (net/register-service repl-connection\n                            :send-result\n                            (fn [data]\n                              (send-result connection url (wrap-message :result data))))\n\n      (net/register-service repl-connection\n                            :print\n                            (fn [data]\n                              (send-print url (wrap-message :print data))))\n      \n      (net/connect repl-connection\n                   (constantly nil))\n\n      (js/setTimeout #(send-result connection url (wrap-message :ready \"ready\")) 50))\n    (js/alert \"No 'xpc' param provided to child iframe.\")))",
           :repo "clojurescript",
-          :tag "r1934",
+          :tag "r1978",
           :filename "src/cljs/clojure/browser/repl.cljs",
           :lines [60 88]},
  :full-name "clojure.browser.repl/start-evaluator",

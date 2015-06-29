@@ -49,11 +49,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1934
+clojurescript @ r1978
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2305-2323](https://github.com/clojure/clojurescript/blob/r1934/src/cljs/cljs/core.cljs#L2305-L2323)</ins>
+            └── <ins>[core.cljs:2304-2322](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/cljs/core.cljs#L2304-L2322)</ins>
 </pre>
 
 
@@ -78,9 +78,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_long-array",
  :source {:code "(defn long-array\n  ([size-or-seq]\n     (if (number? size-or-seq)\n       (long-array size-or-seq nil)\n       (into-array size-or-seq)))\n  ([size init-val-or-seq]\n     (let [a (make-array size)]\n       (if (seq? init-val-or-seq)\n         (let [s (seq init-val-or-seq)]\n           (loop [i 0 s s]\n             (if (and s (< i size))\n               (do\n                 (aset a i (first s))\n                 (recur (inc i) (next s)))\n               a)))\n         (do\n           (dotimes [i size]\n             (aset a i init-val-or-seq))\n           a)))))",
           :repo "clojurescript",
-          :tag "r1934",
+          :tag "r1978",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2305 2323]},
+          :lines [2304 2322]},
  :full-name "cljs.core/long-array",
  :clj-symbol "clojure.core/long-array"}
 

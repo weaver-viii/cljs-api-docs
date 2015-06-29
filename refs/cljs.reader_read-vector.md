@@ -27,11 +27,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1934
+clojurescript @ r1978
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:276-278](https://github.com/clojure/clojurescript/blob/r1934/src/cljs/cljs/reader.cljs#L276-L278)</ins>
+            └── <ins>[reader.cljs:276-278](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/cljs/reader.cljs#L276-L278)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[rdr _]"],
  :source {:code "(defn read-vector\n  [rdr _]\n  (read-delimited-list \"]\" rdr true))",
           :repo "clojurescript",
-          :tag "r1934",
+          :tag "r1978",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [276 278]},
  :full-name "cljs.reader/read-vector",

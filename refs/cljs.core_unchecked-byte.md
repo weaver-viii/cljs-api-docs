@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1934
+clojurescript @ r1978
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1505](https://github.com/clojure/clojurescript/blob/r1934/src/cljs/cljs/core.cljs#L1505)</ins>
+            └── <ins>[core.cljs:1507](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/cljs/core.cljs#L1507)</ins>
 </pre>
 
 
@@ -43,11 +43,11 @@ clojurescript @ r1934
 ```
 
  <pre>
-clojurescript @ r1934
+clojurescript @ r1978
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:293](https://github.com/clojure/clojurescript/blob/r1934/src/clj/cljs/core.clj#L293)</ins>
+            └── <ins>[core.clj:335](https://github.com/clojure/clojurescript/blob/r1978/src/clj/cljs/core.clj#L335)</ins>
 </pre>
 
 ---
@@ -71,14 +71,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-byte",
  :source {:code "(defn unchecked-byte [x] x)",
           :repo "clojurescript",
-          :tag "r1934",
+          :tag "r1978",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1505]},
+          :lines [1507]},
  :extra-sources ({:code "(defmacro unchecked-byte [x] x)",
                   :repo "clojurescript",
-                  :tag "r1934",
+                  :tag "r1978",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [293]}),
+                  :lines [335]}),
  :full-name "cljs.core/unchecked-byte",
  :clj-symbol "clojure.core/unchecked-byte"}
 

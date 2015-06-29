@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1934
+clojurescript @ r1978
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:15](https://github.com/clojure/clojurescript/blob/r1934/src/cljs/cljs/core.cljs#L15)</ins>
+            └── <ins>[core.cljs:15](https://github.com/clojure/clojurescript/blob/r1978/src/cljs/cljs/core.cljs#L15)</ins>
 </pre>
 
 
@@ -46,7 +46,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def *unchecked-if* false)",
           :repo "clojurescript",
-          :tag "r1934",
+          :tag "r1978",
           :filename "src/cljs/cljs/core.cljs",
           :lines [15]},
  :full-name "cljs.core/*unchecked-if*",
