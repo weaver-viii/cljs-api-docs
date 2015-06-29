@@ -56,16 +56,16 @@ Bitwise shift right
 Source code:
 
 ```clj
-(defn ^number bit-shift-right
+(defn bit-shift-right
   [x n] (cljs.core/bit-shift-right x n))
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1726-1728](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/core.cljs#L1726-L1728)</ins>
+            └── <ins>[core.cljs:1724-1726](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L1724-L1726)</ins>
 </pre>
 
 
@@ -77,11 +77,11 @@ clojurescript @ r2080
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:504-505](https://github.com/clojure/clojurescript/blob/r2080/src/clj/cljs/core.clj#L504-L505)</ins>
+            └── <ins>[core.clj:507-508](https://github.com/clojure/clojurescript/blob/r2120/src/clj/cljs/core.clj#L507-L508)</ins>
 </pre>
 
 ---
@@ -98,7 +98,6 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "Bitwise shift right `n` bits.  Same as `x >> n` in JavaScript.",
- :return-type number,
  :ns "cljs.core",
  :name "bit-shift-right",
  :signature ["[x n]"],
@@ -107,16 +106,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :related ["cljs.core/bit-shift-left"
            "cljs.core/unsigned-bit-shift-right"],
  :full-name-encode "cljs.core_bit-shift-right",
- :source {:code "(defn ^number bit-shift-right\n  [x n] (cljs.core/bit-shift-right x n))",
+ :source {:code "(defn bit-shift-right\n  [x n] (cljs.core/bit-shift-right x n))",
           :repo "clojurescript",
-          :tag "r2080",
+          :tag "r2120",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1726 1728]},
+          :lines [1724 1726]},
  :extra-sources ({:code "(defmacro ^::ana/numeric bit-shift-right [x n]\n  (core/list 'js* \"(~{} >> ~{})\" x n))",
                   :repo "clojurescript",
-                  :tag "r2080",
+                  :tag "r2120",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [504 505]}),
+                  :lines [507 508]}),
  :examples [{:id "5b75af",
              :content "Bits can be entered using radix notation:\n\n```clj\n(bit-shift-right 2r1010 1)\n;;=> 5\n;; 5 = 2r0101\n```\n\nSame numbers in decimal:\n\n```clj\n(bit-shift-right 10 1)\n;;=> 5\n```"}],
  :full-name "cljs.core/bit-shift-right",

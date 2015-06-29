@@ -84,15 +84,16 @@ Source code:
 ```clj
 (defn peek
   [coll]
-  (-peek coll))
+  (when-not (nil? coll)
+    (-peek coll)))
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1053-1057](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/core.cljs#L1053-L1057)</ins>
+            └── <ins>[core.cljs:1032-1037](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L1032-L1037)</ins>
 </pre>
 
 
@@ -117,11 +118,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/first" "cljs.core/pop" "cljs.core/conj"],
  :full-name-encode "cljs.core_peek",
- :source {:code "(defn peek\n  [coll]\n  (-peek coll))",
+ :source {:code "(defn peek\n  [coll]\n  (when-not (nil? coll)\n    (-peek coll)))",
           :repo "clojurescript",
-          :tag "r2080",
+          :tag "r2120",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1053 1057]},
+          :lines [1032 1037]},
  :examples [{:id "4abc4c",
              :content "With vectors:\n\n```clj\n(peek [1 2 3])\n;;=> 3\n\n(peek [1 2])\n;;=> 2\n\n(peek [1])\n;;=> 1\n\n(peek [])\n;;=> nil\n```"}
             {:id "d50bd0",

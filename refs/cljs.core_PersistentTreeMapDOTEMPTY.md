@@ -23,11 +23,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5836](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/core.cljs#L5836)</ins>
+            └── <ins>[core.cljs:5834](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L5834)</ins>
 </pre>
 
 
@@ -52,9 +52,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_PersistentTreeMapDOTEMPTY",
  :source {:code "(set! cljs.core.PersistentTreeMap.EMPTY (PersistentTreeMap. compare nil 0 nil 0))",
           :repo "clojurescript",
-          :tag "r2080",
+          :tag "r2120",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [5836]},
+          :lines [5834]},
  :full-name "cljs.core/PersistentTreeMap.EMPTY",
  :clj-symbol "clojure.lang/PersistentTreeMap.EMPTY"}
 

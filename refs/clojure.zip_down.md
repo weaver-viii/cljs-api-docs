@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:98-109](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/clojure/zip.cljs#L98-L109)</ins>
+            └── <ins>[zip.cljs:98-109](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/clojure/zip.cljs#L98-L109)</ins>
 </pre>
 
 
@@ -72,7 +72,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_down",
  :source {:code "(defn down\n  [loc]\n    (when (branch? loc)\n      (let [[node path] loc\n            [c & cnext :as cs] (children loc)]\n        (when cs\n          (with-meta [c {:l [] \n                         :pnodes (if path (conj (:pnodes path) node) [node]) \n                         :ppath path \n                         :r cnext}] (meta loc))))))",
           :repo "clojurescript",
-          :tag "r2080",
+          :tag "r2120",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [98 109]},
  :full-name "clojure.zip/down",

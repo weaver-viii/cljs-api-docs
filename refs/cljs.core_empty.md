@@ -41,15 +41,16 @@ Source code:
 ```clj
 (defn empty
   [coll]
-  (-empty coll))
+  (when-not (nil? coll)
+    (-empty coll)))
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:852-855](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/core.cljs#L852-L855)</ins>
+            └── <ins>[core.cljs:827-831](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L827-L831)</ins>
 </pre>
 
 
@@ -74,11 +75,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/not-empty"],
  :full-name-encode "cljs.core_empty",
- :source {:code "(defn empty\n  [coll]\n  (-empty coll))",
+ :source {:code "(defn empty\n  [coll]\n  (when-not (nil? coll)\n    (-empty coll)))",
           :repo "clojurescript",
-          :tag "r2080",
+          :tag "r2120",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [852 855]},
+          :lines [827 831]},
  :full-name "cljs.core/empty",
  :clj-symbol "clojure.core/empty",
  :docstring "Returns an empty collection of the same category as coll, or nil"}

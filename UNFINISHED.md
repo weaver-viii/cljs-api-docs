@@ -1664,7 +1664,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/\*print-level\*</td>
-<td></td>
+<td>[ref](refs/cljs.core_STARprint-levelSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_STARprint-levelSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3624,7 +3624,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/object?</td>
-<td></td>
+<td>[ref](refs/cljs.core_objectQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_objectQMARK.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -3808,7 +3808,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/print-map</td>
-<td></td>
+<td>[ref](refs/cljs.core_print-map.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_print-map.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4224,7 +4224,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/sequence</td>
-<td></td>
+<td>[ref](refs/cljs.core_sequence.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_sequence.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4408,7 +4408,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/sorted?</td>
-<td></td>
+<td>[ref](refs/cljs.core_sortedQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_sortedQMARK.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -7784,7 +7784,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.core.reducers/CollFold</td>
-<td></td>
+<td>[ref](refs/clojure.core.reducers_CollFold.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.core.reducers_CollFold.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -8765,14 +8765,6 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 <td></td>
 <td></td>
 <td></td>
-</tr>
-<tr>
-<td>syntax/js-literal</td>
-<td></td>
-<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/syntax_js-literal.cljsdoc)</td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 </tr>
 <tr>
 <td>syntax/js-ns</td>

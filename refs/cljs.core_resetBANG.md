@@ -44,20 +44,22 @@ Source code:
 ```clj
 (defn reset!
   [a new-value]
-  (when-let [validate (.-validator a)]
-    (assert (validate new-value) "Validator rejected reference state"))
+  (let [validate (.-validator a)]
+    (when-not (nil? validate)
+      (assert (validate new-value) "Validator rejected reference state")))
   (let [old-value (.-state a)]
     (set! (.-state a) new-value)
-    (-notify-watches a old-value new-value))
+    (when-not (nil? (.-watches a))
+      (-notify-watches a old-value new-value)))
   new-value)
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6981-6990](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/core.cljs#L6981-L6990)</ins>
+            └── <ins>[core.cljs:6999-7010](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L6999-L7010)</ins>
 </pre>
 
 
@@ -84,11 +86,11 @@ __Meta__ - To retrieve the API data for this symbol:
            "cljs.core/compare-and-set!"
            "cljs.core/atom"],
  :full-name-encode "cljs.core_resetBANG",
- :source {:code "(defn reset!\n  [a new-value]\n  (when-let [validate (.-validator a)]\n    (assert (validate new-value) \"Validator rejected reference state\"))\n  (let [old-value (.-state a)]\n    (set! (.-state a) new-value)\n    (-notify-watches a old-value new-value))\n  new-value)",
+ :source {:code "(defn reset!\n  [a new-value]\n  (let [validate (.-validator a)]\n    (when-not (nil? validate)\n      (assert (validate new-value) \"Validator rejected reference state\")))\n  (let [old-value (.-state a)]\n    (set! (.-state a) new-value)\n    (when-not (nil? (.-watches a))\n      (-notify-watches a old-value new-value)))\n  new-value)",
           :repo "clojurescript",
-          :tag "r2080",
+          :tag "r2120",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6981 6990]},
+          :lines [6999 7010]},
  :full-name "cljs.core/reset!",
  :clj-symbol "clojure.core/reset!",
  :docstring "Sets the value of atom to newval without regard for the\ncurrent value. Returns newval."}

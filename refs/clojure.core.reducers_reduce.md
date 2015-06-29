@@ -46,12 +46,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:20-31](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/clojure/core/reducers.cljs#L20-L31)</ins>
+                └── <ins>[reducers.cljs:33-44](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/clojure/core/reducers.cljs#L33-L44)</ins>
 </pre>
 
 
@@ -76,9 +76,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.core.reducers_reduce",
  :source {:code "(defn reduce\n  ([f coll] (reduce f (f) coll))\n  ([f init coll]\n     (if (map? coll)\n       (-kv-reduce coll f init)\n       (cond\n         (nil? coll) init\n         (array? coll) (array-reduce coll f init)\n         :else (-reduce coll f init)))))",
           :repo "clojurescript",
-          :tag "r2080",
+          :tag "r2120",
           :filename "src/cljs/clojure/core/reducers.cljs",
-          :lines [20 31]},
+          :lines [33 44]},
  :full-name "clojure.core.reducers/reduce",
  :clj-symbol "clojure.core.reducers/reduce",
  :docstring "Like core/reduce except:\n  When init is not provided, (f) is used.\n  Maps are reduced with reduce-kv"}

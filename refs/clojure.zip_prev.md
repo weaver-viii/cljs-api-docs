@@ -41,11 +41,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:221-230](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/clojure/zip.cljs#L221-L230)</ins>
+            └── <ins>[zip.cljs:221-230](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/clojure/zip.cljs#L221-L230)</ins>
 </pre>
 
 
@@ -70,7 +70,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_prev",
  :source {:code "(defn prev\n  [loc]\n    (if-let [lloc (left loc)]\n      (loop [loc lloc]\n        (if-let [child (and (branch? loc) (down loc))]\n          (recur (rightmost child))\n          loc))\n      (up loc)))",
           :repo "clojurescript",
-          :tag "r2080",
+          :tag "r2120",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [221 230]},
  :full-name "clojure.zip/prev",

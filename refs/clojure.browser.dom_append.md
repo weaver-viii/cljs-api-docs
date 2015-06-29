@@ -27,12 +27,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[dom.cljs:13-15](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/clojure/browser/dom.cljs#L13-L15)</ins>
+                └── <ins>[dom.cljs:13-15](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/clojure/browser/dom.cljs#L13-L15)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[parent & children]"],
  :source {:code "(defn append [parent & children]\n  (apply gdom/append parent children)\n  parent)",
           :repo "clojurescript",
-          :tag "r2080",
+          :tag "r2120",
           :filename "src/cljs/clojure/browser/dom.cljs",
           :lines [13 15]},
  :full-name "clojure.browser.dom/append",

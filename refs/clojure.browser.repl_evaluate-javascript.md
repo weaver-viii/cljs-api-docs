@@ -38,12 +38,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[repl.cljs:27-36](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/clojure/browser/repl.cljs#L27-L36)</ins>
+                └── <ins>[repl.cljs:27-36](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/clojure/browser/repl.cljs#L27-L36)</ins>
 </pre>
 
 
@@ -68,7 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.repl_evaluate-javascript",
  :source {:code "(defn evaluate-javascript\n  [conn block]\n  (let [result (try {:status :success :value (str (js* \"eval(~{block})\"))}\n                    (catch js/Error e\n                      {:status :exception :value (pr-str e)\n                       :stacktrace (if (.hasOwnProperty e \"stack\")\n                                     (.-stack e)\n                                     \"No stacktrace available.\")}))]\n    (pr-str result)))",
           :repo "clojurescript",
-          :tag "r2080",
+          :tag "r2120",
           :filename "src/cljs/clojure/browser/repl.cljs",
           :lines [27 36]},
  :full-name "clojure.browser.repl/evaluate-javascript",

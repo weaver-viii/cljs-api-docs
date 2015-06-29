@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── cljs
         └── clojure
-            └── <ins>[string.cljs:147-157](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/clojure/string.cljs#L147-L157)</ins>
+            └── <ins>[string.cljs:147-157](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/clojure/string.cljs#L147-L157)</ins>
 </pre>
 
 
@@ -77,7 +77,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.string_trim-newline",
  :source {:code "(defn trim-newline\n  [s]\n  (loop [index (.-length s)]\n    (if (zero? index)\n      \"\"\n      (let [ch (get s (dec index))]\n        (if (or (= ch \\newline) (= ch \\return))\n          (recur (dec index))\n          (.substring s 0 index))))))",
           :repo "clojurescript",
-          :tag "r2080",
+          :tag "r2120",
           :filename "src/cljs/clojure/string.cljs",
           :lines [147 157]},
  :full-name "clojure.string/trim-newline",

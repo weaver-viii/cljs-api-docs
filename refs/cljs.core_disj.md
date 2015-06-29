@@ -52,18 +52,19 @@ Source code:
   ([coll k]
      (-disjoin coll k))
   ([coll k & ks]
-     (let [ret (disj coll k)]
-       (if ks
-         (recur ret (first ks) (next ks))
-         ret))))
+    (when-not (nil? coll)
+      (let [ret (disj coll k)]
+        (if ks
+          (recur ret (first ks) (next ks))
+          ret)))))
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1066-1076](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/core.cljs#L1066-L1076)</ins>
+            └── <ins>[core.cljs:1047-1058](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L1047-L1058)</ins>
 </pre>
 
 
@@ -90,11 +91,11 @@ __Meta__ - To retrieve the API data for this symbol:
            "cljs.core/disj!"
            "clojure.set/difference"],
  :full-name-encode "cljs.core_disj",
- :source {:code "(defn disj\n  ([coll] coll)\n  ([coll k]\n     (-disjoin coll k))\n  ([coll k & ks]\n     (let [ret (disj coll k)]\n       (if ks\n         (recur ret (first ks) (next ks))\n         ret))))",
+ :source {:code "(defn disj\n  ([coll] coll)\n  ([coll k]\n     (-disjoin coll k))\n  ([coll k & ks]\n    (when-not (nil? coll)\n      (let [ret (disj coll k)]\n        (if ks\n          (recur ret (first ks) (next ks))\n          ret)))))",
           :repo "clojurescript",
-          :tag "r2080",
+          :tag "r2120",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1066 1076]},
+          :lines [1047 1058]},
  :full-name "cljs.core/disj",
  :clj-symbol "clojure.core/disj",
  :docstring "disj[oin]. Returns a new set of the same (hashed/sorted) type, that\ndoes not contain key(s)."}

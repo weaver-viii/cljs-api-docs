@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:60-62](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/clojure/zip.cljs#L60-L62)</ins>
+            └── <ins>[zip.cljs:60-62](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/clojure/zip.cljs#L60-L62)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_node",
  :source {:code "(defn node\n  [loc] (loc 0))",
           :repo "clojurescript",
-          :tag "r2080",
+          :tag "r2120",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [60 62]},
  :full-name "clojure.zip/node",

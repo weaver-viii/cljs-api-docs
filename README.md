@@ -2,8 +2,8 @@
 
  <table border="1">
 <tr>
-<td>__0.0-2080__ [all](HISTORY.md)</td>
-<td>2013-11-23</td>
+<td>__0.0-2120__ [all](HISTORY.md)</td>
+<td>2013-12-13</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.5.1</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
@@ -71,12 +71,18 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-2080__ ([See Full History](HISTORY.md)):
+Changes from __0.0-2120__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
  <table>
-<tr><td>_no syntax forms were added or removed in this version_</td></tr>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-tagged literal-brightgreen.svg">
+</td>
+<td><samp>[syntax/js-literal](refs/syntax_js-literal.md)</samp></td>
+</tr>
 </table>
 
 __Library API Changes__
@@ -85,9 +91,39 @@ __Library API Changes__
 
 <tr>
 <td>
+<img valign="middle" src="https://img.shields.io/badge/+-dynamic var-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/\*print-level\*](refs/cljs.core_STARprint-levelSTAR.md)</samp></td>
+</tr>
+<tr>
+<td>
 <img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
 </td>
-<td><samp>[cljs.core/unsigned-bit-shift-right](refs/cljs.core_unsigned-bit-shift-right.md)</samp></td>
+<td><samp>[cljs.core/object?](refs/cljs.core_objectQMARK.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/print-map](refs/cljs.core_print-map.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/sequence](refs/cljs.core_sequence.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/sorted?](refs/cljs.core_sortedQMARK.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-protocol-brightgreen.svg">
+</td>
+<td><samp>[clojure.core.reducers/CollFold](refs/clojure.core.reducers_CollFold.md)</samp></td>
 </tr>
 </table>
 
@@ -411,6 +447,14 @@ available in [edn]
 <tr valign=top>
 <td></td>
 <td></td>
+<td><samp>[js-literal](refs/syntax_js-literal.md)</samp></td>
+<td><samp>#js {}<br>#js \[\]<br></samp></td>
+<td><samp>tagged literal</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2120"><img valign="middle" alt="[+] 0.0-2120" src="https://img.shields.io/badge/+-0.0--2120-lightgrey.svg"></a> </td>
+</tr>
+<tr valign=top>
+<td></td>
+<td></td>
 <td><samp>[js-ns](refs/syntax_js-ns.md)</samp></td>
 <td><samp>js/<br></samp></td>
 <td><samp>special namespace</samp></td>
@@ -711,6 +755,12 @@ application.
 <td><samp>[\*print-length\*](refs/cljs.core_STARprint-lengthSTAR.md)</samp></td>
 <td><samp>dynamic var</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2060"><img valign="middle" alt="[+] 0.0-2060" src="https://img.shields.io/badge/+-0.0--2060-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/*print-level*)</td>
+<td><samp>[\*print-level\*](refs/cljs.core_STARprint-levelSTAR.md)</samp></td>
+<td><samp>dynamic var</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2120"><img valign="middle" alt="[+] 0.0-2120" src="https://img.shields.io/badge/+-0.0--2120-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/*print-meta*)</td>
@@ -2243,6 +2293,12 @@ application.
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1211"><img valign="middle" alt="[+] 0.0-1211" src="https://img.shields.io/badge/+-0.0--1211-lightgrey.svg"></a> </td>
 </tr>
 <tr>
+<td></td>
+<td><samp>[object?](refs/cljs.core_objectQMARK.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2120"><img valign="middle" alt="[+] 0.0-2120" src="https://img.shields.io/badge/+-0.0--2120-lightgrey.svg"></a> </td>
+</tr>
+<tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/odd?)</td>
 <td><samp>[odd?](refs/cljs.core_oddQMARK.md)</samp></td>
 <td><samp>function</samp></td>
@@ -2391,6 +2447,12 @@ application.
 <td><samp>[print](refs/cljs.core_print.md)</samp></td>
 <td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[print-map](refs/cljs.core_print-map.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2120"><img valign="middle" alt="[+] 0.0-2120" src="https://img.shields.io/badge/+-0.0--2120-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/print-str)</td>
@@ -2675,6 +2737,12 @@ application.
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1211"><img valign="middle" alt="[+] 0.0-1211" src="https://img.shields.io/badge/+-0.0--1211-lightgrey.svg"></a> </td>
 </tr>
 <tr>
+<td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/sequence)</td>
+<td><samp>[sequence](refs/cljs.core_sequence.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2120"><img valign="middle" alt="[+] 0.0-2120" src="https://img.shields.io/badge/+-0.0--2120-lightgrey.svg"></a> </td>
+</tr>
+<tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/sequential?)</td>
 <td><samp>[sequential?](refs/cljs.core_sequentialQMARK.md)</samp></td>
 <td><samp>function</samp></td>
@@ -2793,6 +2861,12 @@ application.
 <td><samp>[sorted-set-by](refs/cljs.core_sorted-set-by.md)</samp></td>
 <td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1211"><img valign="middle" alt="[+] 0.0-1211" src="https://img.shields.io/badge/+-0.0--1211-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/sorted?)</td>
+<td><samp>[sorted?](refs/cljs.core_sortedQMARK.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2120"><img valign="middle" alt="[+] 0.0-2120" src="https://img.shields.io/badge/+-0.0--2120-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/special-symbol?)</td>
@@ -4703,7 +4777,7 @@ application.
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core.reducers/fold)</td>
 <td><samp>[fold](refs/clojure.core.reducers_fold.md)</samp></td>
-<td><samp>var</samp></td>
+<td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1236"><img valign="middle" alt="[+] 0.0-1236" src="https://img.shields.io/badge/+-0.0--1236-lightgrey.svg"></a> </td>
 </tr>
 <tr>
@@ -4765,6 +4839,12 @@ application.
 <td><samp>[take-while](refs/clojure.core.reducers_take-while.md)</samp></td>
 <td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1236"><img valign="middle" alt="[+] 0.0-1236" src="https://img.shields.io/badge/+-0.0--1236-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[CollFold](refs/clojure.core.reducers_CollFold.md)</samp></td>
+<td><samp>protocol</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2120"><img valign="middle" alt="[+] 0.0-2120" src="https://img.shields.io/badge/+-0.0--2120-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core.reducers/Cat)</td>

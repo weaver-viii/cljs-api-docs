@@ -53,15 +53,17 @@ Source code:
 ```clj
 (defn reduce-kv
   ([f init coll]
-     (-kv-reduce coll f init)))
+    (if-not (nil? coll)
+      (-kv-reduce coll f init)
+      init)))
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1415-1423](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/core.cljs#L1415-L1423)</ins>
+            └── <ins>[core.cljs:1411-1421](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L1411-L1421)</ins>
 </pre>
 
 
@@ -86,11 +88,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/reduce"],
  :full-name-encode "cljs.core_reduce-kv",
- :source {:code "(defn reduce-kv\n  ([f init coll]\n     (-kv-reduce coll f init)))",
+ :source {:code "(defn reduce-kv\n  ([f init coll]\n    (if-not (nil? coll)\n      (-kv-reduce coll f init)\n      init)))",
           :repo "clojurescript",
-          :tag "r2080",
+          :tag "r2120",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1415 1423]},
+          :lines [1411 1421]},
  :full-name "cljs.core/reduce-kv",
  :clj-symbol "clojure.core/reduce-kv",
  :docstring "Reduces an associative collection. f should be a function of 3\narguments. Returns the result of applying f to init, the first key\nand the first value in coll, then applying f to that result and the\n2nd key and value, etc. If coll contains no entries, returns init\nand f is not called. Note that reduce-kv is supported on vectors,\nwhere the keys will be the ordinals."}

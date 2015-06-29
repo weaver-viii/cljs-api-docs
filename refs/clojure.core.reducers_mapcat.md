@@ -46,12 +46,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:98-107](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/clojure/core/reducers.cljs#L98-L107)</ins>
+                └── <ins>[reducers.cljs:106-115](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/clojure/core/reducers.cljs#L106-L115)</ins>
 </pre>
 
 
@@ -76,9 +76,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.core.reducers_mapcat",
  :source {:code "(defcurried mapcat\n  \"Applies f to every value in the reduction of coll, concatenating the result\n  colls of (f val). Foldable.\"\n  {}\n  [f coll]\n  (folder coll\n   (fn [f1]\n     (rfn [f1 k]\n          ([ret k v]\n             (reduce f1 ret (f k v)))))))",
           :repo "clojurescript",
-          :tag "r2080",
+          :tag "r2120",
           :filename "src/cljs/clojure/core/reducers.cljs",
-          :lines [98 107]},
+          :lines [106 115]},
  :full-name "clojure.core.reducers/mapcat",
  :clj-symbol "clojure.core.reducers/mapcat",
  :docstring "Applies f to every value in the reduction of coll, concatenating the result\n  colls of (f val). Foldable."}

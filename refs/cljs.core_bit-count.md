@@ -46,7 +46,7 @@ Counts the number of bits set in n
 Source code:
 
 ```clj
-(defn ^number bit-count
+(defn bit-count
   [v]
   (let [v (- v (bit-and (bit-shift-right v 1) 0x55555555))
         v (+ (bit-and v 0x33333333) (bit-and (bit-shift-right v 2) 0x33333333))]
@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1738-1743](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/core.cljs#L1738-L1743)</ins>
+            └── <ins>[core.cljs:1736-1741](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L1736-L1741)</ins>
 </pre>
 
 
@@ -76,18 +76,17 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "Counts the number of bits set in `x`.",
- :return-type number,
  :ns "cljs.core",
  :name "bit-count",
  :signature ["[x]"],
  :history [["+" "0.0-1211"]],
  :type "function",
  :full-name-encode "cljs.core_bit-count",
- :source {:code "(defn ^number bit-count\n  [v]\n  (let [v (- v (bit-and (bit-shift-right v 1) 0x55555555))\n        v (+ (bit-and v 0x33333333) (bit-and (bit-shift-right v 2) 0x33333333))]\n    (bit-shift-right (* (bit-and (+ v (bit-shift-right v 4)) 0xF0F0F0F) 0x1010101) 24)))",
+ :source {:code "(defn bit-count\n  [v]\n  (let [v (- v (bit-and (bit-shift-right v 1) 0x55555555))\n        v (+ (bit-and v 0x33333333) (bit-and (bit-shift-right v 2) 0x33333333))]\n    (bit-shift-right (* (bit-and (+ v (bit-shift-right v 4)) 0xF0F0F0F) 0x1010101) 24)))",
           :repo "clojurescript",
-          :tag "r2080",
+          :tag "r2120",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1738 1743]},
+          :lines [1736 1741]},
  :examples [{:id "35c78c",
              :content "Bits can be entered using radix notation:\n\n```clj\n(bit-count 2r1011)\n;;=> 3\n```\n\nSame number in decimal:\n\n```clj\n(bit-count 11)\n;;=> 3\n```"}],
  :full-name "cljs.core/bit-count",

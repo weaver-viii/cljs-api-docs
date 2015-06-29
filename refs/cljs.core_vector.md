@@ -36,17 +36,17 @@ Source code:
 
 ```clj
 (defn vector [& args]
-  (if (instance? IndexedSeq args)
+  (if (and (instance? IndexedSeq args) (zero? (.-i args)))
     (cljs.core.PersistentVector.fromArray (.-arr args) true)
     (vec args)))
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3393-3396](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/core.cljs#L3393-L3396)</ins>
+            └── <ins>[core.cljs:3391-3394](https://github.com/clojure/clojurescript/blob/r2120/src/cljs/cljs/core.cljs#L3391-L3394)</ins>
 </pre>
 
 
@@ -66,11 +66,11 @@ clojurescript @ r2080
 ```
 
  <pre>
-clojurescript @ r2080
+clojurescript @ r2120
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1305-1314](https://github.com/clojure/clojurescript/blob/r2080/src/clj/cljs/core.clj#L1305-L1314)</ins>
+            └── <ins>[core.clj:1311-1320](https://github.com/clojure/clojurescript/blob/r2120/src/clj/cljs/core.clj#L1311-L1320)</ins>
 </pre>
 
 ---
@@ -97,16 +97,16 @@ __Meta__ - To retrieve the API data for this symbol:
            "cljs.core/pop"
            "cljs.core/into"],
  :full-name-encode "cljs.core_vector",
- :source {:code "(defn vector [& args]\n  (if (instance? IndexedSeq args)\n    (cljs.core.PersistentVector.fromArray (.-arr args) true)\n    (vec args)))",
+ :source {:code "(defn vector [& args]\n  (if (and (instance? IndexedSeq args) (zero? (.-i args)))\n    (cljs.core.PersistentVector.fromArray (.-arr args) true)\n    (vec args)))",
           :repo "clojurescript",
-          :tag "r2080",
+          :tag "r2120",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3393 3396]},
+          :lines [3391 3394]},
  :extra-sources ({:code "(defmacro vector\n  ([] `cljs.core.PersistentVector.EMPTY)\n  ([& xs]\n    (let [cnt (count xs)]\n      (if (core/< cnt 32)\n        `(cljs.core.PersistentVector. nil ~cnt 5\n           cljs.core.PersistentVector.EMPTY_NODE (array ~@xs) nil)\n        (vary-meta\n          `(cljs.core.PersistentVector.fromArray (array ~@xs) true)\n          assoc :tag 'cljs.core/PersistentVector)))))",
                   :repo "clojurescript",
-                  :tag "r2080",
+                  :tag "r2120",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [1305 1314]}),
+                  :lines [1311 1320]}),
  :full-name "cljs.core/vector",
  :clj-symbol "clojure.core/vector"}
 
