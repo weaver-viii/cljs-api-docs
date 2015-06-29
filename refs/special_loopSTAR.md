@@ -22,11 +22,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3119
+clojurescript @ r3123
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:1124-1126](https://github.com/clojure/clojurescript/blob/r3119/src/clj/cljs/analyzer.clj#L1124-L1126)</ins>
+            └── <ins>[analyzer.clj:1124-1126](https://github.com/clojure/clojurescript/blob/r3123/src/clj/cljs/analyzer.clj#L1124-L1126)</ins>
 </pre>
 
 
@@ -48,7 +48,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "special form",
  :source {:code "(defmethod parse 'loop*\n  [op encl-env form _ _]\n  (analyze-let encl-env form true))",
           :repo "clojurescript",
-          :tag "r3119",
+          :tag "r3123",
           :filename "src/clj/cljs/analyzer.clj",
           :lines [1124 1126]},
  :full-name "special/loop*",

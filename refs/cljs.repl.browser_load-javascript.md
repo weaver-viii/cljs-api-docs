@@ -36,12 +36,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3119
+clojurescript @ r3123
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:179-186](https://github.com/clojure/clojurescript/blob/r3119/src/clj/cljs/repl/browser.clj#L179-L186)</ins>
+                └── <ins>[browser.clj:179-186](https://github.com/clojure/clojurescript/blob/r3123/src/clj/cljs/repl/browser.clj#L179-L186)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.browser_load-javascript",
  :source {:code "(defn load-javascript\n  [repl-env provides url]\n  (browser-eval (slurp url)))",
           :repo "clojurescript",
-          :tag "r3119",
+          :tag "r3123",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [179 186]},
  :full-name "cljs.repl.browser/load-javascript",

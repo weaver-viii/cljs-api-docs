@@ -26,12 +26,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3119
+clojurescript @ r3123
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[net.cljs:73-79](https://github.com/clojure/clojurescript/blob/r3119/src/cljs/clojure/browser/net.cljs#L73-L79)</ins>
+                └── <ins>[net.cljs:73-79](https://github.com/clojure/clojurescript/blob/r3123/src/cljs/clojure/browser/net.cljs#L73-L79)</ins>
 </pre>
 
 
@@ -53,7 +53,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def xpc-config-fields\n  (into {}\n        (map\n         (fn [[k v]]\n           [(keyword (.toLowerCase k))\n            v])\n         (js->clj CfgFields))))",
           :repo "clojurescript",
-          :tag "r3119",
+          :tag "r3123",
           :filename "src/cljs/clojure/browser/net.cljs",
           :lines [73 79]},
  :full-name "clojure.browser.net/xpc-config-fields",

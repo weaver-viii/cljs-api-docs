@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3119
+clojurescript @ r3123
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2303-2306](https://github.com/clojure/clojurescript/blob/r3119/src/cljs/cljs/core.cljs#L2303-L2306)</ins>
+            └── <ins>[core.cljs:2303-2306](https://github.com/clojure/clojurescript/blob/r3123/src/cljs/cljs/core.cljs#L2303-L2306)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-int",
  :source {:code "(defn unchecked-int\n  [x]\n  (fix x))",
           :repo "clojurescript",
-          :tag "r3119",
+          :tag "r3123",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2303 2306]},
  :full-name "cljs.core/unchecked-int",

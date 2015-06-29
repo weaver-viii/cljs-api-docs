@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3119
+clojurescript @ r3123
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1862-1865](https://github.com/clojure/clojurescript/blob/r3119/src/cljs/cljs/core.cljs#L1862-L1865)</ins>
+            └── <ins>[core.cljs:1862-1865](https://github.com/clojure/clojurescript/blob/r3123/src/cljs/cljs/core.cljs#L1862-L1865)</ins>
 </pre>
 
 
@@ -77,7 +77,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ifnQMARK",
  :source {:code "(defn ^boolean ifn?\n  [f]\n  (or (fn? f) (satisfies? IFn f)))",
           :repo "clojurescript",
-          :tag "r3119",
+          :tag "r3123",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1862 1865]},
  :full-name "cljs.core/ifn?",

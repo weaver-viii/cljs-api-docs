@@ -36,12 +36,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3119
+clojurescript @ r3123
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[rhino.clj:156-167](https://github.com/clojure/clojurescript/blob/r3119/src/clj/cljs/repl/rhino.clj#L156-L167)</ins>
+                └── <ins>[rhino.clj:156-167](https://github.com/clojure/clojurescript/blob/r3123/src/clj/cljs/repl/rhino.clj#L156-L167)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[form]"],
  :source {:code "(defn wrap-fn [form]\n  (cond\n    (and (seq? form) (= 'ns (first form))) identity\n    ('#{*1 *2 *3 *e} form) (fn [x] `(cljs.core.pr-str ~x))\n    :else\n    (fn [x]\n      `(cljs.core.pr-str\n         (let [ret# ~x]\n           (set! *3 *2)\n           (set! *2 *1)\n           (set! *1 ret#)\n           ret#)))))",
           :repo "clojurescript",
-          :tag "r3119",
+          :tag "r3123",
           :filename "src/clj/cljs/repl/rhino.clj",
           :lines [156 167]},
  :full-name "cljs.repl.rhino/wrap-fn",

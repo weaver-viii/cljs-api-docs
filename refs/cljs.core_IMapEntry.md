@@ -33,11 +33,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3119
+clojurescript @ r3123
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:412-417](https://github.com/clojure/clojurescript/blob/r3119/src/cljs/cljs/core.cljs#L412-L417)</ins>
+            └── <ins>[core.cljs:412-417](https://github.com/clojure/clojurescript/blob/r3123/src/cljs/cljs/core.cljs#L412-L417)</ins>
 </pre>
 
 
@@ -61,7 +61,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IMapEntry",
  :source {:code "(defprotocol IMapEntry\n  \"Protocol for examining a map entry.\"\n  (-key [coll]\n    \"Returns the key of the map entry.\")\n  (-val [coll]\n    \"Returns the value of the map entry.\"))",
           :repo "clojurescript",
-          :tag "r3119",
+          :tag "r3123",
           :filename "src/cljs/cljs/core.cljs",
           :lines [412 417]},
  :methods [{:name "-key",
