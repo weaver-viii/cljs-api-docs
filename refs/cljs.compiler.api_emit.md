@@ -33,13 +33,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── clojure
             └── cljs
                 └── compiler
-                    └── <ins>[api.clj:23-27](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/compiler/api.clj#L23-L27)</ins>
+                    └── <ins>[api.clj:23-27](https://github.com/clojure/clojurescript/blob/r3263/src/main/clojure/cljs/compiler/api.clj#L23-L27)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.compiler.api_emit",
  :source {:code "(defn emit\n  [ast]\n  (with-out-str\n    (comp/emit ast)))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/clojure/cljs/compiler/api.clj",
           :lines [23 27]},
  :full-name "cljs.compiler.api/emit",

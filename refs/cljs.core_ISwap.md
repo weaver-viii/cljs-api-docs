@@ -28,12 +28,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:622-625](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L622-L625)</ins>
+                └── <ins>[core.cljs:622-625](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L622-L625)</ins>
 </pre>
 
 
@@ -57,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ISwap",
  :source {:code "(defprotocol ISwap\n  \"Protocol for adding swapping functionality.\"\n  (-swap! [o f] [o f a] [o f a b] [o f a b xs]\n    \"Swaps the value of o to be (apply f current-value-of-atom args).\"))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [622 625]},
  :methods [{:name "-swap!",

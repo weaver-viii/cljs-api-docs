@@ -67,12 +67,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[pprint.cljs:2065-2100](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/pprint.cljs#L2065-L2100)</ins>
+                └── <ins>[pprint.cljs:2065-2100](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/pprint.cljs#L2065-L2100)</ins>
 </pre>
 
 
@@ -97,7 +97,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.pprint_get-pretty-writer",
  :source {:code "(defn get-pretty-writer\n  [writer]\n  (if (pretty-writer? writer)\n    writer\n    (pretty-writer writer *print-right-margin* *print-miser-width*)))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/cljs/pprint.cljs",
           :lines [2065 2100]},
  :full-name "cljs.pprint/get-pretty-writer",

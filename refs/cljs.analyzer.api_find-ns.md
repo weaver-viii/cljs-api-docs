@@ -37,13 +37,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── clojure
             └── cljs
                 └── analyzer
-                    └── <ins>[api.clj:86-91](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/analyzer/api.clj#L86-L91)</ins>
+                    └── <ins>[api.clj:86-91](https://github.com/clojure/clojurescript/blob/r3263/src/main/clojure/cljs/analyzer/api.clj#L86-L91)</ins>
 </pre>
 
 
@@ -68,7 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.analyzer.api_find-ns",
  :source {:code "(defn find-ns\n  [sym]\n  {:pre [(symbol? sym)]}\n  (get-in @env/*compiler* [::ana/namespaces sym]))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/clojure/cljs/analyzer/api.clj",
           :lines [86 91]},
  :full-name "cljs.analyzer.api/find-ns",

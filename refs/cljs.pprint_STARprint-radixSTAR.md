@@ -35,12 +35,12 @@ radix specifier is in the form #XXr where XX is the decimal value of *print-base
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[pprint.cljs:666-671](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/pprint.cljs#L666-L671)</ins>
+                └── <ins>[pprint.cljs:666-671](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/pprint.cljs#L666-L671)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.pprint_STARprint-radixSTAR",
  :source {:code "(def ^:dynamic\n^{:doc \"Print a radix specifier in front of integers and rationals. If *print-base* is 2, 8,\nor 16, then the radix specifier used is #b, #o, or #x, respectively. Otherwise the\nradix specifier is in the form #XXr where XX is the decimal value of *print-base* \"\n  :added \"1.2\"}\n*print-radix* nil)",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/cljs/pprint.cljs",
           :lines [666 671]},
  :full-name "cljs.pprint/*print-radix*",

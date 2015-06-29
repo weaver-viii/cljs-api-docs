@@ -9,7 +9,7 @@
 </table>
 
  <samp>
-(__safari-st-el->frame__ st-el opts)<br>
+(__safari-st-el->frame__ repl-env st-el opts)<br>
 </samp>
 
 ---
@@ -22,13 +22,13 @@ Source code:
 
 ```clj
 (defn safari-st-el->frame
-  [st-el opts]
+  [repl-env st-el opts]
   (let [[function flc] (if (re-find #"@" st-el)
                          (string/split st-el #"@")
                          [nil st-el])
         [file line column] (parse-file-line-column flc)]
     (if (and file function line column)
-      {:file (parse-file file opts)
+      {:file (parse-file repl-env file opts)
        :function function
        :line line
        :column column}
@@ -40,13 +40,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── clojure
             └── cljs
                 └── repl
-                    └── <ins>[browser.clj:301-316](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/repl/browser.clj#L301-L316)</ins>
+                    └── <ins>[browser.clj:304-319](https://github.com/clojure/clojurescript/blob/r3263/src/main/clojure/cljs/repl/browser.clj#L304-L319)</ins>
 </pre>
 
 
@@ -66,12 +66,12 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "cljs.repl.browser",
  :name "safari-st-el->frame",
  :type "function",
- :signature ["[st-el opts]"],
- :source {:code "(defn safari-st-el->frame\n  [st-el opts]\n  (let [[function flc] (if (re-find #\"@\" st-el)\n                         (string/split st-el #\"@\")\n                         [nil st-el])\n        [file line column] (parse-file-line-column flc)]\n    (if (and file function line column)\n      {:file (parse-file file opts)\n       :function function\n       :line line\n       :column column}\n      (when-not (string/blank? function)\n        {:file nil\n         :function (string/trim function)\n         :line nil\n         :column nil}))))",
+ :signature ["[repl-env st-el opts]"],
+ :source {:code "(defn safari-st-el->frame\n  [repl-env st-el opts]\n  (let [[function flc] (if (re-find #\"@\" st-el)\n                         (string/split st-el #\"@\")\n                         [nil st-el])\n        [file line column] (parse-file-line-column flc)]\n    (if (and file function line column)\n      {:file (parse-file repl-env file opts)\n       :function function\n       :line line\n       :column column}\n      (when-not (string/blank? function)\n        {:file nil\n         :function (string/trim function)\n         :line nil\n         :column nil}))))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/clojure/cljs/repl/browser.clj",
-          :lines [301 316]},
+          :lines [304 319]},
  :full-name "cljs.repl.browser/safari-st-el->frame",
  :full-name-encode "cljs.repl.browser_safari-st-el-GTframe",
  :history [["+" "0.0-3053"]]}

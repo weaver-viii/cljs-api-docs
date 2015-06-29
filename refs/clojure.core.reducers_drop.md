@@ -48,13 +48,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── clojure
                 └── core
-                    └── <ins>[reducers.cljs:178-190](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/clojure/core/reducers.cljs#L178-L190)</ins>
+                    └── <ins>[reducers.cljs:178-190](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/clojure/core/reducers.cljs#L178-L190)</ins>
 </pre>
 
 
@@ -79,7 +79,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.core.reducers_drop",
  :source {:code "(defcurried drop\n  \"Elides the first n values from the reduction of coll.\"\n  {}\n  [n coll]\n  (reducer coll\n   (fn [f1]\n     (let [cnt (atom n)]\n       (rfn [f1 k]\n         ([ret k v]\n            (swap! cnt dec)\n            (if (neg? @cnt)\n              (f1 ret k v)\n              ret)))))))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/clojure/core/reducers.cljs",
           :lines [178 190]},
  :full-name "clojure.core.reducers/drop",

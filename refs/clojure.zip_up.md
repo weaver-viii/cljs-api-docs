@@ -43,12 +43,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── clojure
-                └── <ins>[zip.cljs:111-122](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/clojure/zip.cljs#L111-L122)</ins>
+                └── <ins>[zip.cljs:111-122](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/clojure/zip.cljs#L111-L122)</ins>
 </pre>
 
 
@@ -73,7 +73,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_up",
  :source {:code "(defn up\n  [loc]\n    (let [[node {l :l, ppath :ppath, pnodes :pnodes r :r, changed? :changed?, :as path}] loc]\n      (when pnodes\n        (let [pnode (peek pnodes)]\n          (with-meta (if changed?\n                       [(make-node loc pnode (concat l (cons node r))) \n                        (and ppath (assoc ppath :changed? true))]\n                       [pnode ppath])\n                     (meta loc))))))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/clojure/zip.cljs",
           :lines [111 122]},
  :full-name "clojure.zip/up",

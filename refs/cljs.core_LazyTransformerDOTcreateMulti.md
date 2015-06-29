@@ -32,12 +32,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:3563-3570](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L3563-L3570)</ins>
+                └── <ins>[core.cljs:3563-3570](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L3563-L3570)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_LazyTransformerDOTcreateMulti",
  :source {:code "(set! (.-createMulti LazyTransformer)\n  (fn [xform colls]\n    (let [iters (array)]\n      (doseq [coll colls]\n        (.push iters (iter coll)))\n      (LazyTransformer.\n        (multi-stepper xform iters (make-array (alength iters)))\n        nil nil nil))))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [3563 3570]},
  :full-name "cljs.core/LazyTransformer.createMulti"}

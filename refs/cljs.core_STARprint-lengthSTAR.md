@@ -37,12 +37,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:79-85](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L79-L85)</ins>
+                └── <ins>[core.cljs:79-85](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L79-L85)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_STARprint-lengthSTAR",
  :source {:code "(def\n  ^{:dynamic true\n    :doc \"When set to logical true, objects will be printed in a way that preserves\n  their type when read in later.\n\n  Defaults to false.\"}\n  *print-length* nil)",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [79 85]},
  :full-name "cljs.core/*print-length*",

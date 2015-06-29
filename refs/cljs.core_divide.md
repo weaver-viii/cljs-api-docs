@@ -34,12 +34,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[core.clj:497-500](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/core.clj#L497-L500)</ins>
+                └── <ins>[core.clj:497-500](https://github.com/clojure/clojurescript/blob/r3263/src/main/clojure/cljs/core.clj#L497-L500)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[x]" "[x y]" "[x y & more]"],
  :source {:code "(defmacro ^::ana/numeric divide\n  ([x] `(/ 1 ~x))\n  ([x y] (core/list 'js* \"(~{} / ~{})\" x y))\n  ([x y & more] `(/ (/ ~x ~y) ~@more)))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/clojure/cljs/core.clj",
           :lines [497 500]},
  :full-name "cljs.core/divide",

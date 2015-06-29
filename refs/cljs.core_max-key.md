@@ -54,12 +54,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:8014-8019](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L8014-L8019)</ins>
+                └── <ins>[core.cljs:8014-8019](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L8014-L8019)</ins>
 </pre>
 
 
@@ -86,7 +86,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_max-key",
  :source {:code "(defn max-key\n  ([k x] x)\n  ([k x y] (if (> (k x) (k y)) x y))\n  ([k x y & more]\n   (reduce #(max-key k %1 %2) (max-key k x y) more)))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [8014 8019]},
  :full-name "cljs.core/max-key",

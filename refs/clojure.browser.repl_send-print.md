@@ -44,13 +44,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── clojure
                 └── browser
-                    └── <ins>[repl.cljs:63-75](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/clojure/browser/repl.cljs#L63-L75)</ins>
+                    └── <ins>[repl.cljs:63-75](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/clojure/browser/repl.cljs#L63-L75)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.repl_send-print",
  :source {:code "(defn send-print\n  ([url data]\n   (send-print url data 0))\n  ([url data n]\n   (let [conn (net/xhr-connection)]\n     (event/listen conn :error\n       (fn [_]\n         (if (< n 10)\n           (send-print url data (inc n))\n           (.log js/console (str \"Could not send \" data \" after \" n \" attempts.\")))))\n     (net/transmit conn url \"POST\" data nil 0))))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/clojure/browser/repl.cljs",
           :lines [63 75]},
  :full-name "clojure.browser.repl/send-print",

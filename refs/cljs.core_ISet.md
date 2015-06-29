@@ -31,12 +31,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:419-422](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L419-L422)</ins>
+                └── <ins>[core.cljs:419-422](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L419-L422)</ins>
 </pre>
 
 
@@ -60,7 +60,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ISet",
  :source {:code "(defprotocol ISet\n  \"Protocol for adding set functionality to a collection.\"\n  (^clj -disjoin [coll v]\n    \"Returns a new collection of coll that does not contain v.\"))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [419 422]},
  :methods [{:name "-disjoin",

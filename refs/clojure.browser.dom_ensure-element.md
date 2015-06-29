@@ -34,13 +34,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── clojure
                 └── browser
-                    └── <ins>[dom.cljs:107-112](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/clojure/browser/dom.cljs#L107-L112)</ins>
+                    └── <ins>[dom.cljs:107-112](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/clojure/browser/dom.cljs#L107-L112)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.dom_ensure-element",
  :source {:code "(defn ensure-element\n  [e]\n  (cond (keyword? e) (get-element e)\n        (string? e) (html->dom e)\n        :else e))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/clojure/browser/dom.cljs",
           :lines [107 112]},
  :full-name "clojure.browser.dom/ensure-element",

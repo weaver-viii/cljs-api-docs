@@ -31,12 +31,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:383-389](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L383-L389)</ins>
+                └── <ins>[core.cljs:383-389](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L383-L389)</ins>
 </pre>
 
 
@@ -60,7 +60,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_INext",
  :source {:code "(defprotocol INext\n  \"Protocol for accessing the next items of a collection.\"\n  (^clj-or-nil -next [coll]\n    \"Returns a new collection of coll without the first item. In contrast to\n     rest, it should return nil if there are no more items, e.g.\n     (next []) => nil\n     (next nil) => nil\"))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [383 389]},
  :methods [{:name "-next",

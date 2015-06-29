@@ -50,12 +50,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:7449-7456](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L7449-L7456)</ins>
+                └── <ins>[core.cljs:7449-7456](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L7449-L7456)</ins>
 </pre>
 
 
@@ -74,12 +74,12 @@ clojurescript @ r3255
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[core.clj:1768-1776](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/core.clj#L1768-L1776)</ins>
+                └── <ins>[core.clj:1768-1776](https://github.com/clojure/clojurescript/blob/r3263/src/main/clojure/cljs/core.clj#L1768-L1776)</ins>
 </pre>
 
 ---
@@ -105,12 +105,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash-map",
  :source {:code "(defn hash-map\n  [& keyvals]\n  (loop [in (seq keyvals), out (transient (.-EMPTY PersistentHashMap))]\n    (if in\n      (recur (nnext in) (assoc! out (first in) (second in)))\n      (persistent! out))))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [7449 7456]},
  :extra-sources ({:code "(defmacro hash-map\n  ([] `(.-EMPTY cljs.core/PersistentHashMap))\n  ([& kvs]\n    (let [pairs (partition 2 kvs)\n          ks    (map first pairs)\n          vs    (map second pairs)]\n      (vary-meta\n        `(.fromArrays cljs.core/PersistentHashMap (array ~@ks) (array ~@vs))\n        assoc :tag 'cljs.core/PersistentHashMap))))",
                   :repo "clojurescript",
-                  :tag "r3255",
+                  :tag "r3263",
                   :filename "src/main/clojure/cljs/core.clj",
                   :lines [1768 1776]}),
  :full-name "cljs.core/hash-map",

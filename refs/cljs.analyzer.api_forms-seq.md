@@ -36,13 +36,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── clojure
             └── cljs
                 └── analyzer
-                    └── <ins>[api.clj:34-38](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/analyzer/api.clj#L34-L38)</ins>
+                    └── <ins>[api.clj:34-38](https://github.com/clojure/clojurescript/blob/r3263/src/main/clojure/cljs/analyzer/api.clj#L34-L38)</ins>
 </pre>
 
 
@@ -67,7 +67,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.analyzer.api_forms-seq",
  :source {:code "(defn forms-seq\n  ([rdr] (ana/forms-seq* rdr nil))\n  ([rdr filename] (ana/forms-seq* rdr filename)))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/clojure/cljs/analyzer/api.clj",
           :lines [34 38]},
  :full-name "cljs.analyzer.api/forms-seq",

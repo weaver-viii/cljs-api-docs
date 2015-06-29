@@ -35,12 +35,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:911-914](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L911-L914)</ins>
+                └── <ins>[core.cljs:911-914](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L911-L914)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_varQMARK",
  :source {:code "(defn var?\n  [v]\n  (instance? cljs.core.Var v))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [911 914]},
  :full-name "cljs.core/var?",

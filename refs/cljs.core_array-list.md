@@ -26,12 +26,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:8036-8037](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L8036-L8037)</ins>
+                └── <ins>[core.cljs:8036-8037](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L8036-L8037)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[]"],
  :source {:code "(defn array-list []\n  (ArrayList. (array)))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [8036 8037]},
  :full-name "cljs.core/array-list",

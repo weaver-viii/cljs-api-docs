@@ -33,12 +33,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:572-577](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L572-L577)</ins>
+                └── <ins>[core.cljs:572-577](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L572-L577)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ITransientVector",
  :source {:code "(defprotocol ITransientVector\n  \"Protocol for adding vector functionality to transient collections.\"\n  (^clj -assoc-n! [tcoll n val]\n    \"Returns tcoll with value val added at position n.\")\n  (^clj -pop! [tcoll]\n    \"Returns tcoll with the last item removed from it.\"))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [572 577]},
  :methods [{:name "-assoc-n!",

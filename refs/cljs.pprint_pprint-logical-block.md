@@ -54,12 +54,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[pprint.clj:57-79](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/pprint.clj#L57-L79)</ins>
+                └── <ins>[pprint.clj:57-79](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/pprint.clj#L57-L79)</ins>
 </pre>
 
 
@@ -84,7 +84,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.pprint_pprint-logical-block",
  :source {:code "(defmacro pprint-logical-block\n  [& args]\n  (let [[options body] (parse-lb-options #{:prefix :per-line-prefix :suffix} args)]\n    `(do (if (cljs.pprint/level-exceeded)\n           (~'-write cljs.pprint/*out* \"#\")\n           (do\n             (cljs.core/binding [cljs.pprint/*current-level* (inc cljs.pprint/*current-level*)\n                       cljs.pprint/*current-length* 0]\n               (cljs.pprint/start-block cljs.pprint/*out*\n                                        ~(:prefix options)\n                                        ~(:per-line-prefix options)\n                                        ~(:suffix options))\n               ~@body\n               (cljs.pprint/end-block cljs.pprint/*out*))))\n         nil)))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/cljs/pprint.clj",
           :lines [57 79]},
  :full-name "cljs.pprint/pprint-logical-block",

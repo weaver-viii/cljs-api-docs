@@ -58,12 +58,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:2469-2481](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L2469-L2481)</ins>
+                └── <ins>[core.cljs:2469-2481](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L2469-L2481)</ins>
 </pre>
 
 
@@ -78,12 +78,12 @@ clojurescript @ r3255
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[core.clj:273-277](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/core.clj#L273-L277)</ins>
+                └── <ins>[core.clj:273-277](https://github.com/clojure/clojurescript/blob/r3263/src/main/clojure/cljs/core.clj#L273-L277)</ins>
 </pre>
 
 ---
@@ -108,12 +108,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_str",
  :source {:code "(defn str\n  ([] \"\")\n  ([x] (if (nil? x)\n         \"\"\n         (gstring/buildString x)))\n  ([x & ys]\n    (loop [sb (StringBuffer. (str x)) more ys]\n      (if more\n        (recur (. sb  (append (str (first more)))) (next more))\n        (.toString sb)))))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [2469 2481]},
  :extra-sources ({:code "(defmacro str [& xs]\n  (let [strs (->> (repeat (count xs) \"cljs.core.str(~{})\")\n               (interpose \",\")\n               (apply core/str))]\n    (list* 'js* (core/str \"[\" strs \"].join('')\") xs)))",
                   :repo "clojurescript",
-                  :tag "r3255",
+                  :tag "r3263",
                   :filename "src/main/clojure/cljs/core.clj",
                   :lines [273 277]}),
  :full-name "cljs.core/str",

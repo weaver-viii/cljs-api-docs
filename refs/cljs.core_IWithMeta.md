@@ -28,12 +28,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:452-455](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L452-L455)</ins>
+                └── <ins>[core.cljs:452-455](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L452-L455)</ins>
 </pre>
 
 
@@ -57,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IWithMeta",
  :source {:code "(defprotocol IWithMeta\n  \"Protocol for adding metadata to an object.\"\n  (^clj -with-meta [o meta]\n    \"Returns a new object with value of o and metadata meta added to it.\"))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [452 455]},
  :methods [{:name "-with-meta",

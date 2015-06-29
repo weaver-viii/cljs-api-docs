@@ -50,12 +50,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:7925-7929](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L7925-L7929)</ins>
+                └── <ins>[core.cljs:7925-7929](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L7925-L7929)</ins>
 </pre>
 
 
@@ -78,12 +78,12 @@ clojurescript @ r3255
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[core.clj:1778-1790](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/core.clj#L1778-L1790)</ins>
+                └── <ins>[core.clj:1778-1790](https://github.com/clojure/clojurescript/blob/r3263/src/main/clojure/cljs/core.clj#L1778-L1790)</ins>
 </pre>
 
 ---
@@ -109,12 +109,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash-set",
  :source {:code "(defn hash-set\n  ([] #{})\n  ([& keys] (set keys)))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [7925 7929]},
  :extra-sources ({:code "(defmacro hash-set\n  ([] `(.-EMPTY cljs.core/PersistentHashSet))\n  ([& xs]\n    (if (core/and (core/<= (count xs) 8)\n                  (every? #(= (:op %) :constant)\n                    (map #(cljs.analyzer/analyze &env %) xs))\n                  (= (count (into #{} xs)) (count xs)))\n      `(cljs.core/PersistentHashSet. nil\n         (cljs.core/PersistentArrayMap. nil ~(count xs) (array ~@(interleave xs (repeat nil))) nil)\n         nil)\n      (vary-meta\n        `(.fromArray cljs.core/PersistentHashSet (array ~@xs) true)\n        assoc :tag 'cljs.core/PersistentHashSet))))",
                   :repo "clojurescript",
-                  :tag "r3255",
+                  :tag "r3263",
                   :filename "src/main/clojure/cljs/core.clj",
                   :lines [1778 1790]}),
  :full-name "cljs.core/hash-set",

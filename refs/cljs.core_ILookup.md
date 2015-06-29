@@ -32,12 +32,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:391-395](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L391-L395)</ins>
+                └── <ins>[core.cljs:391-395](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L391-L395)</ins>
 </pre>
 
 
@@ -61,7 +61,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ILookup",
  :source {:code "(defprotocol ILookup\n  \"Protocol for looking up a value in a data structure.\"\n  (-lookup [o k] [o k not-found]\n    \"Use k to look up a value in o. If not-found is supplied and k is not\n     a valid value that can be used for look up, not-found is returned.\"))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [391 395]},
  :methods [{:name "-lookup",

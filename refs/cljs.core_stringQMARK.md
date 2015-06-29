@@ -38,12 +38,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:180-183](https://github.com/clojure/clojurescript/blob/r3255/src/main/cljs/cljs/core.cljs#L180-L183)</ins>
+                └── <ins>[core.cljs:180-183](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L180-L183)</ins>
 </pre>
 
 
@@ -55,12 +55,12 @@ clojurescript @ r3255
 ```
 
  <pre>
-clojurescript @ r3255
+clojurescript @ r3263
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[core.clj:369-370](https://github.com/clojure/clojurescript/blob/r3255/src/main/clojure/cljs/core.clj#L369-L370)</ins>
+                └── <ins>[core.clj:369-370](https://github.com/clojure/clojurescript/blob/r3263/src/main/clojure/cljs/core.clj#L369-L370)</ins>
 </pre>
 
 ---
@@ -86,12 +86,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_stringQMARK",
  :source {:code "(defn ^boolean string?\n  [x]\n  (goog/isString x))",
           :repo "clojurescript",
-          :tag "r3255",
+          :tag "r3263",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [180 183]},
  :extra-sources ({:code "(defmacro string? [x]\n  (bool-expr (core/list 'js* \"typeof ~{} === 'string'\" x)))",
                   :repo "clojurescript",
-                  :tag "r3255",
+                  :tag "r3263",
                   :filename "src/main/clojure/cljs/core.clj",
                   :lines [369 370]}),
  :full-name "cljs.core/string?",
