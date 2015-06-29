@@ -84,11 +84,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1576
+clojurescript @ r1586
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2265-2292](https://github.com/clojure/clojurescript/blob/r1576/src/cljs/cljs/core.cljs#L2265-L2292)</ins>
+            └── <ins>[core.cljs:2265-2292](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L2265-L2292)</ins>
 </pre>
 
 
@@ -115,7 +115,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_comp",
  :source {:code "(defn comp\n  ([] identity)\n  ([f] f)\n  ([f g]\n     (fn\n       ([] (f (g)))\n       ([x] (f (g x)))\n       ([x y] (f (g x y)))\n       ([x y z] (f (g x y z)))\n       ([x y z & args] (f (apply g x y z args)))))\n  ([f g h]\n     (fn\n       ([] (f (g (h))))\n       ([x] (f (g (h x))))\n       ([x y] (f (g (h x y))))\n       ([x y z] (f (g (h x y z))))\n       ([x y z & args] (f (g (apply h x y z args))))))\n  ([f1 f2 f3 & fs]\n    (let [fs (reverse (list* f1 f2 f3 fs))]\n      (fn [& args]\n        (loop [ret (apply (first fs) args) fs (next fs)]\n          (if fs\n            (recur ((first fs) ret) (next fs))\n            ret))))))",
           :repo "clojurescript",
-          :tag "r1576",
+          :tag "r1586",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2265 2292]},
  :examples [{:id "5d3250",

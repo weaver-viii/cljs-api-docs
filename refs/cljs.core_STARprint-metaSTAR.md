@@ -23,11 +23,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1576
+clojurescript @ r1586
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6345](https://github.com/clojure/clojurescript/blob/r1576/src/cljs/cljs/core.cljs#L6345)</ins>
+            └── <ins>[core.cljs:6344](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L6344)</ins>
 </pre>
 
 
@@ -49,9 +49,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def *print-meta* false)",
           :repo "clojurescript",
-          :tag "r1576",
+          :tag "r1586",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6345]},
+          :lines [6344]},
  :full-name "cljs.core/*print-meta*",
  :full-name-encode "cljs.core_STARprint-metaSTAR",
  :clj-symbol "clojure.core/*print-meta*",

@@ -56,11 +56,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1576
+clojurescript @ r1586
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1063-1072](https://github.com/clojure/clojurescript/blob/r1576/src/cljs/cljs/core.cljs#L1063-L1072)</ins>
+            └── <ins>[core.cljs:1063-1072](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L1063-L1072)</ins>
 </pre>
 
 
@@ -88,7 +88,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_containsQMARK",
  :source {:code "(defn ^boolean contains?\n  [coll v]\n  (if (identical? (-lookup coll v lookup-sentinel) lookup-sentinel)\n    false\n    true))",
           :repo "clojurescript",
-          :tag "r1576",
+          :tag "r1586",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1063 1072]},
  :full-name "cljs.core/contains?",

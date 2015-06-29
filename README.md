@@ -2,8 +2,8 @@
 
  <table border="1">
 <tr>
-<td>__0.0-1576__ [all](HISTORY.md)</td>
-<td>2013-01-27</td>
+<td>__0.0-1586__ [all](HISTORY.md)</td>
+<td>2013-02-16</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.4.0</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-1576__ ([See Full History](HISTORY.md)):
+Changes from __0.0-1586__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
@@ -85,64 +85,16 @@ __Library API Changes__
 
 <tr>
 <td>
-<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/ExceptionInfo](refs/cljs.core_ExceptionInfo.md)</samp></td>
-</tr>
-<tr>
-<td>
 <img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
 </td>
-<td><samp>[cljs.core/ex-cause](refs/cljs.core_ex-cause.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/ex-data](refs/cljs.core_ex-data.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/ex-info](refs/cljs.core_ex-info.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/ex-message](refs/cljs.core_ex-message.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-var-brightgreen.svg">
-</td>
-<td><samp>[cljs.reader/\*default-data-reader-fn\*](refs/cljs.reader_STARdefault-data-reader-fnSTAR.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
-</td>
-<td><samp>[cljs.reader/deregister-default-tag-parser!](refs/cljs.reader_deregister-default-tag-parserBANG.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
-</td>
-<td><samp>[cljs.reader/register-default-tag-parser!](refs/cljs.reader_register-default-tag-parserBANG.md)</samp></td>
+<td><samp>[cljs.core/comparator](refs/cljs.core_comparator.md)</samp></td>
 </tr>
 </table>
 
 __Compiler API Changes__
 
  <table>
-
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-var-red.svg">
-</td>
-<td><samp>[~~cljs.repl.rhino/loaded-libs~~](refs/cljs.repl.rhino_loaded-libs.md)</samp></td>
-</tr>
+<tr><td>_no symbols were added or removed in this version_</td></tr>
 </table>
 
 ---
@@ -1133,6 +1085,12 @@ application.
 <td><samp>[comp](refs/cljs.core_comp.md)</samp></td>
 <td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/comparator)</td>
+<td><samp>[comparator](refs/cljs.core_comparator.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1586"><img valign="middle" alt="[+] 0.0-1586" src="https://img.shields.io/badge/+-0.0--1586-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/compare)</td>

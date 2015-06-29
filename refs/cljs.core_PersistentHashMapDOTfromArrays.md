@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1576
+clojurescript @ r1586
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4777-4783](https://github.com/clojure/clojurescript/blob/r1576/src/cljs/cljs/core.cljs#L4777-L4783)</ins>
+            └── <ins>[core.cljs:4776-4782](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L4776-L4782)</ins>
 </pre>
 
 
@@ -61,9 +61,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_PersistentHashMapDOTfromArrays",
  :source {:code "(set! cljs.core.PersistentHashMap/fromArrays\n      (fn [ks vs]\n        (let [len (alength ks)]\n          (loop [i 0 out (transient cljs.core.PersistentHashMap/EMPTY)]\n            (if (< i len)\n              (recur (inc i) (assoc! out (aget ks i) (aget vs i)))\n              (persistent! out))))))",
           :repo "clojurescript",
-          :tag "r1576",
+          :tag "r1586",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [4777 4783]},
+          :lines [4776 4782]},
  :full-name "cljs.core/PersistentHashMap.fromArrays"}
 
 ```

@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1576
+clojurescript @ r1586
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:984-985](https://github.com/clojure/clojurescript/blob/r1576/src/cljs/cljs/core.cljs#L984-L985)</ins>
+            └── <ins>[core.cljs:984-985](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L984-L985)</ins>
 </pre>
 
 
@@ -78,7 +78,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_js-delete",
  :source {:code "(defn js-delete [obj key]\n  (js* \"delete ~{obj}[~{key}]\"))",
           :repo "clojurescript",
-          :tag "r1576",
+          :tag "r1586",
           :filename "src/cljs/cljs/core.cljs",
           :lines [984 985]},
  :examples [{:id "5b24ea",

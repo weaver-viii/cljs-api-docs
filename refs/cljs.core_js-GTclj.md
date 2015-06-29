@@ -76,11 +76,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1576
+clojurescript @ r1586
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6957-6963](https://github.com/clojure/clojurescript/blob/r1576/src/cljs/cljs/core.cljs#L6957-L6963)</ins>
+            └── <ins>[core.cljs:6956-6962](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L6956-L6962)</ins>
 </pre>
 
 
@@ -107,9 +107,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_js-GTclj",
  :source {:code "(defn js->clj\n  [x & opts]\n  (-js->clj x (apply array-map opts)))",
           :repo "clojurescript",
-          :tag "r1576",
+          :tag "r1586",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6957 6963]},
+          :lines [6956 6962]},
  :examples [{:id "61d263",
              :content "Parse a JSON string:\n\n```clj\n(def json \"{\\\"foo\\\": 1, \\\"bar\\\": 2, \\\"baz\\\": [1,2,3]}\")\n(def a (.parse js/JSON json))\n;;=> #js {:foo 1, :bar 2, :baz #js [1 2 3]}\n```\n\nConvert JSON data `a` to ClojureScript data:\n\n```clj\n(js->clj a)\n;;=> {\"foo\" 1, \"bar\" 2, \"baz\" [1 2 3]}\n\n(js->clj a :keywordize-keys true)\n;;=> {:foo 1, :bar 2, :baz [1 2 3]}\n```"}],
  :full-name "cljs.core/js->clj",

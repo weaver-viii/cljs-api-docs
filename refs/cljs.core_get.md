@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1576
+clojurescript @ r1586
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:831-836](https://github.com/clojure/clojurescript/blob/r1576/src/cljs/cljs/core.cljs#L831-L836)</ins>
+            └── <ins>[core.cljs:831-836](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L831-L836)</ins>
 </pre>
 
 
@@ -69,11 +69,11 @@ clojurescript @ r1576
 ```
 
  <pre>
-clojurescript @ r1576
+clojurescript @ r1586
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:358-362](https://github.com/clojure/clojurescript/blob/r1576/src/clj/cljs/core.clj#L358-L362)</ins>
+            └── <ins>[core.clj:358-362](https://github.com/clojure/clojurescript/blob/r1586/src/clj/cljs/core.clj#L358-L362)</ins>
 </pre>
 
 ---
@@ -99,12 +99,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_get",
  :source {:code "(defn get\n  ([o k]\n     (-lookup o k))\n  ([o k not-found]\n     (-lookup o k not-found)))",
           :repo "clojurescript",
-          :tag "r1576",
+          :tag "r1586",
           :filename "src/cljs/cljs/core.cljs",
           :lines [831 836]},
  :extra-sources ({:code "(defmacro get\n  ([coll k]\n     `(-lookup ~coll ~k nil))\n  ([coll k not-found]\n     `(-lookup ~coll ~k ~not-found)))",
                   :repo "clojurescript",
-                  :tag "r1576",
+                  :tag "r1586",
                   :filename "src/clj/cljs/core.clj",
                   :lines [358 362]}),
  :full-name "cljs.core/get",

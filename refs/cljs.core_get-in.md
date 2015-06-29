@@ -50,7 +50,7 @@ Source code:
 ```clj
 (defn get-in
   ([m ks]
-     (reduce get m ks))
+     (get-in m ks nil))
   ([m ks not-found]
      (loop [sentinel lookup-sentinel
             m m
@@ -66,11 +66,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1576
+clojurescript @ r1586
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2727-2746](https://github.com/clojure/clojurescript/blob/r1576/src/cljs/cljs/core.cljs#L2727-L2746)</ins>
+            └── <ins>[core.cljs:2727-2746](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L2727-L2746)</ins>
 </pre>
 
 
@@ -98,9 +98,9 @@ __Meta__ - To retrieve the API data for this symbol:
            "cljs.core/find"
            "cljs.core/get"],
  :full-name-encode "cljs.core_get-in",
- :source {:code "(defn get-in\n  ([m ks]\n     (reduce get m ks))\n  ([m ks not-found]\n     (loop [sentinel lookup-sentinel\n            m m\n            ks (seq ks)]\n       (if ks\n         (if (not (satisfies? ILookup m))\n           not-found\n           (let [m (get m (first ks) sentinel)]\n             (if (identical? sentinel m)\n               not-found\n               (recur sentinel m (next ks)))))\n         m))))",
+ :source {:code "(defn get-in\n  ([m ks]\n     (get-in m ks nil))\n  ([m ks not-found]\n     (loop [sentinel lookup-sentinel\n            m m\n            ks (seq ks)]\n       (if ks\n         (if (not (satisfies? ILookup m))\n           not-found\n           (let [m (get m (first ks) sentinel)]\n             (if (identical? sentinel m)\n               not-found\n               (recur sentinel m (next ks)))))\n         m))))",
           :repo "clojurescript",
-          :tag "r1576",
+          :tag "r1586",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2727 2746]},
  :full-name "cljs.core/get-in",

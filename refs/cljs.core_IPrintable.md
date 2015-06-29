@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1576
+clojurescript @ r1586
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:253-257](https://github.com/clojure/clojurescript/blob/r1576/src/cljs/cljs/core.cljs#L253-L257)</ins>
+            └── <ins>[core.cljs:253-257](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L253-L257)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IPrintable",
  :source {:code "(defprotocol ^:deprecated IPrintable\n  \"Do not use this.  It is kept for backwards compatibility with existing\n   user code that depends on it, but it has been superceded by IPrintWithWriter\n   User code that depends on this should be changed to use -pr-writer instead.\"\n  (-pr-seq [o opts]))",
           :repo "clojurescript",
-          :tag "r1576",
+          :tag "r1586",
           :filename "src/cljs/cljs/core.cljs",
           :lines [253 257]},
  :methods [{:name "-pr-seq", :signature ["[o opts]"], :docstring nil}],
