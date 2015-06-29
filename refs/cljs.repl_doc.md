@@ -59,16 +59,31 @@ Source code:
 
 ```clj
 (defmacro doc
-  [sym]
-  `(cljs.repl/print-doc (meta (var ~sym))))
+  [name]
+  (if-let [special-name ('{& fn catch try finally try} name)]
+    `(cljs.repl/print-doc (quote ~(special-doc special-name)))
+    (cond
+      (special-doc-map name)
+      `(cljs.repl/print-doc (quote ~(special-doc name)))
+
+      (ana-api/find-ns name)
+      `(cljs.repl/print-doc
+         (quote ~(select-keys (ana-api/find-ns name) [:name :doc])))
+
+      (ana-api/resolve &env name)
+      `(cljs.repl/print-doc
+         (quote ~(update-in
+                   (select-keys (ana-api/resolve &env name)
+                     [:ns :name :doc :forms :arglists])
+                   [:name] clojure.core/name))))))
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:771-774](https://github.com/clojure/clojurescript/blob/r2913/src/clj/cljs/repl.clj#L771-L774)</ins>
+            └── <ins>[repl.clj:887-905](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/repl.clj#L887-L905)</ins>
 </pre>
 
 
@@ -93,11 +108,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "macro",
  :related ["cljs.repl/find-doc" "cljs.core/meta" "special/var"],
  :full-name-encode "cljs.repl_doc",
- :source {:code "(defmacro doc\n  [sym]\n  `(cljs.repl/print-doc (meta (var ~sym))))",
+ :source {:code "(defmacro doc\n  [name]\n  (if-let [special-name ('{& fn catch try finally try} name)]\n    `(cljs.repl/print-doc (quote ~(special-doc special-name)))\n    (cond\n      (special-doc-map name)\n      `(cljs.repl/print-doc (quote ~(special-doc name)))\n\n      (ana-api/find-ns name)\n      `(cljs.repl/print-doc\n         (quote ~(select-keys (ana-api/find-ns name) [:name :doc])))\n\n      (ana-api/resolve &env name)\n      `(cljs.repl/print-doc\n         (quote ~(update-in\n                   (select-keys (ana-api/resolve &env name)\n                     [:ns :name :doc :forms :arglists])\n                   [:name] clojure.core/name))))))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/clj/cljs/repl.clj",
-          :lines [771 774]},
+          :lines [887 905]},
  :examples [{:id "4d2768",
              :content "```clj\n(doc map)\n;; Prints:\n;;  -------------------------\n;;  cljs.core/map\n;;  [f coll]\n;;    Returns a lazy sequence consisting of the result of applying f to\n;;    the set of first items of each coll, followed by applying f to the\n;;    set of second items in each coll, until any one of the colls is\n;;    exhausted.  Any remaining items in other colls are ignored. Function\n;;    f should accept number-of-colls arguments. Returns a transducer when\n;;    no collection is provided.\n;;\n;;=> nil\n```"}],
  :full-name "cljs.repl/doc",

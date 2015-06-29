@@ -41,11 +41,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:217-221](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/cljs/core.cljs#L217-L221)</ins>
+            └── <ins>[core.cljs:221-225](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L221-L225)</ins>
 </pre>
 
 
@@ -73,9 +73,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_into-array",
  :source {:code "(defn ^array into-array\n  ([aseq]\n     (into-array nil aseq))\n  ([type aseq]\n     (reduce (fn [a x] (.push a x) a) (array) aseq)))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [217 221]},
+          :lines [221 225]},
  :full-name "cljs.core/into-array",
  :clj-symbol "clojure.core/into-array"}
 

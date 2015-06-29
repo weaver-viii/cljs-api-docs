@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:51-57](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/cljs/core.cljs#L51-L57)</ins>
+            └── <ins>[core.cljs:55-61](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L55-L61)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_enable-console-printBANG",
  :source {:code "(defn enable-console-print!\n  []\n  (set! *print-newline* false)\n  (set! *print-fn*\n    (fn [& args]\n      (.apply (.-log js/console) js/console (into-array args)))))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [51 57]},
+          :lines [55 61]},
  :full-name "cljs.core/enable-console-print!",
  :docstring "Set *print-fn* to console.log"}
 

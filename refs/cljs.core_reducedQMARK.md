@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:903-906](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/cljs/core.cljs#L903-L906)</ins>
+            └── <ins>[core.cljs:907-910](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L907-L910)</ins>
 </pre>
 
 
@@ -65,9 +65,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_reducedQMARK",
  :source {:code "(defn ^boolean reduced?\n  [r]\n  (instance? Reduced r))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [903 906]},
+          :lines [907 910]},
  :full-name "cljs.core/reduced?",
  :clj-symbol "clojure.core/reduced?",
  :docstring "Returns true if x is the result of a call to reduced"}

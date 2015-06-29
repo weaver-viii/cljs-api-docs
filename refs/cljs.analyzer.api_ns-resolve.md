@@ -37,12 +37,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── clj
         └── cljs
             └── analyzer
-                └── <ins>[api.clj:44-49](https://github.com/clojure/clojurescript/blob/r2913/src/clj/cljs/analyzer/api.clj#L44-L49)</ins>
+                └── <ins>[api.clj:54-59](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/analyzer/api.clj#L54-L59)</ins>
 </pre>
 
 
@@ -67,9 +67,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.analyzer.api_ns-resolve",
  :source {:code "(defn ns-resolve\n  [ns sym]\n  {:pre [(symbol? ns) (symbol? sym)]}\n  (get-in @env/*compiler* [::ana/namespaces ns :defs sym]))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/clj/cljs/analyzer/api.clj",
-          :lines [44 49]},
+          :lines [54 59]},
  :full-name "cljs.analyzer.api/ns-resolve",
  :clj-symbol "clojure.core/ns-resolve",
  :docstring "Given a namespace and a symbol return the corresponding var analysis map.\nAnalagous to clojure.core/ns-resolve but returns var analysis map not Var."}

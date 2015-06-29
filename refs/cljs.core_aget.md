@@ -98,11 +98,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:196-201](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/cljs/core.cljs#L196-L201)</ins>
+            └── <ins>[core.cljs:200-205](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L200-L205)</ins>
 </pre>
 
 
@@ -118,11 +118,11 @@ clojurescript @ r2913
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:340-345](https://github.com/clojure/clojurescript/blob/r2913/src/clj/cljs/core.clj#L340-L345)</ins>
+            └── <ins>[core.clj:340-345](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/core.clj#L340-L345)</ins>
 </pre>
 
 ---
@@ -151,12 +151,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_aget",
  :source {:code "(defn aget\n  ([array i]\n     (cljs.core/aget array i))\n  ([array i & idxs]\n     (apply aget (aget array i) idxs)))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [196 201]},
+          :lines [200 205]},
  :extra-sources ({:code "(defmacro aget\n  ([a i]\n     (core/list 'js* \"(~{}[~{}])\" a i))\n  ([a i & idxs]\n     (let [astr (apply core/str (repeat (count idxs) \"[~{}]\"))]\n      `(~'js* ~(core/str \"(~{}[~{}]\" astr \")\") ~a ~i ~@idxs))))",
                   :repo "clojurescript",
-                  :tag "r2913",
+                  :tag "r2985",
                   :filename "src/clj/cljs/core.clj",
                   :lines [340 345]}),
  :examples [{:id "e36007",

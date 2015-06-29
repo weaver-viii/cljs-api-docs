@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:40](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/cljs/core.cljs#L40)</ins>
+            └── <ins>[core.cljs:44](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L44)</ins>
 </pre>
 
 
@@ -46,9 +46,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "dynamic var",
  :source {:code "(defonce ^:dynamic *loaded-libs* nil)",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [40]},
+          :lines [44]},
  :full-name "cljs.core/*loaded-libs*",
  :full-name-encode "cljs.core_STARloaded-libsSTAR",
  :history [["+" "0.0-2655"]]}

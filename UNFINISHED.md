@@ -88,7 +88,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.analyzer.api/ns-publics</td>
-<td></td>
+<td>[ref](refs/cljs.analyzer.api_ns-publics.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.analyzer.api_ns-publics.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1688,7 +1688,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/\*target\*</td>
-<td></td>
+<td>[ref](refs/cljs.core_STARtargetSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_STARtargetSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5848,7 +5848,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/IGetError</td>
-<td></td>
+<td>[ref](refs/cljs.repl_IGetError.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_IGetError.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5872,7 +5872,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/IParseErrorMessage</td>
-<td></td>
+<td>[ref](refs/cljs.repl_IParseErrorMessage.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_IParseErrorMessage.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5927,14 +5927,6 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 <td></td>
 </tr>
 <tr>
-<td>cljs.repl/apropos</td>
-<td></td>
-<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_apropos.cljsdoc)</td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-</tr>
-<tr>
 <td>cljs.repl/canonicalize-specs</td>
 <td></td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_canonicalize-specs.cljsdoc)</td>
@@ -5959,14 +5951,6 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 <td></td>
 </tr>
 <tr>
-<td>cljs.repl/dir</td>
-<td></td>
-<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_dir.cljsdoc)</td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-</tr>
-<tr>
 <td>cljs.repl/err-out</td>
 <td></td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_err-out.cljsdoc)</td>
@@ -5981,14 +5965,6 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 <td></td>
 <td></td>
 <td></td>
-</tr>
-<tr>
-<td>cljs.repl/find-doc</td>
-<td></td>
-<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_find-doc.cljsdoc)</td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 </tr>
 <tr>
 <td>cljs.repl/js-src->cljs-src</td>
@@ -6080,7 +6056,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/pst</td>
-<td></td>
+<td>[ref](refs/cljs.repl_pst.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_pst.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -6175,16 +6151,8 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 <td></td>
 </tr>
 <tr>
-<td>cljs.repl/source</td>
-<td></td>
-<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_source.cljsdoc)</td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-</tr>
-<tr>
 <td>cljs.repl/source-fn</td>
-<td></td>
+<td>[ref](refs/cljs.repl_source-fn.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_source-fn.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6200,7 +6168,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/special-doc-map</td>
-<td></td>
+<td>[ref](refs/cljs.repl_special-doc-map.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_special-doc-map.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6800,7 +6768,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.rhino/load-file</td>
-<td></td>
+<td>[ref](refs/cljs.repl.rhino_load-file.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.rhino_load-file.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6856,7 +6824,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.rhino/wrap-fn</td>
-<td></td>
+<td>[ref](refs/cljs.repl.rhino_wrap-fn.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.rhino_wrap-fn.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -8600,7 +8568,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>specialrepl/import</td>
-<td></td>
+<td>[ref](refs/specialrepl_import.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/specialrepl_import.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>

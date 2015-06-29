@@ -41,11 +41,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── cljs
         └── clojure
-            └── <ins>[walk.cljs:37-48](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/clojure/walk.cljs#L37-L48)</ins>
+            └── <ins>[walk.cljs:37-48](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/clojure/walk.cljs#L37-L48)</ins>
 </pre>
 
 
@@ -70,7 +70,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.walk_walk",
  :source {:code "(defn walk\n  [inner outer form]\n  (cond\n   (seq? form) (outer (doall (map inner form)))\n   (coll? form) (outer (into (empty form) (map inner form)))\n   :else (outer form)))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/cljs/clojure/walk.cljs",
           :lines [37 48]},
  :full-name "clojure.walk/walk",

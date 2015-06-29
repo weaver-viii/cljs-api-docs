@@ -61,11 +61,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:136-165](https://github.com/clojure/clojurescript/blob/r2913/src/clj/cljs/repl.clj#L136-L165)</ins>
+            └── <ins>[repl.clj:161-190](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/repl.clj#L161-L190)</ins>
 </pre>
 
 
@@ -90,9 +90,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_load-namespace",
  :source {:code "(defn load-namespace\n  ([repl-env sym] (load-namespace repl-env sym nil))\n  ([repl-env sym opts]\n   (let [sym      (if (and (seq? sym)\n                        (= (first sym) 'quote))\n                    (second sym)\n                    sym)\n         ;; TODO: add pre-condition to source-on-disk, the\n         ;; source must supply at least :url - David\n         sources  (cljsc/add-dependencies\n                    (merge (env->opts repl-env) opts)\n                    {:requires [(name sym)] :type :seed\n                     :url (:uri (cljsc/source-for-namespace\n                                  sym env/*compiler*))})\n         deps     (->> sources\n                    (remove (comp #{[\"goog\"]} :provides))\n                    (remove (comp #{:seed} :type))\n                    (map #(select-keys % [:provides :url])))]\n     (if (:output-dir opts)\n       ;; REPLs that read from :output-dir just need to add deps,\n       ;; environment will handle actual loading - David\n       (doseq [source (map #(cljsc/source-on-disk opts %) sources)]\n         (-evaluate repl-env \"<cljs repl>\" 1\n           (cljsc/add-dep-string opts source)))\n       ;; REPLs that stream must manually load each dep - David\n       (doseq [{:keys [url provides]} deps]\n         (-load repl-env provides url))))))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/clj/cljs/repl.clj",
-          :lines [136 165]},
+          :lines [161 190]},
  :full-name "cljs.repl/load-namespace",
  :docstring "Load a namespace and all of its dependencies into the evaluation environment.\nThe environment is responsible for ensuring that each namespace is loaded once and\nonly once."}
 

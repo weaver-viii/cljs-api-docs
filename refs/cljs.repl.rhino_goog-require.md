@@ -1,10 +1,10 @@
-## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> cljs.repl.rhino/goog-require
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> ~~cljs.repl.rhino/goog-require~~
 
  <table border="1">
 <tr>
 
 <td>function</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2985"><img valign="middle" alt="[×] 0.0-2985" src="https://img.shields.io/badge/×-0.0--2985-red.svg"></a> </td>
 </tr>
 </table>
 
@@ -80,16 +80,17 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.repl.rhino",
  :name "goog-require",
- :type "function",
  :signature ["[repl-env opts rule]"],
+ :history [["+" "0.0-927"] ["-" "0.0-2985"]],
+ :type "function",
+ :full-name-encode "cljs.repl.rhino_goog-require",
  :source {:code "(defn goog-require [repl-env opts rule]\n  (let [path        (string/replace (comp/munge rule) \\. File/separatorChar)\n        output-dir  (util/output-directory opts)\n        cljsc-path  (str output-dir File/separator (str path \".js\"))\n        cljs-path   (str path \".cljs\")\n        gpath       (-eval (str \"goog.dependencies_.nameToPath['\" rule \"']\")\n                      repl-env \"<cljs repl>\" 1)\n        js-path     (str \"goog/\" gpath)\n        js-out-path (io/file output-dir \"goog\"\n                      (string/replace gpath \\/ File/separatorChar))]\n    (let [compiled (io/file cljsc-path)]\n      (if (.exists compiled)\n        ;; TODO: only take this path if analysis cache is available\n        ;; - David\n        (do\n          (with-open [reader (io/reader compiled)]\n            (-eval reader repl-env cljsc-path 1)))\n        (if-let [res (io/resource cljs-path)]\n          (binding [ana/*cljs-ns* 'cljs.user]\n            (repl/load-stream repl-env cljs-path res))\n          (if-let [res (io/resource js-path)]\n            (with-open [reader (io/reader res)]\n              (-eval reader repl-env js-path 1))\n            (if (.exists js-out-path)\n              (with-open [reader (io/reader js-out-path)]\n                (-eval reader repl-env js-path 1))\n              (throw\n               (Exception.\n                 (str \"Cannot find \"\n                   cljs-path \" or \"\n                   js-path \" or \"\n                   (.getName js-out-path) \" in classpath\"))))))))))",
           :repo "clojurescript",
           :tag "r2913",
           :filename "src/clj/cljs/repl/rhino.clj",
           :lines [78 109]},
  :full-name "cljs.repl.rhino/goog-require",
- :full-name-encode "cljs.repl.rhino_goog-require",
- :history [["+" "0.0-927"]]}
+ :removed {:in "0.0-2985", :last-seen "0.0-2913"}}
 
 ```
 

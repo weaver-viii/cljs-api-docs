@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3304-3307](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/cljs/core.cljs#L3304-L3307)</ins>
+            └── <ins>[core.cljs:3307-3310](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L3307-L3310)</ins>
 </pre>
 
 
@@ -77,9 +77,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_not-everyQMARK",
  :source {:code "(defn ^boolean not-every?\n  [pred coll] (not (every? pred coll)))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3304 3307]},
+          :lines [3307 3310]},
  :full-name "cljs.core/not-every?",
  :clj-symbol "clojure.core/not-every?",
  :docstring "Returns false if (pred x) is logical true for every x in\ncoll, else true."}

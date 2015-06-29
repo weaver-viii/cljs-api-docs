@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5324-5331](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/cljs/core.cljs#L5324-L5331)</ins>
+            └── <ins>[core.cljs:5327-5334](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L5327-L5334)</ins>
 </pre>
 
 
@@ -59,9 +59,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[arr i cnt]"],
  :source {:code "(deftype PersistentArrayMapIterator [arr ^:mutable i cnt]\n  Object\n  (hasNext [_]\n    (< i cnt))\n  (next [_]\n    (let [ret [(aget arr i) (aget arr (inc i))]]\n      (set! i (+ i 2))\n      ret)))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [5324 5331]},
+          :lines [5327 5334]},
  :full-name "cljs.core/PersistentArrayMapIterator",
  :full-name-encode "cljs.core_PersistentArrayMapIterator",
  :history [["+" "0.0-2371"]]}

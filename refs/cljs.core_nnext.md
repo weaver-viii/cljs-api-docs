@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1167-1170](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/cljs/core.cljs#L1167-L1170)</ins>
+            └── <ins>[core.cljs:1171-1174](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L1171-L1174)</ins>
 </pre>
 
 
@@ -74,9 +74,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_nnext",
  :source {:code "(defn nnext\n  [coll]\n  (next (next coll)))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1167 1170]},
+          :lines [1171 1174]},
  :full-name "cljs.core/nnext",
  :clj-symbol "clojure.core/nnext",
  :docstring "Same as (next (next x))"}

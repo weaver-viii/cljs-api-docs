@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8568-8578](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/cljs/core.cljs#L8568-L8578)</ins>
+            └── <ins>[core.cljs:8571-8581](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L8571-L8581)</ins>
 </pre>
 
 
@@ -67,9 +67,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_cat",
  :source {:code "(defn cat\n  [rf]\n  (let [rf1 (preserving-reduced rf)]  \n    (fn\n      ([] (rf))\n      ([result] (rf result))\n      ([result input]\n         (reduce rf1 result input)))))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [8568 8578]},
+          :lines [8571 8581]},
  :full-name "cljs.core/cat",
  :docstring "A transducer which concatenates the contents of each input, which must be a\ncollection, into the reduction."}
 

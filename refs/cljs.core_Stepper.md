@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3131-3142](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/cljs/core.cljs#L3131-L3142)</ins>
+            └── <ins>[core.cljs:3134-3145](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L3134-L3145)</ins>
 </pre>
 
 
@@ -63,9 +63,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[xform iter]"],
  :source {:code "(deftype Stepper [xform iter]\n  Object\n  (step [this lt]\n    (loop []\n      (if (and (not (nil? (.-stepper lt)))\n               (.hasNext iter))\n        (if (reduced? (xform lt (.next iter)))\n          (when-not (nil? (.-rest lt))\n            (set! (.. lt -rest -stepper) nil))\n          (recur))))\n    (when-not (nil? (.-stepper lt))\n      (xform lt))))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3131 3142]},
+          :lines [3134 3145]},
  :full-name "cljs.core/Stepper",
  :full-name-encode "cljs.core_Stepper",
  :history [["+" "0.0-2301"]]}

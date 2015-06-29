@@ -11,10 +11,25 @@
 </tr>
 </table>
 
+ <samp>
+(__new__ Constructor. args\*)<br>
+</samp>
+ <samp>
+(__new__ Constructor args\*)<br>
+</samp>
+
+---
 
 
 
 
+Source docstring:
+
+```
+The args, if any, are evaluated from left to right, and
+passed to the JavaScript constructor. The constructed object is
+returned.
+```
 
 Source code:
 
@@ -49,11 +64,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:1017-1043](https://github.com/clojure/clojurescript/blob/r2913/src/clj/cljs/analyzer.clj#L1017-L1043)</ins>
+            └── <ins>[analyzer.clj:1030-1056](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/analyzer.clj#L1030-L1056)</ins>
 </pre>
 
 
@@ -72,16 +87,18 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "special",
  :name "new",
+ :signature ["[Constructor. args*]" "[Constructor args*]"],
+ :history [["+" "0.0-927"]],
  :type "special form",
+ :full-name-encode "special_new",
  :source {:code "(defmethod parse 'new\n  [_ env [_ ctor & args :as form] _ _]\n  (when-not (symbol? ctor) \n    (throw (error env \"First arg to new must be a symbol\")))\n  (disallowing-recur\n   (let [enve (assoc env :context :expr)\n         ctorexpr (analyze enve ctor)\n         ctor-var (resolve-existing-var env ctor)\n         record-args\n         (when (and (:record ctor-var) (not (-> ctor meta :internal-ctor)))\n           (repeat 3 (analyze enve nil)))\n         argexprs (into (vec (map #(analyze enve %) args)) record-args)\n         known-num-fields (:num-fields ctor-var)\n         argc (count args)]\n     (when (and (not (-> ctor meta :internal-ctor))\n                known-num-fields (not= known-num-fields argc))\n       (warning :fn-arity env {:argc argc :ctor ctor}))\n     {:env env :op :new :form form :ctor ctorexpr :args argexprs\n      :children (into [ctorexpr] argexprs)\n      :tag (let [name (-> ctorexpr :info :name)]\n             (or ('{js/Object object\n                    js/String string\n                    js/Array  array\n                    js/Number number\n                    js/Function function\n                    js/Boolean boolean} name)\n                 name))})))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [1017 1043]},
+          :lines [1030 1056]},
  :full-name "special/new",
- :full-name-encode "special_new",
  :clj-symbol "clojure.core/new",
- :history [["+" "0.0-927"]]}
+ :docstring "The args, if any, are evaluated from left to right, and\npassed to the JavaScript constructor. The constructed object is\nreturned."}
 
 ```
 

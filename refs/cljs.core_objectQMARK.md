@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:108-111](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/cljs/core.cljs#L108-L111)</ins>
+            └── <ins>[core.cljs:112-115](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L112-L115)</ins>
 </pre>
 
 
@@ -68,9 +68,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_objectQMARK",
  :source {:code "(defn ^boolean object? [x]\n  (if-not (nil? x)\n    (identical? (.-constructor x) js/Object)\n    false))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [108 111]},
+          :lines [112 115]},
  :full-name "cljs.core/object?"}
 
 ```

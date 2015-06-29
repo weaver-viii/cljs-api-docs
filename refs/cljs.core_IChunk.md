@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:400-401](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/cljs/core.cljs#L400-L401)</ins>
+            └── <ins>[core.cljs:404-405](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L404-L405)</ins>
 </pre>
 
 
@@ -52,9 +52,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IChunk",
  :source {:code "(defprotocol IChunk\n  (-drop-first [coll]))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [400 401]},
+          :lines [404 405]},
  :methods [{:name "-drop-first",
             :signature ["[coll]"],
             :docstring nil}],

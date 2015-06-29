@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:189-195](https://github.com/clojure/clojurescript/blob/r2913/src/clj/cljs/repl.clj#L189-L195)</ins>
+            └── <ins>[repl.clj:214-220](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/repl.clj#L214-L220)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_ns-info",
  :source {:code "(defn ns-info\n  [f]\n  (let [f' (js-src->cljs-src f)]\n    (when (.exists f')\n      (ana/parse-ns f'))))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/clj/cljs/repl.clj",
-          :lines [189 195]},
+          :lines [214 220]},
  :full-name "cljs.repl/ns-info",
  :docstring "Given a path to a js source file return the ns info for the corresponding\nClojureScript file if it exists."}
 

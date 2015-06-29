@@ -11,10 +11,22 @@
 </tr>
 </table>
 
+ <samp>
+(__recur__ exprs\*)<br>
+</samp>
+
+---
 
 
 
 
+Source docstring:
+
+```
+Evaluates the exprs in order, then, in parallel, rebinds
+the bindings of the recursion point to the values of the exprs.
+Execution then jumps back to the recursion point, a loop or fn method.
+```
 
 Source code:
 
@@ -36,11 +48,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:998-1011](https://github.com/clojure/clojurescript/blob/r2913/src/clj/cljs/analyzer.clj#L998-L1011)</ins>
+            └── <ins>[analyzer.clj:1011-1024](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/analyzer.clj#L1011-L1024)</ins>
 </pre>
 
 
@@ -59,16 +71,18 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "special",
  :name "recur",
+ :signature ["[exprs*]"],
+ :history [["+" "0.0-927"]],
  :type "special form",
+ :full-name-encode "special_recur",
  :source {:code "(defmethod parse 'recur\n  [op env [_ & exprs :as form] _ _]\n  (let [context (:context env)\n        frame (first *recur-frames*)\n        exprs (disallowing-recur (vec (map #(analyze (assoc env :context :expr) %) exprs)))]\n    (when-not frame \n      (throw (error env \"Can't recur here\")))\n    (when-not (= (count exprs) (count (:params frame))) \n      (throw (error env \"recur argument count mismatch\")))\n    (reset! (:flag frame) true)\n    (assoc {:env env :op :recur :form form}\n      :frame frame\n      :exprs exprs\n      :children exprs)))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [998 1011]},
+          :lines [1011 1024]},
  :full-name "special/recur",
- :full-name-encode "special_recur",
  :clj-symbol "clojure.core/recur",
- :history [["+" "0.0-927"]]}
+ :docstring "Evaluates the exprs in order, then, in parallel, rebinds\nthe bindings of the recursion point to the values of the exprs.\nExecution then jumps back to the recursion point, a loop or fn method."}
 
 ```
 

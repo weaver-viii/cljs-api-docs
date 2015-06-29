@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8607-8618](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/cljs/core.cljs#L8607-L8618)</ins>
+            └── <ins>[core.cljs:8610-8621](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L8610-L8621)</ins>
 </pre>
 
 
@@ -63,9 +63,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[xform coll]"],
  :source {:code "(deftype Eduction [xform coll]\n   ISequential\n   \n   ISeqable\n   (-seq [_] (seq (sequence xform coll)))\n\n   IReduce\n   (-reduce [_ f init] (transduce xform f init coll))\n\n   IPrintWithWriter\n   (-pr-writer [coll writer opts]\n     (pr-sequential-writer writer pr-writer \"(\" \" \" \")\" opts coll)))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [8607 8618]},
+          :lines [8610 8621]},
  :full-name "cljs.core/Eduction",
  :full-name-encode "cljs.core_Eduction",
  :history [["+" "0.0-2371"]]}

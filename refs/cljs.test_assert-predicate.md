@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2913
+clojurescript @ r2985
 └── src
     └── clj
         └── cljs
-            └── <ins>[test.clj:24-42](https://github.com/clojure/clojurescript/blob/r2913/src/clj/cljs/test.clj#L24-L42)</ins>
+            └── <ins>[test.clj:24-42](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/test.clj#L24-L42)</ins>
 </pre>
 
 
@@ -79,7 +79,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_assert-predicate",
  :source {:code "(defn assert-predicate\n  [msg form]\n  (let [args (rest form)\n        pred (first form)]\n    `(let [values# (list ~@args)\n           result# (apply ~pred values#)]\n       (if result#\n         (cljs.test/do-report\n           {:type :pass, :message ~msg,\n            :expected '~form, :actual (cons ~pred values#)})\n         (cljs.test/do-report\n           {:type :fail, :message ~msg,\n            :expected '~form, :actual (list '~'not (cons '~pred values#))}))\n       result#)))",
           :repo "clojurescript",
-          :tag "r2913",
+          :tag "r2985",
           :filename "src/clj/cljs/test.clj",
           :lines [24 42]},
  :full-name "cljs.test/assert-predicate",
