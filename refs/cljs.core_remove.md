@@ -52,11 +52,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1843
+clojurescript @ r1844
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2905-2909](https://github.com/clojure/clojurescript/blob/r1843/src/cljs/cljs/core.cljs#L2905-L2909)</ins>
+            └── <ins>[core.cljs:2905-2909](https://github.com/clojure/clojurescript/blob/r1844/src/cljs/cljs/core.cljs#L2905-L2909)</ins>
 </pre>
 
 
@@ -83,7 +83,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_remove",
  :source {:code "(defn remove\n  [pred coll]\n  (filter (complement pred) coll))",
           :repo "clojurescript",
-          :tag "r1843",
+          :tag "r1844",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2905 2909]},
  :full-name "cljs.core/remove",

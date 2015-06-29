@@ -33,11 +33,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1843
+clojurescript @ r1844
 └── src
     └── cljs
         └── clojure
-            └── <ins>[reflect.cljs:32-36](https://github.com/clojure/clojurescript/blob/r1843/src/cljs/clojure/reflect.cljs#L32-L36)</ins>
+            └── <ins>[reflect.cljs:32-36](https://github.com/clojure/clojurescript/blob/r1844/src/cljs/clojure/reflect.cljs#L32-L36)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.reflect_macroexpand",
  :source {:code "(defn macroexpand\n  [form]\n  (query-reflection (str \"macroform=\" (js/encodeURIComponent (str form))) println))",
           :repo "clojurescript",
-          :tag "r1843",
+          :tag "r1844",
           :filename "src/cljs/clojure/reflect.cljs",
           :lines [32 36]},
  :full-name "clojure.reflect/macroexpand",

@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1843
+clojurescript @ r1844
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4164-4168](https://github.com/clojure/clojurescript/blob/r1843/src/cljs/cljs/core.cljs#L4164-L4168)</ins>
+            └── <ins>[core.cljs:4164-4168](https://github.com/clojure/clojurescript/blob/r1844/src/cljs/cljs/core.cljs#L4164-L4168)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_PersistentArrayMapDOTfromArray",
  :source {:code "(set! cljs.core.PersistentArrayMap/fromArray\n  (fn [arr ^boolean no-clone]\n    (let [arr (if no-clone arr (aclone arr))] \n      (let [cnt (/ (alength arr) 2)]\n        (PersistentArrayMap. nil cnt arr nil)))))",
           :repo "clojurescript",
-          :tag "r1843",
+          :tag "r1844",
           :filename "src/cljs/cljs/core.cljs",
           :lines [4164 4168]},
  :full-name "cljs.core/PersistentArrayMap.fromArray"}

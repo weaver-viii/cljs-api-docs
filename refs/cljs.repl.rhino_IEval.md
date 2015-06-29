@@ -21,12 +21,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1843
+clojurescript @ r1844
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[rhino.clj:25-26](https://github.com/clojure/clojurescript/blob/r1843/src/clj/cljs/repl/rhino.clj#L25-L26)</ins>
+                └── <ins>[rhino.clj:25-26](https://github.com/clojure/clojurescript/blob/r1844/src/clj/cljs/repl/rhino.clj#L25-L26)</ins>
 </pre>
 
 
@@ -49,7 +49,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.rhino_IEval",
  :source {:code "(defprotocol IEval\n  (-eval [this env filename line]))",
           :repo "clojurescript",
-          :tag "r1843",
+          :tag "r1844",
           :filename "src/clj/cljs/repl/rhino.clj",
           :lines [25 26]},
  :methods [{:name "-eval",

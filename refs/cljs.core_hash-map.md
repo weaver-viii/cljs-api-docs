@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1843
+clojurescript @ r1844
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5707-5714](https://github.com/clojure/clojurescript/blob/r1843/src/cljs/cljs/core.cljs#L5707-L5714)</ins>
+            └── <ins>[core.cljs:5707-5714](https://github.com/clojure/clojurescript/blob/r1844/src/cljs/cljs/core.cljs#L5707-L5714)</ins>
 </pre>
 
 
@@ -81,7 +81,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash-map",
  :source {:code "(defn hash-map\n  [& keyvals]\n  (loop [in (seq keyvals), out (transient cljs.core.PersistentHashMap/EMPTY)]\n    (if in\n      (recur (nnext in) (assoc! out (first in) (second in)))\n      (persistent! out))))",
           :repo "clojurescript",
-          :tag "r1843",
+          :tag "r1844",
           :filename "src/cljs/cljs/core.cljs",
           :lines [5707 5714]},
  :full-name "cljs.core/hash-map",

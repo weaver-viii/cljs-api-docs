@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1843
+clojurescript @ r1844
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:458-467](https://github.com/clojure/clojurescript/blob/r1843/src/clj/cljs/analyzer.clj#L458-L467)</ins>
+            └── <ins>[analyzer.clj:460-469](https://github.com/clojure/clojurescript/blob/r1844/src/clj/cljs/analyzer.clj#L460-L469)</ins>
 </pre>
 
 
@@ -58,9 +58,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "special form",
  :source {:code "(defmethod parse 'do\n  [op env [_ & exprs :as form] _]\n  (let [statements (disallowing-recur\n                     (seq (map #(analyze (assoc env :context :statement) %) (butlast exprs))))\n        ret (if (<= (count exprs) 1)\n              (analyze env (first exprs))\n              (analyze (assoc env :context (if (= :statement (:context env)) :statement :return)) (last exprs)))]\n    {:env env :op :do :form form\n     :statements statements :ret ret\n     :children (conj (vec statements) ret)}))",
           :repo "clojurescript",
-          :tag "r1843",
+          :tag "r1844",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [458 467]},
+          :lines [460 469]},
  :full-name "special/do",
  :full-name-encode "special_do",
  :clj-symbol "clojure.core/do",

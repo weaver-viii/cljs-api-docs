@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1843
+clojurescript @ r1844
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:189-192](https://github.com/clojure/clojurescript/blob/r1843/src/cljs/clojure/zip.cljs#L189-L192)</ins>
+            └── <ins>[zip.cljs:189-192](https://github.com/clojure/clojurescript/blob/r1844/src/cljs/clojure/zip.cljs#L189-L192)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_edit",
  :source {:code "(defn edit\n  [loc f & args]\n    (replace loc (apply f (node loc) args)))",
           :repo "clojurescript",
-          :tag "r1843",
+          :tag "r1844",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [189 192]},
  :full-name "clojure.zip/edit",

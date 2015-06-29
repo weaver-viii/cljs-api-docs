@@ -80,11 +80,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1843
+clojurescript @ r1844
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1843-1895](https://github.com/clojure/clojurescript/blob/r1843/src/cljs/cljs/core.cljs#L1843-L1895)</ins>
+            └── <ins>[core.cljs:1843-1895](https://github.com/clojure/clojurescript/blob/r1844/src/cljs/cljs/core.cljs#L1843-L1895)</ins>
 </pre>
 
 
@@ -109,7 +109,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_List",
  :source {:code "(deftype List [meta first rest count ^:mutable __hash]\n  Object\n  (toString [coll]\n    (pr-str* coll))\n\n  IList\n\n  IWithMeta\n  (-with-meta [coll meta] (List. meta first rest count __hash))\n\n  IMeta\n  (-meta [coll] meta)\n\n  ASeq\n  ISeq\n  (-first [coll] first)\n  (-rest [coll]\n    (if (== count 1)\n      ()\n      rest))\n\n  INext\n  (-next [coll]\n    (if (== count 1)\n      nil\n      rest))\n\n  IStack\n  (-peek [coll] first)\n  (-pop [coll] (-rest coll))\n\n  ICollection\n  (-conj [coll o] (List. meta o coll (inc count) nil))\n\n  IEmptyableCollection\n  (-empty [coll] cljs.core.List/EMPTY)\n\n  ISequential\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  IHash\n  (-hash [coll] (caching-hash coll hash-coll __hash))\n\n  ISeqable\n  (-seq [coll] coll)\n\n  ICounted\n  (-count [coll] count)\n\n  IReduce\n  (-reduce [col f] (seq-reduce f col))\n  (-reduce [col f start] (seq-reduce f start col)))",
           :repo "clojurescript",
-          :tag "r1843",
+          :tag "r1844",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1843 1895]},
  :full-name "cljs.core/List",

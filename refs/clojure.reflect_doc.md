@@ -33,11 +33,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1843
+clojurescript @ r1844
 └── src
     └── cljs
         └── clojure
-            └── <ins>[reflect.cljs:44-48](https://github.com/clojure/clojurescript/blob/r1843/src/cljs/clojure/reflect.cljs#L44-L48)</ins>
+            └── <ins>[reflect.cljs:44-48](https://github.com/clojure/clojurescript/blob/r1844/src/cljs/clojure/reflect.cljs#L44-L48)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.reflect_doc",
  :source {:code "(defn doc\n  [sym]\n  (meta sym print-doc))",
           :repo "clojurescript",
-          :tag "r1843",
+          :tag "r1844",
           :filename "src/cljs/clojure/reflect.cljs",
           :lines [44 48]},
  :full-name "clojure.reflect/doc",
