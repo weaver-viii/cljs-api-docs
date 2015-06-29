@@ -56,11 +56,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1909
+clojurescript @ r1913
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2810-2817](https://github.com/clojure/clojurescript/blob/r1909/src/cljs/cljs/core.cljs#L2810-L2817)</ins>
+            └── <ins>[core.cljs:2810-2817](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/core.cljs#L2810-L2817)</ins>
 </pre>
 
 
@@ -90,7 +90,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_take",
  :source {:code "(defn take\n  [n coll]\n  (lazy-seq\n   (when (pos? n)\n     (when-let [s (seq coll)]\n      (cons (first s) (take (dec n) (rest s)))))))",
           :repo "clojurescript",
-          :tag "r1909",
+          :tag "r1913",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2810 2817]},
  :full-name "cljs.core/take",

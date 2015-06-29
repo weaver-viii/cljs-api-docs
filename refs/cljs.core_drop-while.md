@@ -56,11 +56,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1909
+clojurescript @ r1913
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2843-2852](https://github.com/clojure/clojurescript/blob/r1909/src/cljs/cljs/core.cljs#L2843-L2852)</ins>
+            └── <ins>[core.cljs:2843-2852](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/core.cljs#L2843-L2852)</ins>
 </pre>
 
 
@@ -87,7 +87,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_drop-while",
  :source {:code "(defn drop-while\n  [pred coll]\n  (let [step (fn [pred coll]\n               (let [s (seq coll)]\n                 (if (and s (pred (first s)))\n                   (recur pred (rest s))\n                   s)))]\n    (lazy-seq (step pred coll))))",
           :repo "clojurescript",
-          :tag "r1909",
+          :tag "r1913",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2843 2852]},
  :full-name "cljs.core/drop-while",

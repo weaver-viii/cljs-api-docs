@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1909
+clojurescript @ r1913
 └── src
     └── cljs
         └── clojure
-            └── <ins>[string.cljs:45-51](https://github.com/clojure/clojurescript/blob/r1909/src/cljs/clojure/string.cljs#L45-L51)</ins>
+            └── <ins>[string.cljs:45-51](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/clojure/string.cljs#L45-L51)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.string_join",
  :source {:code "(defn join\n  ([coll]\n     (apply str coll))\n  ([separator coll]\n     (apply str (interpose separator coll))))",
           :repo "clojurescript",
-          :tag "r1909",
+          :tag "r1913",
           :filename "src/cljs/clojure/string.cljs",
           :lines [45 51]},
  :full-name "clojure.string/join",

@@ -53,11 +53,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1909
+clojurescript @ r1913
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6909-6918](https://github.com/clojure/clojurescript/blob/r1909/src/cljs/cljs/core.cljs#L6909-L6918)</ins>
+            └── <ins>[core.cljs:6909-6918](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/core.cljs#L6909-L6918)</ins>
 </pre>
 
 
@@ -86,7 +86,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_resetBANG",
  :source {:code "(defn reset!\n  [a new-value]\n  (when-let [validate (.-validator a)]\n    (assert (validate new-value) \"Validator rejected reference state\"))\n  (let [old-value (.-state a)]\n    (set! (.-state a) new-value)\n    (-notify-watches a old-value new-value))\n  new-value)",
           :repo "clojurescript",
-          :tag "r1909",
+          :tag "r1913",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6909 6918]},
  :full-name "cljs.core/reset!",

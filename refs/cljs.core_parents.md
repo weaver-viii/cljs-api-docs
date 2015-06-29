@@ -41,11 +41,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1909
+clojurescript @ r1913
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7223-7229](https://github.com/clojure/clojurescript/blob/r1909/src/cljs/cljs/core.cljs#L7223-L7229)</ins>
+            └── <ins>[core.cljs:7223-7229](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/core.cljs#L7223-L7229)</ins>
 </pre>
 
 
@@ -70,7 +70,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_parents",
  :source {:code "(defn parents\n  ([tag] (parents @(get-global-hierarchy) tag))\n  ([h tag] (not-empty (get (:parents h) tag))))",
           :repo "clojurescript",
-          :tag "r1909",
+          :tag "r1913",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7223 7229]},
  :full-name "cljs.core/parents",

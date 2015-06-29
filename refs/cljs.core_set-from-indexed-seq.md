@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1909
+clojurescript @ r1913
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6175-6179](https://github.com/clojure/clojurescript/blob/r1909/src/cljs/cljs/core.cljs#L6175-L6179)</ins>
+            └── <ins>[core.cljs:6175-6179](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/core.cljs#L6175-L6179)</ins>
 </pre>
 
 
@@ -56,7 +56,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[iseq]"],
  :source {:code "(defn set-from-indexed-seq [iseq]\n  (let [arr (.-arr iseq)\n        ret (areduce arr i ^not-native res (-as-transient #{})\n              (-conj! res (aget arr i)))]\n    (-persistent! ^not-native ret)))",
           :repo "clojurescript",
-          :tag "r1909",
+          :tag "r1913",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6175 6179]},
  :full-name "cljs.core/set-from-indexed-seq",

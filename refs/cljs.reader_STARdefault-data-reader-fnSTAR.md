@@ -21,11 +21,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1909
+clojurescript @ r1913
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:538-539](https://github.com/clojure/clojurescript/blob/r1909/src/cljs/cljs/reader.cljs#L538-L539)</ins>
+            └── <ins>[reader.cljs:538-539](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/reader.cljs#L538-L539)</ins>
 </pre>
 
 
@@ -47,7 +47,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def *default-data-reader-fn*\n  (atom nil))",
           :repo "clojurescript",
-          :tag "r1909",
+          :tag "r1913",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [538 539]},
  :full-name "cljs.reader/*default-data-reader-fn*",

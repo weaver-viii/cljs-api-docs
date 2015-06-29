@@ -57,11 +57,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1909
+clojurescript @ r1913
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6507-6518](https://github.com/clojure/clojurescript/blob/r1909/src/cljs/cljs/core.cljs#L6507-L6518)</ins>
+            └── <ins>[core.cljs:6507-6518](https://github.com/clojure/clojurescript/blob/r1913/src/cljs/cljs/core.cljs#L6507-L6518)</ins>
 </pre>
 
 
@@ -88,7 +88,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_dorun",
  :source {:code "(defn dorun\n  ([coll]\n   (when (seq coll)\n     (recur (next coll))))\n  ([n coll]\n   (when (and (seq coll) (pos? n))\n     (recur (dec n) (next coll)))))",
           :repo "clojurescript",
-          :tag "r1909",
+          :tag "r1913",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6507 6518]},
  :full-name "cljs.core/dorun",
