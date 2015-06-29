@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2342
+clojurescript @ r2356
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:438-439](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L438-L439)</ins>
+            └── <ins>[core.cljs:441-442](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/core.cljs#L441-L442)</ins>
 </pre>
 
 
@@ -56,9 +56,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_m3-mix-K1",
  :source {:code "(defn ^number m3-mix-K1 [k1]\n  (-> k1 (imul m3-C1) (int-rotate-left 15) (imul m3-C2)))",
           :repo "clojurescript",
-          :tag "r2342",
+          :tag "r2356",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [438 439]},
+          :lines [441 442]},
  :full-name "cljs.core/m3-mix-K1"}
 
 ```

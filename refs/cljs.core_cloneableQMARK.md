@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2342
+clojurescript @ r2356
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:611-612](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L611-L612)</ins>
+            └── <ins>[core.cljs:617-618](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/core.cljs#L617-L618)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[value]"],
  :source {:code "(defn cloneable? [value]\n  (satisfies? ICloneable value))",
           :repo "clojurescript",
-          :tag "r2342",
+          :tag "r2356",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [611 612]},
+          :lines [617 618]},
  :full-name "cljs.core/cloneable?",
  :full-name-encode "cljs.core_cloneableQMARK",
  :history [["+" "0.0-2156"]]}

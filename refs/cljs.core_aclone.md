@@ -64,11 +64,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2342
+clojurescript @ r2356
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:157-164](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L157-L164)</ins>
+            └── <ins>[core.cljs:157-164](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/core.cljs#L157-L164)</ins>
 </pre>
 
 
@@ -95,7 +95,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_aclone",
  :source {:code "(defn aclone\n  [arr]\n  (let [len (alength arr)\n        new-arr (make-array len)]\n    (dotimes [i len]\n      (aset new-arr i (aget arr i)))\n    new-arr))",
           :repo "clojurescript",
-          :tag "r2342",
+          :tag "r2356",
           :filename "src/cljs/cljs/core.cljs",
           :lines [157 164]},
  :examples [{:id "422c4e",

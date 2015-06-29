@@ -66,7 +66,7 @@ Source code:
                   (apply merge-with merge m (map (spec-parsers k) libs)))
                 {} (remove (fn [[r]] (= r :refer-clojure)) args))]
     (when (and *analyze-deps* (seq @deps))
-      (analyze-deps name @deps env))
+      (analyze-deps name @deps env opts))
     (when (seq uses)
       (check-uses uses env))
     (set! *cljs-ns* name)
@@ -89,11 +89,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2342
+clojurescript @ r2356
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:1149-1198](https://github.com/clojure/clojurescript/blob/r2342/src/clj/cljs/analyzer.clj#L1149-L1198)</ins>
+            └── <ins>[analyzer.clj:1151-1200](https://github.com/clojure/clojurescript/blob/r2356/src/clj/cljs/analyzer.clj#L1151-L1200)</ins>
 </pre>
 
 
@@ -117,11 +117,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "special form",
  :full-name-encode "special_ns",
- :source {:code "(defmethod parse 'ns\n  [_ env [_ name & args :as form] _ opts]\n  (when-not (symbol? name) \n    (throw (error env \"Namespaces must be named by a symbol.\")))\n  (let [docstring (if (string? (first args)) (first args))\n        args      (if docstring (next args) args)\n        metadata  (if (map? (first args)) (first args))\n        args      (desugar-ns-specs (if metadata (next args) args))\n        name      (vary-meta name merge metadata)\n        excludes  (parse-ns-excludes env args)\n        deps      (atom #{})\n        aliases   (atom {:fns #{} :macros #{}})\n        spec-parsers {:require        (partial parse-require-spec env false deps aliases)\n                      :require-macros (partial parse-require-spec env true deps aliases)\n                      :use            (comp (partial parse-require-spec env false deps aliases)\n                                            (partial use->require env))\n                      :use-macros     (comp (partial parse-require-spec env true deps aliases)\n                                            (partial use->require env))\n                      :import         (partial parse-import-spec env deps)}\n        valid-forms (atom #{:use :use-macros :require :require-macros :import})\n        {uses :use requires :require use-macros :use-macros require-macros :require-macros imports :import :as params}\n        (reduce (fn [m [k & libs]]\n                  (when-not (#{:use :use-macros :require :require-macros :import} k)\n                    (throw (error env \"Only :refer-clojure, :require, :require-macros, :use and :use-macros libspecs supported\")))\n                  (when-not (@valid-forms k)\n                    (throw (error env (str \"Only one \" k \" form is allowed per namespace definition\"))))\n                  (swap! valid-forms disj k)\n                  (apply merge-with merge m (map (spec-parsers k) libs)))\n                {} (remove (fn [[r]] (= r :refer-clojure)) args))]\n    (when (and *analyze-deps* (seq @deps))\n      (analyze-deps name @deps env))\n    (when (seq uses)\n      (check-uses uses env))\n    (set! *cljs-ns* name)\n    (load-core)\n    (doseq [nsym (concat (vals require-macros) (vals use-macros))]\n      (clojure.core/require nsym))\n    (when (seq use-macros)\n      (check-use-macros use-macros env))\n    (swap! env/*compiler* update-in [::namespaces name] assoc\n      :name name\n      :doc docstring\n      :excludes excludes\n      :uses uses\n      :requires requires\n      :use-macros use-macros\n      :require-macros require-macros\n      :imports imports)\n    {:env env :op :ns :form form :name name :doc docstring :uses uses :requires requires :imports imports\n     :use-macros use-macros :require-macros require-macros :excludes excludes}))",
+ :source {:code "(defmethod parse 'ns\n  [_ env [_ name & args :as form] _ opts]\n  (when-not (symbol? name) \n    (throw (error env \"Namespaces must be named by a symbol.\")))\n  (let [docstring (if (string? (first args)) (first args))\n        args      (if docstring (next args) args)\n        metadata  (if (map? (first args)) (first args))\n        args      (desugar-ns-specs (if metadata (next args) args))\n        name      (vary-meta name merge metadata)\n        excludes  (parse-ns-excludes env args)\n        deps      (atom #{})\n        aliases   (atom {:fns #{} :macros #{}})\n        spec-parsers {:require        (partial parse-require-spec env false deps aliases)\n                      :require-macros (partial parse-require-spec env true deps aliases)\n                      :use            (comp (partial parse-require-spec env false deps aliases)\n                                            (partial use->require env))\n                      :use-macros     (comp (partial parse-require-spec env true deps aliases)\n                                            (partial use->require env))\n                      :import         (partial parse-import-spec env deps)}\n        valid-forms (atom #{:use :use-macros :require :require-macros :import})\n        {uses :use requires :require use-macros :use-macros require-macros :require-macros imports :import :as params}\n        (reduce (fn [m [k & libs]]\n                  (when-not (#{:use :use-macros :require :require-macros :import} k)\n                    (throw (error env \"Only :refer-clojure, :require, :require-macros, :use and :use-macros libspecs supported\")))\n                  (when-not (@valid-forms k)\n                    (throw (error env (str \"Only one \" k \" form is allowed per namespace definition\"))))\n                  (swap! valid-forms disj k)\n                  (apply merge-with merge m (map (spec-parsers k) libs)))\n                {} (remove (fn [[r]] (= r :refer-clojure)) args))]\n    (when (and *analyze-deps* (seq @deps))\n      (analyze-deps name @deps env opts))\n    (when (seq uses)\n      (check-uses uses env))\n    (set! *cljs-ns* name)\n    (load-core)\n    (doseq [nsym (concat (vals require-macros) (vals use-macros))]\n      (clojure.core/require nsym))\n    (when (seq use-macros)\n      (check-use-macros use-macros env))\n    (swap! env/*compiler* update-in [::namespaces name] assoc\n      :name name\n      :doc docstring\n      :excludes excludes\n      :uses uses\n      :requires requires\n      :use-macros use-macros\n      :require-macros require-macros\n      :imports imports)\n    {:env env :op :ns :form form :name name :doc docstring :uses uses :requires requires :imports imports\n     :use-macros use-macros :require-macros require-macros :excludes excludes}))",
           :repo "clojurescript",
-          :tag "r2342",
+          :tag "r2356",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [1149 1198]},
+          :lines [1151 1200]},
  :full-name "special/ns",
  :clj-symbol "clojure.core/ns"}
 

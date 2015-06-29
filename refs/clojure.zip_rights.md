@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2342
+clojurescript @ r2356
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:92-95](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/clojure/zip.cljs#L92-L95)</ins>
+            └── <ins>[zip.cljs:92-95](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/clojure/zip.cljs#L92-L95)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_rights",
  :source {:code "(defn rights\n  [loc]\n    (:r (loc 1)))",
           :repo "clojurescript",
-          :tag "r2342",
+          :tag "r2356",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [92 95]},
  :full-name "clojure.zip/rights",

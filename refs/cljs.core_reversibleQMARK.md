@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2342
+clojurescript @ r2356
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2232-2233](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L2232-L2233)</ins>
+            └── <ins>[core.cljs:2238-2239](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/core.cljs#L2238-L2239)</ins>
 </pre>
 
 
@@ -65,9 +65,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_reversibleQMARK",
  :source {:code "(defn ^boolean reversible? [coll]\n  (satisfies? IReversible coll))",
           :repo "clojurescript",
-          :tag "r2342",
+          :tag "r2356",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2232 2233]},
+          :lines [2238 2239]},
  :full-name "cljs.core/reversible?",
  :clj-symbol "clojure.core/reversible?"}
 

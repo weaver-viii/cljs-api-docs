@@ -712,7 +712,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/IIterable</td>
-<td></td>
+<td>[ref](refs/cljs.core_IIterable.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_IIterable.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2976,7 +2976,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/iterable?</td>
-<td></td>
+<td>[ref](refs/cljs.core_iterableQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_iterableQMARK.cljsdoc)</td>
 <td></td>
 <td></td>

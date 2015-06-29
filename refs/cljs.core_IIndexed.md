@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2342
+clojurescript @ r2356
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:246-247](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L246-L247)</ins>
+            └── <ins>[core.cljs:246-247](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/core.cljs#L246-L247)</ins>
 </pre>
 
 
@@ -52,7 +52,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IIndexed",
  :source {:code "(defprotocol IIndexed\n  (-nth [coll n] [coll n not-found]))",
           :repo "clojurescript",
-          :tag "r2342",
+          :tag "r2356",
           :filename "src/cljs/cljs/core.cljs",
           :lines [246 247]},
  :methods [{:name "-nth",
