@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3191
+clojurescript @ r3195
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:627-631](https://github.com/clojure/clojurescript/blob/r3191/src/cljs/cljs/core.cljs#L627-L631)</ins>
+            └── <ins>[core.cljs:627-631](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/cljs/core.cljs#L627-L631)</ins>
 </pre>
 
 
@@ -57,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IVolatile",
  :source {:code "(defprotocol IVolatile\n  \"Protocol for adding volatile functionality.\"\n  (-vreset! [o new-value]\n    \"Sets the value of volatile o to new-value without regard for the\n     current value. Returns new-value.\"))",
           :repo "clojurescript",
-          :tag "r3191",
+          :tag "r3195",
           :filename "src/cljs/cljs/core.cljs",
           :lines [627 631]},
  :methods [{:name "-vreset!",

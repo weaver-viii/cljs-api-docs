@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3191
+clojurescript @ r3195
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:633-636](https://github.com/clojure/clojurescript/blob/r3191/src/cljs/cljs/core.cljs#L633-L636)</ins>
+            └── <ins>[core.cljs:633-636](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/cljs/core.cljs#L633-L636)</ins>
 </pre>
 
 
@@ -56,7 +56,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IIterable",
  :source {:code "(defprotocol IIterable\n  \"Protocol for iterating over a collection.\"\n  (-iterator [coll]\n    \"Returns an iterator for coll.\"))",
           :repo "clojurescript",
-          :tag "r3191",
+          :tag "r3195",
           :filename "src/cljs/cljs/core.cljs",
           :lines [633 636]},
  :methods [{:name "-iterator",

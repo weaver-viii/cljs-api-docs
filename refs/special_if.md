@@ -76,11 +76,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3191
+clojurescript @ r3195
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:675-685](https://github.com/clojure/clojurescript/blob/r3191/src/clj/cljs/analyzer.clj#L675-L685)</ins>
+            └── <ins>[analyzer.clj:689-699](https://github.com/clojure/clojurescript/blob/r3195/src/clj/cljs/analyzer.clj#L689-L699)</ins>
 </pre>
 
 
@@ -110,9 +110,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "special_if",
  :source {:code "(defmethod parse 'if\n  [op env [_ test then else :as form] name _]\n  (when (< (count form) 3)\n    (throw (error env \"Too few arguments to if\")))\n  (let [test-expr (disallowing-recur (analyze (assoc env :context :expr) test))\n        then-expr (allowing-redef (analyze env then))\n        else-expr (allowing-redef (analyze env else))]\n    {:env env :op :if :form form\n     :test test-expr :then then-expr :else else-expr\n     :unchecked @*unchecked-if*\n     :children [test-expr then-expr else-expr]}))",
           :repo "clojurescript",
-          :tag "r3191",
+          :tag "r3195",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [675 685]},
+          :lines [689 699]},
  :examples [{:id "e591ff",
              :content "```clj\n(def v [1 2])\n\n(if (empty? v) \"empty!\" \"filled!\")\n;;=> \"filled!\"\n\n(str \"This vector is \"\n  (if (empty? v) \"empty!\" \"filled!\"))\n;;=> \"This vector is filled!\"\n```"}],
  :full-name "special/if",

@@ -32,12 +32,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3191
+clojurescript @ r3195
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[net.cljs:81-84](https://github.com/clojure/clojurescript/blob/r3191/src/cljs/clojure/browser/net.cljs#L81-L84)</ins>
+                └── <ins>[net.cljs:81-84](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/clojure/browser/net.cljs#L81-L84)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.net_xhr-connection",
  :source {:code "(defn xhr-connection\n  []\n  (XhrIo.))",
           :repo "clojurescript",
-          :tag "r3191",
+          :tag "r3195",
           :filename "src/cljs/clojure/browser/net.cljs",
           :lines [81 84]},
  :full-name "clojure.browser.net/xhr-connection",

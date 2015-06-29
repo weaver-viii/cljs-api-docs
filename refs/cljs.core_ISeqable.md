@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3191
+clojurescript @ r3195
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:482-485](https://github.com/clojure/clojurescript/blob/r3191/src/cljs/cljs/core.cljs#L482-L485)</ins>
+            └── <ins>[core.cljs:482-485](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/cljs/core.cljs#L482-L485)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ISeqable",
  :source {:code "(defprotocol ISeqable\n  \"Protocol for adding the ability to a type to be transformed into a sequence.\"\n  (^clj-or-nil -seq [o]\n    \"Returns a seq of o, or nil if o is empty.\"))",
           :repo "clojurescript",
-          :tag "r3191",
+          :tag "r3195",
           :filename "src/cljs/cljs/core.cljs",
           :lines [482 485]},
  :methods [{:name "-seq",

@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3191
+clojurescript @ r3195
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:87-97](https://github.com/clojure/clojurescript/blob/r3191/src/cljs/cljs/core.cljs#L87-L97)</ins>
+            └── <ins>[core.cljs:87-97](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/cljs/core.cljs#L87-L97)</ins>
 </pre>
 
 
@@ -73,7 +73,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_STARprint-levelSTAR",
  :source {:code "(def\n  ^{:dynamic true\n    :doc \"*print-level* controls how many levels deep the printer will\n  print nested objects. If it is bound to logical false, there is no\n  limit. Otherwise, it must be bound to an integer indicating the maximum\n  level to print. Each argument to print is at level 0; if an argument is a\n  collection, its items are at level 1; and so on. If an object is a\n  collection and is at a level greater than or equal to the value bound to\n  *print-level*, the printer prints '#' to represent it. The root binding\n  is nil indicating no limit.\"}\n  *print-level* nil)",
           :repo "clojurescript",
-          :tag "r3191",
+          :tag "r3195",
           :filename "src/cljs/cljs/core.cljs",
           :lines [87 97]},
  :full-name "cljs.core/*print-level*",

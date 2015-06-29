@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3191
+clojurescript @ r3195
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8558-8562](https://github.com/clojure/clojurescript/blob/r3191/src/cljs/cljs/core.cljs#L8558-L8562)</ins>
+            └── <ins>[core.cljs:8558-8562](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/cljs/core.cljs#L8558-L8562)</ins>
 </pre>
 
 
@@ -56,7 +56,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[objs writer opts]"],
  :source {:code "(defn pr-seq-writer [objs writer opts]\n  (pr-writer (first objs) writer opts)\n  (doseq [obj (next objs)]\n    (-write writer \" \")\n    (pr-writer obj writer opts)))",
           :repo "clojurescript",
-          :tag "r3191",
+          :tag "r3195",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8558 8562]},
  :full-name "cljs.core/pr-seq-writer",

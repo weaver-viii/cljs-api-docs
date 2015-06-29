@@ -39,11 +39,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3191
+clojurescript @ r3195
 └── src
     └── cljs
         └── clojure
-            └── <ins>[string.cljs:21-25](https://github.com/clojure/clojurescript/blob/r3191/src/cljs/clojure/string.cljs#L21-L25)</ins>
+            └── <ins>[string.cljs:21-25](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/clojure/string.cljs#L21-L25)</ins>
 </pre>
 
 
@@ -69,7 +69,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.string_reverse",
  :source {:code "(defn reverse\n  [s]\n  (-> (.replace s re-surrogate-pair \"$2$1\")\n      (.. (split \"\") (reverse) (join \"\"))))",
           :repo "clojurescript",
-          :tag "r3191",
+          :tag "r3195",
           :filename "src/cljs/clojure/string.cljs",
           :lines [21 25]},
  :full-name "clojure.string/reverse",

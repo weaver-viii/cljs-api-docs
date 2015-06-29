@@ -48,11 +48,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3191
+clojurescript @ r3195
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7982-7989](https://github.com/clojure/clojurescript/blob/r3191/src/cljs/cljs/core.cljs#L7982-L7989)</ins>
+            └── <ins>[core.cljs:7982-7989](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/cljs/core.cljs#L7982-L7989)</ins>
 </pre>
 
 
@@ -78,7 +78,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_name",
  :source {:code "(defn name\n  [x]\n  (if (implements? INamed x)\n    (-name ^not-native x)\n    (if (string? x)\n      x\n      (throw (js/Error. (str \"Doesn't support name: \" x))))))",
           :repo "clojurescript",
-          :tag "r3191",
+          :tag "r3195",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7982 7989]},
  :full-name "cljs.core/name",

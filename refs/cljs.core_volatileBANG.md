@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3191
+clojurescript @ r3195
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3892-3895](https://github.com/clojure/clojurescript/blob/r3191/src/cljs/cljs/core.cljs#L3892-L3895)</ins>
+            └── <ins>[core.cljs:3892-3895](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/cljs/core.cljs#L3892-L3895)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_volatileBANG",
  :source {:code "(defn volatile!\n  [val]\n  (Volatile. val))",
           :repo "clojurescript",
-          :tag "r3191",
+          :tag "r3195",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3892 3895]},
  :full-name "cljs.core/volatile!",

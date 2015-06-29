@@ -20,12 +20,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3191
+clojurescript @ r3195
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:25](https://github.com/clojure/clojurescript/blob/r3191/src/clj/cljs/repl/browser.clj#L25)</ins>
+                └── <ins>[browser.clj:25](https://github.com/clojure/clojurescript/blob/r3195/src/clj/cljs/repl/browser.clj#L25)</ins>
 </pre>
 
 
@@ -47,7 +47,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "dynamic var",
  :source {:code "(def ^:dynamic es nil)",
           :repo "clojurescript",
-          :tag "r3191",
+          :tag "r3195",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [25]},
  :full-name "cljs.repl.browser/es",

@@ -25,12 +25,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3191
+clojurescript @ r3195
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[event.cljs:94](https://github.com/clojure/clojurescript/blob/r3191/src/cljs/clojure/browser/event.cljs#L94)</ins>
+                └── <ins>[event.cljs:94](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/clojure/browser/event.cljs#L94)</ins>
 </pre>
 
 
@@ -53,7 +53,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[event-type]"],
  :source {:code "(defn unique-event-id [event-type])",
           :repo "clojurescript",
-          :tag "r3191",
+          :tag "r3195",
           :filename "src/cljs/clojure/browser/event.cljs",
           :lines [94]},
  :full-name "clojure.browser.event/unique-event-id",

@@ -62,11 +62,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3191
+clojurescript @ r3195
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2378-2381](https://github.com/clojure/clojurescript/blob/r3191/src/cljs/cljs/core.cljs#L2378-L2381)</ins>
+            └── <ins>[core.cljs:2378-2381](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/cljs/core.cljs#L2378-L2381)</ins>
 </pre>
 
 
@@ -78,11 +78,11 @@ clojurescript @ r3191
 ```
 
  <pre>
-clojurescript @ r3191
+clojurescript @ r3195
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:587-588](https://github.com/clojure/clojurescript/blob/r3191/src/clj/cljs/core.clj#L587-L588)</ins>
+            └── <ins>[core.clj:587-588](https://github.com/clojure/clojurescript/blob/r3195/src/clj/cljs/core.clj#L587-L588)</ins>
 </pre>
 
 ---
@@ -108,12 +108,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-flip",
  :source {:code "(defn bit-flip\n  [x n]\n  (cljs.core/bit-flip x n))",
           :repo "clojurescript",
-          :tag "r3191",
+          :tag "r3195",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2378 2381]},
  :extra-sources ({:code "(defmacro ^::ana/numeric bit-flip [x n]\n  (core/list 'js* \"(~{} ^ (1 << ~{}))\" x n))",
                   :repo "clojurescript",
-                  :tag "r3191",
+                  :tag "r3195",
                   :filename "src/clj/cljs/core.clj",
                   :lines [587 588]}),
  :examples [{:id "5d7ee0",

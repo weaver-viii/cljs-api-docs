@@ -33,12 +33,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3191
+clojurescript @ r3195
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[dom.cljs:92-96](https://github.com/clojure/clojurescript/blob/r3191/src/cljs/clojure/browser/dom.cljs#L92-L96)</ins>
+                └── <ins>[dom.cljs:92-96](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/clojure/browser/dom.cljs#L92-L96)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.dom_remove-children",
  :source {:code "(defn remove-children\n  [id]\n  (let [parent (gdom/getElement (name id))]\n    (do (gdom/removeChildren parent))))",
           :repo "clojurescript",
-          :tag "r3191",
+          :tag "r3195",
           :filename "src/cljs/clojure/browser/dom.cljs",
           :lines [92 96]},
  :full-name "clojure.browser.dom/remove-children",
