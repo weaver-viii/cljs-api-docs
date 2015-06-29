@@ -5,6 +5,9 @@
 
 <td>function</td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[+] 0.0-2371" src="https://img.shields.io/badge/+-0.0--2371-lightgrey.svg"></a> </td>
+<td>
+[<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.core/eduction</samp>](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/eduction)
+</td>
 </tr>
 </table>
 
@@ -34,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8940-8945](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L8940-L8945)</ins>
+            └── <ins>[core.cljs:8940-8945](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/core.cljs#L8940-L8945)</ins>
 </pre>
 
 
@@ -63,10 +66,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_eduction",
  :source {:code "(defn eduction\n  [xform coll]\n  (Eduction. xform coll))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8940 8945]},
  :full-name "cljs.core/eduction",
+ :clj-symbol "clojure.core/eduction",
  :docstring "Returns a reducible/iterable/seqable application of\nthe transducer to the items in coll. Note that these applications\t\nwill be performed every time iterator/seq/reduce is called."}
 
 ```

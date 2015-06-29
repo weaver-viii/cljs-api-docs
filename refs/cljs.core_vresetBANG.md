@@ -5,6 +5,9 @@
 
 <td>function</td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2496"><img valign="middle" alt="[+] 0.0-2496" src="https://img.shields.io/badge/+-0.0--2496-lightgrey.svg"></a> </td>
+<td>
+[<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.core/vreset!</samp>](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/vreset!)
+</td>
 </tr>
 </table>
 
@@ -32,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3901-3904](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L3901-L3904)</ins>
+            └── <ins>[core.cljs:3901-3904](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/core.cljs#L3901-L3904)</ins>
 </pre>
 
 
@@ -61,10 +64,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_vresetBANG",
  :source {:code "(defn vreset!\n  [vol newval]  (-vreset! vol newval))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3901 3904]},
  :full-name "cljs.core/vreset!",
+ :clj-symbol "clojure.core/vreset!",
  :docstring "Sets the value of volatile to newval without regard for the\ncurrent value. Returns newval."}
 
 ```

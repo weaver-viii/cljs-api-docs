@@ -64,11 +64,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.6.0
+clojure @ clojure-1.7.0-alpha6
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:1721-1739](https://github.com/clojure/clojure/blob/clojure-1.6.0/src/clj/clojure/core.clj#L1721-L1739)</ins>
+            └── <ins>[core.clj:1725-1743](https://github.com/clojure/clojure/blob/clojure-1.7.0-alpha6/src/clj/clojure/core.clj#L1725-L1743)</ins>
 </pre>
 
 
@@ -95,9 +95,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_if-let",
  :source {:code "(defmacro if-let\n  ([bindings then]\n   `(if-let ~bindings ~then nil))\n  ([bindings then else & oldform]\n   (assert-args\n     (vector? bindings) \"a vector for its binding\"\n     (nil? oldform) \"1 or 2 forms after binding vector\"\n     (= 2 (count bindings)) \"exactly 2 forms in binding vector\")\n   (let [form (bindings 0) tst (bindings 1)]\n     `(let [temp# ~tst]\n        (if temp#\n          (let [~form temp#]\n            ~then)\n          ~else)))))",
           :repo "clojure",
-          :tag "clojure-1.6.0",
+          :tag "clojure-1.7.0-alpha6",
           :filename "src/clj/clojure/core.clj",
-          :lines [1721 1739]},
+          :lines [1725 1743]},
  :full-name "cljs.core/if-let",
  :clj-symbol "clojure.core/if-let",
  :docstring "bindings => binding-form test\n\nIf test is true, evaluates then with binding-form bound to the value of \ntest, if not, yields else"}

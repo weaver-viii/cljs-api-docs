@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:590-593](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L590-L593)</ins>
+            └── <ins>[core.cljs:590-593](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/core.cljs#L590-L593)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IChunk",
  :source {:code "(defprotocol IChunk\n  \"Protocol for accessing the items of a chunk.\"\n  (-drop-first [coll]\n    \"Return a new chunk of coll with the first item removed.\"))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/cljs/cljs/core.cljs",
           :lines [590 593]},
  :methods [{:name "-drop-first",

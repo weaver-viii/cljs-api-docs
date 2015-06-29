@@ -5,6 +5,9 @@
 
 <td>function</td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2496"><img valign="middle" alt="[+] 0.0-2496" src="https://img.shields.io/badge/+-0.0--2496-lightgrey.svg"></a> </td>
+<td>
+[<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.core/volatile!</samp>](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/volatile!)
+</td>
 </tr>
 </table>
 
@@ -32,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3892-3895](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L3892-L3895)</ins>
+            └── <ins>[core.cljs:3892-3895](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/core.cljs#L3892-L3895)</ins>
 </pre>
 
 
@@ -61,10 +64,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_volatileBANG",
  :source {:code "(defn volatile!\n  [val]\n  (Volatile. val))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3892 3895]},
  :full-name "cljs.core/volatile!",
+ :clj-symbol "clojure.core/volatile!",
  :docstring "Creates and returns a Volatile with an initial value of val."}
 
 ```

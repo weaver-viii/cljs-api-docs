@@ -5,6 +5,9 @@
 
 <td>function</td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2411"><img valign="middle" alt="[+] 0.0-2411" src="https://img.shields.io/badge/+-0.0--2411-lightgrey.svg"></a> </td>
+<td>
+[<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.core/update</samp>](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/update)
+</td>
 </tr>
 </table>
 
@@ -55,11 +58,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4423-4437](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L4423-L4437)</ins>
+            └── <ins>[core.cljs:4423-4437](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/core.cljs#L4423-L4437)</ins>
 </pre>
 
 
@@ -88,10 +91,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_update",
  :source {:code "(defn update\n  ([m k f]\n   (assoc m k (f (get m k))))\n  ([m k f x]\n   (assoc m k (f (get m k) x)))\n  ([m k f x y]\n   (assoc m k (f (get m k) x y)))\n  ([m k f x y z]\n   (assoc m k (f (get m k) x y z)))\n  ([m k f x y z & more]\n   (assoc m k (apply f (get m k) x y z more))))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/cljs/cljs/core.cljs",
           :lines [4423 4437]},
  :full-name "cljs.core/update",
+ :clj-symbol "clojure.core/update",
  :docstring "'Updates' a value in an associative structure, where k is a\nkey and f is a function that will take the old value\nand any supplied args and return the new value, and returns a new\nstructure.  If the key does not exist, nil is passed as the old value."}
 
 ```

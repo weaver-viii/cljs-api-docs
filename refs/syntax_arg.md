@@ -42,13 +42,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.16
+tools.reader @ tools.reader-0.9.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:588-607](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.16/src/main/clojure/clojure/tools/reader.clj#L588-L607)</ins>
+                    └── <ins>[reader.clj:729-748](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.0/src/main/clojure/clojure/tools/reader.clj#L729-L748)</ins>
 </pre>
 
 
@@ -56,7 +56,7 @@ tools.reader @ tools.reader-0.8.16
 
 ```clj
 (defn- read-arg
-  [rdr pct]
+  [rdr pct opts pending-forms]
   (if-not (thread-bound? #'arg-env)
     (read-symbol rdr pct)
     (let [ch (peek-char rdr)]
@@ -71,20 +71,20 @@ tools.reader @ tools.reader-0.8.16
            (register-arg -1))
 
        :else
-       (let [n (read rdr true nil true)]
+       (let [n (read* rdr true nil opts pending-forms)]
          (if-not (integer? n)
            (throw (IllegalStateException. "Arg literal must be %, %& or %integer"))
            (register-arg n)))))))
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.16
+tools.reader @ tools.reader-0.9.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:412-431](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.16/src/main/clojure/clojure/tools/reader.clj#L412-L431)</ins>
+                    └── <ins>[reader.clj:544-563](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.0/src/main/clojure/clojure/tools/reader.clj#L544-L563)</ins>
 </pre>
 
 ---
@@ -107,14 +107,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_arg",
  :source {:code "(defn- macros [ch]\n  (case ch\n    \\\" read-string*\n    \\: read-keyword\n    \\; read-comment\n    \\' (wrapping-reader 'quote)\n    \\@ (wrapping-reader 'clojure.core/deref)\n    \\^ read-meta\n    \\` read-syntax-quote ;;(wrapping-reader 'syntax-quote)\n    \\~ read-unquote\n    \\( read-list\n    \\) read-unmatched-delimiter\n    \\[ read-vector\n    \\] read-unmatched-delimiter\n    \\{ read-map\n    \\} read-unmatched-delimiter\n    \\\\ read-char*\n    \\% read-arg\n    \\# read-dispatch\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.16",
+          :tag "tools.reader-0.9.0",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [588 607]},
- :extra-sources [{:code "(defn- read-arg\n  [rdr pct]\n  (if-not (thread-bound? #'arg-env)\n    (read-symbol rdr pct)\n    (let [ch (peek-char rdr)]\n      (cond\n       (or (whitespace? ch)\n           (macro-terminating? ch)\n           (nil? ch))\n       (register-arg 1)\n\n       (identical? ch \\&)\n       (do (read-char rdr)\n           (register-arg -1))\n\n       :else\n       (let [n (read rdr true nil true)]\n         (if-not (integer? n)\n           (throw (IllegalStateException. \"Arg literal must be %, %& or %integer\"))\n           (register-arg n)))))))",
+          :lines [729 748]},
+ :extra-sources [{:code "(defn- read-arg\n  [rdr pct opts pending-forms]\n  (if-not (thread-bound? #'arg-env)\n    (read-symbol rdr pct)\n    (let [ch (peek-char rdr)]\n      (cond\n       (or (whitespace? ch)\n           (macro-terminating? ch)\n           (nil? ch))\n       (register-arg 1)\n\n       (identical? ch \\&)\n       (do (read-char rdr)\n           (register-arg -1))\n\n       :else\n       (let [n (read* rdr true nil opts pending-forms)]\n         (if-not (integer? n)\n           (throw (IllegalStateException. \"Arg literal must be %, %& or %integer\"))\n           (register-arg n)))))))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.8.16",
+                  :tag "tools.reader-0.9.0",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [412 431]}],
+                  :lines [544 563]}],
  :syntax-form "%",
  :full-name "syntax/arg",
  :clj-doc "http://clojure.org/reader#toc2"}

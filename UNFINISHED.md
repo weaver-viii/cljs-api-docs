@@ -8632,7 +8632,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>syntax/cond</td>
-<td></td>
+<td>[ref](refs/syntax_cond.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/syntax_cond.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -8640,7 +8640,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>syntax/cond-splicing</td>
-<td></td>
+<td>[ref](refs/syntax_cond-splicing.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/syntax_cond-splicing.cljsdoc)</td>
 <td></td>
 <td></td>

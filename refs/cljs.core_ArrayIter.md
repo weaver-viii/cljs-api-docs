@@ -5,6 +5,9 @@
 
 <td>type</td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2301"><img valign="middle" alt="[+] 0.0-2301" src="https://img.shields.io/badge/+-0.0--2301-lightgrey.svg"></a> </td>
+<td>
+[<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.lang/ArrayIter</samp>](https://github.com/clojure/clojure/blob//src/jvm/clojure/lang/ArrayIter.java)
+</td>
 </tr>
 </table>
 
@@ -32,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3365-3372](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L3365-L3372)</ins>
+            └── <ins>[core.cljs:3365-3372](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/core.cljs#L3365-L3372)</ins>
 </pre>
 
 
@@ -55,16 +58,17 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "ArrayIter",
- :type "type",
  :signature ["[arr i]"],
+ :history [["+" "0.0-2301"]],
+ :type "type",
+ :full-name-encode "cljs.core_ArrayIter",
  :source {:code "(deftype ArrayIter [arr ^:mutable i]\n  Object\n  (hasNext [_] (< i (alength arr)))\n  (next [_]\n    (let [ret (aget arr i)]\n      (set! i (inc i))\n      ret))\n  (remove [_] (js/Error. \"Unsupported operation\")))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3365 3372]},
  :full-name "cljs.core/ArrayIter",
- :full-name-encode "cljs.core_ArrayIter",
- :history [["+" "0.0-2301"]]}
+ :clj-symbol "clojure.lang/ArrayIter"}
 
 ```
 

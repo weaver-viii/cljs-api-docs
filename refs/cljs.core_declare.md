@@ -56,11 +56,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.6.0
+clojure @ clojure-1.7.0-alpha6
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:2795-2798](https://github.com/clojure/clojure/blob/clojure-1.6.0/src/clj/clojure/core.clj#L2795-L2798)</ins>
+            └── <ins>[core.clj:2643-2646](https://github.com/clojure/clojure/blob/clojure-1.7.0-alpha6/src/clj/clojure/core.clj#L2643-L2646)</ins>
 </pre>
 
 
@@ -87,9 +87,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_declare",
  :source {:code "(defmacro declare\n  [& names] `(do ~@(map #(list 'def (vary-meta % assoc :declared true)) names)))",
           :repo "clojure",
-          :tag "clojure-1.6.0",
+          :tag "clojure-1.7.0-alpha6",
           :filename "src/clj/clojure/core.clj",
-          :lines [2795 2798]},
+          :lines [2643 2646]},
  :examples [{:id "5a2dc2",
              :content "```clj\na\n;; WARNING: Use of undeclared Var\n\n(declare a)\na\n;;=> nil\n```"}],
  :full-name "cljs.core/declare",

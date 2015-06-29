@@ -5,6 +5,9 @@
 
 <td>function</td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2411"><img valign="middle" alt="[+] 0.0-2411" src="https://img.shields.io/badge/+-0.0--2411-lightgrey.svg"></a> </td>
+<td>
+[<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.core/ensure-reduced</samp>](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/ensure-reduced)
+</td>
 </tr>
 </table>
 
@@ -32,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1140-1143](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L1140-L1143)</ins>
+            └── <ins>[core.cljs:1140-1143](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/core.cljs#L1140-L1143)</ins>
 </pre>
 
 
@@ -61,10 +64,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ensure-reduced",
  :source {:code "(defn ensure-reduced\n  [x]\n  (if (reduced? x) x (reduced x)))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1140 1143]},
  :full-name "cljs.core/ensure-reduced",
+ :clj-symbol "clojure.core/ensure-reduced",
  :docstring "If x is already reduced?, returns it, else returns (reduced x)"}
 
 ```

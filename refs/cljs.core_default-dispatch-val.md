@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:9480-9482](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L9480-L9482)</ins>
+            └── <ins>[core.cljs:9480-9482](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/core.cljs#L9480-L9482)</ins>
 </pre>
 
 
@@ -60,7 +60,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_default-dispatch-val",
  :source {:code "(defn default-dispatch-val\n  [multifn] (-default-dispatch-val multifn))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/cljs/cljs/core.cljs",
           :lines [9480 9482]},
  :full-name "cljs.core/default-dispatch-val",

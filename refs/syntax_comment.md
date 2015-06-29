@@ -69,13 +69,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.16
+tools.reader @ tools.reader-0.9.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:588-607](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.16/src/main/clojure/clojure/tools/reader.clj#L588-L607)</ins>
+                    └── <ins>[reader.clj:729-748](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.0/src/main/clojure/clojure/tools/reader.clj#L729-L748)</ins>
 </pre>
 
 
@@ -88,7 +88,7 @@ tools.reader @ tools.reader-0.8.16
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.16
+tools.reader @ tools.reader-0.9.0
 └── src
     └── main
         └── clojure
@@ -96,7 +96,7 @@ tools.reader @ tools.reader-0.8.16
                 └── tools
                     └── reader
                         └── impl
-                            └── <ins>[commons.clj:120-122](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.16/src/main/clojure/clojure/tools/reader/impl/commons.clj#L120-L122)</ins>
+                            └── <ins>[commons.clj:124-126](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.0/src/main/clojure/clojure/tools/reader/impl/commons.clj#L124-L126)</ins>
 </pre>
 
 ---
@@ -121,14 +121,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_comment",
  :source {:code "(defn- macros [ch]\n  (case ch\n    \\\" read-string*\n    \\: read-keyword\n    \\; read-comment\n    \\' (wrapping-reader 'quote)\n    \\@ (wrapping-reader 'clojure.core/deref)\n    \\^ read-meta\n    \\` read-syntax-quote ;;(wrapping-reader 'syntax-quote)\n    \\~ read-unquote\n    \\( read-list\n    \\) read-unmatched-delimiter\n    \\[ read-vector\n    \\] read-unmatched-delimiter\n    \\{ read-map\n    \\} read-unmatched-delimiter\n    \\\\ read-char*\n    \\% read-arg\n    \\# read-dispatch\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.16",
+          :tag "tools.reader-0.9.0",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [588 607]},
+          :lines [729 748]},
  :extra-sources [{:code "(defn read-comment\n  [rdr & _]\n  (skip-line rdr))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.8.16",
+                  :tag "tools.reader-0.9.0",
                   :filename "src/main/clojure/clojure/tools/reader/impl/commons.clj",
-                  :lines [120 122]}],
+                  :lines [124 126]}],
  :syntax-form ";",
  :examples [{:id "ab62d2",
              :content "Add comments to code:\n\n```clj\n(def a 1) ; this is a comment\n```\n\nIt is common to use `;;` for comments that have their own line:\n\n```clj\n;; this is comment is on its own line\n```"}],

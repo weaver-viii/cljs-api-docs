@@ -57,11 +57,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8215-8222](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L8215-L8222)</ins>
+            └── <ins>[core.cljs:8215-8222](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/core.cljs#L8215-L8222)</ins>
 </pre>
 
 
@@ -88,7 +88,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_range",
  :source {:code "(defn range\n  ([] (range 0 (.-MAX-VALUE js/Number) 1))\n  ([end] (range 0 end 1))\n  ([start end] (range start end 1))\n  ([start end step] (Range. nil start end step nil)))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8215 8222]},
  :full-name "cljs.core/range",

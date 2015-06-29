@@ -60,17 +60,18 @@ Source code:
     \" read-regex
     \! read-comment
     \_ read-discard
+    \? read-cond
     nil))
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.16
+tools.reader @ tools.reader-0.9.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:609-620](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.16/src/main/clojure/clojure/tools/reader.clj#L609-L620)</ins>
+                    └── <ins>[reader.clj:750-762](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.0/src/main/clojure/clojure/tools/reader.clj#L750-L762)</ins>
 </pre>
 
 
@@ -78,19 +79,19 @@ tools.reader @ tools.reader-0.8.16
 
 ```clj
 (defn- read-discard
-  [rdr _]
+  [rdr _ opts pending-forms]
   (doto rdr
-    (read true nil true)))
+    (read* true nil opts pending-forms)))
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.16
+tools.reader @ tools.reader-0.9.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:369-372](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.16/src/main/clojure/clojure/tools/reader.clj#L369-L372)</ins>
+                    └── <ins>[reader.clj:395-399](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.0/src/main/clojure/clojure/tools/reader.clj#L395-L399)</ins>
 </pre>
 
 ---
@@ -113,16 +114,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "syntax",
  :related ["syntax/comment" "cljs.core/comment"],
  :full-name-encode "syntax_ignore",
- :source {:code "(defn- dispatch-macros [ch]\n  (case ch\n    \\^ read-meta                ;deprecated\n    \\' (wrapping-reader 'var)\n    \\( read-fn\n    \\= read-eval\n    \\{ read-set\n    \\< (throwing-reader \"Unreadable form\")\n    \\\" read-regex\n    \\! read-comment\n    \\_ read-discard\n    nil))",
+ :source {:code "(defn- dispatch-macros [ch]\n  (case ch\n    \\^ read-meta                ;deprecated\n    \\' (wrapping-reader 'var)\n    \\( read-fn\n    \\= read-eval\n    \\{ read-set\n    \\< (throwing-reader \"Unreadable form\")\n    \\\" read-regex\n    \\! read-comment\n    \\_ read-discard\n    \\? read-cond\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.16",
+          :tag "tools.reader-0.9.0",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [609 620]},
- :extra-sources [{:code "(defn- read-discard\n  [rdr _]\n  (doto rdr\n    (read true nil true)))",
+          :lines [750 762]},
+ :extra-sources [{:code "(defn- read-discard\n  [rdr _ opts pending-forms]\n  (doto rdr\n    (read* true nil opts pending-forms)))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.8.16",
+                  :tag "tools.reader-0.9.0",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [369 372]}],
+                  :lines [395 399]}],
  :syntax-form "#_",
  :examples [{:id "f36d7a",
              :content "```clj\n{:foo #_bar 2}\n;;=> {:foo 2}\n```\n\nTo comment out the last line of a function without worrying about commenting out\nthe trailing parentheses:\n\n```clj\n(defn foo []\n  (println \"hello\")\n  #_(println \"world\"))\n```"}],

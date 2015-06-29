@@ -49,11 +49,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:436-456](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/test.cljs#L436-L456)</ins>
+            └── <ins>[test.cljs:436-456](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/test.cljs#L436-L456)</ins>
 </pre>
 
 
@@ -78,7 +78,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_test-var-block",
  :source {:code "(defn test-var-block\n  [v]\n  {:pre [(instance? Var v)]}\n  (if-let [t (:test (meta v))]\n    [(fn []\n       (update-current-env! [:testing-vars] conj v)\n       (update-current-env! [:report-counters :test] inc)\n       (do-report {:type :begin-test-var :var v})\n       (try\n         (t)\n         (catch :default e\n           (do-report\n             {:type :error\n              :message \"Uncaught exception, not in assertion.\"\n              :expected nil\n              :actual e}))))\n     (fn []\n       (do-report {:type :end-test-var :var v})\n       (update-current-env! [:testing-vars] rest))]))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/cljs/cljs/test.cljs",
           :lines [436 456]},
  :full-name "cljs.test/test-var-block",

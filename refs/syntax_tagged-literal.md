@@ -22,28 +22,30 @@
 Source code:
 
 ```clj
-(defn- read-tagged [rdr initch]
-  (let [tag (read rdr true nil false)]
+(defn- read-tagged [rdr initch opts pending-forms]
+  (let [tag (read* rdr true nil opts pending-forms)]
     (if-not (symbol? tag)
       (reader-error rdr "Reader tag must be a symbol"))
-    (if-let [f (or (*data-readers* tag)
-                   (default-data-readers tag))]
-      (read-tagged* rdr tag f)
-      (if (.contains (name tag) ".")
-        (read-ctor rdr tag)
-        (if-let [f *default-data-reader-fn*]
-          (f tag (read rdr true nil true))
-          (reader-error rdr "No reader function for tag " (name tag)))))))
+    (if *suppress-read*
+      (read-tagged* rdr tag identity opts pending-forms)
+      (if-let [f (or (*data-readers* tag)
+                     (default-data-readers tag))]
+        (read-tagged* rdr tag f opts pending-forms)
+        (if (.contains (name tag) ".")
+          (read-ctor rdr tag opts pending-forms)
+          (if-let [f *default-data-reader-fn*]
+            (f tag (read* rdr true nil opts pending-forms))
+            (reader-error rdr "No reader function for tag " (name tag))))))))
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.16
+tools.reader @ tools.reader-0.9.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:659-670](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.16/src/main/clojure/clojure/tools/reader.clj#L659-L670)</ins>
+                    └── <ins>[reader.clj:803-816](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.0/src/main/clojure/clojure/tools/reader.clj#L803-L816)</ins>
 </pre>
 
 
@@ -65,11 +67,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1211"]],
  :type "syntax",
  :full-name-encode "syntax_tagged-literal",
- :source {:code "(defn- read-tagged [rdr initch]\n  (let [tag (read rdr true nil false)]\n    (if-not (symbol? tag)\n      (reader-error rdr \"Reader tag must be a symbol\"))\n    (if-let [f (or (*data-readers* tag)\n                   (default-data-readers tag))]\n      (read-tagged* rdr tag f)\n      (if (.contains (name tag) \".\")\n        (read-ctor rdr tag)\n        (if-let [f *default-data-reader-fn*]\n          (f tag (read rdr true nil true))\n          (reader-error rdr \"No reader function for tag \" (name tag)))))))",
+ :source {:code "(defn- read-tagged [rdr initch opts pending-forms]\n  (let [tag (read* rdr true nil opts pending-forms)]\n    (if-not (symbol? tag)\n      (reader-error rdr \"Reader tag must be a symbol\"))\n    (if *suppress-read*\n      (read-tagged* rdr tag identity opts pending-forms)\n      (if-let [f (or (*data-readers* tag)\n                     (default-data-readers tag))]\n        (read-tagged* rdr tag f opts pending-forms)\n        (if (.contains (name tag) \".\")\n          (read-ctor rdr tag opts pending-forms)\n          (if-let [f *default-data-reader-fn*]\n            (f tag (read* rdr true nil opts pending-forms))\n            (reader-error rdr \"No reader function for tag \" (name tag))))))))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.16",
+          :tag "tools.reader-0.9.0",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [659 670]},
+          :lines [803 816]},
  :syntax-form "#",
  :edn-doc "https://github.com/edn-format/edn#tagged-elements",
  :full-name "syntax/tagged-literal",

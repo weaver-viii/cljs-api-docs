@@ -76,11 +76,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4387-4394](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L4387-L4394)</ins>
+            └── <ins>[core.cljs:4387-4394](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/core.cljs#L4387-L4394)</ins>
 </pre>
 
 
@@ -107,7 +107,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_assoc-in",
  :source {:code "(defn assoc-in\n  [m [k & ks] v]\n  (if ks\n    (assoc m k (assoc-in (get m k) ks v))\n    (assoc m k v)))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/cljs/cljs/core.cljs",
           :lines [4387 4394]},
  :examples [{:id "e76f20",

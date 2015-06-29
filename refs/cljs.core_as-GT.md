@@ -67,11 +67,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.6.0
+clojure @ clojure-1.7.0-alpha6
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:6913-6921](https://github.com/clojure/clojure/blob/clojure-1.6.0/src/clj/clojure/core.clj#L6913-L6921)</ins>
+            └── <ins>[core.clj:7259-7267](https://github.com/clojure/clojure/blob/clojure-1.7.0-alpha6/src/clj/clojure/core.clj#L7259-L7267)</ins>
 </pre>
 
 
@@ -103,9 +103,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_as-GT",
  :source {:code "(defmacro as->\n  [expr name & forms]\n  `(let [~name ~expr\n         ~@(interleave (repeat name) forms)]\n     ~name))",
           :repo "clojure",
-          :tag "clojure-1.6.0",
+          :tag "clojure-1.7.0-alpha6",
           :filename "src/clj/clojure/core.clj",
-          :lines [6913 6921]},
+          :lines [7259 7267]},
  :examples [{:id "5e7eef",
              :content "```clj\n(as-> [1 2 3 4] x\n  (reduce + x)\n  (/ x 2))\n;;=> 5\n```"}],
  :full-name "cljs.core/as->",

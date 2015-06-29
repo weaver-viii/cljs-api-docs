@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.6.0
+clojure @ clojure-1.7.0-alpha6
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:3533-3548](https://github.com/clojure/clojure/blob/clojure-1.6.0/src/clj/clojure/core.clj#L3533-L3548)</ins>
+            └── <ins>[core.clj:3700-3715](https://github.com/clojure/clojure/blob/clojure-1.7.0-alpha6/src/clj/clojure/core.clj#L3700-L3715)</ins>
 </pre>
 
 
@@ -75,9 +75,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_doto",
  :source {:code "(defmacro doto\n  [x & forms]\n    (let [gx (gensym)]\n      `(let [~gx ~x]\n         ~@(map (fn [f]\n                  (if (seq? f)\n                    `(~(first f) ~gx ~@(next f))\n                    `(~f ~gx)))\n                forms)\n         ~gx)))",
           :repo "clojure",
-          :tag "clojure-1.6.0",
+          :tag "clojure-1.7.0-alpha6",
           :filename "src/clj/clojure/core.clj",
-          :lines [3533 3548]},
+          :lines [3700 3715]},
  :full-name "cljs.core/doto",
  :clj-symbol "clojure.core/doto",
  :docstring "Evaluates x then calls all of the methods and functions with the\nvalue of x supplied at the front of the given arguments.  The forms\nare evaluated in order.  Returns x.\n\n(doto (new java.util.HashMap) (.put \"a\" 1) (.put \"b\" 2))"}

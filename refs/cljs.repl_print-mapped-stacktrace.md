@@ -42,11 +42,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:327-337](https://github.com/clojure/clojurescript/blob/r3178/src/clj/cljs/repl.clj#L327-L337)</ins>
+            └── <ins>[repl.clj:332-342](https://github.com/clojure/clojurescript/blob/r3190/src/clj/cljs/repl.clj#L332-L342)</ins>
 </pre>
 
 
@@ -71,9 +71,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_print-mapped-stacktrace",
  :source {:code "(defn print-mapped-stacktrace\n  ([stacktrace] (print-mapped-stacktrace stacktrace *repl-opts*))\n  ([stacktrace opts]\n    (doseq [{:keys [function file line column]}\n            (mapped-stacktrace stacktrace opts)]\n      (err-out\n        (println \"\\t\"\n          (str (when function (str function \" \"))\n            \"(\" file (when line (str \":\" line)) (when column (str \":\" column)) \")\"))))))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/clj/cljs/repl.clj",
-          :lines [327 337]},
+          :lines [332 342]},
  :full-name "cljs.repl/print-mapped-stacktrace",
  :docstring "Given a vector representing the canonicalized JavaScript stacktrace\nprint the ClojureScript stacktrace. See mapped-stacktrace."}
 

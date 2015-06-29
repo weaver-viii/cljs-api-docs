@@ -36,12 +36,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:465-476](https://github.com/clojure/clojurescript/blob/r3178/src/clj/cljs/repl/browser.clj#L465-L476)</ins>
+                └── <ins>[browser.clj:467-478](https://github.com/clojure/clojurescript/blob/r3190/src/clj/cljs/repl/browser.clj#L467-L478)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[opts]"],
  :source {:code "(defn compile-client-js [opts]\n  (cljsc/build\n    '[(ns clojure.browser.repl.client\n        (:require [goog.events :as event]\n                  [clojure.browser.repl :as repl]))\n      (defn start [url]\n        (event/listen js/window\n          \"load\"\n          (fn []\n            (repl/start-evaluator url))))]\n    {:optimizations (:optimizations opts)\n     :output-dir (:working-dir opts)}))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/clj/cljs/repl/browser.clj",
-          :lines [465 476]},
+          :lines [467 478]},
  :full-name "cljs.repl.browser/compile-client-js",
  :full-name-encode "cljs.repl.browser_compile-client-js",
  :history [["+" "0.0-927"]]}

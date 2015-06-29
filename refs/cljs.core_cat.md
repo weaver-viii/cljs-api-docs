@@ -5,6 +5,9 @@
 
 <td>function</td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2341"><img valign="middle" alt="[+] 0.0-2341" src="https://img.shields.io/badge/+-0.0--2341-lightgrey.svg"></a> </td>
+<td>
+[<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.core/cat</samp>](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/cat)
+</td>
 </tr>
 </table>
 
@@ -38,11 +41,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8886-8896](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L8886-L8896)</ins>
+            └── <ins>[core.cljs:8886-8896](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/core.cljs#L8886-L8896)</ins>
 </pre>
 
 
@@ -67,10 +70,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_cat",
  :source {:code "(defn cat\n  [rf]\n  (let [rf1 (preserving-reduced rf)]  \n    (fn\n      ([] (rf))\n      ([result] (rf result))\n      ([result input]\n         (reduce rf1 result input)))))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8886 8896]},
  :full-name "cljs.core/cat",
+ :clj-symbol "clojure.core/cat",
  :docstring "A transducer which concatenates the contents of each input, which must be a\ncollection, into the reduction."}
 
 ```

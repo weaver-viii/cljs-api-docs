@@ -5,6 +5,9 @@
 
 <td>protocol</td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2173"><img valign="middle" alt="[+] 0.0-2173" src="https://img.shields.io/badge/+-0.0--2173-lightgrey.svg"></a> </td>
+<td>
+[<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.lang/IAtom</samp>](https://github.com/clojure/clojure/blob//src/jvm/clojure/lang/IAtom.java)
+</td>
 </tr>
 </table>
 
@@ -26,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:614-615](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L614-L615)</ins>
+            └── <ins>[core.cljs:614-615](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/core.cljs#L614-L615)</ins>
 </pre>
 
 
@@ -49,16 +52,17 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "IAtom",
+ :history [["+" "0.0-2173"]],
  :type "protocol",
  :full-name-encode "cljs.core_IAtom",
  :source {:code "(defprotocol IAtom\n  \"Marker protocol indicating an atom.\")",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/cljs/cljs/core.cljs",
           :lines [614 615]},
  :full-name "cljs.core/IAtom",
- :docstring "Marker protocol indicating an atom.",
- :history [["+" "0.0-2173"]]}
+ :clj-symbol "clojure.lang/IAtom",
+ :docstring "Marker protocol indicating an atom."}
 
 ```
 

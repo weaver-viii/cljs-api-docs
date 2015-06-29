@@ -58,11 +58,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:511-540](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/test.cljs#L511-L540)</ins>
+            └── <ins>[test.cljs:511-540](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/test.cljs#L511-L540)</ins>
 </pre>
 
 
@@ -87,7 +87,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_test-vars-block",
  :source {:code "(defn test-vars-block\n  [vars]\n  (map\n   (fn [[ns vars]]\n     (fn []\n       (block\n        (let [env (get-current-env)\n              once-fixtures (get-in env [:once-fixtures ns])\n              each-fixtures (get-in env [:each-fixtures ns])]\n          (case (execution-strategy once-fixtures each-fixtures)\n            :async\n            (->> vars\n                 (filter (comp :test meta))\n                 (mapcat (comp (partial wrap-map-fixtures each-fixtures)\n                               test-var-block))\n                 (wrap-map-fixtures once-fixtures))\n            :sync\n            (do\n              (let [each-fixture-fn (join-fixtures each-fixtures)]\n                [(fn []\n                   ((join-fixtures once-fixtures)\n                    (fn []\n                      (doseq [v vars]\n                        (when (:test (meta v))\n                          (each-fixture-fn\n                           (fn []\n                             (test-var v))))))))])))))))\n   (group-by (comp :ns meta) vars)))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/cljs/cljs/test.cljs",
           :lines [511 540]},
  :full-name "cljs.test/test-vars-block",

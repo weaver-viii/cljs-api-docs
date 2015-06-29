@@ -30,17 +30,18 @@ Source code:
     \" read-regex
     \! read-comment
     \_ read-discard
+    \? read-cond
     nil))
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.16
+tools.reader @ tools.reader-0.9.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:609-620](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.16/src/main/clojure/clojure/tools/reader.clj#L609-L620)</ins>
+                    └── <ins>[reader.clj:750-762](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.0/src/main/clojure/clojure/tools/reader.clj#L750-L762)</ins>
 </pre>
 
 
@@ -48,20 +49,20 @@ tools.reader @ tools.reader-0.8.16
 
 ```clj
 (defn- read-eval
-  [rdr _]
+  [rdr _ opts pending-forms]
   (when-not *read-eval*
     (reader-error rdr "#= not allowed when *read-eval* is false"))
-  (eval (read rdr true nil true)))
+  (eval (read* rdr true nil opts pending-forms)))
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.16
+tools.reader @ tools.reader-0.9.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:433-437](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.16/src/main/clojure/clojure/tools/reader.clj#L433-L437)</ins>
+                    └── <ins>[reader.clj:565-570](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.0/src/main/clojure/clojure/tools/reader.clj#L565-L570)</ins>
 </pre>
 
 ---
@@ -82,16 +83,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "syntax",
  :full-name-encode "syntax_eval",
- :source {:code "(defn- dispatch-macros [ch]\n  (case ch\n    \\^ read-meta                ;deprecated\n    \\' (wrapping-reader 'var)\n    \\( read-fn\n    \\= read-eval\n    \\{ read-set\n    \\< (throwing-reader \"Unreadable form\")\n    \\\" read-regex\n    \\! read-comment\n    \\_ read-discard\n    nil))",
+ :source {:code "(defn- dispatch-macros [ch]\n  (case ch\n    \\^ read-meta                ;deprecated\n    \\' (wrapping-reader 'var)\n    \\( read-fn\n    \\= read-eval\n    \\{ read-set\n    \\< (throwing-reader \"Unreadable form\")\n    \\\" read-regex\n    \\! read-comment\n    \\_ read-discard\n    \\? read-cond\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.16",
+          :tag "tools.reader-0.9.0",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [609 620]},
- :extra-sources [{:code "(defn- read-eval\n  [rdr _]\n  (when-not *read-eval*\n    (reader-error rdr \"#= not allowed when *read-eval* is false\"))\n  (eval (read rdr true nil true)))",
+          :lines [750 762]},
+ :extra-sources [{:code "(defn- read-eval\n  [rdr _ opts pending-forms]\n  (when-not *read-eval*\n    (reader-error rdr \"#= not allowed when *read-eval* is false\"))\n  (eval (read* rdr true nil opts pending-forms)))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.8.16",
+                  :tag "tools.reader-0.9.0",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [433 437]}],
+                  :lines [565 570]}],
  :syntax-form "#=",
  :full-name "syntax/eval",
  :clj-doc "https://github.com/clojure/clojure/blob/clojure-1.7.0-RC1/src/jvm/clojure/lang/LispReader.java#L113"}

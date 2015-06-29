@@ -120,11 +120,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.6.0
+clojure @ clojure-1.7.0-alpha6
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:4143-4203](https://github.com/clojure/clojure/blob/clojure-1.6.0/src/clj/clojure/core.clj#L4143-L4203)</ins>
+            └── <ins>[core.clj:4333-4393](https://github.com/clojure/clojure/blob/clojure-1.7.0-alpha6/src/clj/clojure/core.clj#L4333-L4393)</ins>
 </pre>
 
 
@@ -140,11 +140,11 @@ clojure @ clojure-1.6.0
 ```
 
  <pre>
-clojure @ clojure-1.6.0
+clojure @ clojure-1.7.0-alpha6
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:42-47](https://github.com/clojure/clojure/blob/clojure-1.6.0/src/clj/clojure/core.clj#L42-L47)</ins>
+            └── <ins>[core.clj:42-47](https://github.com/clojure/clojure/blob/clojure-1.7.0-alpha6/src/clj/clojure/core.clj#L42-L47)</ins>
 </pre>
 
 ---
@@ -171,12 +171,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_fn",
  :source {:code "(defmacro fn\n  [& sigs]\n    (let [name (if (symbol? (first sigs)) (first sigs) nil)\n          sigs (if name (next sigs) sigs)\n          sigs (if (vector? (first sigs)) \n                 (list sigs) \n                 (if (seq? (first sigs))\n                   sigs\n                   ;; Assume single arity syntax\n                   (throw (IllegalArgumentException. \n                            (if (seq sigs)\n                              (str \"Parameter declaration \" \n                                   (first sigs)\n                                   \" should be a vector\")\n                              (str \"Parameter declaration missing\"))))))\n          psig (fn* [sig]\n                 ;; Ensure correct type before destructuring sig\n                 (when (not (seq? sig))\n                   (throw (IllegalArgumentException.\n                            (str \"Invalid signature \" sig\n                                 \" should be a list\"))))\n                 (let [[params & body] sig\n                       _ (when (not (vector? params))\n                           (throw (IllegalArgumentException. \n                                    (if (seq? (first sigs))\n                                      (str \"Parameter declaration \" params\n                                           \" should be a vector\")\n                                      (str \"Invalid signature \" sig\n                                           \" should be a list\")))))\n                       conds (when (and (next body) (map? (first body))) \n                                           (first body))\n                       body (if conds (next body) body)\n                       conds (or conds (meta params))\n                       pre (:pre conds)\n                       post (:post conds)                       \n                       body (if post\n                              `((let [~'% ~(if (< 1 (count body)) \n                                            `(do ~@body) \n                                            (first body))]\n                                 ~@(map (fn* [c] `(assert ~c)) post)\n                                 ~'%))\n                              body)\n                       body (if pre\n                              (concat (map (fn* [c] `(assert ~c)) pre) \n                                      body)\n                              body)]\n                   (maybe-destructured params body)))\n          new-sigs (map psig sigs)]\n      (with-meta\n        (if name\n          (list* 'fn* name new-sigs)\n          (cons 'fn* new-sigs))\n        (meta &form))))",
           :repo "clojure",
-          :tag "clojure-1.6.0",
+          :tag "clojure-1.7.0-alpha6",
           :filename "src/clj/clojure/core.clj",
-          :lines [4143 4203]},
+          :lines [4333 4393]},
  :extra-sources ({:code "(def\n ^{:macro true\n   :added \"1.0\"}\n fn (fn* fn [&form &env & decl] \n         (.withMeta ^clojure.lang.IObj (cons 'fn* decl) \n                    (.meta ^clojure.lang.IMeta &form))))",
                   :repo "clojure",
-                  :tag "clojure-1.6.0",
+                  :tag "clojure-1.7.0-alpha6",
                   :filename "src/clj/clojure/core.clj",
                   :lines [42 47]}),
  :full-name "cljs.core/fn",

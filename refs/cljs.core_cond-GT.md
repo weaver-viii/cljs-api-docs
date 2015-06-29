@@ -69,11 +69,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.6.0
+clojure @ clojure-1.7.0-alpha6
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:6885-6897](https://github.com/clojure/clojure/blob/clojure-1.6.0/src/clj/clojure/core.clj#L6885-L6897)</ins>
+            └── <ins>[core.clj:7231-7243](https://github.com/clojure/clojure/blob/clojure-1.7.0-alpha6/src/clj/clojure/core.clj#L7231-L7243)</ins>
 </pre>
 
 
@@ -103,9 +103,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_cond-GT",
  :source {:code "(defmacro cond->\n  [expr & clauses]\n  (assert (even? (count clauses)))\n  (let [g (gensym)\n        pstep (fn [[test step]] `(if ~test (-> ~g ~step) ~g))]\n    `(let [~g ~expr\n           ~@(interleave (repeat g) (map pstep (partition 2 clauses)))]\n       ~g)))",
           :repo "clojure",
-          :tag "clojure-1.6.0",
+          :tag "clojure-1.7.0-alpha6",
           :filename "src/clj/clojure/core.clj",
-          :lines [6885 6897]},
+          :lines [7231 7243]},
  :examples [{:id "f08338",
              :content "```clj\n(def a 12)\n(cond-> a\n  (> a 10) (str \" is greater than 10\")\n  (< a 20) (str \" and less than 20\"))\n;;=> \"12 is greater than 10 and less than 20\"\n```"}],
  :full-name "cljs.core/cond->",

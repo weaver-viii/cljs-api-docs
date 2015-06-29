@@ -51,17 +51,18 @@ Source code:
     \" read-regex
     \! read-comment
     \_ read-discard
+    \? read-cond
     nil))
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.16
+tools.reader @ tools.reader-0.9.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:609-620](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.16/src/main/clojure/clojure/tools/reader.clj#L609-L620)</ins>
+                    └── <ins>[reader.clj:750-762](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.0/src/main/clojure/clojure/tools/reader.clj#L750-L762)</ins>
 </pre>
 
 
@@ -70,18 +71,18 @@ tools.reader @ tools.reader-0.8.16
 ```clj
 (defn- wrapping-reader
   [sym]
-  (fn [rdr _]
-    (list sym (read rdr true nil true))))
+  (fn [rdr _ opts pending-forms]
+    (list sym (read* rdr true nil opts pending-forms))))
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.16
+tools.reader @ tools.reader-0.9.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:330-333](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.16/src/main/clojure/clojure/tools/reader.clj#L330-L333)</ins>
+                    └── <ins>[reader.clj:354-358](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.0/src/main/clojure/clojure/tools/reader.clj#L354-L358)</ins>
 </pre>
 
 ---
@@ -104,16 +105,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "syntax",
  :related ["special/var"],
  :full-name-encode "syntax_var",
- :source {:code "(defn- dispatch-macros [ch]\n  (case ch\n    \\^ read-meta                ;deprecated\n    \\' (wrapping-reader 'var)\n    \\( read-fn\n    \\= read-eval\n    \\{ read-set\n    \\< (throwing-reader \"Unreadable form\")\n    \\\" read-regex\n    \\! read-comment\n    \\_ read-discard\n    nil))",
+ :source {:code "(defn- dispatch-macros [ch]\n  (case ch\n    \\^ read-meta                ;deprecated\n    \\' (wrapping-reader 'var)\n    \\( read-fn\n    \\= read-eval\n    \\{ read-set\n    \\< (throwing-reader \"Unreadable form\")\n    \\\" read-regex\n    \\! read-comment\n    \\_ read-discard\n    \\? read-cond\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.16",
+          :tag "tools.reader-0.9.0",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [609 620]},
- :extra-sources [{:code "(defn- wrapping-reader\n  [sym]\n  (fn [rdr _]\n    (list sym (read rdr true nil true))))",
+          :lines [750 762]},
+ :extra-sources [{:code "(defn- wrapping-reader\n  [sym]\n  (fn [rdr _ opts pending-forms]\n    (list sym (read* rdr true nil opts pending-forms))))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.8.16",
+                  :tag "tools.reader-0.9.0",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [330 333]}],
+                  :lines [354 358]}],
  :syntax-form "#'",
  :examples [{:id "673ef6",
              :content "Access the metadata of a var:\n\n```clj\n(def x 123)\n(meta #'x)\n;;=> {:arglists (), :test nil, :name x, :column 1, :line 1, :file \"<cljs repl>\", :doc nil, :ns cljs.user}\n```"}],

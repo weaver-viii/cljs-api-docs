@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.6.0
+clojure @ clojure-1.7.0-alpha6
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:477-481](https://github.com/clojure/clojure/blob/clojure-1.6.0/src/clj/clojure/core.clj#L477-L481)</ins>
+            └── <ins>[core.clj:481-485](https://github.com/clojure/clojure/blob/clojure-1.7.0-alpha6/src/clj/clojure/core.clj#L481-L485)</ins>
 </pre>
 
 
@@ -76,9 +76,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_when-not",
  :source {:code "(defmacro when-not\n  [test & body]\n    (list 'if test nil (cons 'do body)))",
           :repo "clojure",
-          :tag "clojure-1.6.0",
+          :tag "clojure-1.7.0-alpha6",
           :filename "src/clj/clojure/core.clj",
-          :lines [477 481]},
+          :lines [481 485]},
  :full-name "cljs.core/when-not",
  :clj-symbol "clojure.core/when-not",
  :docstring "Evaluates test. If logical false, evaluates body in an implicit do."}

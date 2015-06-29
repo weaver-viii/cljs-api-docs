@@ -5,6 +5,9 @@
 
 <td>function</td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2301"><img valign="middle" alt="[+] 0.0-2301" src="https://img.shields.io/badge/+-0.0--2301-lightgrey.svg"></a> </td>
+<td>
+[<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.core/run!</samp>](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/run!)
+</td>
 </tr>
 </table>
 
@@ -33,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8947-8951](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L8947-L8951)</ins>
+            └── <ins>[core.cljs:8947-8951](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/core.cljs#L8947-L8951)</ins>
 </pre>
 
 
@@ -62,10 +65,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_runBANG",
  :source {:code "(defn run!\n  [proc coll]\n  (reduce #(proc %2) nil coll))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8947 8951]},
  :full-name "cljs.core/run!",
+ :clj-symbol "clojure.core/run!",
  :docstring "Runs the supplied procedure (via reduce), for purposes of side\neffects, on successive items in the collection. Returns nil"}
 
 ```

@@ -36,12 +36,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:178-185](https://github.com/clojure/clojurescript/blob/r3178/src/clj/cljs/repl/browser.clj#L178-L185)</ins>
+                └── <ins>[browser.clj:180-187](https://github.com/clojure/clojurescript/blob/r3190/src/clj/cljs/repl/browser.clj#L180-L187)</ins>
 </pre>
 
 
@@ -66,9 +66,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.browser_load-javascript",
  :source {:code "(defn load-javascript\n  [repl-env provides url]\n  (browser-eval (slurp url)))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/clj/cljs/repl/browser.clj",
-          :lines [178 185]},
+          :lines [180 187]},
  :full-name "cljs.repl.browser/load-javascript",
  :docstring "Accepts a REPL environment, a list of namespaces, and a URL for a\nJavaScript file which contains the implementation for the list of\nnamespaces. Will load the JavaScript file into the REPL environment\nif any of the namespaces have not already been loaded from the\nClojureScript REPL."}
 

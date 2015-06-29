@@ -5,6 +5,9 @@
 
 <td>function</td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2301"><img valign="middle" alt="[+] 0.0-2301" src="https://img.shields.io/badge/+-0.0--2301-lightgrey.svg"></a> </td>
+<td>
+[<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.core/transduce</samp>](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/transduce)
+</td>
 </tr>
 </table>
 
@@ -45,11 +48,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2082-2095](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L2082-L2095)</ins>
+            └── <ins>[core.cljs:2082-2095](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/core.cljs#L2082-L2095)</ins>
 </pre>
 
 
@@ -74,10 +77,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_transduce",
  :source {:code "(defn transduce\n  ([xform f coll] (transduce xform f (f) coll))\n  ([xform f init coll]\n     (let [f (xform f)\n           ret (reduce f init coll)]\n       (f ret))))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2082 2095]},
  :full-name "cljs.core/transduce",
+ :clj-symbol "clojure.core/transduce",
  :docstring "reduce with a transformation of f (xf). If init is not\nsupplied, (f) will be called to produce it. f should be a reducing\nstep function that accepts both 1 and 2 arguments, if it accepts\nonly 2 you can add the arity-1 with 'completing'. Returns the result\nof applying (the transformed) xf to init and the first item in coll,\nthen applying xf to that result and the 2nd item, etc. If coll\ncontains no items, returns init and f is not called. Note that\ncertain transforms may inject or skip items."}
 
 ```

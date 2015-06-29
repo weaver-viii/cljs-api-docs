@@ -84,13 +84,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.16
+tools.reader @ tools.reader-0.9.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:588-607](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.16/src/main/clojure/clojure/tools/reader.clj#L588-L607)</ins>
+                    └── <ins>[reader.clj:729-748](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.0/src/main/clojure/clojure/tools/reader.clj#L729-L748)</ins>
 </pre>
 
 
@@ -98,7 +98,7 @@ tools.reader @ tools.reader-0.8.16
 
 ```clj
 (defn- read-string*
-  [reader _]
+  [reader _ opts pending-forms]
   (loop [sb (StringBuilder.)
          ch (read-char reader)]
     (case ch
@@ -110,13 +110,13 @@ tools.reader @ tools.reader-0.8.16
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.16
+tools.reader @ tools.reader-0.9.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:259-268](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.16/src/main/clojure/clojure/tools/reader.clj#L259-L268)</ins>
+                    └── <ins>[reader.clj:283-292](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.0/src/main/clojure/clojure/tools/reader.clj#L283-L292)</ins>
 </pre>
 
 ---
@@ -141,14 +141,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_string",
  :source {:code "(defn- macros [ch]\n  (case ch\n    \\\" read-string*\n    \\: read-keyword\n    \\; read-comment\n    \\' (wrapping-reader 'quote)\n    \\@ (wrapping-reader 'clojure.core/deref)\n    \\^ read-meta\n    \\` read-syntax-quote ;;(wrapping-reader 'syntax-quote)\n    \\~ read-unquote\n    \\( read-list\n    \\) read-unmatched-delimiter\n    \\[ read-vector\n    \\] read-unmatched-delimiter\n    \\{ read-map\n    \\} read-unmatched-delimiter\n    \\\\ read-char*\n    \\% read-arg\n    \\# read-dispatch\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.16",
+          :tag "tools.reader-0.9.0",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [588 607]},
- :extra-sources [{:code "(defn- read-string*\n  [reader _]\n  (loop [sb (StringBuilder.)\n         ch (read-char reader)]\n    (case ch\n      nil (reader-error reader \"EOF while reading string\")\n      \\\\ (recur (doto sb (.append (escape-char sb reader)))\n                (read-char reader))\n      \\\" (str sb)\n      (recur (doto sb (.append ch)) (read-char reader)))))",
+          :lines [729 748]},
+ :extra-sources [{:code "(defn- read-string*\n  [reader _ opts pending-forms]\n  (loop [sb (StringBuilder.)\n         ch (read-char reader)]\n    (case ch\n      nil (reader-error reader \"EOF while reading string\")\n      \\\\ (recur (doto sb (.append (escape-char sb reader)))\n                (read-char reader))\n      \\\" (str sb)\n      (recur (doto sb (.append ch)) (read-char reader)))))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.8.16",
+                  :tag "tools.reader-0.9.0",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [259 268]}],
+                  :lines [283 292]}],
  :syntax-form "\"\"",
  :examples [{:id "eb97ac",
              :content "```clj\n\"foo\"\n;;=> \"foo\"\n\n\"hello\n     world\"\n;;=> \"hello\\n     world\"\n```\n\nCharacters can be escaped:\n\n```clj\n(println \"foo\\nbar\")\n;; prints:\n;;   foo\n;;   bar\n```"}],

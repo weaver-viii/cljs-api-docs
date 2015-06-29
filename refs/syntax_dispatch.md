@@ -45,13 +45,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.16
+tools.reader @ tools.reader-0.9.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:588-607](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.16/src/main/clojure/clojure/tools/reader.clj#L588-L607)</ins>
+                    └── <ins>[reader.clj:729-748](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.0/src/main/clojure/clojure/tools/reader.clj#L729-L748)</ins>
 </pre>
 
 
@@ -59,24 +59,24 @@ tools.reader @ tools.reader-0.8.16
 
 ```clj
 (defn- read-dispatch
-  [rdr _]
+  [rdr _ opts pending-forms]
   (if-let [ch (read-char rdr)]
     (if-let [dm (dispatch-macros ch)]
-      (dm rdr ch)
-      (if-let [obj (read-tagged (doto rdr (unread ch)) ch)] ;; ctor reader is implemented as a taggged literal
+      (dm rdr ch opts pending-forms)
+      (if-let [obj (read-tagged (doto rdr (unread ch)) ch opts pending-forms)] ;; ctor reader is implemented as a tagged literal
         obj
         (reader-error rdr "No dispatch macro for " ch)))
     (reader-error rdr "EOF while reading character")))
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.16
+tools.reader @ tools.reader-0.9.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:54-62](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.16/src/main/clojure/clojure/tools/reader.clj#L54-L62)</ins>
+                    └── <ins>[reader.clj:57-65](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.0/src/main/clojure/clojure/tools/reader.clj#L57-L65)</ins>
 </pre>
 
 ---
@@ -99,14 +99,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_dispatch",
  :source {:code "(defn- macros [ch]\n  (case ch\n    \\\" read-string*\n    \\: read-keyword\n    \\; read-comment\n    \\' (wrapping-reader 'quote)\n    \\@ (wrapping-reader 'clojure.core/deref)\n    \\^ read-meta\n    \\` read-syntax-quote ;;(wrapping-reader 'syntax-quote)\n    \\~ read-unquote\n    \\( read-list\n    \\) read-unmatched-delimiter\n    \\[ read-vector\n    \\] read-unmatched-delimiter\n    \\{ read-map\n    \\} read-unmatched-delimiter\n    \\\\ read-char*\n    \\% read-arg\n    \\# read-dispatch\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.16",
+          :tag "tools.reader-0.9.0",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [588 607]},
- :extra-sources [{:code "(defn- read-dispatch\n  [rdr _]\n  (if-let [ch (read-char rdr)]\n    (if-let [dm (dispatch-macros ch)]\n      (dm rdr ch)\n      (if-let [obj (read-tagged (doto rdr (unread ch)) ch)] ;; ctor reader is implemented as a taggged literal\n        obj\n        (reader-error rdr \"No dispatch macro for \" ch)))\n    (reader-error rdr \"EOF while reading character\")))",
+          :lines [729 748]},
+ :extra-sources [{:code "(defn- read-dispatch\n  [rdr _ opts pending-forms]\n  (if-let [ch (read-char rdr)]\n    (if-let [dm (dispatch-macros ch)]\n      (dm rdr ch opts pending-forms)\n      (if-let [obj (read-tagged (doto rdr (unread ch)) ch opts pending-forms)] ;; ctor reader is implemented as a tagged literal\n        obj\n        (reader-error rdr \"No dispatch macro for \" ch)))\n    (reader-error rdr \"EOF while reading character\")))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.8.16",
+                  :tag "tools.reader-0.9.0",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [54 62]}],
+                  :lines [57 65]}],
  :syntax-form "#",
  :edn-doc "https://github.com/edn-format/edn#-dispatch-character",
  :full-name "syntax/dispatch",

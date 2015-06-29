@@ -57,11 +57,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.6.0
+clojure @ clojure-1.7.0-alpha6
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:6033-6044](https://github.com/clojure/clojure/blob/clojure-1.6.0/src/clj/clojure/core.clj#L6033-L6044)</ins>
+            └── <ins>[core.clj:6269-6280](https://github.com/clojure/clojure/blob/clojure-1.7.0-alpha6/src/clj/clojure/core.clj#L6269-L6280)</ins>
 </pre>
 
 
@@ -88,9 +88,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_letfn",
  :source {:code "(defmacro letfn \n  [fnspecs & body] \n  `(letfn* ~(vec (interleave (map first fnspecs) \n                             (map #(cons `fn %) fnspecs)))\n           ~@body))",
           :repo "clojure",
-          :tag "clojure-1.6.0",
+          :tag "clojure-1.7.0-alpha6",
           :filename "src/clj/clojure/core.clj",
-          :lines [6033 6044]},
+          :lines [6269 6280]},
  :full-name "cljs.core/letfn",
  :clj-symbol "clojure.core/letfn",
  :docstring "fnspec ==> (fname [params*] exprs) or (fname ([params*] exprs)+)\n\nTakes a vector of function specs and a body, and generates a set of\nbindings of functions to their names. All of the names are available\nin all of the definitions of the functions, as well as the body."}

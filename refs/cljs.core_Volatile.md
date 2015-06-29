@@ -5,6 +5,9 @@
 
 <td>type</td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2496"><img valign="middle" alt="[+] 0.0-2496" src="https://img.shields.io/badge/+-0.0--2496-lightgrey.svg"></a> </td>
+<td>
+[<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.lang/Volatile</samp>](https://github.com/clojure/clojure/blob//src/jvm/clojure/lang/Volatile.java)
+</td>
 </tr>
 </table>
 
@@ -31,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3884-3890](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L3884-L3890)</ins>
+            └── <ins>[core.cljs:3884-3890](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/core.cljs#L3884-L3890)</ins>
 </pre>
 
 
@@ -54,16 +57,17 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "Volatile",
- :type "type",
  :signature ["[state]"],
+ :history [["+" "0.0-2496"]],
+ :type "type",
+ :full-name-encode "cljs.core_Volatile",
  :source {:code "(deftype Volatile [^:mutable state]\n  IVolatile\n  (-vreset! [_ new-state]\n    (set! state new-state))\n\n  IDeref\n  (-deref [_] state))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3884 3890]},
  :full-name "cljs.core/Volatile",
- :full-name-encode "cljs.core_Volatile",
- :history [["+" "0.0-2496"]]}
+ :clj-symbol "clojure.lang/Volatile"}
 
 ```
 

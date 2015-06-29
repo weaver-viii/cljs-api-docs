@@ -39,11 +39,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:2034-2041](https://github.com/clojure/clojurescript/blob/r3178/src/clj/cljs/core.clj#L2034-L2041)</ins>
+            └── <ins>[core.clj:2034-2041](https://github.com/clojure/clojurescript/blob/r3190/src/clj/cljs/core.clj#L2034-L2041)</ins>
 </pre>
 
 
@@ -68,7 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_macroexpand-1",
  :source {:code "(defmacro macroexpand-1\n  [quoted]\n  (core/assert (core/= (core/first quoted) 'quote)\n    \"Argument to macroexpand-1 must be quoted\")\n  (core/let [form (second quoted)]\n    `(quote ~(ana/macroexpand-1 &env form))))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/clj/cljs/core.clj",
           :lines [2034 2041]},
  :full-name "cljs.core/macroexpand-1",

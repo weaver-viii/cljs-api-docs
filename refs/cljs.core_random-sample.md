@@ -5,6 +5,9 @@
 
 <td>function</td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2301"><img valign="middle" alt="[+] 0.0-2301" src="https://img.shields.io/badge/+-0.0--2301-lightgrey.svg"></a> </td>
+<td>
+[<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.core/random-sample</samp>](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/random-sample)
+</td>
 </tr>
 </table>
 
@@ -38,11 +41,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3178
+clojurescript @ r3190
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8917-8923](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L8917-L8923)</ins>
+            └── <ins>[core.cljs:8917-8923](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/core.cljs#L8917-L8923)</ins>
 </pre>
 
 
@@ -67,10 +70,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_random-sample",
  :source {:code "(defn random-sample\n  ([prob]\n     (filter (fn [_] (< (rand) prob))))\n  ([prob coll]\n     (filter (fn [_] (< (rand) prob)) coll)))",
           :repo "clojurescript",
-          :tag "r3178",
+          :tag "r3190",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8917 8923]},
  :full-name "cljs.core/random-sample",
+ :clj-symbol "clojure.core/random-sample",
  :docstring "Returns items from coll with random probability of prob (0.0 -\n1.0).  Returns a transducer when no collection is provided."}
 
 ```
