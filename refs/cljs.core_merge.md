@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2075
+clojurescript @ r2080
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6009-6015](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L6009-L6015)</ins>
+            └── <ins>[core.cljs:6013-6019](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/core.cljs#L6013-L6019)</ins>
 </pre>
 
 
@@ -81,9 +81,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_merge",
  :source {:code "(defn merge\n  [& maps]\n  (when (some identity maps)\n    (reduce #(conj (or %1 {}) %2) maps)))",
           :repo "clojurescript",
-          :tag "r2075",
+          :tag "r2080",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6009 6015]},
+          :lines [6013 6019]},
  :full-name "cljs.core/merge",
  :clj-symbol "clojure.core/merge",
  :docstring "Returns a map that consists of the rest of the maps conj-ed onto\nthe first.  If a key occurs in more than one map, the mapping from\nthe latter (left-to-right) will be the mapping in the result."}

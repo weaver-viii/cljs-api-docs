@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2075
+clojurescript @ r2080
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:682-684](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L682-L684)</ins>
+            └── <ins>[core.cljs:682-684](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/core.cljs#L682-L684)</ins>
 </pre>
 
 
@@ -61,7 +61,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_indexedQMARK",
  :source {:code "(defn ^boolean indexed?\n  [x] (satisfies? IIndexed x))",
           :repo "clojurescript",
-          :tag "r2075",
+          :tag "r2080",
           :filename "src/cljs/cljs/core.cljs",
           :lines [682 684]},
  :full-name "cljs.core/indexed?",

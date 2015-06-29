@@ -76,11 +76,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2075
+clojurescript @ r2080
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7146-7162](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L7146-L7162)</ins>
+            └── <ins>[core.cljs:7150-7166](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/core.cljs#L7150-L7166)</ins>
 </pre>
 
 
@@ -107,9 +107,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_clj-GTjs",
  :source {:code "(defn clj->js\n   [x]\n   (when-not (nil? x)\n     (if (satisfies? IEncodeJS x)\n       (-clj->js x)\n       (cond\n         (keyword? x) (name x)\n         (symbol? x) (str x)\n         (map? x) (let [m (js-obj)]\n                    (doseq [[k v] x]\n                      (aset m (key->js k) (clj->js v)))\n                    m)\n         (coll? x) (apply array (map clj->js x))\n         :else x))))",
           :repo "clojurescript",
-          :tag "r2075",
+          :tag "r2080",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7146 7162]},
+          :lines [7150 7166]},
  :examples [{:id "2b1057",
              :content "```clj\n(clj->js {:foo 1 :bar 2})\n;;=> #js {:foo 1, :bar 2}\n\n(clj->js [:foo \"bar\" 'baz])\n;;=> #js [\"foo\" \"bar\" \"baz\"]\n\n(clj->js [1 {:foo \"bar\"} 4])\n;;=> #js [1 #js {:foo \"bar\"} 4]\n```"}],
  :full-name "cljs.core/clj->js",

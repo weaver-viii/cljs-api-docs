@@ -42,11 +42,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2075
+clojurescript @ r2080
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2606-2608](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L2606-L2608)</ins>
+            └── <ins>[core.cljs:2610-2612](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/core.cljs#L2610-L2612)</ins>
 </pre>
 
 
@@ -73,9 +73,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_constantly",
  :source {:code "(defn constantly\n  [x] (fn [& args] x))",
           :repo "clojurescript",
-          :tag "r2075",
+          :tag "r2080",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2606 2608]},
+          :lines [2610 2612]},
  :full-name "cljs.core/constantly",
  :clj-symbol "clojure.core/constantly",
  :docstring "Returns a function that takes any number of arguments and returns x."}

@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2075
+clojurescript @ r2080
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:342-343](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L342-L343)</ins>
+            └── <ins>[core.cljs:342-343](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/core.cljs#L342-L343)</ins>
 </pre>
 
 
@@ -52,7 +52,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ITransientAssociative",
  :source {:code "(defprotocol ITransientAssociative\n  (^clj -assoc! [tcoll key val]))",
           :repo "clojurescript",
-          :tag "r2075",
+          :tag "r2080",
           :filename "src/cljs/cljs/core.cljs",
           :lines [342 343]},
  :methods [{:name "-assoc!",

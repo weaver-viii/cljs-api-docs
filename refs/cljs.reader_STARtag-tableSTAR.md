@@ -22,11 +22,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2075
+clojurescript @ r2080
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:534-536](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/reader.cljs#L534-L536)</ins>
+            └── <ins>[reader.cljs:534-536](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/reader.cljs#L534-L536)</ins>
 </pre>
 
 
@@ -48,7 +48,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def *tag-table* (atom {\"inst\"  read-date\n                        \"uuid\"  read-uuid\n                        \"queue\" read-queue}))",
           :repo "clojurescript",
-          :tag "r2075",
+          :tag "r2080",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [534 536]},
  :full-name "cljs.reader/*tag-table*",

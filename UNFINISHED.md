@@ -4928,7 +4928,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unsigned-bit-shift-right</td>
-<td></td>
+<td>[ref](refs/cljs.core_unsigned-bit-shift-right.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unsigned-bit-shift-right.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>

@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2075
+clojurescript @ r2080
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6778-6781](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L6778-L6781)</ins>
+            └── <ins>[core.cljs:6782-6785](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/core.cljs#L6782-L6785)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_pr-str",
  :source {:code "(defn pr-str\n  [& objs]\n  (pr-str-with-opts objs (pr-opts)))",
           :repo "clojurescript",
-          :tag "r2075",
+          :tag "r2080",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6778 6781]},
+          :lines [6782 6785]},
  :full-name "cljs.core/pr-str",
  :clj-symbol "clojure.core/pr-str",
  :docstring "pr to a string, returning it. Fundamental entrypoint to IPrintWithWriter."}

@@ -42,11 +42,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2075
+clojurescript @ r2080
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7552-7559](https://github.com/clojure/clojurescript/blob/r2075/src/cljs/cljs/core.cljs#L7552-L7559)</ins>
+            └── <ins>[core.cljs:7556-7563](https://github.com/clojure/clojurescript/blob/r2080/src/cljs/cljs/core.cljs#L7556-L7563)</ins>
 </pre>
 
 
@@ -71,9 +71,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ex-info",
  :source {:code "(defn ex-info\n  ([msg map]\n     (ExceptionInfo. msg map nil))\n  ([msg map cause]\n     (ExceptionInfo. msg map cause)))",
           :repo "clojurescript",
-          :tag "r2075",
+          :tag "r2080",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7552 7559]},
+          :lines [7556 7563]},
  :full-name "cljs.core/ex-info",
  :clj-symbol "clojure.core/ex-info",
  :docstring "Alpha - subject to change.\nCreate an instance of ExceptionInfo, an Error type that carries a\nmap of additional data."}
