@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2234
+clojurescript @ r2261
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1569-1575](https://github.com/clojure/clojurescript/blob/r2234/src/clj/cljs/core.clj#L1569-L1575)</ins>
+            └── <ins>[core.clj:1573-1579](https://github.com/clojure/clojurescript/blob/r2261/src/clj/cljs/core.clj#L1573-L1579)</ins>
 </pre>
 
 
@@ -67,9 +67,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_time",
  :source {:code "(defmacro time\n  [expr]\n  `(let [start# (.getTime (js/Date.))\n         ret# ~expr]\n     (prn (core/str \"Elapsed time: \" (- (.getTime (js/Date.)) start#) \" msecs\"))\n     ret#))",
           :repo "clojurescript",
-          :tag "r2234",
+          :tag "r2261",
           :filename "src/clj/cljs/core.clj",
-          :lines [1569 1575]},
+          :lines [1573 1579]},
  :full-name "cljs.core/time",
  :clj-symbol "clojure.core/time",
  :docstring "Evaluates expr and prints the time it took. Returns the value of expr."}

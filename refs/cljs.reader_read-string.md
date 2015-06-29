@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2234
+clojurescript @ r2261
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:423-427](https://github.com/clojure/clojurescript/blob/r2234/src/cljs/cljs/reader.cljs#L423-L427)</ins>
+            └── <ins>[reader.cljs:438-442](https://github.com/clojure/clojurescript/blob/r2261/src/cljs/cljs/reader.cljs#L438-L442)</ins>
 </pre>
 
 
@@ -65,9 +65,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.reader_read-string",
  :source {:code "(defn read-string\n  [s]\n  (let [r (push-back-reader s)]\n    (read r false nil false)))",
           :repo "clojurescript",
-          :tag "r2234",
+          :tag "r2261",
           :filename "src/cljs/cljs/reader.cljs",
-          :lines [423 427]},
+          :lines [438 442]},
  :full-name "cljs.reader/read-string",
  :clj-symbol "clojure.core/read-string",
  :docstring "Reads one object from the string s"}

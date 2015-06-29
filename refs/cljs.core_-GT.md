@@ -126,19 +126,23 @@ Source code:
 
 ```clj
 (defmacro ->
-  ([x] x)
-  ([x form] (if (seq? form)
-              (with-meta `(~(first form) ~x ~@(next form)) (meta form))
-              (list form x)))
-  ([x form & more] `(-> (-> ~x ~form) ~@more)))
+  [x & forms]
+  (loop [x x, forms forms]
+    (if forms
+      (let [form (first forms)
+            threaded (if (seq? form)
+                       (with-meta `(~(first form) ~x ~@(next form)) (meta form))
+                       (list form x))]
+        (recur threaded (next forms)))
+      x)))
 ```
 
  <pre>
-clojure @ clojure-1.5.1
+clojure @ clojure-1.6.0
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:1545-1555](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/clj/clojure/core.clj#L1545-L1555)</ins>
+            └── <ins>[core.clj:1558-1572](https://github.com/clojure/clojure/blob/clojure-1.6.0/src/clj/clojure/core.clj#L1558-L1572)</ins>
 </pre>
 
 
@@ -163,11 +167,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "macro",
  :related ["cljs.core/->>"],
  :full-name-encode "cljs.core_-GT",
- :source {:code "(defmacro ->\n  ([x] x)\n  ([x form] (if (seq? form)\n              (with-meta `(~(first form) ~x ~@(next form)) (meta form))\n              (list form x)))\n  ([x form & more] `(-> (-> ~x ~form) ~@more)))",
+ :source {:code "(defmacro ->\n  [x & forms]\n  (loop [x x, forms forms]\n    (if forms\n      (let [form (first forms)\n            threaded (if (seq? form)\n                       (with-meta `(~(first form) ~x ~@(next form)) (meta form))\n                       (list form x))]\n        (recur threaded (next forms)))\n      x)))",
           :repo "clojure",
-          :tag "clojure-1.5.1",
+          :tag "clojure-1.6.0",
           :filename "src/clj/clojure/core.clj",
-          :lines [1545 1555]},
+          :lines [1558 1572]},
  :examples [{:id "19b460",
              :content "The first is arguably a bit more cumbersome to read than the second:\n\n```clj\n(first (.split (.replace (.toUpperCase \"a b c d\") \"A\" \"X\") \" \"))\n;;=> \"X\"\n\n(-> \"a b c d\"\n    .toUpperCase\n    (.replace \"A\" \"X\")\n    (.split \" \")\n    first)\n;;=> \"X\"\n```"}
             {:id "78ad8f",

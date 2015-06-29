@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2234
+clojurescript @ r2261
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7944-7950](https://github.com/clojure/clojurescript/blob/r2234/src/cljs/cljs/core.cljs#L7944-L7950)</ins>
+            └── <ins>[core.cljs:8061-8067](https://github.com/clojure/clojurescript/blob/r2261/src/cljs/cljs/core.cljs#L8061-L8067)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ex-message",
  :source {:code "(defn ex-message\n  [ex]\n  (when (instance? js/Error ex)\n    (.-message ex)))",
           :repo "clojurescript",
-          :tag "r2234",
+          :tag "r2261",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7944 7950]},
+          :lines [8061 8067]},
  :full-name "cljs.core/ex-message",
  :docstring "Alpha - subject to change.\nReturns the message attached to the given Error / ExceptionInfo object.\nFor non-Errors returns nil."}
 

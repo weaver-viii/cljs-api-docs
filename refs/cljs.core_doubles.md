@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2234
+clojurescript @ r2261
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1723](https://github.com/clojure/clojurescript/blob/r2234/src/cljs/cljs/core.cljs#L1723)</ins>
+            └── <ins>[core.cljs:1849](https://github.com/clojure/clojurescript/blob/r2261/src/cljs/cljs/core.cljs#L1849)</ins>
 </pre>
 
 
@@ -57,9 +57,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_doubles",
  :source {:code "(defn doubles [x] x)",
           :repo "clojurescript",
-          :tag "r2234",
+          :tag "r2261",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1723]},
+          :lines [1849]},
  :full-name "cljs.core/doubles",
  :clj-symbol "clojure.core/doubles"}
 

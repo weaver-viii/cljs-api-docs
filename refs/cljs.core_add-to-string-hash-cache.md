@@ -22,18 +22,18 @@ Source code:
 
 ```clj
 (defn add-to-string-hash-cache [k]
-  (let [h (goog.string/hashCode k)]
+  (let [h (hash-string* k)]
     (aset string-hash-cache k h)
     (set! string-hash-cache-count (inc string-hash-cache-count))
     h))
 ```
 
  <pre>
-clojurescript @ r2234
+clojurescript @ r2261
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1141-1145](https://github.com/clojure/clojurescript/blob/r2234/src/cljs/cljs/core.cljs#L1141-L1145)</ins>
+            └── <ins>[core.cljs:484-488](https://github.com/clojure/clojurescript/blob/r2261/src/cljs/cljs/core.cljs#L484-L488)</ins>
 </pre>
 
 
@@ -54,11 +54,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "add-to-string-hash-cache",
  :type "function",
  :signature ["[k]"],
- :source {:code "(defn add-to-string-hash-cache [k]\n  (let [h (goog.string/hashCode k)]\n    (aset string-hash-cache k h)\n    (set! string-hash-cache-count (inc string-hash-cache-count))\n    h))",
+ :source {:code "(defn add-to-string-hash-cache [k]\n  (let [h (hash-string* k)]\n    (aset string-hash-cache k h)\n    (set! string-hash-cache-count (inc string-hash-cache-count))\n    h))",
           :repo "clojurescript",
-          :tag "r2234",
+          :tag "r2261",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1141 1145]},
+          :lines [484 488]},
  :full-name "cljs.core/add-to-string-hash-cache",
  :full-name-encode "cljs.core_add-to-string-hash-cache",
  :history [["+" "0.0-1424"]]}

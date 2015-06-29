@@ -58,11 +58,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2234
+clojurescript @ r2261
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1856-1868](https://github.com/clojure/clojurescript/blob/r2234/src/cljs/cljs/core.cljs#L1856-L1868)</ins>
+            └── <ins>[core.cljs:1982-1994](https://github.com/clojure/clojurescript/blob/r2261/src/cljs/cljs/core.cljs#L1982-L1994)</ins>
 </pre>
 
 
@@ -98,11 +98,11 @@ clojurescript @ r2234
 ```
 
  <pre>
-clojurescript @ r2234
+clojurescript @ r2261
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:203-228](https://github.com/clojure/clojurescript/blob/r2234/src/clj/cljs/core.clj#L203-L228)</ins>
+            └── <ins>[core.clj:207-232](https://github.com/clojure/clojurescript/blob/r2261/src/clj/cljs/core.clj#L207-L232)</ins>
 </pre>
 
 ---
@@ -127,14 +127,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_str",
  :source {:code "(defn str\n  ([] \"\")\n  ([x] (if (nil? x)\n         \"\"\n         (.toString x)))\n  ([x & ys]\n    (loop [sb (gstring/StringBuffer. (str x)) more ys]\n      (if more\n        (recur (. sb  (append (str (first more)))) (next more))\n        (.toString sb)))))",
           :repo "clojurescript",
-          :tag "r2234",
+          :tag "r2261",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1856 1868]},
+          :lines [1982 1994]},
  :extra-sources ({:code "(defmacro str [& xs]\n  ;; Eagerly stringify any string or char literals.\n  (let [clean-xs (reduce (fn [acc x]\n                     (core/cond\n                       (core/or (core/string? x) (core/char? x))\n                       (if (core/string? (peek acc))\n                         (conj (pop acc) (core/str (peek acc) x))\n                         (conj acc (core/str x)))\n                       (core/nil? x) acc\n                       :else (conj acc x)))\n                   [] xs)\n        ;; clean-xs now has no nils, chars, or string-adjoining-string. bools,\n        ;; ints and floats will be emitted literally to allow JS string coersion.\n        strs (->> clean-xs\n                  (map #(if (core/or (core/string? %) (core/integer? %)\n                                     (core/float? %) (core/true? %)\n                                     (core/false? %))\n                            \"~{}\"\n                            \"cljs.core.str.cljs$core$IFn$_invoke$arity$1(~{})\"))\n                  (interpose \"+\")\n                  (apply core/str))]\n    ;; Google closure advanced compile will stringify and concat strings and\n    ;; numbers at compilation time.\n    (list* 'js* (core/str (if (core/string? (first clean-xs)) \"(\" \"(''+\")\n                          strs \")\")\n           clean-xs)))",
                   :repo "clojurescript",
-                  :tag "r2234",
+                  :tag "r2261",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [203 228]}),
+                  :lines [207 232]}),
  :full-name "cljs.core/str",
  :clj-symbol "clojure.core/str",
  :docstring "With no args, returns the empty string. With one arg x, returns\nx.toString().  (str nil) returns the empty string. With more than\none arg, returns the concatenation of the str values of the args."}

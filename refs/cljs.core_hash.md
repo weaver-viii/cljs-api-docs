@@ -37,7 +37,7 @@ Source code:
     (false? o) 0
 
     (string? o)
-    (check-string-hash-cache o)
+    (m3-hash-int (hash-string o))
 
     (nil? o) 0
 
@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2234
+clojurescript @ r2261
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1156-1174](https://github.com/clojure/clojurescript/blob/r2234/src/cljs/cljs/core.cljs#L1156-L1174)</ins>
+            └── <ins>[core.cljs:499-517](https://github.com/clojure/clojurescript/blob/r2261/src/cljs/cljs/core.cljs#L499-L517)</ins>
 </pre>
 
 
@@ -73,11 +73,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.core_hash",
- :source {:code "(defn hash [o]\n  (cond\n    (implements? IHash o)\n    (-hash ^not-native o)\n\n    (number? o)\n    (js-mod (.floor js/Math o) 2147483647)\n\n    (true? o) 1\n\n    (false? o) 0\n\n    (string? o)\n    (check-string-hash-cache o)\n\n    (nil? o) 0\n\n    :else\n    (-hash o)))",
+ :source {:code "(defn hash [o]\n  (cond\n    (implements? IHash o)\n    (-hash ^not-native o)\n\n    (number? o)\n    (js-mod (.floor js/Math o) 2147483647)\n\n    (true? o) 1\n\n    (false? o) 0\n\n    (string? o)\n    (m3-hash-int (hash-string o))\n\n    (nil? o) 0\n\n    :else\n    (-hash o)))",
           :repo "clojurescript",
-          :tag "r2234",
+          :tag "r2261",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1156 1174]},
+          :lines [499 517]},
  :full-name "cljs.core/hash",
  :clj-symbol "clojure.core/hash"}
 

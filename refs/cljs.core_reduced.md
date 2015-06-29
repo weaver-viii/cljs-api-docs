@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2234
+clojurescript @ r2261
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:588-591](https://github.com/clojure/clojurescript/blob/r2234/src/cljs/cljs/core.cljs#L588-L591)</ins>
+            └── <ins>[core.cljs:751-754](https://github.com/clojure/clojurescript/blob/r2261/src/cljs/cljs/core.cljs#L751-L754)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_reduced",
  :source {:code "(defn reduced\n  [x]\n  (Reduced. x))",
           :repo "clojurescript",
-          :tag "r2234",
+          :tag "r2261",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [588 591]},
+          :lines [751 754]},
  :full-name "cljs.core/reduced",
  :clj-symbol "clojure.core/reduced",
  :docstring "Wraps x in a way such that a reduce will terminate with the value x"}

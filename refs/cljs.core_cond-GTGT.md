@@ -58,11 +58,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.5.1
+clojure @ clojure-1.6.0
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:6789-6801](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/clj/clojure/core.clj#L6789-L6801)</ins>
+            └── <ins>[core.clj:6899-6911](https://github.com/clojure/clojure/blob/clojure-1.6.0/src/clj/clojure/core.clj#L6899-L6911)</ins>
 </pre>
 
 
@@ -92,9 +92,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_cond-GTGT",
  :source {:code "(defmacro cond->>\n  [expr & clauses]\n  (assert (even? (count clauses)))\n  (let [g (gensym)\n        pstep (fn [[test step]] `(if ~test (->> ~g ~step) ~g))]\n    `(let [~g ~expr\n           ~@(interleave (repeat g) (map pstep (partition 2 clauses)))]\n       ~g)))",
           :repo "clojure",
-          :tag "clojure-1.5.1",
+          :tag "clojure-1.6.0",
           :filename "src/clj/clojure/core.clj",
-          :lines [6789 6801]},
+          :lines [6899 6911]},
  :full-name "cljs.core/cond->>",
  :clj-symbol "clojure.core/cond->>",
  :docstring "Takes an expression and a set of test/form pairs. Threads expr (via ->>)\nthrough each form for which the corresponding test expression\nis true.  Note that, unlike cond branching, cond->> threading does not short circuit\nafter the first true test expression."}

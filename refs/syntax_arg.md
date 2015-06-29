@@ -42,13 +42,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.3
+tools.reader @ tools.reader-0.8.4
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:578-597](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.3/src/main/clojure/clojure/tools/reader.clj#L578-L597)</ins>
+                    └── <ins>[reader.clj:589-608](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.4/src/main/clojure/clojure/tools/reader.clj#L589-L608)</ins>
 </pre>
 
 
@@ -78,13 +78,13 @@ tools.reader @ tools.reader-0.8.3
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.3
+tools.reader @ tools.reader-0.8.4
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:391-410](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.3/src/main/clojure/clojure/tools/reader.clj#L391-L410)</ins>
+                    └── <ins>[reader.clj:402-421](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.4/src/main/clojure/clojure/tools/reader.clj#L402-L421)</ins>
 </pre>
 
 ---
@@ -107,14 +107,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_arg",
  :source {:code "(defn- macros [ch]\n  (case ch\n    \\\" read-string*\n    \\: read-keyword\n    \\; read-comment\n    \\' (wrapping-reader 'quote)\n    \\@ (wrapping-reader 'clojure.core/deref)\n    \\^ read-meta\n    \\` read-syntax-quote ;;(wrapping-reader 'syntax-quote)\n    \\~ read-unquote\n    \\( read-list\n    \\) read-unmatched-delimiter\n    \\[ read-vector\n    \\] read-unmatched-delimiter\n    \\{ read-map\n    \\} read-unmatched-delimiter\n    \\\\ read-char*\n    \\% read-arg\n    \\# read-dispatch\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.3",
+          :tag "tools.reader-0.8.4",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [578 597]},
+          :lines [589 608]},
  :extra-sources [{:code "(defn- read-arg\n  [rdr pct]\n  (if-not (thread-bound? #'arg-env)\n    (read-symbol rdr pct)\n    (let [ch (peek-char rdr)]\n      (cond\n       (or (whitespace? ch)\n           (macro-terminating? ch)\n           (nil? ch))\n       (register-arg 1)\n\n       (identical? ch \\&)\n       (do (read-char rdr)\n           (register-arg -1))\n\n       :else\n       (let [n (read rdr true nil true)]\n         (if-not (integer? n)\n           (throw (IllegalStateException. \"Arg literal must be %, %& or %integer\"))\n           (register-arg n)))))))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.8.3",
+                  :tag "tools.reader-0.8.4",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [391 410]}],
+                  :lines [402 421]}],
  :syntax-form "%",
  :full-name "syntax/arg",
  :clj-doc "http://clojure.org/reader#toc2"}

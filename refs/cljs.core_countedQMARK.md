@@ -39,11 +39,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2234
+clojurescript @ r2261
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:664-666](https://github.com/clojure/clojurescript/blob/r2234/src/cljs/cljs/core.cljs#L664-L666)</ins>
+            └── <ins>[core.cljs:827-829](https://github.com/clojure/clojurescript/blob/r2261/src/cljs/cljs/core.cljs#L827-L829)</ins>
 </pre>
 
 
@@ -70,9 +70,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_countedQMARK",
  :source {:code "(defn ^boolean counted?\n  [x] (satisfies? ICounted x))",
           :repo "clojurescript",
-          :tag "r2234",
+          :tag "r2261",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [664 666]},
+          :lines [827 829]},
  :full-name "cljs.core/counted?",
  :clj-symbol "clojure.core/counted?",
  :docstring "Returns true if coll implements count in constant time"}

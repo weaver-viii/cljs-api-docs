@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.5.1
+clojure @ clojure-1.6.0
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:471-475](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/clj/clojure/core.clj#L471-L475)</ins>
+            └── <ins>[core.clj:471-475](https://github.com/clojure/clojure/blob/clojure-1.6.0/src/clj/clojure/core.clj#L471-L475)</ins>
 </pre>
 
 
@@ -78,7 +78,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_when",
  :source {:code "(defmacro when\n  [test & body]\n  (list 'if test (cons 'do body)))",
           :repo "clojure",
-          :tag "clojure-1.5.1",
+          :tag "clojure-1.6.0",
           :filename "src/clj/clojure/core.clj",
           :lines [471 475]},
  :full-name "cljs.core/when",

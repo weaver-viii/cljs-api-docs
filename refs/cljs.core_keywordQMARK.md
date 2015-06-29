@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2234
+clojurescript @ r2261
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2164-2165](https://github.com/clojure/clojurescript/blob/r2234/src/cljs/cljs/core.cljs#L2164-L2165)</ins>
+            └── <ins>[core.cljs:2281-2282](https://github.com/clojure/clojurescript/blob/r2261/src/cljs/cljs/core.cljs#L2281-L2282)</ins>
 </pre>
 
 
@@ -45,11 +45,11 @@ clojurescript @ r2234
 ```
 
  <pre>
-clojurescript @ r2234
+clojurescript @ r2261
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:347-348](https://github.com/clojure/clojurescript/blob/r2234/src/clj/cljs/core.clj#L347-L348)</ins>
+            └── <ins>[core.clj:351-352](https://github.com/clojure/clojurescript/blob/r2261/src/clj/cljs/core.clj#L351-L352)</ins>
 </pre>
 
 ---
@@ -74,14 +74,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_keywordQMARK",
  :source {:code "(defn ^boolean keyword? [x]\n  (instance? Keyword x))",
           :repo "clojurescript",
-          :tag "r2234",
+          :tag "r2261",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2164 2165]},
+          :lines [2281 2282]},
  :extra-sources ({:code "(defmacro keyword? [x]\n  (bool-expr `(instance? Keyword ~x)))",
                   :repo "clojurescript",
-                  :tag "r2234",
+                  :tag "r2261",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [347 348]}),
+                  :lines [351 352]}),
  :full-name "cljs.core/keyword?",
  :clj-symbol "clojure.core/keyword?"}
 

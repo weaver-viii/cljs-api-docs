@@ -68,11 +68,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2234
+clojurescript @ r2261
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1209-1221](https://github.com/clojure/clojurescript/blob/r2234/src/clj/cljs/core.clj#L1209-L1221)</ins>
+            └── <ins>[core.clj:1213-1225](https://github.com/clojure/clojurescript/blob/r2261/src/clj/cljs/core.clj#L1213-L1225)</ins>
 </pre>
 
 
@@ -91,11 +91,11 @@ clojurescript @ r2234
 ```
 
  <pre>
-clojure @ clojure-1.5.1
+clojure @ clojure-1.6.0
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:4346-4357](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/clj/clojure/core.clj#L4346-L4357)</ins>
+            └── <ins>[core.clj:4420-4431](https://github.com/clojure/clojure/blob/clojure-1.6.0/src/clj/clojure/core.clj#L4420-L4431)</ins>
 </pre>
 
 ---
@@ -120,14 +120,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_assert",
  :source {:code "(defmacro assert\n  ([x]\n     (when *assert*\n       `(when-not ~x\n          (throw (js/Error.\n                  (cljs.core/str \"Assert failed: \" (cljs.core/pr-str '~x)))))))\n  ([x message]\n     (when *assert*\n       `(when-not ~x\n          (throw (js/Error.\n                  (cljs.core/str \"Assert failed: \" ~message \"\\n\" (cljs.core/pr-str '~x))))))))",
           :repo "clojurescript",
-          :tag "r2234",
+          :tag "r2261",
           :filename "src/clj/cljs/core.clj",
-          :lines [1209 1221]},
+          :lines [1213 1225]},
  :extra-sources ({:code "(defmacro assert\n  ([x]\n     (when *assert*\n       `(when-not ~x\n          (throw (new AssertionError (str \"Assert failed: \" (pr-str '~x)))))))\n  ([x message]\n     (when *assert*\n       `(when-not ~x\n          (throw (new AssertionError (str \"Assert failed: \" ~message \"\\n\" (pr-str '~x))))))))",
                   :repo "clojure",
-                  :tag "clojure-1.5.1",
+                  :tag "clojure-1.6.0",
                   :filename "src/clj/clojure/core.clj",
-                  :lines [4346 4357]}),
+                  :lines [4420 4431]}),
  :examples [{:id "1dc16f",
              :content "```clj\n(assert true)\n;;=> nil\n\n(assert false)\n;;=> Uncaught Error: Assert failed: false\n\n(assert (= 1 2) \"1 is not 2\")\n;;=> Uncaught Error: Assert failed: 1 is not 2\n;;   (= 1 2)\n```"}],
  :full-name "cljs.core/assert",

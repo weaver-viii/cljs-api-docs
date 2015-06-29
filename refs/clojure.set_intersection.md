@@ -62,11 +62,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2234
+clojurescript @ r2261
 └── src
     └── cljs
         └── clojure
-            └── <ins>[set.cljs:31-44](https://github.com/clojure/clojurescript/blob/r2234/src/cljs/clojure/set.cljs#L31-L44)</ins>
+            └── <ins>[set.cljs:31-44](https://github.com/clojure/clojurescript/blob/r2261/src/cljs/clojure/set.cljs#L31-L44)</ins>
 </pre>
 
 
@@ -96,7 +96,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.set_intersection",
  :source {:code "(defn intersection\n  ([s1] s1)\n  ([s1 s2]\n     (if (< (count s2) (count s1))\n       (recur s2 s1)\n       (reduce (fn [result item]\n                   (if (contains? s2 item)\n\t\t     result\n                     (disj result item)))\n\t       s1 s1)))\n  ([s1 s2 & sets] \n     (let [bubbled-sets (bubble-max-key #(- (count %)) (conj sets s2 s1))]\n       (reduce intersection (first bubbled-sets) (rest bubbled-sets)))))",
           :repo "clojurescript",
-          :tag "r2234",
+          :tag "r2261",
           :filename "src/cljs/clojure/set.cljs",
           :lines [31 44]},
  :full-name "clojure.set/intersection",

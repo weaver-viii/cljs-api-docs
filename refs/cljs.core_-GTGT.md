@@ -88,18 +88,23 @@ Source code:
 
 ```clj
 (defmacro ->>
-  ([x form] (if (seq? form)
+  [x & forms]
+  (loop [x x, forms forms]
+    (if forms
+      (let [form (first forms)
+            threaded (if (seq? form)
               (with-meta `(~(first form) ~@(next form)  ~x) (meta form))
-              (list form x)))
-  ([x form & more] `(->> (->> ~x ~form) ~@more)))
+              (list form x))]
+        (recur threaded (next forms)))
+      x)))
 ```
 
  <pre>
-clojure @ clojure-1.5.1
+clojure @ clojure-1.6.0
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:1557-1566](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/clj/clojure/core.clj#L1557-L1566)</ins>
+            └── <ins>[core.clj:1574-1588](https://github.com/clojure/clojure/blob/clojure-1.6.0/src/clj/clojure/core.clj#L1574-L1588)</ins>
 </pre>
 
 
@@ -124,11 +129,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "macro",
  :related ["cljs.core/->"],
  :full-name-encode "cljs.core_-GTGT",
- :source {:code "(defmacro ->>\n  ([x form] (if (seq? form)\n              (with-meta `(~(first form) ~@(next form)  ~x) (meta form))\n              (list form x)))\n  ([x form & more] `(->> (->> ~x ~form) ~@more)))",
+ :source {:code "(defmacro ->>\n  [x & forms]\n  (loop [x x, forms forms]\n    (if forms\n      (let [form (first forms)\n            threaded (if (seq? form)\n              (with-meta `(~(first form) ~@(next form)  ~x) (meta form))\n              (list form x))]\n        (recur threaded (next forms)))\n      x)))",
           :repo "clojure",
-          :tag "clojure-1.5.1",
+          :tag "clojure-1.6.0",
           :filename "src/clj/clojure/core.clj",
-          :lines [1557 1566]},
+          :lines [1574 1588]},
  :examples [{:id "1dc72c",
              :content "Sequence transformation functions often take a sequence as the last argument,\nthus the thread-last macro is commonly used with them.  Here we compute the sum\nof the first 10 even squares:\n\n```clj\n(->> (range)\n     (map #(* % %))\n     (filter even?)\n     (take 10)\n     (reduce +))\n;;=> 1140\n```\n\nThis expands to:\n\n```clj\n(reduce +\n  (take 10\n    (filter even?\n      (map #(* % %)\n        (range)))))\n;;=> 1140\n```"}],
  :full-name "cljs.core/->>",

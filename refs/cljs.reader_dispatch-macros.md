@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2234
+clojurescript @ r2261
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:395-402](https://github.com/clojure/clojurescript/blob/r2234/src/cljs/cljs/reader.cljs#L395-L402)</ins>
+            └── <ins>[reader.cljs:410-417](https://github.com/clojure/clojurescript/blob/r2261/src/cljs/cljs/reader.cljs#L410-L417)</ins>
 </pre>
 
 
@@ -59,9 +59,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[s]"],
  :source {:code "(defn dispatch-macros [s]\n  (cond\n   (identical? s \"{\") read-set\n   (identical? s \"<\") (throwing-reader \"Unreadable form\")\n   (identical? s \"\\\"\") read-regex\n   (identical? s\"!\") read-comment\n   (identical? s \"_\") read-discard\n   :else nil))",
           :repo "clojurescript",
-          :tag "r2234",
+          :tag "r2261",
           :filename "src/cljs/cljs/reader.cljs",
-          :lines [395 402]},
+          :lines [410 417]},
  :full-name "cljs.reader/dispatch-macros",
  :full-name-encode "cljs.reader_dispatch-macros",
  :history [["+" "0.0-927"]]}

@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2234
+clojurescript @ r2261
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2061-2074](https://github.com/clojure/clojurescript/blob/r2234/src/cljs/cljs/core.cljs#L2061-L2074)</ins>
+            └── <ins>[core.cljs:2181-2194](https://github.com/clojure/clojurescript/blob/r2261/src/cljs/cljs/core.cljs#L2181-L2194)</ins>
 </pre>
 
 
@@ -68,11 +68,11 @@ clojurescript @ r2234
 ```
 
  <pre>
-clojurescript @ r2234
+clojurescript @ r2261
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1383-1386](https://github.com/clojure/clojurescript/blob/r2234/src/clj/cljs/core.clj#L1383-L1386)</ins>
+            └── <ins>[core.clj:1387-1390](https://github.com/clojure/clojurescript/blob/r2261/src/clj/cljs/core.clj#L1387-L1390)</ins>
 </pre>
 
 ---
@@ -98,14 +98,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_list",
  :source {:code "(defn list [& xs]\n  (let [arr (if (and (instance? IndexedSeq xs) (zero? (.-i xs)))\n              (.-arr xs)\n              (let [arr (array)]\n                (loop [^not-native xs xs]\n                  (if-not (nil? xs)\n                    (do\n                      (.push arr (-first xs))\n                      (recur (-next xs)))\n                    arr))))]\n    (loop [i (alength arr) ^not-native r ()]\n      (if (> i 0)\n        (recur (dec i) (-conj r (aget arr (dec i))))\n        r))))",
           :repo "clojurescript",
-          :tag "r2234",
+          :tag "r2261",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2061 2074]},
+          :lines [2181 2194]},
  :extra-sources ({:code "(defmacro list\n  ([] `cljs.core.List.EMPTY)\n  ([x & xs]\n    `(-conj (list ~@xs) ~x)))",
                   :repo "clojurescript",
-                  :tag "r2234",
+                  :tag "r2261",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [1383 1386]}),
+                  :lines [1387 1390]}),
  :full-name "cljs.core/list",
  :clj-symbol "clojure.core/list"}
 
