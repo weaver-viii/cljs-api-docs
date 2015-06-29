@@ -68,11 +68,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8073-8078](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L8073-L8078)</ins>
+            └── <ins>[core.cljs:8073-8078](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L8073-L8078)</ins>
 </pre>
 
 
@@ -99,7 +99,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_remove-watch",
  :source {:code "(defn remove-watch\n  [iref key]\n  (-remove-watch iref key))",
           :repo "clojurescript",
-          :tag "r2341",
+          :tag "r2342",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8073 8078]},
  :examples [{:id "70044a",

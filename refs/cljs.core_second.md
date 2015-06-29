@@ -48,11 +48,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:991-994](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L991-L994)</ins>
+            └── <ins>[core.cljs:991-994](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L991-L994)</ins>
 </pre>
 
 
@@ -82,7 +82,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_second",
  :source {:code "(defn second\n  [coll]\n  (first (next coll)))",
           :repo "clojurescript",
-          :tag "r2341",
+          :tag "r2342",
           :filename "src/cljs/cljs/core.cljs",
           :lines [991 994]},
  :full-name "cljs.core/second",

@@ -49,11 +49,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8287-8301](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L8287-L8301)</ins>
+            └── <ins>[core.cljs:8287-8301](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L8287-L8301)</ins>
 </pre>
 
 
@@ -78,7 +78,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_trampoline",
  :source {:code "(defn trampoline\n  ([f]\n     (let [ret (f)]\n       (if (fn? ret)\n         (recur ret)\n         ret)))\n  ([f & args]\n     (trampoline #(apply f args))))",
           :repo "clojurescript",
-          :tag "r2341",
+          :tag "r2342",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8287 8301]},
  :full-name "cljs.core/trampoline",

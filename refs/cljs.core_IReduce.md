@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:296-297](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L296-L297)</ins>
+            └── <ins>[core.cljs:296-297](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L296-L297)</ins>
 </pre>
 
 
@@ -52,7 +52,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IReduce",
  :source {:code "(defprotocol IReduce\n  (-reduce [coll f] [coll f start]))",
           :repo "clojurescript",
-          :tag "r2341",
+          :tag "r2342",
           :filename "src/cljs/cljs/core.cljs",
           :lines [296 297]},
  :methods [{:name "-reduce",

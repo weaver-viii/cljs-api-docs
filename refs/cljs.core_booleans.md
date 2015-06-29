@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1900](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L1900)</ins>
+            └── <ins>[core.cljs:1900](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L1900)</ins>
 </pre>
 
 
@@ -57,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_booleans",
  :source {:code "(defn booleans [x] x)",
           :repo "clojurescript",
-          :tag "r2341",
+          :tag "r2342",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1900]},
  :full-name "cljs.core/booleans",

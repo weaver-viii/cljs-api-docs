@@ -95,13 +95,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.4
+tools.reader @ tools.reader-0.8.9
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:589-608](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.4/src/main/clojure/clojure/tools/reader.clj#L589-L608)</ins>
+                    └── <ins>[reader.clj:603-622](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.9/src/main/clojure/clojure/tools/reader.clj#L603-L622)</ins>
 </pre>
 
 
@@ -128,13 +128,13 @@ tools.reader @ tools.reader-0.8.4
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.4
+tools.reader @ tools.reader-0.8.9
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:337-353](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.4/src/main/clojure/clojure/tools/reader.clj#L337-L353)</ins>
+                    └── <ins>[reader.clj:345-361](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.9/src/main/clojure/clojure/tools/reader.clj#L345-L361)</ins>
 </pre>
 
 ---
@@ -162,14 +162,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_meta",
  :source {:code "(defn- macros [ch]\n  (case ch\n    \\\" read-string*\n    \\: read-keyword\n    \\; read-comment\n    \\' (wrapping-reader 'quote)\n    \\@ (wrapping-reader 'clojure.core/deref)\n    \\^ read-meta\n    \\` read-syntax-quote ;;(wrapping-reader 'syntax-quote)\n    \\~ read-unquote\n    \\( read-list\n    \\) read-unmatched-delimiter\n    \\[ read-vector\n    \\] read-unmatched-delimiter\n    \\{ read-map\n    \\} read-unmatched-delimiter\n    \\\\ read-char*\n    \\% read-arg\n    \\# read-dispatch\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.4",
+          :tag "tools.reader-0.8.9",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [589 608]},
+          :lines [603 622]},
  :extra-sources [{:code "(defn- read-meta\n  [rdr _]\n  (log-source rdr\n    (let [[line column] (when (indexing-reader? rdr)\n                          [(get-line-number rdr) (int (dec (get-column-number rdr)))])\n          m (desugar-meta (read rdr true nil true))]\n      (when-not (map? m)\n        (reader-error rdr \"Metadata must be Symbol, Keyword, String or Map\"))\n      (let [o (read rdr true nil true)]\n        (if (instance? IMeta o)\n          (let [m (if (and line (seq? o))\n                    (assoc m :line line :column column)\n                    m)]\n            (if (instance? IObj o)\n              (with-meta o (merge (meta o) m))\n              (reset-meta! o m)))\n          (reader-error rdr \"Metadata can only be applied to IMetas\"))))))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.8.4",
+                  :tag "tools.reader-0.8.9",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [337 353]}],
+                  :lines [345 361]}],
  :syntax-form "^",
  :examples [{:id "5b8fec",
              :content "Attach metadata to a collection:\n\n```clj\n^:foo [1 2 3]\n;;=> [1 2 3]\n```\n\nView the resulting metadata:\n\n```clj\n(meta ^:foo [1 2 3])\n;;=> {:foo true}\n\n(meta ^{:foo \"bar\"} [1 2 3])\n;;=> {:foo \"bar\"}\n\n(meta ^\"foo\" [1 2 3])\n;;=> {:tag \"foo\"}\n\n(def foo 1)\n(meta ^foo [1 2 3])\n;;=> {:tag 1}\n```\n\nChain metadata:\n\n```clj\n(meta ^:foo ^\"foo\" [1 2 3])\n;;=> {:foo true, :tag \"foo\"}\n```"}],

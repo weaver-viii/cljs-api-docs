@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8186-8191](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L8186-L8191)</ins>
+            └── <ins>[core.cljs:8186-8191](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L8186-L8191)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_iteration",
  :source {:code "(defn iteration\n  [xform coll]\n  (Iteration. xform coll))",
           :repo "clojurescript",
-          :tag "r2341",
+          :tag "r2342",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8186 8191]},
  :full-name "cljs.core/iteration",

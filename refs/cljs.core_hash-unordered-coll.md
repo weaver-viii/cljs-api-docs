@@ -42,11 +42,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:713-723](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L713-L723)</ins>
+            └── <ins>[core.cljs:713-723](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L713-L723)</ins>
 </pre>
 
 
@@ -72,7 +72,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash-unordered-coll",
  :source {:code "(defn ^number hash-unordered-coll\n  [coll]\n  (loop [n 0 hash-code 0 coll (seq coll)]\n    (if-not (nil? coll)\n      (recur (inc n) (bit-or (+ hash-code (hash (first coll))) 0) (next coll))\n      (mix-collection-hash hash-code n))))",
           :repo "clojurescript",
-          :tag "r2341",
+          :tag "r2342",
           :filename "src/cljs/cljs/core.cljs",
           :lines [713 723]},
  :full-name "cljs.core/hash-unordered-coll",

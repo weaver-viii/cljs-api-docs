@@ -2,7 +2,7 @@
 
  <table border="1">
 <tr>
-<td>__0.0-2341__ [all](HISTORY.md)</td>
+<td>__0.0-2342__ [all](HISTORY.md)</td>
 <td>2014-09-18</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.6.0</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-2341__ ([See Full History](HISTORY.md)):
+Changes from __0.0-2342__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
@@ -82,31 +82,7 @@ __Syntax API Changes__
 __Library API Changes__
 
  <table>
-
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/cat](refs/cljs.core_cat.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/completing](refs/cljs.core_completing.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
-</td>
-<td><samp>[~~cljs.core/flatmap~~](refs/cljs.core_flatmap.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/js-str](refs/cljs.core_js-str.md)</samp></td>
-</tr>
+<tr><td>_no symbols were added or removed in this version_</td></tr>
 </table>
 
 __Compiler API Changes__

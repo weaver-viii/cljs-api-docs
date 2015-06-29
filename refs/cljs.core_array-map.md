@@ -59,11 +59,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6777-6781](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L6777-L6781)</ins>
+            └── <ins>[core.cljs:6777-6781](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L6777-L6781)</ins>
 </pre>
 
 
@@ -88,11 +88,11 @@ clojurescript @ r2341
 ```
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1443-1457](https://github.com/clojure/clojurescript/blob/r2341/src/clj/cljs/core.clj#L1443-L1457)</ins>
+            └── <ins>[core.clj:1443-1457](https://github.com/clojure/clojurescript/blob/r2342/src/clj/cljs/core.clj#L1443-L1457)</ins>
 </pre>
 
 ---
@@ -120,12 +120,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_array-map",
  :source {:code "(defn array-map\n  [& keyvals]\n  (PersistentArrayMap. nil (quot (count keyvals) 2) (apply array keyvals) nil))",
           :repo "clojurescript",
-          :tag "r2341",
+          :tag "r2342",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6777 6781]},
  :extra-sources ({:code "(defmacro array-map\n  ([] '(.-EMPTY cljs.core/PersistentArrayMap))\n  ([& kvs]\n    (core/cond\n      (core/> (count kvs) 16)\n      `(hash-map ~@kvs)\n      \n      (let [keys (map first (partition 2 kvs))]\n        (core/and (every? #(= (:op %) :constant)\n                    (map #(cljs.analyzer/analyze &env %) keys))\n                  (= (count (into #{} keys)) (count keys))))\n      `(cljs.core/PersistentArrayMap. nil ~(clojure.core// (count kvs) 2) (array ~@kvs) nil)\n\n      :else\n      `(.fromArray cljs.core/PersistentArrayMap (array ~@kvs) true false))))",
                   :repo "clojurescript",
-                  :tag "r2341",
+                  :tag "r2342",
                   :filename "src/clj/cljs/core.clj",
                   :lines [1443 1457]}),
  :examples [{:id "198026",

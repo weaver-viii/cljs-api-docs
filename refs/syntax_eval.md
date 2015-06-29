@@ -34,13 +34,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.4
+tools.reader @ tools.reader-0.8.9
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:610-621](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.4/src/main/clojure/clojure/tools/reader.clj#L610-L621)</ins>
+                    └── <ins>[reader.clj:624-635](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.9/src/main/clojure/clojure/tools/reader.clj#L624-L635)</ins>
 </pre>
 
 
@@ -51,41 +51,17 @@ tools.reader @ tools.reader-0.8.4
   [rdr _]
   (when-not *read-eval*
     (reader-error rdr "#= not allowed when *read-eval* is false"))
-  (let [o (read rdr true nil true)]
-    (if (symbol? o)
-      (RT/classForName (str ^Symbol o))
-      (if (list? o)
-        (let [fs (first o)
-              o (rest o)
-              fs-name (name fs)]
-          (cond
-           (= fs 'var) (let [vs (first o)]
-                         (RT/var (namespace vs) (name vs)))
-           (.endsWith fs-name ".")
-           (let [args (to-array o)]
-             (-> fs-name (subs 0 (dec (count fs-name)))
-                RT/classForName (Reflector/invokeConstructor args)))
-
-           (Compiler/namesStaticMember fs)
-           (let [args (to-array o)]
-             (Reflector/invokeStaticMethod (namespace fs) fs-name args))
-
-           :else
-           (let [v (Compiler/maybeResolveIn *ns* fs)]
-             (if (var? v)
-               (apply v o)
-               (reader-error rdr "Can't resolve " fs)))))
-        (throw (IllegalArgumentException. "Unsupported #= form"))))))
+  (eval (read rdr true nil true)))
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.4
+tools.reader @ tools.reader-0.8.9
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:423-451](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.4/src/main/clojure/clojure/tools/reader.clj#L423-L451)</ins>
+                    └── <ins>[reader.clj:447-451](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.9/src/main/clojure/clojure/tools/reader.clj#L447-L451)</ins>
 </pre>
 
 ---
@@ -108,14 +84,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_eval",
  :source {:code "(defn- dispatch-macros [ch]\n  (case ch\n    \\^ read-meta                ;deprecated\n    \\' (wrapping-reader 'var)\n    \\( read-fn\n    \\= read-eval\n    \\{ read-set\n    \\< (throwing-reader \"Unreadable form\")\n    \\\" read-regex\n    \\! read-comment\n    \\_ read-discard\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.4",
+          :tag "tools.reader-0.8.9",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [610 621]},
- :extra-sources [{:code "(defn- read-eval\n  [rdr _]\n  (when-not *read-eval*\n    (reader-error rdr \"#= not allowed when *read-eval* is false\"))\n  (let [o (read rdr true nil true)]\n    (if (symbol? o)\n      (RT/classForName (str ^Symbol o))\n      (if (list? o)\n        (let [fs (first o)\n              o (rest o)\n              fs-name (name fs)]\n          (cond\n           (= fs 'var) (let [vs (first o)]\n                         (RT/var (namespace vs) (name vs)))\n           (.endsWith fs-name \".\")\n           (let [args (to-array o)]\n             (-> fs-name (subs 0 (dec (count fs-name)))\n                RT/classForName (Reflector/invokeConstructor args)))\n\n           (Compiler/namesStaticMember fs)\n           (let [args (to-array o)]\n             (Reflector/invokeStaticMethod (namespace fs) fs-name args))\n\n           :else\n           (let [v (Compiler/maybeResolveIn *ns* fs)]\n             (if (var? v)\n               (apply v o)\n               (reader-error rdr \"Can't resolve \" fs)))))\n        (throw (IllegalArgumentException. \"Unsupported #= form\"))))))",
+          :lines [624 635]},
+ :extra-sources [{:code "(defn- read-eval\n  [rdr _]\n  (when-not *read-eval*\n    (reader-error rdr \"#= not allowed when *read-eval* is false\"))\n  (eval (read rdr true nil true)))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.8.4",
+                  :tag "tools.reader-0.8.9",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [423 451]}],
+                  :lines [447 451]}],
  :syntax-form "#=",
  :full-name "syntax/eval",
  :clj-doc "https://github.com/clojure/clojure/blob/clojure-1.7.0-RC1/src/jvm/clojure/lang/LispReader.java#L113"}

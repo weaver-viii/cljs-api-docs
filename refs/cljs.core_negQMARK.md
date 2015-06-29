@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2023-2025](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L2023-L2025)</ins>
+            └── <ins>[core.cljs:2023-2025](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L2023-L2025)</ins>
 </pre>
 
 
@@ -59,11 +59,11 @@ clojurescript @ r2341
 ```
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:486-487](https://github.com/clojure/clojurescript/blob/r2341/src/clj/cljs/core.clj#L486-L487)</ins>
+            └── <ins>[core.clj:486-487](https://github.com/clojure/clojurescript/blob/r2342/src/clj/cljs/core.clj#L486-L487)</ins>
 </pre>
 
 ---
@@ -90,12 +90,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_negQMARK",
  :source {:code "(defn ^boolean neg?\n  [x] (cljs.core/neg? x))",
           :repo "clojurescript",
-          :tag "r2341",
+          :tag "r2342",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2023 2025]},
  :extra-sources ({:code "(defmacro ^::ana/numeric neg? [x]\n  `(< ~x 0))",
                   :repo "clojurescript",
-                  :tag "r2341",
+                  :tag "r2342",
                   :filename "src/clj/cljs/core.clj",
                   :lines [486 487]}),
  :full-name "cljs.core/neg?",

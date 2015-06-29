@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8136-8146](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L8136-L8146)</ins>
+            └── <ins>[core.cljs:8136-8146](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L8136-L8146)</ins>
 </pre>
 
 
@@ -67,7 +67,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_cat",
  :source {:code "(defn cat\n  [f1]\n  (let [rf1 (preserving-reduced f1)]  \n    (fn\n      ([] (f1))\n      ([result] (f1 result))\n      ([result input]\n         (reduce rf1 result input)))))",
           :repo "clojurescript",
-          :tag "r2341",
+          :tag "r2342",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8136 8146]},
  :full-name "cljs.core/cat",

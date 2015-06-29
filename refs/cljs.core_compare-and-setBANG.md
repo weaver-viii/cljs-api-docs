@@ -52,11 +52,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3370-3377](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L3370-L3377)</ins>
+            └── <ins>[core.cljs:3370-3377](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L3370-L3377)</ins>
 </pre>
 
 
@@ -83,7 +83,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_compare-and-setBANG",
  :source {:code "(defn compare-and-set!\n  [a oldval newval]\n  (if (= (.-state a) oldval)\n    (do (reset! a newval) true)\n    false))",
           :repo "clojurescript",
-          :tag "r2341",
+          :tag "r2342",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3370 3377]},
  :full-name "cljs.core/compare-and-set!",

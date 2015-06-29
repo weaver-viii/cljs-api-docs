@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5157](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L5157)</ins>
+            └── <ins>[core.cljs:5157](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L5157)</ins>
 </pre>
 
 
@@ -47,7 +47,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "PersistentArrayMap",
  :source {:code "(set! (.-HASHMAP-THRESHOLD PersistentArrayMap) 8)",
           :repo "clojurescript",
-          :tag "r2341",
+          :tag "r2342",
           :filename "src/cljs/cljs/core.cljs",
           :lines [5157]},
  :full-name "cljs.core/PersistentArrayMap.HASHMAP-THRESHOLD",

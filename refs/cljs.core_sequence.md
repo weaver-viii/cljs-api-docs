@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3096-3112](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L3096-L3112)</ins>
+            └── <ins>[core.cljs:3096-3112](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L3096-L3112)</ins>
 </pre>
 
 
@@ -73,11 +73,11 @@ clojurescript @ r2341
 ```
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1495-1501](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L1495-L1501)</ins>
+            └── <ins>[core.cljs:1495-1501](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L1495-L1501)</ins>
 </pre>
 
 ---
@@ -101,12 +101,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_sequence",
  :source {:code "(defn sequence\n  ([coll]\n     (if (seq? coll)\n       coll\n       (or (seq coll) ())))\n  ([xform coll]\n     (.create LazyTransformer xform coll))\n  ([xform coll & colls]\n     (.createMulti LazyTransformer xform (to-array (cons coll colls)))))",
           :repo "clojurescript",
-          :tag "r2341",
+          :tag "r2342",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3096 3112]},
  :extra-sources ({:code "(defn ^seq sequence\n  [coll]\n   (if (seq? coll)\n     coll\n     (or (seq coll) ())))",
                   :repo "clojurescript",
-                  :tag "r2341",
+                  :tag "r2342",
                   :filename "src/cljs/cljs/core.cljs",
                   :lines [1495 1501]}),
  :full-name "cljs.core/sequence",

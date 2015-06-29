@@ -99,11 +99,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2341
+clojurescript @ r2342
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1204-1217](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L1204-L1217)</ins>
+            └── <ins>[core.cljs:1204-1217](https://github.com/clojure/clojurescript/blob/r2342/src/cljs/cljs/core.cljs#L1204-L1217)</ins>
 </pre>
 
 
@@ -130,7 +130,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_assoc",
  :source {:code "(defn assoc\n  ([coll k v]\n    (if-not (nil? coll)\n      (-assoc coll k v)\n      (hash-map k v)))\n  ([coll k v & kvs]\n     (let [ret (assoc coll k v)]\n       (if kvs\n         (recur ret (first kvs) (second kvs) (nnext kvs))\n         ret))))",
           :repo "clojurescript",
-          :tag "r2341",
+          :tag "r2342",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1204 1217]},
  :examples [{:id "2fa7e0",
