@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2644
+clojurescript @ r2655
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4152-4162](https://github.com/clojure/clojurescript/blob/r2644/src/cljs/cljs/core.cljs#L4152-L4162)</ins>
+            └── <ins>[core.cljs:4154-4164](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/cljs/core.cljs#L4154-L4164)</ins>
 </pre>
 
 
@@ -62,9 +62,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[i base arr v start end]"],
  :source {:code "(deftype RangedIterator [^:mutable i ^:mutable base ^:mutable arr v start end]\n  Object\n  (hasNext [this]\n    (< i end))\n  (next [this]\n    (when (== (- i base) 32)\n      (set! arr (unchecked-array-for v i))\n      (set! base (+ base 32)))\n    (let [ret (aget arr (bit-and i 0x01f))]\n      (set! i (inc i))\n      ret)))",
           :repo "clojurescript",
-          :tag "r2644",
+          :tag "r2655",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [4152 4162]},
+          :lines [4154 4164]},
  :full-name "cljs.core/RangedIterator",
  :full-name-encode "cljs.core_RangedIterator",
  :history [["+" "0.0-2371"]]}

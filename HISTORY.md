@@ -16,6 +16,29 @@
 <th>comp</th>
 </tr>
 <tr>
+<td>__[0.0-2655](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2655)__</td>
+<td>2015-01-03</td>
+<td><kbd>1.6.0</kbd></td>
+<td><kbd>0.8.10</kbd></td>
+<td><kbd>0.0-20140718-946a7d39</kbd></td>
+<td>
+<a href="#user-content-00-2655-syntax">
+ 
+</a>
+</td>
+<td>
+<a href="#user-content-00-2655-library">
+<img valign="middle" src="https://img.shields.io/badge/+-1-brightgreen.svg"> 
+</a>
+</td>
+<td>
+<a href="#user-content-00-2655-compiler">
+ <img valign="middle" src="https://img.shields.io/badge/×-5-red.svg">
+</a>
+</td>
+</tr>
+
+<tr>
 <td>__[0.0-2644](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2644)__</td>
 <td>2015-01-02</td>
 <td><kbd>1.6.0</kbd></td>
@@ -1809,6 +1832,59 @@
 </td>
 </tr>
 
+</table>
+
+### 0.0-2655
+
+<a name="00-2655-syntax"></a> __Syntax API Changes__
+ <table>
+<tr><td>_no syntax forms were added or removed in this version_</td></tr>
+</table>
+
+<a name="00-2655-library"></a> __Library API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-dynamic var-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/\*loaded-libs\*](refs/cljs.core_STARloaded-libsSTAR.md)</samp></td>
+</tr>
+</table>
+
+<a name="00-2655-compiler"></a> __Compiler API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
+</td>
+<td><samp>[~~cljs.analyzer.api/ns-specs~~](refs/cljs.analyzer.api_ns-specs.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
+</td>
+<td><samp>[~~cljs.repl/merge-require~~](refs/cljs.repl_merge-require.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
+</td>
+<td><samp>[~~cljs.repl/merge-spec~~](refs/cljs.repl_merge-spec.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-var-red.svg">
+</td>
+<td><samp>[~~cljs.repl/spec-sort~~](refs/cljs.repl_spec-sort.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
+</td>
+<td><samp>[~~cljs.repl/update-require-spec~~](refs/cljs.repl_update-require-spec.md)</samp></td>
+</tr>
 </table>
 
 ### 0.0-2644

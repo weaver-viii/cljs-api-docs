@@ -71,11 +71,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2644
+clojurescript @ r2655
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2030-2032](https://github.com/clojure/clojurescript/blob/r2644/src/cljs/cljs/core.cljs#L2030-L2032)</ins>
+            └── <ins>[core.cljs:2032-2034](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/cljs/core.cljs#L2032-L2034)</ins>
 </pre>
 
 
@@ -88,11 +88,11 @@ clojurescript @ r2644
 ```
 
  <pre>
-clojurescript @ r2644
+clojurescript @ r2655
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:512-514](https://github.com/clojure/clojurescript/blob/r2644/src/clj/cljs/core.clj#L512-L514)</ins>
+            └── <ins>[core.clj:512-514](https://github.com/clojure/clojurescript/blob/r2655/src/clj/cljs/core.clj#L512-L514)</ins>
 </pre>
 
 ---
@@ -118,12 +118,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-and-not",
  :source {:code "(defn bit-and-not\n  [x y] (cljs.core/bit-and-not x y))",
           :repo "clojurescript",
-          :tag "r2644",
+          :tag "r2655",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2030 2032]},
+          :lines [2032 2034]},
  :extra-sources ({:code "(defmacro ^::ana/numeric bit-and-not\n  ([x y] (core/list 'js* \"(~{} & ~~{})\" x y))\n  ([x y & more] `(bit-and-not (bit-and-not ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r2644",
+                  :tag "r2655",
                   :filename "src/clj/cljs/core.clj",
                   :lines [512 514]}),
  :examples [{:id "16f35d",

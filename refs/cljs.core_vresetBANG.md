@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2644
+clojurescript @ r2655
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3530-3533](https://github.com/clojure/clojurescript/blob/r2644/src/cljs/cljs/core.cljs#L3530-L3533)</ins>
+            └── <ins>[core.cljs:3532-3535](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/cljs/core.cljs#L3532-L3535)</ins>
 </pre>
 
 
@@ -61,9 +61,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_vresetBANG",
  :source {:code "(defn vreset!\n  [vol newval]  (-vreset! vol newval))",
           :repo "clojurescript",
-          :tag "r2644",
+          :tag "r2655",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3530 3533]},
+          :lines [3532 3535]},
  :full-name "cljs.core/vreset!",
  :docstring "Sets the value of volatile to newval without regard for the\ncurrent value. Returns newval."}
 

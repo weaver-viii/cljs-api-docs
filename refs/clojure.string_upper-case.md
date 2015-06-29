@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2644
+clojurescript @ r2655
 └── src
     └── cljs
         └── clojure
-            └── <ins>[string.cljs:68-71](https://github.com/clojure/clojurescript/blob/r2644/src/cljs/clojure/string.cljs#L68-L71)</ins>
+            └── <ins>[string.cljs:68-71](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/clojure/string.cljs#L68-L71)</ins>
 </pre>
 
 
@@ -68,7 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.string_upper-case",
  :source {:code "(defn upper-case\n  [s]\n  (.toUpperCase s))",
           :repo "clojurescript",
-          :tag "r2644",
+          :tag "r2655",
           :filename "src/cljs/clojure/string.cljs",
           :lines [68 71]},
  :full-name "clojure.string/upper-case",

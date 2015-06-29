@@ -28,12 +28,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2644
+clojurescript @ r2655
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[node.clj:27-30](https://github.com/clojure/clojurescript/blob/r2644/src/clj/cljs/repl/node.clj#L27-L30)</ins>
+                └── <ins>[node.clj:27-30](https://github.com/clojure/clojurescript/blob/r2655/src/clj/cljs/repl/node.clj#L27-L30)</ins>
 </pre>
 
 
@@ -56,7 +56,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[s]"],
  :source {:code "(defn close-socket [s]\n  (.close (:in s))\n  (.close (:out s))\n  (.close (:socket s)))",
           :repo "clojurescript",
-          :tag "r2644",
+          :tag "r2655",
           :filename "src/clj/cljs/repl/node.clj",
           :lines [27 30]},
  :full-name "cljs.repl.node/close-socket",

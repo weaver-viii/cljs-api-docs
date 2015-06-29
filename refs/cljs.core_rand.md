@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2644
+clojurescript @ r2655
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8602-8606](https://github.com/clojure/clojurescript/blob/r2644/src/cljs/cljs/core.cljs#L8602-L8606)</ins>
+            └── <ins>[core.cljs:8604-8608](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/cljs/core.cljs#L8604-L8608)</ins>
 </pre>
 
 
@@ -81,9 +81,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_rand",
  :source {:code "(defn rand\n  ([] (rand 1))\n  ([n] (* (Math/random) n)))",
           :repo "clojurescript",
-          :tag "r2644",
+          :tag "r2655",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [8602 8606]},
+          :lines [8604 8608]},
  :full-name "cljs.core/rand",
  :clj-symbol "clojure.core/rand",
  :docstring "Returns a random floating point number between 0 (inclusive) and\nn (default 1) (exclusive)."}

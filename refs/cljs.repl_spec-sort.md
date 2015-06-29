@@ -1,10 +1,10 @@
-## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> cljs.repl/spec-sort
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> ~~cljs.repl/spec-sort~~
 
  <table border="1">
 <tr>
 
 <td>var</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2629"><img valign="middle" alt="[+] 0.0-2629" src="https://img.shields.io/badge/+-0.0--2629-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2629"><img valign="middle" alt="[+] 0.0-2629" src="https://img.shields.io/badge/+-0.0--2629-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2655"><img valign="middle" alt="[×] 0.0-2655" src="https://img.shields.io/badge/×-0.0--2655-red.svg"></a> </td>
 </tr>
 </table>
 
@@ -55,7 +55,8 @@ __Meta__ - To retrieve the API data for this symbol:
           :lines [190 194]},
  :full-name "cljs.repl/spec-sort",
  :full-name-encode "cljs.repl_spec-sort",
- :history [["+" "0.0-2629"]]}
+ :history [["+" "0.0-2629"] ["-" "0.0-2655"]],
+ :removed {:in "0.0-2655", :last-seen "0.0-2644"}}
 
 ```
 

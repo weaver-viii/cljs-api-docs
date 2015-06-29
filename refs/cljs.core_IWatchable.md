@@ -23,11 +23,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2644
+clojurescript @ r2655
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:355-358](https://github.com/clojure/clojurescript/blob/r2644/src/cljs/cljs/core.cljs#L355-L358)</ins>
+            └── <ins>[core.cljs:357-360](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/cljs/core.cljs#L357-L360)</ins>
 </pre>
 
 
@@ -50,9 +50,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IWatchable",
  :source {:code "(defprotocol IWatchable\n  (-notify-watches [this oldval newval])\n  (-add-watch [this key f])\n  (-remove-watch [this key]))",
           :repo "clojurescript",
-          :tag "r2644",
+          :tag "r2655",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [355 358]},
+          :lines [357 360]},
  :methods [{:name "-notify-watches",
             :signature ["[this oldval newval]"],
             :docstring nil}

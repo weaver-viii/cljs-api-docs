@@ -21,12 +21,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2644
+clojurescript @ r2655
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[net.cljs:86-87](https://github.com/clojure/clojurescript/blob/r2644/src/cljs/clojure/browser/net.cljs#L86-L87)</ins>
+                └── <ins>[net.cljs:86-87](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/clojure/browser/net.cljs#L86-L87)</ins>
 </pre>
 
 
@@ -49,7 +49,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.net_ICrossPageChannel",
  :source {:code "(defprotocol ICrossPageChannel\n  (register-service [this service-name fn] [this service-name fn encode-json?]))",
           :repo "clojurescript",
-          :tag "r2644",
+          :tag "r2655",
           :filename "src/cljs/clojure/browser/net.cljs",
           :lines [86 87]},
  :methods [{:name "register-service",

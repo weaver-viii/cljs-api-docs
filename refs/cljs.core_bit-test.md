@@ -61,11 +61,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2644
+clojurescript @ r2655
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2053-2056](https://github.com/clojure/clojurescript/blob/r2644/src/cljs/cljs/core.cljs#L2053-L2056)</ins>
+            └── <ins>[core.cljs:2055-2058](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/cljs/core.cljs#L2055-L2058)</ins>
 </pre>
 
 
@@ -77,11 +77,11 @@ clojurescript @ r2644
 ```
 
  <pre>
-clojurescript @ r2644
+clojurescript @ r2655
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:522-523](https://github.com/clojure/clojurescript/blob/r2644/src/clj/cljs/core.clj#L522-L523)</ins>
+            └── <ins>[core.clj:522-523](https://github.com/clojure/clojurescript/blob/r2655/src/clj/cljs/core.clj#L522-L523)</ins>
 </pre>
 
 ---
@@ -107,12 +107,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-test",
  :source {:code "(defn ^boolean bit-test\n  [x n]\n  (cljs.core/bit-test x n))",
           :repo "clojurescript",
-          :tag "r2644",
+          :tag "r2655",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2053 2056]},
+          :lines [2055 2058]},
  :extra-sources ({:code "(defmacro bit-test [x n]\n  (bool-expr (core/list 'js* \"((~{} & (1 << ~{})) != 0)\" x n)))",
                   :repo "clojurescript",
-                  :tag "r2644",
+                  :tag "r2655",
                   :filename "src/clj/cljs/core.clj",
                   :lines [522 523]}),
  :examples [{:id "f64664",
