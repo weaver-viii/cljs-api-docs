@@ -4424,7 +4424,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/specify</td>
-<td></td>
+<td>[ref](refs/cljs.core_specify.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_specify.cljsdoc)</td>
 <td></td>
 <td></td>

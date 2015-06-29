@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2134
+clojurescript @ r2138
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5893-5900](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/cljs/core.cljs#L5893-L5900)</ins>
+            └── <ins>[core.cljs:5893-5900](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/core.cljs#L5893-L5900)</ins>
 </pre>
 
 
@@ -73,11 +73,11 @@ clojurescript @ r2134
 ```
 
  <pre>
-clojurescript @ r2134
+clojurescript @ r2138
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1335-1343](https://github.com/clojure/clojurescript/blob/r2134/src/clj/cljs/core.clj#L1335-L1343)</ins>
+            └── <ins>[core.clj:1345-1353](https://github.com/clojure/clojurescript/blob/r2138/src/clj/cljs/core.clj#L1345-L1353)</ins>
 </pre>
 
 ---
@@ -103,14 +103,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash-map",
  :source {:code "(defn hash-map\n  [& keyvals]\n  (loop [in (seq keyvals), out (transient cljs.core.PersistentHashMap.EMPTY)]\n    (if in\n      (recur (nnext in) (assoc! out (first in) (second in)))\n      (persistent! out))))",
           :repo "clojurescript",
-          :tag "r2134",
+          :tag "r2138",
           :filename "src/cljs/cljs/core.cljs",
           :lines [5893 5900]},
  :extra-sources ({:code "(defmacro hash-map\n  ([] `cljs.core.PersistentHashMap.EMPTY)\n  ([& kvs]\n    (let [pairs (partition 2 kvs)\n          ks    (map first pairs)\n          vs    (map second pairs)]\n      (vary-meta\n        `(cljs.core.PersistentHashMap.fromArrays (array ~@ks) (array ~@vs))\n        assoc :tag 'cljs.core/PersistentHashMap))))",
                   :repo "clojurescript",
-                  :tag "r2134",
+                  :tag "r2138",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [1335 1343]}),
+                  :lines [1345 1353]}),
  :full-name "cljs.core/hash-map",
  :clj-symbol "clojure.core/hash-map",
  :docstring "keyval => key val\nReturns a new hash map with supplied mappings."}

@@ -70,11 +70,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2134
+clojurescript @ r2138
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7078-7092](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/cljs/core.cljs#L7078-L7092)</ins>
+            └── <ins>[core.cljs:7078-7092](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/core.cljs#L7078-L7092)</ins>
 </pre>
 
 
@@ -101,7 +101,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_swapBANG",
  :source {:code "(defn swap!\n  ([a f]\n     (reset! a (f (.-state a))))\n  ([a f x]\n     (reset! a (f (.-state a) x)))\n  ([a f x y]\n     (reset! a (f (.-state a) x y)))\n  ([a f x y z]\n     (reset! a (f (.-state a) x y z)))\n  ([a f x y z & more]\n     (reset! a (apply f (.-state a) x y z more))))",
           :repo "clojurescript",
-          :tag "r2134",
+          :tag "r2138",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7078 7092]},
  :full-name "cljs.core/swap!",

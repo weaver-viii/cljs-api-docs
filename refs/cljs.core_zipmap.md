@@ -53,11 +53,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2134
+clojurescript @ r2138
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6383-6393](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/cljs/core.cljs#L6383-L6393)</ins>
+            └── <ins>[core.cljs:6383-6393](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/core.cljs#L6383-L6393)</ins>
 </pre>
 
 
@@ -84,7 +84,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_zipmap",
  :source {:code "(defn zipmap\n  [keys vals]\n    (loop [map (transient {})\n           ks (seq keys)\n           vs (seq vals)]\n      (if (and ks vs)\n        (recur (assoc! map (first ks) (first vs))\n               (next ks)\n               (next vs))\n        (persistent! map))))",
           :repo "clojurescript",
-          :tag "r2134",
+          :tag "r2138",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6383 6393]},
  :full-name "cljs.core/zipmap",

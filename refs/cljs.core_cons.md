@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2134
+clojurescript @ r2138
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2062-2068](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/cljs/core.cljs#L2062-L2068)</ins>
+            └── <ins>[core.cljs:2062-2068](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/core.cljs#L2062-L2068)</ins>
 </pre>
 
 
@@ -77,7 +77,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_cons",
  :source {:code "(defn cons\n  [x coll]\n  (if (or (nil? coll)\n          (implements? ISeq coll))\n    (Cons. nil x coll nil)\n    (Cons. nil x (seq coll) nil)))",
           :repo "clojurescript",
-          :tag "r2134",
+          :tag "r2138",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2062 2068]},
  :full-name "cljs.core/cons",

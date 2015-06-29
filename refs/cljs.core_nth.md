@@ -107,11 +107,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2134
+clojurescript @ r2138
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:896-951](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/cljs/core.cljs#L896-L951)</ins>
+            └── <ins>[core.cljs:896-951](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/core.cljs#L896-L951)</ins>
 </pre>
 
 
@@ -141,7 +141,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_nth",
  :source {:code "(defn nth\n  ([coll n]\n     (when-not (nil? coll)\n       (cond\n         (implements? IIndexed coll)\n         (-nth ^not-native coll n)\n\n         (array? coll)\n         (when (< n (.-length coll))\n           (aget coll n))\n         \n         (string? coll)\n         (when (< n (.-length coll))\n           (aget coll n))\n\n         (native-satisfies? IIndexed coll)\n         (-nth coll n)\n         \n         :else\n         (if (satisfies? ISeq coll)\n           (linear-traversal-nth coll n)\n           (throw\n             (js/Error.\n               (str \"nth not supported on this type \"\n                 (type->str (type coll)))))))))\n  ([coll n not-found]\n     (if-not (nil? coll)\n       (cond\n         (implements? IIndexed coll)\n         (-nth ^not-native coll n not-found)\n\n         (array? coll)\n         (if (< n (.-length coll))\n           (aget coll n)\n           not-found)\n         \n         (string? coll)\n         (if (< n (.-length coll))\n           (aget coll n)\n           not-found)\n         \n         (native-satisfies? IIndexed coll)\n         (-nth coll n)\n\n         :else\n         (if (satisfies? ISeq coll)\n           (linear-traversal-nth coll n not-found)\n           (throw\n             (js/Error.\n               (str \"nth not supported on this type \"\n                 (type->str (type coll)))))))\n       not-found)))",
           :repo "clojurescript",
-          :tag "r2134",
+          :tag "r2138",
           :filename "src/cljs/cljs/core.cljs",
           :lines [896 951]},
  :full-name "cljs.core/nth",

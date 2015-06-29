@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2134
+clojurescript @ r2138
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1662](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/cljs/core.cljs#L1662)</ins>
+            └── <ins>[core.cljs:1662](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/cljs/core.cljs#L1662)</ins>
 </pre>
 
 
@@ -57,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ints",
  :source {:code "(defn ints [x] x)",
           :repo "clojurescript",
-          :tag "r2134",
+          :tag "r2138",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1662]},
  :full-name "cljs.core/ints",

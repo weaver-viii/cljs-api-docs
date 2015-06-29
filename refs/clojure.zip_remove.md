@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2134
+clojurescript @ r2138
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:237-251](https://github.com/clojure/clojurescript/blob/r2134/src/cljs/clojure/zip.cljs#L237-L251)</ins>
+            └── <ins>[zip.cljs:237-251](https://github.com/clojure/clojurescript/blob/r2138/src/cljs/clojure/zip.cljs#L237-L251)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_remove",
  :source {:code "(defn remove\n  [loc]\n    (let [[node {l :l, ppath :ppath, pnodes :pnodes, rs :r, :as path}] loc]\n      (if (nil? path)\n        (throw \"Remove at top\")\n        (if (pos? (count l))\n          (loop [loc (with-meta [(peek l) (assoc path :l (pop l) :changed? true)] (meta loc))]\n            (if-let [child (and (branch? loc) (down loc))]\n              (recur (rightmost child))\n              loc))\n          (with-meta [(make-node loc (peek pnodes) rs) \n                      (and ppath (assoc ppath :changed? true))]\n                     (meta loc))))))",
           :repo "clojurescript",
-          :tag "r2134",
+          :tag "r2138",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [237 251]},
  :full-name "clojure.zip/remove",
