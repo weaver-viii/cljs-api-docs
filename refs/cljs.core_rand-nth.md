@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6123-6128](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/core.cljs#L6123-L6128)</ins>
+            └── <ins>[core.cljs:6600-6605](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L6600-L6605)</ins>
 </pre>
 
 
@@ -78,9 +78,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_rand-nth",
  :source {:code "(defn rand-nth\n  [coll]\n  (nth coll (rand-int (count coll))))",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6123 6128]},
+          :lines [6600 6605]},
  :full-name "cljs.core/rand-nth",
  :clj-symbol "clojure.core/rand-nth",
  :docstring "Return a random element of the (sequential) collection. Will have\nthe same performance characteristics as nth for the given\ncollection."}

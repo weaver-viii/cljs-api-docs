@@ -39,18 +39,18 @@ Source code:
 ```clj
 (defn cons
   [x coll]
-  (if (or (coercive-= coll nil)
+  (if (or (nil? coll)
           (satisfies? ISeq coll))
     (Cons. nil x coll nil)
     (Cons. nil x (seq coll) nil)))
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1496-1502](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/core.cljs#L1496-L1502)</ins>
+            └── <ins>[core.cljs:1670-1676](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L1670-L1676)</ins>
 </pre>
 
 
@@ -75,11 +75,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/conj"],
  :full-name-encode "cljs.core_cons",
- :source {:code "(defn cons\n  [x coll]\n  (if (or (coercive-= coll nil)\n          (satisfies? ISeq coll))\n    (Cons. nil x coll nil)\n    (Cons. nil x (seq coll) nil)))",
+ :source {:code "(defn cons\n  [x coll]\n  (if (or (nil? coll)\n          (satisfies? ISeq coll))\n    (Cons. nil x coll nil)\n    (Cons. nil x (seq coll) nil)))",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1496 1502]},
+          :lines [1670 1676]},
  :full-name "cljs.core/cons",
  :clj-symbol "clojure.core/cons",
  :docstring "Returns a new seq where x is the first element and seq is the rest."}

@@ -31,15 +31,15 @@ Source code:
 ```clj
 (defmacro defmethod
   [multifn dispatch-val & fn-tail]
-  `(-add-method ~(with-meta multifn {:tag 'cljs.core.MultiFn}) ~dispatch-val (fn ~@fn-tail)))
+  `(-add-method ~(with-meta multifn {:tag 'cljs.core/MultiFn}) ~dispatch-val (fn ~@fn-tail)))
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:950-953](https://github.com/clojure/clojurescript/blob/r1236/src/clj/cljs/core.clj#L950-L953)</ins>
+            └── <ins>[core.clj:988-991](https://github.com/clojure/clojurescript/blob/r1424/src/clj/cljs/core.clj#L988-L991)</ins>
 </pre>
 
 
@@ -62,11 +62,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "macro",
  :full-name-encode "cljs.core_defmethod",
- :source {:code "(defmacro defmethod\n  [multifn dispatch-val & fn-tail]\n  `(-add-method ~(with-meta multifn {:tag 'cljs.core.MultiFn}) ~dispatch-val (fn ~@fn-tail)))",
+ :source {:code "(defmacro defmethod\n  [multifn dispatch-val & fn-tail]\n  `(-add-method ~(with-meta multifn {:tag 'cljs.core/MultiFn}) ~dispatch-val (fn ~@fn-tail)))",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/clj/cljs/core.clj",
-          :lines [950 953]},
+          :lines [988 991]},
  :full-name "cljs.core/defmethod",
  :clj-symbol "clojure.core/defmethod",
  :docstring "Creates and installs a new method of multimethod associated with dispatch-value. "}

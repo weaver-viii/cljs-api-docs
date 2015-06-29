@@ -44,20 +44,20 @@ Strings.
 Source code:
 
 ```clj
-(defn seq
+(defn ^seq seq
   [coll]
-  (if (coercive-not= coll nil)
+  (when-not (nil? coll)
     (if (satisfies? ASeq coll)
       coll
       (-seq coll))))
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:504-512](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/core.cljs#L504-L512)</ins>
+            └── <ins>[core.cljs:606-614](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L606-L614)</ins>
 </pre>
 
 
@@ -75,6 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "Returns a sequence on the collection. If the collection is empty, returns nil.\n\n`(seq nil)` returns nil.\n\n`seq` also works on strings.",
+ :return-type seq,
  :ns "cljs.core",
  :name "seq",
  :signature ["[coll]"],
@@ -82,11 +83,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/seq?" "cljs.core/empty?"],
  :full-name-encode "cljs.core_seq",
- :source {:code "(defn seq\n  [coll]\n  (if (coercive-not= coll nil)\n    (if (satisfies? ASeq coll)\n      coll\n      (-seq coll))))",
+ :source {:code "(defn ^seq seq\n  [coll]\n  (when-not (nil? coll)\n    (if (satisfies? ASeq coll)\n      coll\n      (-seq coll))))",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [504 512]},
+          :lines [606 614]},
  :full-name "cljs.core/seq",
  :clj-symbol "clojure.core/seq",
  :docstring "Returns a seq on the collection. If the collection is\nempty, returns nil.  (seq nil) returns nil. seq also works on\nStrings."}

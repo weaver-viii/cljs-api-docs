@@ -25,7 +25,7 @@ Source code:
 
 ```clj
 (defmacro defrecord [rsym fields & impls]
-  (let [r (:name (cljs.compiler/resolve-var (dissoc &env :locals) rsym))]
+  (let [r (:name (cljs.analyzer/resolve-var (dissoc &env :locals) rsym))]
     `(let []
        ~(emit-defrecord &env rsym r fields impls)
        (set! (.-cljs$lang$type ~r) true)
@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:537-545](https://github.com/clojure/clojurescript/blob/r1236/src/clj/cljs/core.clj#L537-L545)</ins>
+            └── <ins>[core.clj:571-579](https://github.com/clojure/clojurescript/blob/r1424/src/clj/cljs/core.clj#L571-L579)</ins>
 </pre>
 
 
@@ -63,11 +63,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "macro",
  :full-name-encode "cljs.core_defrecord",
- :source {:code "(defmacro defrecord [rsym fields & impls]\n  (let [r (:name (cljs.compiler/resolve-var (dissoc &env :locals) rsym))]\n    `(let []\n       ~(emit-defrecord &env rsym r fields impls)\n       (set! (.-cljs$lang$type ~r) true)\n       (set! (.-cljs$lang$ctorPrSeq ~r) (fn [this#] (list ~(core/str r))))\n       ~(build-positional-factory rsym r fields)\n       ~(build-map-factory rsym r fields)\n       ~r)))",
+ :source {:code "(defmacro defrecord [rsym fields & impls]\n  (let [r (:name (cljs.analyzer/resolve-var (dissoc &env :locals) rsym))]\n    `(let []\n       ~(emit-defrecord &env rsym r fields impls)\n       (set! (.-cljs$lang$type ~r) true)\n       (set! (.-cljs$lang$ctorPrSeq ~r) (fn [this#] (list ~(core/str r))))\n       ~(build-positional-factory rsym r fields)\n       ~(build-map-factory rsym r fields)\n       ~r)))",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/clj/cljs/core.clj",
-          :lines [537 545]},
+          :lines [571 579]},
  :full-name "cljs.core/defrecord",
  :clj-symbol "clojure.core/defrecord"}
 

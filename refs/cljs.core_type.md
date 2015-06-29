@@ -25,17 +25,16 @@ Source code:
 
 ```clj
 (defn type [x]
-  (if (or (nil? x) (undefined? x))
-    nil
-    (js* "(~{x}).constructor")))
+  (when-not (nil? x)
+    (.-constructor x)))
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:290-293](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/core.cljs#L290-L293)</ins>
+            └── <ins>[core.cljs:307-309](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L307-L309)</ins>
 </pre>
 
 
@@ -58,11 +57,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-971"]],
  :type "function",
  :full-name-encode "cljs.core_type",
- :source {:code "(defn type [x]\n  (if (or (nil? x) (undefined? x))\n    nil\n    (js* \"(~{x}).constructor\")))",
+ :source {:code "(defn type [x]\n  (when-not (nil? x)\n    (.-constructor x)))",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [290 293]},
+          :lines [307 309]},
  :full-name "cljs.core/type",
  :clj-symbol "clojure.core/type"}
 

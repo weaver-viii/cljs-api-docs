@@ -35,17 +35,17 @@ Source code:
 ```clj
 (defn make-array
   ([size]
-     (js* "new Array(~{size})"))
+     (js/Array. size))
   ([type size]
      (make-array size)))
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:81-85](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/core.cljs#L81-L85)</ins>
+            └── <ins>[core.cljs:82-86](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L82-L86)</ins>
 </pre>
 
 
@@ -70,11 +70,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/aclone" "cljs.core/array"],
  :full-name-encode "cljs.core_make-array",
- :source {:code "(defn make-array\n  ([size]\n     (js* \"new Array(~{size})\"))\n  ([type size]\n     (make-array size)))",
+ :source {:code "(defn make-array\n  ([size]\n     (js/Array. size))\n  ([type size]\n     (make-array size)))",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [81 85]},
+          :lines [82 86]},
  :full-name "cljs.core/make-array",
  :clj-symbol "clojure.core/make-array"}
 

@@ -40,12 +40,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:53-64](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/clojure/core/reducers.cljs#L53-L64)</ins>
+                └── <ins>[reducers.cljs:53-64](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/clojure/core/reducers.cljs#L53-L64)</ins>
 </pre>
 
 
@@ -70,7 +70,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.core.reducers_reducer",
  :source {:code "(defn reducer\n  ([coll xf]\n     (reify\n       cljs.core/IReduce\n       (-reduce [this f1]\n         (-reduce this f1 (f1)))\n       (-reduce [_ f1 init]\n         (-reduce coll (xf f1) init)))))",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/cljs/clojure/core/reducers.cljs",
           :lines [53 64]},
  :full-name "clojure.core.reducers/reducer",

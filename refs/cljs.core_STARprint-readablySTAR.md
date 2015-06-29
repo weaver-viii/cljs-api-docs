@@ -23,11 +23,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5703](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/core.cljs#L5703)</ins>
+            └── <ins>[core.cljs:6147](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L6147)</ins>
 </pre>
 
 
@@ -49,9 +49,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def *print-readably* true)",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [5703]},
+          :lines [6147]},
  :full-name "cljs.core/*print-readably*",
  :full-name-encode "cljs.core_STARprint-readablySTAR",
  :clj-symbol "clojure.core/*print-readably*",

@@ -50,13 +50,31 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:662-667](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/core.cljs#L662-L667)</ins>
+            └── <ins>[core.cljs:761-766](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L761-L766)</ins>
 </pre>
 
+
+---
+
+```clj
+(defmacro get
+  ([coll k]
+     `(-lookup ~coll ~k nil))
+  ([coll k not-found]
+     `(-lookup ~coll ~k ~not-found)))
+```
+
+ <pre>
+clojurescript @ r1424
+└── src
+    └── clj
+        └── cljs
+            └── <ins>[core.clj:253-257](https://github.com/clojure/clojurescript/blob/r1424/src/clj/cljs/core.clj#L253-L257)</ins>
+</pre>
 
 ---
 
@@ -81,9 +99,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_get",
  :source {:code "(defn get\n  ([o k]\n     (-lookup o k))\n  ([o k not-found]\n     (-lookup o k not-found)))",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [662 667]},
+          :lines [761 766]},
+ :extra-sources ({:code "(defmacro get\n  ([coll k]\n     `(-lookup ~coll ~k nil))\n  ([coll k not-found]\n     `(-lookup ~coll ~k ~not-found)))",
+                  :repo "clojurescript",
+                  :tag "r1424",
+                  :filename "src/clj/cljs/core.clj",
+                  :lines [253 257]}),
  :full-name "cljs.core/get",
  :clj-symbol "clojure.core/get",
  :docstring "Returns the value mapped to key, not-found or nil if key not present."}

@@ -23,11 +23,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5702](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/core.cljs#L5702)</ins>
+            └── <ins>[core.cljs:6146](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L6146)</ins>
 </pre>
 
 
@@ -49,9 +49,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def *flush-on-newline* true)",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [5702]},
+          :lines [6146]},
  :full-name "cljs.core/*flush-on-newline*",
  :full-name-encode "cljs.core_STARflush-on-newlineSTAR",
  :clj-symbol "clojure.core/*flush-on-newline*",

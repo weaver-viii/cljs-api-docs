@@ -20,12 +20,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[repl.cljs:21](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/clojure/browser/repl.cljs#L21)</ins>
+                └── <ins>[repl.cljs:21](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/clojure/browser/repl.cljs#L21)</ins>
 </pre>
 
 
@@ -47,7 +47,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def xpc-connection (atom nil))",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/cljs/clojure/browser/repl.cljs",
           :lines [21]},
  :full-name "clojure.browser.repl/xpc-connection",

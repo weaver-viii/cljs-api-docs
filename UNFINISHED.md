@@ -336,7 +336,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ArrayChunk</td>
-<td></td>
+<td>[ref](refs/cljs.core_ArrayChunk.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ArrayChunk.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -408,7 +408,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/Box</td>
-<td></td>
+<td>[ref](refs/cljs.core_Box.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_Box.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -416,7 +416,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ChunkBuffer</td>
-<td></td>
+<td>[ref](refs/cljs.core_ChunkBuffer.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ChunkBuffer.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -424,7 +424,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ChunkedCons</td>
-<td></td>
+<td>[ref](refs/cljs.core_ChunkedCons.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ChunkedCons.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -432,7 +432,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ChunkedSeq</td>
-<td></td>
+<td>[ref](refs/cljs.core_ChunkedSeq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ChunkedSeq.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -576,7 +576,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/IChunk</td>
-<td></td>
+<td>[ref](refs/cljs.core_IChunk.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_IChunk.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -584,7 +584,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/IChunkedNext</td>
-<td></td>
+<td>[ref](refs/cljs.core_IChunkedNext.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_IChunkedNext.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -592,7 +592,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/IChunkedSeq</td>
-<td></td>
+<td>[ref](refs/cljs.core_IChunkedSeq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_IChunkedSeq.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -616,7 +616,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/IComparable</td>
-<td></td>
+<td>[ref](refs/cljs.core_IComparable.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_IComparable.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -784,7 +784,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/INext</td>
-<td></td>
+<td>[ref](refs/cljs.core_INext.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_INext.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1024,7 +1024,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/Keyword</td>
-<td></td>
+<td>[ref](refs/cljs.core_Keyword.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_Keyword.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1376,7 +1376,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/RSeq</td>
-<td></td>
+<td>[ref](refs/cljs.core_RSeq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_RSeq.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1536,7 +1536,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/UUID</td>
-<td></td>
+<td>[ref](refs/cljs.core_UUID.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_UUID.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1712,7 +1712,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/add-to-string-hash-cache</td>
-<td></td>
+<td>[ref](refs/cljs.core_add-to-string-hash-cache.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_add-to-string-hash-cache.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1728,7 +1728,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/array-chunk</td>
-<td></td>
+<td>[ref](refs/cljs.core_array-chunk.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_array-chunk.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1880,7 +1880,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/check-string-hash-cache</td>
-<td></td>
+<td>[ref](refs/cljs.core_check-string-hash-cache.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_check-string-hash-cache.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1888,7 +1888,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/chunk</td>
-<td></td>
+<td>[ref](refs/cljs.core_chunk.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_chunk.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1896,7 +1896,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/chunk-append</td>
-<td></td>
+<td>[ref](refs/cljs.core_chunk-append.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_chunk-append.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1904,7 +1904,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/chunk-buffer</td>
-<td></td>
+<td>[ref](refs/cljs.core_chunk-buffer.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_chunk-buffer.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1912,7 +1912,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/chunk-cons</td>
-<td></td>
+<td>[ref](refs/cljs.core_chunk-cons.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_chunk-cons.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1920,7 +1920,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/chunk-first</td>
-<td></td>
+<td>[ref](refs/cljs.core_chunk-first.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_chunk-first.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1928,7 +1928,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/chunk-next</td>
-<td></td>
+<td>[ref](refs/cljs.core_chunk-next.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_chunk-next.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1936,7 +1936,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/chunk-rest</td>
-<td></td>
+<td>[ref](refs/cljs.core_chunk-rest.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_chunk-rest.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1944,7 +1944,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/chunked-seq</td>
-<td></td>
+<td>[ref](refs/cljs.core_chunked-seq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_chunked-seq.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1952,7 +1952,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/chunked-seq?</td>
-<td></td>
+<td>[ref](refs/cljs.core_chunked-seqQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_chunked-seqQMARK.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3120,7 +3120,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/key-test</td>
-<td></td>
+<td>[ref](refs/cljs.core_key-test.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_key-test.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4072,7 +4072,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/regexp?</td>
-<td></td>
+<td>[ref](refs/cljs.core_regexpQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_regexpQMARK.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4344,7 +4344,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/shuffle</td>
-<td></td>
+<td>[ref](refs/cljs.core_shuffle.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_shuffle.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -4520,7 +4520,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/string-hash-cache</td>
-<td></td>
+<td>[ref](refs/cljs.core_string-hash-cache.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_string-hash-cache.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4528,7 +4528,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/string-hash-cache-count</td>
-<td></td>
+<td>[ref](refs/cljs.core_string-hash-cache-count.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_string-hash-cache-count.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5512,7 +5512,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.reader/deregister-tag-parser!</td>
-<td></td>
+<td>[ref](refs/cljs.reader_deregister-tag-parserBANG.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.reader_deregister-tag-parserBANG.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5584,7 +5584,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.reader/make-unicode-char</td>
-<td></td>
+<td>[ref](refs/cljs.reader_make-unicode-char.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.reader_make-unicode-char.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5616,7 +5616,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.reader/parse-timestamp</td>
-<td></td>
+<td>[ref](refs/cljs.reader_parse-timestamp.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.reader_parse-timestamp.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5648,7 +5648,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.reader/read-2-chars</td>
-<td></td>
+<td>[ref](refs/cljs.reader_read-2-chars.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.reader_read-2-chars.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5656,7 +5656,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.reader/read-4-chars</td>
-<td></td>
+<td>[ref](refs/cljs.reader_read-4-chars.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.reader_read-4-chars.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5880,7 +5880,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.reader/unicode-2-pattern</td>
-<td></td>
+<td>[ref](refs/cljs.reader_unicode-2-pattern.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.reader_unicode-2-pattern.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5888,7 +5888,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.reader/unicode-4-pattern</td>
-<td></td>
+<td>[ref](refs/cljs.reader_unicode-4-pattern.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.reader_unicode-4-pattern.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5896,7 +5896,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.reader/validate-unicode-escape</td>
-<td></td>
+<td>[ref](refs/cljs.reader_validate-unicode-escape.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.reader_validate-unicode-escape.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6464,7 +6464,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.browser/preloaded-libs</td>
-<td></td>
+<td>[ref](refs/cljs.repl.browser_preloaded-libs.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.browser_preloaded-libs.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -8800,7 +8800,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>syntax/inst-literal</td>
-<td></td>
+<td>[ref](refs/syntax_inst-literal.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/syntax_inst-literal.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -8848,7 +8848,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>syntax/queue-literal</td>
-<td></td>
+<td>[ref](refs/syntax_queue-literal.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/syntax_queue-literal.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -8872,7 +8872,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>syntax/uuid-literal</td>
-<td></td>
+<td>[ref](refs/syntax_uuid-literal.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/syntax_uuid-literal.cljsdoc)</td>
 <td></td>
 <td></td>

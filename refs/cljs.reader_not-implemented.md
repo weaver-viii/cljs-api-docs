@@ -27,11 +27,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:213-215](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/reader.cljs#L213-L215)</ins>
+            └── <ins>[reader.cljs:252-254](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/reader.cljs#L252-L254)</ins>
 </pre>
 
 
@@ -54,9 +54,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[rdr ch]"],
  :source {:code "(defn not-implemented\n  [rdr ch]\n  (reader-error rdr \"Reader for \" ch \" not implemented yet\"))",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/cljs/cljs/reader.cljs",
-          :lines [213 215]},
+          :lines [252 254]},
  :full-name "cljs.reader/not-implemented",
  :full-name-encode "cljs.reader_not-implemented",
  :history [["+" "0.0-927"]]}

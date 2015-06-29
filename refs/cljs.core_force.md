@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6052-6057](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/core.cljs#L6052-L6057)</ins>
+            └── <ins>[core.cljs:6529-6534](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L6529-L6534)</ins>
 </pre>
 
 
@@ -66,9 +66,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_force",
  :source {:code "(defn force\n  [x]\n  (if (delay? x)\n    (deref x)\n    x))",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6052 6057]},
+          :lines [6529 6534]},
  :full-name "cljs.core/force",
  :clj-symbol "clojure.core/force",
  :docstring "If x is a Delay, returns the (possibly cached) value of its expression, else returns x"}

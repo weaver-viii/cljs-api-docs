@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:264-267](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/core.cljs#L264-L267)</ins>
+            └── <ins>[core.cljs:281-284](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L281-L284)</ins>
 </pre>
 
 
@@ -60,11 +60,11 @@ clojurescript @ r1236
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:103-104](https://github.com/clojure/clojurescript/blob/r1236/src/clj/cljs/core.clj#L103-L104)</ins>
+            └── <ins>[core.clj:103-104](https://github.com/clojure/clojurescript/blob/r1424/src/clj/cljs/core.clj#L103-L104)</ins>
 </pre>
 
 ---
@@ -91,12 +91,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_identicalQMARK",
  :source {:code "(defn ^boolean identical?\n  [x y]\n  (cljs.core/identical? x y))",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [264 267]},
+          :lines [281 284]},
  :extra-sources ({:code "(defmacro identical? [a b]\n  (bool-expr (list 'js* \"(~{} === ~{})\" a b)))",
                   :repo "clojurescript",
-                  :tag "r1236",
+                  :tag "r1424",
                   :filename "src/clj/cljs/core.clj",
                   :lines [103 104]}),
  :full-name "cljs.core/identical?",

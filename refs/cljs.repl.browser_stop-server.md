@@ -27,12 +27,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:271-273](https://github.com/clojure/clojurescript/blob/r1236/src/clj/cljs/repl/browser.clj#L271-L273)</ins>
+                └── <ins>[browser.clj:272-274](https://github.com/clojure/clojurescript/blob/r1424/src/clj/cljs/repl/browser.clj#L272-L274)</ins>
 </pre>
 
 
@@ -55,9 +55,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[]"],
  :source {:code "(defn stop-server\n  []\n  (.close (:socket @server-state)))",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/clj/cljs/repl/browser.clj",
-          :lines [271 273]},
+          :lines [272 274]},
  :full-name "cljs.repl.browser/stop-server",
  :full-name-encode "cljs.repl.browser_stop-server",
  :history [["+" "0.0-927"]]}

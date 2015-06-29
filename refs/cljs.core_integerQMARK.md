@@ -40,15 +40,15 @@ Source code:
 (defn ^boolean integer?
   [n]
   (and (number? n)
-       (js* "(~{n} == ~{n}.toFixed())")))
+       (coercive-= n (.toFixed n))))
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:870-874](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/core.cljs#L870-L874)</ins>
+            └── <ins>[core.cljs:995-999](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L995-L999)</ins>
 </pre>
 
 
@@ -74,11 +74,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/int"],
  :full-name-encode "cljs.core_integerQMARK",
- :source {:code "(defn ^boolean integer?\n  [n]\n  (and (number? n)\n       (js* \"(~{n} == ~{n}.toFixed())\")))",
+ :source {:code "(defn ^boolean integer?\n  [n]\n  (and (number? n)\n       (coercive-= n (.toFixed n))))",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [870 874]},
+          :lines [995 999]},
  :full-name "cljs.core/integer?",
  :clj-symbol "clojure.core/integer?",
  :docstring "Returns true if n is an integer.  Warning: returns true on underflow condition."}

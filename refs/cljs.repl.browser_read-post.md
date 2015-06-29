@@ -34,12 +34,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:142-151](https://github.com/clojure/clojurescript/blob/r1236/src/clj/cljs/repl/browser.clj#L142-L151)</ins>
+                └── <ins>[browser.clj:143-152](https://github.com/clojure/clojurescript/blob/r1424/src/clj/cljs/repl/browser.clj#L143-L152)</ins>
 </pre>
 
 
@@ -62,9 +62,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[line rdr]"],
  :source {:code "(defn read-post [line rdr]\n  (let [[_ path _] (str/split line #\" \")\n        headers (parse-headers (read-headers rdr))\n        content-length (Integer/parseInt (:content-length headers))\n        content (char-array content-length)]\n    (io! (.read rdr content 0 content-length)\n         {:method :post\n          :path path\n          :headers headers\n          :content (String. content)})))",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/clj/cljs/repl/browser.clj",
-          :lines [142 151]},
+          :lines [143 152]},
  :full-name "cljs.repl.browser/read-post",
  :full-name-encode "cljs.repl.browser_read-post",
  :history [["+" "0.0-927"]]}

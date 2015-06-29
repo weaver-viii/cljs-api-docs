@@ -39,11 +39,14 @@ Source code:
 
   ISeq
   (-first [coll] nil)
-  (-rest [coll] nil)
+  (-rest [coll] ())
+
+  INext
+  (-next [coll] nil)
 
   IStack
   (-peek [coll] nil)
-  (-pop [coll] #_(throw (js/Error. "Can't pop empty list")))
+  (-pop [coll] (throw (js/Error. "Can't pop empty list")))
 
   ICollection
   (-conj [coll o] (List. meta o nil 1 nil))
@@ -66,11 +69,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1236
+clojurescript @ r1424
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1406-1444](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/core.cljs#L1406-L1444)</ins>
+            └── <ins>[core.cljs:1566-1607](https://github.com/clojure/clojurescript/blob/r1424/src/cljs/cljs/core.cljs#L1566-L1607)</ins>
 </pre>
 
 
@@ -93,11 +96,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "type",
  :full-name-encode "cljs.core_EmptyList",
- :source {:code "(deftype EmptyList [meta]\n  IList\n  \n  Object\n  (toString [this]\n    (pr-str this))\n\n  IWithMeta\n  (-with-meta [coll meta] (EmptyList. meta))\n\n  IMeta\n  (-meta [coll] meta)\n\n  ISeq\n  (-first [coll] nil)\n  (-rest [coll] nil)\n\n  IStack\n  (-peek [coll] nil)\n  (-pop [coll] #_(throw (js/Error. \"Can't pop empty list\")))\n\n  ICollection\n  (-conj [coll o] (List. meta o nil 1 nil))\n\n  IEmptyableCollection\n  (-empty [coll] coll)\n\n  ISequential\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  IHash\n  (-hash [coll] 0)\n\n  ISeqable\n  (-seq [coll] nil)\n\n  ICounted\n  (-count [coll] 0))",
+ :source {:code "(deftype EmptyList [meta]\n  IList\n  \n  Object\n  (toString [this]\n    (pr-str this))\n\n  IWithMeta\n  (-with-meta [coll meta] (EmptyList. meta))\n\n  IMeta\n  (-meta [coll] meta)\n\n  ISeq\n  (-first [coll] nil)\n  (-rest [coll] ())\n\n  INext\n  (-next [coll] nil)\n\n  IStack\n  (-peek [coll] nil)\n  (-pop [coll] (throw (js/Error. \"Can't pop empty list\")))\n\n  ICollection\n  (-conj [coll o] (List. meta o nil 1 nil))\n\n  IEmptyableCollection\n  (-empty [coll] coll)\n\n  ISequential\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  IHash\n  (-hash [coll] 0)\n\n  ISeqable\n  (-seq [coll] nil)\n\n  ICounted\n  (-count [coll] 0))",
           :repo "clojurescript",
-          :tag "r1236",
+          :tag "r1424",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1406 1444]},
+          :lines [1566 1607]},
  :full-name "cljs.core/EmptyList",
  :clj-symbol "clojure.lang/EmptyList"}
 
