@@ -35,12 +35,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[core.clj:736-742](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/core.clj#L736-L742)</ins>
+                └── <ins>[core.clj:736-742](https://github.com/clojure/clojurescript/blob/r3308/src/main/clojure/cljs/core.clj#L736-L742)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_specifyBANG",
  :source {:code "(defmacro specify!\n  [expr & impls]\n  (let [x (with-meta (gensym \"x\") {:extend :instance})]\n    `(let [~x ~expr]\n       (extend-type ~x ~@impls)\n       ~x)))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/clojure/cljs/core.clj",
           :lines [736 742]},
  :full-name "cljs.core/specify!",

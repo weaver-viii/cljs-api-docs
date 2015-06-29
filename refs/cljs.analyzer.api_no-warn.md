@@ -34,13 +34,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── clojure
             └── cljs
                 └── analyzer
-                    └── <ins>[api.clj:23-28](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/analyzer/api.clj#L23-L28)</ins>
+                    └── <ins>[api.clj:23-28](https://github.com/clojure/clojurescript/blob/r3308/src/main/clojure/cljs/analyzer/api.clj#L23-L28)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.analyzer.api_no-warn",
  :source {:code "(defmacro no-warn\n  [& body]\n  (let [no-warnings (zipmap (keys ana/*cljs-warnings*) (repeat false))]\n    `(binding [ana/*cljs-warnings* ~no-warnings]\n       ~@body)))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/clojure/cljs/analyzer/api.clj",
           :lines [23 28]},
  :full-name "cljs.analyzer.api/no-warn",

@@ -35,13 +35,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── clojure
                 └── core
-                    └── <ins>[reducers.cljs:232-235](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/clojure/core/reducers.cljs#L232-L235)</ins>
+                    └── <ins>[reducers.cljs:232-235](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/clojure/core/reducers.cljs#L232-L235)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.core.reducers_appendBANG",
  :source {:code "(defn append!\n  [acc x]\n  (doto acc (.push x)))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/clojure/core/reducers.cljs",
           :lines [232 235]},
  :full-name "clojure.core.reducers/append!",

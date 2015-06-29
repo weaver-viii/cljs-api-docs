@@ -33,12 +33,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[core.clj:1967-1975](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/core.clj#L1967-L1975)</ins>
+                └── <ins>[core.clj:1967-1975](https://github.com/clojure/clojurescript/blob/r3308/src/main/clojure/cljs/core.clj#L1967-L1975)</ins>
 </pre>
 
 
@@ -61,7 +61,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[]"],
  :source {:code "(defmacro gen-apply-to []\n  `(do\n     (set! ~'*unchecked-if* true)\n     (defn ~'apply-to [~'f ~'argc ~'args]\n       (let [~'args (seq ~'args)]\n         (if (zero? ~'argc)\n           (~'f)\n           ~(gen-apply-to-helper))))\n     (set! ~'*unchecked-if* false)))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/clojure/cljs/core.clj",
           :lines [1967 1975]},
  :full-name "cljs.core/gen-apply-to",

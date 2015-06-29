@@ -33,12 +33,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:6657-6665](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L6657-L6665)</ins>
+                └── <ins>[core.cljs:6664-6672](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/core.cljs#L6664-L6672)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_PersistentHashMapDOTfromArray",
  :source {:code "(set! (.-fromArray PersistentHashMap)\n  (fn [arr ^boolean no-clone]\n    (let [arr (if no-clone arr (aclone arr))\n          len (alength arr)]\n      (loop [i 0 ret (transient (.-EMPTY PersistentHashMap))]\n        (if (< i len)\n          (recur (+ i 2)\n            (-assoc! ret (aget arr i) (aget arr (inc i))))\n          (-persistent! ret))))))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [6657 6665]},
+          :lines [6664 6672]},
  :full-name "cljs.core/PersistentHashMap.fromArray"}
 
 ```

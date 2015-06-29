@@ -38,12 +38,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── clojure
-                └── <ins>[zip.cljs:42-48](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/clojure/zip.cljs#L42-L48)</ins>
+                └── <ins>[zip.cljs:42-48](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/clojure/zip.cljs#L42-L48)</ins>
 </pre>
 
 
@@ -68,7 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_vector-zip",
  :source {:code "(defn vector-zip\n  [root]\n    (zipper vector?\n            seq\n            (fn [node children] (with-meta (vec children) (meta node)))\n            root))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/clojure/zip.cljs",
           :lines [42 48]},
  :full-name "clojure.zip/vector-zip",

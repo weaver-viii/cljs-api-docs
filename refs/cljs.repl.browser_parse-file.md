@@ -9,7 +9,7 @@
 </table>
 
  <samp>
-(__parse-file__ {:keys \[host port\], :as repl-env} file {:keys \[asset-path\], :as opts})<br>
+(__parse-file__ {:keys \[host host-port port\], :as repl-env} file {:keys \[asset-path\], :as opts})<br>
 </samp>
 
 ---
@@ -21,8 +21,8 @@
 Source code:
 
 ```clj
-(defn parse-file [{:keys [host port] :as repl-env} file {:keys [asset-path] :as opts}]
-  (let [base-url-pattern (Pattern/compile (str "http://" host ":" port "/"))]
+(defn parse-file [{:keys [host host-port port] :as repl-env} file {:keys [asset-path] :as opts}]
+  (let [base-url-pattern (Pattern/compile (str "http://" host ":" (or host-port port) "/"))]
     (if (re-find base-url-pattern file)
       (-> file
         (string/replace base-url-pattern "")
@@ -38,13 +38,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── clojure
             └── cljs
                 └── repl
-                    └── <ins>[browser.clj:230-243](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/repl/browser.clj#L230-L243)</ins>
+                    └── <ins>[browser.clj:230-243](https://github.com/clojure/clojurescript/blob/r3308/src/main/clojure/cljs/repl/browser.clj#L230-L243)</ins>
 </pre>
 
 
@@ -64,10 +64,10 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "cljs.repl.browser",
  :name "parse-file",
  :type "function",
- :signature ["[{:keys [host port], :as repl-env} file {:keys [asset-path], :as opts}]"],
- :source {:code "(defn parse-file [{:keys [host port] :as repl-env} file {:keys [asset-path] :as opts}]\n  (let [base-url-pattern (Pattern/compile (str \"http://\" host \":\" port \"/\"))]\n    (if (re-find base-url-pattern file)\n      (-> file\n        (string/replace base-url-pattern \"\")\n        (string/replace\n          (Pattern/compile\n            (str \"^\" (or asset-path (util/output-directory opts)) \"/\")) \"\"))\n      (if-let [asset-root (:asset-root opts)]\n        (string/replace file asset-root \"\")\n        (throw\n          (ex-info (str \"Could not relativize URL \" file)\n            {:type :parse-stacktrace\n             :reason :relativize-url}))))))",
+ :signature ["[{:keys [host host-port port], :as repl-env} file {:keys [asset-path], :as opts}]"],
+ :source {:code "(defn parse-file [{:keys [host host-port port] :as repl-env} file {:keys [asset-path] :as opts}]\n  (let [base-url-pattern (Pattern/compile (str \"http://\" host \":\" (or host-port port) \"/\"))]\n    (if (re-find base-url-pattern file)\n      (-> file\n        (string/replace base-url-pattern \"\")\n        (string/replace\n          (Pattern/compile\n            (str \"^\" (or asset-path (util/output-directory opts)) \"/\")) \"\"))\n      (if-let [asset-root (:asset-root opts)]\n        (string/replace file asset-root \"\")\n        (throw\n          (ex-info (str \"Could not relativize URL \" file)\n            {:type :parse-stacktrace\n             :reason :relativize-url}))))))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/clojure/cljs/repl/browser.clj",
           :lines [230 243]},
  :full-name "cljs.repl.browser/parse-file",

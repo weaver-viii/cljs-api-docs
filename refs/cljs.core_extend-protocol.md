@@ -68,11 +68,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.7.0-beta2
+clojure @ clojure-1.7.0-RC1
 └── src
     └── clj
         └── clojure
-            └── <ins>[core_deftype.clj:819-857](https://github.com/clojure/clojure/blob/clojure-1.7.0-beta2/src/clj/clojure/core_deftype.clj#L819-L857)</ins>
+            └── <ins>[core_deftype.clj:819-857](https://github.com/clojure/clojure/blob/clojure-1.7.0-RC1/src/clj/clojure/core_deftype.clj#L819-L857)</ins>
 </pre>
 
 
@@ -97,7 +97,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_extend-protocol",
  :source {:code "(defmacro extend-protocol \n  [p & specs]\n  (emit-extend-protocol p specs))",
           :repo "clojure",
-          :tag "clojure-1.7.0-beta2",
+          :tag "clojure-1.7.0-RC1",
           :filename "src/clj/clojure/core_deftype.clj",
           :lines [819 857]},
  :full-name "cljs.core/extend-protocol",

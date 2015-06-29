@@ -35,12 +35,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:2322-2325](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L2322-L2325)</ins>
+                └── <ins>[core.cljs:2329-2332](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/core.cljs#L2329-L2332)</ins>
 </pre>
 
 
@@ -65,9 +65,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_long",
  :source {:code "(defn long\n  [x]\n  (fix x))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [2322 2325]},
+          :lines [2329 2332]},
  :full-name "cljs.core/long",
  :clj-symbol "clojure.core/long",
  :docstring "Coerce to long by stripping decimal places. Identical to `int'."}

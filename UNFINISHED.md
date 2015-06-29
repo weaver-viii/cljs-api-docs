@@ -3888,7 +3888,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/random-uuid</td>
-<td></td>
+<td>[ref](refs/cljs.core_random-uuid.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_random-uuid.cljsdoc)</td>
 <td></td>
 <td></td>

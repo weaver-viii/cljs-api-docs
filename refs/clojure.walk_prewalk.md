@@ -35,12 +35,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── clojure
-                └── <ins>[walk.cljs:58-62](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/clojure/walk.cljs#L58-L62)</ins>
+                └── <ins>[walk.cljs:58-62](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/clojure/walk.cljs#L58-L62)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.walk_prewalk",
  :source {:code "(defn prewalk\n  [f form]\n  (walk (partial prewalk f) identity (f form)))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/clojure/walk.cljs",
           :lines [58 62]},
  :full-name "clojure.walk/prewalk",

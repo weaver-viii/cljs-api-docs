@@ -20,12 +20,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[reader.cljs:101](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/reader.cljs#L101)</ins>
+                └── <ins>[reader.cljs:101](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/reader.cljs#L101)</ins>
 </pre>
 
 
@@ -47,7 +47,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def symbol-pattern (re-pattern \"^[:]?([^0-9/].*/)?([^0-9/][^/]*)$\"))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/reader.cljs",
           :lines [101]},
  :full-name "cljs.reader/symbol-pattern",

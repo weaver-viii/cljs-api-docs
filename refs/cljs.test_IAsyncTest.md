@@ -28,12 +28,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[test.cljs:399-401](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/test.cljs#L399-L401)</ins>
+                └── <ins>[test.cljs:399-401](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/test.cljs#L399-L401)</ins>
 </pre>
 
 
@@ -56,7 +56,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_IAsyncTest",
  :source {:code "(defprotocol IAsyncTest\n  \"Marker protocol denoting CPS function to begin asynchronous\n  testing.\")",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/test.cljs",
           :lines [399 401]},
  :full-name "cljs.test/IAsyncTest",

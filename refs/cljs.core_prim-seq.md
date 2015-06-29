@@ -38,12 +38,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:1321-1327](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L1321-L1327)</ins>
+                └── <ins>[core.cljs:1323-1329](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/core.cljs#L1323-L1329)</ins>
 </pre>
 
 
@@ -68,9 +68,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_prim-seq",
  :source {:code "(defn prim-seq\n  ([prim]\n     (prim-seq prim 0))\n  ([prim i]\n     (when (< i (alength prim))\n       (IndexedSeq. prim i))))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [1321 1327]},
+          :lines [1323 1329]},
  :full-name "cljs.core/prim-seq",
  :docstring "Create seq from a primitive JavaScript Array-like."}
 

@@ -37,13 +37,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── clojure
             └── cljs
                 └── repl
-                    └── <ins>[server.clj:169-177](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/repl/server.clj#L169-L177)</ins>
+                    └── <ins>[server.clj:170-178](https://github.com/clojure/clojurescript/blob/r3308/src/main/clojure/cljs/repl/server.clj#L170-L178)</ins>
 </pre>
 
 
@@ -68,9 +68,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.server_start",
  :source {:code "(defn start\n  [opts]\n  (let [ss (ServerSocket. (:port opts))]\n    (.start\n      (Thread.\n        ((ns-resolve 'clojure.core 'binding-conveyor-fn)\n          (fn [] (server-loop opts ss)))))\n    (swap! state (fn [old] (assoc old :socket ss :port (:port opts))))))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/clojure/cljs/repl/server.clj",
-          :lines [169 177]},
+          :lines [170 178]},
  :full-name "cljs.repl.server/start",
  :docstring "Start the server on the specified port."}
 

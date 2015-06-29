@@ -34,13 +34,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── clojure
             └── cljs
                 └── build
-                    └── <ins>[api.clj:126-131](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/build/api.clj#L126-L131)</ins>
+                    └── <ins>[api.clj:126-131](https://github.com/clojure/clojurescript/blob/r3308/src/main/clojure/cljs/build/api.clj#L126-L131)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.build.api_add-dependencies",
  :source {:code "(defn add-dependencies\n  [opts & ijss]\n  (closure/add-dependencies opts ijss))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/clojure/cljs/build/api.clj",
           :lines [126 131]},
  :full-name "cljs.build.api/add-dependencies",

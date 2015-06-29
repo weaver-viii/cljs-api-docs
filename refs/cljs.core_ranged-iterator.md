@@ -30,12 +30,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:4564-4569](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L4564-L4569)</ins>
+                └── <ins>[core.cljs:4571-4576](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/core.cljs#L4571-L4576)</ins>
 </pre>
 
 
@@ -58,9 +58,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[v start end]"],
  :source {:code "(defn ranged-iterator [v start end]\n  (let [i start]\n    (RangedIterator. i (- i (js-mod i 32))\n      (when (< start (count v))\n        (unchecked-array-for v i))\n      v start end)))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [4564 4569]},
+          :lines [4571 4576]},
  :full-name "cljs.core/ranged-iterator",
  :full-name-encode "cljs.core_ranged-iterator",
  :history [["+" "0.0-2371"]]}

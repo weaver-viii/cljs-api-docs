@@ -35,12 +35,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[pprint.cljs:63-69](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/pprint.cljs#L63-L69)</ins>
+                └── <ins>[pprint.cljs:64-70](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/pprint.cljs#L64-L70)</ins>
 </pre>
 
 
@@ -65,9 +65,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.pprint_char-code",
  :source {:code "(defn char-code\n  [c]\n  (cond\n    (number? c) c\n    (and (string? c) (== (.-length c) 1)) (.charCodeAt c 0)\n    :else (throw (js/Error. \"Argument to char must be a character or number\"))))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/pprint.cljs",
-          :lines [63 69]},
+          :lines [64 70]},
  :full-name "cljs.pprint/char-code",
  :docstring "Convert char to int"}
 

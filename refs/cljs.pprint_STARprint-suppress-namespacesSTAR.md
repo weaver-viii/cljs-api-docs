@@ -33,12 +33,12 @@ pretty printing the results of macro expansions"
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[pprint.cljs:658-662](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/pprint.cljs#L658-L662)</ins>
+                └── <ins>[pprint.cljs:659-663](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/pprint.cljs#L659-L663)</ins>
 </pre>
 
 
@@ -62,9 +62,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.pprint_STARprint-suppress-namespacesSTAR",
  :source {:code "(def ^:dynamic\n^{:doc \"Don't print namespaces with symbols. This is particularly useful when\npretty printing the results of macro expansions\"\n  :added \"1.2\"}\n*print-suppress-namespaces* nil)",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/pprint.cljs",
-          :lines [658 662]},
+          :lines [659 663]},
  :full-name "cljs.pprint/*print-suppress-namespaces*",
  :clj-symbol "clojure.pprint/*print-suppress-namespaces*",
  :docstring "Don't print namespaces with symbols. This is particularly useful when\npretty printing the results of macro expansions"}

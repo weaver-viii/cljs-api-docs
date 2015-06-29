@@ -35,12 +35,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:1789-1792](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L1789-L1792)</ins>
+                └── <ins>[core.cljs:1791-1794](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/core.cljs#L1791-L1794)</ins>
 </pre>
 
 
@@ -66,9 +66,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_recordQMARK",
  :source {:code "(defn ^boolean record?\n  [x]\n  (satisfies? IRecord x))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [1789 1792]},
+          :lines [1791 1794]},
  :full-name "cljs.core/record?",
  :clj-symbol "clojure.core/record?",
  :docstring "Return true if x satisfies IRecord"}

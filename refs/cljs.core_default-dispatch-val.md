@@ -31,12 +31,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:9500-9502](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L9500-L9502)</ins>
+                └── <ins>[core.cljs:9519-9521](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/core.cljs#L9519-L9521)</ins>
 </pre>
 
 
@@ -61,9 +61,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_default-dispatch-val",
  :source {:code "(defn default-dispatch-val\n  [multifn] (-default-dispatch-val multifn))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [9500 9502]},
+          :lines [9519 9521]},
  :full-name "cljs.core/default-dispatch-val",
  :docstring "Given a multimethod, return it's default-dispatch-val."}
 

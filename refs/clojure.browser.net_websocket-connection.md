@@ -37,13 +37,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── clojure
                 └── browser
-                    └── <ins>[net.cljs:174-180](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/clojure/browser/net.cljs#L174-L180)</ins>
+                    └── <ins>[net.cljs:174-180](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/clojure/browser/net.cljs#L174-L180)</ins>
 </pre>
 
 
@@ -68,7 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
              "[auto-reconnect? next-reconnect-fn]"],
  :source {:code "(defn websocket-connection\n  ([]\n     (websocket-connection nil nil))\n  ([auto-reconnect?]\n     (websocket-connection auto-reconnect? nil))\n  ([auto-reconnect? next-reconnect-fn]\n     (WebSocket. auto-reconnect? next-reconnect-fn)))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/clojure/browser/net.cljs",
           :lines [174 180]},
  :full-name "clojure.browser.net/websocket-connection",

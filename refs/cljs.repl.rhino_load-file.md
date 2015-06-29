@@ -35,13 +35,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── clojure
             └── cljs
                 └── repl
-                    └── <ins>[rhino.clj:88-94](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/repl/rhino.clj#L88-L94)</ins>
+                    └── <ins>[rhino.clj:88-94](https://github.com/clojure/clojurescript/blob/r3308/src/main/clojure/cljs/repl/rhino.clj#L88-L94)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.rhino_load-file",
  :source {:code "(defn load-file\n  [repl-env opts src]\n  (let [goog-path (io/file (util/output-directory opts) \"goog\" src)]\n    (rhino-eval repl-env (.getPath goog-path) 1 (io/reader goog-path))))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/clojure/cljs/repl/rhino.clj",
           :lines [88 94]},
  :full-name "cljs.repl.rhino/load-file",

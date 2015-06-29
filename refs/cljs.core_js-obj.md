@@ -53,12 +53,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:1805-1811](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L1805-L1811)</ins>
+                └── <ins>[core.cljs:1807-1813](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/core.cljs#L1807-L1813)</ins>
 </pre>
 
 
@@ -85,12 +85,12 @@ clojurescript @ r3297
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[core.clj:1802-1818](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/core.clj#L1802-L1818)</ins>
+                └── <ins>[core.clj:1802-1818](https://github.com/clojure/clojurescript/blob/r3308/src/main/clojure/cljs/core.clj#L1802-L1818)</ins>
 </pre>
 
 ---
@@ -116,12 +116,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_js-obj",
  :source {:code "(defn js-obj\n  ([]\n     (cljs.core/js-obj))\n  ([& keyvals]\n     (apply gobject/create keyvals)))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [1805 1811]},
+          :lines [1807 1813]},
  :extra-sources ({:code "(defmacro js-obj [& rest]\n  (let [sym-or-str? (fn [x] (core/or (core/symbol? x) (core/string? x)))\n        filter-on-keys (fn [f coll]\n                         (->> coll\n                              (filter (fn [[k _]] (f k)))\n                              (into {})))\n        kvs (into {} (map vec (partition 2 rest)))\n        sym-pairs (filter-on-keys core/symbol? kvs)\n        expr->local (zipmap\n                     (filter (complement sym-or-str?) (keys kvs))\n                     (repeatedly gensym))\n        obj (gensym \"obj\")]\n    `(let [~@(apply concat (clojure.set/map-invert expr->local))\n           ~obj ~(js-obj* (filter-on-keys core/string? kvs))]\n       ~@(map (fn [[k v]] `(aset ~obj ~k ~v)) sym-pairs)\n       ~@(map (fn [[k v]] `(aset ~obj ~v ~(core/get kvs k))) expr->local)\n       ~obj)))",
                   :repo "clojurescript",
-                  :tag "r3297",
+                  :tag "r3308",
                   :filename "src/main/clojure/cljs/core.clj",
                   :lines [1802 1818]}),
  :examples [{:id "657cd7",

@@ -50,12 +50,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[test.clj:293-305](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/test.clj#L293-L305)</ins>
+                └── <ins>[test.clj:296-308](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/test.clj#L296-L308)</ins>
 </pre>
 
 
@@ -80,9 +80,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_run-all-tests",
  :source {:code "(defmacro run-all-tests\n  ([] `(cljs.test/run-all-tests nil (cljs.test/empty-env)))\n  ([re] `(cljs.test/run-all-tests ~re (cljs.test/empty-env)))\n  ([re env]\n   `(cljs.test/run-tests ~env\n      ~@(map\n          (fn [ns] `(quote ~ns))\n          (cond->> (ana-api/all-ns)\n            re (filter #(re-matches re (name %))))))))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/test.clj",
-          :lines [293 305]},
+          :lines [296 308]},
  :full-name "cljs.test/run-all-tests",
  :clj-symbol "clojure.test/run-all-tests",
  :docstring "Runs all tests in all namespaces; prints results.\nOptional argument is a regular expression; only namespaces with\nnames matching the regular expression (with re-matches) will be\ntested."}

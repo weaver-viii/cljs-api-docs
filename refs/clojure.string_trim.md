@@ -38,12 +38,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── clojure
-                └── <ins>[string.cljs:147-150](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/clojure/string.cljs#L147-L150)</ins>
+                └── <ins>[string.cljs:147-150](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/clojure/string.cljs#L147-L150)</ins>
 </pre>
 
 
@@ -69,7 +69,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.string_trim",
  :source {:code "(defn trim\n    [s]\n    (gstring/trim s))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/clojure/string.cljs",
           :lines [147 150]},
  :full-name "clojure.string/trim",

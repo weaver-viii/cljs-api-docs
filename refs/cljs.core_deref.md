@@ -49,12 +49,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:1157-1163](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L1157-L1163)</ins>
+                └── <ins>[core.cljs:1159-1165](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/core.cljs#L1159-L1165)</ins>
 </pre>
 
 
@@ -81,9 +81,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_deref",
  :source {:code "(defn deref\n  [o]\n  (-deref o))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [1157 1163]},
+          :lines [1159 1165]},
  :full-name "cljs.core/deref",
  :clj-symbol "clojure.core/deref",
  :docstring "Also reader macro: @var/@atom/@delay. Returns the\nmost-recently-committed value of ref. When applied to a var\nor atom, returns its current state. When applied to a delay, forces\nit if not already forced. See also - realized?."}

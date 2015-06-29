@@ -34,13 +34,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── clojure
             └── cljs
                 └── repl
-                    └── <ins>[nashorn.clj:47-52](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/repl/nashorn.clj#L47-L52)</ins>
+                    └── <ins>[nashorn.clj:47-52](https://github.com/clojure/clojurescript/blob/r3308/src/main/clojure/cljs/repl/nashorn.clj#L47-L52)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.nashorn_eval-resource",
  :source {:code "(defn eval-resource\n      [engine path debug]\n      (let [r (io/resource path)]\n        (eval-str engine (slurp r))\n        (when debug (println \"loaded: \" path))))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/clojure/cljs/repl/nashorn.clj",
           :lines [47 52]},
  :full-name "cljs.repl.nashorn/eval-resource",

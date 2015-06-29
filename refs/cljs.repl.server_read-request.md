@@ -22,21 +22,22 @@ Source code:
 
 ```clj
 (defn read-request [rdr]
-  (let [line (.readLine rdr)]
+  (if-let [line (.readLine rdr)]
     (cond
       (.startsWith line "POST") (read-post line rdr)
       (.startsWith line "GET") (read-get line rdr)
-      :else {:method :unknown :content line})))
+      :else {:method :unknown :content line})
+    {:method :unknown :content nil}))
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── clojure
             └── cljs
                 └── repl
-                    └── <ins>[server.clj:92-97](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/repl/server.clj#L92-L97)</ins>
+                    └── <ins>[server.clj:92-98](https://github.com/clojure/clojurescript/blob/r3308/src/main/clojure/cljs/repl/server.clj#L92-L98)</ins>
 </pre>
 
 
@@ -57,11 +58,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "read-request",
  :type "function",
  :signature ["[rdr]"],
- :source {:code "(defn read-request [rdr]\n  (let [line (.readLine rdr)]\n    (cond\n      (.startsWith line \"POST\") (read-post line rdr)\n      (.startsWith line \"GET\") (read-get line rdr)\n      :else {:method :unknown :content line})))",
+ :source {:code "(defn read-request [rdr]\n  (if-let [line (.readLine rdr)]\n    (cond\n      (.startsWith line \"POST\") (read-post line rdr)\n      (.startsWith line \"GET\") (read-get line rdr)\n      :else {:method :unknown :content line})\n    {:method :unknown :content nil}))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/clojure/cljs/repl/server.clj",
-          :lines [92 97]},
+          :lines [92 98]},
  :full-name "cljs.repl.server/read-request",
  :full-name-encode "cljs.repl.server_read-request",
  :history [["+" "0.0-1503"]]}

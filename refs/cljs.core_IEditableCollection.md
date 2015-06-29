@@ -31,12 +31,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:549-552](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L549-L552)</ins>
+                └── <ins>[core.cljs:549-552](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/core.cljs#L549-L552)</ins>
 </pre>
 
 
@@ -60,7 +60,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IEditableCollection",
  :source {:code "(defprotocol IEditableCollection\n  \"Protocol for collections which can transformed to transients.\"\n  (^clj -as-transient [coll]\n    \"Returns a new, transient version of the collection, in constant time.\"))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [549 552]},
  :methods [{:name "-as-transient",

@@ -20,12 +20,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[reader.cljs:98](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/reader.cljs#L98)</ins>
+                └── <ins>[reader.cljs:98](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/reader.cljs#L98)</ins>
 </pre>
 
 
@@ -47,7 +47,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def int-pattern (re-pattern \"^([-+]?)(?:(0)|([1-9][0-9]*)|0[xX]([0-9A-Fa-f]+)|0([0-7]+)|([1-9][0-9]?)[rR]([0-9A-Za-z]+))(N)?$\"))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/reader.cljs",
           :lines [98]},
  :full-name "cljs.reader/int-pattern",

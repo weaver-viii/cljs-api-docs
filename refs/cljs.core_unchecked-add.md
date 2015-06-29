@@ -46,12 +46,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:2231-2236](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L2231-L2236)</ins>
+                └── <ins>[core.cljs:2238-2243](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/core.cljs#L2238-L2243)</ins>
 </pre>
 
 
@@ -63,12 +63,12 @@ clojurescript @ r3297
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[core.clj:439-440](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/core.clj#L439-L440)</ins>
+                └── <ins>[core.clj:439-440](https://github.com/clojure/clojurescript/blob/r3308/src/main/clojure/cljs/core.clj#L439-L440)</ins>
 </pre>
 
 ---
@@ -93,12 +93,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-add",
  :source {:code "(defn ^number unchecked-add\n  ([] 0)\n  ([x] x)\n  ([x y] (cljs.core/unchecked-add x y))\n  ([x y & more] (reduce unchecked-add (cljs.core/unchecked-add x y) more)))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [2231 2236]},
+          :lines [2238 2243]},
  :extra-sources ({:code "(defmacro ^::ana/numeric unchecked-add\n  ([& xs] `(+ ~@xs)))",
                   :repo "clojurescript",
-                  :tag "r3297",
+                  :tag "r3308",
                   :filename "src/main/clojure/cljs/core.clj",
                   :lines [439 440]}),
  :full-name "cljs.core/unchecked-add",

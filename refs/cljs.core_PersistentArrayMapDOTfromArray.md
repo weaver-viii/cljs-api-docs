@@ -42,12 +42,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:5812-5829](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L5812-L5829)</ins>
+                └── <ins>[core.cljs:5819-5836](https://github.com/clojure/clojurescript/blob/r3308/src/main/cljs/cljs/core.cljs#L5819-L5836)</ins>
 </pre>
 
 
@@ -73,9 +73,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_PersistentArrayMapDOTfromArray",
  :source {:code "(set! (.-fromArray PersistentArrayMap)\n  (fn [arr ^boolean no-clone ^boolean no-check]\n    (as-> (if no-clone arr (aclone arr)) arr\n      (if no-check\n        arr\n        (let [ret (array)]\n          (loop [i 0]\n            (when (< i (alength arr))\n              (let [k (aget arr i)\n                    v (aget arr (inc i))\n                    idx (array-index-of ret k)]\n                (when (== idx -1)\n                  (.push ret k)\n                  (.push ret v)))\n              (recur (+ i 2))))\n          ret))\n      (let [cnt (/ (alength arr) 2)]\n        (PersistentArrayMap. nil cnt arr nil)))))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [5812 5829]},
+          :lines [5819 5836]},
  :full-name "cljs.core/PersistentArrayMap.fromArray"}
 
 ```

@@ -48,13 +48,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3297
+clojurescript @ r3308
 └── src
     └── main
         └── clojure
             └── cljs
                 └── build
-                    └── <ins>[api.clj:49-68](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/build/api.clj#L49-L68)</ins>
+                    └── <ins>[api.clj:49-68](https://github.com/clojure/clojurescript/blob/r3308/src/main/clojure/cljs/build/api.clj#L49-L68)</ins>
 </pre>
 
 
@@ -79,7 +79,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.build.api_cljs-dependents-for-macro-namespaces",
  :source {:code "(defn cljs-dependents-for-macro-namespaces\n  [namespaces]\n  (map :name\n       (let [namespaces-set (set namespaces)]\n         (filter (fn [x] (not-empty\n                         (intersection namespaces-set (-> x :require-macros vals set))))\n                 (vals (:cljs.analyzer/namespaces @env/*compiler*))))))",
           :repo "clojurescript",
-          :tag "r3297",
+          :tag "r3308",
           :filename "src/main/clojure/cljs/build/api.clj",
           :lines [49 68]},
  :full-name "cljs.build.api/cljs-dependents-for-macro-namespaces",
