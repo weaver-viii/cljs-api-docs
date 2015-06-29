@@ -62,12 +62,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:7458-7465](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L7458-L7465)</ins>
+                └── <ins>[core.cljs:7461-7468](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L7461-L7468)</ins>
 </pre>
 
 
@@ -86,12 +86,12 @@ clojurescript @ r3291
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[core.clj:1759-1767](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/core.clj#L1759-L1767)</ins>
+                └── <ins>[core.clj:1759-1767](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/core.clj#L1759-L1767)</ins>
 </pre>
 
 ---
@@ -119,12 +119,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_array-map",
  :source {:code "(defn array-map\n  [& keyvals]\n  (let [arr (if (and (instance? IndexedSeq keyvals) (zero? (.-i keyvals)))\n              (.-arr keyvals)\n              (into-array keyvals))]\n    (.fromArray cljs.core/PersistentArrayMap arr true false)))",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [7458 7465]},
+          :lines [7461 7468]},
  :extra-sources ({:code "(defmacro array-map\n  ([] '(.-EMPTY cljs.core/PersistentArrayMap))\n  ([& kvs]\n     (let [keys (map first (partition 2 kvs))]\n       (if (core/and (every? #(= (:op %) :constant)\n                       (map #(cljs.analyzer/analyze &env %) keys))\n                     (= (count (into #{} keys)) (count keys)))\n         `(cljs.core/PersistentArrayMap. nil ~(clojure.core// (count kvs) 2) (array ~@kvs) nil)\n         `(.fromArray cljs.core/PersistentArrayMap (array ~@kvs) true false)))))",
                   :repo "clojurescript",
-                  :tag "r3291",
+                  :tag "r3297",
                   :filename "src/main/clojure/cljs/core.clj",
                   :lines [1759 1767]}),
  :examples [{:id "198026",

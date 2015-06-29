@@ -43,13 +43,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── clojure
             └── cljs
                 └── repl
-                    └── <ins>[nashorn.clj:54-72](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/repl/nashorn.clj#L54-L72)</ins>
+                    └── <ins>[nashorn.clj:54-72](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/repl/nashorn.clj#L54-L72)</ins>
 </pre>
 
 
@@ -72,7 +72,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[engine output-dir debug]"],
  :source {:code "(defn init-engine [engine output-dir debug]\n      (eval-resource engine \"goog/base.js\" debug)\n      (eval-resource engine \"goog/deps.js\" debug)\n      (eval-str engine \"var global = this\") ; required by React\n      (eval-str engine\n        (format\n          (str \"var nashorn_load = function(path) {\"\n            \"  var outputPath = \\\"%s\\\" + \\\"/\\\" + path;\"\n            (when debug \"  print(\\\"loading: \\\" + outputPath) ; \")\n            \"  load(outputPath);\"\n            \"};\")\n          output-dir))\n      (eval-str engine\n        (str \"goog.global.CLOSURE_IMPORT_SCRIPT = function(path) {\"\n          \" nashorn_load(\\\"goog/\\\" + path);\"\n          \" return true;\"\n          \"};\"))\n      (eval-str engine \"goog.global.isProvided_ = function(name) { return false; };\")\n      engine)",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/clojure/cljs/repl/nashorn.clj",
           :lines [54 72]},
  :full-name "cljs.repl.nashorn/init-engine",

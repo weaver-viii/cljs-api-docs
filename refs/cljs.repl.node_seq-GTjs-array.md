@@ -26,13 +26,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── clojure
             └── cljs
                 └── repl
-                    └── <ins>[node.clj:75-76](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/repl/node.clj#L75-L76)</ins>
+                    └── <ins>[node.clj:75-76](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/repl/node.clj#L75-L76)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[v]"],
  :source {:code "(defn seq->js-array [v]\n  (str \"[\" (apply str (interpose \", \" (map pr-str v))) \"]\"))",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/clojure/cljs/repl/node.clj",
           :lines [75 76]},
  :full-name "cljs.repl.node/seq->js-array",

@@ -28,12 +28,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:2220](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L2220)</ins>
+                └── <ins>[core.cljs:2223](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L2223)</ins>
 </pre>
 
 
@@ -44,12 +44,12 @@ clojurescript @ r3291
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[core.clj:431](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/core.clj#L431)</ins>
+                └── <ins>[core.clj:431](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/core.clj#L431)</ins>
 </pre>
 
 ---
@@ -74,12 +74,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_double",
  :source {:code "(defn ^number double [x] x)",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [2220]},
+          :lines [2223]},
  :extra-sources ({:code "(defmacro double [x] x)",
                   :repo "clojurescript",
-                  :tag "r3291",
+                  :tag "r3297",
                   :filename "src/main/clojure/cljs/core.clj",
                   :lines [431]}),
  :full-name "cljs.core/double",

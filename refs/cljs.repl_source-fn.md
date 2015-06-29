@@ -52,12 +52,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[repl.cljc:1114-1134](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/repl.cljc#L1114-L1134)</ins>
+                └── <ins>[repl.cljc:1114-1134](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/repl.cljc#L1114-L1134)</ins>
 </pre>
 
 
@@ -82,7 +82,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_source-fn",
  :source {:code "(defn source-fn\n  [env x]\n  (when-let [v (ana-api/resolve env x)]\n    (when-let [filepath (:file v)]\n      (let [f (io/file filepath)\n            f (if (.exists f)\n                f\n                (io/resource filepath))]\n        (when f\n          (with-open [pbr (PushbackReader. (io/reader f))]\n            (let [rdr (readers/source-logging-push-back-reader pbr)]\n              (dotimes [_ (dec (:line v))] (readers/read-line rdr))\n              (-> (reader/read {:read-cond :allow :features #{:cljs}} rdr)\n                meta :source))))))))",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/clojure/cljs/repl.cljc",
           :lines [1114 1134]},
  :full-name "cljs.repl/source-fn",

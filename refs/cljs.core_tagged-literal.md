@@ -37,12 +37,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:9658-9663](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L9658-L9663)</ins>
+                └── <ins>[core.cljs:9663-9668](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L9663-L9668)</ins>
 </pre>
 
 
@@ -67,9 +67,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_tagged-literal",
  :source {:code "(defn tagged-literal\n  [tag form]\n  {:pre [(symbol? tag)]}\n  (cljs.core.TaggedLiteral. tag form))",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [9658 9663]},
+          :lines [9663 9668]},
  :full-name "cljs.core/tagged-literal",
  :clj-symbol "clojure.core/tagged-literal",
  :docstring "Construct a data representation of a tagged literal from a\ntag symbol and a form."}

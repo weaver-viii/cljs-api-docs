@@ -37,12 +37,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:71-77](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L71-L77)</ins>
+                └── <ins>[core.cljs:71-77](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L71-L77)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_STARprint-dupSTAR",
  :source {:code "(def\n  ^{:dynamic true\n    :doc \"When set to logical true, objects will be printed in a way that preserves\n  their type when read in later.\n\n  Defaults to false.\"}\n  *print-dup* false)",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [71 77]},
  :full-name "cljs.core/*print-dup*",

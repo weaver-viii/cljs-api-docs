@@ -44,12 +44,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[pprint.clj:133-145](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/pprint.clj#L133-L145)</ins>
+                └── <ins>[pprint.clj:133-145](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/pprint.clj#L133-L145)</ins>
 </pre>
 
 
@@ -74,7 +74,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.pprint_formatter-out",
  :source {:code "(defmacro formatter-out\n  [format-in]\n  `(let [format-in# ~format-in\n         cf# (if (string? format-in#) (cljs.pprint/cached-compile format-in#) format-in#)]\n     (fn [& args#]\n       (let [navigator# (cljs.pprint/init-navigator args#)]\n         (cljs.pprint/execute-format cf# navigator#)))))",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/cljs/cljs/pprint.clj",
           :lines [133 145]},
  :full-name "cljs.pprint/formatter-out",

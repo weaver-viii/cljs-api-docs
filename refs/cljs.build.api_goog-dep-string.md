@@ -33,13 +33,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── clojure
             └── cljs
                 └── build
-                    └── <ins>[api.clj:100-104](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/build/api.clj#L100-L104)</ins>
+                    └── <ins>[api.clj:100-104](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/build/api.clj#L100-L104)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.build.api_goog-dep-string",
  :source {:code "(defn goog-dep-string\n  [opts ijs]\n  (closure/add-dep-string opts ijs))",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/clojure/cljs/build/api.clj",
           :lines [100 104]},
  :full-name "cljs.build.api/goog-dep-string",

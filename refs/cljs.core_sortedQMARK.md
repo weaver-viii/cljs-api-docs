@@ -45,12 +45,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:1771-1773](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L1771-L1773)</ins>
+                └── <ins>[core.cljs:1774-1776](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L1774-L1776)</ins>
 </pre>
 
 
@@ -78,9 +78,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_sortedQMARK",
  :source {:code "(defn ^boolean sorted?\n  [x] (satisfies? ISorted x))",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [1771 1773]},
+          :lines [1774 1776]},
  :full-name "cljs.core/sorted?",
  :clj-symbol "clojure.core/sorted?",
  :docstring "Returns true if coll satisfies ISorted"}

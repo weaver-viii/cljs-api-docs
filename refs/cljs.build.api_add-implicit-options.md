@@ -34,13 +34,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── clojure
             └── cljs
                 └── build
-                    └── <ins>[api.clj:133-138](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/build/api.clj#L133-L138)</ins>
+                    └── <ins>[api.clj:133-138](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/build/api.clj#L133-L138)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.build.api_add-implicit-options",
  :source {:code "(defn add-implicit-options\n  [opts]\n  (closure/add-implicit-options opts))",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/clojure/cljs/build/api.clj",
           :lines [133 138]},
  :full-name "cljs.build.api/add-implicit-options",

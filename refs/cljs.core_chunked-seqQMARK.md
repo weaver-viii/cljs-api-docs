@@ -31,12 +31,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:1797-1799](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L1797-L1799)</ins>
+                └── <ins>[core.cljs:1800-1802](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L1800-L1802)</ins>
 </pre>
 
 
@@ -62,9 +62,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_chunked-seqQMARK",
  :source {:code "(defn ^boolean chunked-seq?\n  [x] (implements? IChunkedSeq x))",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [1797 1799]},
+          :lines [1800 1802]},
  :full-name "cljs.core/chunked-seq?",
  :docstring "Return true if x is satisfies IChunkedSeq."}
 

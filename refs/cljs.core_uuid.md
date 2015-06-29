@@ -26,12 +26,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:9529-9530](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L9529-L9530)</ins>
+                └── <ins>[core.cljs:9534-9535](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L9534-L9535)</ins>
 </pre>
 
 
@@ -54,9 +54,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[s]"],
  :source {:code "(defn uuid [s]\n  (UUID. s nil))",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [9529 9530]},
+          :lines [9534 9535]},
  :full-name "cljs.core/uuid",
  :full-name-encode "cljs.core_uuid",
  :history [["+" "0.0-3291"]]}

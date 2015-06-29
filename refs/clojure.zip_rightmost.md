@@ -38,12 +38,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── cljs
             └── clojure
-                └── <ins>[zip.cljs:142-148](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/clojure/zip.cljs#L142-L148)</ins>
+                └── <ins>[zip.cljs:142-148](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/clojure/zip.cljs#L142-L148)</ins>
 </pre>
 
 
@@ -68,7 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_rightmost",
  :source {:code "(defn rightmost\n  [loc]\n    (let [[node {l :l r :r :as path}] loc]\n      (if (and path r)\n        (with-meta [(last r) (assoc path :l (apply conj l node (butlast r)) :r nil)] (meta loc))\n        loc)))",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/cljs/clojure/zip.cljs",
           :lines [142 148]},
  :full-name "clojure.zip/rightmost",

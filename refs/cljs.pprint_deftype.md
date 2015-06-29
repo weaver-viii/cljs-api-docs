@@ -34,12 +34,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[pprint.clj:39-48](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/pprint.clj#L39-L48)</ins>
+                └── <ins>[pprint.clj:39-48](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/pprint.clj#L39-L48)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[type-name & fields]"],
  :source {:code "(defmacro deftype\n  [type-name & fields]\n  (let [name-str (name type-name)\n        fields (map (comp symbol name) fields)]\n    `(do\n       (defrecord ~type-name [~'type-tag ~@fields])\n       (defn- ~(symbol (str \"make-\" name-str))\n         ~(vec fields)\n         (~(symbol (str type-name \".\")) ~(keyword name-str) ~@fields))\n       (defn- ~(symbol (str name-str \"?\")) [x#] (= (:type-tag x#) ~(keyword name-str))))))",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/cljs/cljs/pprint.clj",
           :lines [39 48]},
  :full-name "cljs.pprint/deftype",

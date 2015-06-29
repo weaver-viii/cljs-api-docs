@@ -46,12 +46,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[repl.cljc:58-75](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/repl.cljc#L58-L75)</ins>
+                └── <ins>[repl.cljc:58-75](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/repl.cljc#L58-L75)</ins>
 </pre>
 
 
@@ -76,7 +76,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_skip-whitespace",
  :source {:code "(defn skip-whitespace\n  [s]\n  (loop [c (readers/read-char s)]\n    (case c\n      \\newline :line-start\n      nil :stream-end\n      \\; (do (readers/read-line s) :line-start)\n      (if (or (Character/isWhitespace c) (identical? c \\,))\n        (recur (readers/read-char s))\n        (do (readers/unread s c) :body)))))",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/clojure/cljs/repl.cljc",
           :lines [58 75]},
  :full-name "cljs.repl/skip-whitespace",

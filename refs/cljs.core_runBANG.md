@@ -36,12 +36,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:8961-8965](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L8961-L8965)</ins>
+                └── <ins>[core.cljs:8966-8970](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L8966-L8970)</ins>
 </pre>
 
 
@@ -66,9 +66,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_runBANG",
  :source {:code "(defn run!\n  [proc coll]\n  (reduce #(proc %2) nil coll))",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [8961 8965]},
+          :lines [8966 8970]},
  :full-name "cljs.core/run!",
  :clj-symbol "clojure.core/run!",
  :docstring "Runs the supplied procedure (via reduce), for purposes of side\neffects, on successive items in the collection. Returns nil"}

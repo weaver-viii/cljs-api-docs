@@ -35,13 +35,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── cljs
             └── clojure
                 └── browser
-                    └── <ins>[event.cljs:64-71](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/clojure/browser/event.cljs#L64-L71)</ins>
+                    └── <ins>[event.cljs:64-71](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/clojure/browser/event.cljs#L64-L71)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[src type fn]" "[src type fn capture?]"],
  :source {:code "(defn unlisten\n  ([src type fn]\n     (unlisten src type fn false))\n  ([src type fn capture?]\n     (events/unlisten src\n                      (get (event-types src) type type)\n                      fn\n                      capture?)))",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/cljs/clojure/browser/event.cljs",
           :lines [64 71]},
  :full-name "clojure.browser.event/unlisten",

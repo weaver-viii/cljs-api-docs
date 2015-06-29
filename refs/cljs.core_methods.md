@@ -34,12 +34,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:9482-9484](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L9482-L9484)</ins>
+                └── <ins>[core.cljs:9487-9489](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L9487-L9489)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_methods",
  :source {:code "(defn methods\n  [multifn] (-methods multifn))",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [9482 9484]},
+          :lines [9487 9489]},
  :full-name "cljs.core/methods",
  :clj-symbol "clojure.core/methods",
  :docstring "Given a multimethod, returns a map of dispatch values -> dispatch fns"}

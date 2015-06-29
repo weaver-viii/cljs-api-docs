@@ -48,12 +48,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:4784-4789](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L4784-L4789)</ins>
+                └── <ins>[core.cljs:4787-4792](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L4787-L4792)</ins>
 </pre>
 
 
@@ -73,12 +73,12 @@ clojurescript @ r3291
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[core.clj:1748-1757](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/core.clj#L1748-L1757)</ins>
+                └── <ins>[core.clj:1748-1757](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/core.clj#L1748-L1757)</ins>
 </pre>
 
 ---
@@ -107,12 +107,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_vector",
  :source {:code "(defn vector\n  [& args]\n  (if (and (instance? IndexedSeq args) (zero? (.-i args)))\n    (.fromArray PersistentVector (.-arr args) true)\n    (vec args)))",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [4784 4789]},
+          :lines [4787 4792]},
  :extra-sources ({:code "(defmacro vector\n  ([] '(.-EMPTY cljs.core/PersistentVector))\n  ([& xs]\n    (let [cnt (count xs)]\n      (if (core/< cnt 32)\n        `(cljs.core/PersistentVector. nil ~cnt 5\n           (.-EMPTY-NODE cljs.core/PersistentVector) (array ~@xs) nil)\n        (vary-meta\n          `(.fromArray cljs.core/PersistentVector (array ~@xs) true)\n          assoc :tag 'cljs.core/PersistentVector)))))",
                   :repo "clojurescript",
-                  :tag "r3291",
+                  :tag "r3297",
                   :filename "src/main/clojure/cljs/core.clj",
                   :lines [1748 1757]}),
  :full-name "cljs.core/vector",

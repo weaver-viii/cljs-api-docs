@@ -50,12 +50,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:9629-9651](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L9629-L9651)</ins>
+                └── <ins>[core.cljs:9634-9656](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L9634-L9656)</ins>
 </pre>
 
 
@@ -80,9 +80,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_TaggedLiteral",
  :source {:code "(deftype TaggedLiteral [tag form]\n\n  IEquiv\n  (-equiv [this other]\n    (and (instance? TaggedLiteral other)\n         (= tag (.-tag other))\n         (= form (.-form other))))\n\n  IHash\n  (-hash [this]\n    (+ (* 31 (hash tag))\n       (hash form)))\n\n  ILookup\n  (-lookup [this v]\n    (-lookup this v nil))\n  (-lookup [this v not-found]\n    (case v\n      :tag tag\n      :form form\n      not-found))\n\n  )",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [9629 9651]},
+          :lines [9634 9656]},
  :full-name "cljs.core/TaggedLiteral",
  :clj-symbol "clojure.lang/TaggedLiteral"}
 

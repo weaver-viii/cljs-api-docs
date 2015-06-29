@@ -24,12 +24,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[tagged_literals.clj:44-48](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/tagged_literals.clj#L44-L48)</ins>
+                └── <ins>[tagged_literals.clj:44-48](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/tagged_literals.clj#L44-L48)</ins>
 </pre>
 
 
@@ -47,12 +47,12 @@ clojurescript @ r3291
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[tagged_literals.clj:35-42](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/tagged_literals.clj#L35-L42)</ins>
+                └── <ins>[tagged_literals.clj:35-42](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/tagged_literals.clj#L35-L42)</ins>
 </pre>
 
 ---
@@ -75,12 +75,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_js-tag",
  :source {:code "(def ^:dynamic *cljs-data-readers*\n  {'queue read-queue\n   'uuid  read-uuid\n   'inst  read-inst\n   'js    read-js})",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/clojure/cljs/tagged_literals.clj",
           :lines [44 48]},
  :extra-sources [{:code "(defn read-js\n  [form]\n  (when-not (or (vector? form) (map? form))\n    (throw (RuntimeException. \"JavaScript literal must use map or vector notation\")))\n  (when-not (or (not (map? form))\n                (every? valid-js-literal-key? (keys form)))\n    (throw (RuntimeException. \"JavaScript literal keys must be strings or unqualified keywords\")))\n  (JSValue. form))",
                   :repo "clojurescript",
-                  :tag "r3291",
+                  :tag "r3297",
                   :filename "src/main/clojure/cljs/tagged_literals.clj",
                   :lines [35 42]}],
  :syntax-form ["#js {}" "#js []"],

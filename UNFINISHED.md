@@ -6320,7 +6320,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.browser/mime-type->encoding</td>
-<td></td>
+<td>[ref](refs/cljs.repl.browser_mime-type-GTencoding.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.browser_mime-type-GTencoding.cljsdoc)</td>
 <td></td>
 <td></td>

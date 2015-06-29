@@ -56,12 +56,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:2684-2699](https://github.com/clojure/clojurescript/blob/r3291/src/main/cljs/cljs/core.cljs#L2684-L2699)</ins>
+                └── <ins>[core.cljs:2687-2702](https://github.com/clojure/clojurescript/blob/r3297/src/main/cljs/cljs/core.cljs#L2687-L2702)</ins>
 </pre>
 
 
@@ -75,12 +75,12 @@ clojurescript @ r3291
 ```
 
  <pre>
-clojurescript @ r3291
+clojurescript @ r3297
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[core.clj:1743-1746](https://github.com/clojure/clojurescript/blob/r3291/src/main/clojure/cljs/core.clj#L1743-L1746)</ins>
+                └── <ins>[core.clj:1743-1746](https://github.com/clojure/clojurescript/blob/r3297/src/main/clojure/cljs/core.clj#L1743-L1746)</ins>
 </pre>
 
 ---
@@ -106,12 +106,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_list",
  :source {:code "(defn list\n  [& xs]\n  (let [arr (if (and (instance? IndexedSeq xs) (zero? (.-i xs)))\n              (.-arr xs)\n              (let [arr (array)]\n                (loop [^not-native xs xs]\n                  (if-not (nil? xs)\n                    (do\n                      (.push arr (-first xs))\n                      (recur (-next xs)))\n                    arr))))]\n    (loop [i (alength arr) ^not-native r ()]\n      (if (> i 0)\n        (recur (dec i) (-conj r (aget arr (dec i))))\n        r))))",
           :repo "clojurescript",
-          :tag "r3291",
+          :tag "r3297",
           :filename "src/main/cljs/cljs/core.cljs",
-          :lines [2684 2699]},
+          :lines [2687 2702]},
  :extra-sources ({:code "(defmacro list\n  ([] '(.-EMPTY cljs.core/List))\n  ([x & xs]\n    `(-conj (list ~@xs) ~x)))",
                   :repo "clojurescript",
-                  :tag "r3291",
+                  :tag "r3297",
                   :filename "src/main/clojure/cljs/core.clj",
                   :lines [1743 1746]}),
  :full-name "cljs.core/list",
