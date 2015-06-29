@@ -96,11 +96,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r993
+clojurescript @ r1006
 └── src
     └── clj
         └── cljs
-            └── <ins>[compiler.clj:690-715](https://github.com/clojure/clojurescript/blob/r993/src/clj/cljs/compiler.clj#L690-L715)</ins>
+            └── <ins>[compiler.clj:690-715](https://github.com/clojure/clojurescript/blob/r1006/src/clj/cljs/compiler.clj#L690-L715)</ins>
 </pre>
 
 
@@ -130,7 +130,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "special_def",
  :source {:code "(defmethod parse 'def\n  [op env form name]\n  (let [pfn (fn ([_ sym] {:sym sym})\n              ([_ sym init] {:sym sym :init init})\n              ([_ sym doc init] {:sym sym :doc doc :init init}))\n        args (apply pfn form)\n        sym (:sym args)]\n    (assert (not (namespace sym)) \"Can't def ns-qualified name\")\n    (let [name (munge (:name (resolve-var (dissoc env :locals) sym)))\n          init-expr (when (contains? args :init) (disallowing-recur\n                                                  (analyze (assoc env :context :expr) (:init args) sym)))\n          export-as (when-let [export-val (-> sym meta :export)]\n                      (if (= true export-val) name export-val))\n          doc (or (:doc args) (-> sym meta :doc))]\n      (swap! namespaces update-in [(-> env :ns :name) :defs sym]\n             (fn [m]\n               (let [m (assoc (or m {}) :name name)]\n                 (if-let [line (:line env)]\n                   (-> m\n                       (assoc :file *cljs-file*)\n                       (assoc :line line))\n                   m))))\n      (merge {:env env :op :def :form form\n              :name name :doc doc :init init-expr}\n             (when init-expr {:children [init-expr]})\n             (when export-as {:export export-as})))))",
           :repo "clojurescript",
-          :tag "r993",
+          :tag "r1006",
           :filename "src/clj/cljs/compiler.clj",
           :lines [690 715]},
  :examples [{:id "a5f898",

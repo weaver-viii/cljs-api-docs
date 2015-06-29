@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r993
+clojurescript @ r1006
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:134-139](https://github.com/clojure/clojurescript/blob/r993/src/clj/cljs/repl.clj#L134-L139)</ins>
+            └── <ins>[repl.clj:134-139](https://github.com/clojure/clojurescript/blob/r1006/src/clj/cljs/repl.clj#L134-L139)</ins>
 </pre>
 
 
@@ -74,7 +74,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "specialrepl_load-namespace",
  :source {:code "(def default-special-fns\n  (let [load-file-fn (fn [repl-env file] (load-file repl-env file))]\n    {'in-ns (fn [_ quoted-ns] (set! comp/*cljs-ns* (second quoted-ns)))\n     'load-file load-file-fn\n     'clojure.core/load-file load-file-fn\n     'load-namespace (fn [repl-env ns] (load-namespace repl-env ns))}))",
           :repo "clojurescript",
-          :tag "r993",
+          :tag "r1006",
           :filename "src/clj/cljs/repl.clj",
           :lines [134 139]},
  :examples [{:id "0b1a1d",

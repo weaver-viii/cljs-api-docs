@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r993
+clojurescript @ r1006
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:580-581](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L580-L581)</ins>
+            └── <ins>[core.cljs:580-581](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L580-L581)</ins>
 </pre>
 
 
@@ -58,7 +58,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash",
  :source {:code "(defn hash [o]\n  (-hash o))",
           :repo "clojurescript",
-          :tag "r993",
+          :tag "r1006",
           :filename "src/cljs/cljs/core.cljs",
           :lines [580 581]},
  :full-name "cljs.core/hash",

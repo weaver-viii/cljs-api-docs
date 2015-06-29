@@ -53,11 +53,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r993
+clojurescript @ r1006
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1197-1222](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L1197-L1222)</ins>
+            └── <ins>[core.cljs:1201-1226](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L1201-L1226)</ins>
 </pre>
 
 
@@ -82,9 +82,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_Cons",
  :source {:code "(deftype Cons [meta first rest]\n  IWithMeta\n  (-with-meta [coll meta] (Cons. meta first rest))\n\n  IMeta\n  (-meta [coll] meta)\n\n  ISeq\n  (-first [coll] first)\n  (-rest [coll] (if (nil? rest) () rest))\n\n  ICollection\n  (-conj [coll o] (Cons. nil o coll))\n\n  IEmptyableCollection\n  (-empty [coll] (with-meta cljs.core.List/EMPTY meta))\n\n  ISequential\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  IHash\n  (-hash [coll] (hash-coll coll))\n\n  ISeqable\n  (-seq [coll] coll))",
           :repo "clojurescript",
-          :tag "r993",
+          :tag "r1006",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1197 1222]},
+          :lines [1201 1226]},
  :full-name "cljs.core/Cons",
  :clj-symbol "clojure.lang/Cons"}
 

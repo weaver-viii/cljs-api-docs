@@ -40,12 +40,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r993
+clojurescript @ r1006
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:99-107](https://github.com/clojure/clojurescript/blob/r993/src/clj/cljs/repl/browser.clj#L99-L107)</ins>
+                └── <ins>[browser.clj:99-107](https://github.com/clojure/clojurescript/blob/r1006/src/clj/cljs/repl/browser.clj#L99-L107)</ins>
 </pre>
 
 
@@ -70,7 +70,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.browser_send-for-eval",
  :source {:code "(defn send-for-eval\n  ([form return-value-fn]\n     (send-for-eval @(connection) form return-value-fn))\n  ([conn form return-value-fn]\n     (do (set-return-value-fn return-value-fn)\n         (send-and-close conn 200 form \"text/javascript\"))))",
           :repo "clojurescript",
-          :tag "r993",
+          :tag "r1006",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [99 107]},
  :full-name "cljs.repl.browser/send-for-eval",

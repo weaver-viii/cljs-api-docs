@@ -60,11 +60,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r993
+clojurescript @ r1006
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:442-445](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L442-L445)</ins>
+            └── <ins>[core.cljs:442-445](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L442-L445)</ins>
 </pre>
 
 
@@ -91,7 +91,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_nfirst",
  :source {:code "(defn nfirst\n  [coll]\n  (next (first coll)))",
           :repo "clojurescript",
-          :tag "r993",
+          :tag "r1006",
           :filename "src/cljs/cljs/core.cljs",
           :lines [442 445]},
  :examples [{:id "60b8a4",

@@ -27,11 +27,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r993
+clojurescript @ r1006
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:145-147](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/reader.cljs#L145-L147)</ins>
+            └── <ins>[reader.cljs:145-147](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/reader.cljs#L145-L147)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[reader initch]"],
  :source {:code "(defn read-unicode-char\n  [reader initch]\n  (reader-error reader \"Unicode characters not supported by reader (yet)\"))",
           :repo "clojurescript",
-          :tag "r993",
+          :tag "r1006",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [145 147]},
  :full-name "cljs.reader/read-unicode-char",

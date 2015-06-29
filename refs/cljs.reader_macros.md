@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r993
+clojurescript @ r1006
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:310-328](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/reader.cljs#L310-L328)</ins>
+            └── <ins>[reader.cljs:310-328](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/reader.cljs#L310-L328)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def macros\n     { \\\" read-string\n       \\: read-keyword\n       \\; not-implemented ;; never hit this\n       \\' (wrapping-reader 'quote)\n       \\@ (wrapping-reader 'deref)\n       \\^ read-meta\n       \\` not-implemented\n       \\~ not-implemented\n       \\( read-list\n       \\) read-unmatched-delimiter\n       \\[ read-vector\n       \\] read-unmatched-delimiter\n       \\{ read-map\n       \\} read-unmatched-delimiter\n       \\\\ read-char\n       \\% not-implemented\n       \\# read-dispatch\n       })",
           :repo "clojurescript",
-          :tag "r993",
+          :tag "r1006",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [310 328]},
  :full-name "cljs.reader/macros",

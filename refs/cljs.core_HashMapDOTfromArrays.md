@@ -30,11 +30,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r993
+clojurescript @ r1006
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2411-2416](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L2411-L2416)</ins>
+            └── <ins>[core.cljs:2593-2598](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L2593-L2598)</ins>
 </pre>
 
 
@@ -60,9 +60,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_HashMapDOTfromArrays",
  :source {:code "(set! cljs.core.HashMap/fromArrays (fn [ks vs]\n  (let [len (.-length ks)]\n    (loop [i 0, out cljs.core.HashMap/EMPTY]\n      (if (< i len)\n        (recur (inc i) (assoc out (aget ks i) (aget vs i)))\n        out)))))",
           :repo "clojurescript",
-          :tag "r993",
+          :tag "r1006",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2411 2416]},
+          :lines [2593 2598]},
  :full-name "cljs.core/HashMap.fromArrays"}
 
 ```

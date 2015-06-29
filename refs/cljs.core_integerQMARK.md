@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r993
+clojurescript @ r1006
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:684-688](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L684-L688)</ins>
+            └── <ins>[core.cljs:684-688](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L684-L688)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_integerQMARK",
  :source {:code "(defn integer?\n  [n]\n  (and (number? n)\n       (js* \"(~{n} == ~{n}.toFixed())\")))",
           :repo "clojurescript",
-          :tag "r993",
+          :tag "r1006",
           :filename "src/cljs/cljs/core.cljs",
           :lines [684 688]},
  :full-name "cljs.core/integer?",

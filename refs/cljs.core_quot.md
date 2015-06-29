@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r993
+clojurescript @ r1006
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:914-918](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L914-L918)</ins>
+            └── <ins>[core.cljs:914-918](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L914-L918)</ins>
 </pre>
 
 
@@ -78,7 +78,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_quot",
  :source {:code "(defn quot\n  [n d]\n  (let [rem (mod n d)]\n    (fix (js* \"((~{n} - ~{rem}) / ~{d})\"))))",
           :repo "clojurescript",
-          :tag "r993",
+          :tag "r1006",
           :filename "src/cljs/cljs/core.cljs",
           :lines [914 918]},
  :full-name "cljs.core/quot",

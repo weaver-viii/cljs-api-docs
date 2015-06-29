@@ -98,11 +98,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r993
+clojurescript @ r1006
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:462-502](https://github.com/clojure/clojurescript/blob/r993/src/clj/cljs/core.clj#L462-L502)</ins>
+            └── <ins>[core.clj:462-502](https://github.com/clojure/clojurescript/blob/r1006/src/clj/cljs/core.clj#L462-L502)</ins>
 </pre>
 
 
@@ -129,7 +129,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_condp",
  :source {:code "(defmacro condp\n  [pred expr & clauses]\n  (let [gpred (gensym \"pred__\")\n        gexpr (gensym \"expr__\")\n        emit (fn emit [pred expr args]\n               (let [[[a b c :as clause] more]\n                       (split-at (if (= :>> (second args)) 3 2) args)\n                       n (count clause)]\n                 (cond\n                  (= 0 n) `(throw (js/Error. (str \"No matching clause: \" ~expr)))\n                  (= 1 n) a\n                  (= 2 n) `(if (~pred ~a ~expr)\n                             ~b\n                             ~(emit pred expr more))\n                  :else `(if-let [p# (~pred ~a ~expr)]\n                           (~c p#)\n                           ~(emit pred expr more)))))\n        gres (gensym \"res__\")]\n    `(let [~gpred ~pred\n           ~gexpr ~expr]\n       ~(emit gpred gexpr clauses))))",
           :repo "clojurescript",
-          :tag "r993",
+          :tag "r1006",
           :filename "src/clj/cljs/core.clj",
           :lines [462 502]},
  :full-name "cljs.core/condp",

@@ -1336,7 +1336,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentVector</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentVector.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentVector.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1344,7 +1344,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentVector.EMPTY</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentVectorDOTEMPTY.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentVectorDOTEMPTY.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1360,7 +1360,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentVector.EMPTY_NODE</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentVectorDOTEMPTY_NODE.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentVectorDOTEMPTY_NODE.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1368,7 +1368,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentVector.fromArray</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentVectorDOTfromArray.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentVectorDOTfromArray.cljsdoc)</td>
 <td></td>
 <td></td>

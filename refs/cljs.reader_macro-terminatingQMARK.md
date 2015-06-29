@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r993
+clojurescript @ r1006
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:73-74](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/reader.cljs#L73-L74)</ins>
+            └── <ins>[reader.cljs:73-74](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/reader.cljs#L73-L74)</ins>
 </pre>
 
 
@@ -53,7 +53,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[ch]"],
  :source {:code "(defn macro-terminating? [ch]\n  (and (not= ch \"#\") (not= ch \\') (not= ch \":\") (contains? macros ch)))",
           :repo "clojurescript",
-          :tag "r993",
+          :tag "r1006",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [73 74]},
  :full-name "cljs.reader/macro-terminating?",

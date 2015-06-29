@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r993
+clojurescript @ r1006
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:156-157](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L156-L157)</ins>
+            └── <ins>[core.cljs:156-157](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L156-L157)</ins>
 </pre>
 
 
@@ -52,7 +52,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IVector",
  :source {:code "(defprotocol IVector\n  (-assoc-n [coll n val]))",
           :repo "clojurescript",
-          :tag "r993",
+          :tag "r1006",
           :filename "src/cljs/cljs/core.cljs",
           :lines [156 157]},
  :methods [{:name "-assoc-n",

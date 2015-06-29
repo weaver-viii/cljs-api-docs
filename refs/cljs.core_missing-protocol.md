@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r993
+clojurescript @ r1006
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:58-61](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L58-L61)</ins>
+            └── <ins>[core.cljs:58-61](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L58-L61)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[proto obj]"],
  :source {:code "(defn missing-protocol [proto obj]\n  (js/Error (js* \"~{}+~{}+~{}+~{}+~{}+~{}\"\n                 \"No protocol method \" proto\n                 \" defined for type \" (goog/typeOf obj) \": \" obj)))",
           :repo "clojurescript",
-          :tag "r993",
+          :tag "r1006",
           :filename "src/cljs/cljs/core.cljs",
           :lines [58 61]},
  :full-name "cljs.core/missing-protocol",

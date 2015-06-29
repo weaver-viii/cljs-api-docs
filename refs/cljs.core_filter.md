@@ -58,11 +58,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r993
+clojurescript @ r1006
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1824-1833](https://github.com/clojure/clojurescript/blob/r993/src/cljs/cljs/core.cljs#L1824-L1833)</ins>
+            └── <ins>[core.cljs:1828-1837](https://github.com/clojure/clojurescript/blob/r1006/src/cljs/cljs/core.cljs#L1828-L1837)</ins>
 </pre>
 
 
@@ -89,9 +89,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_filter",
  :source {:code "(defn filter\n  ([pred coll]\n   (lazy-seq\n    (when-let [s (seq coll)]\n      (let [f (first s) r (rest s)]\n        (if (pred f)\n          (cons f (filter pred r))\n          (filter pred r)))))))",
           :repo "clojurescript",
-          :tag "r993",
+          :tag "r1006",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1824 1833]},
+          :lines [1828 1837]},
  :full-name "cljs.core/filter",
  :clj-symbol "clojure.core/filter",
  :docstring "Returns a lazy sequence of the items in coll for which\n(pred item) returns true. pred must be free of side-effects."}
