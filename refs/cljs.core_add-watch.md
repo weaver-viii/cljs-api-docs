@@ -86,11 +86,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2322
+clojurescript @ r2341
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8052-8074](https://github.com/clojure/clojurescript/blob/r2322/src/cljs/cljs/core.cljs#L8052-L8074)</ins>
+            └── <ins>[core.cljs:8049-8071](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L8049-L8071)</ins>
 </pre>
 
 
@@ -117,9 +117,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_add-watch",
  :source {:code "(defn add-watch\n  [iref key f]\n  (-add-watch iref key f))",
           :repo "clojurescript",
-          :tag "r2322",
+          :tag "r2341",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [8052 8074]},
+          :lines [8049 8071]},
  :examples [{:id "2f2fe0",
              :content "```clj\n(def a (atom {}))\n\n(add-watch a :logger\n  (fn [_key _atom old-state new-state]\n    (println \"old:\" old-state)\n    (println \"new:\" new-state)))\n\n(swap! a assoc :foo \"bar\")\n;;=> will print the following:\n;; old: {}\n;; new: {:foo \"bar\"}\n```"}],
  :full-name "cljs.core/add-watch",

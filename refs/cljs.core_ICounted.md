@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2322
+clojurescript @ r2341
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:233-234](https://github.com/clojure/clojurescript/blob/r2322/src/cljs/cljs/core.cljs#L233-L234)</ins>
+            └── <ins>[core.cljs:234-235](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L234-L235)</ins>
 </pre>
 
 
@@ -52,9 +52,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ICounted",
  :source {:code "(defprotocol ICounted\n  (^number -count [coll] \"constant time count\"))",
           :repo "clojurescript",
-          :tag "r2322",
+          :tag "r2341",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [233 234]},
+          :lines [234 235]},
  :methods [{:name "-count",
             :signature ["[coll]"],
             :docstring "constant time count"}],

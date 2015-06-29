@@ -21,11 +21,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2322
+clojurescript @ r2341
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:254-255](https://github.com/clojure/clojurescript/blob/r2322/src/cljs/cljs/core.cljs#L254-L255)</ins>
+            └── <ins>[core.cljs:255-256](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L255-L256)</ins>
 </pre>
 
 
@@ -48,9 +48,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_INext",
  :source {:code "(defprotocol INext\n  (^clj-or-nil -next [coll]))",
           :repo "clojurescript",
-          :tag "r2322",
+          :tag "r2341",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [254 255]},
+          :lines [255 256]},
  :methods [{:name "-next", :signature ["[coll]"], :docstring nil}],
  :full-name "cljs.core/INext",
  :history [["+" "0.0-1424"]]}

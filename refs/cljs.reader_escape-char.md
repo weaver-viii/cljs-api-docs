@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2322
+clojurescript @ r2341
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:192-213](https://github.com/clojure/clojurescript/blob/r2322/src/cljs/cljs/reader.cljs#L192-L213)</ins>
+            └── <ins>[reader.cljs:192-213](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/reader.cljs#L192-L213)</ins>
 </pre>
 
 
@@ -73,7 +73,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[buffer reader]"],
  :source {:code "(defn escape-char\n  [buffer reader]\n  (let [ch (read-char reader)\n        mapresult (escape-char-map ch)]\n    (if mapresult\n      mapresult\n      (cond\n        (identical? ch \\x)\n        (->> (read-2-chars reader)\n          (validate-unicode-escape unicode-2-pattern reader ch)\n          (make-unicode-char))\n\n        (identical? ch \\u)\n        (->> (read-4-chars reader)\n          (validate-unicode-escape unicode-4-pattern reader ch)\n          (make-unicode-char))\n\n        (numeric? ch)\n        (.fromCharCode js/String ch)\n\n        :else\n        (reader-error reader \"Unexpected unicode escape \\\\\" ch )))))",
           :repo "clojurescript",
-          :tag "r2322",
+          :tag "r2341",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [192 213]},
  :full-name "cljs.reader/escape-char",

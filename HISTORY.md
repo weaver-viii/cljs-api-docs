@@ -16,6 +16,29 @@
 <th>comp</th>
 </tr>
 <tr>
+<td>__[0.0-2341](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2341)__</td>
+<td>2014-09-18</td>
+<td><kbd>1.6.0</kbd></td>
+<td><kbd>0.8.4</kbd></td>
+<td><kbd>0.0-20140718-946a7d39</kbd></td>
+<td>
+<a href="#user-content-00-2341-syntax">
+ 
+</a>
+</td>
+<td>
+<a href="#user-content-00-2341-library">
+<img valign="middle" src="https://img.shields.io/badge/+-3-brightgreen.svg"> <img valign="middle" src="https://img.shields.io/badge/×-1-red.svg">
+</a>
+</td>
+<td>
+<a href="#user-content-00-2341-compiler">
+ 
+</a>
+</td>
+</tr>
+
+<tr>
 <td>__[0.0-2322](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2322)__</td>
 <td>2014-08-27</td>
 <td><kbd>1.6.0</kbd></td>
@@ -1556,6 +1579,47 @@
 </td>
 </tr>
 
+</table>
+
+### 0.0-2341
+
+<a name="00-2341-syntax"></a> __Syntax API Changes__
+ <table>
+<tr><td>_no syntax forms were added or removed in this version_</td></tr>
+</table>
+
+<a name="00-2341-library"></a> __Library API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/cat](refs/cljs.core_cat.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/completing](refs/cljs.core_completing.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
+</td>
+<td><samp>[~~cljs.core/flatmap~~](refs/cljs.core_flatmap.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/js-str](refs/cljs.core_js-str.md)</samp></td>
+</tr>
+</table>
+
+<a name="00-2341-compiler"></a> __Compiler API Changes__
+ <table>
+<tr><td>_no symbols were added or removed in this version_</td></tr>
 </table>
 
 ### 0.0-2322

@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2322
+clojurescript @ r2341
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3000-3018](https://github.com/clojure/clojurescript/blob/r2322/src/cljs/cljs/core.cljs#L3000-L3018)</ins>
+            └── <ins>[core.cljs:3006-3024](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L3006-L3024)</ins>
 </pre>
 
 
@@ -73,9 +73,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[xform iters]" "[xform iters nexts]"],
  :source {:code "(defn multi-stepper\n  ([xform iters]\n     (multi-stepper xform iters\n       (make-array (alength iters))))\n  ([xform iters nexts]\n     (letfn [(stepfn\n               ([result]\n                  (let [lt (if (reduced? result)\n                             @result\n                             result)]\n                    (set! (.-stepper lt) nil)\n                    lt))\n               ([result input]\n                  (let [lt result]\n                    (set! (.-first lt) input)\n                    (set! (.-rest lt) (lazy-transformer (.-stepper lt)))\n                    (set! (.-stepper lt) nil)\n                    (.-rest lt))))]\n       (MultiStepper. (xform stepfn) iters nexts))))",
           :repo "clojurescript",
-          :tag "r2322",
+          :tag "r2341",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3000 3018]},
+          :lines [3006 3024]},
  :full-name "cljs.core/multi-stepper",
  :full-name-encode "cljs.core_multi-stepper",
  :history [["+" "0.0-2301"]]}

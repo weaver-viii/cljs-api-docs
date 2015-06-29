@@ -66,11 +66,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2322
+clojurescript @ r2341
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:613-634](https://github.com/clojure/clojurescript/blob/r2322/src/cljs/cljs/core.cljs#L613-L634)</ins>
+            └── <ins>[core.cljs:614-635](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L614-L635)</ins>
 </pre>
 
 
@@ -98,9 +98,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_seq",
  :source {:code "(defn ^seq seq\n  [coll]\n  (when-not (nil? coll)\n    (cond\n      (implements? ISeqable coll)\n      (-seq ^not-native coll)\n\n      (array? coll)\n      (when-not (zero? (alength coll))\n        (IndexedSeq. coll 0))\n\n      (string? coll)\n      (when-not (zero? (alength coll))\n        (IndexedSeq. coll 0))\n\n      (native-satisfies? ISeqable coll)\n      (-seq coll)\n\n      :else (throw (js/Error. (str coll \" is not ISeqable\"))))))",
           :repo "clojurescript",
-          :tag "r2322",
+          :tag "r2341",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [613 634]},
+          :lines [614 635]},
  :full-name "cljs.core/seq",
  :clj-symbol "clojure.core/seq",
  :docstring "Returns a seq on the collection. If the collection is\nempty, returns nil.  (seq nil) returns nil. seq also works on\nStrings."}

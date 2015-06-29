@@ -1840,7 +1840,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/cat</td>
-<td></td>
+<td>[ref](refs/cljs.core_cat.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_cat.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1992,7 +1992,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/completing</td>
-<td></td>
+<td>[ref](refs/cljs.core_completing.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_completing.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3029,14 +3029,6 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
-</tr>
-<tr>
-<td>cljs.core/js-str</td>
-<td></td>
-<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_js-str.cljsdoc)</td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 </tr>
 <tr>
 <td>cljs.core/juxt</td>

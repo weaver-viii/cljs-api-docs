@@ -79,11 +79,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2322
+clojurescript @ r2341
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3247-3276](https://github.com/clojure/clojurescript/blob/r2322/src/cljs/cljs/core.cljs#L3247-L3276)</ins>
+            └── <ins>[core.cljs:3251-3280](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L3251-L3280)</ins>
 </pre>
 
 
@@ -112,9 +112,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_keep",
  :source {:code "(defn keep\n  ([f]\n   (fn [f1]\n     (fn\n       ([] (f1))\n       ([result] (f1 result))\n       ([result input]\n          (let [v (f input)]\n            (if (nil? v)\n              result\n              (f1 result v)))))))\n  ([f coll]\n   (lazy-seq\n    (when-let [s (seq coll)]\n      (if (chunked-seq? s)\n        (let [c (chunk-first s)\n              size (count c)\n              b (chunk-buffer size)]\n          (dotimes [i size]\n            (let [x (f (-nth c i))]\n              (when-not (nil? x)\n                (chunk-append b x))))\n          (chunk-cons (chunk b) (keep f (chunk-rest s))))\n        (let [x (f (first s))]\n          (if (nil? x)\n            (keep f (rest s))\n            (cons x (keep f (rest s))))))))))",
           :repo "clojurescript",
-          :tag "r2322",
+          :tag "r2341",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3247 3276]},
+          :lines [3251 3280]},
  :full-name "cljs.core/keep",
  :clj-symbol "clojure.core/keep",
  :docstring "Returns a lazy sequence of the non-nil results of (f item). Note,\nthis means false return values will be included.  f must be free of\nside-effects.  Returns a transducer when no collection is provided."}

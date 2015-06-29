@@ -41,25 +41,25 @@ Source docstring:
 
 ```
 Returns the result of applying concat to the result of applying map
-to f and colls.  Thus function f should return a collection.
+to f and colls.  Thus function f should return a collection. Returns
+a transducer when no collections are provided
 ```
 
 Source code:
 
 ```clj
 (defn mapcat
-  ([f coll]
-    (flatten1 (map f coll)))
-  ([f coll & colls]
-    (flatten1 (apply map f coll colls))))
+  ([f] (comp (map f) cat))
+  ([f & colls]
+     (apply concat (apply map f colls))))
 ```
 
  <pre>
-clojurescript @ r2322
+clojurescript @ r2341
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3702-3708](https://github.com/clojure/clojurescript/blob/r2322/src/cljs/cljs/core.cljs#L3702-L3708)</ins>
+            └── <ins>[core.cljs:3708-3716](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L3708-L3716)</ins>
 </pre>
 
 
@@ -84,14 +84,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/map" "cljs.core/concat"],
  :full-name-encode "cljs.core_mapcat",
- :source {:code "(defn mapcat\n  ([f coll]\n    (flatten1 (map f coll)))\n  ([f coll & colls]\n    (flatten1 (apply map f coll colls))))",
+ :source {:code "(defn mapcat\n  ([f] (comp (map f) cat))\n  ([f & colls]\n     (apply concat (apply map f colls))))",
           :repo "clojurescript",
-          :tag "r2322",
+          :tag "r2341",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3702 3708]},
+          :lines [3708 3716]},
  :full-name "cljs.core/mapcat",
  :clj-symbol "clojure.core/mapcat",
- :docstring "Returns the result of applying concat to the result of applying map\nto f and colls.  Thus function f should return a collection."}
+ :docstring "Returns the result of applying concat to the result of applying map\nto f and colls.  Thus function f should return a collection. Returns\na transducer when no collections are provided"}
 
 ```
 

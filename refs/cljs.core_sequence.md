@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2322
+clojurescript @ r2341
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3090-3106](https://github.com/clojure/clojurescript/blob/r2322/src/cljs/cljs/core.cljs#L3090-L3106)</ins>
+            └── <ins>[core.cljs:3096-3112](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L3096-L3112)</ins>
 </pre>
 
 
@@ -73,11 +73,11 @@ clojurescript @ r2322
 ```
 
  <pre>
-clojurescript @ r2322
+clojurescript @ r2341
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1494-1500](https://github.com/clojure/clojurescript/blob/r2322/src/cljs/cljs/core.cljs#L1494-L1500)</ins>
+            └── <ins>[core.cljs:1495-1501](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/core.cljs#L1495-L1501)</ins>
 </pre>
 
 ---
@@ -101,14 +101,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_sequence",
  :source {:code "(defn sequence\n  ([coll]\n     (if (seq? coll)\n       coll\n       (or (seq coll) ())))\n  ([xform coll]\n     (.create LazyTransformer xform coll))\n  ([xform coll & colls]\n     (.createMulti LazyTransformer xform (to-array (cons coll colls)))))",
           :repo "clojurescript",
-          :tag "r2322",
+          :tag "r2341",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3090 3106]},
+          :lines [3096 3112]},
  :extra-sources ({:code "(defn ^seq sequence\n  [coll]\n   (if (seq? coll)\n     coll\n     (or (seq coll) ())))",
                   :repo "clojurescript",
-                  :tag "r2322",
+                  :tag "r2341",
                   :filename "src/cljs/cljs/core.cljs",
-                  :lines [1494 1500]}),
+                  :lines [1495 1501]}),
  :full-name "cljs.core/sequence",
  :clj-symbol "clojure.core/sequence",
  :docstring "Coerces coll to a (possibly empty) sequence, if it is not already\none. Will not force a lazy seq. (sequence nil) yields (), When a\ntransducer is supplied, returns a lazy sequence of applications of\nthe transform to the items in coll(s), i.e. to the set of first\nitems of each coll, followed by the set of second\nitems in each coll, until any one of the colls is exhausted.  Any\nremaining items in other colls are ignored. The transform should accept\nnumber-of-colls arguments"}

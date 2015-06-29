@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2322
+clojurescript @ r2341
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:180](https://github.com/clojure/clojurescript/blob/r2322/src/cljs/cljs/reader.cljs#L180)</ins>
+            └── <ins>[reader.cljs:180](https://github.com/clojure/clojurescript/blob/r2341/src/cljs/cljs/reader.cljs#L180)</ins>
 </pre>
 
 
@@ -46,7 +46,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def unicode-2-pattern (re-pattern \"^[0-9A-Fa-f]{2}$\"))",
           :repo "clojurescript",
-          :tag "r2322",
+          :tag "r2341",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [180]},
  :full-name "cljs.reader/unicode-2-pattern",
