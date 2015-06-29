@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1449
+clojurescript @ r1450
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1634-1641](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L1634-L1641)</ins>
+            └── <ins>[core.cljs:1634-1641](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L1634-L1641)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_list",
  :source {:code "(defn list\n  ([] ())\n  ([x] (conj () x))\n  ([x y] (conj (list y) x))\n  ([x y z] (conj (list y z) x))\n  ([x y z & items]\n     (conj (conj (conj (reduce conj () (reverse items))\n                       z) y) x)))",
           :repo "clojurescript",
-          :tag "r1449",
+          :tag "r1450",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1634 1641]},
  :full-name "cljs.core/list",

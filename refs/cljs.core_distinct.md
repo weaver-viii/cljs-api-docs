@@ -51,11 +51,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1449
+clojurescript @ r1450
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5760-5771](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L5760-L5771)</ins>
+            └── <ins>[core.cljs:5760-5771](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L5760-L5771)</ins>
 </pre>
 
 
@@ -82,7 +82,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_distinct",
  :source {:code "(defn distinct\n  [coll]\n  (let [step (fn step [xs seen]\n               (lazy-seq\n                ((fn [[f :as xs] seen]\n                   (when-let [s (seq xs)]\n                     (if (contains? seen f)\n                       (recur (rest s) seen)\n                       (cons f (step (rest s) (conj seen f))))))\n                 xs seen)))]\n    (step coll #{})))",
           :repo "clojurescript",
-          :tag "r1449",
+          :tag "r1450",
           :filename "src/cljs/cljs/core.cljs",
           :lines [5760 5771]},
  :full-name "cljs.core/distinct",

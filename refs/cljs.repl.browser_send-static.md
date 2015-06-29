@@ -39,12 +39,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1449
+clojurescript @ r1450
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:183-197](https://github.com/clojure/clojurescript/blob/r1449/src/clj/cljs/repl/browser.clj#L183-L197)</ins>
+                └── <ins>[browser.clj:183-197](https://github.com/clojure/clojurescript/blob/r1450/src/clj/cljs/repl/browser.clj#L183-L197)</ins>
 </pre>
 
 
@@ -67,7 +67,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[opts conn {path :path, :as request}]"],
  :source {:code "(defn send-static [opts conn {path :path :as request}]\n  (if (and (:static-dir opts)\n           (not= \"/favicon.ico\" path))\n    (let [path   (if (= \"/\" path) \"/index.html\" path)\n          st-dir (:static-dir opts)]\n      (if-let [local-path (seq (for [x (if (string? st-dir) [st-dir] st-dir)\n                                     :when (.exists (io/file (str x path)))]\n                                 (str x path)))]\n        (send-and-close conn 200 (slurp (first local-path))\n                        (condp #(.endsWith %2 %1) path\n                          \".js\" \"text/javascript\"\n                          \".html\" \"text/html\"\n                          \"text/plain\"))\n        (send-404 conn path)))\n    (send-404 conn path)))",
           :repo "clojurescript",
-          :tag "r1449",
+          :tag "r1450",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [183 197]},
  :full-name "cljs.repl.browser/send-static",

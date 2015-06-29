@@ -48,12 +48,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1449
+clojurescript @ r1450
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:119-132](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/clojure/core/reducers.cljs#L119-L132)</ins>
+                └── <ins>[reducers.cljs:119-132](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/clojure/core/reducers.cljs#L119-L132)</ins>
 </pre>
 
 
@@ -78,7 +78,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.core.reducers_flatten",
  :source {:code "(defcurried flatten\n  \"Takes any nested combination of sequential things (lists, vectors,\n  etc.) and returns their contents as a single, flat foldable\n  collection.\"\n  {}\n  [coll]\n  (folder coll\n   (fn [f1]\n     (fn\n       ([] (f1))\n       ([ret v]\n          (if (sequential? v)\n            (-reduce (flatten v) f1 ret)\n            (f1 ret v)))))))",
           :repo "clojurescript",
-          :tag "r1449",
+          :tag "r1450",
           :filename "src/cljs/clojure/core/reducers.cljs",
           :lines [119 132]},
  :full-name "clojure.core.reducers/flatten",

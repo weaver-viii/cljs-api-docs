@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1449
+clojurescript @ r1450
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5985-5992](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L5985-L5992)</ins>
+            └── <ins>[core.cljs:5985-5992](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L5985-L5992)</ins>
 </pre>
 
 
@@ -81,7 +81,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_frequencies",
  :source {:code "(defn frequencies\n  [coll]\n  (persistent!\n   (reduce (fn [counts x]\n             (assoc! counts x (inc (get counts x 0))))\n           (transient {}) coll)))",
           :repo "clojurescript",
-          :tag "r1449",
+          :tag "r1450",
           :filename "src/cljs/cljs/core.cljs",
           :lines [5985 5992]},
  :full-name "cljs.core/frequencies",

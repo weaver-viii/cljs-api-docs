@@ -37,12 +37,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1449
+clojurescript @ r1450
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:116-124](https://github.com/clojure/clojurescript/blob/r1449/src/clj/cljs/repl/browser.clj#L116-L124)</ins>
+                └── <ins>[browser.clj:116-124](https://github.com/clojure/clojurescript/blob/r1450/src/clj/cljs/repl/browser.clj#L116-L124)</ins>
 </pre>
 
 
@@ -67,7 +67,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.browser_parse-headers",
  :source {:code "(defn parse-headers\n  [header-lines]\n  (apply hash-map\n   (mapcat\n    (fn [line]\n      (let [[k v] (str/split line #\":\" 2)]\n        [(keyword (str/lower-case k)) (str/triml v)]))\n    header-lines)))",
           :repo "clojurescript",
-          :tag "r1449",
+          :tag "r1450",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [116 124]},
  :full-name "cljs.repl.browser/parse-headers",

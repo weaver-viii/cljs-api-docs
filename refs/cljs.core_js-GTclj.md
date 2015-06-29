@@ -87,11 +87,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1449
+clojurescript @ r1450
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6587-6604](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L6587-L6604)</ins>
+            └── <ins>[core.cljs:6587-6604](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L6587-L6604)</ins>
 </pre>
 
 
@@ -118,7 +118,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_js-GTclj",
  :source {:code "(defn js->clj\n  [x & options]\n  (let [{:keys [keywordize-keys]} options\n        keyfn (if keywordize-keys keyword str)\n        f (fn thisfn [x]\n            (cond\n             (seq? x) (doall (map thisfn x))\n             (coll? x) (into (empty x) (map thisfn x))\n             (goog.isArray x) (vec (map thisfn x))\n             (identical? (type x) js/Object) (into {} (for [k (js-keys x)]\n                                                        [(keyfn k)\n                                                         (thisfn (aget x k))]))\n             :else x))]\n    (f x)))",
           :repo "clojurescript",
-          :tag "r1449",
+          :tag "r1450",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6587 6604]},
  :examples [{:id "61d263",

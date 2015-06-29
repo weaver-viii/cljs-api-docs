@@ -61,11 +61,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1449
+clojurescript @ r1450
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5746-5758](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L5746-L5758)</ins>
+            └── <ins>[core.cljs:5746-5758](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L5746-L5758)</ins>
 </pre>
 
 
@@ -94,7 +94,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_replace",
  :source {:code "(defn replace\n  [smap coll]\n  (if (vector? coll)\n    (let [n (count coll)]\n      (reduce (fn [v i]\n                (if-let [e (find smap (nth v i))]\n                  (assoc v i (second e))\n                  v))\n              coll (take n (iterate inc 0))))\n    (map #(if-let [e (find smap %)] (second e) %) coll)))",
           :repo "clojurescript",
-          :tag "r1449",
+          :tag "r1450",
           :filename "src/cljs/cljs/core.cljs",
           :lines [5746 5758]},
  :full-name "cljs.core/replace",

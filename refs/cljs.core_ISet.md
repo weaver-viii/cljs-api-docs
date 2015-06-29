@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1449
+clojurescript @ r1450
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:183-184](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L183-L184)</ins>
+            └── <ins>[core.cljs:183-184](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L183-L184)</ins>
 </pre>
 
 
@@ -52,7 +52,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ISet",
  :source {:code "(defprotocol ISet\n  (-disjoin [coll v]))",
           :repo "clojurescript",
-          :tag "r1449",
+          :tag "r1450",
           :filename "src/cljs/cljs/core.cljs",
           :lines [183 184]},
  :methods [{:name "-disjoin", :signature ["[coll v]"], :docstring nil}],

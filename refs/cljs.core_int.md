@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1449
+clojurescript @ r1450
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1281-1284](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L1281-L1284)</ins>
+            └── <ins>[core.cljs:1281-1284](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L1281-L1284)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_int",
  :source {:code "(defn int\n  [x]\n  (fix x))",
           :repo "clojurescript",
-          :tag "r1449",
+          :tag "r1450",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1281 1284]},
  :full-name "cljs.core/int",

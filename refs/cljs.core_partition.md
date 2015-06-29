@@ -76,11 +76,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1449
+clojurescript @ r1450
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2639-2659](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L2639-L2659)</ins>
+            └── <ins>[core.cljs:2639-2659](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L2639-L2659)</ins>
 </pre>
 
 
@@ -109,7 +109,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_partition",
  :source {:code "(defn partition\n  ([n coll]\n     (partition n n coll))\n  ([n step coll]\n     (lazy-seq\n       (when-let [s (seq coll)]\n         (let [p (take n s)]\n           (when (== n (count p))\n             (cons p (partition n step (drop step s))))))))\n  ([n step pad coll]\n     (lazy-seq\n       (when-let [s (seq coll)]\n         (let [p (take n s)]\n           (if (== n (count p))\n             (cons p (partition n step pad (drop step s)))\n             (list (take n (concat p pad)))))))))",
           :repo "clojurescript",
-          :tag "r1449",
+          :tag "r1450",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2639 2659]},
  :full-name "cljs.core/partition",

@@ -79,11 +79,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1449
+clojurescript @ r1450
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:869-874](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L869-L874)</ins>
+            └── <ins>[core.cljs:869-874](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L869-L874)</ins>
 </pre>
 
 
@@ -111,7 +111,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_collQMARK",
  :source {:code "(defn ^boolean coll?\n  [x]\n  (if (nil? x)\n    false\n    (satisfies? ICollection x)))",
           :repo "clojurescript",
-          :tag "r1449",
+          :tag "r1450",
           :filename "src/cljs/cljs/core.cljs",
           :lines [869 874]},
  :examples [{:id "d30884",

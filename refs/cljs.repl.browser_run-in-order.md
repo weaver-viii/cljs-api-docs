@@ -31,12 +31,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1449
+clojurescript @ r1450
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:224-230](https://github.com/clojure/clojurescript/blob/r1449/src/clj/cljs/repl/browser.clj#L224-L230)</ins>
+                └── <ins>[browser.clj:224-230](https://github.com/clojure/clojurescript/blob/r1450/src/clj/cljs/repl/browser.clj#L224-L230)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[{:keys [expecting fns]}]"],
  :source {:code "(defn run-in-order [{:keys [expecting fns]}]\n  (loop [order expecting\n         fns fns]\n    (if-let [f (get fns order)]\n      (do (f)\n          (recur (inc order) (dissoc fns order)))\n      {:expecting order :fns fns})))",
           :repo "clojurescript",
-          :tag "r1449",
+          :tag "r1450",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [224 230]},
  :full-name "cljs.repl.browser/run-in-order",

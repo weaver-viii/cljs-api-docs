@@ -65,11 +65,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1449
+clojurescript @ r1450
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5852-5865](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L5852-L5865)</ins>
+            └── <ins>[core.cljs:5852-5865](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L5852-L5865)</ins>
 </pre>
 
 
@@ -101,7 +101,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_subseq",
  :source {:code "(defn subseq\n  ([sc test key]\n     (let [include (mk-bound-fn sc test key)]\n       (if (#{> >=} test)\n         (when-let [[e :as s] (-sorted-seq-from sc key true)]\n           (if (include e) s (next s)))\n         (take-while include (-sorted-seq sc true)))))\n  ([sc start-test start-key end-test end-key]\n     (when-let [[e :as s] (-sorted-seq-from sc start-key true)]\n       (take-while (mk-bound-fn sc end-test end-key)\n                   (if ((mk-bound-fn sc start-test start-key) e) s (next s))))))",
           :repo "clojurescript",
-          :tag "r1449",
+          :tag "r1450",
           :filename "src/cljs/cljs/core.cljs",
           :lines [5852 5865]},
  :full-name "cljs.core/subseq",
