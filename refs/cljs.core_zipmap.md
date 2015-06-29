@@ -42,22 +42,22 @@ Source code:
 ```clj
 (defn zipmap
   [keys vals]
-    (loop [map {}
+    (loop [map (transient {})
            ks (seq keys)
            vs (seq vals)]
       (if (and ks vs)
-        (recur (assoc map (first ks) (first vs))
+        (recur (assoc! map (first ks) (first vs))
                (next ks)
                (next vs))
-        map)))
+        (persistent! map))))
 ```
 
  <pre>
-clojurescript @ r1806
+clojurescript @ r1820
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6018-6028](https://github.com/clojure/clojurescript/blob/r1806/src/cljs/cljs/core.cljs#L6018-L6028)</ins>
+            └── <ins>[core.cljs:6178-6188](https://github.com/clojure/clojurescript/blob/r1820/src/cljs/cljs/core.cljs#L6178-L6188)</ins>
 </pre>
 
 
@@ -82,11 +82,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/interleave"],
  :full-name-encode "cljs.core_zipmap",
- :source {:code "(defn zipmap\n  [keys vals]\n    (loop [map {}\n           ks (seq keys)\n           vs (seq vals)]\n      (if (and ks vs)\n        (recur (assoc map (first ks) (first vs))\n               (next ks)\n               (next vs))\n        map)))",
+ :source {:code "(defn zipmap\n  [keys vals]\n    (loop [map (transient {})\n           ks (seq keys)\n           vs (seq vals)]\n      (if (and ks vs)\n        (recur (assoc! map (first ks) (first vs))\n               (next ks)\n               (next vs))\n        (persistent! map))))",
           :repo "clojurescript",
-          :tag "r1806",
+          :tag "r1820",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6018 6028]},
+          :lines [6178 6188]},
  :full-name "cljs.core/zipmap",
  :clj-symbol "clojure.core/zipmap",
  :docstring "Returns a map with the keys mapped to the corresponding vals."}

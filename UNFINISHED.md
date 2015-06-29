@@ -1016,7 +1016,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/KeySeq</td>
-<td></td>
+<td>[ref](refs/cljs.core_KeySeq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_KeySeq.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1208,7 +1208,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentArrayMapSeq</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentArrayMapSeq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentArrayMapSeq.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1544,7 +1544,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ValSeq</td>
-<td></td>
+<td>[ref](refs/cljs.core_ValSeq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ValSeq.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3688,7 +3688,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/persistent-array-map-seq</td>
-<td></td>
+<td>[ref](refs/cljs.core_persistent-array-map-seq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_persistent-array-map-seq.cljsdoc)</td>
 <td></td>
 <td></td>

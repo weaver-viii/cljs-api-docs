@@ -31,16 +31,16 @@ Source code:
 ```clj
 (defn append!
   [acc x]
-  (doto acc (.add x)))
+  (doto acc (.push x)))
 ```
 
  <pre>
-clojurescript @ r1806
+clojurescript @ r1820
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:225-228](https://github.com/clojure/clojurescript/blob/r1806/src/cljs/clojure/core/reducers.cljs#L225-L228)</ins>
+                └── <ins>[reducers.cljs:225-228](https://github.com/clojure/clojurescript/blob/r1820/src/cljs/clojure/core/reducers.cljs#L225-L228)</ins>
 </pre>
 
 
@@ -63,9 +63,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1236"]],
  :type "function",
  :full-name-encode "clojure.core.reducers_appendBANG",
- :source {:code "(defn append!\n  [acc x]\n  (doto acc (.add x)))",
+ :source {:code "(defn append!\n  [acc x]\n  (doto acc (.push x)))",
           :repo "clojurescript",
-          :tag "r1806",
+          :tag "r1820",
           :filename "src/cljs/clojure/core/reducers.cljs",
           :lines [225 228]},
  :full-name "clojure.core.reducers/append!",
