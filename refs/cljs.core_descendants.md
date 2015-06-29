@@ -42,11 +42,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3195
+clojurescript @ r3196
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:9134-9141](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/cljs/core.cljs#L9134-L9141)</ins>
+            └── <ins>[core.cljs:9134-9141](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/cljs/core.cljs#L9134-L9141)</ins>
 </pre>
 
 
@@ -71,7 +71,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_descendants",
  :source {:code "(defn descendants\n  ([tag] (descendants @(get-global-hierarchy) tag))\n  ([h tag] (not-empty (get (:descendants h) tag))))",
           :repo "clojurescript",
-          :tag "r3195",
+          :tag "r3196",
           :filename "src/cljs/cljs/core.cljs",
           :lines [9134 9141]},
  :full-name "cljs.core/descendants",

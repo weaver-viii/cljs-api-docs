@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3195
+clojurescript @ r3196
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:496-499](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/cljs/core.cljs#L496-L499)</ins>
+            └── <ins>[core.cljs:496-499](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/cljs/core.cljs#L496-L499)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IReversible",
  :source {:code "(defprotocol IReversible\n  \"Protocol for reversing a seq.\"\n  (^clj -rseq [coll]\n    \"Returns a seq of the items in coll in reversed order.\"))",
           :repo "clojurescript",
-          :tag "r3195",
+          :tag "r3196",
           :filename "src/cljs/cljs/core.cljs",
           :lines [496 499]},
  :methods [{:name "-rseq",

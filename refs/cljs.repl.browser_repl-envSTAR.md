@@ -45,12 +45,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3195
+clojurescript @ r3196
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:534-554](https://github.com/clojure/clojurescript/blob/r3195/src/clj/cljs/repl/browser.clj#L534-L554)</ins>
+                └── <ins>[browser.clj:534-554](https://github.com/clojure/clojurescript/blob/r3196/src/clj/cljs/repl/browser.clj#L534-L554)</ins>
 </pre>
 
 
@@ -73,7 +73,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[{:keys [output-dir], :as opts}]"],
  :source {:code "(defn repl-env*\n  [{:keys [output-dir] :as opts}]\n  (merge (BrowserEnv.)\n    {:port 9000\n     :working-dir (->> [\".repl\" (util/clojurescript-version)]\n                       (remove empty?) (string/join \"-\"))\n     :serve-static true\n     :static-dir (cond-> [\".\" \"out/\"] output-dir (conj output-dir))\n     :preloaded-libs []\n     :optimizations :simple\n     :src \"src/\"\n     :browser-state (atom {:return-value-fn nil\n                          :client-js nil})\n     :ordering (agent {:expecting nil :fns {}})\n     :es (Executors/newFixedThreadPool 16)\n     :server-state\n     (atom\n       {:socket nil\n        :connection nil\n        :promised-conn nil})}\n    opts))",
           :repo "clojurescript",
-          :tag "r3195",
+          :tag "r3196",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [534 554]},
  :full-name "cljs.repl.browser/repl-env*",

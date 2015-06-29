@@ -48,11 +48,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3195
+clojurescript @ r3196
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2082-2095](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/cljs/core.cljs#L2082-L2095)</ins>
+            └── <ins>[core.cljs:2082-2095](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/cljs/core.cljs#L2082-L2095)</ins>
 </pre>
 
 
@@ -77,7 +77,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_transduce",
  :source {:code "(defn transduce\n  ([xform f coll] (transduce xform f (f) coll))\n  ([xform f init coll]\n     (let [f (xform f)\n           ret (reduce f init coll)]\n       (f ret))))",
           :repo "clojurescript",
-          :tag "r3195",
+          :tag "r3196",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2082 2095]},
  :full-name "cljs.core/transduce",

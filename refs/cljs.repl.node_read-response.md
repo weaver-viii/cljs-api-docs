@@ -35,12 +35,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3195
+clojurescript @ r3196
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[node.clj:40-50](https://github.com/clojure/clojurescript/blob/r3195/src/clj/cljs/repl/node.clj#L40-L50)</ins>
+                └── <ins>[node.clj:40-50](https://github.com/clojure/clojurescript/blob/r3196/src/clj/cljs/repl/node.clj#L40-L50)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[in]"],
  :source {:code "(defn read-response [^BufferedReader in]\n  (let [sb (StringBuilder.)]\n    (loop [sb sb c (.read in)]\n      (cond\n       (= c 1) (let [ret (str sb)]\n                 (print ret)\n                 (recur (StringBuilder.) (.read in)))\n       (= c 0) (str sb)\n       :else (do\n               (.append sb (char c))\n               (recur sb (.read in)))))))",
           :repo "clojurescript",
-          :tag "r3195",
+          :tag "r3196",
           :filename "src/clj/cljs/repl/node.clj",
           :lines [40 50]},
  :full-name "cljs.repl.node/read-response",

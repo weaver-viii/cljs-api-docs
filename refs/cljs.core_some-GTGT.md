@@ -52,11 +52,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.7.0-alpha6
+clojure @ clojure-1.7.0-beta1
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:7280-7289](https://github.com/clojure/clojure/blob/clojure-1.7.0-alpha6/src/clj/clojure/core.clj#L7280-L7289)</ins>
+            └── <ins>[core.clj:7278-7287](https://github.com/clojure/clojure/blob/clojure-1.7.0-beta1/src/clj/clojure/core.clj#L7278-L7287)</ins>
 </pre>
 
 
@@ -86,9 +86,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_some-GTGT",
  :source {:code "(defmacro some->>\n  [expr & forms]\n  (let [g (gensym)\n        pstep (fn [step] `(if (nil? ~g) nil (->> ~g ~step)))]\n    `(let [~g ~expr\n           ~@(interleave (repeat g) (map pstep forms))]\n       ~g)))",
           :repo "clojure",
-          :tag "clojure-1.7.0-alpha6",
+          :tag "clojure-1.7.0-beta1",
           :filename "src/clj/clojure/core.clj",
-          :lines [7280 7289]},
+          :lines [7278 7287]},
  :full-name "cljs.core/some->>",
  :clj-symbol "clojure.core/some->>",
  :docstring "When expr is not nil, threads it into the first form (via ->>),\nand when that result is not nil, through the next etc"}

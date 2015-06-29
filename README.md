@@ -2,10 +2,10 @@
 
  <table border="1">
 <tr>
-<td>__0.0-3195__ [all](HISTORY.md)</td>
+<td>__0.0-3196__ [all](HISTORY.md)</td>
 <td>2015-04-10</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
-<kbd>Clojure 1.7.0-alpha6</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
+<kbd>Clojure 1.7.0-beta1</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
 <kbd>Closure Lib 0.0-20140718-946a7d39</kbd>](http://www.closurecheatsheet.com/)</td>
 </tr>
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-3195__ ([See Full History](HISTORY.md)):
+Changes from __0.0-3196__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 

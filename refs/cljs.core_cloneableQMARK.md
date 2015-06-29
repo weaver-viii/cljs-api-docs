@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3195
+clojurescript @ r3196
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:925-928](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/cljs/core.cljs#L925-L928)</ins>
+            └── <ins>[core.cljs:925-928](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/cljs/core.cljs#L925-L928)</ins>
 </pre>
 
 
@@ -61,7 +61,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_cloneableQMARK",
  :source {:code "(defn cloneable?\n  [value]\n  (satisfies? ICloneable value))",
           :repo "clojurescript",
-          :tag "r3195",
+          :tag "r3196",
           :filename "src/cljs/cljs/core.cljs",
           :lines [925 928]},
  :full-name "cljs.core/cloneable?",

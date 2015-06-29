@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3195
+clojurescript @ r3196
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1345-1363](https://github.com/clojure/clojurescript/blob/r3195/src/clj/cljs/core.clj#L1345-L1363)</ins>
+            └── <ins>[core.clj:1345-1363](https://github.com/clojure/clojurescript/blob/r3196/src/clj/cljs/core.clj#L1345-L1363)</ins>
 </pre>
 
 
@@ -76,7 +76,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_implementsQMARK",
  :source {:code "(defmacro implements?\n  [psym x]\n  (let [p          (:name\n                    (cljs.analyzer/resolve-var\n                      (dissoc &env :locals) psym))\n        prefix     (protocol-prefix p)\n        xsym       (bool-expr (gensym))\n        [part bit] (fast-path-protocols p)\n        msym       (symbol\n                      (core/str \"-cljs$lang$protocol_mask$partition\" part \"$\"))]\n    `(let [~xsym ~x]\n       (if ~xsym\n         (let [bit# ~(if bit `(unsafe-bit-and (. ~xsym ~msym) ~bit))]\n           (if (or bit#\n                 ~(bool-expr `(. ~xsym ~(symbol (core/str \"-\" prefix)))))\n             true\n             false))\n         false))))",
           :repo "clojurescript",
-          :tag "r3195",
+          :tag "r3196",
           :filename "src/clj/cljs/core.clj",
           :lines [1345 1363]},
  :full-name "cljs.core/implements?",

@@ -20,12 +20,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3195
+clojurescript @ r3196
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[server.clj:39](https://github.com/clojure/clojurescript/blob/r3195/src/clj/cljs/repl/server.clj#L39)</ins>
+                └── <ins>[server.clj:39](https://github.com/clojure/clojurescript/blob/r3196/src/clj/cljs/repl/server.clj#L39)</ins>
 </pre>
 
 
@@ -47,7 +47,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(defonce handlers (atom {}))",
           :repo "clojurescript",
-          :tag "r3195",
+          :tag "r3196",
           :filename "src/clj/cljs/repl/server.clj",
           :lines [39]},
  :full-name "cljs.repl.server/handlers",

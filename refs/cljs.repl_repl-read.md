@@ -53,11 +53,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3195
+clojurescript @ r3196
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:77-98](https://github.com/clojure/clojurescript/blob/r3195/src/clj/cljs/repl.clj#L77-L98)</ins>
+            └── <ins>[repl.clj:77-98](https://github.com/clojure/clojurescript/blob/r3196/src/clj/cljs/repl.clj#L77-L98)</ins>
 </pre>
 
 
@@ -83,7 +83,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_repl-read",
  :source {:code "(defn repl-read\n  ([request-prompt request-exit]\n   (repl-read request-prompt request-exit *repl-opts*))\n  ([request-prompt request-exit opts]\n   (binding [*in* (if (true? (:source-map-inline opts))\n                    ((:reader opts))\n                    *in*)]\n     (or ({:line-start request-prompt :stream-end request-exit}\n          (skip-whitespace *in*))\n        (let [input (reader/read)]\n          (skip-if-eol *in*)\n          input)))))",
           :repo "clojurescript",
-          :tag "r3195",
+          :tag "r3196",
           :filename "src/clj/cljs/repl.clj",
           :lines [77 98]},
  :full-name "cljs.repl/repl-read",

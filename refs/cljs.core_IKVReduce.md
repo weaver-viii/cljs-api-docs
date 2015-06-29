@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3195
+clojurescript @ r3196
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:465-470](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/cljs/core.cljs#L465-L470)</ins>
+            └── <ins>[core.cljs:465-470](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/cljs/core.cljs#L465-L470)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IKVReduce",
  :source {:code "(defprotocol IKVReduce\n  \"Protocol for associative types that can reduce themselves\n  via a function of key and val. Called by cljs.core/reduce-kv.\"\n  (-kv-reduce [coll f init]\n    \"Reduces an associative collection and returns the result. f should be\n     a function that takes three arguments.\"))",
           :repo "clojurescript",
-          :tag "r3195",
+          :tag "r3196",
           :filename "src/cljs/cljs/core.cljs",
           :lines [465 470]},
  :methods [{:name "-kv-reduce",

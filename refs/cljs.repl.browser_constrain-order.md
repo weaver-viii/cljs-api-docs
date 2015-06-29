@@ -34,12 +34,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3195
+clojurescript @ r3196
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:142-147](https://github.com/clojure/clojurescript/blob/r3195/src/clj/cljs/repl/browser.clj#L142-L147)</ins>
+                └── <ins>[browser.clj:142-147](https://github.com/clojure/clojurescript/blob/r3196/src/clj/cljs/repl/browser.clj#L142-L147)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.browser_constrain-order",
  :source {:code "(defn constrain-order\n  [order f]\n  (send-via es ordering add-in-order order f)\n  (send-via es ordering run-in-order))",
           :repo "clojurescript",
-          :tag "r3195",
+          :tag "r3196",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [142 147]},
  :full-name "cljs.repl.browser/constrain-order",

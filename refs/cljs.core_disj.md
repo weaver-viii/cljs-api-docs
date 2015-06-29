@@ -61,11 +61,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3195
+clojurescript @ r3196
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1724-1736](https://github.com/clojure/clojurescript/blob/r3195/src/cljs/cljs/core.cljs#L1724-L1736)</ins>
+            └── <ins>[core.cljs:1724-1736](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/cljs/core.cljs#L1724-L1736)</ins>
 </pre>
 
 
@@ -94,7 +94,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_disj",
  :source {:code "(defn disj\n  ([coll] coll)\n  ([coll k]\n    (when-not (nil? coll)\n      (-disjoin coll k)))\n  ([coll k & ks]\n    (when-not (nil? coll)\n      (let [ret (disj coll k)]\n        (if ks\n          (recur ret (first ks) (next ks))\n          ret)))))",
           :repo "clojurescript",
-          :tag "r3195",
+          :tag "r3196",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1724 1736]},
  :full-name "cljs.core/disj",
