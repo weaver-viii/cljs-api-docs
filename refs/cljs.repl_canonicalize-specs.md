@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3169
+clojurescript @ r3178
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:539-545](https://github.com/clojure/clojurescript/blob/r3169/src/clj/cljs/repl.clj#L539-L545)</ins>
+            └── <ins>[repl.clj:546-552](https://github.com/clojure/clojurescript/blob/r3178/src/clj/cljs/repl.clj#L546-L552)</ins>
 </pre>
 
 
@@ -58,9 +58,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[specs]"],
  :source {:code "(defn canonicalize-specs [specs]\n  (letfn [(canonicalize [quoted-spec-or-kw]\n            (if (keyword? quoted-spec-or-kw)\n              quoted-spec-or-kw\n              (as-> (second quoted-spec-or-kw) spec\n                (if (vector? spec) spec [spec]))))]\n    (map canonicalize specs)))",
           :repo "clojurescript",
-          :tag "r3169",
+          :tag "r3178",
           :filename "src/clj/cljs/repl.clj",
-          :lines [539 545]},
+          :lines [546 552]},
  :full-name "cljs.repl/canonicalize-specs",
  :full-name-encode "cljs.repl_canonicalize-specs",
  :history [["+" "0.0-3148"]]}

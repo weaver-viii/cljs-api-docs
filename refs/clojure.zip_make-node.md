@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3169
+clojurescript @ r3178
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:76-80](https://github.com/clojure/clojurescript/blob/r3169/src/cljs/clojure/zip.cljs#L76-L80)</ins>
+            └── <ins>[zip.cljs:76-80](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/clojure/zip.cljs#L76-L80)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_make-node",
  :source {:code "(defn make-node\n  [loc node children]\n    ((:zip/make-node (meta loc)) node children))",
           :repo "clojurescript",
-          :tag "r3169",
+          :tag "r3178",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [76 80]},
  :full-name "clojure.zip/make-node",

@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3169
+clojurescript @ r3178
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:678-679](https://github.com/clojure/clojurescript/blob/r3169/src/clj/cljs/repl.clj#L678-L679)</ins>
+            └── <ins>[repl.clj:685-686](https://github.com/clojure/clojurescript/blob/r3178/src/clj/cljs/repl.clj#L685-L686)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[]"],
  :source {:code "(defn repl-quit-prompt []\n  (println \"To quit, type:\" :cljs/quit))",
           :repo "clojurescript",
-          :tag "r3169",
+          :tag "r3178",
           :filename "src/clj/cljs/repl.clj",
-          :lines [678 679]},
+          :lines [685 686]},
  :full-name "cljs.repl/repl-quit-prompt",
  :full-name-encode "cljs.repl_repl-quit-prompt",
  :history [["+" "0.0-3148"]]}

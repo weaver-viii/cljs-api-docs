@@ -1728,7 +1728,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/array-index-of</td>
-<td></td>
+<td>[ref](refs/cljs.core_array-index-of.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_array-index-of.cljsdoc)</td>
 <td></td>
 <td></td>

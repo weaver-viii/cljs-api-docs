@@ -42,11 +42,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3169
+clojurescript @ r3178
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:9049-9051](https://github.com/clojure/clojurescript/blob/r3169/src/cljs/cljs/core.cljs#L9049-L9051)</ins>
+            └── <ins>[core.cljs:9061-9063](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L9061-L9063)</ins>
 </pre>
 
 
@@ -73,9 +73,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_rand-int",
  :source {:code "(defn rand-int\n  [n] (Math/floor (* (Math/random) n)))",
           :repo "clojurescript",
-          :tag "r3169",
+          :tag "r3178",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [9049 9051]},
+          :lines [9061 9063]},
  :full-name "cljs.core/rand-int",
  :clj-symbol "clojure.core/rand-int",
  :docstring "Returns a random integer between 0 (inclusive) and n (exclusive)."}

@@ -42,12 +42,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3169
+clojurescript @ r3178
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:195-212](https://github.com/clojure/clojurescript/blob/r3169/src/clj/cljs/repl/browser.clj#L195-L212)</ins>
+                └── <ins>[browser.clj:195-212](https://github.com/clojure/clojurescript/blob/r3178/src/clj/cljs/repl/browser.clj#L195-L212)</ins>
 </pre>
 
 
@@ -70,7 +70,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[flc]"],
  :source {:code "(defn parse-file-line-column [flc]\n  (let [xs (string/split flc #\":\")\n        [pre [line column]]\n        (reduce\n          (fn [[pre post] [x i]]\n            (if (<= i 2)\n              [pre (conj post x)]\n              [(conj pre x) post]))\n          [[] []] (map vector xs (range (count xs) 0 -1)))\n        file (string/join \":\" pre)]\n    [(cond-> file\n       (.startsWith file \"(\") (string/replace \"(\" \"\"))\n     (Long/parseLong\n       (cond-> line\n         (.endsWith line \")\") (string/replace \")\" \"\")))\n     (Long/parseLong\n       (cond-> column\n         (.endsWith column \")\") (string/replace \")\" \"\")))]))",
           :repo "clojurescript",
-          :tag "r3169",
+          :tag "r3178",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [195 212]},
  :full-name "cljs.repl.browser/parse-file-line-column",

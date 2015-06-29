@@ -2,8 +2,8 @@
 
  <table border="1">
 <tr>
-<td>__0.0-3169__ [all](HISTORY.md)</td>
-<td>2015-03-31</td>
+<td>__0.0-3178__ [all](HISTORY.md)</td>
+<td>2015-04-06</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.6.0</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-3169__ ([See Full History](HISTORY.md)):
+Changes from __0.0-3178__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
@@ -85,9 +85,9 @@ __Library API Changes__
 
 <tr>
 <td>
-<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
 </td>
-<td><samp>[cljs.core/ns-unmap](refs/cljs.core_ns-unmap.md)</samp></td>
+<td><samp>[cljs.core/array-index-of](refs/cljs.core_array-index-of.md)</samp></td>
 </tr>
 </table>
 
@@ -953,6 +953,12 @@ application.
 </tr>
 <tr>
 <td></td>
+<td><samp>[array-index-of](refs/cljs.core_array-index-of.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-3178"><img valign="middle" alt="[+] 0.0-3178" src="https://img.shields.io/badge/+-0.0--3178-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
 <td><samp>[array-iter](refs/cljs.core_array-iter.md)</samp></td>
 <td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2301"><img valign="middle" alt="[+] 0.0-2301" src="https://img.shields.io/badge/+-0.0--2301-lightgrey.svg"></a> </td>
@@ -1414,7 +1420,7 @@ application.
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
 </tr>
 <tr>
-<td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/defn) <samp>→</samp></td>
+<td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/defn)</td>
 <td><samp>[defn](refs/cljs.core_defn.md)</samp></td>
 <td><samp>macro</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>

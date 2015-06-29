@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3169
+clojurescript @ r3178
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1994-2006](https://github.com/clojure/clojurescript/blob/r3169/src/clj/cljs/core.clj#L1994-L2006)</ins>
+            └── <ins>[core.clj:2043-2055](https://github.com/clojure/clojurescript/blob/r3178/src/clj/cljs/core.clj#L2043-L2055)</ins>
 </pre>
 
 
@@ -73,9 +73,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_macroexpand",
  :source {:code "(defmacro macroexpand\n  [quoted]\n  (core/assert (core/= (core/first quoted) 'quote)\n    \"Argument to macroexpand must be quoted\")\n  (core/let [form (second quoted)\n             env &env]\n    (core/loop [form form form' (ana/macroexpand-1 env form)]\n      (core/if-not (core/identical? form form')\n        (recur form' (ana/macroexpand-1 env form'))\n        `(quote ~form')))))",
           :repo "clojurescript",
-          :tag "r3169",
+          :tag "r3178",
           :filename "src/clj/cljs/core.clj",
-          :lines [1994 2006]},
+          :lines [2043 2055]},
  :full-name "cljs.core/macroexpand",
  :clj-symbol "clojure.core/macroexpand",
  :docstring "Repeatedly calls macroexpand-1 on form until it no longer\nrepresents a macro form, then returns it.  Note neither\nmacroexpand-1 nor macroexpand expand macros in subforms."}

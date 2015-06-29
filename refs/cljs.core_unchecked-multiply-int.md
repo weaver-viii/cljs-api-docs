@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3169
+clojurescript @ r3178
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2261-2266](https://github.com/clojure/clojurescript/blob/r3169/src/cljs/cljs/core.cljs#L2261-L2266)</ins>
+            └── <ins>[core.cljs:2261-2266](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L2261-L2266)</ins>
 </pre>
 
 
@@ -62,11 +62,11 @@ clojurescript @ r3169
 ```
 
  <pre>
-clojurescript @ r3169
+clojurescript @ r3178
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:414-415](https://github.com/clojure/clojurescript/blob/r3169/src/clj/cljs/core.clj#L414-L415)</ins>
+            └── <ins>[core.clj:463-464](https://github.com/clojure/clojurescript/blob/r3178/src/clj/cljs/core.clj#L463-L464)</ins>
 </pre>
 
 ---
@@ -91,14 +91,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-multiply-int",
  :source {:code "(defn ^number unchecked-multiply-int\n  ([] 1)\n  ([x] x)\n  ([x y] (cljs.core/unchecked-multiply-int x y))\n  ([x y & more] (reduce unchecked-multiply-int (cljs.core/unchecked-multiply-int x y) more)))",
           :repo "clojurescript",
-          :tag "r3169",
+          :tag "r3178",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2261 2266]},
  :extra-sources ({:code "(defmacro ^::ana/numeric unchecked-multiply-int\n  ([& xs] `(* ~@xs)))",
                   :repo "clojurescript",
-                  :tag "r3169",
+                  :tag "r3178",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [414 415]}),
+                  :lines [463 464]}),
  :full-name "cljs.core/unchecked-multiply-int",
  :clj-symbol "clojure.core/unchecked-multiply-int",
  :docstring "Returns the product of nums. (*) returns 1."}

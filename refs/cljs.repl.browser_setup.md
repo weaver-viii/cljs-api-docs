@@ -38,12 +38,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3169
+clojurescript @ r3178
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:484-497](https://github.com/clojure/clojurescript/blob/r3169/src/clj/cljs/repl/browser.clj#L484-L497)</ins>
+                └── <ins>[browser.clj:484-497](https://github.com/clojure/clojurescript/blob/r3178/src/clj/cljs/repl/browser.clj#L484-L497)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[{:keys [working-dir], :as repl-env} opts]"],
  :source {:code "(defn setup [{:keys [working-dir] :as repl-env} opts]\n  (binding [browser-state (:browser-state repl-env)\n            ordering (:ordering repl-env)\n            es (:es repl-env)\n            server/state (:server-state repl-env)]\n    (repl/err-out (println \"Compiling client js ...\"))\n    (swap! browser-state\n      (fn [old]\n        (assoc old :client-js\n          (create-client-js-file\n            repl-env (io/file working-dir \"client.js\")))))\n    (repl/err-out (println \"Waiting for browser to connect ...\"))\n    opts\n    (server/start repl-env)))",
           :repo "clojurescript",
-          :tag "r3169",
+          :tag "r3178",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [484 497]},
  :full-name "cljs.repl.browser/setup",

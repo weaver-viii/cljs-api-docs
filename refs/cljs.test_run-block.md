@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3169
+clojurescript @ r3178
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:407-424](https://github.com/clojure/clojurescript/blob/r3169/src/cljs/cljs/test.cljs#L407-L424)</ins>
+            └── <ins>[test.cljs:407-424](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/test.cljs#L407-L424)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_run-block",
  :source {:code "(defn run-block\n  [fns]\n  (when-first [f fns]\n    (let [obj (f)]\n      (if (async? obj)\n        (obj (let [d (delay (run-block (rest fns)))]\n               (fn []\n                 (if (realized? d)\n                   (println \"WARNING: Async test called done more than one time.\")\n                   @d))))\n        (recur (cond->> (rest fns)\n                 (::block? (meta obj)) (concat obj)))))))",
           :repo "clojurescript",
-          :tag "r3169",
+          :tag "r3178",
           :filename "src/cljs/cljs/test.cljs",
           :lines [407 424]},
  :full-name "cljs.test/run-block",

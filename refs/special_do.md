@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3169
+clojurescript @ r3178
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:1054-1063](https://github.com/clojure/clojurescript/blob/r3169/src/clj/cljs/analyzer.clj#L1054-L1063)</ins>
+            └── <ins>[analyzer.clj:1049-1058](https://github.com/clojure/clojurescript/blob/r3178/src/clj/cljs/analyzer.clj#L1049-L1058)</ins>
 </pre>
 
 
@@ -72,9 +72,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "special_do",
  :source {:code "(defmethod parse 'do\n  [op env [_ & exprs :as form] _ _]\n  (let [statements (disallowing-recur\n                     (seq (map #(analyze (assoc env :context :statement) %) (butlast exprs))))\n        ret (if (<= (count exprs) 1)\n              (analyze env (first exprs))\n              (analyze (assoc env :context (if (= :statement (:context env)) :statement :return)) (last exprs)))]\n    {:env env :op :do :form form\n     :statements statements :ret ret\n     :children (conj (vec statements) ret)}))",
           :repo "clojurescript",
-          :tag "r3169",
+          :tag "r3178",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [1054 1063]},
+          :lines [1049 1058]},
  :full-name "special/do",
  :clj-symbol "clojure.core/do",
  :docstring "Evaluates the expressions in order and returns the value of\nthe last. If no expressions are supplied, returns nil."}

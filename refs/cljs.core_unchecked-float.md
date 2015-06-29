@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3169
+clojurescript @ r3178
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2214](https://github.com/clojure/clojurescript/blob/r3169/src/cljs/cljs/core.cljs#L2214)</ins>
+            └── <ins>[core.cljs:2214](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L2214)</ins>
 </pre>
 
 
@@ -43,11 +43,11 @@ clojurescript @ r3169
 ```
 
  <pre>
-clojurescript @ r3169
+clojurescript @ r3178
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:387](https://github.com/clojure/clojurescript/blob/r3169/src/clj/cljs/core.clj#L387)</ins>
+            └── <ins>[core.clj:436](https://github.com/clojure/clojurescript/blob/r3178/src/clj/cljs/core.clj#L436)</ins>
 </pre>
 
 ---
@@ -72,14 +72,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-float",
  :source {:code "(defn ^number unchecked-float [x] x)",
           :repo "clojurescript",
-          :tag "r3169",
+          :tag "r3178",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2214]},
  :extra-sources ({:code "(defmacro unchecked-float [x] x)",
                   :repo "clojurescript",
-                  :tag "r3169",
+                  :tag "r3178",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [387]}),
+                  :lines [436]}),
  :full-name "cljs.core/unchecked-float",
  :clj-symbol "clojure.core/unchecked-float"}
 

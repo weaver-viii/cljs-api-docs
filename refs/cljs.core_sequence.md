@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3169
+clojurescript @ r3178
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3561-3577](https://github.com/clojure/clojurescript/blob/r3169/src/cljs/cljs/core.cljs#L3561-L3577)</ins>
+            └── <ins>[core.cljs:3561-3577](https://github.com/clojure/clojurescript/blob/r3178/src/cljs/cljs/core.cljs#L3561-L3577)</ins>
 </pre>
 
 
@@ -83,7 +83,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_sequence",
  :source {:code "(defn sequence\n  ([coll]\n     (if (seq? coll)\n       coll\n       (or (seq coll) ())))\n  ([xform coll]\n     (.create LazyTransformer xform coll))\n  ([xform coll & colls]\n     (.createMulti LazyTransformer xform (to-array (cons coll colls)))))",
           :repo "clojurescript",
-          :tag "r3169",
+          :tag "r3178",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3561 3577]},
  :full-name "cljs.core/sequence",
