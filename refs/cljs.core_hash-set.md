@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2030
+clojurescript @ r2060
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6216-6218](https://github.com/clojure/clojurescript/blob/r2030/src/cljs/cljs/core.cljs#L6216-L6218)</ins>
+            └── <ins>[core.cljs:6259-6261](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L6259-L6261)</ins>
 </pre>
 
 
@@ -58,15 +58,21 @@ clojurescript @ r2030
 (defmacro hash-set
   ([] `cljs.core.PersistentHashSet.EMPTY)
   ([& xs]
-    `(set (array ~@xs))))
+    (if (core/and (every? #(= (:op %) :constant)
+                    (map #(cljs.analyzer/analyze &env %) xs))
+                  (= (count (into #{} xs)) (count xs)))
+      `(cljs.core.PersistentHashSet. nil
+         (cljs.core.PersistentArrayMap. nil ~(count xs) (array ~@(interleave xs (repeat nil))) nil)
+         nil)
+      `(cljs.core.PersistentHashSet.fromArray (array ~@xs) true))))
 ```
 
  <pre>
-clojurescript @ r2030
+clojurescript @ r2060
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1316-1319](https://github.com/clojure/clojurescript/blob/r2030/src/clj/cljs/core.clj#L1316-L1319)</ins>
+            └── <ins>[core.clj:1331-1340](https://github.com/clojure/clojurescript/blob/r2060/src/clj/cljs/core.clj#L1331-L1340)</ins>
 </pre>
 
 ---
@@ -92,14 +98,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash-set",
  :source {:code "(defn hash-set\n  ([] #{})\n  ([& keys] (set keys)))",
           :repo "clojurescript",
-          :tag "r2030",
+          :tag "r2060",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6216 6218]},
- :extra-sources ({:code "(defmacro hash-set\n  ([] `cljs.core.PersistentHashSet.EMPTY)\n  ([& xs]\n    `(set (array ~@xs))))",
+          :lines [6259 6261]},
+ :extra-sources ({:code "(defmacro hash-set\n  ([] `cljs.core.PersistentHashSet.EMPTY)\n  ([& xs]\n    (if (core/and (every? #(= (:op %) :constant)\n                    (map #(cljs.analyzer/analyze &env %) xs))\n                  (= (count (into #{} xs)) (count xs)))\n      `(cljs.core.PersistentHashSet. nil\n         (cljs.core.PersistentArrayMap. nil ~(count xs) (array ~@(interleave xs (repeat nil))) nil)\n         nil)\n      `(cljs.core.PersistentHashSet.fromArray (array ~@xs) true))))",
                   :repo "clojurescript",
-                  :tag "r2030",
+                  :tag "r2060",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [1316 1319]}),
+                  :lines [1331 1340]}),
  :full-name "cljs.core/hash-set",
  :clj-symbol "clojure.core/hash-set"}
 

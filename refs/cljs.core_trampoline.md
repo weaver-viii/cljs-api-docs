@@ -49,11 +49,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2030
+clojurescript @ r2060
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7156-7170](https://github.com/clojure/clojurescript/blob/r2030/src/cljs/cljs/core.cljs#L7156-L7170)</ins>
+            └── <ins>[core.cljs:7213-7227](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L7213-L7227)</ins>
 </pre>
 
 
@@ -78,9 +78,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_trampoline",
  :source {:code "(defn trampoline\n  ([f]\n     (let [ret (f)]\n       (if (fn? ret)\n         (recur ret)\n         ret)))\n  ([f & args]\n     (trampoline #(apply f args))))",
           :repo "clojurescript",
-          :tag "r2030",
+          :tag "r2060",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7156 7170]},
+          :lines [7213 7227]},
  :full-name "cljs.core/trampoline",
  :clj-symbol "clojure.core/trampoline",
  :docstring "trampoline can be used to convert algorithms requiring mutual\nrecursion without stack consumption. Calls f with supplied args, if\nany. If f returns a fn, calls that fn with no arguments, and\ncontinues to repeat, until the return value is not a fn, then\nreturns that non-fn value. Note that if you want to return a fn as a\nfinal value, you must wrap it in some data structure and unpack it\nafter trampoline returns."}

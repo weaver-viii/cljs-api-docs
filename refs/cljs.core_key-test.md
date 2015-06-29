@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2030
+clojurescript @ r2060
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4329-4333](https://github.com/clojure/clojurescript/blob/r2030/src/cljs/cljs/core.cljs#L4329-L4333)</ins>
+            └── <ins>[core.cljs:4369-4373](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L4369-L4373)</ins>
 </pre>
 
 
@@ -59,9 +59,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_key-test",
  :source {:code "(defn ^boolean key-test [key other]\n  (cond\n    (identical? key other) true\n    (keyword-identical? key other) true\n    :else (= key other)))",
           :repo "clojurescript",
-          :tag "r2030",
+          :tag "r2060",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [4329 4333]},
+          :lines [4369 4373]},
  :full-name "cljs.core/key-test"}
 
 ```

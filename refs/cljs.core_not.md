@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2030
+clojurescript @ r2060
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:80-82](https://github.com/clojure/clojurescript/blob/r2030/src/cljs/cljs/core.cljs#L80-L82)</ins>
+            └── <ins>[core.cljs:93-95](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L93-L95)</ins>
 </pre>
 
 
@@ -75,9 +75,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_not",
  :source {:code "(defn ^boolean not\n  [x] (if x false true))",
           :repo "clojurescript",
-          :tag "r2030",
+          :tag "r2060",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [80 82]},
+          :lines [93 95]},
  :full-name "cljs.core/not",
  :clj-symbol "clojure.core/not",
  :docstring "Returns true if x is logical false, false otherwise."}

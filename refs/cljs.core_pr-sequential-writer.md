@@ -25,18 +25,23 @@ Source code:
   (-write writer begin)
   (when (seq coll)
     (print-one (first coll) writer opts))
-  (doseq [o (next coll)]
+  (loop [coll (next coll) n (:print-length opts)]
+    (when (and coll (or (nil? n) (not (zero? n))))
+      (-write writer sep)
+      (print-one (first coll) writer opts)
+      (recur (next coll) (dec n))))
+  (when (:print-length opts)
     (-write writer sep)
-    (print-one o writer opts))
+    (print-one "..." writer opts))
   (-write writer end))
 ```
 
  <pre>
-clojurescript @ r2030
+clojurescript @ r2060
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6588-6595](https://github.com/clojure/clojurescript/blob/r2030/src/cljs/cljs/core.cljs#L6588-L6595)</ins>
+            └── <ins>[core.cljs:6631-6643](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L6631-L6643)</ins>
 </pre>
 
 
@@ -57,11 +62,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "pr-sequential-writer",
  :type "function",
  :signature ["[writer print-one begin sep end opts coll]"],
- :source {:code "(defn pr-sequential-writer [writer print-one begin sep end opts coll]\n  (-write writer begin)\n  (when (seq coll)\n    (print-one (first coll) writer opts))\n  (doseq [o (next coll)]\n    (-write writer sep)\n    (print-one o writer opts))\n  (-write writer end))",
+ :source {:code "(defn pr-sequential-writer [writer print-one begin sep end opts coll]\n  (-write writer begin)\n  (when (seq coll)\n    (print-one (first coll) writer opts))\n  (loop [coll (next coll) n (:print-length opts)]\n    (when (and coll (or (nil? n) (not (zero? n))))\n      (-write writer sep)\n      (print-one (first coll) writer opts)\n      (recur (next coll) (dec n))))\n  (when (:print-length opts)\n    (-write writer sep)\n    (print-one \"...\" writer opts))\n  (-write writer end))",
           :repo "clojurescript",
-          :tag "r2030",
+          :tag "r2060",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6588 6595]},
+          :lines [6631 6643]},
  :full-name "cljs.core/pr-sequential-writer",
  :full-name-encode "cljs.core_pr-sequential-writer",
  :history [["+" "0.0-1503"]]}

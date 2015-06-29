@@ -32,15 +32,16 @@ Source code:
 (defn prn
   [& objs]
   (pr-with-opts objs (pr-opts))
-  (newline (pr-opts)))
+  (when *print-newline*
+    (newline (pr-opts))))
 ```
 
  <pre>
-clojurescript @ r2030
+clojurescript @ r2060
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6771-6775](https://github.com/clojure/clojurescript/blob/r2030/src/cljs/cljs/core.cljs#L6771-L6775)</ins>
+            └── <ins>[core.cljs:6820-6825](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L6820-L6825)</ins>
 </pre>
 
 
@@ -63,11 +64,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.core_prn",
- :source {:code "(defn prn\n  [& objs]\n  (pr-with-opts objs (pr-opts))\n  (newline (pr-opts)))",
+ :source {:code "(defn prn\n  [& objs]\n  (pr-with-opts objs (pr-opts))\n  (when *print-newline*\n    (newline (pr-opts))))",
           :repo "clojurescript",
-          :tag "r2030",
+          :tag "r2060",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6771 6775]},
+          :lines [6820 6825]},
  :full-name "cljs.core/prn",
  :clj-symbol "clojure.core/prn",
  :docstring "Same as pr followed by (newline)."}

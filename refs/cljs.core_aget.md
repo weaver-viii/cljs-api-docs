@@ -98,11 +98,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2030
+clojurescript @ r2060
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:147-152](https://github.com/clojure/clojurescript/blob/r2030/src/cljs/cljs/core.cljs#L147-L152)</ins>
+            └── <ins>[core.cljs:164-169](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L164-L169)</ins>
 </pre>
 
 
@@ -118,11 +118,11 @@ clojurescript @ r2030
 ```
 
  <pre>
-clojurescript @ r2030
+clojurescript @ r2060
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:313-318](https://github.com/clojure/clojurescript/blob/r2030/src/clj/cljs/core.clj#L313-L318)</ins>
+            └── <ins>[core.clj:314-319](https://github.com/clojure/clojurescript/blob/r2060/src/clj/cljs/core.clj#L314-L319)</ins>
 </pre>
 
 ---
@@ -151,14 +151,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_aget",
  :source {:code "(defn aget\n  ([array i]\n     (cljs.core/aget array i))\n  ([array i & idxs]\n     (apply aget (aget array i) idxs)))",
           :repo "clojurescript",
-          :tag "r2030",
+          :tag "r2060",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [147 152]},
+          :lines [164 169]},
  :extra-sources ({:code "(defmacro aget\n  ([a i]\n     (core/list 'js* \"(~{}[~{}])\" a i))\n  ([a i & idxs]\n     (let [astr (apply core/str (repeat (count idxs) \"[~{}]\"))]\n      `(~'js* ~(core/str \"(~{}[~{}]\" astr \")\") ~a ~i ~@idxs))))",
                   :repo "clojurescript",
-                  :tag "r2030",
+                  :tag "r2060",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [313 318]}),
+                  :lines [314 319]}),
  :examples [{:id "e36007",
              :content "```js\n// JavaScript\nvar a = {\"foo\": [5, 6]};\n\na[\"foo\"];\n//=> [5, 6]\n\na[\"foo\"][0];\n//=> 5\n```\n\n```clj\n;; ClojureScript\n(def a #js {:foo #js [5 6]})\n\n(aget a \"foo\")\n;;=> #js [5 6]\n\n(aget a \"foo\" 0)\n;;=> 5\n```"}
             {:id "c9029e",

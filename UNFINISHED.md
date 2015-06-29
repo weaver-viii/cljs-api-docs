@@ -1656,7 +1656,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/\*print-length\*</td>
-<td></td>
+<td>[ref](refs/cljs.core_STARprint-lengthSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_STARprint-lengthSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1680,7 +1680,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/\*print-newline\*</td>
-<td></td>
+<td>[ref](refs/cljs.core_STARprint-newlineSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_STARprint-newlineSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2392,7 +2392,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/enable-console-print!</td>
-<td></td>
+<td>[ref](refs/cljs.core_enable-console-printBANG.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_enable-console-printBANG.cljsdoc)</td>
 <td></td>
 <td></td>

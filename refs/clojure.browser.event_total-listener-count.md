@@ -26,12 +26,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2030
+clojurescript @ r2060
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[event.cljs:85-86](https://github.com/clojure/clojurescript/blob/r2030/src/cljs/clojure/browser/event.cljs#L85-L86)</ins>
+                └── <ins>[event.cljs:85-86](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/clojure/browser/event.cljs#L85-L86)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[]"],
  :source {:code "(defn total-listener-count []\n  (goog.events/getTotalListenerCount))",
           :repo "clojurescript",
-          :tag "r2030",
+          :tag "r2060",
           :filename "src/cljs/clojure/browser/event.cljs",
           :lines [85 86]},
  :full-name "clojure.browser.event/total-listener-count",

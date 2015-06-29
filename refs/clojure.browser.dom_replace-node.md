@@ -37,12 +37,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2030
+clojurescript @ r2060
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[dom.cljs:114-122](https://github.com/clojure/clojurescript/blob/r2030/src/cljs/clojure/browser/dom.cljs#L114-L122)</ins>
+                └── <ins>[dom.cljs:114-122](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/clojure/browser/dom.cljs#L114-L122)</ins>
 </pre>
 
 
@@ -67,7 +67,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.dom_replace-node",
  :source {:code "(defn replace-node\n  [old-node new-node]\n  (let [old-node (ensure-element old-node)\n        new-node (ensure-element new-node)]\n    (gdom/replaceNode new-node old-node)\n    new-node))",
           :repo "clojurescript",
-          :tag "r2030",
+          :tag "r2060",
           :filename "src/cljs/clojure/browser/dom.cljs",
           :lines [114 122]},
  :full-name "clojure.browser.dom/replace-node",

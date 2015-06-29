@@ -54,12 +54,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2030
+clojurescript @ r2060
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[net.cljs:118-140](https://github.com/clojure/clojurescript/blob/r2030/src/cljs/clojure/browser/net.cljs#L118-L140)</ins>
+                └── <ins>[net.cljs:118-140](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/clojure/browser/net.cljs#L118-L140)</ins>
 </pre>
 
 
@@ -84,7 +84,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.net_xpc-connection",
  :source {:code "(defn xpc-connection\n  ([]\n     (when-let [config (.getParameterValue\n                        (goog.Uri. (.-href (.-location js/window)))\n                        \"xpc\")]\n       (goog.net.xpc.CrossPageChannel. (gjson/parse config))))\n  ([config]\n     (goog.net.xpc.CrossPageChannel.\n      (reduce (fn [sum [k v]]\n                (if-let [field (get xpc-config-fields k)]\n                  (doto sum (aset field v))\n                  sum))\n              (js-obj)\n              config))))",
           :repo "clojurescript",
-          :tag "r2030",
+          :tag "r2060",
           :filename "src/cljs/clojure/browser/net.cljs",
           :lines [118 140]},
  :full-name "clojure.browser.net/xpc-connection",
