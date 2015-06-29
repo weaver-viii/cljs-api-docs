@@ -27,11 +27,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2199
+clojurescript @ r2202
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:626-628](https://github.com/clojure/clojurescript/blob/r2199/src/clj/cljs/core.clj#L626-L628)</ins>
+            └── <ins>[core.clj:626-628](https://github.com/clojure/clojurescript/blob/r2202/src/clj/cljs/core.clj#L626-L628)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[expr & impls]"],
  :source {:code "(defmacro specify [expr & impls]\n  `(cljs.core/specify! (cljs.core/clone ~expr)\n     ~@impls))",
           :repo "clojurescript",
-          :tag "r2199",
+          :tag "r2202",
           :filename "src/clj/cljs/core.clj",
           :lines [626 628]},
  :full-name "cljs.core/specify",

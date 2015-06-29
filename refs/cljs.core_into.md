@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2199
+clojurescript @ r2202
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3112-3120](https://github.com/clojure/clojurescript/blob/r2199/src/cljs/cljs/core.cljs#L3112-L3120)</ins>
+            └── <ins>[core.cljs:3112-3120](https://github.com/clojure/clojurescript/blob/r2202/src/cljs/cljs/core.cljs#L3112-L3120)</ins>
 </pre>
 
 
@@ -85,7 +85,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_into",
  :source {:code "(defn into\n  [to from]\n  (if-not (nil? to)\n    (if (implements? IEditableCollection to)\n      (persistent! (reduce -conj! (transient to) from))\n      (reduce -conj to from))\n    (reduce conj () from)))",
           :repo "clojurescript",
-          :tag "r2199",
+          :tag "r2202",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3112 3120]},
  :full-name "cljs.core/into",

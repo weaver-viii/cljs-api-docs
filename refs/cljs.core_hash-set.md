@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2199
+clojurescript @ r2202
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6400-6402](https://github.com/clojure/clojurescript/blob/r2199/src/cljs/cljs/core.cljs#L6400-L6402)</ins>
+            └── <ins>[core.cljs:6400-6402](https://github.com/clojure/clojurescript/blob/r2202/src/cljs/cljs/core.cljs#L6400-L6402)</ins>
 </pre>
 
 
@@ -71,11 +71,11 @@ clojurescript @ r2199
 ```
 
  <pre>
-clojurescript @ r2199
+clojurescript @ r2202
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1375-1387](https://github.com/clojure/clojurescript/blob/r2199/src/clj/cljs/core.clj#L1375-L1387)</ins>
+            └── <ins>[core.clj:1375-1387](https://github.com/clojure/clojurescript/blob/r2202/src/clj/cljs/core.clj#L1375-L1387)</ins>
 </pre>
 
 ---
@@ -101,12 +101,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash-set",
  :source {:code "(defn hash-set\n  ([] #{})\n  ([& keys] (set keys)))",
           :repo "clojurescript",
-          :tag "r2199",
+          :tag "r2202",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6400 6402]},
  :extra-sources ({:code "(defmacro hash-set\n  ([] `cljs.core.PersistentHashSet.EMPTY)\n  ([& xs]\n    (if (core/and (core/<= (count xs) 8)\n                  (every? #(= (:op %) :constant)\n                    (map #(cljs.analyzer/analyze &env %) xs))\n                  (= (count (into #{} xs)) (count xs)))\n      `(cljs.core.PersistentHashSet. nil\n         (cljs.core.PersistentArrayMap. nil ~(count xs) (array ~@(interleave xs (repeat nil))) nil)\n         nil)\n      (vary-meta\n        `(cljs.core.PersistentHashSet.fromArray (array ~@xs) true)\n        assoc :tag 'cljs.core/PersistentHashSet))))",
                   :repo "clojurescript",
-                  :tag "r2199",
+                  :tag "r2202",
                   :filename "src/clj/cljs/core.clj",
                   :lines [1375 1387]}),
  :full-name "cljs.core/hash-set",

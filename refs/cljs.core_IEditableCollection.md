@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2199
+clojurescript @ r2202
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:344-345](https://github.com/clojure/clojurescript/blob/r2199/src/cljs/cljs/core.cljs#L344-L345)</ins>
+            └── <ins>[core.cljs:344-345](https://github.com/clojure/clojurescript/blob/r2202/src/cljs/cljs/core.cljs#L344-L345)</ins>
 </pre>
 
 
@@ -52,7 +52,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IEditableCollection",
  :source {:code "(defprotocol IEditableCollection\n  (^clj -as-transient [coll]))",
           :repo "clojurescript",
-          :tag "r2199",
+          :tag "r2202",
           :filename "src/cljs/cljs/core.cljs",
           :lines [344 345]},
  :methods [{:name "-as-transient",
