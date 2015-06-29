@@ -21,11 +21,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1820
+clojurescript @ r1835
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:201-202](https://github.com/clojure/clojurescript/blob/r1820/src/cljs/cljs/core.cljs#L201-L202)</ins>
+            └── <ins>[core.cljs:201-202](https://github.com/clojure/clojurescript/blob/r1835/src/cljs/cljs/core.cljs#L201-L202)</ins>
 </pre>
 
 
@@ -48,7 +48,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ICollection",
  :source {:code "(defprotocol ICollection\n  (-conj [coll o]))",
           :repo "clojurescript",
-          :tag "r1820",
+          :tag "r1835",
           :filename "src/cljs/cljs/core.cljs",
           :lines [201 202]},
  :methods [{:name "-conj", :signature ["[coll o]"], :docstring nil}],

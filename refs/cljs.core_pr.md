@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1820
+clojurescript @ r1835
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6655-6661](https://github.com/clojure/clojurescript/blob/r1820/src/cljs/cljs/core.cljs#L6655-L6661)</ins>
+            └── <ins>[core.cljs:6652-6658](https://github.com/clojure/clojurescript/blob/r1835/src/cljs/cljs/core.cljs#L6652-L6658)</ins>
 </pre>
 
 
@@ -67,9 +67,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_pr",
  :source {:code "(defn pr\n  [& objs]\n  (pr-with-opts objs (pr-opts)))",
           :repo "clojurescript",
-          :tag "r1820",
+          :tag "r1835",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6655 6661]},
+          :lines [6652 6658]},
  :full-name "cljs.core/pr",
  :clj-symbol "clojure.core/pr",
  :docstring "Prints the object(s) using string-print.  Prints the\nobject(s), separated by spaces if there is more than one.\nBy default, pr and prn print in a way that objects can be\nread by the reader"}

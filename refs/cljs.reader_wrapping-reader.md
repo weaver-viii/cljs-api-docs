@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1820
+clojurescript @ r1835
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:351-354](https://github.com/clojure/clojurescript/blob/r1820/src/cljs/cljs/reader.cljs#L351-L354)</ins>
+            └── <ins>[reader.cljs:351-354](https://github.com/clojure/clojurescript/blob/r1835/src/cljs/cljs/reader.cljs#L351-L354)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[sym]"],
  :source {:code "(defn wrapping-reader\n  [sym]\n  (fn [rdr _]\n    (list sym (read rdr true nil true))))",
           :repo "clojurescript",
-          :tag "r1820",
+          :tag "r1835",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [351 354]},
  :full-name "cljs.reader/wrapping-reader",

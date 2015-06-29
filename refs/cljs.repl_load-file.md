@@ -30,11 +30,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1820
+clojurescript @ r1835
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:105-110](https://github.com/clojure/clojurescript/blob/r1820/src/clj/cljs/repl.clj#L105-L110)</ins>
+            └── <ins>[repl.clj:107-112](https://github.com/clojure/clojurescript/blob/r1835/src/clj/cljs/repl.clj#L107-L112)</ins>
 </pre>
 
 
@@ -57,9 +57,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[repl-env f]"],
  :source {:code "(defn load-file\n  [repl-env f]\n  (binding [ana/*cljs-ns* 'cljs.user]\n    (let [res (if (= \\/ (first f)) f (io/resource f))]\n      (assert res (str \"Can't find \" f \" in classpath\"))\n      (load-stream repl-env f res))))",
           :repo "clojurescript",
-          :tag "r1820",
+          :tag "r1835",
           :filename "src/clj/cljs/repl.clj",
-          :lines [105 110]},
+          :lines [107 112]},
  :full-name "cljs.repl/load-file",
  :full-name-encode "cljs.repl_load-file",
  :history [["+" "0.0-927"]]}

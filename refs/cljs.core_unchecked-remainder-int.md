@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1820
+clojurescript @ r1835
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1537-1538](https://github.com/clojure/clojurescript/blob/r1820/src/cljs/cljs/core.cljs#L1537-L1538)</ins>
+            └── <ins>[core.cljs:1541-1542](https://github.com/clojure/clojurescript/blob/r1835/src/cljs/cljs/core.cljs#L1541-L1542)</ins>
 </pre>
 
 
@@ -45,11 +45,11 @@ clojurescript @ r1820
 ```
 
  <pre>
-clojurescript @ r1820
+clojurescript @ r1835
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:319-320](https://github.com/clojure/clojurescript/blob/r1820/src/clj/cljs/core.clj#L319-L320)</ins>
+            └── <ins>[core.clj:319-320](https://github.com/clojure/clojurescript/blob/r1835/src/clj/cljs/core.clj#L319-L320)</ins>
 </pre>
 
 ---
@@ -73,12 +73,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-remainder-int",
  :source {:code "(defn unchecked-remainder-int [x n]\n  (cljs.core/unchecked-remainder-int x n))",
           :repo "clojurescript",
-          :tag "r1820",
+          :tag "r1835",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1537 1538]},
+          :lines [1541 1542]},
  :extra-sources ({:code "(defmacro unchecked-remainder-int\n  ([x n] `(mod ~x ~n)))",
                   :repo "clojurescript",
-                  :tag "r1820",
+                  :tag "r1835",
                   :filename "src/clj/cljs/core.clj",
                   :lines [319 320]}),
  :full-name "cljs.core/unchecked-remainder-int",

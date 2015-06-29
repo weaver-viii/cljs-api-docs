@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1820
+clojurescript @ r1835
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3273-3274](https://github.com/clojure/clojurescript/blob/r1820/src/cljs/cljs/core.cljs#L3273-L3274)</ins>
+            └── <ins>[core.cljs:3270-3271](https://github.com/clojure/clojurescript/blob/r1835/src/cljs/cljs/core.cljs#L3270-L3271)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_PersistentVectorDOTEMPTY",
  :source {:code "(set! cljs.core.PersistentVector/EMPTY\n  (PersistentVector. nil 0 5 cljs.core.PersistentVector/EMPTY_NODE (array) 0))",
           :repo "clojurescript",
-          :tag "r1820",
+          :tag "r1835",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3273 3274]},
+          :lines [3270 3271]},
  :full-name "cljs.core/PersistentVector.EMPTY",
  :clj-symbol "clojure.lang/PersistentVector.EMPTY"}
 

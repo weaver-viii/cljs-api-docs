@@ -29,10 +29,9 @@ Source code:
 ```clj
 (defn double-array
   ([size-or-seq]
-     (cond
-      (number? size-or-seq) (double-array size-or-seq nil)
-      (seq? size-or-seq) (into-array size-or-seq)
-      :else (throw (js/Error. "double-array called with something other than size or ISeq"))))
+     (if (number? size-or-seq)
+       (double-array size-or-seq nil)
+       (into-array size-or-seq)))
   ([size init-val-or-seq]
      (let [a (make-array size)]
        (if (seq? init-val-or-seq)
@@ -50,11 +49,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1820
+clojurescript @ r1835
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2275-2294](https://github.com/clojure/clojurescript/blob/r1820/src/cljs/cljs/core.cljs#L2275-L2294)</ins>
+            └── <ins>[core.cljs:2274-2292](https://github.com/clojure/clojurescript/blob/r1835/src/cljs/cljs/core.cljs#L2274-L2292)</ins>
 </pre>
 
 
@@ -77,11 +76,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1211"]],
  :type "function",
  :full-name-encode "cljs.core_double-array",
- :source {:code "(defn double-array\n  ([size-or-seq]\n     (cond\n      (number? size-or-seq) (double-array size-or-seq nil)\n      (seq? size-or-seq) (into-array size-or-seq)\n      :else (throw (js/Error. \"double-array called with something other than size or ISeq\"))))\n  ([size init-val-or-seq]\n     (let [a (make-array size)]\n       (if (seq? init-val-or-seq)\n         (let [s (seq init-val-or-seq)]\n           (loop [i 0 s s]\n             (if (and s (< i size))\n               (do\n                 (aset a i (first s))\n                 (recur (inc i) (next s)))\n               a)))\n         (do\n           (dotimes [i size]\n             (aset a i init-val-or-seq))\n           a)))))",
+ :source {:code "(defn double-array\n  ([size-or-seq]\n     (if (number? size-or-seq)\n       (double-array size-or-seq nil)\n       (into-array size-or-seq)))\n  ([size init-val-or-seq]\n     (let [a (make-array size)]\n       (if (seq? init-val-or-seq)\n         (let [s (seq init-val-or-seq)]\n           (loop [i 0 s s]\n             (if (and s (< i size))\n               (do\n                 (aset a i (first s))\n                 (recur (inc i) (next s)))\n               a)))\n         (do\n           (dotimes [i size]\n             (aset a i init-val-or-seq))\n           a)))))",
           :repo "clojurescript",
-          :tag "r1820",
+          :tag "r1835",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2275 2294]},
+          :lines [2274 2292]},
  :full-name "cljs.core/double-array",
  :clj-symbol "clojure.core/double-array"}
 

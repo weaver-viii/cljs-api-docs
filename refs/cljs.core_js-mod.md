@@ -59,11 +59,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1820
+clojurescript @ r1835
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1588-1591](https://github.com/clojure/clojurescript/blob/r1820/src/cljs/cljs/core.cljs#L1588-L1591)</ins>
+            └── <ins>[core.cljs:1592-1595](https://github.com/clojure/clojurescript/blob/r1835/src/cljs/cljs/core.cljs#L1592-L1595)</ins>
 </pre>
 
 
@@ -75,11 +75,11 @@ clojurescript @ r1820
 ```
 
  <pre>
-clojurescript @ r1820
+clojurescript @ r1835
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:399-400](https://github.com/clojure/clojurescript/blob/r1820/src/clj/cljs/core.clj#L399-L400)</ins>
+            └── <ins>[core.clj:399-400](https://github.com/clojure/clojurescript/blob/r1835/src/clj/cljs/core.clj#L399-L400)</ins>
 </pre>
 
 ---
@@ -105,12 +105,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_js-mod",
  :source {:code "(defn js-mod\n  [n d]\n  (cljs.core/js-mod n d))",
           :repo "clojurescript",
-          :tag "r1820",
+          :tag "r1835",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1588 1591]},
+          :lines [1592 1595]},
  :extra-sources ({:code "(defmacro js-mod [num div]\n  (list 'js* \"(~{} % ~{})\" num div))",
                   :repo "clojurescript",
-                  :tag "r1820",
+                  :tag "r1835",
                   :filename "src/clj/cljs/core.clj",
                   :lines [399 400]}),
  :examples [{:id "75fa6d",

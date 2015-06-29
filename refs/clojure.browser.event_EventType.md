@@ -21,12 +21,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1820
+clojurescript @ r1835
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[event.cljs:17-18](https://github.com/clojure/clojurescript/blob/r1820/src/cljs/clojure/browser/event.cljs#L17-L18)</ins>
+                └── <ins>[event.cljs:17-18](https://github.com/clojure/clojurescript/blob/r1835/src/cljs/clojure/browser/event.cljs#L17-L18)</ins>
 </pre>
 
 
@@ -49,7 +49,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.event_EventType",
  :source {:code "(defprotocol EventType\n  (event-types [this]))",
           :repo "clojurescript",
-          :tag "r1820",
+          :tag "r1835",
           :filename "src/cljs/clojure/browser/event.cljs",
           :lines [17 18]},
  :methods [{:name "event-types",

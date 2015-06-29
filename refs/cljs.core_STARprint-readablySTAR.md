@@ -23,11 +23,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1820
+clojurescript @ r1835
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:31](https://github.com/clojure/clojurescript/blob/r1820/src/cljs/cljs/core.cljs#L31)</ins>
+            └── <ins>[core.cljs:31](https://github.com/clojure/clojurescript/blob/r1835/src/cljs/cljs/core.cljs#L31)</ins>
 </pre>
 
 
@@ -49,7 +49,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "dynamic var",
  :source {:code "(def ^:dynamic *print-readably* true)",
           :repo "clojurescript",
-          :tag "r1820",
+          :tag "r1835",
           :filename "src/cljs/cljs/core.cljs",
           :lines [31]},
  :full-name "cljs.core/*print-readably*",

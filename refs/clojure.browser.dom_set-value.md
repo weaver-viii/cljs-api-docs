@@ -32,12 +32,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1820
+clojurescript @ r1835
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[dom.cljs:142-145](https://github.com/clojure/clojurescript/blob/r1820/src/cljs/clojure/browser/dom.cljs#L142-L145)</ins>
+                └── <ins>[dom.cljs:142-145](https://github.com/clojure/clojurescript/blob/r1835/src/cljs/clojure/browser/dom.cljs#L142-L145)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.dom_set-value",
  :source {:code "(defn set-value\n  [e v]\n  (set-properties e {\"value\" v}))",
           :repo "clojurescript",
-          :tag "r1820",
+          :tag "r1835",
           :filename "src/cljs/clojure/browser/dom.cljs",
           :lines [142 145]},
  :full-name "clojure.browser.dom/set-value",

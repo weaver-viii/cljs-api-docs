@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1820
+clojurescript @ r1835
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2386-2387](https://github.com/clojure/clojurescript/blob/r1820/src/cljs/cljs/core.cljs#L2386-L2387)</ins>
+            └── <ins>[core.cljs:2383-2384](https://github.com/clojure/clojurescript/blob/r1835/src/cljs/cljs/core.cljs#L2383-L2384)</ins>
 </pre>
 
 
@@ -58,9 +58,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_popBANG",
  :source {:code "(defn pop! [tcoll]\n  (-pop! tcoll))",
           :repo "clojurescript",
-          :tag "r1820",
+          :tag "r1835",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2386 2387]},
+          :lines [2383 2384]},
  :full-name "cljs.core/pop!",
  :clj-symbol "clojure.core/pop!"}
 
