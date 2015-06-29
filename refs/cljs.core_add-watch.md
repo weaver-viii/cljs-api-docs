@@ -86,11 +86,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1889
+clojurescript @ r1895
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6961-6983](https://github.com/clojure/clojurescript/blob/r1889/src/cljs/cljs/core.cljs#L6961-L6983)</ins>
+            └── <ins>[core.cljs:6961-6983](https://github.com/clojure/clojurescript/blob/r1895/src/cljs/cljs/core.cljs#L6961-L6983)</ins>
 </pre>
 
 
@@ -117,7 +117,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_add-watch",
  :source {:code "(defn add-watch\n  [iref key f]\n  (-add-watch iref key f))",
           :repo "clojurescript",
-          :tag "r1889",
+          :tag "r1895",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6961 6983]},
  :examples [{:id "2f2fe0",

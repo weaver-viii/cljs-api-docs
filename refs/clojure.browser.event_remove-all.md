@@ -25,12 +25,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1889
+clojurescript @ r1895
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[event.cljs:98](https://github.com/clojure/clojurescript/blob/r1889/src/cljs/clojure/browser/event.cljs#L98)</ins>
+                └── <ins>[event.cljs:98](https://github.com/clojure/clojurescript/blob/r1895/src/cljs/clojure/browser/event.cljs#L98)</ins>
 </pre>
 
 
@@ -53,7 +53,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[opt_obj opt_type opt_capt]"],
  :source {:code "(defn remove-all [opt_obj opt_type opt_capt])",
           :repo "clojurescript",
-          :tag "r1889",
+          :tag "r1895",
           :filename "src/cljs/clojure/browser/event.cljs",
           :lines [98]},
  :full-name "clojure.browser.event/remove-all",

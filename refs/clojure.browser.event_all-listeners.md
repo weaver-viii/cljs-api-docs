@@ -25,12 +25,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1889
+clojurescript @ r1895
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[event.cljs:90](https://github.com/clojure/clojurescript/blob/r1889/src/cljs/clojure/browser/event.cljs#L90)</ins>
+                └── <ins>[event.cljs:90](https://github.com/clojure/clojurescript/blob/r1895/src/cljs/clojure/browser/event.cljs#L90)</ins>
 </pre>
 
 
@@ -53,7 +53,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[obj type capture]"],
  :source {:code "(defn all-listeners [obj type capture])",
           :repo "clojurescript",
-          :tag "r1889",
+          :tag "r1895",
           :filename "src/cljs/clojure/browser/event.cljs",
           :lines [90]},
  :full-name "clojure.browser.event/all-listeners",

@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1889
+clojurescript @ r1895
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6187-6192](https://github.com/clojure/clojurescript/blob/r1889/src/cljs/cljs/core.cljs#L6187-L6192)</ins>
+            └── <ins>[core.cljs:6187-6192](https://github.com/clojure/clojurescript/blob/r1895/src/cljs/cljs/core.cljs#L6187-L6192)</ins>
 </pre>
 
 
@@ -80,7 +80,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_sorted-set-by",
  :source {:code "(defn sorted-set-by\n  ([comparator & keys]\n   (reduce -conj\n           (cljs.core.PersistentTreeSet. nil (sorted-map-by comparator) 0)\n           keys)))",
           :repo "clojurescript",
-          :tag "r1889",
+          :tag "r1895",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6187 6192]},
  :full-name "cljs.core/sorted-set-by",
