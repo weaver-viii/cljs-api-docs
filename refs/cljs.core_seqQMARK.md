@@ -53,11 +53,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1895
+clojurescript @ r1896
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1175-1180](https://github.com/clojure/clojurescript/blob/r1895/src/cljs/cljs/core.cljs#L1175-L1180)</ins>
+            └── <ins>[core.cljs:1175-1180](https://github.com/clojure/clojurescript/blob/r1896/src/cljs/cljs/core.cljs#L1175-L1180)</ins>
 </pre>
 
 
@@ -91,7 +91,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_seqQMARK",
  :source {:code "(defn ^boolean seq?\n  [s]\n  (if (nil? s)\n    false\n    (satisfies? ISeq s)))",
           :repo "clojurescript",
-          :tag "r1895",
+          :tag "r1896",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1175 1180]},
  :full-name "cljs.core/seq?",

@@ -69,11 +69,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1895
+clojurescript @ r1896
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2576-2587](https://github.com/clojure/clojurescript/blob/r1895/src/cljs/cljs/core.cljs#L2576-L2587)</ins>
+            └── <ins>[core.cljs:2576-2587](https://github.com/clojure/clojurescript/blob/r1896/src/cljs/cljs/core.cljs#L2576-L2587)</ins>
 </pre>
 
 
@@ -104,7 +104,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_partial",
  :source {:code "(defn partial\n  ([f arg1]\n   (fn [& args] (apply f arg1 args)))\n  ([f arg1 arg2]\n   (fn [& args] (apply f arg1 arg2 args)))\n  ([f arg1 arg2 arg3]\n   (fn [& args] (apply f arg1 arg2 arg3 args)))\n  ([f arg1 arg2 arg3 & more]\n   (fn [& args] (apply f arg1 arg2 arg3 (concat more args)))))",
           :repo "clojurescript",
-          :tag "r1895",
+          :tag "r1896",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2576 2587]},
  :full-name "cljs.core/partial",

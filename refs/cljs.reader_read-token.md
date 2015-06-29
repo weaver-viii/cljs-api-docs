@@ -33,11 +33,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1895
+clojurescript @ r1896
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:78-86](https://github.com/clojure/clojurescript/blob/r1895/src/cljs/cljs/reader.cljs#L78-L86)</ins>
+            └── <ins>[reader.cljs:78-86](https://github.com/clojure/clojurescript/blob/r1896/src/cljs/cljs/reader.cljs#L78-L86)</ins>
 </pre>
 
 
@@ -60,7 +60,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[rdr initch]"],
  :source {:code "(defn read-token\n  [rdr initch]\n  (loop [sb (gstring/StringBuffer. initch)\n         ch (read-char rdr)]\n    (if (or (nil? ch)\n            (whitespace? ch)\n            (macro-terminating? ch))\n      (do (unread rdr ch) (. sb (toString)))\n      (recur (do (.append sb ch) sb) (read-char rdr)))))",
           :repo "clojurescript",
-          :tag "r1895",
+          :tag "r1896",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [78 86]},
  :full-name "cljs.reader/read-token",

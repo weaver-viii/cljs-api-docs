@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1895
+clojurescript @ r1896
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6237-6242](https://github.com/clojure/clojurescript/blob/r1895/src/cljs/cljs/core.cljs#L6237-L6242)</ins>
+            └── <ins>[core.cljs:6237-6242](https://github.com/clojure/clojurescript/blob/r1896/src/cljs/cljs/core.cljs#L6237-L6242)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_namespace",
  :source {:code "(defn namespace\n  [x]\n  (if (satisfies? INamed x false)\n    (-namespace ^not-native x)\n    (throw (js/Error. (str \"Doesn't support namespace: \" x)))))",
           :repo "clojurescript",
-          :tag "r1895",
+          :tag "r1896",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6237 6242]},
  :full-name "cljs.core/namespace",

@@ -27,12 +27,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1895
+clojurescript @ r1896
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[server.clj:171-173](https://github.com/clojure/clojurescript/blob/r1895/src/clj/cljs/repl/server.clj#L171-L173)</ins>
+                └── <ins>[server.clj:171-173](https://github.com/clojure/clojurescript/blob/r1896/src/clj/cljs/repl/server.clj#L171-L173)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[]"],
  :source {:code "(defn stop\n  []\n  (.close (:socket @state)))",
           :repo "clojurescript",
-          :tag "r1895",
+          :tag "r1896",
           :filename "src/clj/cljs/repl/server.clj",
           :lines [171 173]},
  :full-name "cljs.repl.server/stop",

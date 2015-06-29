@@ -39,12 +39,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1895
+clojurescript @ r1896
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:236-243](https://github.com/clojure/clojurescript/blob/r1895/src/cljs/clojure/core/reducers.cljs#L236-L243)</ins>
+                └── <ins>[reducers.cljs:236-243](https://github.com/clojure/clojurescript/blob/r1896/src/cljs/clojure/core/reducers.cljs#L236-L243)</ins>
 </pre>
 
 
@@ -69,7 +69,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.core.reducers_monoid",
  :source {:code "(defn monoid\n  [op ctor]\n  (fn m\n    ([] (ctor))\n    ([a b] (op a b))))",
           :repo "clojurescript",
-          :tag "r1895",
+          :tag "r1896",
           :filename "src/cljs/clojure/core/reducers.cljs",
           :lines [236 243]},
  :full-name "clojure.core.reducers/monoid",
