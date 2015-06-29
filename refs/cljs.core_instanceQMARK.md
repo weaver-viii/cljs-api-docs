@@ -32,16 +32,16 @@ See Also:
 Source code:
 
 ```clj
-(defn instance? [t o]
+(defn ^boolean instance? [t o]
   (js* "(~{o} != null && (~{o} instanceof ~{t} || ~{o}.constructor === ~{t} || ~{t} === Object))"))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:652-653](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L652-L653)</ins>
+            └── <ins>[core.cljs:818-819](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L818-L819)</ins>
 </pre>
 
 
@@ -59,6 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "Returns true if `o` is an instance of type `t`, false otherwise.",
+ :return-type boolean,
  :ns "cljs.core",
  :name "instance?",
  :signature ["[t o]"],
@@ -66,11 +67,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/type"],
  :full-name-encode "cljs.core_instanceQMARK",
- :source {:code "(defn instance? [t o]\n  (js* \"(~{o} != null && (~{o} instanceof ~{t} || ~{o}.constructor === ~{t} || ~{t} === Object))\"))",
+ :source {:code "(defn ^boolean instance? [t o]\n  (js* \"(~{o} != null && (~{o} instanceof ~{t} || ~{o}.constructor === ~{t} || ~{t} === Object))\"))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [652 653]},
+          :lines [818 819]},
  :full-name "cljs.core/instance?",
  :clj-symbol "clojure.core/instance?"}
 

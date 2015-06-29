@@ -91,32 +91,38 @@ Source code:
 
 ```clj
 (defn aget
-  [array i]
-  (cljs.core/aget array i))
+  ([array i]
+     (cljs.core/aget array i))
+  ([array i & idxs]
+     (apply aget (aget array i) idxs)))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:77-80](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L77-L80)</ins>
+            └── <ins>[core.cljs:89-94](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L89-L94)</ins>
 </pre>
 
 
 ---
 
 ```clj
-(defmacro aget [a i]
-  (list 'js* "(~{}[~{}])" a i))
+(defmacro aget
+  ([a i]
+     (list 'js* "(~{}[~{}])" a i))
+  ([a i & idxs]
+     (let [astr (apply core/str (repeat (count idxs) "[~{}]"))]
+      `(~'js* ~(core/str "(~{}[~{}]" astr ")") ~a ~i ~@idxs))))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:60-61](https://github.com/clojure/clojurescript/blob/r1011/src/clj/cljs/core.clj#L60-L61)</ins>
+            └── <ins>[core.clj:105-110](https://github.com/clojure/clojurescript/blob/r1211/src/clj/cljs/core.clj#L105-L110)</ins>
 </pre>
 
 ---
@@ -143,16 +149,16 @@ __Meta__ - To retrieve the API data for this symbol:
            "cljs.core/get"
            "cljs.core/nth"],
  :full-name-encode "cljs.core_aget",
- :source {:code "(defn aget\n  [array i]\n  (cljs.core/aget array i))",
+ :source {:code "(defn aget\n  ([array i]\n     (cljs.core/aget array i))\n  ([array i & idxs]\n     (apply aget (aget array i) idxs)))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [77 80]},
- :extra-sources ({:code "(defmacro aget [a i]\n  (list 'js* \"(~{}[~{}])\" a i))",
+          :lines [89 94]},
+ :extra-sources ({:code "(defmacro aget\n  ([a i]\n     (list 'js* \"(~{}[~{}])\" a i))\n  ([a i & idxs]\n     (let [astr (apply core/str (repeat (count idxs) \"[~{}]\"))]\n      `(~'js* ~(core/str \"(~{}[~{}]\" astr \")\") ~a ~i ~@idxs))))",
                   :repo "clojurescript",
-                  :tag "r1011",
+                  :tag "r1211",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [60 61]}),
+                  :lines [105 110]}),
  :examples [{:id "e36007",
              :content "```js\n// JavaScript\nvar a = {\"foo\": [5, 6]};\n\na[\"foo\"];\n//=> [5, 6]\n\na[\"foo\"][0];\n//=> 5\n```\n\n```clj\n;; ClojureScript\n(def a #js {:foo #js [5 6]})\n\n(aget a \"foo\")\n;;=> #js [5 6]\n\n(aget a \"foo\" 0)\n;;=> 5\n```"}
             {:id "c9029e",

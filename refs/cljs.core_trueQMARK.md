@@ -37,16 +37,16 @@ Returns true if x is the value true, false otherwise.
 Source code:
 
 ```clj
-(defn true?
+(defn ^boolean true?
   [x] (cljs.core/true? x))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:645-647](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L645-L647)</ins>
+            └── <ins>[core.cljs:811-813](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L811-L813)</ins>
 </pre>
 
 
@@ -54,15 +54,15 @@ clojurescript @ r1011
 
 ```clj
 (defmacro true? [x]
-  (list 'js* "~{} === true" x))
+  (bool-expr (list 'js* "~{} === true" x)))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:48-49](https://github.com/clojure/clojurescript/blob/r1011/src/clj/cljs/core.clj#L48-L49)</ins>
+            └── <ins>[core.clj:93-94](https://github.com/clojure/clojurescript/blob/r1211/src/clj/cljs/core.clj#L93-L94)</ins>
 </pre>
 
 ---
@@ -79,6 +79,7 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "Returns true if `x` is the value true, false otherwise.",
+ :return-type boolean,
  :ns "cljs.core",
  :name "true?",
  :signature ["[x]"],
@@ -86,16 +87,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/false?"],
  :full-name-encode "cljs.core_trueQMARK",
- :source {:code "(defn true?\n  [x] (cljs.core/true? x))",
+ :source {:code "(defn ^boolean true?\n  [x] (cljs.core/true? x))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [645 647]},
- :extra-sources ({:code "(defmacro true? [x]\n  (list 'js* \"~{} === true\" x))",
+          :lines [811 813]},
+ :extra-sources ({:code "(defmacro true? [x]\n  (bool-expr (list 'js* \"~{} === true\" x)))",
                   :repo "clojurescript",
-                  :tag "r1011",
+                  :tag "r1211",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [48 49]}),
+                  :lines [93 94]}),
  :full-name "cljs.core/true?",
  :clj-symbol "clojure.core/true?",
  :docstring "Returns true if x is the value true, false otherwise."}

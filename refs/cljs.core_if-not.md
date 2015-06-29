@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.3.0
+clojure @ clojure-1.4.0
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:702-708](https://github.com/clojure/clojure/blob/clojure-1.3.0/src/clj/clojure/core.clj#L702-L708)</ins>
+            └── <ins>[core.clj:703-709](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L703-L709)</ins>
 </pre>
 
 
@@ -81,9 +81,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_if-not",
  :source {:code "(defmacro if-not\n  ([test then] `(if-not ~test ~then nil))\n  ([test then else]\n   `(if (not ~test) ~then ~else)))",
           :repo "clojure",
-          :tag "clojure-1.3.0",
+          :tag "clojure-1.4.0",
           :filename "src/clj/clojure/core.clj",
-          :lines [702 708]},
+          :lines [703 709]},
  :full-name "cljs.core/if-not",
  :clj-symbol "clojure.core/if-not",
  :docstring "Evaluates test. If logical false, evaluates and returns then expr, \notherwise else expr, if supplied, else nil."}

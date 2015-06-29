@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.3.0
+clojure @ clojure-1.4.0
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:5569-5577](https://github.com/clojure/clojure/blob/clojure-1.3.0/src/clj/clojure/core.clj#L5569-L5577)</ins>
+            └── <ins>[core.clj:5598-5606](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L5598-L5606)</ins>
 </pre>
 
 
@@ -81,9 +81,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_while",
  :source {:code "(defmacro while\n  [test & body]\n  `(loop []\n     (when ~test\n       ~@body\n       (recur))))",
           :repo "clojure",
-          :tag "clojure-1.3.0",
+          :tag "clojure-1.4.0",
           :filename "src/clj/clojure/core.clj",
-          :lines [5569 5577]},
+          :lines [5598 5606]},
  :full-name "cljs.core/while",
  :clj-symbol "clojure.core/while",
  :docstring "Repeatedly executes body while test expression is true. Presumes\nsome side-effect will cause test to become false/nil. Returns nil"}

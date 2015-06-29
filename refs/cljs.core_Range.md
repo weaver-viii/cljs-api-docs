@@ -12,7 +12,7 @@
 </table>
 
  <samp>
-(__Range.__ meta start end step)<br>
+(__Range.__ meta start end step __hash)<br>
 </samp>
 
 ---
@@ -24,9 +24,13 @@
 Source code:
 
 ```clj
-(deftype Range [meta start end step]
+(deftype Range [meta start end step ^:mutable __hash]
+  Object
+  (toString [this]
+    (pr-str this))
+  
   IWithMeta
-  (-with-meta [rng meta] (Range. meta start end step))
+  (-with-meta [rng meta] (Range. meta start end step __hash))
 
   IMeta
   (-meta [rng] meta)
@@ -35,7 +39,7 @@ Source code:
   (-first [rng] start)
   (-rest [rng]
     (if (-seq rng)
-      (Range. meta (+ start step) end step)
+      (Range. meta (+ start step) end step nil)
       (list)))
 
   ICollection
@@ -49,7 +53,7 @@ Source code:
   (-equiv [rng other] (equiv-sequential rng other))
 
   IHash
-  (-hash [rng] (hash-coll rng))
+  (-hash [rng] (caching-hash rng hash-coll __hash))
 
   ICounted
   (-count [rng]
@@ -61,13 +65,13 @@ Source code:
   (-nth [rng n]
     (if (< n (-count rng))
       (+ start (* n step))
-      (if (and (> start end) (= step 0))
+      (if (and (> start end) (zero? step))
         start
         (throw (js/Error. "Index out of bounds")))))
   (-nth [rng n not-found]
     (if (< n (-count rng))
       (+ start (* n step))
-      (if (and (> start end) (= step 0))
+      (if (and (> start end) (zero? step))
         start
         not-found)))
 
@@ -83,11 +87,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2819-2874](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L2819-L2874)</ins>
+            └── <ins>[core.cljs:5400-5459](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L5400-L5459)</ins>
 </pre>
 
 
@@ -106,15 +110,15 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "Range",
- :signature ["[meta start end step]"],
+ :signature ["[meta start end step __hash]"],
  :history [["+" "0.0-927"]],
  :type "type",
  :full-name-encode "cljs.core_Range",
- :source {:code "(deftype Range [meta start end step]\n  IWithMeta\n  (-with-meta [rng meta] (Range. meta start end step))\n\n  IMeta\n  (-meta [rng] meta)\n\n  ISeq\n  (-first [rng] start)\n  (-rest [rng]\n    (if (-seq rng)\n      (Range. meta (+ start step) end step)\n      (list)))\n\n  ICollection\n  (-conj [rng o] (cons o rng))\n\n  IEmptyableCollection\n  (-empty [rng] (with-meta cljs.core.List/EMPTY meta))\n\n  ISequential\n  IEquiv\n  (-equiv [rng other] (equiv-sequential rng other))\n\n  IHash\n  (-hash [rng] (hash-coll rng))\n\n  ICounted\n  (-count [rng]\n    (if-not (-seq rng)\n      0\n      (js/Math.ceil (/ (- end start) step))))\n\n  IIndexed\n  (-nth [rng n]\n    (if (< n (-count rng))\n      (+ start (* n step))\n      (if (and (> start end) (= step 0))\n        start\n        (throw (js/Error. \"Index out of bounds\")))))\n  (-nth [rng n not-found]\n    (if (< n (-count rng))\n      (+ start (* n step))\n      (if (and (> start end) (= step 0))\n        start\n        not-found)))\n\n  ISeqable\n  (-seq [rng]\n    (let [comp (if (pos? step) < >)]\n      (when (comp start end)\n        rng)))\n\n  IReduce\n  (-reduce [rng f] (ci-reduce rng f))\n  (-reduce [rng f s] (ci-reduce rng f s)))",
+ :source {:code "(deftype Range [meta start end step ^:mutable __hash]\n  Object\n  (toString [this]\n    (pr-str this))\n  \n  IWithMeta\n  (-with-meta [rng meta] (Range. meta start end step __hash))\n\n  IMeta\n  (-meta [rng] meta)\n\n  ISeq\n  (-first [rng] start)\n  (-rest [rng]\n    (if (-seq rng)\n      (Range. meta (+ start step) end step nil)\n      (list)))\n\n  ICollection\n  (-conj [rng o] (cons o rng))\n\n  IEmptyableCollection\n  (-empty [rng] (with-meta cljs.core.List/EMPTY meta))\n\n  ISequential\n  IEquiv\n  (-equiv [rng other] (equiv-sequential rng other))\n\n  IHash\n  (-hash [rng] (caching-hash rng hash-coll __hash))\n\n  ICounted\n  (-count [rng]\n    (if-not (-seq rng)\n      0\n      (js/Math.ceil (/ (- end start) step))))\n\n  IIndexed\n  (-nth [rng n]\n    (if (< n (-count rng))\n      (+ start (* n step))\n      (if (and (> start end) (zero? step))\n        start\n        (throw (js/Error. \"Index out of bounds\")))))\n  (-nth [rng n not-found]\n    (if (< n (-count rng))\n      (+ start (* n step))\n      (if (and (> start end) (zero? step))\n        start\n        not-found)))\n\n  ISeqable\n  (-seq [rng]\n    (let [comp (if (pos? step) < >)]\n      (when (comp start end)\n        rng)))\n\n  IReduce\n  (-reduce [rng f] (ci-reduce rng f))\n  (-reduce [rng f s] (ci-reduce rng f s)))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2819 2874]},
+          :lines [5400 5459]},
  :full-name "cljs.core/Range",
  :clj-symbol "clojure.lang/Range"}
 

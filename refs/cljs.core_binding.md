@@ -74,6 +74,7 @@ Source code:
         tempnames (map (comp gensym name) names)
         binds (map vector names vals)
         resets (reverse (map vector names tempnames))]
+    (cljs.compiler/confirm-bindings &env names)
     `(let [~@(interleave tempnames names)]
        (try
         ~@(map
@@ -87,11 +88,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:444-467](https://github.com/clojure/clojurescript/blob/r1011/src/clj/cljs/core.clj#L444-L467)</ins>
+            └── <ins>[core.clj:571-595](https://github.com/clojure/clojurescript/blob/r1211/src/clj/cljs/core.clj#L571-L595)</ins>
 </pre>
 
 
@@ -116,11 +117,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "macro",
  :related ["cljs.core/let"],
  :full-name-encode "cljs.core_binding",
- :source {:code "(defmacro binding\n  [bindings & body]\n  (let [names (take-nth 2 bindings)\n        vals (take-nth 2 (drop 1 bindings))\n        tempnames (map (comp gensym name) names)\n        binds (map vector names vals)\n        resets (reverse (map vector names tempnames))]\n    `(let [~@(interleave tempnames names)]\n       (try\n        ~@(map\n           (fn [[k v]] (list 'set! k v))\n           binds)\n        ~@body\n        (finally\n         ~@(map\n            (fn [[k v]] (list 'set! k v))\n            resets))))))",
+ :source {:code "(defmacro binding\n  [bindings & body]\n  (let [names (take-nth 2 bindings)\n        vals (take-nth 2 (drop 1 bindings))\n        tempnames (map (comp gensym name) names)\n        binds (map vector names vals)\n        resets (reverse (map vector names tempnames))]\n    (cljs.compiler/confirm-bindings &env names)\n    `(let [~@(interleave tempnames names)]\n       (try\n        ~@(map\n           (fn [[k v]] (list 'set! k v))\n           binds)\n        ~@body\n        (finally\n         ~@(map\n            (fn [[k v]] (list 'set! k v))\n            resets))))))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/clj/cljs/core.clj",
-          :lines [444 467]},
+          :lines [571 595]},
  :examples [{:id "7dd17f",
              :content "```clj\n(def ^:dynamic *foo* 1)\n\n(defn do-something []\n  (println *foo*))\n\n(binding [*foo* 2]\n  (do-something))\n;;=> prints 2\n\n*foo*\n;;=> 1\n```"}],
  :full-name "cljs.core/binding",

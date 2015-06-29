@@ -16,15 +16,15 @@
 Source code:
 
 ```clj
-(set! cljs.core.Vector/EMPTY (Vector. nil (array)))
+(set! cljs.core.Vector/EMPTY (Vector. nil (array) 0))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2022](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L2022)</ins>
+            └── <ins>[core.cljs:2420](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L2420)</ins>
 </pre>
 
 
@@ -45,11 +45,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "Vector.EMPTY",
  :type "var",
  :parent-type "Vector",
- :source {:code "(set! cljs.core.Vector/EMPTY (Vector. nil (array)))",
+ :source {:code "(set! cljs.core.Vector/EMPTY (Vector. nil (array) 0))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2022]},
+          :lines [2420]},
  :full-name "cljs.core/Vector.EMPTY",
  :full-name-encode "cljs.core_VectorDOTEMPTY",
  :history [["+" "0.0-927"]]}

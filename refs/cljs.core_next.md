@@ -61,16 +61,22 @@ Source code:
 ```clj
 (defn next
   [coll]
-  (when coll
-    (seq (rest coll))))
+  (if (coercive-not= coll nil)
+    (if (satisfies? ISeq coll)
+      (let [coll (-rest coll)]
+        (if (coercive-not= coll nil)
+          (if (satisfies? ASeq coll)
+            coll
+            (-seq coll))))
+      (seq (rest coll)))))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:425-430](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L425-L430)</ins>
+            └── <ins>[core.cljs:532-543](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L532-L543)</ins>
 </pre>
 
 
@@ -95,11 +101,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/rest" "cljs.core/first" "cljs.core/fnext"],
  :full-name-encode "cljs.core_next",
- :source {:code "(defn next\n  [coll]\n  (when coll\n    (seq (rest coll))))",
+ :source {:code "(defn next\n  [coll]\n  (if (coercive-not= coll nil)\n    (if (satisfies? ISeq coll)\n      (let [coll (-rest coll)]\n        (if (coercive-not= coll nil)\n          (if (satisfies? ASeq coll)\n            coll\n            (-seq coll))))\n      (seq (rest coll)))))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [425 430]},
+          :lines [532 543]},
  :examples [{:id "7db59a",
              :content "```clj\n(next [1 2 3])\n;;=> (2 3)\n\n(next [1 2])\n;;=> (2)\n\n(next [1])\n;;=> nil\n\n(next [])\n;;=> nil\n```"}],
  :full-name "cljs.core/next",

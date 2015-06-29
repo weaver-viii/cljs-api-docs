@@ -328,7 +328,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ASeq</td>
-<td></td>
+<td>[ref](refs/cljs.core_ASeq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ASeq.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -360,7 +360,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ArrayNode</td>
-<td></td>
+<td>[ref](refs/cljs.core_ArrayNode.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ArrayNode.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -368,7 +368,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ArrayNodeSeq</td>
-<td></td>
+<td>[ref](refs/cljs.core_ArrayNodeSeq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ArrayNodeSeq.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -384,7 +384,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/BitmapIndexedNode</td>
-<td></td>
+<td>[ref](refs/cljs.core_BitmapIndexedNode.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_BitmapIndexedNode.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -392,7 +392,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/BitmapIndexedNode.EMPTY</td>
-<td></td>
+<td>[ref](refs/cljs.core_BitmapIndexedNodeDOTEMPTY.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_BitmapIndexedNodeDOTEMPTY.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -400,7 +400,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/BlackNode</td>
-<td></td>
+<td>[ref](refs/cljs.core_BlackNode.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_BlackNode.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -528,7 +528,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/HashCollisionNode</td>
-<td></td>
+<td>[ref](refs/cljs.core_HashCollisionNode.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_HashCollisionNode.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -648,7 +648,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/IEditableCollection</td>
-<td></td>
+<td>[ref](refs/cljs.core_IEditableCollection.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_IEditableCollection.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -720,7 +720,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/IKVReduce</td>
-<td></td>
+<td>[ref](refs/cljs.core_IKVReduce.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_IKVReduce.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -728,7 +728,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/IList</td>
-<td></td>
+<td>[ref](refs/cljs.core_IList.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_IList.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -752,7 +752,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/IMapEntry</td>
-<td></td>
+<td>[ref](refs/cljs.core_IMapEntry.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_IMapEntry.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -840,7 +840,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/IReversible</td>
-<td></td>
+<td>[ref](refs/cljs.core_IReversible.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_IReversible.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -880,7 +880,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ISorted</td>
-<td></td>
+<td>[ref](refs/cljs.core_ISorted.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ISorted.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -904,7 +904,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ITransientAssociative</td>
-<td></td>
+<td>[ref](refs/cljs.core_ITransientAssociative.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ITransientAssociative.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -912,7 +912,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ITransientCollection</td>
-<td></td>
+<td>[ref](refs/cljs.core_ITransientCollection.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ITransientCollection.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -920,7 +920,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ITransientMap</td>
-<td></td>
+<td>[ref](refs/cljs.core_ITransientMap.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ITransientMap.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -928,7 +928,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ITransientSet</td>
-<td></td>
+<td>[ref](refs/cljs.core_ITransientSet.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ITransientSet.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -936,7 +936,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ITransientVector</td>
-<td></td>
+<td>[ref](refs/cljs.core_ITransientVector.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ITransientVector.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1112,7 +1112,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/NodeSeq</td>
-<td></td>
+<td>[ref](refs/cljs.core_NodeSeq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_NodeSeq.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1136,7 +1136,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ObjMap.HASHMAP_THRESHOLD</td>
-<td></td>
+<td>[ref](refs/cljs.core_ObjMapDOTHASHMAP_THRESHOLD.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ObjMapDOTHASHMAP_THRESHOLD.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1152,7 +1152,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentArrayMap</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentArrayMap.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentArrayMap.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1160,7 +1160,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentArrayMap.EMPTY</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentArrayMapDOTEMPTY.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentArrayMapDOTEMPTY.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1176,7 +1176,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentArrayMap.HASHMAP_THRESHOLD</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentArrayMapDOTHASHMAP_THRESHOLD.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentArrayMapDOTHASHMAP_THRESHOLD.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1192,7 +1192,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentArrayMap.fromArrays</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentArrayMapDOTfromArrays.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentArrayMapDOTfromArrays.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1216,7 +1216,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentHashMap</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentHashMap.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentHashMap.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1224,7 +1224,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentHashMap.EMPTY</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentHashMapDOTEMPTY.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentHashMapDOTEMPTY.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1240,7 +1240,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentHashMap.fromArrays</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentHashMapDOTfromArrays.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentHashMapDOTfromArrays.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1248,7 +1248,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentHashSet</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentHashSet.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentHashSet.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1256,7 +1256,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentHashSet.EMPTY</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentHashSetDOTEMPTY.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentHashSetDOTEMPTY.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1296,7 +1296,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentTreeMap</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentTreeMap.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentTreeMap.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1304,7 +1304,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentTreeMap.EMPTY</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentTreeMapDOTEMPTY.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentTreeMapDOTEMPTY.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1312,7 +1312,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentTreeMapSeq</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentTreeMapSeq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentTreeMapSeq.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1320,7 +1320,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentTreeSet</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentTreeSet.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentTreeSet.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1328,7 +1328,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentTreeSet.EMPTY</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentTreeSetDOTEMPTY.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentTreeSetDOTEMPTY.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1408,7 +1408,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/RedNode</td>
-<td></td>
+<td>[ref](refs/cljs.core_RedNode.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_RedNode.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1416,7 +1416,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/Reduced</td>
-<td></td>
+<td>[ref](refs/cljs.core_Reduced.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_Reduced.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1504,7 +1504,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/TransientArrayMap</td>
-<td></td>
+<td>[ref](refs/cljs.core_TransientArrayMap.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_TransientArrayMap.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1512,7 +1512,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/TransientHashMap</td>
-<td></td>
+<td>[ref](refs/cljs.core_TransientHashMap.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_TransientHashMap.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1520,7 +1520,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/TransientHashSet</td>
-<td></td>
+<td>[ref](refs/cljs.core_TransientHashSet.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_TransientHashSet.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1528,7 +1528,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/TransientVector</td>
-<td></td>
+<td>[ref](refs/cljs.core_TransientVector.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_TransientVector.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1584,7 +1584,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/VectorNode</td>
-<td></td>
+<td>[ref](refs/cljs.core_VectorNode.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_VectorNode.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1704,7 +1704,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/\*unchecked-if\*</td>
-<td></td>
+<td>[ref](refs/cljs.core_STARunchecked-ifSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_STARunchecked-ifSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1759,14 +1759,6 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 <td></td>
 </tr>
 <tr>
-<td>cljs.core/array-map</td>
-<td></td>
-<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_array-map.cljsdoc)</td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-</tr>
-<tr>
 <td>cljs.core/array-seq</td>
 <td>[ref](refs/cljs.core_array-seq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_array-seq.cljsdoc)</td>
@@ -1799,14 +1791,6 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 <td></td>
 </tr>
 <tr>
-<td>cljs.core/assoc!</td>
-<td></td>
-<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_assocBANG.cljsdoc)</td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-</tr>
-<tr>
 <td>cljs.core/associative?</td>
 <td>[ref](refs/cljs.core_associativeQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_associativeQMARK.cljsdoc)</td>
@@ -1816,7 +1800,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/bit-count</td>
-<td></td>
+<td>[ref](refs/cljs.core_bit-count.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_bit-count.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
@@ -1832,7 +1816,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/bit-shift-right-zero-fill</td>
-<td></td>
+<td>[ref](refs/cljs.core_bit-shift-right-zero-fill.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_bit-shift-right-zero-fill.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1869,14 +1853,6 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 <td></td>
 <td></td>
 <td></td>
-</tr>
-<tr>
-<td>cljs.core/case</td>
-<td></td>
-<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_case.cljsdoc)</td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 </tr>
 <tr>
 <td>cljs.core/cat</td>
@@ -2096,7 +2072,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/conj!</td>
-<td></td>
+<td>[ref](refs/cljs.core_conjBANG.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_conjBANG.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2296,7 +2272,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/disj!</td>
-<td></td>
+<td>[ref](refs/cljs.core_disjBANG.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_disjBANG.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2312,7 +2288,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/dissoc!</td>
-<td></td>
+<td>[ref](refs/cljs.core_dissocBANG.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_dissocBANG.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2384,7 +2360,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/double-array</td>
-<td></td>
+<td>[ref](refs/cljs.core_double-array.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_double-array.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2608,7 +2584,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/filterv</td>
-<td></td>
+<td>[ref](refs/cljs.core_filterv.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_filterv.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -2720,7 +2696,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/gen-apply-to</td>
-<td></td>
+<td>[ref](refs/cljs.core_gen-apply-to.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_gen-apply-to.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2888,7 +2864,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ifn?</td>
-<td></td>
+<td>[ref](refs/cljs.core_ifnQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ifnQMARK.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -2920,7 +2896,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/indexed?</td>
-<td></td>
+<td>[ref](refs/cljs.core_indexedQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_indexedQMARK.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2936,7 +2912,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/int</td>
-<td></td>
+<td>[ref](refs/cljs.core_int.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_int.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -2992,7 +2968,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/into-array</td>
-<td></td>
+<td>[ref](refs/cljs.core_into-array.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_into-array.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -3128,7 +3104,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/key</td>
-<td></td>
+<td>[ref](refs/cljs.core_key.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_key.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -3232,7 +3208,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/list?</td>
-<td></td>
+<td>[ref](refs/cljs.core_listQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_listQMARK.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -3256,7 +3232,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/long</td>
-<td></td>
+<td>[ref](refs/cljs.core_long.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_long.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3264,7 +3240,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/long-array</td>
-<td></td>
+<td>[ref](refs/cljs.core_long-array.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_long-array.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3360,7 +3336,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/make-array</td>
-<td></td>
+<td>[ref](refs/cljs.core_make-array.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_make-array.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -3408,7 +3384,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/mapv</td>
-<td></td>
+<td>[ref](refs/cljs.core_mapv.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_mapv.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -3504,7 +3480,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/mk-bound-fn</td>
-<td></td>
+<td>[ref](refs/cljs.core_mk-bound-fn.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_mk-bound-fn.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3680,7 +3656,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/object-array</td>
-<td></td>
+<td>[ref](refs/cljs.core_object-array.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_object-array.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3744,7 +3720,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/persistent!</td>
-<td></td>
+<td>[ref](refs/cljs.core_persistentBANG.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_persistentBANG.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3760,7 +3736,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/pop!</td>
-<td></td>
+<td>[ref](refs/cljs.core_popBANG.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_popBANG.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4056,7 +4032,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/reduce-kv</td>
-<td></td>
+<td>[ref](refs/cljs.core_reduce-kv.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_reduce-kv.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -4064,7 +4040,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/reduceable?</td>
-<td></td>
+<td>[ref](refs/cljs.core_reduceableQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_reduceableQMARK.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4072,7 +4048,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/reduced</td>
-<td></td>
+<td>[ref](refs/cljs.core_reduced.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_reduced.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4080,7 +4056,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/reduced?</td>
-<td></td>
+<td>[ref](refs/cljs.core_reducedQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_reducedQMARK.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4200,7 +4176,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/reversible?</td>
-<td></td>
+<td>[ref](refs/cljs.core_reversibleQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_reversibleQMARK.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -4208,7 +4184,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/rseq</td>
-<td></td>
+<td>[ref](refs/cljs.core_rseq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_rseq.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -4216,7 +4192,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/rsubseq</td>
-<td></td>
+<td>[ref](refs/cljs.core_rsubseq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_rsubseq.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -4280,7 +4256,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/seqable?</td>
-<td></td>
+<td>[ref](refs/cljs.core_seqableQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_seqableQMARK.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4440,7 +4416,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/sorted-map</td>
-<td></td>
+<td>[ref](refs/cljs.core_sorted-map.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_sorted-map.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -4448,7 +4424,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/sorted-map-by</td>
-<td></td>
+<td>[ref](refs/cljs.core_sorted-map-by.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_sorted-map-by.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -4456,7 +4432,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/sorted-set</td>
-<td></td>
+<td>[ref](refs/cljs.core_sorted-set.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_sorted-set.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -4464,7 +4440,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/sorted-set-by</td>
-<td></td>
+<td>[ref](refs/cljs.core_sorted-set-by.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_sorted-set-by.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -4592,7 +4568,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/subseq</td>
-<td></td>
+<td>[ref](refs/cljs.core_subseq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_subseq.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -4712,7 +4688,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/to-array-2d</td>
-<td></td>
+<td>[ref](refs/cljs.core_to-array-2d.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_to-array-2d.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -4736,7 +4712,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/transient</td>
-<td></td>
+<td>[ref](refs/cljs.core_transient.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_transient.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5024,7 +5000,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/val</td>
-<td></td>
+<td>[ref](refs/cljs.core_val.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_val.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -5064,7 +5040,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/vector-seq</td>
-<td></td>
+<td>[ref](refs/cljs.core_vector-seq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_vector-seq.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6600,7 +6576,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.browser/send-static</td>
-<td></td>
+<td>[ref](refs/cljs.repl.browser_send-static.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.browser_send-static.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -8880,7 +8856,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>syntax/tagged-literal</td>
-<td></td>
+<td>[ref](refs/syntax_tagged-literal.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/syntax_tagged-literal.cljsdoc)</td>
 <td></td>
 <td></td>

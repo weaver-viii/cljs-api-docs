@@ -21,15 +21,15 @@
 Source code:
 
 ```clj
-(set! cljs.core.Vector/fromArray (fn [xs] (Vector. nil xs)))
+(set! cljs.core.Vector/fromArray (fn [xs] (Vector. nil xs nil)))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2024](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L2024)</ins>
+            └── <ins>[core.cljs:2422](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L2422)</ins>
 </pre>
 
 
@@ -53,11 +53,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "Vector",
  :type "function",
  :full-name-encode "cljs.core_VectorDOTfromArray",
- :source {:code "(set! cljs.core.Vector/fromArray (fn [xs] (Vector. nil xs)))",
+ :source {:code "(set! cljs.core.Vector/fromArray (fn [xs] (Vector. nil xs nil)))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2024]},
+          :lines [2422]},
  :full-name "cljs.core/Vector.fromArray"}
 
 ```

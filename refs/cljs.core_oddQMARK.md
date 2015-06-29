@@ -39,16 +39,16 @@ Returns true if n is odd, throws an exception if n is not an integer
 Source code:
 
 ```clj
-(defn odd?
+(defn ^boolean odd?
   [n] (not (even? n)))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1480-1482](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L1480-L1482)</ins>
+            └── <ins>[core.cljs:1847-1849](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L1847-L1849)</ins>
 </pre>
 
 
@@ -66,6 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "Returns true if `n` is an odd number.\n\nThrows an exception if `n` is not an integer.",
+ :return-type boolean,
  :ns "cljs.core",
  :name "odd?",
  :signature ["[n]"],
@@ -73,11 +74,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/even?"],
  :full-name-encode "cljs.core_oddQMARK",
- :source {:code "(defn odd?\n  [n] (not (even? n)))",
+ :source {:code "(defn ^boolean odd?\n  [n] (not (even? n)))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1480 1482]},
+          :lines [1847 1849]},
  :full-name "cljs.core/odd?",
  :clj-symbol "clojure.core/odd?",
  :docstring "Returns true if n is odd, throws an exception if n is not an integer"}

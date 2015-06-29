@@ -24,17 +24,17 @@
 Source code:
 
 ```clj
-(defn symbol? [x]
+(defn ^boolean symbol? [x]
   (and (goog/isString x)
-       (= (.charAt x 0) \uFDD1)))
+       (identical? (.charAt x 0) \uFDD1)))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:674-676](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L674-L676)</ins>
+            └── <ins>[core.cljs:845-847](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L845-L847)</ins>
 </pre>
 
 
@@ -51,17 +51,18 @@ __Meta__ - To retrieve the API data for this symbol:
 ```
 
 ```clj
-{:ns "cljs.core",
+{:return-type boolean,
+ :ns "cljs.core",
  :name "symbol?",
  :signature ["[x]"],
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.core_symbolQMARK",
- :source {:code "(defn symbol? [x]\n  (and (goog/isString x)\n       (= (.charAt x 0) \\uFDD1)))",
+ :source {:code "(defn ^boolean symbol? [x]\n  (and (goog/isString x)\n       (identical? (.charAt x 0) \\uFDD1)))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [674 676]},
+          :lines [845 847]},
  :full-name "cljs.core/symbol?",
  :clj-symbol "clojure.core/symbol?"}
 

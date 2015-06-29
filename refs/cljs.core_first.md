@@ -58,16 +58,20 @@ Source code:
 ```clj
 (defn first
   [coll]
-  (when-let [s (seq coll)]
-    (-first s)))
+  (when (coercive-not= coll nil)
+    (if (satisfies? ISeq coll)
+      (-first coll)
+      (let [s (seq coll)]
+        (when (coercive-not= s nil)
+          (-first s))))))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:412-417](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L412-L417)</ins>
+            └── <ins>[core.cljs:508-517](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L508-L517)</ins>
 </pre>
 
 
@@ -97,11 +101,11 @@ __Meta__ - To retrieve the API data for this symbol:
            "cljs.core/take"
            "cljs.core/ffirst"],
  :full-name-encode "cljs.core_first",
- :source {:code "(defn first\n  [coll]\n  (when-let [s (seq coll)]\n    (-first s)))",
+ :source {:code "(defn first\n  [coll]\n  (when (coercive-not= coll nil)\n    (if (satisfies? ISeq coll)\n      (-first coll)\n      (let [s (seq coll)]\n        (when (coercive-not= s nil)\n          (-first s))))))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [412 417]},
+          :lines [508 517]},
  :examples [{:id "40e413",
              :content "```clj\n(first [1 2 3])\n;;=> 1\n\n(first [])\n;;=> nil\n```"}],
  :full-name "cljs.core/first",

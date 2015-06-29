@@ -44,12 +44,12 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.3.0
+clojure @ clojure-1.4.0
 └── src
     └── jvm
         └── clojure
             └── lang
-                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.3.0/src/jvm/clojure/lang/LispReader.java#L)</ins>
+                └── <ins>[LispReader.java:](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/jvm/clojure/lang/LispReader.java#L)</ins>
 </pre>
 
 
@@ -74,7 +74,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :related ["special/var"],
  :full-name-encode "syntax_var",
  :source {:repo "clojure",
-          :tag "clojure-1.3.0",
+          :tag "clojure-1.4.0",
           :filename "src/jvm/clojure/lang/LispReader.java",
           :lines [nil]},
  :syntax-form "#'",

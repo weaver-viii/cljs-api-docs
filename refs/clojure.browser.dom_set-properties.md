@@ -29,16 +29,16 @@ Source code:
 (defn set-properties
   [e m]
   (gdom/setProperties (ensure-element e)
-                      (.-strobj m)))
+                      (apply gobject/create (interleave (keys m) (vals m)))))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[dom.cljs:134-138](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/clojure/browser/dom.cljs#L134-L138)</ins>
+                └── <ins>[dom.cljs:136-140](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/clojure/browser/dom.cljs#L136-L140)</ins>
 </pre>
 
 
@@ -61,11 +61,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "clojure.browser.dom_set-properties",
- :source {:code "(defn set-properties\n  [e m]\n  (gdom/setProperties (ensure-element e)\n                      (.-strobj m)))",
+ :source {:code "(defn set-properties\n  [e m]\n  (gdom/setProperties (ensure-element e)\n                      (apply gobject/create (interleave (keys m) (vals m)))))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/clojure/browser/dom.cljs",
-          :lines [134 138]},
+          :lines [136 140]},
  :full-name "clojure.browser.dom/set-properties",
  :docstring "Set properties on an element"}
 

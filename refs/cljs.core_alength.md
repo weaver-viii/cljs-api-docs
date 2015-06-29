@@ -50,7 +50,7 @@ See Also:
 Source docstring:
 
 ```
-Returns the length of the Java array. Works on arrays of all types.
+Returns the length of the array. Works on arrays of all types.
 ```
 
 Source code:
@@ -62,11 +62,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:87-90](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L87-L90)</ins>
+            └── <ins>[core.cljs:101-104](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L101-L104)</ins>
 </pre>
 
 
@@ -78,11 +78,11 @@ clojurescript @ r1011
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:658-659](https://github.com/clojure/clojurescript/blob/r1011/src/clj/cljs/core.clj#L658-L659)</ins>
+            └── <ins>[core.clj:804-805](https://github.com/clojure/clojurescript/blob/r1211/src/clj/cljs/core.clj#L804-L805)</ins>
 </pre>
 
 ---
@@ -108,19 +108,19 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_alength",
  :source {:code "(defn alength\n  [array]\n  (.-length array))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [87 90]},
+          :lines [101 104]},
  :extra-sources ({:code "(defmacro alength [a]\n  (list 'js* \"~{}.length\" a))",
                   :repo "clojurescript",
-                  :tag "r1011",
+                  :tag "r1211",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [658 659]}),
+                  :lines [804 805]}),
  :examples [{:id "26f79f",
              :content "```clj\n(def a #js [1 2 3])\n\n(alength a)\n;;=> 3\n\n(.-length a)\n;;=> 3\n\n(aget a \"length\")\n;;=> 3\n\n(count a)\n;;=> 3\n```"}],
  :full-name "cljs.core/alength",
  :clj-symbol "clojure.core/alength",
- :docstring "Returns the length of the Java array. Works on arrays of all types."}
+ :docstring "Returns the length of the array. Works on arrays of all types."}
 
 ```
 

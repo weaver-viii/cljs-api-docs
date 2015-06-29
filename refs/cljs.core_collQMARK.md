@@ -71,7 +71,7 @@ Returns true if x satisfies ICollection
 Source code:
 
 ```clj
-(defn coll?
+(defn ^boolean coll?
   [x]
   (if (nil? x)
     false
@@ -79,11 +79,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:588-593](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L588-L593)</ins>
+            └── <ins>[core.cljs:727-732](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L727-L732)</ins>
 </pre>
 
 
@@ -101,6 +101,7 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "Returns true if `x` is a collection, false otherwise.\n\nLists, maps, sets, and vectors are collections.",
+ :return-type boolean,
  :ns "cljs.core",
  :name "coll?",
  :signature ["[x]"],
@@ -108,11 +109,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/seq?" "cljs.core/list?" "cljs.core/sequential?"],
  :full-name-encode "cljs.core_collQMARK",
- :source {:code "(defn coll?\n  [x]\n  (if (nil? x)\n    false\n    (satisfies? ICollection x)))",
+ :source {:code "(defn ^boolean coll?\n  [x]\n  (if (nil? x)\n    false\n    (satisfies? ICollection x)))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [588 593]},
+          :lines [727 732]},
  :examples [{:id "d30884",
              :content "```clj\n(coll? [1 2 3])\n;;=> true\n\n(coll? '(1 2 3))\n;;=> true\n\n(coll? #{1 2 3})\n;;=> true\n\n(coll? {:foo 1 :bar 2})\n;;=> true\n```\n\nNot collections:\n\n```clj\n(coll? \"foo\")\n;;=> false\n\n(coll? 123)\n;;=> false\n\n(coll? nil)\n;;=> false\n```"}],
  :full-name "cljs.core/coll?",

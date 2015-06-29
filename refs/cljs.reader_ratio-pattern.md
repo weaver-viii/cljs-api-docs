@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:96](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/reader.cljs#L96)</ins>
+            └── <ins>[reader.cljs:96](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/reader.cljs#L96)</ins>
 </pre>
 
 
@@ -46,7 +46,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def ratio-pattern (re-pattern \"([-+]?[0-9]+)/([0-9]+)\"))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [96]},
  :full-name "cljs.reader/ratio-pattern",

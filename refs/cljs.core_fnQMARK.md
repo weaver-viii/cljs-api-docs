@@ -32,16 +32,16 @@ See Also:
 Source code:
 
 ```clj
-(defn fn? [f]
+(defn ^boolean fn? [f]
   (goog/isFunction f))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:681-682](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L681-L682)</ins>
+            └── <ins>[core.cljs:852-853](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L852-L853)</ins>
 </pre>
 
 
@@ -59,6 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "Returns true if `f` is a function, false otherwise.",
+ :return-type boolean,
  :ns "cljs.core",
  :name "fn?",
  :signature ["[f]"],
@@ -66,11 +67,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/ifn?"],
  :full-name-encode "cljs.core_fnQMARK",
- :source {:code "(defn fn? [f]\n  (goog/isFunction f))",
+ :source {:code "(defn ^boolean fn? [f]\n  (goog/isFunction f))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [681 682]},
+          :lines [852 853]},
  :full-name "cljs.core/fn?",
  :clj-symbol "clojure.core/fn?"}
 

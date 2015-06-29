@@ -38,7 +38,7 @@ Return true if x satisfies IMap
 Source code:
 
 ```clj
-(defn map?
+(defn ^boolean map?
   [x]
   (if (nil? x)
     false
@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:614-619](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L614-L619)</ins>
+            └── <ins>[core.cljs:761-766](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L761-L766)</ins>
 </pre>
 
 
@@ -68,6 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "Returns true if `x` is a map, false otherwise.",
+ :return-type boolean,
  :ns "cljs.core",
  :name "map?",
  :signature ["[x]"],
@@ -75,11 +76,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/hash-map" "cljs.core/sorted-map"],
  :full-name-encode "cljs.core_mapQMARK",
- :source {:code "(defn map?\n  [x]\n  (if (nil? x)\n    false\n    (satisfies? IMap x)))",
+ :source {:code "(defn ^boolean map?\n  [x]\n  (if (nil? x)\n    false\n    (satisfies? IMap x)))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [614 619]},
+          :lines [761 766]},
  :full-name "cljs.core/map?",
  :clj-symbol "clojure.core/map?",
  :docstring "Return true if x satisfies IMap"}

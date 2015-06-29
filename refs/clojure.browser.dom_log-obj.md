@@ -26,12 +26,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[dom.cljs:22-23](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/clojure/browser/dom.cljs#L22-L23)</ins>
+                └── <ins>[dom.cljs:23-24](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/clojure/browser/dom.cljs#L23-L24)</ins>
 </pre>
 
 
@@ -54,9 +54,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[obj]"],
  :source {:code "(defn log-obj [obj]\n  (.log js/console obj))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/clojure/browser/dom.cljs",
-          :lines [22 23]},
+          :lines [23 24]},
  :full-name "clojure.browser.dom/log-obj",
  :full-name-encode "clojure.browser.dom_log-obj",
  :history [["+" "0.0-927"]]}

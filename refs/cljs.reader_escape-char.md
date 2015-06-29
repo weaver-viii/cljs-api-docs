@@ -27,17 +27,17 @@ Source code:
         mapresult (get escape-char-map ch)]
     (if mapresult
       mapresult
-      (if (or (= \u ch) (numeric? ch))
+      (if (or (identical? \u ch) (numeric? ch))
         (read-unicode-char reader ch)
         (reader-error reader "Unsupported escape charater: \\" ch)))))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:149-157](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/reader.cljs#L149-L157)</ins>
+            └── <ins>[reader.cljs:149-157](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/reader.cljs#L149-L157)</ins>
 </pre>
 
 
@@ -58,9 +58,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "escape-char",
  :type "function",
  :signature ["[buffer reader]"],
- :source {:code "(defn escape-char\n  [buffer reader]\n  (let [ch (read-char reader)\n        mapresult (get escape-char-map ch)]\n    (if mapresult\n      mapresult\n      (if (or (= \\u ch) (numeric? ch))\n        (read-unicode-char reader ch)\n        (reader-error reader \"Unsupported escape charater: \\\\\" ch)))))",
+ :source {:code "(defn escape-char\n  [buffer reader]\n  (let [ch (read-char reader)\n        mapresult (get escape-char-map ch)]\n    (if mapresult\n      mapresult\n      (if (or (identical? \\u ch) (numeric? ch))\n        (read-unicode-char reader ch)\n        (reader-error reader \"Unsupported escape charater: \\\\\" ch)))))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [149 157]},
  :full-name "cljs.reader/escape-char",

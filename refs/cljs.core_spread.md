@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1341-1347](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L1341-L1347)</ins>
+            └── <ins>[core.cljs:1680-1686](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L1680-L1686)</ins>
 </pre>
 
 
@@ -58,9 +58,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[arglist]"],
  :source {:code "(defn spread\n  [arglist]\n  (cond\n   (nil? arglist) nil\n   (nil? (next arglist)) (seq (first arglist))\n   :else (cons (first arglist)\n               (spread (next arglist)))))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1341 1347]},
+          :lines [1680 1686]},
  :full-name "cljs.core/spread",
  :full-name-encode "cljs.core_spread",
  :history [["+" "0.0-927"]]}

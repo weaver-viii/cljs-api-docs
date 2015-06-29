@@ -21,11 +21,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:177-178](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L177-L178)</ins>
+            └── <ins>[core.cljs:208-209](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L208-L209)</ins>
 </pre>
 
 
@@ -48,9 +48,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IHash",
  :source {:code "(defprotocol IHash\n  (-hash [o]))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [177 178]},
+          :lines [208 209]},
  :methods [{:name "-hash", :signature ["[o]"], :docstring nil}],
  :full-name "cljs.core/IHash",
  :history [["+" "0.0-927"]]}

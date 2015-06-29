@@ -40,16 +40,16 @@ coll, else true.
 Source code:
 
 ```clj
-(defn not-every?
+(defn ^boolean not-every?
   [pred coll] (not (every? pred coll)))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1455-1458](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L1455-L1458)</ins>
+            └── <ins>[core.cljs:1822-1825](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L1822-L1825)</ins>
 </pre>
 
 
@@ -67,6 +67,7 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "Returns false if `(pred x)` is logical true for every `x` in `coll`, else true.",
+ :return-type boolean,
  :ns "cljs.core",
  :name "not-every?",
  :signature ["[pred coll]"],
@@ -74,11 +75,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/every?" "cljs.core/not-any?" "cljs.core/some"],
  :full-name-encode "cljs.core_not-everyQMARK",
- :source {:code "(defn not-every?\n  [pred coll] (not (every? pred coll)))",
+ :source {:code "(defn ^boolean not-every?\n  [pred coll] (not (every? pred coll)))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1455 1458]},
+          :lines [1822 1825]},
  :full-name "cljs.core/not-every?",
  :clj-symbol "clojure.core/not-every?",
  :docstring "Returns false if (pred x) is logical true for every x in\ncoll, else true."}

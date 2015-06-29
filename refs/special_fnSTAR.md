@@ -17,7 +17,7 @@ Source code:
 
 ```clj
 (defmethod parse 'fn*
-  [op env [_ & args] name]
+  [op env [_ & args :as form] name]
   (let [[name meths] (if (symbol? (first args))
                        [(first args) (next args)]
                        [name (seq args)])
@@ -31,18 +31,20 @@ Source code:
         max-fixed-arity (apply max (map :max-fixed-arity methods))
         variadic (boolean (some :variadic methods))]
     ;;todo - validate unique arities, at most one variadic, variadic takes max required args
-    {:env env :op :fn :name mname :methods methods :variadic variadic
+    {:env env :op :fn :form form :name mname :methods methods :variadic variadic
      :recur-frames *recur-frames* :loop-lets *loop-lets*
      :jsdoc [(when variadic "@param {...*} var_args")]
-     :max-fixed-arity max-fixed-arity}))
+     :max-fixed-arity max-fixed-arity
+     :children (vec (mapcat block-children
+                            methods))}))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── clj
         └── cljs
-            └── <ins>[compiler.clj:741-759](https://github.com/clojure/clojurescript/blob/r1011/src/clj/cljs/compiler.clj#L741-L759)</ins>
+            └── <ins>[compiler.clj:969-989](https://github.com/clojure/clojurescript/blob/r1211/src/clj/cljs/compiler.clj#L969-L989)</ins>
 </pre>
 
 
@@ -62,11 +64,11 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "special",
  :name "fn*",
  :type "special form",
- :source {:code "(defmethod parse 'fn*\n  [op env [_ & args] name]\n  (let [[name meths] (if (symbol? (first args))\n                       [(first args) (next args)]\n                       [name (seq args)])\n        ;;turn (fn [] ...) into (fn ([]...))\n        meths (if (vector? (first meths)) (list meths) meths)\n        mname (when name (munge name))\n        locals (:locals env)\n        locals (if name (assoc locals name {:name mname}) locals)\n        menv (if (> (count meths) 1) (assoc env :context :expr) env)\n        methods (map #(analyze-fn-method menv locals %) meths)\n        max-fixed-arity (apply max (map :max-fixed-arity methods))\n        variadic (boolean (some :variadic methods))]\n    ;;todo - validate unique arities, at most one variadic, variadic takes max required args\n    {:env env :op :fn :name mname :methods methods :variadic variadic\n     :recur-frames *recur-frames* :loop-lets *loop-lets*\n     :jsdoc [(when variadic \"@param {...*} var_args\")]\n     :max-fixed-arity max-fixed-arity}))",
+ :source {:code "(defmethod parse 'fn*\n  [op env [_ & args :as form] name]\n  (let [[name meths] (if (symbol? (first args))\n                       [(first args) (next args)]\n                       [name (seq args)])\n        ;;turn (fn [] ...) into (fn ([]...))\n        meths (if (vector? (first meths)) (list meths) meths)\n        mname (when name (munge name))\n        locals (:locals env)\n        locals (if name (assoc locals name {:name mname}) locals)\n        menv (if (> (count meths) 1) (assoc env :context :expr) env)\n        methods (map #(analyze-fn-method menv locals %) meths)\n        max-fixed-arity (apply max (map :max-fixed-arity methods))\n        variadic (boolean (some :variadic methods))]\n    ;;todo - validate unique arities, at most one variadic, variadic takes max required args\n    {:env env :op :fn :form form :name mname :methods methods :variadic variadic\n     :recur-frames *recur-frames* :loop-lets *loop-lets*\n     :jsdoc [(when variadic \"@param {...*} var_args\")]\n     :max-fixed-arity max-fixed-arity\n     :children (vec (mapcat block-children\n                            methods))}))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/clj/cljs/compiler.clj",
-          :lines [741 759]},
+          :lines [969 989]},
  :full-name "special/fn*",
  :full-name-encode "special_fnSTAR",
  :history [["+" "0.0-927"]]}

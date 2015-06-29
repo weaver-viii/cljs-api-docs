@@ -26,12 +26,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[dom.cljs:102-103](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/clojure/browser/dom.cljs#L102-L103)</ins>
+                └── <ins>[dom.cljs:104-105](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/clojure/browser/dom.cljs#L104-L105)</ins>
 </pre>
 
 
@@ -54,9 +54,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[parent child index]"],
  :source {:code "(defn insert-at [parent child index]\n  (gdom/insertChildAt parent child index))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/clojure/browser/dom.cljs",
-          :lines [102 103]},
+          :lines [104 105]},
  :full-name "clojure.browser.dom/insert-at",
  :full-name-encode "clojure.browser.dom_insert-at",
  :history [["+" "0.0-927"]]}

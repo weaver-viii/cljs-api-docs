@@ -59,15 +59,17 @@ Source code:
 ```clj
 (defn count
   [coll]
-  (-count coll))
+  (if (counted? coll)
+    (-count coll)
+    (accumulating-seq-count coll 0)))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:495-499](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L495-L499)</ins>
+            └── <ins>[core.cljs:608-614](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L608-L614)</ins>
 </pre>
 
 
@@ -91,11 +93,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.core_count",
- :source {:code "(defn count\n  [coll]\n  (-count coll))",
+ :source {:code "(defn count\n  [coll]\n  (if (counted? coll)\n    (-count coll)\n    (accumulating-seq-count coll 0)))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [495 499]},
+          :lines [608 614]},
  :examples [{:id "96e470",
              :content "```clj\n(count [1 2 3])\n;;=> 3\n\n(count [])\n;;=> 0\n\n(count nil)\n;;=> 0\n\n(count #{:a :b})\n;;=> 2\n\n(count {:key \"value\" :key2 \"value2\"})\n;;=> 2\n```"}],
  :full-name "cljs.core/count",

@@ -102,11 +102,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.3.0
+clojure @ clojure-1.4.0
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:1510-1526](https://github.com/clojure/clojure/blob/clojure-1.3.0/src/clj/clojure/core.clj#L1510-L1526)</ins>
+            └── <ins>[core.clj:1511-1527](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L1511-L1527)</ins>
 </pre>
 
 
@@ -133,9 +133,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_DOTDOT",
  :source {:code "(defmacro ..\n  ([x form] `(. ~x ~form))\n  ([x form & more] `(.. (. ~x ~form) ~@more)))",
           :repo "clojure",
-          :tag "clojure-1.3.0",
+          :tag "clojure-1.4.0",
           :filename "src/clj/clojure/core.clj",
-          :lines [1510 1526]},
+          :lines [1511 1527]},
  :examples [{:id "500658",
              :content "```js\n// JavaScript\n\"a b c d\".toUpperCase().replace(\"A\", \"X\")\n//=> \"X B C D\"\n```\n\n```clj\n;; ClojureScript\n(.. \"a b c d\"\n    toUpperCase\n    (replace \"A\" \"X\"))\n;;=> \"X B C D\"\n```\n\nThis is expanded to:\n\n```clj\n(. (. \"a b c d\" toUpperCase) (replace \"A\" \"X\"))\n```\n\n\nwhich is equivalent to:\n\n```clj\n(.replace (.toUpperCase \"a b c d\") \"A\" \"X\")\n;;=> \"X B C D\"\n```\n\nCompare to the equivalent form using the thread-first `->` macro:\n\n```clj\n(-> \"a b c d\"\n    .toUpperCase\n    (.replace \"A\" \"X\"))\n;;=> \"X B C D\"\n```"}],
  :full-name "cljs.core/..",

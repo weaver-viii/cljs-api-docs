@@ -20,16 +20,17 @@ Source code:
 
 ```clj
 (defmethod parse 'do
-  [op env [_ & exprs] _]
-  (merge {:env env :op :do} (analyze-block env exprs)))
+  [op env [_ & exprs :as form] _]
+  (let [block (analyze-block env exprs)]
+    (merge {:env env :op :do :form form :children (block-children block)} block)))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── clj
         └── cljs
-            └── <ins>[compiler.clj:761-763](https://github.com/clojure/clojurescript/blob/r1011/src/clj/cljs/compiler.clj#L761-L763)</ins>
+            └── <ins>[compiler.clj:991-994](https://github.com/clojure/clojurescript/blob/r1211/src/clj/cljs/compiler.clj#L991-L994)</ins>
 </pre>
 
 
@@ -49,11 +50,11 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "special",
  :name "do",
  :type "special form",
- :source {:code "(defmethod parse 'do\n  [op env [_ & exprs] _]\n  (merge {:env env :op :do} (analyze-block env exprs)))",
+ :source {:code "(defmethod parse 'do\n  [op env [_ & exprs :as form] _]\n  (let [block (analyze-block env exprs)]\n    (merge {:env env :op :do :form form :children (block-children block)} block)))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/clj/cljs/compiler.clj",
-          :lines [761 763]},
+          :lines [991 994]},
  :full-name "special/do",
  :full-name-encode "special_do",
  :clj-symbol "clojure.core/do",

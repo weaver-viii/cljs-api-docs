@@ -52,11 +52,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1736-1743](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L1736-L1743)</ins>
+            └── <ins>[core.cljs:2103-2110](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L2103-L2110)</ins>
 </pre>
 
 
@@ -83,9 +83,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_take-last",
  :source {:code "(defn take-last\n  [n coll]\n  (loop [s (seq coll), lead (seq (drop n coll))]\n    (if lead\n      (recur (next s) (next lead))\n      s)))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1736 1743]},
+          :lines [2103 2110]},
  :full-name "cljs.core/take-last",
  :clj-symbol "clojure.core/take-last",
  :docstring "Returns a seq of the last n items in coll.  Depending on the type\nof coll may be no better than linear time.  For vectors, see also subvec."}

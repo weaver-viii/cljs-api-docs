@@ -64,23 +64,23 @@ Source code:
      (lazy-seq
        (when-let [s (seq coll)]
          (let [p (take n s)]
-           (when (= n (count p))
+           (when (== n (count p))
              (cons p (partition n step (drop step s))))))))
   ([n step pad coll]
      (lazy-seq
        (when-let [s (seq coll)]
          (let [p (take n s)]
-           (if (= n (count p))
+           (if (== n (count p))
              (cons p (partition n step pad (drop step s)))
              (list (take n (concat p pad)))))))))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1874-1894](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L1874-L1894)</ins>
+            └── <ins>[core.cljs:2268-2288](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L2268-L2288)</ins>
 </pre>
 
 
@@ -107,11 +107,11 @@ __Meta__ - To retrieve the API data for this symbol:
            "cljs.core/split-at"
            "cljs.core/partition-by"],
  :full-name-encode "cljs.core_partition",
- :source {:code "(defn partition\n  ([n coll]\n     (partition n n coll))\n  ([n step coll]\n     (lazy-seq\n       (when-let [s (seq coll)]\n         (let [p (take n s)]\n           (when (= n (count p))\n             (cons p (partition n step (drop step s))))))))\n  ([n step pad coll]\n     (lazy-seq\n       (when-let [s (seq coll)]\n         (let [p (take n s)]\n           (if (= n (count p))\n             (cons p (partition n step pad (drop step s)))\n             (list (take n (concat p pad)))))))))",
+ :source {:code "(defn partition\n  ([n coll]\n     (partition n n coll))\n  ([n step coll]\n     (lazy-seq\n       (when-let [s (seq coll)]\n         (let [p (take n s)]\n           (when (== n (count p))\n             (cons p (partition n step (drop step s))))))))\n  ([n step pad coll]\n     (lazy-seq\n       (when-let [s (seq coll)]\n         (let [p (take n s)]\n           (if (== n (count p))\n             (cons p (partition n step pad (drop step s)))\n             (list (take n (concat p pad)))))))))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1874 1894]},
+          :lines [2268 2288]},
  :full-name "cljs.core/partition",
  :clj-symbol "clojure.core/partition",
  :docstring "Returns a lazy sequence of lists of n items each, at offsets step\napart. If step is not supplied, defaults to n, i.e. the partitions\ndo not overlap. If a pad collection is supplied, use its elements as\nnecessary to complete last partition upto n items. In case there are\nnot enough padding elements, return a partition with less than n items."}

@@ -62,7 +62,7 @@ otherwise false.
 Source code:
 
 ```clj
-(defn <
+(defn ^boolean <
   ([x] true)
   ([x y] (cljs.core/< x y))
   ([x y & more]
@@ -74,11 +74,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:838-848](https://github.com/clojure/clojurescript/blob/r1011/src/cljs/cljs/core.cljs#L838-L848)</ins>
+            └── <ins>[core.cljs:1041-1051](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L1041-L1051)</ins>
 </pre>
 
 
@@ -87,16 +87,16 @@ clojurescript @ r1011
 ```clj
 (defmacro <
   ([x] true)
-  ([x y] (list 'js* "(~{} < ~{})" x y))
+  ([x y] (bool-expr (list 'js* "(~{} < ~{})" x y)))
   ([x y & more] `(and (< ~x ~y) (< ~y ~@more))))
 ```
 
  <pre>
-clojurescript @ r1011
+clojurescript @ r1211
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:88-91](https://github.com/clojure/clojurescript/blob/r1011/src/clj/cljs/core.clj#L88-L91)</ins>
+            └── <ins>[core.clj:137-140](https://github.com/clojure/clojurescript/blob/r1211/src/clj/cljs/core.clj#L137-L140)</ins>
 </pre>
 
 ---
@@ -113,6 +113,7 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "Returns true if each successive number argument is greater than the previous\none, false otherwise.",
+ :return-type boolean,
  :ns "cljs.core",
  :name "<",
  :signature ["[x]" "[x y]" "[x y & more]"],
@@ -120,16 +121,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/<="],
  :full-name-encode "cljs.core_LT",
- :source {:code "(defn <\n  ([x] true)\n  ([x y] (cljs.core/< x y))\n  ([x y & more]\n     (if (cljs.core/< x y)\n       (if (next more)\n         (recur y (first more) (next more))\n         (cljs.core/< y (first more)))\n       false)))",
+ :source {:code "(defn ^boolean <\n  ([x] true)\n  ([x y] (cljs.core/< x y))\n  ([x y & more]\n     (if (cljs.core/< x y)\n       (if (next more)\n         (recur y (first more) (next more))\n         (cljs.core/< y (first more)))\n       false)))",
           :repo "clojurescript",
-          :tag "r1011",
+          :tag "r1211",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [838 848]},
- :extra-sources ({:code "(defmacro <\n  ([x] true)\n  ([x y] (list 'js* \"(~{} < ~{})\" x y))\n  ([x y & more] `(and (< ~x ~y) (< ~y ~@more))))",
+          :lines [1041 1051]},
+ :extra-sources ({:code "(defmacro <\n  ([x] true)\n  ([x y] (bool-expr (list 'js* \"(~{} < ~{})\" x y)))\n  ([x y & more] `(and (< ~x ~y) (< ~y ~@more))))",
                   :repo "clojurescript",
-                  :tag "r1011",
+                  :tag "r1211",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [88 91]}),
+                  :lines [137 140]}),
  :examples [{:id "02e6d3",
              :content "```clj\n(< 1 2)\n;;=> true\n\n(< 2 1)\n;;=> false\n\n(< 1 1)\n;;=> false\n\n(< 2 3 4 5 6)\n;;=> true\n```"}],
  :full-name "cljs.core/<",
