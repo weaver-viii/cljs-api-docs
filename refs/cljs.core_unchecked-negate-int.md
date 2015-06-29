@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3190
+clojurescript @ r3191
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2271-2272](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/core.cljs#L2271-L2272)</ins>
+            └── <ins>[core.cljs:2271-2272](https://github.com/clojure/clojurescript/blob/r3191/src/cljs/cljs/core.cljs#L2271-L2272)</ins>
 </pre>
 
 
@@ -45,11 +45,11 @@ clojurescript @ r3190
 ```
 
  <pre>
-clojurescript @ r3190
+clojurescript @ r3191
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:469-470](https://github.com/clojure/clojurescript/blob/r3190/src/clj/cljs/core.clj#L469-L470)</ins>
+            └── <ins>[core.clj:469-470](https://github.com/clojure/clojurescript/blob/r3191/src/clj/cljs/core.clj#L469-L470)</ins>
 </pre>
 
 ---
@@ -73,12 +73,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-negate-int",
  :source {:code "(defn unchecked-negate-int [x]\n  (cljs.core/unchecked-negate-int x))",
           :repo "clojurescript",
-          :tag "r3190",
+          :tag "r3191",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2271 2272]},
  :extra-sources ({:code "(defmacro ^::ana/numeric unchecked-negate-int\n  ([x] `(- ~x)))",
                   :repo "clojurescript",
-                  :tag "r3190",
+                  :tag "r3191",
                   :filename "src/clj/cljs/core.clj",
                   :lines [469 470]}),
  :full-name "cljs.core/unchecked-negate-int",

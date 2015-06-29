@@ -43,12 +43,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3190
+clojurescript @ r3191
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:231-249](https://github.com/clojure/clojurescript/blob/r3190/src/clj/cljs/repl/browser.clj#L231-L249)</ins>
+                └── <ins>[browser.clj:231-249](https://github.com/clojure/clojurescript/blob/r3191/src/clj/cljs/repl/browser.clj#L231-L249)</ins>
 </pre>
 
 
@@ -71,7 +71,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[st-el opts]"],
  :source {:code "(defn chrome-st-el->frame\n  [st-el opts]\n  (let [xs (-> st-el\n             (string/replace #\"\\s+at\\s+\" \"\")\n             (string/split #\"\\s+\"))\n        [function flc] (if (== (count xs) 1)\n                         [nil (first xs)]\n                         [(first xs) (last xs)])\n        [file line column] (parse-file-line-column flc)]\n    (if (and file function line column)\n      {:file (parse-file file opts)\n       :function (string/replace function #\"Object\\.\" \"\")\n       :line line\n       :column column}\n      (when-not (string/blank? function)\n        {:file nil\n         :function (string/replace function #\"Object\\.\" \"\")\n         :line nil\n         :column nil}))))",
           :repo "clojurescript",
-          :tag "r3190",
+          :tag "r3191",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [231 249]},
  :full-name "cljs.repl.browser/chrome-st-el->frame",

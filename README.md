@@ -2,7 +2,7 @@
 
  <table border="1">
 <tr>
-<td>__0.0-3190__ [all](HISTORY.md)</td>
+<td>__0.0-3191__ [all](HISTORY.md)</td>
 <td>2015-04-09</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.7.0-alpha6</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
@@ -71,24 +71,12 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-3190__ ([See Full History](HISTORY.md)):
+Changes from __0.0-3191__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
  <table>
-
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-syntax-brightgreen.svg">
-</td>
-<td><samp>[syntax/cond](refs/syntax_cond.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-syntax-brightgreen.svg">
-</td>
-<td><samp>[syntax/cond-splicing](refs/syntax_cond-splicing.md)</samp></td>
-</tr>
+<tr><td>_no syntax forms were added or removed in this version_</td></tr>
 </table>
 
 __Library API Changes__

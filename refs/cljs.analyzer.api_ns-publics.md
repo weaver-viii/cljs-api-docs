@@ -41,12 +41,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3190
+clojurescript @ r3191
 └── src
     └── clj
         └── cljs
             └── analyzer
-                └── <ins>[api.clj:48-57](https://github.com/clojure/clojurescript/blob/r3190/src/clj/cljs/analyzer/api.clj#L48-L57)</ins>
+                └── <ins>[api.clj:48-57](https://github.com/clojure/clojurescript/blob/r3191/src/clj/cljs/analyzer/api.clj#L48-L57)</ins>
 </pre>
 
 
@@ -71,7 +71,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.analyzer.api_ns-publics",
  :source {:code "(defn ns-publics\n  [ns]\n  {:pre [(symbol? ns)]}\n  (->> (merge\n         (get-in @env/*compiler* [::ana/namespaces ns :macros])\n         (get-in @env/*compiler* [::ana/namespaces ns :defs]))\n       (remove (fn [[k v]] (:private v)))\n       (into {})))",
           :repo "clojurescript",
-          :tag "r3190",
+          :tag "r3191",
           :filename "src/clj/cljs/analyzer/api.clj",
           :lines [48 57]},
  :full-name "cljs.analyzer.api/ns-publics",

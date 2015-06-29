@@ -98,11 +98,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3190
+clojurescript @ r3191
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1180-1246](https://github.com/clojure/clojurescript/blob/r3190/src/clj/cljs/core.clj#L1180-L1246)</ins>
+            └── <ins>[core.clj:1180-1246](https://github.com/clojure/clojurescript/blob/r3191/src/clj/cljs/core.clj#L1180-L1246)</ins>
 </pre>
 
 
@@ -127,7 +127,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_defrecord",
  :source {:code "(defmacro defrecord\n  [rsym fields & impls]\n  (validate-fields \"defrecord\" rsym fields)\n  (let [rsym (vary-meta rsym assoc :internal-ctor true)\n        r    (vary-meta\n               (:name (cljs.analyzer/resolve-var (dissoc &env :locals) rsym))\n               assoc :internal-ctor true)]\n    `(let []\n       ~(emit-defrecord &env rsym r fields impls)\n       (set! (.-cljs$lang$type ~r) true)\n       (set! (.-cljs$lang$ctorPrSeq ~r) (fn [this#] (core/list ~(core/str r))))\n       (set! (.-cljs$lang$ctorPrWriter ~r) (fn [this# writer#] (-write writer# ~(core/str r))))\n       ~(build-positional-factory rsym r fields)\n       ~(build-map-factory rsym r fields)\n       ~r)))",
           :repo "clojurescript",
-          :tag "r3190",
+          :tag "r3191",
           :filename "src/clj/cljs/core.clj",
           :lines [1180 1246]},
  :full-name "cljs.core/defrecord",

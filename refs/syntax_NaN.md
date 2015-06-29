@@ -46,13 +46,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.9.0
+tools.reader @ tools.reader-0.9.1
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:294-320](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.0/src/main/clojure/clojure/tools/reader.clj#L294-L320)</ins>
+                    └── <ins>[reader.clj:292-318](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.1/src/main/clojure/clojure/tools/reader.clj#L292-L318)</ins>
 </pre>
 
 
@@ -75,9 +75,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_NaN",
  :source {:code "(defn- read-symbol\n  [rdr initch]\n  (let [[line column] (starting-line-col-info rdr)]\n    (when-let [token (read-token rdr initch)]\n      (case token\n\n        ;; special symbols\n        \"nil\" nil\n        \"true\" true\n        \"false\" false\n        \"/\" '/\n        \"NaN\" Double/NaN\n        \"-Infinity\" Double/NEGATIVE_INFINITY\n        (\"Infinity\" \"+Infinity\") Double/POSITIVE_INFINITY\n\n        (or (when-let [p (parse-symbol token)]\n              (with-meta (symbol (p 0) (p 1))\n                (when line\n                  (merge\n                   (when-let [file (get-file-name rdr)]\n                     {:file file})\n                   (let [[end-line end-column] (ending-line-col-info rdr)]\n                     {:line line\n                      :column column\n                      :end-line end-line\n                      :end-column end-column})))))\n            (reader-error rdr \"Invalid token: \" token))))))",
           :repo "tools.reader",
-          :tag "tools.reader-0.9.0",
+          :tag "tools.reader-0.9.1",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [294 320]},
+          :lines [292 318]},
  :syntax-form "NaN",
  :full-name "syntax/NaN",
  :history [["+" "0.0-1853"]]}

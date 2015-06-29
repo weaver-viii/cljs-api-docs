@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3190
+clojurescript @ r3191
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:744-749](https://github.com/clojure/clojurescript/blob/r3190/src/clj/cljs/core.clj#L744-L749)</ins>
+            └── <ins>[core.clj:744-749](https://github.com/clojure/clojurescript/blob/r3191/src/clj/cljs/core.clj#L744-L749)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_specify",
  :source {:code "(defmacro specify\n  [expr & impls]\n  `(cljs.core/specify! (cljs.core/clone ~expr)\n     ~@impls))",
           :repo "clojurescript",
-          :tag "r3190",
+          :tag "r3191",
           :filename "src/clj/cljs/core.clj",
           :lines [744 749]},
  :full-name "cljs.core/specify",

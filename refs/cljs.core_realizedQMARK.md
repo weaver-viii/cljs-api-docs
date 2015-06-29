@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3190
+clojurescript @ r3191
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8874-8877](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/cljs/core.cljs#L8874-L8877)</ins>
+            └── <ins>[core.cljs:8874-8877](https://github.com/clojure/clojurescript/blob/r3191/src/cljs/cljs/core.cljs#L8874-L8877)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_realizedQMARK",
  :source {:code "(defn ^boolean realized?\n  [d]\n  (-realized? d))",
           :repo "clojurescript",
-          :tag "r3190",
+          :tag "r3191",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8874 8877]},
  :full-name "cljs.core/realized?",

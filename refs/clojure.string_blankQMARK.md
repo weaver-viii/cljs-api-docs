@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3190
+clojurescript @ r3191
 └── src
     └── cljs
         └── clojure
-            └── <ins>[string.cljs:174-177](https://github.com/clojure/clojurescript/blob/r3190/src/cljs/clojure/string.cljs#L174-L177)</ins>
+            └── <ins>[string.cljs:174-177](https://github.com/clojure/clojurescript/blob/r3191/src/cljs/clojure/string.cljs#L174-L177)</ins>
 </pre>
 
 
@@ -68,7 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.string_blankQMARK",
  :source {:code "(defn blank?\n  [s]\n  (gstring/isEmptySafe s))",
           :repo "clojurescript",
-          :tag "r3190",
+          :tag "r3191",
           :filename "src/cljs/clojure/string.cljs",
           :lines [174 177]},
  :full-name "clojure.string/blank?",

@@ -35,13 +35,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.9.0
+tools.reader @ tools.reader-0.9.1
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:750-762](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.0/src/main/clojure/clojure/tools/reader.clj#L750-L762)</ins>
+                    └── <ins>[reader.clj:748-760](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.1/src/main/clojure/clojure/tools/reader.clj#L748-L760)</ins>
 </pre>
 
 
@@ -56,13 +56,13 @@ tools.reader @ tools.reader-0.9.0
 ```
 
  <pre>
-tools.reader @ tools.reader-0.9.0
+tools.reader @ tools.reader-0.9.1
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:565-570](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.0/src/main/clojure/clojure/tools/reader.clj#L565-L570)</ins>
+                    └── <ins>[reader.clj:563-568](https://github.com/clojure/tools.reader/blob/tools.reader-0.9.1/src/main/clojure/clojure/tools/reader.clj#L563-L568)</ins>
 </pre>
 
 ---
@@ -85,14 +85,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_eval",
  :source {:code "(defn- dispatch-macros [ch]\n  (case ch\n    \\^ read-meta                ;deprecated\n    \\' (wrapping-reader 'var)\n    \\( read-fn\n    \\= read-eval\n    \\{ read-set\n    \\< (throwing-reader \"Unreadable form\")\n    \\\" read-regex\n    \\! read-comment\n    \\_ read-discard\n    \\? read-cond\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.9.0",
+          :tag "tools.reader-0.9.1",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [750 762]},
+          :lines [748 760]},
  :extra-sources [{:code "(defn- read-eval\n  [rdr _ opts pending-forms]\n  (when-not *read-eval*\n    (reader-error rdr \"#= not allowed when *read-eval* is false\"))\n  (eval (read* rdr true nil opts pending-forms)))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.9.0",
+                  :tag "tools.reader-0.9.1",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [565 570]}],
+                  :lines [563 568]}],
  :syntax-form "#=",
  :full-name "syntax/eval",
  :clj-doc "https://github.com/clojure/clojure/blob/clojure-1.7.0-RC1/src/jvm/clojure/lang/LispReader.java#L113"}

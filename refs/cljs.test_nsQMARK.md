@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3190
+clojurescript @ r3191
 └── src
     └── clj
         └── cljs
-            └── <ins>[test.clj:244-245](https://github.com/clojure/clojurescript/blob/r3190/src/clj/cljs/test.clj#L244-L245)</ins>
+            └── <ins>[test.clj:244-245](https://github.com/clojure/clojurescript/blob/r3191/src/clj/cljs/test.clj#L244-L245)</ins>
 </pre>
 
 
@@ -53,7 +53,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[x]"],
  :source {:code "(defn ns? [x]\n  (and (seq? x) (= (first x) 'quote)))",
           :repo "clojurescript",
-          :tag "r3190",
+          :tag "r3191",
           :filename "src/clj/cljs/test.clj",
           :lines [244 245]},
  :full-name "cljs.test/ns?",
