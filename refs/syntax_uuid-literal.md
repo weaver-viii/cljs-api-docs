@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── clj
         └── cljs
-            └── <ins>[tagged_literals.clj:27-30](https://github.com/clojure/clojurescript/blob/r1853/src/clj/cljs/tagged_literals.clj#L27-L30)</ins>
+            └── <ins>[tagged_literals.clj:27-30](https://github.com/clojure/clojurescript/blob/r1859/src/clj/cljs/tagged_literals.clj#L27-L30)</ins>
 </pre>
 
 
@@ -51,11 +51,11 @@ clojurescript @ r1853
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── clj
         └── cljs
-            └── <ins>[tagged_literals.clj:9-16](https://github.com/clojure/clojurescript/blob/r1853/src/clj/cljs/tagged_literals.clj#L9-L16)</ins>
+            └── <ins>[tagged_literals.clj:9-16](https://github.com/clojure/clojurescript/blob/r1859/src/clj/cljs/tagged_literals.clj#L9-L16)</ins>
 </pre>
 
 ---
@@ -78,12 +78,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_uuid-literal",
  :source {:code "(def ^:dynamic *cljs-data-readers*\n  {'queue read-queue\n   'uuid  read-uuid\n   'inst  read-inst})",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/clj/cljs/tagged_literals.clj",
           :lines [27 30]},
  :extra-sources [{:code "(defn read-uuid\n  [form]\n  (assert (string? form) \"UUID literal expects a string as its representation.\")\n  (try\n    (let [uuid (java.util.UUID/fromString form)]\n      (list (symbol \"UUID.\") form))\n    (catch Throwable e\n      (throw (RuntimeException. (.getMessage e))))))",
                   :repo "clojurescript",
-                  :tag "r1853",
+                  :tag "r1859",
                   :filename "src/clj/cljs/tagged_literals.clj",
                   :lines [9 16]}],
  :syntax-form "#uuid \"\"",

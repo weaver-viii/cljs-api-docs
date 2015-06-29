@@ -67,13 +67,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.7.5
+tools.reader @ tools.reader-0.7.6
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:565-576](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.5/src/main/clojure/clojure/tools/reader.clj#L565-L576)</ins>
+                    └── <ins>[reader.clj:564-575](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.6/src/main/clojure/clojure/tools/reader.clj#L564-L575)</ins>
 </pre>
 
 
@@ -89,28 +89,27 @@ tools.reader @ tools.reader-0.7.5
           rargs (rseq arg-env)
           args (if rargs
                  (let [higharg (key (first rargs))]
-                   (if (pos? higharg)
-                     (let [args (loop [i 1 args (transient [])]
-                                  (if (> i higharg)
-                                    (persistent! args)
-                                    (recur (inc i) (conj! args (or (get arg-env i)
-                                                                   (garg i))))))
-                           args (if (arg-env -1)
-                                  (conj args '& (arg-env -1))
-                                  args)]
-                       args)))
+                   (let [args (loop [i 1 args (transient [])]
+                                (if (> i higharg)
+                                  (persistent! args)
+                                  (recur (inc i) (conj! args (or (get arg-env i)
+                                                                 (garg i))))))
+                         args (if (arg-env -1)
+                                (conj args '& (arg-env -1))
+                                args)]
+                     args))
                  [])]
       (list 'fn* args form))))
 ```
 
  <pre>
-tools.reader @ tools.reader-0.7.5
+tools.reader @ tools.reader-0.7.6
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:324-344](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.5/src/main/clojure/clojure/tools/reader.clj#L324-L344)</ins>
+                    └── <ins>[reader.clj:324-343](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.6/src/main/clojure/clojure/tools/reader.clj#L324-L343)</ins>
 </pre>
 
 ---
@@ -135,14 +134,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_function",
  :source {:code "(defn- dispatch-macros [ch]\n  (case ch\n    \\^ read-meta                ;deprecated\n    \\' (wrapping-reader 'var)\n    \\( read-fn\n    \\= read-eval\n    \\{ read-set\n    \\< (throwing-reader \"Unreadable form\")\n    \\\" read-regex\n    \\! read-comment\n    \\_ read-discard\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.7.5",
+          :tag "tools.reader-0.7.6",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [565 576]},
- :extra-sources [{:code "(defn- read-fn\n  [rdr _]\n  (if (thread-bound? #'arg-env)\n    (throw (IllegalStateException. \"Nested #()s are not allowed\")))\n  (binding [arg-env (sorted-map)]\n    (let [form (read (doto rdr (unread \\()) true nil true) ;; this sets bindings\n          rargs (rseq arg-env)\n          args (if rargs\n                 (let [higharg (key (first rargs))]\n                   (if (pos? higharg)\n                     (let [args (loop [i 1 args (transient [])]\n                                  (if (> i higharg)\n                                    (persistent! args)\n                                    (recur (inc i) (conj! args (or (get arg-env i)\n                                                                   (garg i))))))\n                           args (if (arg-env -1)\n                                  (conj args '& (arg-env -1))\n                                  args)]\n                       args)))\n                 [])]\n      (list 'fn* args form))))",
+          :lines [564 575]},
+ :extra-sources [{:code "(defn- read-fn\n  [rdr _]\n  (if (thread-bound? #'arg-env)\n    (throw (IllegalStateException. \"Nested #()s are not allowed\")))\n  (binding [arg-env (sorted-map)]\n    (let [form (read (doto rdr (unread \\()) true nil true) ;; this sets bindings\n          rargs (rseq arg-env)\n          args (if rargs\n                 (let [higharg (key (first rargs))]\n                   (let [args (loop [i 1 args (transient [])]\n                                (if (> i higharg)\n                                  (persistent! args)\n                                  (recur (inc i) (conj! args (or (get arg-env i)\n                                                                 (garg i))))))\n                         args (if (arg-env -1)\n                                (conj args '& (arg-env -1))\n                                args)]\n                     args))\n                 [])]\n      (list 'fn* args form))))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.7.5",
+                  :tag "tools.reader-0.7.6",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [324 344]}],
+                  :lines [324 343]}],
  :syntax-form "#()",
  :examples [{:id "6a87de",
              :content "```clj\n(map #(* 2 %) [1 2 3])\n;;=> (2 4 6)\n\n(def f #(println %1 %2 %&))\n(f 1 2 3 4 5)\n;; prints: 1 2 (3 4)\n```"}],

@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1523-1528](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L1523-L1528)</ins>
+            └── <ins>[core.cljs:1538-1543](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L1538-L1543)</ins>
 </pre>
 
 
@@ -59,11 +59,11 @@ clojurescript @ r1853
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:305-306](https://github.com/clojure/clojurescript/blob/r1853/src/clj/cljs/core.clj#L305-L306)</ins>
+            └── <ins>[core.clj:305-306](https://github.com/clojure/clojurescript/blob/r1859/src/clj/cljs/core.clj#L305-L306)</ins>
 </pre>
 
 ---
@@ -87,12 +87,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-divide-int",
  :source {:code "(defn unchecked-divide-int\n  ([x] (unchecked-divide-int 1 x))\n  ([x y] (cljs.core/divide x y)) ;; FIXME: waiting on cljs.core//\n  ([x y & more] (reduce unchecked-divide-int (unchecked-divide-int x y) more)))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1523 1528]},
+          :lines [1538 1543]},
  :extra-sources ({:code "(defmacro unchecked-divide-int\n  ([& xs] `(/ ~@xs)))",
                   :repo "clojurescript",
-                  :tag "r1853",
+                  :tag "r1859",
                   :filename "src/clj/cljs/core.clj",
                   :lines [305 306]}),
  :full-name "cljs.core/unchecked-divide-int",

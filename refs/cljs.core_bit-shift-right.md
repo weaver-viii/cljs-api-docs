@@ -61,11 +61,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1684-1686](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L1684-L1686)</ins>
+            └── <ins>[core.cljs:1699-1701](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L1699-L1701)</ins>
 </pre>
 
 
@@ -77,11 +77,11 @@ clojurescript @ r1853
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:450-451](https://github.com/clojure/clojurescript/blob/r1853/src/clj/cljs/core.clj#L450-L451)</ins>
+            └── <ins>[core.clj:450-451](https://github.com/clojure/clojurescript/blob/r1859/src/clj/cljs/core.clj#L450-L451)</ins>
 </pre>
 
 ---
@@ -108,12 +108,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-shift-right",
  :source {:code "(defn bit-shift-right\n  [x n] (cljs.core/bit-shift-right x n))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1684 1686]},
+          :lines [1699 1701]},
  :extra-sources ({:code "(defmacro bit-shift-right [x n]\n  (list 'js* \"(~{} >> ~{})\" x n))",
                   :repo "clojurescript",
-                  :tag "r1853",
+                  :tag "r1859",
                   :filename "src/clj/cljs/core.clj",
                   :lines [450 451]}),
  :examples [{:id "5b75af",

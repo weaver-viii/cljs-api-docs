@@ -62,11 +62,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6136-6156](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L6136-L6156)</ins>
+            └── <ins>[core.cljs:6151-6171](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L6151-L6171)</ins>
 </pre>
 
 
@@ -93,9 +93,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash-set",
  :source {:code "(defn hash-set\n  ([] cljs.core.PersistentHashSet/EMPTY)\n  ([& ^not-native keys]\n     (if (and (instance? IndexedSeq keys)\n              (< (alength (.-arr keys)) cljs.core.PersistentArrayMap/HASHMAP_THRESHOLD))\n       (let [karr (.-arr keys)\n             klen (alength karr)\n             alen (* 2 klen)\n             arr  (make-array alen)]\n         (loop [ki 0]\n           (if (< ki klen)\n             (let [ai (* 2 ki)]\n               (aset arr ai (aget karr ki))\n               (aset arr (inc ai) nil)\n               (recur (inc ki)))\n             (cljs.core.PersistentHashSet/fromArray arr true))))\n       (loop [in keys\n              ^not-native out (-as-transient cljs.core.PersistentHashSet/EMPTY)]\n         (if-not (nil? in)\n           (recur (-next in) (-conj! out (-first in)))\n           (-persistent! out))))))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6136 6156]},
+          :lines [6151 6171]},
  :full-name "cljs.core/hash-set",
  :clj-symbol "clojure.core/hash-set"}
 

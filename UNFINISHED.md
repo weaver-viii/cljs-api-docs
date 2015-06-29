@@ -4712,7 +4712,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/type->str</td>
-<td></td>
+<td>[ref](refs/cljs.core_type-GTstr.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_type-GTstr.cljsdoc)</td>
 <td></td>
 <td></td>

@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:275-276](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L275-L276)</ins>
+            └── <ins>[core.cljs:280-281](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L280-L281)</ins>
 </pre>
 
 
@@ -57,9 +57,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IList",
  :source {:code "(defprotocol IList\n  \"Marker interface indicating a persistent list\")",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [275 276]},
+          :lines [280 281]},
  :full-name "cljs.core/IList",
  :clj-symbol "clojure.lang/IPersistentList",
  :docstring "Marker interface indicating a persistent list"}

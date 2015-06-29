@@ -33,11 +33,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:359-367](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/reader.cljs#L359-L367)</ins>
+            └── <ins>[reader.cljs:359-367](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/reader.cljs#L359-L367)</ins>
 </pre>
 
 
@@ -60,7 +60,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[rdr _]"],
  :source {:code "(defn read-meta\n  [rdr _]\n  (let [m (desugar-meta (read rdr true nil true))]\n    (when-not (map? m)\n      (reader-error rdr \"Metadata must be Symbol,Keyword,String or Map\"))\n    (let [o (read rdr true nil true)]\n      (if (satisfies? IWithMeta o)\n        (with-meta o (merge (meta o) m))\n        (reader-error rdr \"Metadata can only be applied to IWithMetas\")))))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [359 367]},
  :full-name "cljs.reader/read-meta",

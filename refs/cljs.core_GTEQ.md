@@ -74,11 +74,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1453-1463](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L1453-L1463)</ins>
+            └── <ins>[core.cljs:1468-1478](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L1468-L1478)</ins>
 </pre>
 
 
@@ -92,11 +92,11 @@ clojurescript @ r1853
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:371-374](https://github.com/clojure/clojurescript/blob/r1853/src/clj/cljs/core.clj#L371-L374)</ins>
+            └── <ins>[core.clj:371-374](https://github.com/clojure/clojurescript/blob/r1859/src/clj/cljs/core.clj#L371-L374)</ins>
 </pre>
 
 ---
@@ -123,12 +123,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_GTEQ",
  :source {:code "(defn ^boolean >=\n  ([x] true)\n  ([x y] (cljs.core/>= x y))\n  ([x y & more]\n   (if (cljs.core/>= x y)\n     (if (next more)\n       (recur y (first more) (next more))\n       (cljs.core/>= y (first more)))\n     false)))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1453 1463]},
+          :lines [1468 1478]},
  :extra-sources ({:code "(defmacro >=\n  ([x] true)\n  ([x y] (bool-expr (list 'js* \"(~{} >= ~{})\" x y)))\n  ([x y & more] `(and (>= ~x ~y) (>= ~y ~@more))))",
                   :repo "clojurescript",
-                  :tag "r1853",
+                  :tag "r1859",
                   :filename "src/clj/cljs/core.clj",
                   :lines [371 374]}),
  :examples [{:id "de73d7",

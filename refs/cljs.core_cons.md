@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2018-2024](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L2018-L2024)</ins>
+            └── <ins>[core.cljs:2033-2039](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L2033-L2039)</ins>
 </pre>
 
 
@@ -77,9 +77,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_cons",
  :source {:code "(defn cons\n  [x coll]\n  (if (or (nil? coll)\n          (satisfies? ISeq coll false))\n    (Cons. nil x coll nil)\n    (Cons. nil x (seq coll) nil)))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2018 2024]},
+          :lines [2033 2039]},
  :full-name "cljs.core/cons",
  :clj-symbol "clojure.core/cons",
  :docstring "Returns a new seq where x is the first element and seq is the rest."}

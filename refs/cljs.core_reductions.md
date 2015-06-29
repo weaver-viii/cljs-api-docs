@@ -56,11 +56,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6427-6439](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L6427-L6439)</ins>
+            └── <ins>[core.cljs:6442-6454](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L6442-L6454)</ins>
 </pre>
 
 
@@ -87,9 +87,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_reductions",
  :source {:code "(defn reductions\n  ([f coll]\n     (lazy-seq\n      (if-let [s (seq coll)]\n        (reductions f (first s) (rest s))\n        (list (f)))))\n  ([f init coll]\n     (cons init\n           (lazy-seq\n            (when-let [s (seq coll)]\n              (reductions f (f init (first s)) (rest s)))))))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6427 6439]},
+          :lines [6442 6454]},
  :full-name "cljs.core/reductions",
  :clj-symbol "clojure.core/reductions",
  :docstring "Returns a lazy seq of the intermediate values of the reduction (as\nper reduce) of coll by f, starting with init."}

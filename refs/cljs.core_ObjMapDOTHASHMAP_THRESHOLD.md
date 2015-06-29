@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3950](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L3950)</ins>
+            └── <ins>[core.cljs:3965](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L3965)</ins>
 </pre>
 
 
@@ -47,9 +47,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "ObjMap",
  :source {:code "(set! cljs.core.ObjMap/HASHMAP_THRESHOLD 8)",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3950]},
+          :lines [3965]},
  :full-name "cljs.core/ObjMap.HASHMAP_THRESHOLD",
  :full-name-encode "cljs.core_ObjMapDOTHASHMAP_THRESHOLD",
  :history [["+" "0.0-1211"]]}

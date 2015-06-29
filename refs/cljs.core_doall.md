@@ -60,11 +60,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6490-6502](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L6490-L6502)</ins>
+            └── <ins>[core.cljs:6505-6517](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L6505-L6517)</ins>
 </pre>
 
 
@@ -91,9 +91,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_doall",
  :source {:code "(defn doall\n  ([coll]\n   (dorun coll)\n   coll)\n  ([n coll]\n   (dorun n coll)\n   coll))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6490 6502]},
+          :lines [6505 6517]},
  :full-name "cljs.core/doall",
  :clj-symbol "clojure.core/doall",
  :docstring "When lazy sequences are produced via functions that have side\neffects, any effects other than those needed to produce the first\nelement in the seq do not occur until the seq is consumed. doall can\nbe used to force any effects. Walks through the successive nexts of\nthe seq, retains the head and returns it, thus causing the entire\nseq to reside in memory at one time."}

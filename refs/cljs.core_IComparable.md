@@ -21,11 +21,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:330-331](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L330-L331)</ins>
+            └── <ins>[core.cljs:335-336](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L335-L336)</ins>
 </pre>
 
 
@@ -48,9 +48,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IComparable",
  :source {:code "(defprotocol IComparable\n  (-compare [x y]))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [330 331]},
+          :lines [335 336]},
  :methods [{:name "-compare", :signature ["[x y]"], :docstring nil}],
  :full-name "cljs.core/IComparable",
  :history [["+" "0.0-1424"]]}

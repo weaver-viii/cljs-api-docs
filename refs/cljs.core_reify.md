@@ -30,10 +30,9 @@ Source code:
         this-sym (gensym "_")
         locals (keys (:locals &env))
         ns     (-> &env :ns :name)
-        munge  cljs.compiler/munge
-        ns-t   (list 'js* (core/str (munge ns) "." (munge t)))]
+        munge  cljs.compiler/munge]
     `(do
-       (when (undefined? ~ns-t)
+       (when-not (exists? (. ~ns ~(symbol (core/str "-" t))))
          (deftype ~t [~@locals ~meta-sym]
            IWithMeta
            (~'-with-meta [~this-sym ~meta-sym]
@@ -45,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:523-540](https://github.com/clojure/clojurescript/blob/r1853/src/clj/cljs/core.clj#L523-L540)</ins>
+            └── <ins>[core.clj:523-539](https://github.com/clojure/clojurescript/blob/r1859/src/clj/cljs/core.clj#L523-L539)</ins>
 </pre>
 
 
@@ -72,11 +71,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "macro",
  :full-name-encode "cljs.core_reify",
- :source {:code "(defmacro reify [& impls]\n  (let [t      (gensym \"t\")\n        meta-sym (gensym \"meta\")\n        this-sym (gensym \"_\")\n        locals (keys (:locals &env))\n        ns     (-> &env :ns :name)\n        munge  cljs.compiler/munge\n        ns-t   (list 'js* (core/str (munge ns) \".\" (munge t)))]\n    `(do\n       (when (undefined? ~ns-t)\n         (deftype ~t [~@locals ~meta-sym]\n           IWithMeta\n           (~'-with-meta [~this-sym ~meta-sym]\n             (new ~t ~@locals ~meta-sym))\n           IMeta\n           (~'-meta [~this-sym] ~meta-sym)\n           ~@impls))\n       (new ~t ~@locals nil))))",
+ :source {:code "(defmacro reify [& impls]\n  (let [t      (gensym \"t\")\n        meta-sym (gensym \"meta\")\n        this-sym (gensym \"_\")\n        locals (keys (:locals &env))\n        ns     (-> &env :ns :name)\n        munge  cljs.compiler/munge]\n    `(do\n       (when-not (exists? (. ~ns ~(symbol (core/str \"-\" t))))\n         (deftype ~t [~@locals ~meta-sym]\n           IWithMeta\n           (~'-with-meta [~this-sym ~meta-sym]\n             (new ~t ~@locals ~meta-sym))\n           IMeta\n           (~'-meta [~this-sym] ~meta-sym)\n           ~@impls))\n       (new ~t ~@locals nil))))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/clj/cljs/core.clj",
-          :lines [523 540]},
+          :lines [523 539]},
  :full-name "cljs.core/reify",
  :clj-symbol "clojure.core/reify"}
 

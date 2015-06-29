@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5775-5783](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L5775-L5783)</ins>
+            └── <ins>[core.cljs:5790-5798](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L5790-L5798)</ins>
 </pre>
 
 
@@ -88,9 +88,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_sorted-map-by",
  :source {:code "(defn sorted-map-by\n  ([comparator & keyvals]\n     (loop [in (seq keyvals)\n            out (cljs.core.PersistentTreeMap. (fn->comparator comparator) nil 0 nil 0)]\n       (if in\n         (recur (nnext in) (assoc out (first in) (second in)))\n         out))))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [5775 5783]},
+          :lines [5790 5798]},
  :full-name "cljs.core/sorted-map-by",
  :clj-symbol "clojure.core/sorted-map-by",
  :docstring "keyval => key val\nReturns a new sorted map with supplied mappings, using the supplied comparator."}

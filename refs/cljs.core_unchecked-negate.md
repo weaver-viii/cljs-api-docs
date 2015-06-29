@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1550-1551](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L1550-L1551)</ins>
+            └── <ins>[core.cljs:1565-1566](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L1565-L1566)</ins>
 </pre>
 
 
@@ -45,11 +45,11 @@ clojurescript @ r1853
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:320-321](https://github.com/clojure/clojurescript/blob/r1853/src/clj/cljs/core.clj#L320-L321)</ins>
+            └── <ins>[core.clj:320-321](https://github.com/clojure/clojurescript/blob/r1859/src/clj/cljs/core.clj#L320-L321)</ins>
 </pre>
 
 ---
@@ -73,12 +73,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-negate",
  :source {:code "(defn unchecked-negate [x]\n  (cljs.core/unchecked-negate x))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1550 1551]},
+          :lines [1565 1566]},
  :extra-sources ({:code "(defmacro unchecked-negate\n  ([x] `(- ~x)))",
                   :repo "clojurescript",
-                  :tag "r1853",
+                  :tag "r1859",
                   :filename "src/clj/cljs/core.clj",
                   :lines [320 321]}),
  :full-name "cljs.core/unchecked-negate",

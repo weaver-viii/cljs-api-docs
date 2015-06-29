@@ -51,11 +51,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7118-7130](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L7118-L7130)</ins>
+            └── <ins>[core.cljs:7133-7145](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L7133-L7145)</ins>
 </pre>
 
 
@@ -81,9 +81,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_memoize",
  :source {:code "(defn memoize\n  [f]\n  (let [mem (atom {})]\n    (fn [& args]\n      (if-let [v (get @mem args)]\n        v\n        (let [ret (apply f args)]\n          (swap! mem assoc args ret)\n          ret)))))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7118 7130]},
+          :lines [7133 7145]},
  :full-name "cljs.core/memoize",
  :clj-symbol "clojure.core/memoize",
  :docstring "Returns a memoized version of a referentially transparent function. The\nmemoized version of the function keeps a cache of the mapping from arguments\nto results and, when calls with the same arguments are repeated often, has\nhigher performance at the expense of higher memory use."}

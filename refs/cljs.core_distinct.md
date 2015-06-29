@@ -51,11 +51,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6189-6200](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L6189-L6200)</ins>
+            └── <ins>[core.cljs:6204-6215](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L6204-L6215)</ins>
 </pre>
 
 
@@ -82,9 +82,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_distinct",
  :source {:code "(defn distinct\n  [coll]\n  (let [step (fn step [xs seen]\n               (lazy-seq\n                ((fn [[f :as xs] seen]\n                   (when-let [s (seq xs)]\n                     (if (contains? seen f)\n                       (recur (rest s) seen)\n                       (cons f (step (rest s) (conj seen f))))))\n                 xs seen)))]\n    (step coll #{})))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6189 6200]},
+          :lines [6204 6215]},
  :full-name "cljs.core/distinct",
  :clj-symbol "clojure.core/distinct",
  :docstring "Returns a lazy sequence of the elements of coll with duplicates removed"}

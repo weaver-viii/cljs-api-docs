@@ -68,13 +68,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.7.5
+tools.reader @ tools.reader-0.7.6
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:544-563](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.5/src/main/clojure/clojure/tools/reader.clj#L544-L563)</ins>
+                    └── <ins>[reader.clj:543-562](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.6/src/main/clojure/clojure/tools/reader.clj#L543-L562)</ins>
 </pre>
 
 
@@ -90,13 +90,13 @@ tools.reader @ tools.reader-0.7.5
 ```
 
  <pre>
-tools.reader @ tools.reader-0.7.5
+tools.reader @ tools.reader-0.7.6
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:410-415](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.5/src/main/clojure/clojure/tools/reader.clj#L410-L415)</ins>
+                    └── <ins>[reader.clj:409-414](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.6/src/main/clojure/clojure/tools/reader.clj#L409-L414)</ins>
 </pre>
 
 ---
@@ -121,14 +121,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_unquote",
  :source {:code "(defn- macros [ch]\n  (case ch\n    \\\" read-string*\n    \\: read-keyword\n    \\; read-comment\n    \\' (wrapping-reader 'quote)\n    \\@ (wrapping-reader 'clojure.core/deref)\n    \\^ read-meta\n    \\` read-syntax-quote ;;(wrapping-reader 'syntax-quote)\n    \\~ read-unquote\n    \\( read-list\n    \\) read-unmatched-delimiter\n    \\[ read-vector\n    \\] read-unmatched-delimiter\n    \\{ read-map\n    \\} read-unmatched-delimiter\n    \\\\ read-char*\n    \\% read-arg\n    \\# read-dispatch\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.7.5",
+          :tag "tools.reader-0.7.6",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [544 563]},
+          :lines [543 562]},
  :extra-sources [{:code "(defn- read-unquote\n  [rdr comma]\n  (if-let [ch (peek-char rdr)]\n    (if (identical? \\@ ch)\n      ((wrapping-reader 'clojure.core/unquote-splicing) (doto rdr read-char) \\@)\n      ((wrapping-reader 'clojure.core/unquote) rdr \\~))))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.7.5",
+                  :tag "tools.reader-0.7.6",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [410 415]}],
+                  :lines [409 414]}],
  :syntax-form "~",
  :examples [{:id "1ff51e",
              :content "```clj\n(def foo 1)\n`~foo\n;;=> 1\n\n`(def foo ~foo)\n;;=> (def cljs.user/foo 1)\n```"}],

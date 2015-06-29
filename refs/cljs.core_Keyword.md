@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2033-2043](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L2033-L2043)</ins>
+            └── <ins>[core.cljs:2048-2058](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L2048-L2058)</ins>
 </pre>
 
 
@@ -67,9 +67,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_Keyword",
  :source {:code "(deftype Keyword [k]\n  IFn\n  (invoke [_ coll]\n    (when-not (nil? coll)\n      (when (satisfies? ILookup coll)\n        (-lookup coll k nil))))\n  (invoke [_ coll not-found]\n    (if (nil? coll)\n      not-found\n      (when (satisfies? ILookup coll)\n        (-lookup coll k not-found)))))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2033 2043]},
+          :lines [2048 2058]},
  :full-name "cljs.core/Keyword",
  :clj-symbol "clojure.lang/Keyword"}
 

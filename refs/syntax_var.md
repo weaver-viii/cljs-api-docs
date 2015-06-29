@@ -55,13 +55,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.7.5
+tools.reader @ tools.reader-0.7.6
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:565-576](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.5/src/main/clojure/clojure/tools/reader.clj#L565-L576)</ins>
+                    └── <ins>[reader.clj:564-575](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.6/src/main/clojure/clojure/tools/reader.clj#L564-L575)</ins>
 </pre>
 
 
@@ -75,13 +75,13 @@ tools.reader @ tools.reader-0.7.5
 ```
 
  <pre>
-tools.reader @ tools.reader-0.7.5
+tools.reader @ tools.reader-0.7.6
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:285-288](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.5/src/main/clojure/clojure/tools/reader.clj#L285-L288)</ins>
+                    └── <ins>[reader.clj:285-288](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.6/src/main/clojure/clojure/tools/reader.clj#L285-L288)</ins>
 </pre>
 
 ---
@@ -106,12 +106,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_var",
  :source {:code "(defn- dispatch-macros [ch]\n  (case ch\n    \\^ read-meta                ;deprecated\n    \\' (wrapping-reader 'var)\n    \\( read-fn\n    \\= read-eval\n    \\{ read-set\n    \\< (throwing-reader \"Unreadable form\")\n    \\\" read-regex\n    \\! read-comment\n    \\_ read-discard\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.7.5",
+          :tag "tools.reader-0.7.6",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [565 576]},
+          :lines [564 575]},
  :extra-sources [{:code "(defn- wrapping-reader\n  [sym]\n  (fn [rdr _]\n    (list sym (read rdr true nil true))))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.7.5",
+                  :tag "tools.reader-0.7.6",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
                   :lines [285 288]}],
  :syntax-form "#'",

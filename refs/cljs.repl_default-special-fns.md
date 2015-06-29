@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:144-153](https://github.com/clojure/clojurescript/blob/r1853/src/clj/cljs/repl.clj#L144-L153)</ins>
+            └── <ins>[repl.clj:144-153](https://github.com/clojure/clojurescript/blob/r1859/src/clj/cljs/repl.clj#L144-L153)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def default-special-fns\n  (let [load-file-fn (fn [repl-env file] (load-file repl-env file))]\n    {'in-ns (fn [_ quoted-ns]\n              (let [ns-name (second quoted-ns)]\n                (when-not (ana/get-namespace ns-name)\n                  (ana/set-namespace ns-name {:name ns-name}))\n                (set! ana/*cljs-ns* ns-name)))\n     'load-file load-file-fn\n     'clojure.core/load-file load-file-fn\n     'load-namespace (fn [repl-env ns] (load-namespace repl-env ns))}))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/clj/cljs/repl.clj",
           :lines [144 153]},
  :full-name "cljs.repl/default-special-fns",

@@ -2,8 +2,8 @@
 
  <table border="1">
 <tr>
-<td>__0.0-1853__ [all](HISTORY.md)</td>
-<td>2013-08-05</td>
+<td>__0.0-1859__ [all](HISTORY.md)</td>
+<td>2013-08-19</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.5.1</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
@@ -71,24 +71,12 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-1853__ ([See Full History](HISTORY.md)):
+Changes from __0.0-1859__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
  <table>
-
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-special symbol-brightgreen.svg">
-</td>
-<td><samp>[syntax/Infinity](refs/syntax_Infinity.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-special symbol-brightgreen.svg">
-</td>
-<td><samp>[syntax/NaN](refs/syntax_NaN.md)</samp></td>
-</tr>
+<tr><td>_no syntax forms were added or removed in this version_</td></tr>
 </table>
 
 __Library API Changes__
@@ -99,7 +87,7 @@ __Library API Changes__
 <td>
 <img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
 </td>
-<td><samp>[cljs.reader/parse-and-validate-timestamp](refs/cljs.reader_parse-and-validate-timestamp.md)</samp></td>
+<td><samp>[cljs.core/type->str](refs/cljs.core_type-GTstr.md)</samp></td>
 </tr>
 </table>
 
@@ -2931,6 +2919,12 @@ application.
 <td><samp>[type](refs/cljs.core_type.md)</samp></td>
 <td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-971"><img valign="middle" alt="[+] 0.0-971" src="https://img.shields.io/badge/+-0.0--971-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[type->str](refs/cljs.core_type-GTstr.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1859"><img valign="middle" alt="[+] 0.0-1859" src="https://img.shields.io/badge/+-0.0--1859-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/unchecked-add)</td>

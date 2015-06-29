@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7043-7046](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L7043-L7046)</ins>
+            └── <ins>[core.cljs:7058-7061](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L7058-L7061)</ins>
 </pre>
 
 
@@ -75,9 +75,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_realizedQMARK",
  :source {:code "(defn ^boolean realized?\n  [d]\n  (-realized? d))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7043 7046]},
+          :lines [7058 7061]},
  :full-name "cljs.core/realized?",
  :clj-symbol "clojure.core/realized?",
  :docstring "Returns true if a value has been produced for a promise, delay, future or lazy sequence."}

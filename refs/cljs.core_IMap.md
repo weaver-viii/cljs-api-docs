@@ -22,11 +22,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:227-229](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L227-L229)</ins>
+            └── <ins>[core.cljs:232-234](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L232-L234)</ins>
 </pre>
 
 
@@ -49,9 +49,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IMap",
  :source {:code "(defprotocol IMap\n  #_(-assoc-ex [coll k v])\n  (-dissoc [coll k]))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [227 229]},
+          :lines [232 234]},
  :methods [{:name "-dissoc", :signature ["[coll k]"], :docstring nil}],
  :full-name "cljs.core/IMap",
  :history [["+" "0.0-927"]]}

@@ -62,11 +62,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:153-156](https://github.com/clojure/clojurescript/blob/r1853/src/cljs/cljs/core.cljs#L153-L156)</ins>
+            └── <ins>[core.cljs:158-161](https://github.com/clojure/clojurescript/blob/r1859/src/cljs/cljs/core.cljs#L158-L161)</ins>
 </pre>
 
 
@@ -78,11 +78,11 @@ clojurescript @ r1853
 ```
 
  <pre>
-clojurescript @ r1853
+clojurescript @ r1859
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1198-1199](https://github.com/clojure/clojurescript/blob/r1853/src/clj/cljs/core.clj#L1198-L1199)</ins>
+            └── <ins>[core.clj:1203-1204](https://github.com/clojure/clojurescript/blob/r1859/src/clj/cljs/core.clj#L1203-L1204)</ins>
 </pre>
 
 ---
@@ -108,14 +108,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_alength",
  :source {:code "(defn alength\n  [array]\n  (cljs.core/alength array))",
           :repo "clojurescript",
-          :tag "r1853",
+          :tag "r1859",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [153 156]},
+          :lines [158 161]},
  :extra-sources ({:code "(defmacro alength [a]\n  (list 'js* \"~{}.length\" a))",
                   :repo "clojurescript",
-                  :tag "r1853",
+                  :tag "r1859",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [1198 1199]}),
+                  :lines [1203 1204]}),
  :examples [{:id "26f79f",
              :content "```clj\n(def a #js [1 2 3])\n\n(alength a)\n;;=> 3\n\n(.-length a)\n;;=> 3\n\n(aget a \"length\")\n;;=> 3\n\n(count a)\n;;=> 3\n```"}],
  :full-name "cljs.core/alength",
