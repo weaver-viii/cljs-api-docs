@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2268
+clojurescript @ r2277
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1356-1360](https://github.com/clojure/clojurescript/blob/r2268/src/cljs/cljs/core.cljs#L1356-L1360)</ins>
+            └── <ins>[core.cljs:1368-1372](https://github.com/clojure/clojurescript/blob/r2277/src/cljs/cljs/core.cljs#L1368-L1372)</ins>
 </pre>
 
 
@@ -78,11 +78,11 @@ clojurescript @ r2268
 ```
 
  <pre>
-clojurescript @ r2268
+clojurescript @ r2277
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1452-1468](https://github.com/clojure/clojurescript/blob/r2268/src/clj/cljs/core.clj#L1452-L1468)</ins>
+            └── <ins>[core.clj:1452-1468](https://github.com/clojure/clojurescript/blob/r2277/src/clj/cljs/core.clj#L1452-L1468)</ins>
 </pre>
 
 ---
@@ -108,12 +108,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_js-obj",
  :source {:code "(defn js-obj\n  ([]\n     (cljs.core/js-obj))\n  ([& keyvals]\n     (apply gobject/create keyvals)))",
           :repo "clojurescript",
-          :tag "r2268",
+          :tag "r2277",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1356 1360]},
+          :lines [1368 1372]},
  :extra-sources ({:code "(defmacro js-obj [& rest]\n  (let [sym-or-str? (fn [x] (core/or (core/symbol? x) (core/string? x)))\n        filter-on-keys (fn [f coll]\n                         (->> coll\n                              (filter (fn [[k _]] (f k)))\n                              (into {})))\n        kvs (into {} (map vec (partition 2 rest)))\n        sym-pairs (filter-on-keys core/symbol? kvs)\n        expr->local (zipmap\n                     (filter (complement sym-or-str?) (keys kvs))\n                     (repeatedly gensym))\n        obj (gensym \"obj\")]\n    `(let [~@(apply concat (clojure.set/map-invert expr->local))\n           ~obj ~(js-obj* (filter-on-keys core/string? kvs))]\n       ~@(map (fn [[k v]] `(aset ~obj ~k ~v)) sym-pairs)\n       ~@(map (fn [[k v]] `(aset ~obj ~v ~(core/get kvs k))) expr->local)\n       ~obj)))",
                   :repo "clojurescript",
-                  :tag "r2268",
+                  :tag "r2277",
                   :filename "src/clj/cljs/core.clj",
                   :lines [1452 1468]}),
  :examples [{:id "657cd7",

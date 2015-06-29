@@ -41,11 +41,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2268
+clojurescript @ r2277
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7796-7802](https://github.com/clojure/clojurescript/blob/r2268/src/cljs/cljs/core.cljs#L7796-L7802)</ins>
+            └── <ins>[core.cljs:7862-7868](https://github.com/clojure/clojurescript/blob/r2277/src/cljs/cljs/core.cljs#L7862-L7868)</ins>
 </pre>
 
 
@@ -70,9 +70,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ancestors",
  :source {:code "(defn ancestors\n  ([tag] (ancestors @(get-global-hierarchy) tag))\n  ([h tag] (not-empty (get (:ancestors h) tag))))",
           :repo "clojurescript",
-          :tag "r2268",
+          :tag "r2277",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7796 7802]},
+          :lines [7862 7868]},
  :full-name "cljs.core/ancestors",
  :clj-symbol "clojure.core/ancestors",
  :docstring "Returns the immediate and indirect parents of tag, either via a JavaScript type\ninheritance relationship or a relationship established via derive. h\nmust be a hierarchy obtained from make-hierarchy, if not supplied\ndefaults to the global hierarchy"}

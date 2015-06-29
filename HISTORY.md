@@ -16,6 +16,29 @@
 <th>comp</th>
 </tr>
 <tr>
+<td>__[0.0-2277](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2277)__</td>
+<td>2014-07-25</td>
+<td><kbd>1.6.0</kbd></td>
+<td><kbd>0.8.4</kbd></td>
+<td><kbd>0.0-20140226-71326067</kbd></td>
+<td>
+<a href="#user-content-00-2277-syntax">
+ 
+</a>
+</td>
+<td>
+<a href="#user-content-00-2277-library">
+ <img valign="middle" src="https://img.shields.io/badge/×-2-red.svg">
+</a>
+</td>
+<td>
+<a href="#user-content-00-2277-compiler">
+ 
+</a>
+</td>
+</tr>
+
+<tr>
 <td>__[0.0-2268](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2268)__</td>
 <td>2014-07-06</td>
 <td><kbd>1.6.0</kbd></td>
@@ -1418,6 +1441,35 @@
 </td>
 </tr>
 
+</table>
+
+### 0.0-2277
+
+<a name="00-2277-syntax"></a> __Syntax API Changes__
+ <table>
+<tr><td>_no syntax forms were added or removed in this version_</td></tr>
+</table>
+
+<a name="00-2277-library"></a> __Library API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
+</td>
+<td><samp>[~~cljs.core/unchecked-substract~~](refs/cljs.core_unchecked-substract.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
+</td>
+<td><samp>[~~cljs.core/unchecked-substract-int~~](refs/cljs.core_unchecked-substract-int.md)</samp></td>
+</tr>
+</table>
+
+<a name="00-2277-compiler"></a> __Compiler API Changes__
+ <table>
+<tr><td>_no symbols were added or removed in this version_</td></tr>
 </table>
 
 ### 0.0-2268
@@ -2931,13 +2983,13 @@
 </tr>
 <tr>
 <td>
-<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
 </td>
 <td><samp>[cljs.core/unchecked-subtract](refs/cljs.core_unchecked-subtract.md)</samp></td>
 </tr>
 <tr>
 <td>
-<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
 </td>
 <td><samp>[cljs.core/unchecked-subtract-int](refs/cljs.core_unchecked-subtract-int.md)</samp></td>
 </tr>

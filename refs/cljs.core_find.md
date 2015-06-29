@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2268
+clojurescript @ r2277
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1438-1444](https://github.com/clojure/clojurescript/blob/r2268/src/cljs/cljs/core.cljs#L1438-L1444)</ins>
+            └── <ins>[core.cljs:1450-1456](https://github.com/clojure/clojurescript/blob/r2277/src/cljs/cljs/core.cljs#L1450-L1456)</ins>
 </pre>
 
 
@@ -78,9 +78,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_find",
  :source {:code "(defn find\n  [coll k]\n  (when (and (not (nil? coll))\n             (associative? coll)\n             (contains? coll k))\n    [k (get coll k)]))",
           :repo "clojurescript",
-          :tag "r2268",
+          :tag "r2277",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1438 1444]},
+          :lines [1450 1456]},
  :full-name "cljs.core/find",
  :clj-symbol "clojure.core/find",
  :docstring "Returns the map entry for key, or nil if key not present."}

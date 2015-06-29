@@ -69,11 +69,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2268
+clojurescript @ r2277
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6683-6698](https://github.com/clojure/clojurescript/blob/r2268/src/cljs/cljs/core.cljs#L6683-L6698)</ins>
+            └── <ins>[core.cljs:6743-6758](https://github.com/clojure/clojurescript/blob/r2277/src/cljs/cljs/core.cljs#L6743-L6758)</ins>
 </pre>
 
 
@@ -114,9 +114,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_set",
  :source {:code "(defn set\n  [coll]\n  (let [^not-native in (seq coll)]\n    (cond\n      (nil? in) #{}\n\n      (and (instance? IndexedSeq in) (zero? (.-i in)))\n      (set-from-indexed-seq in)\n\n      :else\n      (loop [in in\n              ^not-native out (-as-transient #{})]\n        (if-not (nil? in)\n          (recur (-next in) (-conj! out (-first in)))\n          (-persistent! out))))))",
           :repo "clojurescript",
-          :tag "r2268",
+          :tag "r2277",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6683 6698]},
+          :lines [6743 6758]},
  :full-name "cljs.core/set",
  :clj-symbol "clojure.core/set",
  :docstring "Returns a set of the distinct elements of coll."}

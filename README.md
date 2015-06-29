@@ -2,8 +2,8 @@
 
  <table border="1">
 <tr>
-<td>__0.0-2268__ [all](HISTORY.md)</td>
-<td>2014-07-06</td>
+<td>__0.0-2277__ [all](HISTORY.md)</td>
+<td>2014-07-25</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.6.0</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-2268__ ([See Full History](HISTORY.md)):
+Changes from __0.0-2277__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
@@ -85,39 +85,15 @@ __Library API Changes__
 
 <tr>
 <td>
-<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
 </td>
-<td><samp>[cljs.core/EntriesIterator](refs/cljs.core_EntriesIterator.md)</samp></td>
+<td><samp>[~~cljs.core/unchecked-substract~~](refs/cljs.core_unchecked-substract.md)</samp></td>
 </tr>
 <tr>
 <td>
-<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
 </td>
-<td><samp>[cljs.core/Iterator](refs/cljs.core_Iterator.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/SetEntriesIterator](refs/cljs.core_SetEntriesIterator.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/entries-iterator](refs/cljs.core_entries-iterator.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/iterator](refs/cljs.core_iterator.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/set-entries-iterator](refs/cljs.core_set-entries-iterator.md)</samp></td>
+<td><samp>[~~cljs.core/unchecked-substract-int~~](refs/cljs.core_unchecked-substract-int.md)</samp></td>
 </tr>
 </table>
 
@@ -3314,26 +3290,26 @@ application.
 </tr>
 <tr>
 <td></td>
-<td><samp>[unchecked-substract](refs/cljs.core_unchecked-substract.md)</samp></td>
+<td><samp>[~~unchecked-substract~~](refs/cljs.core_unchecked-substract.md)</samp></td>
 <td><samp>function</samp></td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1798"><img valign="middle" alt="[+] 0.0-1798" src="https://img.shields.io/badge/+-0.0--1798-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1798"><img valign="middle" alt="[+] 0.0-1798" src="https://img.shields.io/badge/+-0.0--1798-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2277"><img valign="middle" alt="[×] 0.0-2277" src="https://img.shields.io/badge/×-0.0--2277-red.svg"></a> </td>
 </tr>
 <tr>
 <td></td>
-<td><samp>[unchecked-substract-int](refs/cljs.core_unchecked-substract-int.md)</samp></td>
+<td><samp>[~~unchecked-substract-int~~](refs/cljs.core_unchecked-substract-int.md)</samp></td>
 <td><samp>function</samp></td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1798"><img valign="middle" alt="[+] 0.0-1798" src="https://img.shields.io/badge/+-0.0--1798-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1798"><img valign="middle" alt="[+] 0.0-1798" src="https://img.shields.io/badge/+-0.0--1798-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2277"><img valign="middle" alt="[×] 0.0-2277" src="https://img.shields.io/badge/×-0.0--2277-red.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/unchecked-subtract)</td>
 <td><samp>[unchecked-subtract](refs/cljs.core_unchecked-subtract.md)</samp></td>
-<td><samp>macro</samp></td>
+<td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1798"><img valign="middle" alt="[+] 0.0-1798" src="https://img.shields.io/badge/+-0.0--1798-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/unchecked-subtract-int)</td>
 <td><samp>[unchecked-subtract-int](refs/cljs.core_unchecked-subtract-int.md)</samp></td>
-<td><samp>macro</samp></td>
+<td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1798"><img valign="middle" alt="[+] 0.0-1798" src="https://img.shields.io/badge/+-0.0--1798-lightgrey.svg"></a> </td>
 </tr>
 <tr>

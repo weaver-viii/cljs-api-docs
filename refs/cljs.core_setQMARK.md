@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2268
+clojurescript @ r2277
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1316-1321](https://github.com/clojure/clojurescript/blob/r2268/src/cljs/cljs/core.cljs#L1316-L1321)</ins>
+            └── <ins>[core.cljs:1328-1333](https://github.com/clojure/clojurescript/blob/r2277/src/cljs/cljs/core.cljs#L1328-L1333)</ins>
 </pre>
 
 
@@ -77,9 +77,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_setQMARK",
  :source {:code "(defn ^boolean set?\n  [x]\n  (if (nil? x)\n    false\n    (satisfies? ISet x)))",
           :repo "clojurescript",
-          :tag "r2268",
+          :tag "r2277",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1316 1321]},
+          :lines [1328 1333]},
  :full-name "cljs.core/set?",
  :clj-symbol "clojure.core/set?",
  :docstring "Returns true if x satisfies ISet"}

@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2268
+clojurescript @ r2277
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2489-2492](https://github.com/clojure/clojurescript/blob/r2268/src/cljs/cljs/core.cljs#L2489-L2492)</ins>
+            └── <ins>[core.cljs:2512-2515](https://github.com/clojure/clojurescript/blob/r2277/src/cljs/cljs/core.cljs#L2512-L2515)</ins>
 </pre>
 
 
@@ -55,9 +55,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[chunk rest]"],
  :source {:code "(defn chunk-cons [chunk rest]\n  (if (zero? (-count chunk))\n    rest\n    (ChunkedCons. chunk rest nil nil)))",
           :repo "clojurescript",
-          :tag "r2268",
+          :tag "r2277",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2489 2492]},
+          :lines [2512 2515]},
  :full-name "cljs.core/chunk-cons",
  :full-name-encode "cljs.core_chunk-cons",
  :history [["+" "0.0-1424"]]}

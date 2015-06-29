@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2268
+clojurescript @ r2277
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3275-3283](https://github.com/clojure/clojurescript/blob/r2268/src/cljs/cljs/core.cljs#L3275-L3283)</ins>
+            └── <ins>[core.cljs:3298-3306](https://github.com/clojure/clojurescript/blob/r2277/src/cljs/cljs/core.cljs#L3298-L3306)</ins>
 </pre>
 
 
@@ -85,9 +85,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_into",
  :source {:code "(defn into\n  [to from]\n  (if-not (nil? to)\n    (if (implements? IEditableCollection to)\n      (persistent! (reduce -conj! (transient to) from))\n      (reduce -conj to from))\n    (reduce conj () from)))",
           :repo "clojurescript",
-          :tag "r2268",
+          :tag "r2277",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3275 3283]},
+          :lines [3298 3306]},
  :full-name "cljs.core/into",
  :clj-symbol "clojure.core/into",
  :docstring "Returns a new coll consisting of to-coll with all of the items of\nfrom-coll conjoined."}

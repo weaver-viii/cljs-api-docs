@@ -61,11 +61,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2268
+clojurescript @ r2277
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1289-1301](https://github.com/clojure/clojurescript/blob/r2268/src/cljs/cljs/core.cljs#L1289-L1301)</ins>
+            └── <ins>[core.cljs:1301-1313](https://github.com/clojure/clojurescript/blob/r2277/src/cljs/cljs/core.cljs#L1301-L1313)</ins>
 </pre>
 
 
@@ -94,9 +94,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_disj",
  :source {:code "(defn disj\n  ([coll] coll)\n  ([coll k]\n    (when-not (nil? coll)\n      (-disjoin coll k)))\n  ([coll k & ks]\n    (when-not (nil? coll)\n      (let [ret (disj coll k)]\n        (if ks\n          (recur ret (first ks) (next ks))\n          ret)))))",
           :repo "clojurescript",
-          :tag "r2268",
+          :tag "r2277",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1289 1301]},
+          :lines [1301 1313]},
  :full-name "cljs.core/disj",
  :clj-symbol "clojure.core/disj",
  :docstring "disj[oin]. Returns a new set of the same (hashed/sorted) type, that\ndoes not contain key(s)."}

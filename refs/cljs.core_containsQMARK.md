@@ -56,11 +56,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2268
+clojurescript @ r2277
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1427-1436](https://github.com/clojure/clojurescript/blob/r2268/src/cljs/cljs/core.cljs#L1427-L1436)</ins>
+            └── <ins>[core.cljs:1439-1448](https://github.com/clojure/clojurescript/blob/r2277/src/cljs/cljs/core.cljs#L1439-L1448)</ins>
 </pre>
 
 
@@ -88,9 +88,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_containsQMARK",
  :source {:code "(defn ^boolean contains?\n  [coll v]\n  (if (identical? (get coll v lookup-sentinel) lookup-sentinel)\n    false\n    true))",
           :repo "clojurescript",
-          :tag "r2268",
+          :tag "r2277",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1427 1436]},
+          :lines [1439 1448]},
  :full-name "cljs.core/contains?",
  :clj-symbol "clojure.core/contains?",
  :docstring "Returns true if key is present in the given collection, otherwise\nreturns false.  Note that for numerically indexed collections like\nvectors and arrays, this tests if the numeric key is within the\nrange of indexes. 'contains?' operates constant or logarithmic time;\nit will not perform a linear search for a value.  See also 'some'."}

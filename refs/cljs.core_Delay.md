@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2268
+clojurescript @ r2277
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7594-7604](https://github.com/clojure/clojurescript/blob/r2268/src/cljs/cljs/core.cljs#L7594-L7604)</ins>
+            └── <ins>[core.cljs:7660-7670](https://github.com/clojure/clojurescript/blob/r2277/src/cljs/cljs/core.cljs#L7660-L7670)</ins>
 </pre>
 
 
@@ -67,9 +67,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_Delay",
  :source {:code "(deftype Delay [^:mutable f ^:mutable value]\n  IDeref\n  (-deref [_]\n    (when f\n      (set! value (f))\n      (set! f nil))\n    value)\n\n  IPending\n  (-realized? [d]\n    (not f)))",
           :repo "clojurescript",
-          :tag "r2268",
+          :tag "r2277",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7594 7604]},
+          :lines [7660 7670]},
  :full-name "cljs.core/Delay",
  :clj-symbol "clojure.lang/Delay"}
 

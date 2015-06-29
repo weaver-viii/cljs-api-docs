@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2268
+clojurescript @ r2277
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6413-6416](https://github.com/clojure/clojurescript/blob/r2268/src/cljs/cljs/core.cljs#L6413-L6416)</ins>
+            └── <ins>[core.cljs:6469-6472](https://github.com/clojure/clojurescript/blob/r2277/src/cljs/cljs/core.cljs#L6469-L6472)</ins>
 </pre>
 
 
@@ -74,9 +74,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_val",
  :source {:code "(defn val\n  [map-entry]\n  (-val map-entry))",
           :repo "clojurescript",
-          :tag "r2268",
+          :tag "r2277",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6413 6416]},
+          :lines [6469 6472]},
  :full-name "cljs.core/val",
  :clj-symbol "clojure.core/val",
  :docstring "Returns the value in the map entry."}
