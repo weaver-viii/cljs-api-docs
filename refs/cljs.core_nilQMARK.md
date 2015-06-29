@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2727
+clojurescript @ r2740
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:85-88](https://github.com/clojure/clojurescript/blob/r2727/src/cljs/cljs/core.cljs#L85-L88)</ins>
+            └── <ins>[core.cljs:85-88](https://github.com/clojure/clojurescript/blob/r2740/src/cljs/cljs/core.cljs#L85-L88)</ins>
 </pre>
 
 
@@ -61,11 +61,11 @@ clojurescript @ r2727
 ```
 
  <pre>
-clojurescript @ r2727
+clojurescript @ r2740
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:258-259](https://github.com/clojure/clojurescript/blob/r2727/src/clj/cljs/core.clj#L258-L259)</ins>
+            └── <ins>[core.clj:258-259](https://github.com/clojure/clojurescript/blob/r2740/src/clj/cljs/core.clj#L258-L259)</ins>
 </pre>
 
 ---
@@ -92,12 +92,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_nilQMARK",
  :source {:code "(defn ^boolean nil?\n  [x]\n  (coercive-= x nil))",
           :repo "clojurescript",
-          :tag "r2727",
+          :tag "r2740",
           :filename "src/cljs/cljs/core.cljs",
           :lines [85 88]},
  :extra-sources ({:code "(defmacro nil? [x]\n  `(coercive-= ~x nil))",
                   :repo "clojurescript",
-                  :tag "r2727",
+                  :tag "r2740",
                   :filename "src/clj/cljs/core.clj",
                   :lines [258 259]}),
  :full-name "cljs.core/nil?",

@@ -27,11 +27,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2727
+clojurescript @ r2740
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:260-262](https://github.com/clojure/clojurescript/blob/r2727/src/cljs/cljs/reader.cljs#L260-L262)</ins>
+            └── <ins>[reader.cljs:260-262](https://github.com/clojure/clojurescript/blob/r2740/src/cljs/cljs/reader.cljs#L260-L262)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[rdr ch]"],
  :source {:code "(defn read-unmatched-delimiter\n  [rdr ch]\n  (reader-error rdr \"Unmatched delimiter \" ch))",
           :repo "clojurescript",
-          :tag "r2727",
+          :tag "r2740",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [260 262]},
  :full-name "cljs.reader/read-unmatched-delimiter",

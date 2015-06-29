@@ -27,12 +27,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2727
+clojurescript @ r2740
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[node.clj:176-178](https://github.com/clojure/clojurescript/blob/r2727/src/clj/cljs/repl/node.clj#L176-L178)</ins>
+                └── <ins>[node.clj:179-181](https://github.com/clojure/clojurescript/blob/r2740/src/clj/cljs/repl/node.clj#L179-L181)</ins>
 </pre>
 
 
@@ -55,9 +55,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[& {:as options}]"],
  :source {:code "(defn repl-env\n  [& {:as options}]\n  (repl-env* options))",
           :repo "clojurescript",
-          :tag "r2727",
+          :tag "r2740",
           :filename "src/clj/cljs/repl/node.clj",
-          :lines [176 178]},
+          :lines [179 181]},
  :full-name "cljs.repl.node/repl-env",
  :full-name-encode "cljs.repl.node_repl-env",
  :history [["+" "0.0-2629"]]}

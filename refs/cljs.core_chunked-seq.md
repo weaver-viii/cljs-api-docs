@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2727
+clojurescript @ r2740
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4565-4569](https://github.com/clojure/clojurescript/blob/r2727/src/cljs/cljs/core.cljs#L4565-L4569)</ins>
+            └── <ins>[core.cljs:4565-4569](https://github.com/clojure/clojurescript/blob/r2740/src/cljs/cljs/core.cljs#L4565-L4569)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[vec i off]" "[vec node i off]" "[vec node i off meta]"],
  :source {:code "(defn chunked-seq\n  ([vec i off] (ChunkedSeq. vec (array-for vec i) i off nil nil))\n  ([vec node i off] (ChunkedSeq. vec node i off nil nil))\n  ([vec node i off meta]\n     (ChunkedSeq. vec node i off meta nil)))",
           :repo "clojurescript",
-          :tag "r2727",
+          :tag "r2740",
           :filename "src/cljs/cljs/core.cljs",
           :lines [4565 4569]},
  :full-name "cljs.core/chunked-seq",

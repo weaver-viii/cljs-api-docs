@@ -29,7 +29,8 @@ Source code:
 (defn node-eval
   [repl-env js]
   (let [{:keys [in out]} @(:socket repl-env)]
-    (write out js)
+    ;; escape backslash for Node.js under Windows
+    (write out (string/replace js "\\" "\\\\"))
     (let [result (json/read-str
                    (read-response in) :key-fn keyword)]
       (condp = (:status result)
@@ -43,12 +44,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2727
+clojurescript @ r2740
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[node.clj:50-64](https://github.com/clojure/clojurescript/blob/r2727/src/clj/cljs/repl/node.clj#L50-L64)</ins>
+                └── <ins>[node.clj:50-65](https://github.com/clojure/clojurescript/blob/r2740/src/clj/cljs/repl/node.clj#L50-L65)</ins>
 </pre>
 
 
@@ -71,11 +72,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-2629"]],
  :type "function",
  :full-name-encode "cljs.repl.node_node-eval",
- :source {:code "(defn node-eval\n  [repl-env js]\n  (let [{:keys [in out]} @(:socket repl-env)]\n    (write out js)\n    (let [result (json/read-str\n                   (read-response in) :key-fn keyword)]\n      (condp = (:status result)\n        \"success\"\n        {:status :success\n         :value (:value result)}\n\n        \"exception\"\n        {:status :exception\n         :value (:value result)}))))",
+ :source {:code "(defn node-eval\n  [repl-env js]\n  (let [{:keys [in out]} @(:socket repl-env)]\n    ;; escape backslash for Node.js under Windows\n    (write out (string/replace js \"\\\\\" \"\\\\\\\\\"))\n    (let [result (json/read-str\n                   (read-response in) :key-fn keyword)]\n      (condp = (:status result)\n        \"success\"\n        {:status :success\n         :value (:value result)}\n\n        \"exception\"\n        {:status :exception\n         :value (:value result)}))))",
           :repo "clojurescript",
-          :tag "r2727",
+          :tag "r2740",
           :filename "src/clj/cljs/repl/node.clj",
-          :lines [50 64]},
+          :lines [50 65]},
  :full-name "cljs.repl.node/node-eval",
  :docstring "Evaluate a JavaScript string in the Node REPL process."}
 

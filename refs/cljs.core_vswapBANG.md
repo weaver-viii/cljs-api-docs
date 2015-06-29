@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2727
+clojurescript @ r2740
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1687-1692](https://github.com/clojure/clojurescript/blob/r2727/src/clj/cljs/core.clj#L1687-L1692)</ins>
+            └── <ins>[core.clj:1687-1692](https://github.com/clojure/clojurescript/blob/r2740/src/clj/cljs/core.clj#L1687-L1692)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_vswapBANG",
  :source {:code "(defmacro vswap!\n  [vol f & args]\n  `(-vreset! ~vol (~f (-deref ~vol) ~@args)))",
           :repo "clojurescript",
-          :tag "r2727",
+          :tag "r2740",
           :filename "src/clj/cljs/core.clj",
           :lines [1687 1692]},
  :full-name "cljs.core/vswap!",

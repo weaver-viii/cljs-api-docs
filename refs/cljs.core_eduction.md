@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2727
+clojurescript @ r2740
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8608-8613](https://github.com/clojure/clojurescript/blob/r2727/src/cljs/cljs/core.cljs#L8608-L8613)</ins>
+            └── <ins>[core.cljs:8608-8613](https://github.com/clojure/clojurescript/blob/r2740/src/cljs/cljs/core.cljs#L8608-L8613)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_eduction",
  :source {:code "(defn eduction\n  [xform coll]\n  (Eduction. xform coll))",
           :repo "clojurescript",
-          :tag "r2727",
+          :tag "r2740",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8608 8613]},
  :full-name "cljs.core/eduction",

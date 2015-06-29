@@ -34,12 +34,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2727
+clojurescript @ r2740
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[rhino.clj:67-76](https://github.com/clojure/clojurescript/blob/r2727/src/clj/cljs/repl/rhino.clj#L67-L76)</ins>
+                └── <ins>[rhino.clj:67-76](https://github.com/clojure/clojurescript/blob/r2740/src/clj/cljs/repl/rhino.clj#L67-L76)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[repl-env filename line js]"],
  :source {:code "(defn rhino-eval\n  [repl-env filename line js]\n  (try\n    (let [linenum (or line Integer/MIN_VALUE)]\n      {:status :success\n       :value (eval-result (-eval js repl-env filename linenum))})\n    (catch Throwable ex\n      {:status :exception\n       :value (.toString ex)\n       :stacktrace (stacktrace ex)})))",
           :repo "clojurescript",
-          :tag "r2727",
+          :tag "r2740",
           :filename "src/clj/cljs/repl/rhino.clj",
           :lines [67 76]},
  :full-name "cljs.repl.rhino/rhino-eval",
