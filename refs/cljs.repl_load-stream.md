@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1803
+clojurescript @ r1806
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:94-103](https://github.com/clojure/clojurescript/blob/r1803/src/clj/cljs/repl.clj#L94-L103)</ins>
+            └── <ins>[repl.clj:94-103](https://github.com/clojure/clojurescript/blob/r1806/src/clj/cljs/repl.clj#L94-L103)</ins>
 </pre>
 
 
@@ -61,7 +61,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[repl-env filename stream]"],
  :source {:code "(defn load-stream [repl-env filename stream]\n  (with-open [r (io/reader stream)]\n    (let [env (ana/empty-env)\n          pbr (clojure.lang.LineNumberingPushbackReader. r)\n          eof (Object.)]\n      (loop [r (read pbr false eof false)]\n        (let [env (assoc env :ns (ana/get-namespace ana/*cljs-ns*))]\n          (when-not (identical? eof r)\n            (evaluate-form repl-env env filename r)\n            (recur (read pbr false eof false))))))))",
           :repo "clojurescript",
-          :tag "r1803",
+          :tag "r1806",
           :filename "src/clj/cljs/repl.clj",
           :lines [94 103]},
  :full-name "cljs.repl/load-stream",

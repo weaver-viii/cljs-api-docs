@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1803
+clojurescript @ r1806
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6673-6681](https://github.com/clojure/clojurescript/blob/r1803/src/cljs/cljs/core.cljs#L6673-L6681)</ins>
+            └── <ins>[core.cljs:6775-6783](https://github.com/clojure/clojurescript/blob/r1806/src/cljs/cljs/core.cljs#L6775-L6783)</ins>
 </pre>
 
 
@@ -72,9 +72,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_gensym",
  :source {:code "(defn gensym\n  ([] (gensym \"G__\"))\n  ([prefix-string]\n     (when (nil? gensym_counter)\n       (set! gensym_counter (atom 0)))\n     (symbol (str prefix-string (swap! gensym_counter inc)))))",
           :repo "clojurescript",
-          :tag "r1803",
+          :tag "r1806",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6673 6681]},
+          :lines [6775 6783]},
  :full-name "cljs.core/gensym",
  :clj-symbol "clojure.core/gensym",
  :docstring "Returns a new symbol with a unique name. If a prefix string is\nsupplied, the name is prefix# where # is some unique number. If\nprefix is not supplied, the prefix is 'G__'."}

@@ -33,11 +33,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1803
+clojurescript @ r1806
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1319-1327](https://github.com/clojure/clojurescript/blob/r1803/src/clj/cljs/core.clj#L1319-L1327)</ins>
+            └── <ins>[core.clj:1328-1336](https://github.com/clojure/clojurescript/blob/r1806/src/clj/cljs/core.clj#L1328-L1336)</ins>
 </pre>
 
 
@@ -60,9 +60,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[]"],
  :source {:code "(defmacro gen-apply-to []\n  `(do\n     (set! ~'*unchecked-if* true)\n     (defn ~'apply-to [~'f ~'argc ~'args]\n       (let [~'args (seq ~'args)]\n         (if (zero? ~'argc)\n           (~'f)\n           ~(gen-apply-to-helper))))\n     (set! ~'*unchecked-if* false)))",
           :repo "clojurescript",
-          :tag "r1803",
+          :tag "r1806",
           :filename "src/clj/cljs/core.clj",
-          :lines [1319 1327]},
+          :lines [1328 1336]},
  :full-name "cljs.core/gen-apply-to",
  :full-name-encode "cljs.core_gen-apply-to",
  :history [["+" "0.0-1211"]]}

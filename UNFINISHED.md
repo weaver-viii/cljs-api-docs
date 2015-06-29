@@ -3760,7 +3760,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/pr-str\*</td>
-<td></td>
+<td>[ref](refs/cljs.core_pr-strSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_pr-strSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5104,7 +5104,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/with-redefs</td>
-<td></td>
+<td>[ref](refs/cljs.core_with-redefs.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_with-redefs.cljsdoc)</td>
 <td></td>
 <td></td>

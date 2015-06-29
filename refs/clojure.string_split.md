@@ -64,11 +64,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1803
+clojurescript @ r1806
 └── src
     └── cljs
         └── clojure
-            └── <ins>[string.cljs:81-99](https://github.com/clojure/clojurescript/blob/r1803/src/cljs/clojure/string.cljs#L81-L99)</ins>
+            └── <ins>[string.cljs:81-99](https://github.com/clojure/clojurescript/blob/r1806/src/cljs/clojure/string.cljs#L81-L99)</ins>
 </pre>
 
 
@@ -97,7 +97,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.string_split",
  :source {:code "(defn split\n  ([s re]\n     (vec (.split (str s) re)))\n  ([s re limit]\n     (if (< limit 1)\n       (vec (.split (str s) re))\n       (loop [s s\n              limit limit\n              parts []]\n         (if (= limit 1)\n           (conj parts s)\n           (if-let [m (re-find re s)]\n             (let [index (.indexOf s m)]\n               (recur (.substring s (+ index (count m)))\n                      (dec limit)\n                      (conj parts (.substring s 0 index))))\n             (conj parts s)))))))",
           :repo "clojurescript",
-          :tag "r1803",
+          :tag "r1806",
           :filename "src/cljs/clojure/string.cljs",
           :lines [81 99]},
  :full-name "clojure.string/split",

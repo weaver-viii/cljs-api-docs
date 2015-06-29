@@ -85,11 +85,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1803
+clojurescript @ r1806
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:38-40](https://github.com/clojure/clojurescript/blob/r1803/src/cljs/cljs/core.cljs#L38-L40)</ins>
+            └── <ins>[core.cljs:49-51](https://github.com/clojure/clojurescript/blob/r1806/src/cljs/cljs/core.cljs#L49-L51)</ins>
 </pre>
 
 
@@ -115,9 +115,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_STAR3",
  :source {:code "(def\n  ^{:doc \"bound in a repl thread to the third most recent value printed\"}\n  *3)",
           :repo "clojurescript",
-          :tag "r1803",
+          :tag "r1806",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [38 40]},
+          :lines [49 51]},
  :examples [{:id "d7a6e9",
              :content "```clj\n(+ 1 2 3 4)\n;;=> 10\n\n(+ 4 8)\n;;=> 12\n\n(+ 1 2)\n;;=> 3\n\n*3\n;;=> 10\n\n(inc *3)\n;;=> 11\n```\n\nNote that a standalone evaluation of `*1`, `*2`, `*3`, or `*e` is not a part of\nremembered history:\n\n```clj\n:first\n;;=> :first\n\n:second\n;;=> :second\n\n:third\n;;=> :third\n\n*3\n;;=> :first\n\n*2\n;;=> :second\n\n*1\n;;=> :third\n```"}],
  :full-name "cljs.core/*3",

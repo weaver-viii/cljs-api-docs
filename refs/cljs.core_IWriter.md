@@ -22,11 +22,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1803
+clojurescript @ r1806
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:277-279](https://github.com/clojure/clojurescript/blob/r1803/src/cljs/cljs/core.cljs#L277-L279)</ins>
+            └── <ins>[core.cljs:288-290](https://github.com/clojure/clojurescript/blob/r1806/src/cljs/cljs/core.cljs#L288-L290)</ins>
 </pre>
 
 
@@ -49,9 +49,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IWriter",
  :source {:code "(defprotocol IWriter\n  (-write [writer s])\n  (-flush [writer]))",
           :repo "clojurescript",
-          :tag "r1803",
+          :tag "r1806",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [277 279]},
+          :lines [288 290]},
  :methods [{:name "-write", :signature ["[writer s]"], :docstring nil}
            {:name "-flush", :signature ["[writer]"], :docstring nil}],
  :full-name "cljs.core/IWriter",

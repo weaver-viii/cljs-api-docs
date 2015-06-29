@@ -56,11 +56,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1803
+clojurescript @ r1806
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:344-372](https://github.com/clojure/clojurescript/blob/r1803/src/cljs/cljs/core.cljs#L344-L372)</ins>
+            └── <ins>[core.cljs:372-400](https://github.com/clojure/clojurescript/blob/r1806/src/cljs/cljs/core.cljs#L372-L400)</ins>
 </pre>
 
 
@@ -85,9 +85,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_Symbol",
  :source {:code "(deftype Symbol [ns name str ^:mutable _hash _meta]\n  Object\n  (toString [_] str)\n  IEquiv\n  (-equiv [_ other]\n    (if (instance? Symbol other)\n      (identical? str (.-str other))\n      false))\n  IFn\n  (-invoke [sym coll]\n    (-lookup coll sym nil))\n  (-invoke [sym coll not-found]\n    (-lookup coll sym not-found))\n  IMeta\n  (-meta [_] _meta)\n  IWithMeta\n  (-with-meta [_ new-meta] (Symbol. ns name str _hash new-meta))\n  IHash\n  (-hash [_]\n    (if (== _hash -1)\n      (do\n        (set! _hash (hash-combine (hash ns) (hash name)))\n        _hash)\n      _hash))\n  INamed\n  (-name [_] name)\n  (-namespace [_] ns)\n  IPrintWithWriter\n  (-pr-writer [o writer _] (-write writer str)))",
           :repo "clojurescript",
-          :tag "r1803",
+          :tag "r1806",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [344 372]},
+          :lines [372 400]},
  :full-name "cljs.core/Symbol",
  :clj-symbol "clojure.lang/Symbol"}
 

@@ -80,11 +80,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1803
+clojurescript @ r1806
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1178-1191](https://github.com/clojure/clojurescript/blob/r1803/src/clj/cljs/core.clj#L1178-L1191)</ins>
+            └── <ins>[core.clj:1187-1200](https://github.com/clojure/clojurescript/blob/r1806/src/clj/cljs/core.clj#L1187-L1200)</ins>
 </pre>
 
 
@@ -111,9 +111,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_amap",
  :source {:code "(defmacro amap\n  [a idx ret expr]\n  `(let [a# ~a\n         ~ret (aclone a#)]\n     (loop  [~idx 0]\n       (if (< ~idx  (alength a#))\n         (do\n           (aset ~ret ~idx ~expr)\n           (recur (inc ~idx)))\n         ~ret))))",
           :repo "clojurescript",
-          :tag "r1803",
+          :tag "r1806",
           :filename "src/clj/cljs/core.clj",
-          :lines [1178 1191]},
+          :lines [1187 1200]},
  :examples [{:id "3a7471",
              :content "```clj\n(def a #js [1 2 3])\n(amap a i ret (* 10 (aget a i)))\n;;=> #js [10 20 30]\n```"}
             {:id "0f57af",

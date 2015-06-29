@@ -25,6 +25,10 @@ Source code:
 
 ```clj
 (deftype RSeq [ci i meta]
+  Object
+  (toString [coll]
+    (pr-str* coll))
+
   IMeta
   (-meta [coll] meta)
   IWithMeta
@@ -61,11 +65,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1803
+clojurescript @ r1806
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:696-729](https://github.com/clojure/clojurescript/blob/r1803/src/cljs/cljs/core.cljs#L696-L729)</ins>
+            └── <ins>[core.cljs:730-767](https://github.com/clojure/clojurescript/blob/r1806/src/cljs/cljs/core.cljs#L730-L767)</ins>
 </pre>
 
 
@@ -88,11 +92,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1424"]],
  :type "type",
  :full-name-encode "cljs.core_RSeq",
- :source {:code "(deftype RSeq [ci i meta]\n  IMeta\n  (-meta [coll] meta)\n  IWithMeta\n  (-with-meta [coll new-meta]\n    (RSeq. ci i new-meta))\n\n  ISeqable\n  (-seq [coll] coll)\n\n  ISequential\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  ISeq\n  (-first [coll]\n    (-nth ci i))\n  (-rest [coll]\n    (if (pos? i)\n      (RSeq. ci (dec i) nil)\n      ()))\n\n  ICounted\n  (-count [coll] (inc i))\n\n  ICollection\n  (-conj [coll o]\n    (cons o coll))\n\n  IEmptyableCollection\n  (-empty [coll] (with-meta cljs.core.List/EMPTY meta))\n\n  IHash\n  (-hash [coll] (hash-coll coll)))",
+ :source {:code "(deftype RSeq [ci i meta]\n  Object\n  (toString [coll]\n    (pr-str* coll))\n\n  IMeta\n  (-meta [coll] meta)\n  IWithMeta\n  (-with-meta [coll new-meta]\n    (RSeq. ci i new-meta))\n\n  ISeqable\n  (-seq [coll] coll)\n\n  ISequential\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  ISeq\n  (-first [coll]\n    (-nth ci i))\n  (-rest [coll]\n    (if (pos? i)\n      (RSeq. ci (dec i) nil)\n      ()))\n\n  ICounted\n  (-count [coll] (inc i))\n\n  ICollection\n  (-conj [coll o]\n    (cons o coll))\n\n  IEmptyableCollection\n  (-empty [coll] (with-meta cljs.core.List/EMPTY meta))\n\n  IHash\n  (-hash [coll] (hash-coll coll)))",
           :repo "clojurescript",
-          :tag "r1803",
+          :tag "r1806",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [696 729]},
+          :lines [730 767]},
  :full-name "cljs.core/RSeq",
  :clj-symbol "clojure.lang/RSeq"}
 

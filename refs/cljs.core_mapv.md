@@ -68,11 +68,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1803
+clojurescript @ r1806
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2868-2882](https://github.com/clojure/clojurescript/blob/r1803/src/cljs/cljs/core.cljs#L2868-L2882)</ins>
+            └── <ins>[core.cljs:2926-2940](https://github.com/clojure/clojurescript/blob/r1806/src/cljs/cljs/core.cljs#L2926-L2940)</ins>
 </pre>
 
 
@@ -102,9 +102,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_mapv",
  :source {:code "(defn mapv\n  ([f coll]\n     (-> (reduce (fn [v o] (conj! v (f o))) (transient []) coll)\n         persistent!))\n  ([f c1 c2]\n     (into [] (map f c1 c2)))\n  ([f c1 c2 c3]\n     (into [] (map f c1 c2 c3)))\n  ([f c1 c2 c3 & colls]\n     (into [] (apply map f c1 c2 c3 colls))))",
           :repo "clojurescript",
-          :tag "r1803",
+          :tag "r1806",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2868 2882]},
+          :lines [2926 2940]},
  :full-name "cljs.core/mapv",
  :clj-symbol "clojure.core/mapv",
  :docstring "Returns a vector consisting of the result of applying f to the\nset of first items of each coll, followed by applying f to the set\nof second items in each coll, until any one of the colls is\nexhausted.  Any remaining items in other colls are ignored. Function\nf should accept number-of-colls arguments."}

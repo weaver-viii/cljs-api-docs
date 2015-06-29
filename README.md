@@ -2,8 +2,8 @@
 
  <table border="1">
 <tr>
-<td>__0.0-1803__ [all](HISTORY.md)</td>
-<td>2013-05-06</td>
+<td>__0.0-1806__ [all](HISTORY.md)</td>
+<td>2013-05-10</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.5.1</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-1803__ ([See Full History](HISTORY.md)):
+Changes from __0.0-1806__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
@@ -85,15 +85,15 @@ __Library API Changes__
 
 <tr>
 <td>
-<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
 </td>
-<td><samp>[cljs.core/lazy-cat](refs/cljs.core_lazy-cat.md)</samp></td>
+<td><samp>[cljs.core/pr-str\*](refs/cljs.core_pr-strSTAR.md)</samp></td>
 </tr>
 <tr>
 <td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
 </td>
-<td><samp>[cljs.core/special-symbol?](refs/cljs.core_special-symbolQMARK.md)</samp></td>
+<td><samp>[cljs.core/with-redefs](refs/cljs.core_with-redefs.md)</samp></td>
 </tr>
 </table>
 
@@ -663,7 +663,7 @@ application.
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/*flush-on-newline*)</td>
 <td><samp>[\*flush-on-newline\*](refs/cljs.core_STARflush-on-newlineSTAR.md)</samp></td>
-<td><samp>var</samp></td>
+<td><samp>dynamic var</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
 </tr>
 <tr>
@@ -675,7 +675,7 @@ application.
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/*print-dup*)</td>
 <td><samp>[\*print-dup\*](refs/cljs.core_STARprint-dupSTAR.md)</samp></td>
-<td><samp>var</samp></td>
+<td><samp>dynamic var</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
 </tr>
 <tr>
@@ -687,13 +687,13 @@ application.
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/*print-meta*)</td>
 <td><samp>[\*print-meta\*](refs/cljs.core_STARprint-metaSTAR.md)</samp></td>
-<td><samp>var</samp></td>
+<td><samp>dynamic var</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/*print-readably*)</td>
 <td><samp>[\*print-readably\*](refs/cljs.core_STARprint-readablySTAR.md)</samp></td>
-<td><samp>var</samp></td>
+<td><samp>dynamic var</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
 </tr>
 <tr>
@@ -2294,6 +2294,12 @@ application.
 </tr>
 <tr>
 <td></td>
+<td><samp>[pr-str\*](refs/cljs.core_pr-strSTAR.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1806"><img valign="middle" alt="[+] 0.0-1806" src="https://img.shields.io/badge/+-0.0--1806-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
 <td><samp>[pr-str-with-opts](refs/cljs.core_pr-str-with-opts.md)</samp></td>
 <td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
@@ -3137,6 +3143,12 @@ application.
 <td><samp>[with-out-str](refs/cljs.core_with-out-str.md)</samp></td>
 <td><samp>macro</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1535"><img valign="middle" alt="[+] 0.0-1535" src="https://img.shields.io/badge/+-0.0--1535-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/with-redefs)</td>
+<td><samp>[with-redefs](refs/cljs.core_with-redefs.md)</samp></td>
+<td><samp>macro</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1806"><img valign="middle" alt="[+] 0.0-1806" src="https://img.shields.io/badge/+-0.0--1806-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td></td>

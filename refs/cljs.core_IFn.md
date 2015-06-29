@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1803
+clojurescript @ r1806
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:158-180](https://github.com/clojure/clojurescript/blob/r1803/src/cljs/cljs/core.cljs#L158-L180)</ins>
+            └── <ins>[core.cljs:169-191](https://github.com/clojure/clojurescript/blob/r1806/src/cljs/cljs/core.cljs#L169-L191)</ins>
 </pre>
 
 
@@ -73,9 +73,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IFn",
  :source {:code "(defprotocol IFn\n  (-invoke\n    [this]\n    [this a]\n    [this a b]\n    [this a b c]\n    [this a b c d]\n    [this a b c d e]\n    [this a b c d e f]\n    [this a b c d e f g]\n    [this a b c d e f g h]\n    [this a b c d e f g h i]\n    [this a b c d e f g h i j]\n    [this a b c d e f g h i j k]\n    [this a b c d e f g h i j k l]\n    [this a b c d e f g h i j k l m]\n    [this a b c d e f g h i j k l m n]\n    [this a b c d e f g h i j k l m n o]\n    [this a b c d e f g h i j k l m n o p]\n    [this a b c d e f g h i j k l m n o p q]\n    [this a b c d e f g h i j k l m n o p q s]\n    [this a b c d e f g h i j k l m n o p q s t]\n    [this a b c d e f g h i j k l m n o p q s t rest]))",
           :repo "clojurescript",
-          :tag "r1803",
+          :tag "r1806",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [158 180]},
+          :lines [169 191]},
  :methods [{:name "-invoke",
             :signature ["[this]"
                         "[this a]"
