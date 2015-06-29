@@ -29,12 +29,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[node.clj:22-26](https://github.com/clojure/clojurescript/blob/r2665/src/clj/cljs/repl/node.clj#L22-L26)</ins>
+                └── <ins>[node.clj:22-26](https://github.com/clojure/clojurescript/blob/r2719/src/clj/cljs/repl/node.clj#L22-L26)</ins>
 </pre>
 
 
@@ -57,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[host port]"],
  :source {:code "(defn socket [host port]\n  (let [socket (Socket. host port)\n        in     (io/reader socket)\n        out    (io/writer socket)]\n    {:socket socket :in in :out out}))",
           :repo "clojurescript",
-          :tag "r2665",
+          :tag "r2719",
           :filename "src/clj/cljs/repl/node.clj",
           :lines [22 26]},
  :full-name "cljs.repl.node/socket",

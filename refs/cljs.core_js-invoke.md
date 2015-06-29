@@ -56,11 +56,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:214-218](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L214-L218)</ins>
+            └── <ins>[core.cljs:219-223](https://github.com/clojure/clojurescript/blob/r2719/src/cljs/cljs/core.cljs#L219-L223)</ins>
 </pre>
 
 
@@ -86,9 +86,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_js-invoke",
  :source {:code "(defn js-invoke\n  [obj s & args]\n  (.apply (aget obj s) obj (into-array args)))",
           :repo "clojurescript",
-          :tag "r2665",
+          :tag "r2719",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [214 218]},
+          :lines [219 223]},
  :examples [{:id "373cce",
              :content "If we have a JavaScript object with an unusual property name:\n\n```js\n// JavaScript\nvar obj = {\n  \"my sum\": function(a,b) { return a+b; }\n};\n```\n\nWe can invoke it from ClojureScript:\n\n```clj\n(js-invoke js/obj \"my sum\" 1 2)\n;=> 3\n```"}],
  :full-name "cljs.core/js-invoke",

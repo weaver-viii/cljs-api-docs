@@ -2,8 +2,8 @@
 
  <table border="1">
 <tr>
-<td>__0.0-2665__ [all](HISTORY.md)</td>
-<td>2015-01-04</td>
+<td>__0.0-2719__ [all](HISTORY.md)</td>
+<td>2015-01-24</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.6.0</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-2665__ ([See Full History](HISTORY.md)):
+Changes from __0.0-2719__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
@@ -82,7 +82,25 @@ __Syntax API Changes__
 __Library API Changes__
 
  <table>
-<tr><td>_no symbols were added or removed in this version_</td></tr>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/PersistentHashMap.fromArray](refs/cljs.core_PersistentHashMapDOTfromArray.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/load-file\*](refs/cljs.core_load-fileSTAR.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl/with-read-known](refs/cljs.repl_with-read-known.md)</samp></td>
+</tr>
 </table>
 
 __Compiler API Changes__
@@ -91,9 +109,33 @@ __Compiler API Changes__
 
 <tr>
 <td>
+<img valign="middle" src="https://img.shields.io/badge/+-protocol-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl/IReplEnvOptions](refs/cljs.repl_IReplEnvOptions.md)</samp></td>
+</tr>
+<tr>
+<td>
 <img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
 </td>
-<td><samp>[cljs.repl.browser/setup](refs/cljs.repl.browser_setup.md)</samp></td>
+<td><samp>[cljs.repl/repl-read](refs/cljs.repl_repl-read.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl/skip-if-eol](refs/cljs.repl_skip-if-eol.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl/skip-whitespace](refs/cljs.repl_skip-whitespace.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl/with-read-known](refs/cljs.repl_with-read-known.md)</samp></td>
 </tr>
 </table>
 
@@ -2228,6 +2270,12 @@ application.
 <td><samp>[list?](refs/cljs.core_listQMARK.md)</samp></td>
 <td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1211"><img valign="middle" alt="[+] 0.0-1211" src="https://img.shields.io/badge/+-0.0--1211-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[load-file\*](refs/cljs.core_load-fileSTAR.md)</samp></td>
+<td><samp>macro</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2719"><img valign="middle" alt="[+] 0.0-2719" src="https://img.shields.io/badge/+-0.0--2719-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/long)</td>
@@ -4385,6 +4433,12 @@ application.
 </tr>
 <tr>
 <td></td>
+<td><samp> └── [fromArray](refs/cljs.core_PersistentHashMapDOTfromArray.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2719"><img valign="middle" alt="[+] 0.0-2719" src="https://img.shields.io/badge/+-0.0--2719-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
 <td><samp> └── [fromArrays](refs/cljs.core_PersistentHashMapDOTfromArrays.md)</samp></td>
 <td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1211"><img valign="middle" alt="[+] 0.0-1211" src="https://img.shields.io/badge/+-0.0--1211-lightgrey.svg"></a> </td>
@@ -5052,6 +5106,12 @@ application.
 <td><samp>[print-doc](refs/cljs.repl_print-doc.md)</samp></td>
 <td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2496"><img valign="middle" alt="[+] 0.0-2496" src="https://img.shields.io/badge/+-0.0--2496-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[with-read-known](refs/cljs.repl_with-read-known.md)</samp></td>
+<td><samp>macro</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2719"><img valign="middle" alt="[+] 0.0-2719" src="https://img.shields.io/badge/+-0.0--2719-lightgrey.svg"></a> </td>
 </tr>
 </table>
 #### cljs.test
@@ -6389,6 +6449,24 @@ self-compile.
 </tr>
 <tr>
 <td></td>
+<td><samp>[repl-read](refs/cljs.repl_repl-read.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2719"><img valign="middle" alt="[+] 0.0-2719" src="https://img.shields.io/badge/+-0.0--2719-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[skip-if-eol](refs/cljs.repl_skip-if-eol.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2719"><img valign="middle" alt="[+] 0.0-2719" src="https://img.shields.io/badge/+-0.0--2719-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[skip-whitespace](refs/cljs.repl_skip-whitespace.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2719"><img valign="middle" alt="[+] 0.0-2719" src="https://img.shields.io/badge/+-0.0--2719-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
 <td><samp>[~~spec-sort~~](refs/cljs.repl_spec-sort.md)</samp></td>
 <td><samp>var</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2629"><img valign="middle" alt="[+] 0.0-2629" src="https://img.shields.io/badge/+-0.0--2629-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2655"><img valign="middle" alt="[×] 0.0-2655" src="https://img.shields.io/badge/×-0.0--2655-red.svg"></a> </td>
@@ -6401,9 +6479,21 @@ self-compile.
 </tr>
 <tr>
 <td></td>
+<td><samp>[with-read-known](refs/cljs.repl_with-read-known.md)</samp></td>
+<td><samp>macro</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2719"><img valign="middle" alt="[+] 0.0-2719" src="https://img.shields.io/badge/+-0.0--2719-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
 <td><samp>[IJavaScriptEnv](refs/cljs.repl_IJavaScriptEnv.md)</samp></td>
 <td><samp>protocol</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[IReplEnvOptions](refs/cljs.repl_IReplEnvOptions.md)</samp></td>
+<td><samp>protocol</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2719"><img valign="middle" alt="[+] 0.0-2719" src="https://img.shields.io/badge/+-0.0--2719-lightgrey.svg"></a> </td>
 </tr>
 </table>
 #### cljs.repl.browser

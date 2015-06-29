@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:352-358](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L352-L358)</ins>
+            └── <ins>[core.cljs:357-363](https://github.com/clojure/clojurescript/blob/r2719/src/cljs/cljs/core.cljs#L357-L363)</ins>
 </pre>
 
 
@@ -63,9 +63,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IPrintWithWriter",
  :source {:code "(defprotocol IPrintWithWriter\n  \"The old IPrintable protocol's implementation consisted of building a giant\n   list of strings to concatenate.  This involved lots of concat calls,\n   intermediate vectors, and lazy-seqs, and was very slow in some older JS\n   engines.  IPrintWithWriter implements printing via the IWriter protocol, so it\n   be implemented efficiently in terms of e.g. a StringBuffer append.\"\n  (-pr-writer [o writer opts]))",
           :repo "clojurescript",
-          :tag "r2665",
+          :tag "r2719",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [352 358]},
+          :lines [357 363]},
  :methods [{:name "-pr-writer",
             :signature ["[o writer opts]"],
             :docstring nil}],

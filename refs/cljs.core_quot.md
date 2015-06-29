@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2014-2018](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L2014-L2018)</ins>
+            └── <ins>[core.cljs:2071-2075](https://github.com/clojure/clojurescript/blob/r2719/src/cljs/cljs/core.cljs#L2071-L2075)</ins>
 </pre>
 
 
@@ -78,9 +78,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_quot",
  :source {:code "(defn quot\n  [n d]\n  (let [rem (js-mod n d)]\n    (fix (/ (- n rem) d))))",
           :repo "clojurescript",
-          :tag "r2665",
+          :tag "r2719",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2014 2018]},
+          :lines [2071 2075]},
  :full-name "cljs.core/quot",
  :clj-symbol "clojure.core/quot",
  :docstring "quot[ient] of dividing numerator by denominator."}

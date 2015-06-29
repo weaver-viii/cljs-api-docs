@@ -21,11 +21,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:321-322](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L321-L322)</ins>
+            └── <ins>[core.cljs:326-327](https://github.com/clojure/clojurescript/blob/r2719/src/cljs/cljs/core.cljs#L326-L327)</ins>
 </pre>
 
 
@@ -48,9 +48,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IEquiv",
  :source {:code "(defprotocol IEquiv\n  (^boolean -equiv [o other]))",
           :repo "clojurescript",
-          :tag "r2665",
+          :tag "r2719",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [321 322]},
+          :lines [326 327]},
  :methods [{:name "-equiv", :signature ["[o other]"], :docstring nil}],
  :full-name "cljs.core/IEquiv",
  :history [["+" "0.0-927"]]}

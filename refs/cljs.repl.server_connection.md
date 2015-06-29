@@ -41,12 +41,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[server.clj:22-34](https://github.com/clojure/clojurescript/blob/r2665/src/clj/cljs/repl/server.clj#L22-L34)</ins>
+                └── <ins>[server.clj:14-26](https://github.com/clojure/clojurescript/blob/r2719/src/clj/cljs/repl/server.clj#L14-L26)</ins>
 </pre>
 
 
@@ -71,9 +71,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.server_connection",
  :source {:code "(defn connection\n  []\n  (let [p    (promise)\n        conn (:connection @state)]\n    (if (and conn (not (.isClosed conn)))\n      (do\n        (deliver p conn)\n        p)\n      (do\n        (swap! state (fn [old] (assoc old :promised-conn p)))\n        p))))",
           :repo "clojurescript",
-          :tag "r2665",
+          :tag "r2719",
           :filename "src/clj/cljs/repl/server.clj",
-          :lines [22 34]},
+          :lines [14 26]},
  :full-name "cljs.repl.server/connection",
  :docstring "Promise to return a connection when one is available. If a\nconnection is not available, store the promise in server/state."}
 

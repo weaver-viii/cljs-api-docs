@@ -20,12 +20,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:26](https://github.com/clojure/clojurescript/blob/r2665/src/clj/cljs/repl/browser.clj#L26)</ins>
+                └── <ins>[browser.clj:25](https://github.com/clojure/clojurescript/blob/r2719/src/clj/cljs/repl/browser.clj#L25)</ins>
 </pre>
 
 
@@ -47,9 +47,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def loaded-libs (atom #{}))",
           :repo "clojurescript",
-          :tag "r2665",
+          :tag "r2719",
           :filename "src/clj/cljs/repl/browser.clj",
-          :lines [26]},
+          :lines [25]},
  :full-name "cljs.repl.browser/loaded-libs",
  :full-name-encode "cljs.repl.browser_loaded-libs",
  :history [["+" "0.0-927"]]}

@@ -34,18 +34,20 @@ Source code:
 
 ```clj
 (defn vec [coll]
-  (-persistent!
-   (reduce -conj!
-           (-as-transient (.-EMPTY PersistentVector))
-           coll)))
+  (if (array? coll)
+    (.fromArray PersistentVector coll true)
+    (-persistent!
+      (reduce -conj!
+        (-as-transient (.-EMPTY PersistentVector))
+        coll))))
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4384-4388](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L4384-L4388)</ins>
+            └── <ins>[core.cljs:4474-4480](https://github.com/clojure/clojurescript/blob/r2719/src/cljs/cljs/core.cljs#L4474-L4480)</ins>
 </pre>
 
 
@@ -70,11 +72,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/vector" "cljs.core/vector?"],
  :full-name-encode "cljs.core_vec",
- :source {:code "(defn vec [coll]\n  (-persistent!\n   (reduce -conj!\n           (-as-transient (.-EMPTY PersistentVector))\n           coll)))",
+ :source {:code "(defn vec [coll]\n  (if (array? coll)\n    (.fromArray PersistentVector coll true)\n    (-persistent!\n      (reduce -conj!\n        (-as-transient (.-EMPTY PersistentVector))\n        coll))))",
           :repo "clojurescript",
-          :tag "r2665",
+          :tag "r2719",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [4384 4388]},
+          :lines [4474 4480]},
  :full-name "cljs.core/vec",
  :clj-symbol "clojure.core/vec"}
 

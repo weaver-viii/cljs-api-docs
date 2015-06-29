@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1686-1691](https://github.com/clojure/clojurescript/blob/r2665/src/clj/cljs/core.clj#L1686-L1691)</ins>
+            └── <ins>[core.clj:1687-1692](https://github.com/clojure/clojurescript/blob/r2719/src/clj/cljs/core.clj#L1687-L1692)</ins>
 </pre>
 
 
@@ -63,9 +63,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_vswapBANG",
  :source {:code "(defmacro vswap!\n  [vol f & args]\n  `(-vreset! ~vol (~f (-deref ~vol) ~@args)))",
           :repo "clojurescript",
-          :tag "r2665",
+          :tag "r2719",
           :filename "src/clj/cljs/core.clj",
-          :lines [1686 1691]},
+          :lines [1687 1692]},
  :full-name "cljs.core/vswap!",
  :docstring "Non-atomically swaps the value of the volatile as if:\n(apply f current-value-of-vol args). Returns the value that\nwas swapped in."}
 

@@ -37,12 +37,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[server.clj:68-76](https://github.com/clojure/clojurescript/blob/r2665/src/clj/cljs/repl/server.clj#L68-L76)</ins>
+                └── <ins>[server.clj:60-68](https://github.com/clojure/clojurescript/blob/r2719/src/clj/cljs/repl/server.clj#L60-L68)</ins>
 </pre>
 
 
@@ -67,9 +67,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.server_parse-headers",
  :source {:code "(defn parse-headers\n  [header-lines]\n  (apply hash-map\n    (mapcat\n      (fn [line]\n        (let [[k v] (str/split line #\":\" 2)]\n          [(keyword (str/lower-case k)) (str/triml v)]))\n      header-lines)))",
           :repo "clojurescript",
-          :tag "r2665",
+          :tag "r2719",
           :filename "src/clj/cljs/repl/server.clj",
-          :lines [68 76]},
+          :lines [60 68]},
  :full-name "cljs.repl.server/parse-headers",
  :docstring "Parse the headers of an HTTP POST request."}
 

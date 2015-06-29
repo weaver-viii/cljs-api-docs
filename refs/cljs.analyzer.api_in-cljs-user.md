@@ -35,12 +35,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── clj
         └── cljs
             └── analyzer
-                └── <ins>[api.clj:51-57](https://github.com/clojure/clojurescript/blob/r2665/src/clj/cljs/analyzer/api.clj#L51-L57)</ins>
+                └── <ins>[api.clj:51-57](https://github.com/clojure/clojurescript/blob/r2719/src/clj/cljs/analyzer/api.clj#L51-L57)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.analyzer.api_in-cljs-user",
  :source {:code "(defmacro in-cljs-user\n  [env & body]\n  `(binding [cljs.analyzer/*cljs-ns* 'cljs.user]\n     (cljs.env/with-compiler-env ~env\n       ~@body)))",
           :repo "clojurescript",
-          :tag "r2665",
+          :tag "r2719",
           :filename "src/clj/cljs/analyzer/api.clj",
           :lines [51 57]},
  :full-name "cljs.analyzer.api/in-cljs-user",

@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1963-1968](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L1963-L1968)</ins>
+            └── <ins>[core.cljs:2020-2025](https://github.com/clojure/clojurescript/blob/r2719/src/cljs/cljs/core.cljs#L2020-L2025)</ins>
 </pre>
 
 
@@ -59,11 +59,11 @@ clojurescript @ r2665
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:410-411](https://github.com/clojure/clojurescript/blob/r2665/src/clj/cljs/core.clj#L410-L411)</ins>
+            └── <ins>[core.clj:411-412](https://github.com/clojure/clojurescript/blob/r2719/src/clj/cljs/core.clj#L411-L412)</ins>
 </pre>
 
 ---
@@ -88,14 +88,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-subtract-int",
  :source {:code "(defn ^number unchecked-subtract-int\n  ([x] (cljs.core/unchecked-subtract-int x))\n  ([x y] (cljs.core/unchecked-subtract-int x y))\n  ([x y & more] (reduce unchecked-subtract-int (cljs.core/unchecked-subtract-int x y) more)))",
           :repo "clojurescript",
-          :tag "r2665",
+          :tag "r2719",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1963 1968]},
+          :lines [2020 2025]},
  :extra-sources ({:code "(defmacro ^::ana/numeric unchecked-subtract-int\n  ([& xs] `(- ~@xs)))",
                   :repo "clojurescript",
-                  :tag "r2665",
+                  :tag "r2719",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [410 411]}),
+                  :lines [411 412]}),
  :full-name "cljs.core/unchecked-subtract-int",
  :clj-symbol "clojure.core/unchecked-subtract-int",
  :docstring "If no ys are supplied, returns the negation of x, else subtracts\nthe ys from x and returns the result."}

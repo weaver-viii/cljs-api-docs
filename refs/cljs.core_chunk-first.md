@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2678-2679](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L2678-L2679)</ins>
+            └── <ins>[core.cljs:2743-2744](https://github.com/clojure/clojurescript/blob/r2719/src/cljs/cljs/core.cljs#L2743-L2744)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[s]"],
  :source {:code "(defn chunk-first [s]\n  (-chunked-first s))",
           :repo "clojurescript",
-          :tag "r2665",
+          :tag "r2719",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2678 2679]},
+          :lines [2743 2744]},
  :full-name "cljs.core/chunk-first",
  :full-name-encode "cljs.core_chunk-first",
  :history [["+" "0.0-1424"]]}

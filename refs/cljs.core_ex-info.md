@@ -12,10 +12,10 @@
 </table>
 
  <samp>
-(__ex-info__ msg map)<br>
+(__ex-info__ msg data)<br>
 </samp>
  <samp>
-(__ex-info__ msg map cause)<br>
+(__ex-info__ msg data cause)<br>
 </samp>
 
 ---
@@ -35,18 +35,22 @@ Source code:
 
 ```clj
 (defn ex-info
-  ([msg map]
-     (ExceptionInfo. msg map nil))
-  ([msg map cause]
-     (ExceptionInfo. msg map cause)))
+  ([msg data] (ex-info msg data nil))
+  ([msg data cause]
+    ;; this way each new ExceptionInfo instance will inherit
+    ;; stack property from newly created Error
+    (set! (.-prototype ExceptionInfo) (js/Error msg))
+    (set! (.. ExceptionInfo -prototype -name) "ExceptionInfo")
+    (set! (.. ExceptionInfo -prototype -constructor) ExceptionInfo)
+    (ExceptionInfo. msg data cause)))
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:9059-9066](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L9059-L9066)</ins>
+            └── <ins>[core.cljs:9168-9179](https://github.com/clojure/clojurescript/blob/r2719/src/cljs/cljs/core.cljs#L9168-L9179)</ins>
 </pre>
 
 
@@ -65,15 +69,15 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "ex-info",
- :signature ["[msg map]" "[msg map cause]"],
+ :signature ["[msg data]" "[msg data cause]"],
  :history [["+" "0.0-1576"]],
  :type "function",
  :full-name-encode "cljs.core_ex-info",
- :source {:code "(defn ex-info\n  ([msg map]\n     (ExceptionInfo. msg map nil))\n  ([msg map cause]\n     (ExceptionInfo. msg map cause)))",
+ :source {:code "(defn ex-info\n  ([msg data] (ex-info msg data nil))\n  ([msg data cause]\n    ;; this way each new ExceptionInfo instance will inherit\n    ;; stack property from newly created Error\n    (set! (.-prototype ExceptionInfo) (js/Error msg))\n    (set! (.. ExceptionInfo -prototype -name) \"ExceptionInfo\")\n    (set! (.. ExceptionInfo -prototype -constructor) ExceptionInfo)\n    (ExceptionInfo. msg data cause)))",
           :repo "clojurescript",
-          :tag "r2665",
+          :tag "r2719",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [9059 9066]},
+          :lines [9168 9179]},
  :full-name "cljs.core/ex-info",
  :clj-symbol "clojure.core/ex-info",
  :docstring "Alpha - subject to change.\nCreate an instance of ExceptionInfo, an Error type that carries a\nmap of additional data."}

@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1755-1761](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L1755-L1761)</ins>
+            └── <ins>[core.cljs:1812-1818](https://github.com/clojure/clojurescript/blob/r2719/src/cljs/cljs/core.cljs#L1812-L1818)</ins>
 </pre>
 
 
@@ -61,9 +61,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[f]" "[f cf]"],
  :source {:code "(defn completing\n  ([f] (completing f identity))\n  ([f cf]\n    (fn\n      ([] (f))\n      ([x] (cf x))\n      ([x y] (f x y)))))",
           :repo "clojurescript",
-          :tag "r2665",
+          :tag "r2719",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1755 1761]},
+          :lines [1812 1818]},
  :full-name "cljs.core/completing",
  :full-name-encode "cljs.core_completing",
  :history [["+" "0.0-2341"]]}

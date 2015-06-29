@@ -1232,7 +1232,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentHashMap.fromArray</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentHashMapDOTfromArray.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentHashMapDOTfromArray.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3168,7 +3168,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/load-file\*</td>
-<td></td>
+<td>[ref](refs/cljs.core_load-fileSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_load-fileSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5904,7 +5904,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/IReplEnvOptions</td>
-<td></td>
+<td>[ref](refs/cljs.repl_IReplEnvOptions.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_IReplEnvOptions.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6136,7 +6136,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/repl-read</td>
-<td></td>
+<td>[ref](refs/cljs.repl_repl-read.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_repl-read.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6168,7 +6168,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/skip-if-eol</td>
-<td></td>
+<td>[ref](refs/cljs.repl_skip-if-eol.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_skip-if-eol.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6176,7 +6176,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/skip-whitespace</td>
-<td></td>
+<td>[ref](refs/cljs.repl_skip-whitespace.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_skip-whitespace.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6224,7 +6224,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/with-read-known</td>
-<td></td>
+<td>[ref](refs/cljs.repl_with-read-known.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_with-read-known.cljsdoc)</td>
 <td></td>
 <td></td>

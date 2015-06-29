@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1990-1993](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L1990-L1993)</ins>
+            └── <ins>[core.cljs:2047-2050](https://github.com/clojure/clojurescript/blob/r2719/src/cljs/cljs/core.cljs#L2047-L2050)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-long",
  :source {:code "(defn unchecked-long\n  [x]\n  (fix x))",
           :repo "clojurescript",
-          :tag "r2665",
+          :tag "r2719",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1990 1993]},
+          :lines [2047 2050]},
  :full-name "cljs.core/unchecked-long",
  :clj-symbol "clojure.core/unchecked-long",
  :docstring "Coerce to long by stripping decimal places. Identical to `int'."}

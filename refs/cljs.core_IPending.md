@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:360-361](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L360-L361)</ins>
+            └── <ins>[core.cljs:365-366](https://github.com/clojure/clojurescript/blob/r2719/src/cljs/cljs/core.cljs#L365-L366)</ins>
 </pre>
 
 
@@ -52,9 +52,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IPending",
  :source {:code "(defprotocol IPending\n  (^boolean -realized? [d]))",
           :repo "clojurescript",
-          :tag "r2665",
+          :tag "r2719",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [360 361]},
+          :lines [365 366]},
  :methods [{:name "-realized?", :signature ["[d]"], :docstring nil}],
  :full-name "cljs.core/IPending",
  :clj-symbol "clojure.lang/IPending"}

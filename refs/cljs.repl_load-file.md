@@ -42,11 +42,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2665
+clojurescript @ r2719
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:156-170](https://github.com/clojure/clojurescript/blob/r2665/src/clj/cljs/repl.clj#L156-L170)</ins>
+            └── <ins>[repl.clj:231-245](https://github.com/clojure/clojurescript/blob/r2719/src/clj/cljs/repl.clj#L231-L245)</ins>
 </pre>
 
 
@@ -69,9 +69,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[repl-env f]" "[repl-env f opts]"],
  :source {:code "(defn load-file\n  ([repl-env f] (load-file repl-env f nil))\n  ([repl-env f opts]\n    (if (:output-dir opts)\n      (let [src (if (util/url? f) f (io/resource f))\n            compiled (cljsc/compile src\n                       (assoc opts\n                         :output-file\n                         (cljsc/src-file->target-file src)))]\n        (-evaluate repl-env f 1 (cljsc/add-dep-string opts compiled))\n        (-evaluate repl-env f 1 (cljsc/src-file->goog-require src)))\n      (binding [ana/*cljs-ns* 'cljs.user]\n        (let [res (if (= \\/ (first f)) f (io/resource f))]\n          (assert res (str \"Can't find \" f \" in classpath\"))\n          (load-stream repl-env f res))))))",
           :repo "clojurescript",
-          :tag "r2665",
+          :tag "r2719",
           :filename "src/clj/cljs/repl.clj",
-          :lines [156 170]},
+          :lines [231 245]},
  :full-name "cljs.repl/load-file",
  :full-name-encode "cljs.repl_load-file",
  :history [["+" "0.0-927"]]}
