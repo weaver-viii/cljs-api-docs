@@ -5,6 +5,9 @@
 
 <td>function</td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1236"><img valign="middle" alt="[+] 0.0-1236" src="https://img.shields.io/badge/+-0.0--1236-lightgrey.svg"></a> </td>
+<td>
+[<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.core.reducers/reduce</samp>](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core.reducers/reduce)
+</td>
 </tr>
 </table>
 
@@ -36,16 +39,18 @@ Source code:
   ([f init coll]
      (if (map? coll)
        (-kv-reduce coll f init)
-       (-reduce coll f init))))
+       (if-not (nil? coll)
+         (-reduce coll f init)
+         init))))
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:20-28](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/clojure/core/reducers.cljs#L20-L28)</ins>
+                └── <ins>[reducers.cljs:20-30](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/clojure/core/reducers.cljs#L20-L30)</ins>
 </pre>
 
 
@@ -68,12 +73,13 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1236"]],
  :type "function",
  :full-name-encode "clojure.core.reducers_reduce",
- :source {:code "(defn reduce\n  ([f coll] (reduce f (f) coll))\n  ([f init coll]\n     (if (map? coll)\n       (-kv-reduce coll f init)\n       (-reduce coll f init))))",
+ :source {:code "(defn reduce\n  ([f coll] (reduce f (f) coll))\n  ([f init coll]\n     (if (map? coll)\n       (-kv-reduce coll f init)\n       (if-not (nil? coll)\n         (-reduce coll f init)\n         init))))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/clojure/core/reducers.cljs",
-          :lines [20 28]},
+          :lines [20 30]},
  :full-name "clojure.core.reducers/reduce",
+ :clj-symbol "clojure.core.reducers/reduce",
  :docstring "Like core/reduce except:\n  When init is not provided, (f) is used.\n  Maps are reduced with reduce-kv"}
 
 ```

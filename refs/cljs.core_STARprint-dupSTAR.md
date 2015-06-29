@@ -23,11 +23,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6345](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L6345)</ins>
+            └── <ins>[core.cljs:6363](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L6363)</ins>
 </pre>
 
 
@@ -49,9 +49,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def *print-dup* false)",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6345]},
+          :lines [6363]},
  :full-name "cljs.core/*print-dup*",
  :full-name-encode "cljs.core_STARprint-dupSTAR",
  :clj-symbol "clojure.core/*print-dup*",

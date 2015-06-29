@@ -68,9 +68,31 @@ Source code:
   [& sigs]
     (let [name (if (symbol? (first sigs)) (first sigs) nil)
           sigs (if name (next sigs) sigs)
-          sigs (if (vector? (first sigs)) (list sigs) sigs)
+          sigs (if (vector? (first sigs)) 
+                 (list sigs) 
+                 (if (seq? (first sigs))
+                   sigs
+                   ;; Assume single arity syntax
+                   (throw (IllegalArgumentException. 
+                            (if (seq sigs)
+                              (str "Parameter declaration " 
+                                   (first sigs)
+                                   " should be a vector")
+                              (str "Parameter declaration missing"))))))
           psig (fn* [sig]
+                 ;; Ensure correct type before destructuring sig
+                 (when (not (seq? sig))
+                   (throw (IllegalArgumentException.
+                            (str "Invalid signature " sig
+                                 " should be a list"))))
                  (let [[params & body] sig
+                       _ (when (not (vector? params))
+                           (throw (IllegalArgumentException. 
+                                    (if (seq? (first sigs))
+                                      (str "Parameter declaration " params
+                                           " should be a vector")
+                                      (str "Invalid signature " sig
+                                           " should be a list")))))
                        conds (when (and (next body) (map? (first body))) 
                                            (first body))
                        body (if conds (next body) body)
@@ -98,11 +120,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.4.0
+clojure @ clojure-1.5.1
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:3989-4027](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L3989-L4027)</ins>
+            └── <ins>[core.clj:4067-4127](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/clj/clojure/core.clj#L4067-L4127)</ins>
 </pre>
 
 
@@ -118,11 +140,11 @@ clojure @ clojure-1.4.0
 ```
 
  <pre>
-clojure @ clojure-1.4.0
+clojure @ clojure-1.5.1
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:42-47](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L42-L47)</ins>
+            └── <ins>[core.clj:42-47](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/clj/clojure/core.clj#L42-L47)</ins>
 </pre>
 
 ---
@@ -147,14 +169,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "macro",
  :related ["cljs.core/defn" "cljs.core/defn-"],
  :full-name-encode "cljs.core_fn",
- :source {:code "(defmacro fn\n  [& sigs]\n    (let [name (if (symbol? (first sigs)) (first sigs) nil)\n          sigs (if name (next sigs) sigs)\n          sigs (if (vector? (first sigs)) (list sigs) sigs)\n          psig (fn* [sig]\n                 (let [[params & body] sig\n                       conds (when (and (next body) (map? (first body))) \n                                           (first body))\n                       body (if conds (next body) body)\n                       conds (or conds (meta params))\n                       pre (:pre conds)\n                       post (:post conds)                       \n                       body (if post\n                              `((let [~'% ~(if (< 1 (count body)) \n                                            `(do ~@body) \n                                            (first body))]\n                                 ~@(map (fn* [c] `(assert ~c)) post)\n                                 ~'%))\n                              body)\n                       body (if pre\n                              (concat (map (fn* [c] `(assert ~c)) pre) \n                                      body)\n                              body)]\n                   (maybe-destructured params body)))\n          new-sigs (map psig sigs)]\n      (with-meta\n        (if name\n          (list* 'fn* name new-sigs)\n          (cons 'fn* new-sigs))\n        (meta &form))))",
+ :source {:code "(defmacro fn\n  [& sigs]\n    (let [name (if (symbol? (first sigs)) (first sigs) nil)\n          sigs (if name (next sigs) sigs)\n          sigs (if (vector? (first sigs)) \n                 (list sigs) \n                 (if (seq? (first sigs))\n                   sigs\n                   ;; Assume single arity syntax\n                   (throw (IllegalArgumentException. \n                            (if (seq sigs)\n                              (str \"Parameter declaration \" \n                                   (first sigs)\n                                   \" should be a vector\")\n                              (str \"Parameter declaration missing\"))))))\n          psig (fn* [sig]\n                 ;; Ensure correct type before destructuring sig\n                 (when (not (seq? sig))\n                   (throw (IllegalArgumentException.\n                            (str \"Invalid signature \" sig\n                                 \" should be a list\"))))\n                 (let [[params & body] sig\n                       _ (when (not (vector? params))\n                           (throw (IllegalArgumentException. \n                                    (if (seq? (first sigs))\n                                      (str \"Parameter declaration \" params\n                                           \" should be a vector\")\n                                      (str \"Invalid signature \" sig\n                                           \" should be a list\")))))\n                       conds (when (and (next body) (map? (first body))) \n                                           (first body))\n                       body (if conds (next body) body)\n                       conds (or conds (meta params))\n                       pre (:pre conds)\n                       post (:post conds)                       \n                       body (if post\n                              `((let [~'% ~(if (< 1 (count body)) \n                                            `(do ~@body) \n                                            (first body))]\n                                 ~@(map (fn* [c] `(assert ~c)) post)\n                                 ~'%))\n                              body)\n                       body (if pre\n                              (concat (map (fn* [c] `(assert ~c)) pre) \n                                      body)\n                              body)]\n                   (maybe-destructured params body)))\n          new-sigs (map psig sigs)]\n      (with-meta\n        (if name\n          (list* 'fn* name new-sigs)\n          (cons 'fn* new-sigs))\n        (meta &form))))",
           :repo "clojure",
-          :tag "clojure-1.4.0",
+          :tag "clojure-1.5.1",
           :filename "src/clj/clojure/core.clj",
-          :lines [3989 4027]},
+          :lines [4067 4127]},
  :extra-sources ({:code "(def\n ^{:macro true\n   :added \"1.0\"}\n fn (fn* fn [&form &env & decl] \n         (.withMeta ^clojure.lang.IObj (cons 'fn* decl) \n                    (.meta ^clojure.lang.IMeta &form))))",
                   :repo "clojure",
-                  :tag "clojure-1.4.0",
+                  :tag "clojure-1.5.1",
                   :filename "src/clj/clojure/core.clj",
                   :lines [42 47]}),
  :full-name "cljs.core/fn",

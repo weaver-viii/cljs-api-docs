@@ -66,11 +66,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.4.0
+clojure @ clojure-1.5.1
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:4165-4168](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L4165-L4168)</ins>
+            └── <ins>[core.clj:4265-4268](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/clj/clojure/core.clj#L4265-L4268)</ins>
 </pre>
 
 
@@ -96,9 +96,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_comment",
  :source {:code "(defmacro comment\n  [& body])",
           :repo "clojure",
-          :tag "clojure-1.4.0",
+          :tag "clojure-1.5.1",
           :filename "src/clj/clojure/core.clj",
-          :lines [4165 4168]},
+          :lines [4265 4268]},
  :examples [{:id "482fd7",
              :content "```clj\n(comment 123)\n;;=> nil\n\n(comment\n  (foo 1 2 3)\n  (bar \"hello\"))\n;;=> nil\n```\n\nInner forms must still be syntactically correct:\n\n```clj\n(comment [1 2 3]])\n;; Error: Unmatched delimiter ]\n\n(comment a : b)\n;; Error: Invalid token :\n```"}],
  :full-name "cljs.core/comment",

@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:131-132](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L131-L132)</ins>
+            └── <ins>[core.cljs:150-151](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L150-L151)</ins>
 </pre>
 
 
@@ -57,9 +57,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_Fn",
  :source {:code "(defprotocol Fn\n  \"Marker protocol\")",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [131 132]},
+          :lines [150 151]},
  :full-name "cljs.core/Fn",
  :clj-symbol "clojure.lang/Fn",
  :docstring "Marker protocol"}

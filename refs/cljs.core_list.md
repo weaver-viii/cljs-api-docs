@@ -33,22 +33,28 @@ See Also:
 Source code:
 
 ```clj
-(defn list
-  ([] ())
-  ([x] (conj () x))
-  ([x y] (conj (list y) x))
-  ([x y z] (conj (list y z) x))
-  ([x y z & items]
-     (conj (conj (conj (reduce conj () (reverse items))
-                       z) y) x)))
+(defn list [& xs]
+  (let [arr (if (instance? IndexedSeq xs)
+              (.-arr xs)
+              (let [arr (array)]
+                (loop [^not-native xs xs]
+                  (if-not (nil? xs)
+                    (do
+                      (.push arr (-first xs))
+                      (recur (-next xs)))
+                    arr))))]
+    (loop [i (alength arr) ^not-native r ()]
+      (if (> i 0)
+        (recur (dec i) (-conj r (aget arr (dec i))))
+        r))))
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1692-1699](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L1692-L1699)</ins>
+            └── <ins>[core.cljs:1874-1887](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L1874-L1887)</ins>
 </pre>
 
 
@@ -73,11 +79,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/vector" "cljs.core/list?"],
  :full-name-encode "cljs.core_list",
- :source {:code "(defn list\n  ([] ())\n  ([x] (conj () x))\n  ([x y] (conj (list y) x))\n  ([x y z] (conj (list y z) x))\n  ([x y z & items]\n     (conj (conj (conj (reduce conj () (reverse items))\n                       z) y) x)))",
+ :source {:code "(defn list [& xs]\n  (let [arr (if (instance? IndexedSeq xs)\n              (.-arr xs)\n              (let [arr (array)]\n                (loop [^not-native xs xs]\n                  (if-not (nil? xs)\n                    (do\n                      (.push arr (-first xs))\n                      (recur (-next xs)))\n                    arr))))]\n    (loop [i (alength arr) ^not-native r ()]\n      (if (> i 0)\n        (recur (dec i) (-conj r (aget arr (dec i))))\n        r))))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1692 1699]},
+          :lines [1874 1887]},
  :full-name "cljs.core/list",
  :clj-symbol "clojure.core/list"}
 

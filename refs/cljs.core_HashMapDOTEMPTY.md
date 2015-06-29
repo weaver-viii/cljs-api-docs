@@ -1,10 +1,10 @@
-## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> cljs.core/HashMap.EMPTY
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> ~~cljs.core/HashMap.EMPTY~~
 
  <table border="1">
 <tr>
 
 <td>var</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1798"><img valign="middle" alt="[×] 0.0-1798" src="https://img.shields.io/badge/×-0.0--1798-red.svg"></a> </td>
 </tr>
 </table>
 
@@ -43,16 +43,17 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "HashMap.EMPTY",
- :type "var",
+ :history [["+" "0.0-927"] ["-" "0.0-1798"]],
  :parent-type "HashMap",
+ :type "var",
+ :full-name-encode "cljs.core_HashMapDOTEMPTY",
  :source {:code "(set! cljs.core.HashMap/EMPTY (HashMap. nil 0 (js-obj) 0))",
           :repo "clojurescript",
           :tag "r1586",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3830]},
  :full-name "cljs.core/HashMap.EMPTY",
- :full-name-encode "cljs.core_HashMapDOTEMPTY",
- :history [["+" "0.0-927"]]}
+ :removed {:in "0.0-1798", :last-seen "0.0-1586"}}
 
 ```
 

@@ -16,15 +16,15 @@
 Source code:
 
 ```clj
-(set! cljs.core.PersistentArrayMap/HASHMAP_THRESHOLD 16)
+(set! cljs.core.PersistentArrayMap/HASHMAP_THRESHOLD 8)
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3974](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L3974)</ins>
+            └── <ins>[core.cljs:3990](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L3990)</ins>
 </pre>
 
 
@@ -45,11 +45,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "PersistentArrayMap.HASHMAP_THRESHOLD",
  :type "var",
  :parent-type "PersistentArrayMap",
- :source {:code "(set! cljs.core.PersistentArrayMap/HASHMAP_THRESHOLD 16)",
+ :source {:code "(set! cljs.core.PersistentArrayMap/HASHMAP_THRESHOLD 8)",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3974]},
+          :lines [3990]},
  :full-name "cljs.core/PersistentArrayMap.HASHMAP_THRESHOLD",
  :full-name-encode "cljs.core_PersistentArrayMapDOTHASHMAP_THRESHOLD",
  :history [["+" "0.0-1211"]]}

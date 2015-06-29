@@ -22,15 +22,15 @@ Source code:
 
 ```clj
 (defn regexp? [o]
-  (js* "~{o} instanceof RegExp"))
+  (instance? js/RegExp o))
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6169-6170](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L6169-L6170)</ins>
+            └── <ins>[core.cljs:6163-6164](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L6163-L6164)</ins>
 </pre>
 
 
@@ -51,11 +51,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "regexp?",
  :type "function",
  :signature ["[o]"],
- :source {:code "(defn regexp? [o]\n  (js* \"~{o} instanceof RegExp\"))",
+ :source {:code "(defn regexp? [o]\n  (instance? js/RegExp o))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6169 6170]},
+          :lines [6163 6164]},
  :full-name "cljs.core/regexp?",
  :full-name-encode "cljs.core_regexpQMARK",
  :history [["+" "0.0-1424"]]}

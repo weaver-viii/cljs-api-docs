@@ -41,17 +41,17 @@ Source code:
 ```clj
 (defn js-obj
   ([]
-     (js* "{}"))
+     (cljs.core/js-obj))
   ([& keyvals]
      (apply gobject/create keyvals)))
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:973-977](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L973-L977)</ins>
+            └── <ins>[core.cljs:1043-1047](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L1043-L1047)</ins>
 </pre>
 
 
@@ -69,11 +69,11 @@ clojurescript @ r1586
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:994-1001](https://github.com/clojure/clojurescript/blob/r1586/src/clj/cljs/core.clj#L994-L1001)</ins>
+            └── <ins>[core.clj:1163-1170](https://github.com/clojure/clojurescript/blob/r1798/src/clj/cljs/core.clj#L1163-L1170)</ins>
 </pre>
 
 ---
@@ -97,16 +97,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/array"],
  :full-name-encode "cljs.core_js-obj",
- :source {:code "(defn js-obj\n  ([]\n     (js* \"{}\"))\n  ([& keyvals]\n     (apply gobject/create keyvals)))",
+ :source {:code "(defn js-obj\n  ([]\n     (cljs.core/js-obj))\n  ([& keyvals]\n     (apply gobject/create keyvals)))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [973 977]},
+          :lines [1043 1047]},
  :extra-sources ({:code "(defmacro js-obj [& rest]\n  (let [kvs-str (->> (repeat \"~{}:~{}\")\n                     (take (quot (count rest) 2))\n                     (interpose \",\")\n                     (apply core/str))]\n    (concat\n     (list 'js* (core/str \"{\" kvs-str \"}\"))\n     rest)))",
                   :repo "clojurescript",
-                  :tag "r1586",
+                  :tag "r1798",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [994 1001]}),
+                  :lines [1163 1170]}),
  :examples [{:id "657cd7",
              :content "```clj\n(js-obj \"foo\" 1 \"bar\" 2)\n;;=> #js {:foo 1, :bar 2}\n```"}],
  :full-name "cljs.core/js-obj"}

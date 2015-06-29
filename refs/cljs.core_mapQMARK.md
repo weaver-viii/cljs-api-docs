@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:958-963](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L958-L963)</ins>
+            └── <ins>[core.cljs:1024-1029](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L1024-L1029)</ins>
 </pre>
 
 
@@ -78,9 +78,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_mapQMARK",
  :source {:code "(defn ^boolean map?\n  [x]\n  (if (nil? x)\n    false\n    (satisfies? IMap x)))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [958 963]},
+          :lines [1024 1029]},
  :full-name "cljs.core/map?",
  :clj-symbol "clojure.core/map?",
  :docstring "Return true if x satisfies IMap"}

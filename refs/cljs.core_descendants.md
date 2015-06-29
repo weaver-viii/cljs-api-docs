@@ -37,16 +37,16 @@ Source code:
 
 ```clj
 (defn descendants
-  ([tag] (descendants @global-hierarchy tag))
+  ([tag] (descendants @(get-global-hierarchy) tag))
   ([h tag] (not-empty (get (:descendants h) tag))))
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7066-7073](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L7066-L7073)</ins>
+            └── <ins>[core.cljs:6887-6894](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L6887-L6894)</ins>
 </pre>
 
 
@@ -69,11 +69,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.core_descendants",
- :source {:code "(defn descendants\n  ([tag] (descendants @global-hierarchy tag))\n  ([h tag] (not-empty (get (:descendants h) tag))))",
+ :source {:code "(defn descendants\n  ([tag] (descendants @(get-global-hierarchy) tag))\n  ([h tag] (not-empty (get (:descendants h) tag))))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7066 7073]},
+          :lines [6887 6894]},
  :full-name "cljs.core/descendants",
  :clj-symbol "clojure.core/descendants",
  :docstring "Returns the immediate and indirect children of tag, through a\nrelationship established via derive. h must be a hierarchy obtained\nfrom make-hierarchy, if not supplied defaults to the global\nhierarchy. Note: does not work on JavaScript type inheritance\nrelationships."}

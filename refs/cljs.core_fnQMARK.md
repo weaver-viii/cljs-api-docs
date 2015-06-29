@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1049-1050](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L1049-L1050)</ins>
+            └── <ins>[core.cljs:1113-1114](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L1113-L1114)</ins>
 </pre>
 
 
@@ -69,9 +69,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_fnQMARK",
  :source {:code "(defn ^boolean fn? [f]\n  (or ^boolean (goog/isFunction f) (satisfies? Fn f)))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1049 1050]},
+          :lines [1113 1114]},
  :full-name "cljs.core/fn?",
  :clj-symbol "clojure.core/fn?"}
 

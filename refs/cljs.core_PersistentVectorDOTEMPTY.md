@@ -19,15 +19,16 @@
 Source code:
 
 ```clj
-(set! cljs.core.PersistentVector/EMPTY (PersistentVector. nil 0 5 cljs.core.PersistentVector/EMPTY_NODE (array) 0))
+(set! cljs.core.PersistentVector/EMPTY
+  (PersistentVector. nil 0 5 cljs.core.PersistentVector/EMPTY_NODE (array) 0))
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3091](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L3091)</ins>
+            └── <ins>[core.cljs:3189-3190](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L3189-L3190)</ins>
 </pre>
 
 
@@ -50,11 +51,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "PersistentVector",
  :type "var",
  :full-name-encode "cljs.core_PersistentVectorDOTEMPTY",
- :source {:code "(set! cljs.core.PersistentVector/EMPTY (PersistentVector. nil 0 5 cljs.core.PersistentVector/EMPTY_NODE (array) 0))",
+ :source {:code "(set! cljs.core.PersistentVector/EMPTY\n  (PersistentVector. nil 0 5 cljs.core.PersistentVector/EMPTY_NODE (array) 0))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3091]},
+          :lines [3189 3190]},
  :full-name "cljs.core/PersistentVector.EMPTY",
  :clj-symbol "clojure.lang/PersistentVector.EMPTY"}
 

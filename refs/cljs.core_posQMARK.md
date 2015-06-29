@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1438-1440](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L1438-L1440)</ins>
+            └── <ins>[core.cljs:1638-1640](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L1638-L1640)</ins>
 </pre>
 
 
@@ -59,11 +59,11 @@ clojurescript @ r1586
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:277-278](https://github.com/clojure/clojurescript/blob/r1586/src/clj/cljs/core.clj#L277-L278)</ins>
+            └── <ins>[core.clj:378-379](https://github.com/clojure/clojurescript/blob/r1798/src/clj/cljs/core.clj#L378-L379)</ins>
 </pre>
 
 ---
@@ -90,14 +90,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_posQMARK",
  :source {:code "(defn ^boolean pos?\n  [n] (cljs.core/pos? n))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1438 1440]},
+          :lines [1638 1640]},
  :extra-sources ({:code "(defmacro pos? [x]\n  `(> ~x 0))",
                   :repo "clojurescript",
-                  :tag "r1586",
+                  :tag "r1798",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [277 278]}),
+                  :lines [378 379]}),
  :full-name "cljs.core/pos?",
  :clj-symbol "clojure.core/pos?",
  :docstring "Returns true if num is greater than zero, else false"}

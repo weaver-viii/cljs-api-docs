@@ -62,11 +62,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.4.0
+clojure @ clojure-1.5.1
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:535-548](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L535-L548)</ins>
+            └── <ins>[core.clj:551-564](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/clj/clojure/core.clj#L551-L564)</ins>
 </pre>
 
 
@@ -93,9 +93,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_cond",
  :source {:code "(defmacro cond\n  [& clauses]\n    (when clauses\n      (list 'if (first clauses)\n            (if (next clauses)\n                (second clauses)\n                (throw (IllegalArgumentException.\n                         \"cond requires an even number of forms\")))\n            (cons 'clojure.core/cond (next (next clauses))))))",
           :repo "clojure",
-          :tag "clojure-1.4.0",
+          :tag "clojure-1.5.1",
           :filename "src/clj/clojure/core.clj",
-          :lines [535 548]},
+          :lines [551 564]},
  :full-name "cljs.core/cond",
  :clj-symbol "clojure.core/cond",
  :docstring "Takes a set of test/expr pairs. It evaluates each test one at a\ntime.  If a test returns logical true, cond evaluates and returns\nthe value of the corresponding expr and doesn't evaluate any of the\nother tests or exprs. (cond) returns nil."}

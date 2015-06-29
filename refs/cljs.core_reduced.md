@@ -5,6 +5,9 @@
 
 <td>function</td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1211"><img valign="middle" alt="[+] 0.0-1211" src="https://img.shields.io/badge/+-0.0--1211-lightgrey.svg"></a> </td>
+<td>
+[<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.core/reduced</samp>](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/reduced)
+</td>
 </tr>
 </table>
 
@@ -32,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:496-499](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L496-L499)</ins>
+            └── <ins>[core.cljs:530-533](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L530-L533)</ins>
 </pre>
 
 
@@ -61,10 +64,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_reduced",
  :source {:code "(defn reduced\n  [x]\n  (Reduced. x))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [496 499]},
+          :lines [530 533]},
  :full-name "cljs.core/reduced",
+ :clj-symbol "clojure.core/reduced",
  :docstring "Wraps x in a way such that a reduce will terminate with the value x"}
 
 ```

@@ -33,17 +33,32 @@ Source code:
 
 ```clj
 (defn ^boolean instance? [t o]
-  (js* "(~{o} instanceof ~{t})"))
+  (cljs.core/instance? t o))
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:375-376](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L375-L376)</ins>
+            └── <ins>[core.cljs:447-448](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L447-L448)</ins>
 </pre>
 
+
+---
+
+```clj
+(defmacro instance? [t o]
+  (bool-expr (list 'js* "(~{} instanceof ~{})" o t)))
+```
+
+ <pre>
+clojurescript @ r1798
+└── src
+    └── clj
+        └── cljs
+            └── <ins>[core.clj:245-246](https://github.com/clojure/clojurescript/blob/r1798/src/clj/cljs/core.clj#L245-L246)</ins>
+</pre>
 
 ---
 
@@ -67,11 +82,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/type"],
  :full-name-encode "cljs.core_instanceQMARK",
- :source {:code "(defn ^boolean instance? [t o]\n  (js* \"(~{o} instanceof ~{t})\"))",
+ :source {:code "(defn ^boolean instance? [t o]\n  (cljs.core/instance? t o))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [375 376]},
+          :lines [447 448]},
+ :extra-sources ({:code "(defmacro instance? [t o]\n  (bool-expr (list 'js* \"(~{} instanceof ~{})\" o t)))",
+                  :repo "clojurescript",
+                  :tag "r1798",
+                  :filename "src/clj/cljs/core.clj",
+                  :lines [245 246]}),
  :full-name "cljs.core/instance?",
  :clj-symbol "clojure.core/instance?"}
 

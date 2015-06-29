@@ -1,10 +1,10 @@
-## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> cljs.core/Vector.fromArray
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> ~~cljs.core/Vector.fromArray~~
 
  <table border="1">
 <tr>
 
 <td>function</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1798"><img valign="middle" alt="[×] 0.0-1798" src="https://img.shields.io/badge/×-0.0--1798-red.svg"></a> </td>
 </tr>
 </table>
 
@@ -49,7 +49,7 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "cljs.core",
  :name "Vector.fromArray",
  :signature ["[xs]"],
- :history [["+" "0.0-927"]],
+ :history [["+" "0.0-927"] ["-" "0.0-1798"]],
  :parent-type "Vector",
  :type "function",
  :full-name-encode "cljs.core_VectorDOTfromArray",
@@ -58,7 +58,8 @@ __Meta__ - To retrieve the API data for this symbol:
           :tag "r1586",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2861]},
- :full-name "cljs.core/Vector.fromArray"}
+ :full-name "cljs.core/Vector.fromArray",
+ :removed {:in "0.0-1798", :last-seen "0.0-1586"}}
 
 ```
 

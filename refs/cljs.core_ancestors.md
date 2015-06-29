@@ -36,16 +36,16 @@ Source code:
 
 ```clj
 (defn ancestors
-  ([tag] (ancestors @global-hierarchy tag))
+  ([tag] (ancestors @(get-global-hierarchy) tag))
   ([h tag] (not-empty (get (:ancestors h) tag))))
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7058-7064](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L7058-L7064)</ins>
+            └── <ins>[core.cljs:6879-6885](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L6879-L6885)</ins>
 </pre>
 
 
@@ -68,11 +68,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.core_ancestors",
- :source {:code "(defn ancestors\n  ([tag] (ancestors @global-hierarchy tag))\n  ([h tag] (not-empty (get (:ancestors h) tag))))",
+ :source {:code "(defn ancestors\n  ([tag] (ancestors @(get-global-hierarchy) tag))\n  ([h tag] (not-empty (get (:ancestors h) tag))))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7058 7064]},
+          :lines [6879 6885]},
  :full-name "cljs.core/ancestors",
  :clj-symbol "clojure.core/ancestors",
  :docstring "Returns the immediate and indirect parents of tag, either via a JavaScript type\ninheritance relationship or a relationship established via derive. h\nmust be a hierarchy obtained from make-hierarchy, if not supplied\ndefaults to the global hierarchy"}

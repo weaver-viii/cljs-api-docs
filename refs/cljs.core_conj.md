@@ -60,19 +60,21 @@ Source code:
 ```clj
 (defn conj
   ([coll x]
-     (-conj coll x))
+    (if-not (nil? coll)
+      (-conj coll x)
+      (list x)))
   ([coll x & xs]
-     (if xs
-       (recur (conj coll x) (first xs) (next xs))
-       (conj coll x))))
+    (if xs
+      (recur (conj coll x) (first xs) (next xs))
+      (conj coll x))))
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:764-773](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L764-L773)</ins>
+            └── <ins>[core.cljs:761-772](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L761-L772)</ins>
 </pre>
 
 
@@ -100,11 +102,11 @@ __Meta__ - To retrieve the API data for this symbol:
            "cljs.core/peek"
            "cljs.core/pop"],
  :full-name-encode "cljs.core_conj",
- :source {:code "(defn conj\n  ([coll x]\n     (-conj coll x))\n  ([coll x & xs]\n     (if xs\n       (recur (conj coll x) (first xs) (next xs))\n       (conj coll x))))",
+ :source {:code "(defn conj\n  ([coll x]\n    (if-not (nil? coll)\n      (-conj coll x)\n      (list x)))\n  ([coll x & xs]\n    (if xs\n      (recur (conj coll x) (first xs) (next xs))\n      (conj coll x))))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [764 773]},
+          :lines [761 772]},
  :full-name "cljs.core/conj",
  :clj-symbol "clojure.core/conj",
  :docstring "conj[oin]. Returns a new collection with the xs\n'added'. (conj nil item) returns (item).  The 'addition' may\nhappen at different 'places' depending on the concrete type."}

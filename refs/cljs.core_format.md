@@ -40,11 +40,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1499-1507](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L1499-L1507)</ins>
+            └── <ins>[core.cljs:1698-1706](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L1698-L1706)</ins>
 </pre>
 
 
@@ -69,9 +69,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_format",
  :source {:code "(defn format\n  [fmt & args]\n  (let [args (map (fn [x]\n                    (if (or (keyword? x) (symbol? x))\n                      (str x)\n                      x))\n                args)]\n    (apply gstring/format fmt args)))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1499 1507]},
+          :lines [1698 1706]},
  :full-name "cljs.core/format",
  :clj-symbol "clojure.core/format",
  :docstring "Formats a string using goog.string.format."}

@@ -105,11 +105,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.4.0
+clojure @ clojure-1.5.1
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:778-788](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L778-L788)</ins>
+            └── <ins>[core.clj:794-804](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/clj/clojure/core.clj#L794-L804)</ins>
 </pre>
 
 
@@ -136,9 +136,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_and",
  :source {:code "(defmacro and\n  ([] true)\n  ([x] x)\n  ([x & next]\n   `(let [and# ~x]\n      (if and# (and ~@next) and#))))",
           :repo "clojure",
-          :tag "clojure-1.4.0",
+          :tag "clojure-1.5.1",
           :filename "src/clj/clojure/core.clj",
-          :lines [778 788]},
+          :lines [794 804]},
  :examples [{:id "a39a73",
              :content "```clj\n(and)\n;;=> true\n\n(and false)\n;;=> false\n\n(and true)\n;;=> true\n\n(and true true)\n;;=> true\n\n(and true false)\n;;=> false\n\n(and false false)\n;;=> false\n```"}
             {:id "766638",

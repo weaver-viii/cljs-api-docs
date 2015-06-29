@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:72-76](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L72-L76)</ins>
+            └── <ins>[core.cljs:81-85](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L81-L85)</ins>
 </pre>
 
 
@@ -58,9 +58,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def\n  ^{:doc \"When compiled for a command-line target, whatever\n  function *main-fn* is set to will be called with the command-line\n  argv as arguments\"}\n  *main-cli-fn* nil)",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [72 76]},
+          :lines [81 85]},
  :full-name "cljs.core/*main-cli-fn*",
  :full-name-encode "cljs.core_STARmain-cli-fnSTAR",
  :history [["+" "0.0-927"]]}

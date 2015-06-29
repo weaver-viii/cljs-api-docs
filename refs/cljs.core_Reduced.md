@@ -5,6 +5,9 @@
 
 <td>type</td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1211"><img valign="middle" alt="[+] 0.0-1211" src="https://img.shields.io/badge/+-0.0--1211-lightgrey.svg"></a> </td>
+<td>
+[<img height="24px" valign="middle" src="http://i.imgur.com/1GjPKvB.png"> <samp>clojure.lang/Reduced</samp>](https://github.com/clojure/clojure/blob//src/jvm/clojure/lang/Reduced.java)
+</td>
 </tr>
 </table>
 
@@ -27,11 +30,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:492-494](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L492-L494)</ins>
+            └── <ins>[core.cljs:526-528](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L526-L528)</ins>
 </pre>
 
 
@@ -50,16 +53,17 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "Reduced",
- :type "type",
  :signature ["[val]"],
+ :history [["+" "0.0-1211"]],
+ :type "type",
+ :full-name-encode "cljs.core_Reduced",
  :source {:code "(deftype Reduced [val]\n  IDeref\n  (-deref [o] val))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [492 494]},
+          :lines [526 528]},
  :full-name "cljs.core/Reduced",
- :full-name-encode "cljs.core_Reduced",
- :history [["+" "0.0-1211"]]}
+ :clj-symbol "clojure.lang/Reduced"}
 
 ```
 

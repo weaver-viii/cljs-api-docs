@@ -48,7 +48,6 @@ Source code:
 (defn str
   ([] "")
   ([x] (cond
-        (symbol? x) (. x (substring 2 (alength x)))
         (keyword? x) (str* ":" (. x (substring 2 (alength x))))
         (nil? x) ""
         :else (. x (toString))))
@@ -61,11 +60,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1474-1489](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L1474-L1489)</ins>
+            └── <ins>[core.cljs:1674-1688](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L1674-L1688)</ins>
 </pre>
 
 
@@ -80,11 +79,11 @@ clojurescript @ r1586
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:175-179](https://github.com/clojure/clojurescript/blob/r1586/src/clj/cljs/core.clj#L175-L179)</ins>
+            └── <ins>[core.clj:187-191](https://github.com/clojure/clojurescript/blob/r1798/src/clj/cljs/core.clj#L187-L191)</ins>
 </pre>
 
 ---
@@ -107,16 +106,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.core_str",
- :source {:code "(defn str\n  ([] \"\")\n  ([x] (cond\n        (symbol? x) (. x (substring 2 (alength x)))\n        (keyword? x) (str* \":\" (. x (substring 2 (alength x))))\n        (nil? x) \"\"\n        :else (. x (toString))))\n  ([x & ys]\n     ((fn [sb more]\n        (if more\n          (recur (. sb  (append (str (first more)))) (next more))\n          (str* sb)))\n      (gstring/StringBuffer. (str x)) ys)))",
+ :source {:code "(defn str\n  ([] \"\")\n  ([x] (cond\n        (keyword? x) (str* \":\" (. x (substring 2 (alength x))))\n        (nil? x) \"\"\n        :else (. x (toString))))\n  ([x & ys]\n     ((fn [sb more]\n        (if more\n          (recur (. sb  (append (str (first more)))) (next more))\n          (str* sb)))\n      (gstring/StringBuffer. (str x)) ys)))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1474 1489]},
+          :lines [1674 1688]},
  :extra-sources ({:code "(defmacro str [& xs]\n  (let [strs (->> (repeat (count xs) \"cljs.core.str(~{})\")\n                  (interpose \",\")\n                  (apply core/str))]\n   (concat (list 'js* (core/str \"[\" strs \"].join('')\")) xs)))",
                   :repo "clojurescript",
-                  :tag "r1586",
+                  :tag "r1798",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [175 179]}),
+                  :lines [187 191]}),
  :full-name "cljs.core/str",
  :clj-symbol "clojure.core/str",
  :docstring "With no args, returns the empty string. With one arg x, returns\nx.toString().  (str nil) returns the empty string. With more than\none arg, returns the concatenation of the str values of the args."}

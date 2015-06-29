@@ -25,6 +25,8 @@ Source code:
         [meth-env bes]
         (reduce (fn [[{:keys [locals] :as env} bes] n]
                   (let [be {:name   n
+                            :line (get-line n env)
+                            :column (get-col n env)
                             :tag    (-> n meta :tag)
                             :local  true
                             :shadow (locals n)}]
@@ -42,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:418-440](https://github.com/clojure/clojurescript/blob/r1586/src/clj/cljs/analyzer.clj#L418-L440)</ins>
+            └── <ins>[analyzer.clj:444-468](https://github.com/clojure/clojurescript/blob/r1798/src/clj/cljs/analyzer.clj#L444-L468)</ins>
 </pre>
 
 
@@ -66,11 +68,11 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "special",
  :name "letfn*",
  :type "special form",
- :source {:code "(defmethod parse 'letfn*\n  [op env [_ bindings & exprs :as form] name]\n  (assert (and (vector? bindings) (even? (count bindings))) \"bindings must be vector of even number of elements\")\n  (let [n->fexpr (into {} (map (juxt first second) (partition 2 bindings)))\n        names    (keys n->fexpr)\n        context  (:context env)\n        [meth-env bes]\n        (reduce (fn [[{:keys [locals] :as env} bes] n]\n                  (let [be {:name   n\n                            :tag    (-> n meta :tag)\n                            :local  true\n                            :shadow (locals n)}]\n                    [(assoc-in env [:locals n] be)\n                     (conj bes be)]))\n                [env []] names)\n        meth-env (assoc meth-env :context :expr)\n        bes (vec (map (fn [{:keys [name shadow] :as be}]\n                        (let [env (assoc-in meth-env [:locals name] shadow)]\n                          (assoc be :init (analyze env (n->fexpr name)))))\n                      bes))\n        expr (analyze (assoc meth-env :context (if (= :expr context) :return context)) `(do ~@exprs))]\n    {:env env :op :letfn :bindings bes :expr expr :form form\n     :children (conj (vec (map :init bes)) expr)}))",
+ :source {:code "(defmethod parse 'letfn*\n  [op env [_ bindings & exprs :as form] name]\n  (assert (and (vector? bindings) (even? (count bindings))) \"bindings must be vector of even number of elements\")\n  (let [n->fexpr (into {} (map (juxt first second) (partition 2 bindings)))\n        names    (keys n->fexpr)\n        context  (:context env)\n        [meth-env bes]\n        (reduce (fn [[{:keys [locals] :as env} bes] n]\n                  (let [be {:name   n\n                            :line (get-line n env)\n                            :column (get-col n env)\n                            :tag    (-> n meta :tag)\n                            :local  true\n                            :shadow (locals n)}]\n                    [(assoc-in env [:locals n] be)\n                     (conj bes be)]))\n                [env []] names)\n        meth-env (assoc meth-env :context :expr)\n        bes (vec (map (fn [{:keys [name shadow] :as be}]\n                        (let [env (assoc-in meth-env [:locals name] shadow)]\n                          (assoc be :init (analyze env (n->fexpr name)))))\n                      bes))\n        expr (analyze (assoc meth-env :context (if (= :expr context) :return context)) `(do ~@exprs))]\n    {:env env :op :letfn :bindings bes :expr expr :form form\n     :children (conj (vec (map :init bes)) expr)}))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [418 440]},
+          :lines [444 468]},
  :full-name "special/letfn*",
  :full-name-encode "special_letfnSTAR",
  :history [["+" "0.0-1236"]]}

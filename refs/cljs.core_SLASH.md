@@ -65,16 +65,16 @@ Source code:
 ```clj
 (defn /
   ([x] (/ 1 x))
-  ([x y] (js* "(~{x} / ~{y})")) ;; FIXME: waiting on cljs.core//
+  ([x y] (cljs.core/divide x y)) ;; FIXME: waiting on cljs.core//
   ([x y & more] (reduce / (/ x y) more)))
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1247-1252](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L1247-L1252)</ins>
+            └── <ins>[core.cljs:1336-1341](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L1336-L1341)</ins>
 </pre>
 
 
@@ -88,11 +88,11 @@ clojurescript @ r1586
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:238-241](https://github.com/clojure/clojurescript/blob/r1586/src/clj/cljs/core.clj#L238-L241)</ins>
+            └── <ins>[core.clj:334-337](https://github.com/clojure/clojurescript/blob/r1798/src/clj/cljs/core.clj#L334-L337)</ins>
 </pre>
 
 ---
@@ -116,16 +116,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/*" "cljs.core/quot"],
  :full-name-encode "cljs.core_SLASH",
- :source {:code "(defn /\n  ([x] (/ 1 x))\n  ([x y] (js* \"(~{x} / ~{y})\")) ;; FIXME: waiting on cljs.core//\n  ([x y & more] (reduce / (/ x y) more)))",
+ :source {:code "(defn /\n  ([x] (/ 1 x))\n  ([x y] (cljs.core/divide x y)) ;; FIXME: waiting on cljs.core//\n  ([x y & more] (reduce / (/ x y) more)))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1247 1252]},
+          :lines [1336 1341]},
  :extra-sources ({:code "(defmacro /\n  ([x] `(/ 1 ~x))\n  ([x y] (list 'js* \"(~{} / ~{})\" x y))\n  ([x y & more] `(/ (/ ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r1586",
+                  :tag "r1798",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [238 241]}),
+                  :lines [334 337]}),
  :examples [{:id "824bb7",
              :content "```clj\n(/ 6 3)\n;;=> 2\n\n(/ 6 3 2)\n;;=> 1\n\n(/ 10)\n;;=> 0.1\n\n(/ 1 3)\n;;=> 0.3333333333333333\n```"}],
  :full-name "cljs.core//",

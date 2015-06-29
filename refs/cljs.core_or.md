@@ -105,11 +105,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.4.0
+clojure @ clojure-1.5.1
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:790-800](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L790-L800)</ins>
+            └── <ins>[core.clj:806-816](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/clj/clojure/core.clj#L806-L816)</ins>
 </pre>
 
 
@@ -136,9 +136,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_or",
  :source {:code "(defmacro or\n  ([] nil)\n  ([x] x)\n  ([x & next]\n      `(let [or# ~x]\n         (if or# or# (or ~@next)))))",
           :repo "clojure",
-          :tag "clojure-1.4.0",
+          :tag "clojure-1.5.1",
           :filename "src/clj/clojure/core.clj",
-          :lines [790 800]},
+          :lines [806 816]},
  :examples [{:id "d50433",
              :content "```clj\n(or)\n;;=> nil\n\n(or false)\n;;=> false\n\n(or true)\n;;=> true\n\n(or true true)\n;;=> true\n\n(or true false)\n;;=> true\n\n(or false false)\n;;=> false\n```"}
             {:id "62f291",

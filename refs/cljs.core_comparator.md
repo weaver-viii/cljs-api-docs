@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7353-7357](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L7353-L7357)</ins>
+            └── <ins>[core.cljs:7166-7170](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L7166-L7170)</ins>
 </pre>
 
 
@@ -65,9 +65,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_comparator",
  :source {:code "(defn comparator\n  [pred]\n  (fn [x y]\n    (cond (pred x y) -1 (pred y x) 1 :else 0)))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7353 7357]},
+          :lines [7166 7170]},
  :full-name "cljs.core/comparator",
  :clj-symbol "clojure.core/comparator",
  :docstring "Returns an JavaScript compatible comparator based upon pred."}

@@ -31,19 +31,21 @@ Source code:
 ```clj
 (defn namespace
   [x]
-  (if (or (keyword? x) (symbol? x))
-    (let [i (.lastIndexOf x "/" (- (alength x) 2))]
-      (when (> i -1)
-        (subs x 2 i)))
-    (throw (js/Error. (str "Doesn't support namespace: " x)))))
+  (if (satisfies? INamed x false)
+    (-namespace ^not-native x)
+    (if (keyword? x)
+      (let [i (.lastIndexOf x "/" (- (alength x) 2))]
+        (when (> i -1)
+          (subs x 2 i)))
+      (throw (js/Error. (str "Doesn't support namespace: " x))))))
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5888-5895](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L5888-L5895)</ins>
+            └── <ins>[core.cljs:5884-5893](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L5884-L5893)</ins>
 </pre>
 
 
@@ -66,11 +68,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.core_namespace",
- :source {:code "(defn namespace\n  [x]\n  (if (or (keyword? x) (symbol? x))\n    (let [i (.lastIndexOf x \"/\" (- (alength x) 2))]\n      (when (> i -1)\n        (subs x 2 i)))\n    (throw (js/Error. (str \"Doesn't support namespace: \" x)))))",
+ :source {:code "(defn namespace\n  [x]\n  (if (satisfies? INamed x false)\n    (-namespace ^not-native x)\n    (if (keyword? x)\n      (let [i (.lastIndexOf x \"/\" (- (alength x) 2))]\n        (when (> i -1)\n          (subs x 2 i)))\n      (throw (js/Error. (str \"Doesn't support namespace: \" x))))))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [5888 5895]},
+          :lines [5884 5893]},
  :full-name "cljs.core/namespace",
  :clj-symbol "clojure.core/namespace",
  :docstring "Returns the namespace String of a symbol or keyword, or nil if not present."}

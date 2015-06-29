@@ -23,30 +23,28 @@
 
 
 
-Source docstring:
-
-```
-Returns a Symbol with the given namespace and name.
-```
 
 Source code:
 
 ```clj
 (defn symbol
   ([name]
-     (cond
-      (symbol? name) name
-      (keyword? name) (str* "\uFDD1" "'" (subs name 2))
-      :else (str* "\uFDD1" "'" name)))
-  ([ns name] (symbol (str* ns "/" name))))
+     (if (symbol? name)
+       name
+       (symbol nil name)))
+  ([ns name]
+     (let [sym-str (if-not (nil? ns)
+                     (str ns "/" name)
+                     name)]
+       (Symbol. ns name sym-str -1 nil))))
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1509-1516](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L1509-L1516)</ins>
+            └── <ins>[core.cljs:363-372](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L363-L372)</ins>
 </pre>
 
 
@@ -69,14 +67,13 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.core_symbol",
- :source {:code "(defn symbol\n  ([name]\n     (cond\n      (symbol? name) name\n      (keyword? name) (str* \"\\uFDD1\" \"'\" (subs name 2))\n      :else (str* \"\\uFDD1\" \"'\" name)))\n  ([ns name] (symbol (str* ns \"/\" name))))",
+ :source {:code "(defn symbol\n  ([name]\n     (if (symbol? name)\n       name\n       (symbol nil name)))\n  ([ns name]\n     (let [sym-str (if-not (nil? ns)\n                     (str ns \"/\" name)\n                     name)]\n       (Symbol. ns name sym-str -1 nil))))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1509 1516]},
+          :lines [363 372]},
  :full-name "cljs.core/symbol",
- :clj-symbol "clojure.core/symbol",
- :docstring "Returns a Symbol with the given namespace and name."}
+ :clj-symbol "clojure.core/symbol"}
 
 ```
 

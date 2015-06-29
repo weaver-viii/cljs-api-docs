@@ -16,15 +16,15 @@
 Source code:
 
 ```clj
-(set! cljs.core.PersistentVector/EMPTY_NODE (pv-fresh-node nil))
+(set! cljs.core.PersistentVector/EMPTY_NODE (VectorNode. nil (make-array 32)))
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3090](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L3090)</ins>
+            └── <ins>[core.cljs:3187](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L3187)</ins>
 </pre>
 
 
@@ -45,11 +45,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "PersistentVector.EMPTY_NODE",
  :type "var",
  :parent-type "PersistentVector",
- :source {:code "(set! cljs.core.PersistentVector/EMPTY_NODE (pv-fresh-node nil))",
+ :source {:code "(set! cljs.core.PersistentVector/EMPTY_NODE (VectorNode. nil (make-array 32)))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3090]},
+          :lines [3187]},
  :full-name "cljs.core/PersistentVector.EMPTY_NODE",
  :full-name-encode "cljs.core_PersistentVectorDOTEMPTY_NODE",
  :history [["+" "0.0-1006"]]}

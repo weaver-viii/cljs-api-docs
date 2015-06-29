@@ -63,8 +63,8 @@ Source code:
 (defn ^seq rest
   [coll]
   (if-not (nil? coll)
-    (if (satisfies? ISeq coll)
-      (-rest coll)
+    (if (satisfies? ISeq coll false)
+      (-rest ^not-native coll)
       (let [s (seq coll)]
         (if-not (nil? s)
           (-rest s)
@@ -73,11 +73,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1586
+clojurescript @ r1798
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:335-346](https://github.com/clojure/clojurescript/blob/r1586/src/cljs/cljs/core.cljs#L335-L346)</ins>
+            └── <ins>[core.cljs:411-422](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L411-L422)</ins>
 </pre>
 
 
@@ -106,11 +106,11 @@ __Meta__ - To retrieve the API data for this symbol:
            "cljs.core/drop"
            "cljs.core/pop"],
  :full-name-encode "cljs.core_rest",
- :source {:code "(defn ^seq rest\n  [coll]\n  (if-not (nil? coll)\n    (if (satisfies? ISeq coll)\n      (-rest coll)\n      (let [s (seq coll)]\n        (if-not (nil? s)\n          (-rest s)\n          ())))\n    ()))",
+ :source {:code "(defn ^seq rest\n  [coll]\n  (if-not (nil? coll)\n    (if (satisfies? ISeq coll false)\n      (-rest ^not-native coll)\n      (let [s (seq coll)]\n        (if-not (nil? s)\n          (-rest s)\n          ())))\n    ()))",
           :repo "clojurescript",
-          :tag "r1586",
+          :tag "r1798",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [335 346]},
+          :lines [411 422]},
  :examples [{:id "0869af",
              :content "```clj\n(rest [1 2 3])\n;;=> (2 3)\n\n(rest [1 2])\n;;=> (2)\n\n(rest [1])\n;;=> ()\n\n(rest [])\n;;=> ()\n```"}],
  :full-name "cljs.core/rest",

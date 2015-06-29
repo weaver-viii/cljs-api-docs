@@ -57,11 +57,11 @@ Source code:
 ```
 
  <pre>
-clojure @ clojure-1.4.0
+clojure @ clojure-1.5.1
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:1687-1700](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L1687-L1700)</ins>
+            └── <ins>[core.clj:1704-1717](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/clj/clojure/core.clj#L1704-L1717)</ins>
 </pre>
 
 
@@ -92,9 +92,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_when-let",
  :source {:code "(defmacro when-let\n  [bindings & body]\n  (assert-args\n     (vector? bindings) \"a vector for its binding\"\n     (= 2 (count bindings)) \"exactly 2 forms in binding vector\")\n   (let [form (bindings 0) tst (bindings 1)]\n    `(let [temp# ~tst]\n       (when temp#\n         (let [~form temp#]\n           ~@body)))))",
           :repo "clojure",
-          :tag "clojure-1.4.0",
+          :tag "clojure-1.5.1",
           :filename "src/clj/clojure/core.clj",
-          :lines [1687 1700]},
+          :lines [1704 1717]},
  :full-name "cljs.core/when-let",
  :clj-symbol "clojure.core/when-let",
  :docstring "bindings => binding-form test\n\nWhen test is true, evaluates body with binding-form bound to the value of test"}

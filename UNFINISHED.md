@@ -776,7 +776,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/INamed</td>
-<td></td>
+<td>[ref](refs/cljs.core_INamed.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_INamed.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1184,7 +1184,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentArrayMap.fromArray</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentArrayMapDOTfromArray.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentArrayMapDOTfromArray.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1488,7 +1488,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/Symbol</td>
-<td></td>
+<td>[ref](refs/cljs.core_Symbol.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_Symbol.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1767,22 +1767,6 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 <td></td>
 </tr>
 <tr>
-<td>cljs.core/array?</td>
-<td></td>
-<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_arrayQMARK.cljsdoc)</td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-</tr>
-<tr>
-<td>cljs.core/as-></td>
-<td></td>
-<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_as-GT.cljsdoc)</td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-</tr>
-<tr>
 <td>cljs.core/assert</td>
 <td>[ref](refs/cljs.core_assert.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_assert.cljsdoc)</td>
@@ -1832,7 +1816,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/booleans</td>
-<td></td>
+<td>[ref](refs/cljs.core_booleans.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_booleans.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1840,7 +1824,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/byte</td>
-<td></td>
+<td>[ref](refs/cljs.core_byte.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_byte.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1848,7 +1832,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/bytes</td>
-<td></td>
+<td>[ref](refs/cljs.core_bytes.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_bytes.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1864,7 +1848,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/char</td>
-<td></td>
+<td>[ref](refs/cljs.core_char.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_char.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
@@ -1872,7 +1856,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/chars</td>
-<td></td>
+<td>[ref](refs/cljs.core_chars.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_chars.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2031,16 +2015,8 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 </tr>
 <tr>
-<td>cljs.core/cond-></td>
-<td></td>
-<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_cond-GT.cljsdoc)</td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-</tr>
-<tr>
 <td>cljs.core/cond->></td>
-<td></td>
+<td>[ref](refs/cljs.core_cond-GTGT.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_cond-GTGT.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -2296,7 +2272,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/divide</td>
-<td></td>
+<td>[ref](refs/cljs.core_divide.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_divide.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2344,7 +2320,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/double</td>
-<td></td>
+<td>[ref](refs/cljs.core_double.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_double.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2360,7 +2336,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/doubles</td>
-<td></td>
+<td>[ref](refs/cljs.core_doubles.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_doubles.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2536,7 +2512,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/exists?</td>
-<td></td>
+<td>[ref](refs/cljs.core_existsQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_existsQMARK.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2608,7 +2584,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/float</td>
-<td></td>
+<td>[ref](refs/cljs.core_float.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_float.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2616,7 +2592,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/floats</td>
-<td></td>
+<td>[ref](refs/cljs.core_floats.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_floats.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2912,7 +2888,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/int-array</td>
-<td></td>
+<td>[ref](refs/cljs.core_int-array.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_int-array.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2968,7 +2944,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ints</td>
-<td></td>
+<td>[ref](refs/cljs.core_ints.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ints.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3096,7 +3072,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/key->js</td>
-<td></td>
+<td>[ref](refs/cljs.core_key-GTjs.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_key-GTjs.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3232,7 +3208,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/longs</td>
-<td></td>
+<td>[ref](refs/cljs.core_longs.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_longs.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3568,7 +3544,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/not-native</td>
-<td></td>
+<td>[ref](refs/cljs.core_not-native.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_not-native.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4288,7 +4264,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/set-print-fn!</td>
-<td></td>
+<td>[ref](refs/cljs.core_set-print-fnBANG.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_set-print-fnBANG.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4312,7 +4288,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/short</td>
-<td></td>
+<td>[ref](refs/cljs.core_short.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_short.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4320,7 +4296,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/shorts</td>
-<td></td>
+<td>[ref](refs/cljs.core_shorts.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_shorts.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4352,7 +4328,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/some-></td>
-<td></td>
+<td>[ref](refs/cljs.core_some-GT.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_some-GT.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -4360,7 +4336,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/some->></td>
-<td></td>
+<td>[ref](refs/cljs.core_some-GTGT.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_some-GTGT.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -4744,7 +4720,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-add</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-add.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-add.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4752,7 +4728,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-add-int</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-add-int.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-add-int.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4760,7 +4736,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-byte</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-byte.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-byte.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4768,7 +4744,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-char</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-char.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-char.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4776,7 +4752,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-dec</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-dec.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-dec.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4784,7 +4760,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-dec-int</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-dec-int.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-dec-int.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4792,7 +4768,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-divide-int</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-divide-int.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-divide-int.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4800,7 +4776,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-double</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-double.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-double.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4808,7 +4784,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-float</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-float.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-float.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4816,7 +4792,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-inc</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-inc.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-inc.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4824,7 +4800,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-inc-int</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-inc-int.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-inc-int.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4832,7 +4808,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-int</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-int.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-int.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4840,7 +4816,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-long</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-long.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-long.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4848,7 +4824,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-multiply</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-multiply.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-multiply.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4856,7 +4832,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-multiply-int</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-multiply-int.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-multiply-int.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4864,7 +4840,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-negate</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-negate.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-negate.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4872,7 +4848,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-negate-int</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-negate-int.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-negate-int.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4880,7 +4856,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-remainder-int</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-remainder-int.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-remainder-int.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4888,7 +4864,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-short</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-short.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-short.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4896,7 +4872,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-substract</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-substract.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-substract.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4904,7 +4880,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-substract-int</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-substract-int.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-substract-int.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4912,7 +4888,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-subtract</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-subtract.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-subtract.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4920,7 +4896,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/unchecked-subtract-int</td>
-<td></td>
+<td>[ref](refs/cljs.core_unchecked-subtract-int.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_unchecked-subtract-int.cljsdoc)</td>
 <td></td>
 <td></td>

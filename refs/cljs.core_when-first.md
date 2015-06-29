@@ -29,7 +29,7 @@ Source docstring:
 ```
 bindings => x xs
 
-Same as (when (seq xs) (let [x (first xs)] body))
+Roughly the same as (when (seq xs) (let [x (first xs)] body)) but xs is evaluated only once
 ```
 
 Source code:
@@ -41,17 +41,17 @@ Source code:
      (vector? bindings) "a vector for its binding"
      (= 2 (count bindings)) "exactly 2 forms in binding vector")
   (let [[x xs] bindings]
-    `(when (seq ~xs)
-       (let [~x (first ~xs)]
-         ~@body))))
+    `(when-let [xs# (seq ~xs)]
+       (let [~x (first xs#)]
+           ~@body))))
 ```
 
  <pre>
-clojure @ clojure-1.4.0
+clojure @ clojure-1.5.1
 └── src
     └── clj
         └── clojure
-            └── <ins>[core.clj:4054-4066](https://github.com/clojure/clojure/blob/clojure-1.4.0/src/clj/clojure/core.clj#L4054-L4066)</ins>
+            └── <ins>[core.clj:4154-4166](https://github.com/clojure/clojure/blob/clojure-1.5.1/src/clj/clojure/core.clj#L4154-L4166)</ins>
 </pre>
 
 
@@ -75,14 +75,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "macro",
  :full-name-encode "cljs.core_when-first",
- :source {:code "(defmacro when-first\n  [bindings & body]\n  (assert-args\n     (vector? bindings) \"a vector for its binding\"\n     (= 2 (count bindings)) \"exactly 2 forms in binding vector\")\n  (let [[x xs] bindings]\n    `(when (seq ~xs)\n       (let [~x (first ~xs)]\n         ~@body))))",
+ :source {:code "(defmacro when-first\n  [bindings & body]\n  (assert-args\n     (vector? bindings) \"a vector for its binding\"\n     (= 2 (count bindings)) \"exactly 2 forms in binding vector\")\n  (let [[x xs] bindings]\n    `(when-let [xs# (seq ~xs)]\n       (let [~x (first xs#)]\n           ~@body))))",
           :repo "clojure",
-          :tag "clojure-1.4.0",
+          :tag "clojure-1.5.1",
           :filename "src/clj/clojure/core.clj",
-          :lines [4054 4066]},
+          :lines [4154 4166]},
  :full-name "cljs.core/when-first",
  :clj-symbol "clojure.core/when-first",
- :docstring "bindings => x xs\n\nSame as (when (seq xs) (let [x (first xs)] body))"}
+ :docstring "bindings => x xs\n\nRoughly the same as (when (seq xs) (let [x (first xs)] body)) but xs is evaluated only once"}
 
 ```
 
