@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3165
+clojurescript @ r3169
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:547-550](https://github.com/clojure/clojurescript/blob/r3165/src/clj/cljs/repl.clj#L547-L550)</ins>
+            └── <ins>[repl.clj:547-550](https://github.com/clojure/clojurescript/blob/r3169/src/clj/cljs/repl.clj#L547-L550)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[specs]"],
  :source {:code "(defn decorate-specs [specs]\n  (if-let [k (some #{:reload :reload-all} specs)]\n    (->> specs (remove #{k}) (map #(vary-meta % assoc :reload k)))\n    specs))",
           :repo "clojurescript",
-          :tag "r3165",
+          :tag "r3169",
           :filename "src/clj/cljs/repl.clj",
           :lines [547 550]},
  :full-name "cljs.repl/decorate-specs",

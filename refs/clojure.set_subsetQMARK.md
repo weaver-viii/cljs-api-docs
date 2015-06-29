@@ -48,11 +48,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3165
+clojurescript @ r3169
 └── src
     └── cljs
         └── clojure
-            └── <ins>[set.cljs:131-135](https://github.com/clojure/clojurescript/blob/r3165/src/cljs/clojure/set.cljs#L131-L135)</ins>
+            └── <ins>[set.cljs:131-135](https://github.com/clojure/clojurescript/blob/r3169/src/cljs/clojure/set.cljs#L131-L135)</ins>
 </pre>
 
 
@@ -79,7 +79,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.set_subsetQMARK",
  :source {:code "(defn subset? \n  [set1 set2]\n  (and (<= (count set1) (count set2))\n       (every? #(contains? set2 %) set1)))",
           :repo "clojurescript",
-          :tag "r3165",
+          :tag "r3169",
           :filename "src/cljs/clojure/set.cljs",
           :lines [131 135]},
  :full-name "clojure.set/subset?",

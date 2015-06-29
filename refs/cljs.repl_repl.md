@@ -99,11 +99,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3165
+clojurescript @ r3169
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:844-914](https://github.com/clojure/clojurescript/blob/r3165/src/clj/cljs/repl.clj#L844-L914)</ins>
+            └── <ins>[repl.clj:844-914](https://github.com/clojure/clojurescript/blob/r3169/src/clj/cljs/repl.clj#L844-L914)</ins>
 </pre>
 
 
@@ -128,7 +128,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_repl",
  :source {:code "(defn repl\n  [repl-env & opts]\n  (assert (even? (count opts))\n    \"Arguments after repl-env must be interleaved key value pairs\")\n  (repl* repl-env (apply hash-map opts)))",
           :repo "clojurescript",
-          :tag "r3165",
+          :tag "r3169",
           :filename "src/clj/cljs/repl.clj",
           :lines [844 914]},
  :full-name "cljs.repl/repl",

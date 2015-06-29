@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3165
+clojurescript @ r3169
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3901-3904](https://github.com/clojure/clojurescript/blob/r3165/src/cljs/cljs/core.cljs#L3901-L3904)</ins>
+            └── <ins>[core.cljs:3901-3904](https://github.com/clojure/clojurescript/blob/r3169/src/cljs/cljs/core.cljs#L3901-L3904)</ins>
 </pre>
 
 
@@ -61,7 +61,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_vresetBANG",
  :source {:code "(defn vreset!\n  [vol newval]  (-vreset! vol newval))",
           :repo "clojurescript",
-          :tag "r3165",
+          :tag "r3169",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3901 3904]},
  :full-name "cljs.core/vreset!",

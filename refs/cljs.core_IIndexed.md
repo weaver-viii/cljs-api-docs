@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3165
+clojurescript @ r3169
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:364-368](https://github.com/clojure/clojurescript/blob/r3165/src/cljs/cljs/core.cljs#L364-L368)</ins>
+            └── <ins>[core.cljs:364-368](https://github.com/clojure/clojurescript/blob/r3169/src/cljs/cljs/core.cljs#L364-L368)</ins>
 </pre>
 
 
@@ -60,7 +60,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IIndexed",
  :source {:code "(defprotocol IIndexed\n  \"Protocol for collections to provide idexed-based access to their items.\"\n  (-nth [coll n] [coll n not-found]\n    \"Returns the value at the index n in the collection coll.\n     Returns not-found if index n is out of bounds and not-found is supplied.\"))",
           :repo "clojurescript",
-          :tag "r3165",
+          :tag "r3169",
           :filename "src/cljs/cljs/core.cljs",
           :lines [364 368]},
  :methods [{:name "-nth",

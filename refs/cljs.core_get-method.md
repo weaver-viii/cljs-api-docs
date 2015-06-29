@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3165
+clojurescript @ r3169
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:9459-9462](https://github.com/clojure/clojurescript/blob/r3165/src/cljs/cljs/core.cljs#L9459-L9462)</ins>
+            └── <ins>[core.cljs:9459-9462](https://github.com/clojure/clojurescript/blob/r3169/src/cljs/cljs/core.cljs#L9459-L9462)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_get-method",
  :source {:code "(defn get-method\n  [multifn dispatch-val] (-get-method multifn dispatch-val))",
           :repo "clojurescript",
-          :tag "r3165",
+          :tag "r3169",
           :filename "src/cljs/cljs/core.cljs",
           :lines [9459 9462]},
  :full-name "cljs.core/get-method",

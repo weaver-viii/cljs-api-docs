@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3165
+clojurescript @ r3169
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:212-229](https://github.com/clojure/clojurescript/blob/r3165/src/clj/cljs/repl.clj#L212-L229)</ins>
+            └── <ins>[repl.clj:212-229](https://github.com/clojure/clojurescript/blob/r3169/src/clj/cljs/repl.clj#L212-L229)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_read-source-map",
  :source {:code "(defn read-source-map\n  [f]\n  (when-let [smf (util/file-or-resource (str f \".map\"))]\n    (let [ns (if (= f \"cljs/core.aot.js\")\n               'cljs.core\n               (:ns (ana/parse-ns (js-src->cljs-src f))))]\n      (as-> @env/*compiler* compiler-env\n        (let [t (util/last-modified smf)]\n          (if (or (and (= ns 'cljs.core)\n                       (nil? (get-in compiler-env [::source-maps ns])))\n                  (and (not= ns 'cljs.core)\n                       (> t (get-in compiler-env [::source-maps ns :last-modified] 0))))\n            (swap! env/*compiler* assoc-in [::source-maps ns]\n              {:last-modified t\n               :source-map (sm/decode (json/read-str (slurp smf) :key-fn keyword))})\n            compiler-env))\n        (get-in compiler-env [::source-maps ns :source-map])))))",
           :repo "clojurescript",
-          :tag "r3165",
+          :tag "r3169",
           :filename "src/clj/cljs/repl.clj",
           :lines [212 229]},
  :full-name "cljs.repl/read-source-map",

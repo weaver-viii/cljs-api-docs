@@ -30,11 +30,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3165
+clojurescript @ r3169
 └── src
     └── cljs
         └── clojure
-            └── <ins>[data.cljs:79-81](https://github.com/clojure/clojurescript/blob/r3165/src/cljs/clojure/data.cljs#L79-L81)</ins>
+            └── <ins>[data.cljs:79-81](https://github.com/clojure/clojurescript/blob/r3169/src/cljs/clojure/data.cljs#L79-L81)</ins>
 </pre>
 
 
@@ -58,7 +58,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.data_Diff",
  :source {:code "(defprotocol Diff\n  \"Implementation detail. Subject to change.\"\n  (diff-similar [a b] \"Implementation detail. Subject to change.\"))",
           :repo "clojurescript",
-          :tag "r3165",
+          :tag "r3169",
           :filename "src/cljs/clojure/data.cljs",
           :lines [79 81]},
  :methods [{:name "diff-similar",

@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3165
+clojurescript @ r3169
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:221-224](https://github.com/clojure/clojurescript/blob/r3165/src/cljs/cljs/core.cljs#L221-L224)</ins>
+            └── <ins>[core.cljs:221-224](https://github.com/clojure/clojurescript/blob/r3169/src/cljs/cljs/core.cljs#L221-L224)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[ty]"],
  :source {:code "(defn type->str [ty]\n  (if-let [s (.-cljs$lang$ctorStr ty)]\n    s\n    (str ty)))",
           :repo "clojurescript",
-          :tag "r3165",
+          :tag "r3169",
           :filename "src/cljs/cljs/core.cljs",
           :lines [221 224]},
  :full-name "cljs.core/type->str",

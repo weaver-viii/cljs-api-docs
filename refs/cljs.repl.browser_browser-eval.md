@@ -45,12 +45,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3165
+clojurescript @ r3169
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:160-176](https://github.com/clojure/clojurescript/blob/r3165/src/clj/cljs/repl/browser.clj#L160-L176)</ins>
+                └── <ins>[browser.clj:160-176](https://github.com/clojure/clojurescript/blob/r3169/src/clj/cljs/repl/browser.clj#L160-L176)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.browser_browser-eval",
  :source {:code "(defn browser-eval\n  [form]\n  (let [return-value (promise)]\n    (send-for-eval form\n      (fn [val] (deliver return-value val)))\n    (let [ret @return-value]\n      (try\n        (read-string ret)\n        (catch Exception e\n          {:status :error\n           :value (str \"Could not read return value: \" ret)})))))",
           :repo "clojurescript",
-          :tag "r3165",
+          :tag "r3169",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [160 176]},
  :full-name "cljs.repl.browser/browser-eval",

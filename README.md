@@ -2,8 +2,8 @@
 
  <table border="1">
 <tr>
-<td>__0.0-3165__ [all](HISTORY.md)</td>
-<td>2015-03-27</td>
+<td>__0.0-3169__ [all](HISTORY.md)</td>
+<td>2015-03-31</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.6.0</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-3165__ ([See Full History](HISTORY.md)):
+Changes from __0.0-3169__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
@@ -85,58 +85,16 @@ __Library API Changes__
 
 <tr>
 <td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/default-dispatch-val](refs/cljs.core_default-dispatch-val.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/dispatch-fn](refs/cljs.core_dispatch-fn.md)</samp></td>
-</tr>
-<tr>
-<td>
 <img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
 </td>
-<td><samp>[cljs.core/macroexpand](refs/cljs.core_macroexpand.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-macro-brightgreen.svg">
-</td>
-<td><samp>[cljs.core/macroexpand-1](refs/cljs.core_macroexpand-1.md)</samp></td>
+<td><samp>[cljs.core/ns-unmap](refs/cljs.core_ns-unmap.md)</samp></td>
 </tr>
 </table>
 
 __Compiler API Changes__
 
  <table>
-
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
-</td>
-<td><samp>[cljs.repl.browser/-main](refs/cljs.repl.browser_-main.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
-</td>
-<td><samp>[cljs.repl.nashorn/-main](refs/cljs.repl.nashorn_-main.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
-</td>
-<td><samp>[cljs.repl.node/-main](refs/cljs.repl.node_-main.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
-</td>
-<td><samp>[cljs.repl.rhino/-main](refs/cljs.repl.rhino_-main.md)</samp></td>
-</tr>
+<tr><td>_no symbols were added or removed in this version_</td></tr>
 </table>
 
 ---
@@ -2618,6 +2576,12 @@ application.
 <td><samp>[ns-interns](refs/cljs.core_ns-interns.md)</samp></td>
 <td><samp>macro</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2496"><img valign="middle" alt="[+] 0.0-2496" src="https://img.shields.io/badge/+-0.0--2496-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/ns-unmap)</td>
+<td><samp>[ns-unmap](refs/cljs.core_ns-unmap.md)</samp></td>
+<td><samp>macro</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-3169"><img valign="middle" alt="[+] 0.0-3169" src="https://img.shields.io/badge/+-0.0--3169-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/nth)</td>

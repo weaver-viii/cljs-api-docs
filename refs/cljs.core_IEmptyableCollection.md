@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3165
+clojurescript @ r3169
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:347-351](https://github.com/clojure/clojurescript/blob/r3165/src/cljs/cljs/core.cljs#L347-L351)</ins>
+            └── <ins>[core.cljs:347-351](https://github.com/clojure/clojurescript/blob/r3169/src/cljs/cljs/core.cljs#L347-L351)</ins>
 </pre>
 
 
@@ -57,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IEmptyableCollection",
  :source {:code "(defprotocol IEmptyableCollection\n  \"Protocol for creating an empty collection.\"\n  (-empty [coll]\n    \"Returns an empty collection of the same category as coll. Used\n     by cljs.core/count.\"))",
           :repo "clojurescript",
-          :tag "r3165",
+          :tag "r3169",
           :filename "src/cljs/cljs/core.cljs",
           :lines [347 351]},
  :methods [{:name "-empty",
