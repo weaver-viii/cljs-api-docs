@@ -62,11 +62,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2307
+clojurescript @ r2311
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3209-3226](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L3209-L3226)</ins>
+            └── <ins>[core.cljs:3225-3242](https://github.com/clojure/clojurescript/blob/r2311/src/cljs/cljs/core.cljs#L3225-L3242)</ins>
 </pre>
 
 
@@ -93,9 +93,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_map-indexed",
  :source {:code "(defn map-indexed\n  [f coll]\n  (letfn [(mapi [idx coll]\n            (lazy-seq\n             (when-let [s (seq coll)]\n               (if (chunked-seq? s)\n                 (let [c (chunk-first s)\n                       size (count c)\n                       b (chunk-buffer size)]\n                   (dotimes [i size]\n                     (chunk-append b (f (+ idx i) (-nth c i))))\n                   (chunk-cons (chunk b) (mapi (+ idx size) (chunk-rest s))))\n                 (cons (f idx (first s)) (mapi (inc idx) (rest s)))))))]\n    (mapi 0 coll)))",
           :repo "clojurescript",
-          :tag "r2307",
+          :tag "r2311",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3209 3226]},
+          :lines [3225 3242]},
  :full-name "cljs.core/map-indexed",
  :clj-symbol "clojure.core/map-indexed",
  :docstring "Returns a lazy sequence consisting of the result of applying f to 0\nand the first item of coll, followed by applying f to 1 and the second\nitem in coll, etc, until coll is exhausted. Thus function f should\naccept 2 arguments, index and item."}

@@ -59,11 +59,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2307
+clojurescript @ r2311
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4341-4350](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L4341-L4350)</ins>
+            └── <ins>[core.cljs:4357-4366](https://github.com/clojure/clojurescript/blob/r2311/src/cljs/cljs/core.cljs#L4357-L4366)</ins>
 </pre>
 
 
@@ -90,9 +90,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_subvec",
  :source {:code "(defn subvec\n  ([v start]\n     (subvec v start (count v)))\n  ([v start end]\n     (build-subvec nil v start end nil)))",
           :repo "clojurescript",
-          :tag "r2307",
+          :tag "r2311",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [4341 4350]},
+          :lines [4357 4366]},
  :full-name "cljs.core/subvec",
  :clj-symbol "clojure.core/subvec",
  :docstring "Returns a persistent vector of the items in vector from\nstart (inclusive) to end (exclusive).  If end is not supplied,\ndefaults to (count vector). This operation is O(1) and very fast, as\nthe resulting vector shares structure with the original and no\ntrimming is done."}

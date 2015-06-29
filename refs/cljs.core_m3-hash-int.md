@@ -30,11 +30,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2307
+clojurescript @ r2311
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:452-457](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L452-L457)</ins>
+            └── <ins>[core.cljs:452-457](https://github.com/clojure/clojurescript/blob/r2311/src/cljs/cljs/core.cljs#L452-L457)</ins>
 </pre>
 
 
@@ -60,7 +60,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_m3-hash-int",
  :source {:code "(defn ^number m3-hash-int [in]\n  (if (zero? in)\n    in\n    (let [k1 (m3-mix-K1 in)\n          h1 (m3-mix-H1 m3-seed k1)]\n      (m3-fmix h1 4))))",
           :repo "clojurescript",
-          :tag "r2307",
+          :tag "r2311",
           :filename "src/cljs/cljs/core.cljs",
           :lines [452 457]},
  :full-name "cljs.core/m3-hash-int"}

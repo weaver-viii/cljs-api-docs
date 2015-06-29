@@ -39,18 +39,20 @@ Source code:
     (loop []
       (if (and (not (nil? (.-stepper lt)))
                (.hasNext iter))
-        (when-not (reduced? (xform lt (.next iter)))
+        (if (reduced? (apply xform (cons lt (.next iter))))
+          (when-not (nil? (.-rest lt))
+            (set! (.. lt -rest -stepper) nil))
           (recur))))
     (when-not (nil? (.-stepper lt))
       (xform lt))))
 ```
 
  <pre>
-clojurescript @ r2307
+clojurescript @ r2311
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2958-2979](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L2958-L2979)</ins>
+            └── <ins>[core.cljs:2972-2995](https://github.com/clojure/clojurescript/blob/r2311/src/cljs/cljs/core.cljs#L2972-L2995)</ins>
 </pre>
 
 
@@ -71,11 +73,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "MultiStepper",
  :type "type",
  :signature ["[xform iters nexts]"],
- :source {:code "(deftype MultiStepper [xform iters nexts]\n  Object\n  (hasNext [_]\n    (loop [iters (seq iters)]\n      (if-not (nil? iters)\n        (let [iter (first iters)]\n          (if-not (.hasNext iter)\n            false\n            (recur (next iters))))\n        true)))\n  (next [_]\n    (dotimes [i (alength iters)]\n      (aset next i (.next (aget iters i))))\n    (prim-seq nexts 0))\n  (step [_ lt]\n    (loop []\n      (if (and (not (nil? (.-stepper lt)))\n               (.hasNext iter))\n        (when-not (reduced? (xform lt (.next iter)))\n          (recur))))\n    (when-not (nil? (.-stepper lt))\n      (xform lt))))",
+ :source {:code "(deftype MultiStepper [xform iters nexts]\n  Object\n  (hasNext [_]\n    (loop [iters (seq iters)]\n      (if-not (nil? iters)\n        (let [iter (first iters)]\n          (if-not (.hasNext iter)\n            false\n            (recur (next iters))))\n        true)))\n  (next [_]\n    (dotimes [i (alength iters)]\n      (aset next i (.next (aget iters i))))\n    (prim-seq nexts 0))\n  (step [_ lt]\n    (loop []\n      (if (and (not (nil? (.-stepper lt)))\n               (.hasNext iter))\n        (if (reduced? (apply xform (cons lt (.next iter))))\n          (when-not (nil? (.-rest lt))\n            (set! (.. lt -rest -stepper) nil))\n          (recur))))\n    (when-not (nil? (.-stepper lt))\n      (xform lt))))",
           :repo "clojurescript",
-          :tag "r2307",
+          :tag "r2311",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2958 2979]},
+          :lines [2972 2995]},
  :full-name "cljs.core/MultiStepper",
  :full-name-encode "cljs.core_MultiStepper",
  :history [["+" "0.0-2301"]]}

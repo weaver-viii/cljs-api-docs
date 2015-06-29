@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2307
+clojurescript @ r2311
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2023-2029](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L2023-L2029)</ins>
+            └── <ins>[core.cljs:2023-2029](https://github.com/clojure/clojurescript/blob/r2311/src/cljs/cljs/core.cljs#L2023-L2029)</ins>
 </pre>
 
 
@@ -81,7 +81,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_nthnext",
  :source {:code "(defn nthnext\n  [coll n]\n  (loop [n n xs (seq coll)]\n    (if (and xs (pos? n))\n      (recur (dec n) (next xs))\n      xs)))",
           :repo "clojurescript",
-          :tag "r2307",
+          :tag "r2311",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2023 2029]},
  :full-name "cljs.core/nthnext",

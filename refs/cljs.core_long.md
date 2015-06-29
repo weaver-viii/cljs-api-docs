@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2307
+clojurescript @ r2311
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1884-1887](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L1884-L1887)</ins>
+            └── <ins>[core.cljs:1884-1887](https://github.com/clojure/clojurescript/blob/r2311/src/cljs/cljs/core.cljs#L1884-L1887)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_long",
  :source {:code "(defn long\n  [x]\n  (fix x))",
           :repo "clojurescript",
-          :tag "r2307",
+          :tag "r2311",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1884 1887]},
  :full-name "cljs.core/long",

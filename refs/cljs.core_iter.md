@@ -26,15 +26,15 @@ Source code:
     (nil? coll) (nil-iter)
     (string? coll) (string-iter coll)
     (array? coll) (array-iter coll)
-    :else (seq-iter (seq coll))))
+    :else (seq-iter coll)))
 ```
 
  <pre>
-clojurescript @ r2307
+clojurescript @ r2311
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2919-2924](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L2919-L2924)</ins>
+            └── <ins>[core.cljs:2931-2936](https://github.com/clojure/clojurescript/blob/r2311/src/cljs/cljs/core.cljs#L2931-L2936)</ins>
 </pre>
 
 
@@ -55,11 +55,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "iter",
  :type "function",
  :signature ["[coll]"],
- :source {:code "(defn iter [coll]\n  (cond\n    (nil? coll) (nil-iter)\n    (string? coll) (string-iter coll)\n    (array? coll) (array-iter coll)\n    :else (seq-iter (seq coll))))",
+ :source {:code "(defn iter [coll]\n  (cond\n    (nil? coll) (nil-iter)\n    (string? coll) (string-iter coll)\n    (array? coll) (array-iter coll)\n    :else (seq-iter coll)))",
           :repo "clojurescript",
-          :tag "r2307",
+          :tag "r2311",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2919 2924]},
+          :lines [2931 2936]},
  :full-name "cljs.core/iter",
  :full-name-encode "cljs.core_iter",
  :history [["+" "0.0-2301"]]}

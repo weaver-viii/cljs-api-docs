@@ -9,7 +9,7 @@
 </table>
 
  <samp>
-(__seq-iter__ seq)<br>
+(__seq-iter__ coll)<br>
 </samp>
 
 ---
@@ -21,16 +21,16 @@
 Source code:
 
 ```clj
-(defn seq-iter [seq]
-  (SeqIter. seq))
+(defn seq-iter [coll]
+  (SeqIter. INIT coll))
 ```
 
  <pre>
-clojurescript @ r2307
+clojurescript @ r2311
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2916-2917](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L2916-L2917)</ins>
+            └── <ins>[core.cljs:2928-2929](https://github.com/clojure/clojurescript/blob/r2311/src/cljs/cljs/core.cljs#L2928-L2929)</ins>
 </pre>
 
 
@@ -50,12 +50,12 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "cljs.core",
  :name "seq-iter",
  :type "function",
- :signature ["[seq]"],
- :source {:code "(defn seq-iter [seq]\n  (SeqIter. seq))",
+ :signature ["[coll]"],
+ :source {:code "(defn seq-iter [coll]\n  (SeqIter. INIT coll))",
           :repo "clojurescript",
-          :tag "r2307",
+          :tag "r2311",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2916 2917]},
+          :lines [2928 2929]},
  :full-name "cljs.core/seq-iter",
  :full-name-encode "cljs.core_seq-iter",
  :history [["+" "0.0-2301"]]}

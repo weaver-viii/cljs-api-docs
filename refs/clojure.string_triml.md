@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2307
+clojurescript @ r2311
 └── src
     └── cljs
         └── clojure
-            └── <ins>[string.cljs:137-140](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/clojure/string.cljs#L137-L140)</ins>
+            └── <ins>[string.cljs:137-140](https://github.com/clojure/clojurescript/blob/r2311/src/cljs/clojure/string.cljs#L137-L140)</ins>
 </pre>
 
 
@@ -68,7 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.string_triml",
  :source {:code "(defn triml\n    [s]\n    (gstring/trimLeft s))",
           :repo "clojurescript",
-          :tag "r2307",
+          :tag "r2311",
           :filename "src/cljs/clojure/string.cljs",
           :lines [137 140]},
  :full-name "clojure.string/triml",

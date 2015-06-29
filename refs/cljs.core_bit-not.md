@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2307
+clojurescript @ r2311
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1960-1962](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L1960-L1962)</ins>
+            └── <ins>[core.cljs:1960-1962](https://github.com/clojure/clojurescript/blob/r2311/src/cljs/cljs/core.cljs#L1960-L1962)</ins>
 </pre>
 
 
@@ -70,11 +70,11 @@ clojurescript @ r2307
 ```
 
  <pre>
-clojurescript @ r2307
+clojurescript @ r2311
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:504-505](https://github.com/clojure/clojurescript/blob/r2307/src/clj/cljs/core.clj#L504-L505)</ins>
+            └── <ins>[core.clj:504-505](https://github.com/clojure/clojurescript/blob/r2311/src/clj/cljs/core.clj#L504-L505)</ins>
 </pre>
 
 ---
@@ -99,12 +99,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-not",
  :source {:code "(defn bit-not\n  [x] (cljs.core/bit-not x))",
           :repo "clojurescript",
-          :tag "r2307",
+          :tag "r2311",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1960 1962]},
  :extra-sources ({:code "(defmacro ^::ana/numeric bit-not [x]\n  (core/list 'js* \"(~ ~{})\" x))",
                   :repo "clojurescript",
-                  :tag "r2307",
+                  :tag "r2311",
                   :filename "src/clj/cljs/core.clj",
                   :lines [504 505]}),
  :examples [{:id "d4c5e3",
