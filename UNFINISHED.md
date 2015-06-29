@@ -6224,7 +6224,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.browser/chrome-st-el->frame</td>
-<td></td>
+<td>[ref](refs/cljs.repl.browser_chrome-st-el-GTframe.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.browser_chrome-st-el-GTframe.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6272,7 +6272,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.browser/firefox-clean-function</td>
-<td></td>
+<td>[ref](refs/cljs.repl.browser_firefox-clean-function.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.browser_firefox-clean-function.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6280,7 +6280,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.browser/firefox-st-el->frame</td>
-<td></td>
+<td>[ref](refs/cljs.repl.browser_firefox-st-el-GTframe.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.browser_firefox-st-el-GTframe.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6336,7 +6336,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.browser/parse-file</td>
-<td></td>
+<td>[ref](refs/cljs.repl.browser_parse-file.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.browser_parse-file.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6344,7 +6344,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.browser/parse-file-line-column</td>
-<td></td>
+<td>[ref](refs/cljs.repl.browser_parse-file-line-column.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.browser_parse-file-line-column.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6432,7 +6432,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.browser/safari-st-el->frame</td>
-<td></td>
+<td>[ref](refs/cljs.repl.browser_safari-st-el-GTframe.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.browser_safari-st-el-GTframe.cljsdoc)</td>
 <td></td>
 <td></td>

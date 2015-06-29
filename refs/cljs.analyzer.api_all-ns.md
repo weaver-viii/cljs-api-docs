@@ -36,12 +36,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3030
+clojurescript @ r3053
 └── src
     └── clj
         └── cljs
             └── analyzer
-                └── <ins>[api.clj:26-30](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/analyzer/api.clj#L26-L30)</ins>
+                └── <ins>[api.clj:26-30](https://github.com/clojure/clojurescript/blob/r3053/src/clj/cljs/analyzer/api.clj#L26-L30)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.analyzer.api_all-ns",
  :source {:code "(defn all-ns\n  []\n  (keys (get @env/*compiler* ::ana/namespaces)))",
           :repo "clojurescript",
-          :tag "r3030",
+          :tag "r3053",
           :filename "src/clj/cljs/analyzer/api.clj",
           :lines [26 30]},
  :full-name "cljs.analyzer.api/all-ns",

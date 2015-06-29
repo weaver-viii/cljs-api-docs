@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3030
+clojurescript @ r3053
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:18-32](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/clojure/zip.cljs#L18-L32)</ins>
+            └── <ins>[zip.cljs:18-32](https://github.com/clojure/clojurescript/blob/r3053/src/cljs/clojure/zip.cljs#L18-L32)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_zipper",
  :source {:code "(defn zipper\n  [branch? children make-node root]\n    ^{:zip/branch? branch? :zip/children children :zip/make-node make-node}\n    [root nil])",
           :repo "clojurescript",
-          :tag "r3030",
+          :tag "r3053",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [18 32]},
  :full-name "clojure.zip/zipper",

@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3030
+clojurescript @ r3053
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:949-952](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L949-L952)</ins>
+            └── <ins>[core.cljs:949-952](https://github.com/clojure/clojurescript/blob/r3053/src/cljs/cljs/core.cljs#L949-L952)</ins>
 </pre>
 
 
@@ -61,7 +61,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unreduced",
  :source {:code "(defn unreduced\n  [x]\n  (if (reduced? x) (deref x) x))",
           :repo "clojurescript",
-          :tag "r3030",
+          :tag "r3053",
           :filename "src/cljs/cljs/core.cljs",
           :lines [949 952]},
  :full-name "cljs.core/unreduced",

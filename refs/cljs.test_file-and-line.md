@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3030
+clojurescript @ r3053
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:374-387](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/test.cljs#L374-L387)</ins>
+            └── <ins>[test.cljs:374-387](https://github.com/clojure/clojurescript/blob/r3053/src/cljs/cljs/test.cljs#L374-L387)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[exception depth]"],
  :source {:code "(defn file-and-line [exception depth]\n  (let [stack (.-stack exception)]\n      (if (and stack (string? stack))\n        ;; TODO: flesh out\n        (let [stacktrace\n              (vec (map string/trim\n                     (string/split stack #\"\\n\")))\n              stack-element (nth stacktrace depth)\n              fname (js-filename stack-element)\n              [line column] (js-line-and-column stack-element)\n              [fname line column] (mapped-line-and-column fname line column)]\n          {:file fname :line line :column column})\n        {:file (.-fileName exception)\n         :line (.-lineNumber exception)}))  )",
           :repo "clojurescript",
-          :tag "r3030",
+          :tag "r3053",
           :filename "src/cljs/cljs/test.cljs",
           :lines [374 387]},
  :full-name "cljs.test/file-and-line",

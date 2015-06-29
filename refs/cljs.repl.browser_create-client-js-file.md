@@ -29,12 +29,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3030
+clojurescript @ r3053
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:226-230](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/repl/browser.clj#L226-L230)</ins>
+                └── <ins>[browser.clj:484-488](https://github.com/clojure/clojurescript/blob/r3053/src/clj/cljs/repl/browser.clj#L484-L488)</ins>
 </pre>
 
 
@@ -57,9 +57,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[opts file-path]"],
  :source {:code "(defn create-client-js-file [opts file-path]\n  (let [file (io/file file-path)]\n    (when (not (.exists file))\n      (spit file (compile-client-js opts)))\n    file))",
           :repo "clojurescript",
-          :tag "r3030",
+          :tag "r3053",
           :filename "src/clj/cljs/repl/browser.clj",
-          :lines [226 230]},
+          :lines [484 488]},
  :full-name "cljs.repl.browser/create-client-js-file",
  :full-name-encode "cljs.repl.browser_create-client-js-file",
  :history [["+" "0.0-927"]]}

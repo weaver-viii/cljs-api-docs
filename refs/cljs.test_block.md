@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3030
+clojurescript @ r3053
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:427-432](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/test.cljs#L427-L432)</ins>
+            └── <ins>[test.cljs:427-432](https://github.com/clojure/clojurescript/blob/r3053/src/cljs/cljs/test.cljs#L427-L432)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_block",
  :source {:code "(defn block\n  [fns]\n  (some-> fns\n          (vary-meta assoc ::block? true)))",
           :repo "clojurescript",
-          :tag "r3030",
+          :tag "r3053",
           :filename "src/cljs/cljs/test.cljs",
           :lines [427 432]},
  :full-name "cljs.test/block",

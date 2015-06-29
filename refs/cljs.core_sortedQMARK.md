@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3030
+clojurescript @ r3053
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1570-1572](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L1570-L1572)</ins>
+            └── <ins>[core.cljs:1570-1572](https://github.com/clojure/clojurescript/blob/r3053/src/cljs/cljs/core.cljs#L1570-L1572)</ins>
 </pre>
 
 
@@ -77,7 +77,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_sortedQMARK",
  :source {:code "(defn ^boolean sorted?\n  [x] (satisfies? ISorted x))",
           :repo "clojurescript",
-          :tag "r3030",
+          :tag "r3053",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1570 1572]},
  :full-name "cljs.core/sorted?",

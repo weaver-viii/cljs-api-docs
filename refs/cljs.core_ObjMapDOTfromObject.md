@@ -25,11 +25,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3030
+clojurescript @ r3053
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5251](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L5251)</ins>
+            └── <ins>[core.cljs:5251](https://github.com/clojure/clojurescript/blob/r3053/src/cljs/cljs/core.cljs#L5251)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ObjMapDOTfromObject",
  :source {:code "(set! (.-fromObject ObjMap) (fn [ks obj] (ObjMap. nil ks obj 0 nil)))",
           :repo "clojurescript",
-          :tag "r3030",
+          :tag "r3053",
           :filename "src/cljs/cljs/core.cljs",
           :lines [5251]},
  :full-name "cljs.core/ObjMap.fromObject"}

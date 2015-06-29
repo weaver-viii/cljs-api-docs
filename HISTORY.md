@@ -16,6 +16,29 @@
 <th>comp</th>
 </tr>
 <tr>
+<td>__[0.0-3053](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-3053)__</td>
+<td>2015-03-09</td>
+<td><kbd>1.6.0</kbd></td>
+<td><kbd>0.8.16</kbd></td>
+<td><kbd>0.0-20140718-946a7d39</kbd></td>
+<td>
+<a href="#user-content-00-3053-syntax">
+ 
+</a>
+</td>
+<td>
+<a href="#user-content-00-3053-library">
+ 
+</a>
+</td>
+<td>
+<a href="#user-content-00-3053-compiler">
+<img valign="middle" src="https://img.shields.io/badge/+-6-brightgreen.svg"> 
+</a>
+</td>
+</tr>
+
+<tr>
 <td>__[0.0-3030](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-3030)__</td>
 <td>2015-03-07</td>
 <td><kbd>1.6.0</kbd></td>
@@ -2246,6 +2269,59 @@
 </td>
 </tr>
 
+</table>
+
+### 0.0-3053
+
+<a name="00-3053-syntax"></a> __Syntax API Changes__
+ <table>
+<tr><td>_no syntax forms were added or removed in this version_</td></tr>
+</table>
+
+<a name="00-3053-library"></a> __Library API Changes__
+ <table>
+<tr><td>_no symbols were added or removed in this version_</td></tr>
+</table>
+
+<a name="00-3053-compiler"></a> __Compiler API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl.browser/chrome-st-el->frame](refs/cljs.repl.browser_chrome-st-el-GTframe.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl.browser/firefox-clean-function](refs/cljs.repl.browser_firefox-clean-function.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl.browser/firefox-st-el->frame](refs/cljs.repl.browser_firefox-st-el-GTframe.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl.browser/parse-file](refs/cljs.repl.browser_parse-file.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl.browser/parse-file-line-column](refs/cljs.repl.browser_parse-file-line-column.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl.browser/safari-st-el->frame](refs/cljs.repl.browser_safari-st-el-GTframe.md)</samp></td>
+</tr>
 </table>
 
 ### 0.0-3030

@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3030
+clojurescript @ r3053
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3041-3049](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L3041-L3049)</ins>
+            └── <ins>[core.cljs:3041-3049](https://github.com/clojure/clojurescript/blob/r3053/src/cljs/cljs/core.cljs#L3041-L3049)</ins>
 </pre>
 
 
@@ -72,7 +72,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_dissocBANG",
  :source {:code "(defn dissoc!\n  ([tcoll key]\n    (-dissoc! tcoll key))\n  ([tcoll key & ks]\n    (let [ntcoll (-dissoc! tcoll key)]\n      (if ks\n        (recur ntcoll (first ks) (next ks))\n        ntcoll))))",
           :repo "clojurescript",
-          :tag "r3030",
+          :tag "r3053",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3041 3049]},
  :full-name "cljs.core/dissoc!",

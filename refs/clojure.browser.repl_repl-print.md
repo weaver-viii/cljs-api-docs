@@ -27,12 +27,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3030
+clojurescript @ r3053
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[repl.cljs:28-30](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/clojure/browser/repl.cljs#L28-L30)</ins>
+                └── <ins>[repl.cljs:30-32](https://github.com/clojure/clojurescript/blob/r3053/src/cljs/clojure/browser/repl.cljs#L30-L32)</ins>
 </pre>
 
 
@@ -55,9 +55,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[data]"],
  :source {:code "(defn repl-print [data]\n  (if-let [conn @xpc-connection]\n    (net/transmit conn :print (pr-str data))))",
           :repo "clojurescript",
-          :tag "r3030",
+          :tag "r3053",
           :filename "src/cljs/clojure/browser/repl.cljs",
-          :lines [28 30]},
+          :lines [30 32]},
  :full-name "clojure.browser.repl/repl-print",
  :full-name-encode "clojure.browser.repl_repl-print",
  :history [["+" "0.0-927"]]}

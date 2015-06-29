@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3030
+clojurescript @ r3053
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1821-1824](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/core.clj#L1821-L1824)</ins>
+            └── <ins>[core.clj:1821-1824](https://github.com/clojure/clojurescript/blob/r3053/src/clj/cljs/core.clj#L1821-L1824)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_defmethod",
  :source {:code "(defmacro defmethod\n  [multifn dispatch-val & fn-tail]\n  `(-add-method ~(with-meta multifn {:tag 'cljs.core/MultiFn}) ~dispatch-val (fn ~@fn-tail)))",
           :repo "clojurescript",
-          :tag "r3030",
+          :tag "r3053",
           :filename "src/clj/cljs/core.clj",
           :lines [1821 1824]},
  :full-name "cljs.core/defmethod",

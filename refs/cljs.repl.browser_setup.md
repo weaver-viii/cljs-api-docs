@@ -22,19 +22,16 @@ Source code:
 
 ```clj
 (defn setup [repl-env opts]
-  (when (:src repl-env)
-    (repl/analyze-source (:src repl-env)))
-  (comp/with-core-cljs nil
-    (fn [] (server/start repl-env))))
+  (server/start repl-env))
 ```
 
  <pre>
-clojurescript @ r3030
+clojurescript @ r3053
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:195-199](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/repl/browser.clj#L195-L199)</ins>
+                └── <ins>[browser.clj:194-195](https://github.com/clojure/clojurescript/blob/r3053/src/clj/cljs/repl/browser.clj#L194-L195)</ins>
 </pre>
 
 
@@ -55,11 +52,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "setup",
  :type "function",
  :signature ["[repl-env opts]"],
- :source {:code "(defn setup [repl-env opts]\n  (when (:src repl-env)\n    (repl/analyze-source (:src repl-env)))\n  (comp/with-core-cljs nil\n    (fn [] (server/start repl-env))))",
+ :source {:code "(defn setup [repl-env opts]\n  (server/start repl-env))",
           :repo "clojurescript",
-          :tag "r3030",
+          :tag "r3053",
           :filename "src/clj/cljs/repl/browser.clj",
-          :lines [195 199]},
+          :lines [194 195]},
  :full-name "cljs.repl.browser/setup",
  :full-name-encode "cljs.repl.browser_setup",
  :history [["+" "0.0-2665"]]}
