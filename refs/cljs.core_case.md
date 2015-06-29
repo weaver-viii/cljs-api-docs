@@ -90,9 +90,15 @@ Source code:
                                                          cljs.analyzer/*cljs-file*)))))
                            (assoc m test expr)))
         pairs (reduce (fn [m [test expr]]
-                        (if (seq? test)
-                          (reduce #(assoc-test %1 %2 expr) m test)
-                          (assoc-test m test expr)))
+                        (cond
+                         (seq? test) (reduce (fn [m test]
+                                               (let [test (if (symbol? test)
+                                                            (list 'quote test)
+                                                            test)]
+                                                 (assoc-test m test expr)))
+                                             m test)
+                         (symbol? test) (assoc-test m (list 'quote test) expr)
+                         :else (assoc-test m test expr)))
                       {} (partition 2 clauses))
         esym (gensym)]
    `(let [~esym ~e]
@@ -102,11 +108,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1450
+clojurescript @ r1503
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:815-837](https://github.com/clojure/clojurescript/blob/r1450/src/clj/cljs/core.clj#L815-L837)</ins>
+            └── <ins>[core.clj:833-861](https://github.com/clojure/clojurescript/blob/r1503/src/clj/cljs/core.clj#L833-L861)</ins>
 </pre>
 
 
@@ -131,11 +137,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "macro",
  :related ["cljs.core/cond" "cljs.core/condp"],
  :full-name-encode "cljs.core_case",
- :source {:code "(defmacro case [e & clauses]\n  (let [default (if (odd? (count clauses))\n                  (last clauses)\n                  `(throw (js/Error. (core/str \"No matching clause: \" ~e))))\n        assoc-test (fn assoc-test [m test expr]\n                         (if (contains? m test)\n                           (throw (clojure.core/IllegalArgumentException.\n                                   (core/str \"Duplicate case test constant '\"\n                                             test \"'\"\n                                             (when (:line &env)\n                                               (core/str \" on line \" (:line &env) \" \"\n                                                         cljs.analyzer/*cljs-file*)))))\n                           (assoc m test expr)))\n        pairs (reduce (fn [m [test expr]]\n                        (if (seq? test)\n                          (reduce #(assoc-test %1 %2 expr) m test)\n                          (assoc-test m test expr)))\n                      {} (partition 2 clauses))\n        esym (gensym)]\n   `(let [~esym ~e]\n      (cond\n        ~@(mapcat (fn [[m c]] `((cljs.core/= ~m ~esym) ~c)) pairs)\n        :else ~default))))",
+ :source {:code "(defmacro case [e & clauses]\n  (let [default (if (odd? (count clauses))\n                  (last clauses)\n                  `(throw (js/Error. (core/str \"No matching clause: \" ~e))))\n        assoc-test (fn assoc-test [m test expr]\n                         (if (contains? m test)\n                           (throw (clojure.core/IllegalArgumentException.\n                                   (core/str \"Duplicate case test constant '\"\n                                             test \"'\"\n                                             (when (:line &env)\n                                               (core/str \" on line \" (:line &env) \" \"\n                                                         cljs.analyzer/*cljs-file*)))))\n                           (assoc m test expr)))\n        pairs (reduce (fn [m [test expr]]\n                        (cond\n                         (seq? test) (reduce (fn [m test]\n                                               (let [test (if (symbol? test)\n                                                            (list 'quote test)\n                                                            test)]\n                                                 (assoc-test m test expr)))\n                                             m test)\n                         (symbol? test) (assoc-test m (list 'quote test) expr)\n                         :else (assoc-test m test expr)))\n                      {} (partition 2 clauses))\n        esym (gensym)]\n   `(let [~esym ~e]\n      (cond\n        ~@(mapcat (fn [[m c]] `((cljs.core/= ~m ~esym) ~c)) pairs)\n        :else ~default))))",
           :repo "clojurescript",
-          :tag "r1450",
+          :tag "r1503",
           :filename "src/clj/cljs/core.clj",
-          :lines [815 837]},
+          :lines [833 861]},
  :examples [{:id "09a90c",
              :content "```clj\n(def a 1)\n(def b 2)\n\n(case a\n  0 \"zero\"\n  1 \"one\"\n  \"default\")\n;;=> \"one\"\n\n(case b\n  0 \"zero\"\n  1 \"one\"\n  \"default\")\n;;=> \"default\"\n\n(case b\n  0 \"zero\"\n  1 \"one\")\n;; Error: No matching clause: 2\n```"}],
  :full-name "cljs.core/case",

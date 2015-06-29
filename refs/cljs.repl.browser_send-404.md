@@ -1,10 +1,10 @@
-## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> cljs.repl.browser/send-404
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> ~~cljs.repl.browser/send-404~~
 
  <table border="1">
 <tr>
 
 <td>function</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1503"><img valign="middle" alt="[×] 0.0-1503" src="https://img.shields.io/badge/×-0.0--1503-red.svg"></a> </td>
 </tr>
 </table>
 
@@ -55,16 +55,17 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.repl.browser",
  :name "send-404",
- :type "function",
  :signature ["[conn path]"],
+ :history [["+" "0.0-927"] ["-" "0.0-1503"]],
+ :type "function",
+ :full-name-encode "cljs.repl.browser_send-404",
  :source {:code "(defn send-404 [conn path]\n  (send-and-close conn 404\n                  (str \"<html><body>\"\n                       \"<h2>Page not found</h2>\"\n                       \"No page \" path \" found on this server.\"\n                       \"</body></html>\")\n                  \"text/html\"))",
           :repo "clojurescript",
           :tag "r1450",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [92 98]},
  :full-name "cljs.repl.browser/send-404",
- :full-name-encode "cljs.repl.browser_send-404",
- :history [["+" "0.0-927"]]}
+ :removed {:in "0.0-1503", :last-seen "0.0-1450"}}
 
 ```
 

@@ -58,15 +58,15 @@ Source code:
 ```clj
 (defn alength
   [array]
-  (.-length array))
+  (cljs.core/alength array))
 ```
 
  <pre>
-clojurescript @ r1450
+clojurescript @ r1503
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:104-107](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L104-L107)</ins>
+            └── <ins>[core.cljs:116-119](https://github.com/clojure/clojurescript/blob/r1503/src/cljs/cljs/core.cljs#L116-L119)</ins>
 </pre>
 
 
@@ -78,11 +78,11 @@ clojurescript @ r1450
 ```
 
  <pre>
-clojurescript @ r1450
+clojurescript @ r1503
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:987-988](https://github.com/clojure/clojurescript/blob/r1450/src/clj/cljs/core.clj#L987-L988)</ins>
+            └── <ins>[core.clj:1010-1011](https://github.com/clojure/clojurescript/blob/r1503/src/clj/cljs/core.clj#L1010-L1011)</ins>
 </pre>
 
 ---
@@ -106,16 +106,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/count"],
  :full-name-encode "cljs.core_alength",
- :source {:code "(defn alength\n  [array]\n  (.-length array))",
+ :source {:code "(defn alength\n  [array]\n  (cljs.core/alength array))",
           :repo "clojurescript",
-          :tag "r1450",
+          :tag "r1503",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [104 107]},
+          :lines [116 119]},
  :extra-sources ({:code "(defmacro alength [a]\n  (list 'js* \"~{}.length\" a))",
                   :repo "clojurescript",
-                  :tag "r1450",
+                  :tag "r1503",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [987 988]}),
+                  :lines [1010 1011]}),
  :examples [{:id "26f79f",
              :content "```clj\n(def a #js [1 2 3])\n\n(alength a)\n;;=> 3\n\n(.-length a)\n;;=> 3\n\n(aget a \"length\")\n;;=> 3\n\n(count a)\n;;=> 3\n```"}],
  :full-name "cljs.core/alength",

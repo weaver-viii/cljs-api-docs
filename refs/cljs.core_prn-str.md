@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1450
+clojurescript @ r1503
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6203-6206](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L6203-L6206)</ins>
+            └── <ins>[core.cljs:6304-6307](https://github.com/clojure/clojurescript/blob/r1503/src/cljs/cljs/core.cljs#L6304-L6307)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_prn-str",
  :source {:code "(defn prn-str\n  [& objs]\n  (prn-str-with-opts objs (pr-opts)))",
           :repo "clojurescript",
-          :tag "r1450",
+          :tag "r1503",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6203 6206]},
+          :lines [6304 6307]},
  :full-name "cljs.core/prn-str",
  :clj-symbol "clojure.core/prn-str",
  :docstring "Same as pr-str followed by (newline)"}

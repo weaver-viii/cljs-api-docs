@@ -36,21 +36,23 @@ Source code:
          (deftype* ~t ~fields ~pmasks)
          (set! (.-cljs$lang$type ~t) true)
          (set! (.-cljs$lang$ctorPrSeq ~t) (fn [this#] (list ~(core/str r))))
+         (set! (.-cljs$lang$ctorPrWriter ~t) (fn [this# writer#] (-write writer# ~(core/str r))))
          (extend-type ~t ~@(dt->et impls fields true))
          ~t)
       `(do
          (deftype* ~t ~fields ~pmasks)
          (set! (.-cljs$lang$type ~t) true)
          (set! (.-cljs$lang$ctorPrSeq ~t) (fn [this#] (list ~(core/str r))))
+         (set! (.-cljs$lang$ctorPrWriter ~t) (fn [this# writer#] (-write writer# ~(core/str r))))
          ~t))))
 ```
 
  <pre>
-clojurescript @ r1450
+clojurescript @ r1503
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:565-583](https://github.com/clojure/clojurescript/blob/r1450/src/clj/cljs/core.clj#L565-L583)</ins>
+            └── <ins>[core.clj:571-591](https://github.com/clojure/clojurescript/blob/r1503/src/clj/cljs/core.clj#L571-L591)</ins>
 </pre>
 
 
@@ -73,11 +75,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "macro",
  :full-name-encode "cljs.core_deftype",
- :source {:code "(defmacro deftype [t fields & impls]\n  (let [r (:name (cljs.analyzer/resolve-var (dissoc &env :locals) t))\n        [fpps pmasks] (prepare-protocol-masks &env t impls)\n        protocols (collect-protocols impls &env)\n        t (vary-meta t assoc\n            :protocols protocols\n            :skip-protocol-flag fpps) ]\n    (if (seq impls)\n      `(do\n         (deftype* ~t ~fields ~pmasks)\n         (set! (.-cljs$lang$type ~t) true)\n         (set! (.-cljs$lang$ctorPrSeq ~t) (fn [this#] (list ~(core/str r))))\n         (extend-type ~t ~@(dt->et impls fields true))\n         ~t)\n      `(do\n         (deftype* ~t ~fields ~pmasks)\n         (set! (.-cljs$lang$type ~t) true)\n         (set! (.-cljs$lang$ctorPrSeq ~t) (fn [this#] (list ~(core/str r))))\n         ~t))))",
+ :source {:code "(defmacro deftype [t fields & impls]\n  (let [r (:name (cljs.analyzer/resolve-var (dissoc &env :locals) t))\n        [fpps pmasks] (prepare-protocol-masks &env t impls)\n        protocols (collect-protocols impls &env)\n        t (vary-meta t assoc\n            :protocols protocols\n            :skip-protocol-flag fpps) ]\n    (if (seq impls)\n      `(do\n         (deftype* ~t ~fields ~pmasks)\n         (set! (.-cljs$lang$type ~t) true)\n         (set! (.-cljs$lang$ctorPrSeq ~t) (fn [this#] (list ~(core/str r))))\n         (set! (.-cljs$lang$ctorPrWriter ~t) (fn [this# writer#] (-write writer# ~(core/str r))))\n         (extend-type ~t ~@(dt->et impls fields true))\n         ~t)\n      `(do\n         (deftype* ~t ~fields ~pmasks)\n         (set! (.-cljs$lang$type ~t) true)\n         (set! (.-cljs$lang$ctorPrSeq ~t) (fn [this#] (list ~(core/str r))))\n         (set! (.-cljs$lang$ctorPrWriter ~t) (fn [this# writer#] (-write writer# ~(core/str r))))\n         ~t))))",
           :repo "clojurescript",
-          :tag "r1450",
+          :tag "r1503",
           :filename "src/clj/cljs/core.clj",
-          :lines [565 583]},
+          :lines [571 591]},
  :full-name "cljs.core/deftype",
  :clj-symbol "clojure.core/deftype"}
 

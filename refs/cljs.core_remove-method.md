@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1450
+clojurescript @ r1503
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6906-6909](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L6906-L6909)</ins>
+            └── <ins>[core.cljs:7149-7152](https://github.com/clojure/clojurescript/blob/r1503/src/cljs/cljs/core.cljs#L7149-L7152)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_remove-method",
  :source {:code "(defn remove-method\n [multifn dispatch-val]\n (-remove-method multifn dispatch-val))",
           :repo "clojurescript",
-          :tag "r1450",
+          :tag "r1503",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6906 6909]},
+          :lines [7149 7152]},
  :full-name "cljs.core/remove-method",
  :clj-symbol "clojure.core/remove-method",
  :docstring "Removes the method of multimethod associated with dispatch-value."}

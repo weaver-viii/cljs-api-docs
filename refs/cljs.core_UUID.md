@@ -25,14 +25,18 @@ Source code:
   Object
   (toString [this]
     (pr-str this))
-    
+
   IEquiv
   (-equiv [_ other]
     (and (instance? UUID other) (identical? uuid (.-uuid other))))
 
-  IPrintable
+  ^:deprecation-nowarn IPrintable
   (-pr-seq [_ _]
     (list (str "#uuid \"" uuid "\"")))
+
+  IPrintWithWriter
+  (-pr-writer [_ writer _]
+    (-write writer (str "#uuid \"" uuid "\"")))
 
   IHash
   (-hash [this]
@@ -40,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1450
+clojurescript @ r1503
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6932-6947](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L6932-L6947)</ins>
+            └── <ins>[core.cljs:7175-7194](https://github.com/clojure/clojurescript/blob/r1503/src/cljs/cljs/core.cljs#L7175-L7194)</ins>
 </pre>
 
 
@@ -65,11 +69,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "UUID",
  :type "type",
  :signature ["[uuid]"],
- :source {:code "(deftype UUID [uuid]\n  Object\n  (toString [this]\n    (pr-str this))\n    \n  IEquiv\n  (-equiv [_ other]\n    (and (instance? UUID other) (identical? uuid (.-uuid other))))\n\n  IPrintable\n  (-pr-seq [_ _]\n    (list (str \"#uuid \\\"\" uuid \"\\\"\")))\n\n  IHash\n  (-hash [this]\n    (goog.string/hashCode (pr-str this))))",
+ :source {:code "(deftype UUID [uuid]\n  Object\n  (toString [this]\n    (pr-str this))\n\n  IEquiv\n  (-equiv [_ other]\n    (and (instance? UUID other) (identical? uuid (.-uuid other))))\n\n  ^:deprecation-nowarn IPrintable\n  (-pr-seq [_ _]\n    (list (str \"#uuid \\\"\" uuid \"\\\"\")))\n\n  IPrintWithWriter\n  (-pr-writer [_ writer _]\n    (-write writer (str \"#uuid \\\"\" uuid \"\\\"\")))\n\n  IHash\n  (-hash [this]\n    (goog.string/hashCode (pr-str this))))",
           :repo "clojurescript",
-          :tag "r1450",
+          :tag "r1503",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6932 6947]},
+          :lines [7175 7194]},
  :full-name "cljs.core/UUID",
  :full-name-encode "cljs.core_UUID",
  :history [["+" "0.0-1424"]]}

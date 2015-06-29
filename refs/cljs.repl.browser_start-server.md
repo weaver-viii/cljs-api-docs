@@ -1,10 +1,10 @@
-## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> cljs.repl.browser/start-server
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> ~~cljs.repl.browser/start-server~~
 
  <table border="1">
 <tr>
 
 <td>function</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1503"><img valign="middle" alt="[×] 0.0-1503" src="https://img.shields.io/badge/×-0.0--1503-red.svg"></a> </td>
 </tr>
 </table>
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "cljs.repl.browser",
  :name "start-server",
  :signature ["[opts]"],
- :history [["+" "0.0-927"]],
+ :history [["+" "0.0-927"] ["-" "0.0-1503"]],
  :type "function",
  :full-name-encode "cljs.repl.browser_start-server",
  :source {:code "(defn start-server\n  [opts]\n  (let [ss (ServerSocket. (:port opts))]\n    (future (server-loop opts ss))\n    (swap! server-state (fn [old] (assoc old :socket ss :port (:port opts))))))",
@@ -68,7 +68,8 @@ __Meta__ - To retrieve the API data for this symbol:
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [265 270]},
  :full-name "cljs.repl.browser/start-server",
- :docstring "Start the server on the specified port."}
+ :docstring "Start the server on the specified port.",
+ :removed {:in "0.0-1503", :last-seen "0.0-1450"}}
 
 ```
 

@@ -21,6 +21,7 @@ Source code:
 ```clj
 (defmethod parse 'new
   [_ env [_ ctor & args :as form] _]
+  (assert (symbol? ctor) "First arg to new must be a symbol")
   (disallowing-recur
    (let [enve (assoc env :context :expr)
          ctorexpr (analyze enve ctor)
@@ -30,17 +31,17 @@ Source code:
      (when (and known-num-fields (not= known-num-fields argc))
        (warning env
          (str "WARNING: Wrong number of args (" argc ") passed to " ctor)))
-     
+
      {:env env :op :new :form form :ctor ctorexpr :args argexprs
       :children (into [ctorexpr] argexprs)})))
 ```
 
  <pre>
-clojurescript @ r1450
+clojurescript @ r1503
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:525-538](https://github.com/clojure/clojurescript/blob/r1450/src/clj/cljs/analyzer.clj#L525-L538)</ins>
+            └── <ins>[analyzer.clj:544-558](https://github.com/clojure/clojurescript/blob/r1503/src/clj/cljs/analyzer.clj#L544-L558)</ins>
 </pre>
 
 
@@ -60,11 +61,11 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "special",
  :name "new",
  :type "special form",
- :source {:code "(defmethod parse 'new\n  [_ env [_ ctor & args :as form] _]\n  (disallowing-recur\n   (let [enve (assoc env :context :expr)\n         ctorexpr (analyze enve ctor)\n         argexprs (vec (map #(analyze enve %) args))\n         known-num-fields (:num-fields (resolve-existing-var env ctor))\n         argc (count args)]\n     (when (and known-num-fields (not= known-num-fields argc))\n       (warning env\n         (str \"WARNING: Wrong number of args (\" argc \") passed to \" ctor)))\n     \n     {:env env :op :new :form form :ctor ctorexpr :args argexprs\n      :children (into [ctorexpr] argexprs)})))",
+ :source {:code "(defmethod parse 'new\n  [_ env [_ ctor & args :as form] _]\n  (assert (symbol? ctor) \"First arg to new must be a symbol\")\n  (disallowing-recur\n   (let [enve (assoc env :context :expr)\n         ctorexpr (analyze enve ctor)\n         argexprs (vec (map #(analyze enve %) args))\n         known-num-fields (:num-fields (resolve-existing-var env ctor))\n         argc (count args)]\n     (when (and known-num-fields (not= known-num-fields argc))\n       (warning env\n         (str \"WARNING: Wrong number of args (\" argc \") passed to \" ctor)))\n\n     {:env env :op :new :form form :ctor ctorexpr :args argexprs\n      :children (into [ctorexpr] argexprs)})))",
           :repo "clojurescript",
-          :tag "r1450",
+          :tag "r1503",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [525 538]},
+          :lines [544 558]},
  :full-name "special/new",
  :full-name-encode "special_new",
  :clj-symbol "clojure.core/new",

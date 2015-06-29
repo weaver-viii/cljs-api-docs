@@ -22,11 +22,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1450
+clojurescript @ r1503
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:500-502](https://github.com/clojure/clojurescript/blob/r1450/src/clj/cljs/analyzer.clj#L500-L502)</ins>
+            └── <ins>[analyzer.clj:519-521](https://github.com/clojure/clojurescript/blob/r1503/src/clj/cljs/analyzer.clj#L519-L521)</ins>
 </pre>
 
 
@@ -48,9 +48,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "special form",
  :source {:code "(defmethod parse 'let*\n  [op encl-env form _]\n  (analyze-let encl-env form false))",
           :repo "clojurescript",
-          :tag "r1450",
+          :tag "r1503",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [500 502]},
+          :lines [519 521]},
  :full-name "special/let*",
  :full-name-encode "special_letSTAR",
  :history [["+" "0.0-927"]]}

@@ -22,7 +22,7 @@ Source code:
 
 ```clj
 (set! cljs.core.HashMap/fromArrays (fn [ks vs]
-  (let [len (.-length ks)]
+  (let [len (alength ks)]
     (loop [i 0, out cljs.core.HashMap/EMPTY]
       (if (< i len)
         (recur (inc i) (assoc out (aget ks i) (aget vs i)))
@@ -30,11 +30,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1450
+clojurescript @ r1503
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3740-3745](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L3740-L3745)</ins>
+            └── <ins>[core.cljs:3779-3784](https://github.com/clojure/clojurescript/blob/r1503/src/cljs/cljs/core.cljs#L3779-L3784)</ins>
 </pre>
 
 
@@ -58,11 +58,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "HashMap",
  :type "function",
  :full-name-encode "cljs.core_HashMapDOTfromArrays",
- :source {:code "(set! cljs.core.HashMap/fromArrays (fn [ks vs]\n  (let [len (.-length ks)]\n    (loop [i 0, out cljs.core.HashMap/EMPTY]\n      (if (< i len)\n        (recur (inc i) (assoc out (aget ks i) (aget vs i)))\n        out)))))",
+ :source {:code "(set! cljs.core.HashMap/fromArrays (fn [ks vs]\n  (let [len (alength ks)]\n    (loop [i 0, out cljs.core.HashMap/EMPTY]\n      (if (< i len)\n        (recur (inc i) (assoc out (aget ks i) (aget vs i)))\n        out)))))",
           :repo "clojurescript",
-          :tag "r1450",
+          :tag "r1503",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3740 3745]},
+          :lines [3779 3784]},
  :full-name "cljs.core/HashMap.fromArrays"}
 
 ```

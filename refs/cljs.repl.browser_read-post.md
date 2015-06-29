@@ -1,10 +1,10 @@
-## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> cljs.repl.browser/read-post
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> ~~cljs.repl.browser/read-post~~
 
  <table border="1">
 <tr>
 
 <td>function</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1503"><img valign="middle" alt="[×] 0.0-1503" src="https://img.shields.io/badge/×-0.0--1503-red.svg"></a> </td>
 </tr>
 </table>
 
@@ -58,16 +58,17 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.repl.browser",
  :name "read-post",
- :type "function",
  :signature ["[line rdr]"],
+ :history [["+" "0.0-927"] ["-" "0.0-1503"]],
+ :type "function",
+ :full-name-encode "cljs.repl.browser_read-post",
  :source {:code "(defn read-post [line rdr]\n  (let [[_ path _] (str/split line #\" \")\n        headers (parse-headers (read-headers rdr))\n        content-length (Integer/parseInt (:content-length headers))\n        content (char-array content-length)]\n    (io! (.read rdr content 0 content-length)\n         {:method :post\n          :path path\n          :headers headers\n          :content (String. content)})))",
           :repo "clojurescript",
           :tag "r1450",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [143 152]},
  :full-name "cljs.repl.browser/read-post",
- :full-name-encode "cljs.repl.browser_read-post",
- :history [["+" "0.0-927"]]}
+ :removed {:in "0.0-1503", :last-seen "0.0-1450"}}
 
 ```
 

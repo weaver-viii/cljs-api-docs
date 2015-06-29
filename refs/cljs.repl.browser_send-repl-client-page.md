@@ -9,7 +9,7 @@
 </table>
 
  <samp>
-(__send-repl-client-page__ opts conn request)<br>
+(__send-repl-client-page__ request conn opts)<br>
 </samp>
 
 ---
@@ -22,8 +22,8 @@ Source code:
 
 ```clj
 (defn send-repl-client-page
-  [opts conn request]
-  (send-and-close conn 200
+  [request conn opts]
+  (server/send-and-close conn 200
     (str "<html><head><meta charset=\"UTF-8\"></head><body>
           <script type=\"text/javascript\">"
          (repl-client-js)
@@ -36,12 +36,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1450
+clojurescript @ r1503
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:170-181](https://github.com/clojure/clojurescript/blob/r1450/src/clj/cljs/repl/browser.clj#L170-L181)</ins>
+                └── <ins>[browser.clj:49-60](https://github.com/clojure/clojurescript/blob/r1503/src/clj/cljs/repl/browser.clj#L49-L60)</ins>
 </pre>
 
 
@@ -61,12 +61,12 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "cljs.repl.browser",
  :name "send-repl-client-page",
  :type "function",
- :signature ["[opts conn request]"],
- :source {:code "(defn send-repl-client-page\n  [opts conn request]\n  (send-and-close conn 200\n    (str \"<html><head><meta charset=\\\"UTF-8\\\"></head><body>\n          <script type=\\\"text/javascript\\\">\"\n         (repl-client-js)\n         \"</script>\"\n         \"<script type=\\\"text/javascript\\\">\n          clojure.browser.repl.client.start(\\\"http://\" (-> request :headers :host) \"\\\");\n          </script>\"\n         \"</body></html>\")\n    \"text/html\"))",
+ :signature ["[request conn opts]"],
+ :source {:code "(defn send-repl-client-page\n  [request conn opts]\n  (server/send-and-close conn 200\n    (str \"<html><head><meta charset=\\\"UTF-8\\\"></head><body>\n          <script type=\\\"text/javascript\\\">\"\n         (repl-client-js)\n         \"</script>\"\n         \"<script type=\\\"text/javascript\\\">\n          clojure.browser.repl.client.start(\\\"http://\" (-> request :headers :host) \"\\\");\n          </script>\"\n         \"</body></html>\")\n    \"text/html\"))",
           :repo "clojurescript",
-          :tag "r1450",
+          :tag "r1503",
           :filename "src/clj/cljs/repl/browser.clj",
-          :lines [170 181]},
+          :lines [49 60]},
  :full-name "cljs.repl.browser/send-repl-client-page",
  :full-name-encode "cljs.repl.browser_send-repl-client-page",
  :history [["+" "0.0-927"]]}

@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1450
+clojurescript @ r1503
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2791](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L2791)</ins>
+            └── <ins>[core.cljs:2830](https://github.com/clojure/clojurescript/blob/r1503/src/cljs/cljs/core.cljs#L2830)</ins>
 </pre>
 
 
@@ -47,9 +47,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "Vector",
  :source {:code "(set! cljs.core.Vector/EMPTY (Vector. nil (array) 0))",
           :repo "clojurescript",
-          :tag "r1450",
+          :tag "r1503",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2791]},
+          :lines [2830]},
  :full-name "cljs.core/Vector.EMPTY",
  :full-name-encode "cljs.core_VectorDOTEMPTY",
  :history [["+" "0.0-927"]]}

@@ -800,7 +800,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/IPrintWithWriter</td>
-<td></td>
+<td>[ref](refs/cljs.core_IPrintWithWriter.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_IPrintWithWriter.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -976,7 +976,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/IWriter</td>
-<td></td>
+<td>[ref](refs/cljs.core_IWriter.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_IWriter.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1464,7 +1464,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/StringBufferWriter</td>
-<td></td>
+<td>[ref](refs/cljs.core_StringBufferWriter.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_StringBufferWriter.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3760,7 +3760,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/pr-seq-writer</td>
-<td></td>
+<td>[ref](refs/cljs.core_pr-seq-writer.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_pr-seq-writer.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3776,7 +3776,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/pr-sequential-writer</td>
-<td></td>
+<td>[ref](refs/cljs.core_pr-sequential-writer.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_pr-sequential-writer.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5152,7 +5152,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/write-all</td>
-<td></td>
+<td>[ref](refs/cljs.core_write-all.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_write-all.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5984,7 +5984,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/analyze-source</td>
-<td></td>
+<td>[ref](refs/cljs.repl_analyze-source.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_analyze-source.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6320,7 +6320,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.browser/browser-state</td>
-<td></td>
+<td>[ref](refs/cljs.repl.browser_browser-state.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.browser_browser-state.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6808,7 +6808,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.reflect/macroexpand</td>
-<td></td>
+<td>[ref](refs/cljs.repl.reflect_macroexpand.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.reflect_macroexpand.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6816,7 +6816,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.reflect/parse-param</td>
-<td></td>
+<td>[ref](refs/cljs.repl.reflect_parse-param.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.reflect_parse-param.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6824,7 +6824,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.reflect/read-url-string</td>
-<td></td>
+<td>[ref](refs/cljs.repl.reflect_read-url-string.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.reflect_read-url-string.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6936,7 +6936,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.server/connection</td>
-<td></td>
+<td>[ref](refs/cljs.repl.server_connection.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.server_connection.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6944,7 +6944,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.server/dispatch-on</td>
-<td></td>
+<td>[ref](refs/cljs.repl.server_dispatch-on.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.server_dispatch-on.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6952,7 +6952,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.server/handlers</td>
-<td></td>
+<td>[ref](refs/cljs.repl.server_handlers.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.server_handlers.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6960,7 +6960,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.server/parse-headers</td>
-<td></td>
+<td>[ref](refs/cljs.repl.server_parse-headers.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.server_parse-headers.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6968,7 +6968,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.server/read-get</td>
-<td></td>
+<td>[ref](refs/cljs.repl.server_read-get.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.server_read-get.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6976,7 +6976,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.server/read-headers</td>
-<td></td>
+<td>[ref](refs/cljs.repl.server_read-headers.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.server_read-headers.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6984,7 +6984,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.server/read-post</td>
-<td></td>
+<td>[ref](refs/cljs.repl.server_read-post.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.server_read-post.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6992,7 +6992,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.server/read-request</td>
-<td></td>
+<td>[ref](refs/cljs.repl.server_read-request.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.server_read-request.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7000,7 +7000,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.server/send-404</td>
-<td></td>
+<td>[ref](refs/cljs.repl.server_send-404.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.server_send-404.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7008,7 +7008,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.server/send-and-close</td>
-<td></td>
+<td>[ref](refs/cljs.repl.server_send-and-close.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.server_send-and-close.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7016,7 +7016,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.server/set-connection</td>
-<td></td>
+<td>[ref](refs/cljs.repl.server_set-connection.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.server_set-connection.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7024,7 +7024,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.server/start</td>
-<td></td>
+<td>[ref](refs/cljs.repl.server_start.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.server_start.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7032,7 +7032,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.server/state</td>
-<td></td>
+<td>[ref](refs/cljs.repl.server_state.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.server_state.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7040,7 +7040,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.server/stop</td>
-<td></td>
+<td>[ref](refs/cljs.repl.server_stop.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.server_stop.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7960,7 +7960,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.data/Diff</td>
-<td></td>
+<td>[ref](refs/clojure.data_Diff.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.data_Diff.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7968,7 +7968,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.data/EqualityPartition</td>
-<td></td>
+<td>[ref](refs/clojure.data_EqualityPartition.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.data_EqualityPartition.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7976,7 +7976,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.data/diff</td>
-<td></td>
+<td>[ref](refs/clojure.data_diff.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.data_diff.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7984,7 +7984,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.reflect/doc</td>
-<td></td>
+<td>[ref](refs/clojure.reflect_doc.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.reflect_doc.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7992,7 +7992,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.reflect/macroexpand</td>
-<td></td>
+<td>[ref](refs/clojure.reflect_macroexpand.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.reflect_macroexpand.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -8000,7 +8000,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.reflect/meta</td>
-<td></td>
+<td>[ref](refs/clojure.reflect_meta.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.reflect_meta.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -8008,7 +8008,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.reflect/print-doc</td>
-<td></td>
+<td>[ref](refs/clojure.reflect_print-doc.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.reflect_print-doc.cljsdoc)</td>
 <td></td>
 <td></td>

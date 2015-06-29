@@ -26,7 +26,7 @@ Source code:
                        :type true
                        :num-fields (count fields))]
                (merge m
-                 {:protocols (-> tsym meta :protocols)}     
+                 {:protocols (-> tsym meta :protocols)}
                  (when-let [line (:line env)]
                    {:file *cljs-file*
                     :line line})))))
@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1450
+clojurescript @ r1503
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:670-684](https://github.com/clojure/clojurescript/blob/r1450/src/clj/cljs/analyzer.clj#L670-L684)</ins>
+            └── <ins>[analyzer.clj:700-714](https://github.com/clojure/clojurescript/blob/r1503/src/clj/cljs/analyzer.clj#L700-L714)</ins>
 </pre>
 
 
@@ -58,11 +58,11 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "special",
  :name "deftype*",
  :type "special form",
- :source {:code "(defmethod parse 'deftype*\n  [_ env [_ tsym fields pmasks :as form] _]\n  (let [t (:name (resolve-var (dissoc env :locals) tsym))]\n    (swap! namespaces update-in [(-> env :ns :name) :defs tsym]\n           (fn [m]\n             (let [m (assoc (or m {})\n                       :name t\n                       :type true\n                       :num-fields (count fields))]\n               (merge m\n                 {:protocols (-> tsym meta :protocols)}     \n                 (when-let [line (:line env)]\n                   {:file *cljs-file*\n                    :line line})))))\n    {:env env :op :deftype* :form form :t t :fields fields :pmasks pmasks}))",
+ :source {:code "(defmethod parse 'deftype*\n  [_ env [_ tsym fields pmasks :as form] _]\n  (let [t (:name (resolve-var (dissoc env :locals) tsym))]\n    (swap! namespaces update-in [(-> env :ns :name) :defs tsym]\n           (fn [m]\n             (let [m (assoc (or m {})\n                       :name t\n                       :type true\n                       :num-fields (count fields))]\n               (merge m\n                 {:protocols (-> tsym meta :protocols)}\n                 (when-let [line (:line env)]\n                   {:file *cljs-file*\n                    :line line})))))\n    {:env env :op :deftype* :form form :t t :fields fields :pmasks pmasks}))",
           :repo "clojurescript",
-          :tag "r1450",
+          :tag "r1503",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [670 684]},
+          :lines [700 714]},
  :full-name "special/deftype*",
  :full-name-encode "special_deftypeSTAR",
  :history [["+" "0.0-927"]]}

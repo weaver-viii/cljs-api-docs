@@ -43,7 +43,7 @@ Source docstring:
 
 ```
 Reduces an expression across an array a, using an index named idx,
-and return value named ret, initialized to init, setting ret to the 
+and return value named ret, initialized to init, setting ret to the
 evaluation of expr at each step, returning ret.
 ```
 
@@ -60,11 +60,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1450
+clojurescript @ r1503
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1008-1017](https://github.com/clojure/clojurescript/blob/r1450/src/clj/cljs/core.clj#L1008-L1017)</ins>
+            └── <ins>[core.clj:1031-1040](https://github.com/clojure/clojurescript/blob/r1503/src/clj/cljs/core.clj#L1031-L1040)</ins>
 </pre>
 
 
@@ -91,14 +91,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_areduce",
  :source {:code "(defmacro areduce\n  [a idx ret init expr]\n  `(let [a# ~a]\n     (loop  [~idx 0 ~ret ~init]\n       (if (< ~idx  (alength a#))\n         (recur (inc ~idx) ~expr)\n         ~ret))))",
           :repo "clojurescript",
-          :tag "r1450",
+          :tag "r1503",
           :filename "src/clj/cljs/core.clj",
-          :lines [1008 1017]},
+          :lines [1031 1040]},
  :examples [{:id "20a389",
              :content "```clj\n(def a #js [1 2 3])\n(areduce a i ret 0 (+ ret (aget a i)))\n;;=> 6\n```"}],
  :full-name "cljs.core/areduce",
  :clj-symbol "clojure.core/areduce",
- :docstring "Reduces an expression across an array a, using an index named idx,\nand return value named ret, initialized to init, setting ret to the \nevaluation of expr at each step, returning ret."}
+ :docstring "Reduces an expression across an array a, using an index named idx,\nand return value named ret, initialized to init, setting ret to the\nevaluation of expr at each step, returning ret."}
 
 ```
 

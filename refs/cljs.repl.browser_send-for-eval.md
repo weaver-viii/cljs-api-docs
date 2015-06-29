@@ -33,19 +33,19 @@ Source code:
 ```clj
 (defn send-for-eval
   ([form return-value-fn]
-     (send-for-eval @(connection) form return-value-fn))
+     (send-for-eval @(server/connection) form return-value-fn))
   ([conn form return-value-fn]
      (do (set-return-value-fn return-value-fn)
-         (send-and-close conn 200 form "text/javascript"))))
+         (server/send-and-close conn 200 form "text/javascript"))))
 ```
 
  <pre>
-clojurescript @ r1450
+clojurescript @ r1503
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:100-108](https://github.com/clojure/clojurescript/blob/r1450/src/clj/cljs/repl/browser.clj#L100-L108)</ins>
+                └── <ins>[browser.clj:30-38](https://github.com/clojure/clojurescript/blob/r1503/src/clj/cljs/repl/browser.clj#L30-L38)</ins>
 </pre>
 
 
@@ -68,11 +68,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.repl.browser_send-for-eval",
- :source {:code "(defn send-for-eval\n  ([form return-value-fn]\n     (send-for-eval @(connection) form return-value-fn))\n  ([conn form return-value-fn]\n     (do (set-return-value-fn return-value-fn)\n         (send-and-close conn 200 form \"text/javascript\"))))",
+ :source {:code "(defn send-for-eval\n  ([form return-value-fn]\n     (send-for-eval @(server/connection) form return-value-fn))\n  ([conn form return-value-fn]\n     (do (set-return-value-fn return-value-fn)\n         (server/send-and-close conn 200 form \"text/javascript\"))))",
           :repo "clojurescript",
-          :tag "r1450",
+          :tag "r1503",
           :filename "src/clj/cljs/repl/browser.clj",
-          :lines [100 108]},
+          :lines [30 38]},
  :full-name "cljs.repl.browser/send-for-eval",
  :docstring "Given a form and a return value function, send the form to the\nbrowser for evaluation. The return value function will be called\nwhen the return value is received."}
 

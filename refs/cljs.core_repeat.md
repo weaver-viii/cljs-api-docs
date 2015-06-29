@@ -51,11 +51,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1450
+clojurescript @ r1503
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2497-2500](https://github.com/clojure/clojurescript/blob/r1450/src/cljs/cljs/core.cljs#L2497-L2500)</ins>
+            └── <ins>[core.cljs:2536-2539](https://github.com/clojure/clojurescript/blob/r1503/src/cljs/cljs/core.cljs#L2536-L2539)</ins>
 </pre>
 
 
@@ -85,9 +85,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_repeat",
  :source {:code "(defn repeat\n  ([x] (lazy-seq (cons x (repeat x))))\n  ([n x] (take n (repeat x))))",
           :repo "clojurescript",
-          :tag "r1450",
+          :tag "r1503",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2497 2500]},
+          :lines [2536 2539]},
  :full-name "cljs.core/repeat",
  :clj-symbol "clojure.core/repeat",
  :docstring "Returns a lazy (infinite!, or length n if supplied) sequence of xs."}

@@ -1,10 +1,10 @@
-## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> cljs.repl.browser/server-state
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> ~~cljs.repl.browser/server-state~~
 
  <table border="1">
 <tr>
 
 <td>var</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1503"><img valign="middle" alt="[×] 0.0-1503" src="https://img.shields.io/badge/×-0.0--1503-red.svg"></a> </td>
 </tr>
 </table>
 
@@ -56,7 +56,8 @@ __Meta__ - To retrieve the API data for this symbol:
           :lines [24 28]},
  :full-name "cljs.repl.browser/server-state",
  :full-name-encode "cljs.repl.browser_server-state",
- :history [["+" "0.0-927"]]}
+ :history [["+" "0.0-927"] ["-" "0.0-1503"]],
+ :removed {:in "0.0-1503", :last-seen "0.0-1450"}}
 
 ```
 
