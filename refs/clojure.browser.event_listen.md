@@ -35,12 +35,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2511
+clojurescript @ r2629
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[event.cljs:46-53](https://github.com/clojure/clojurescript/blob/r2511/src/cljs/clojure/browser/event.cljs#L46-L53)</ins>
+                └── <ins>[event.cljs:46-53](https://github.com/clojure/clojurescript/blob/r2629/src/cljs/clojure/browser/event.cljs#L46-L53)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[src type fn]" "[src type fn capture?]"],
  :source {:code "(defn listen\n  ([src type fn]\n     (listen src type fn false))\n  ([src type fn capture?]\n     (events/listen src\n                    (get (event-types src) type type)\n                    fn\n                    capture?)))",
           :repo "clojurescript",
-          :tag "r2511",
+          :tag "r2629",
           :filename "src/cljs/clojure/browser/event.cljs",
           :lines [46 53]},
  :full-name "clojure.browser.event/listen",

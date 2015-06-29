@@ -9,7 +9,7 @@
 </table>
 
  <samp>
-(__load-javascript__ repl-env ns-list url)<br>
+(__load-javascript__ repl-env provides url)<br>
 </samp>
 
 ---
@@ -31,20 +31,20 @@ Source code:
 
 ```clj
 (defn load-javascript
-  [repl-env ns-list url]
-  (let [missing (remove #(contains? @loaded-libs %) ns-list)]
+  [repl-env provides url]
+  (let [missing (remove #(contains? @loaded-libs %) provides)]
     (when (seq missing)
       (browser-eval (slurp url))
       (swap! loaded-libs (partial apply conj) missing))))
 ```
 
  <pre>
-clojurescript @ r2511
+clojurescript @ r2629
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:169-179](https://github.com/clojure/clojurescript/blob/r2511/src/clj/cljs/repl/browser.clj#L169-L179)</ins>
+                └── <ins>[browser.clj:183-193](https://github.com/clojure/clojurescript/blob/r2629/src/clj/cljs/repl/browser.clj#L183-L193)</ins>
 </pre>
 
 
@@ -63,15 +63,15 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.repl.browser",
  :name "load-javascript",
- :signature ["[repl-env ns-list url]"],
+ :signature ["[repl-env provides url]"],
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.repl.browser_load-javascript",
- :source {:code "(defn load-javascript\n  [repl-env ns-list url]\n  (let [missing (remove #(contains? @loaded-libs %) ns-list)]\n    (when (seq missing)\n      (browser-eval (slurp url))\n      (swap! loaded-libs (partial apply conj) missing))))",
+ :source {:code "(defn load-javascript\n  [repl-env provides url]\n  (let [missing (remove #(contains? @loaded-libs %) provides)]\n    (when (seq missing)\n      (browser-eval (slurp url))\n      (swap! loaded-libs (partial apply conj) missing))))",
           :repo "clojurescript",
-          :tag "r2511",
+          :tag "r2629",
           :filename "src/clj/cljs/repl/browser.clj",
-          :lines [169 179]},
+          :lines [183 193]},
  :full-name "cljs.repl.browser/load-javascript",
  :docstring "Accepts a REPL environment, a list of namespaces, and a URL for a\nJavaScript file which contains the implementation for the list of\nnamespaces. Will load the JavaScript file into the REPL environment\nif any of the namespaces have not already been loaded from the\nClojureScript REPL."}
 

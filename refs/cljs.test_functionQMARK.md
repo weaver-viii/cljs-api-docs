@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2511
+clojurescript @ r2629
 └── src
     └── clj
         └── cljs
-            └── <ins>[test.clj:17-21](https://github.com/clojure/clojurescript/blob/r2511/src/clj/cljs/test.clj#L17-L21)</ins>
+            └── <ins>[test.clj:18-22](https://github.com/clojure/clojurescript/blob/r2629/src/clj/cljs/test.clj#L18-L22)</ins>
 </pre>
 
 
@@ -65,9 +65,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_functionQMARK",
  :source {:code "(defn function?\n  [menv x]\n  (and (symbol? x) (:fn-var (ana-api/resolve menv x))))",
           :repo "clojurescript",
-          :tag "r2511",
+          :tag "r2629",
           :filename "src/clj/cljs/test.clj",
-          :lines [17 21]},
+          :lines [18 22]},
  :full-name "cljs.test/function?",
  :clj-symbol "clojure.test/function?",
  :docstring "Returns true if argument is a function or a symbol that resolves to\na function (not a macro)."}

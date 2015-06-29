@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2511
+clojurescript @ r2629
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8158-8161](https://github.com/clojure/clojurescript/blob/r2511/src/cljs/cljs/core.cljs#L8158-L8161)</ins>
+            └── <ins>[core.cljs:8141-8144](https://github.com/clojure/clojurescript/blob/r2629/src/cljs/cljs/core.cljs#L8141-L8144)</ins>
 </pre>
 
 
@@ -60,9 +60,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_newline",
  :source {:code "(defn newline [opts]\n  (string-print \"\\n\")\n  (when (get opts :flush-on-newline)\n    (flush)))",
           :repo "clojurescript",
-          :tag "r2511",
+          :tag "r2629",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [8158 8161]},
+          :lines [8141 8144]},
  :full-name "cljs.core/newline",
  :clj-symbol "clojure.core/newline"}
 

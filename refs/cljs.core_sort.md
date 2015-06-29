@@ -39,7 +39,7 @@ Source docstring:
 
 ```
 Returns a sorted sequence of the items in coll. Comp can be
-boolean-valued comparison funcion, or a -/0/+ valued comparator.
+boolean-valued comparison function, or a -/0/+ valued comparator.
 Comp defaults to compare.
 ```
 
@@ -59,11 +59,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2511
+clojurescript @ r2629
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1650-1662](https://github.com/clojure/clojurescript/blob/r2511/src/cljs/cljs/core.cljs#L1650-L1662)</ins>
+            └── <ins>[core.cljs:1642-1654](https://github.com/clojure/clojurescript/blob/r2629/src/cljs/cljs/core.cljs#L1642-L1654)</ins>
 </pre>
 
 
@@ -90,12 +90,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_sort",
  :source {:code "(defn sort\n  ([coll]\n   (sort compare coll))\n  ([comp coll]\n   (if (seq coll)\n     (let [a (to-array coll)]\n       ;; matching Clojure's stable sort, though docs don't promise it\n       (garray/stableSort a (fn->comparator comp))\n       (seq a))\n     ())))",
           :repo "clojurescript",
-          :tag "r2511",
+          :tag "r2629",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1650 1662]},
+          :lines [1642 1654]},
  :full-name "cljs.core/sort",
  :clj-symbol "clojure.core/sort",
- :docstring "Returns a sorted sequence of the items in coll. Comp can be\nboolean-valued comparison funcion, or a -/0/+ valued comparator.\nComp defaults to compare."}
+ :docstring "Returns a sorted sequence of the items in coll. Comp can be\nboolean-valued comparison function, or a -/0/+ valued comparator.\nComp defaults to compare."}
 
 ```
 

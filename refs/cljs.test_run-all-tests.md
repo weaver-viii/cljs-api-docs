@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2511
+clojurescript @ r2629
 └── src
     └── clj
         └── cljs
-            └── <ins>[test.clj:240-251](https://github.com/clojure/clojurescript/blob/r2511/src/clj/cljs/test.clj#L240-L251)</ins>
+            └── <ins>[test.clj:265-276](https://github.com/clojure/clojurescript/blob/r2629/src/clj/cljs/test.clj#L265-L276)</ins>
 </pre>
 
 
@@ -75,9 +75,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_run-all-tests",
  :source {:code "(defmacro run-all-tests\n  ([] `(cljs.test/run-all-tests nil))\n  ([re]\n   `(cljs.test/run-tests (cljs.test/empty-env)\n      ~@(map\n          (fn [ns] `(quote ~ns))\n          (cond->> (ana-api/all-ns)\n            re (filter #(re-matches re (name %))))))))",
           :repo "clojurescript",
-          :tag "r2511",
+          :tag "r2629",
           :filename "src/clj/cljs/test.clj",
-          :lines [240 251]},
+          :lines [265 276]},
  :full-name "cljs.test/run-all-tests",
  :clj-symbol "clojure.test/run-all-tests",
  :docstring "Runs all tests in all namespaces; prints results.\nOptional argument is a regular expression; only namespaces with\nnames matching the regular expression (with re-matches) will be\ntested."}

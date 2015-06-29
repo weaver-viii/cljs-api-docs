@@ -64,7 +64,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.analyzer.api/in-cljs-user</td>
-<td></td>
+<td>[ref](refs/cljs.analyzer.api_in-cljs-user.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.analyzer.api_in-cljs-user.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -104,7 +104,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.analyzer.api/ns-specs</td>
-<td></td>
+<td>[ref](refs/cljs.analyzer.api_ns-specs.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.analyzer.api_ns-specs.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -168,7 +168,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.build.api/cljs-ns-dependents</td>
-<td></td>
+<td>[ref](refs/cljs.build.api_cljs-ns-dependents.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.build.api_cljs-ns-dependents.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -232,7 +232,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.build.api/parse-js-ns</td>
-<td></td>
+<td>[ref](refs/cljs.build.api_parse-js-ns.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.build.api_parse-js-ns.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -248,7 +248,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.build.api/src-file->goog-require</td>
-<td></td>
+<td>[ref](refs/cljs.build.api_src-file-GTgoog-require.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.build.api_src-file-GTgoog-require.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -256,7 +256,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.build.api/src-file->target-file</td>
-<td></td>
+<td>[ref](refs/cljs.build.api_src-file-GTtarget-file.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.build.api_src-file-GTtarget-file.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6048,7 +6048,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/merge-require</td>
-<td></td>
+<td>[ref](refs/cljs.repl_merge-require.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_merge-require.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6056,7 +6056,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/merge-spec</td>
-<td></td>
+<td>[ref](refs/cljs.repl_merge-spec.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_merge-spec.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6152,7 +6152,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/repl\*</td>
-<td></td>
+<td>[ref](refs/cljs.repl_replSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_replSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6200,7 +6200,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/spec-sort</td>
-<td></td>
+<td>[ref](refs/cljs.repl_spec-sort.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_spec-sort.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6216,7 +6216,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/update-require-spec</td>
-<td></td>
+<td>[ref](refs/cljs.repl_update-require-spec.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_update-require-spec.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6656,7 +6656,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.node/close-socket</td>
-<td></td>
+<td>[ref](refs/cljs.repl.node_close-socket.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.node_close-socket.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6664,7 +6664,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.node/load-javascript</td>
-<td></td>
+<td>[ref](refs/cljs.repl.node_load-javascript.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.node_load-javascript.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6672,7 +6672,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.node/node-eval</td>
-<td></td>
+<td>[ref](refs/cljs.repl.node_node-eval.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.node_node-eval.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6688,7 +6688,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.node/read-response</td>
-<td></td>
+<td>[ref](refs/cljs.repl.node_read-response.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.node_read-response.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6696,7 +6696,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.node/repl-env</td>
-<td></td>
+<td>[ref](refs/cljs.repl.node_repl-env.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.node_repl-env.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6704,7 +6704,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.node/repl-env\*</td>
-<td></td>
+<td>[ref](refs/cljs.repl.node_repl-envSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.node_repl-envSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6720,7 +6720,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.node/setup</td>
-<td></td>
+<td>[ref](refs/cljs.repl.node_setup.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.node_setup.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6728,7 +6728,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.node/socket</td>
-<td></td>
+<td>[ref](refs/cljs.repl.node_socket.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.node_socket.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6736,7 +6736,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.node/write</td>
-<td></td>
+<td>[ref](refs/cljs.repl.node_write.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.node_write.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7000,7 +7000,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.test/are</td>
-<td></td>
+<td>[ref](refs/cljs.test_are.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.test_are.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -8637,14 +8637,6 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
-</tr>
-<tr>
-<td>specialrepl/require</td>
-<td></td>
-<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/specialrepl_require.cljsdoc)</td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 </tr>
 <tr>
 <td>specialrepl/require-macros</td>

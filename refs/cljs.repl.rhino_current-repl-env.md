@@ -1,10 +1,10 @@
-## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> cljs.repl.rhino/current-repl-env
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> ~~cljs.repl.rhino/current-repl-env~~
 
  <table border="1">
 <tr>
 
 <td>var</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2629"><img valign="middle" alt="[×] 0.0-2629" src="https://img.shields.io/badge/×-0.0--2629-red.svg"></a> </td>
 </tr>
 </table>
 
@@ -52,7 +52,8 @@ __Meta__ - To retrieve the API data for this symbol:
           :lines [18]},
  :full-name "cljs.repl.rhino/current-repl-env",
  :full-name-encode "cljs.repl.rhino_current-repl-env",
- :history [["+" "0.0-927"]]}
+ :history [["+" "0.0-927"] ["-" "0.0-2629"]],
+ :removed {:in "0.0-2629", :last-seen "0.0-2511"}}
 
 ```
 

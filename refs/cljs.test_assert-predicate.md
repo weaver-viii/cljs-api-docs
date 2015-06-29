@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2511
+clojurescript @ r2629
 └── src
     └── clj
         └── cljs
-            └── <ins>[test.clj:23-41](https://github.com/clojure/clojurescript/blob/r2511/src/clj/cljs/test.clj#L23-L41)</ins>
+            └── <ins>[test.clj:24-42](https://github.com/clojure/clojurescript/blob/r2629/src/clj/cljs/test.clj#L24-L42)</ins>
 </pre>
 
 
@@ -79,9 +79,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_assert-predicate",
  :source {:code "(defn assert-predicate\n  [msg form]\n  (let [args (rest form)\n        pred (first form)]\n    `(let [values# (list ~@args)\n           result# (apply ~pred values#)]\n       (if result#\n         (cljs.test/do-report\n           {:type :pass, :message ~msg,\n            :expected '~form, :actual (cons ~pred values#)})\n         (cljs.test/do-report\n           {:type :fail, :message ~msg,\n            :expected '~form, :actual (list '~'not (cons '~pred values#))}))\n       result#)))",
           :repo "clojurescript",
-          :tag "r2511",
+          :tag "r2629",
           :filename "src/clj/cljs/test.clj",
-          :lines [23 41]},
+          :lines [24 42]},
  :full-name "cljs.test/assert-predicate",
  :clj-symbol "clojure.test/assert-predicate",
  :docstring "Returns generic assertion code for any functional predicate.  The\n'expected' argument to 'report' will contains the original form, the\n'actual' argument will contain the form with all its sub-forms\nevaluated.  If the predicate returns false, the 'actual' form will\nbe wrapped in (not...)."}
