@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2655
+clojurescript @ r2657
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:453](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/cljs/core.cljs#L453)</ins>
+            └── <ins>[core.cljs:453](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L453)</ins>
 </pre>
 
 
@@ -46,7 +46,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def m3-seed 0)",
           :repo "clojurescript",
-          :tag "r2655",
+          :tag "r2657",
           :filename "src/cljs/cljs/core.cljs",
           :lines [453]},
  :full-name "cljs.core/m3-seed",

@@ -76,11 +76,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2655
+clojurescript @ r2657
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5161-5212](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/cljs/core.cljs#L5161-L5212)</ins>
+            └── <ins>[core.cljs:5161-5212](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L5161-L5212)</ins>
 </pre>
 
 
@@ -103,7 +103,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[arr i _meta]"],
  :source {:code "(deftype PersistentArrayMapSeq [arr i _meta]\n  Object\n  (toString [coll]\n    (pr-str* coll))\n  (equiv [this other]\n    (-equiv this other))\n  \n  IMeta\n  (-meta [coll] _meta)\n\n  IWithMeta\n  (-with-meta [coll new-meta]\n    (PersistentArrayMapSeq. arr i new-meta))\n\n  ICounted\n  (-count [coll]\n    (/ (- (alength arr) i) 2))\n\n  ISeqable\n  (-seq [coll] coll)\n\n  ISequential\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  ICollection\n  (-conj [coll o]\n    (cons o coll))\n\n  IEmptyableCollection\n  (-empty [coll] (with-meta (.-EMPTY List) _meta))\n\n  IHash\n  (-hash [coll] (hash-ordered-coll coll))\n  \n  ISeq\n  (-first [coll]\n    [(aget arr i) (aget arr (inc i))])\n\n  (-rest [coll]\n    (if (< i (- (alength arr) 2))\n      (PersistentArrayMapSeq. arr (+ i 2) _meta)\n      ()))\n\n  INext\n  (-next [coll]\n    (when (< i (- (alength arr) 2))\n      (PersistentArrayMapSeq. arr (+ i 2) _meta)))\n\n  IReduce\n  (-reduce [coll f] (seq-reduce f coll))\n  (-reduce [coll f start] (seq-reduce f start coll)))",
           :repo "clojurescript",
-          :tag "r2655",
+          :tag "r2657",
           :filename "src/cljs/cljs/core.cljs",
           :lines [5161 5212]},
  :full-name "cljs.core/PersistentArrayMapSeq",

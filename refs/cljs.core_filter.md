@@ -76,11 +76,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2655
+clojurescript @ r2657
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3861-3888](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/cljs/core.cljs#L3861-L3888)</ins>
+            └── <ins>[core.cljs:3861-3888](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L3861-L3888)</ins>
 </pre>
 
 
@@ -107,7 +107,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_filter",
  :source {:code "(defn filter\n  ([pred]\n    (fn [rf]\n      (fn\n        ([] (rf))\n        ([result] (rf result))\n        ([result input]\n           (if (pred input)\n             (rf result input)\n             result)))))\n  ([pred coll]\n   (lazy-seq\n    (when-let [s (seq coll)]\n      (if (chunked-seq? s)\n        (let [c (chunk-first s)\n              size (count c)\n              b (chunk-buffer size)]\n          (dotimes [i size]\n              (when (pred (-nth c i))\n                (chunk-append b (-nth c i))))\n          (chunk-cons (chunk b) (filter pred (chunk-rest s))))\n        (let [f (first s) r (rest s)]\n          (if (pred f)\n            (cons f (filter pred r))\n            (filter pred r))))))))",
           :repo "clojurescript",
-          :tag "r2655",
+          :tag "r2657",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3861 3888]},
  :full-name "cljs.core/filter",

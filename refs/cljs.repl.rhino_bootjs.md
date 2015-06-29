@@ -23,12 +23,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2655
+clojurescript @ r2657
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[rhino.clj:20-23](https://github.com/clojure/clojurescript/blob/r2655/src/clj/cljs/repl/rhino.clj#L20-L23)</ins>
+                └── <ins>[rhino.clj:20-23](https://github.com/clojure/clojurescript/blob/r2657/src/clj/cljs/repl/rhino.clj#L20-L23)</ins>
 </pre>
 
 
@@ -51,7 +51,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :return-type String,
  :source {:code "(def ^String bootjs\n  (str \"goog.require = function(rule){\"\n       \"Packages.clojure.lang.RT[\\\"var\\\"](\\\"cljs.repl.rhino\\\",\\\"goog-require\\\")\"\n       \".invoke(___repl_env, __repl_opts, rule);}\"))",
           :repo "clojurescript",
-          :tag "r2655",
+          :tag "r2657",
           :filename "src/clj/cljs/repl/rhino.clj",
           :lines [20 23]},
  :full-name "cljs.repl.rhino/bootjs",

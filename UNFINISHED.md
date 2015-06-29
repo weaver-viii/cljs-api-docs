@@ -8639,14 +8639,6 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 <td></td>
 </tr>
 <tr>
-<td>specialrepl/require-macros</td>
-<td></td>
-<td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/specialrepl_require-macros.cljsdoc)</td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-<td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
-</tr>
-<tr>
 <td>syntax/Infinity</td>
 <td>[ref](refs/syntax_Infinity.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/syntax_Infinity.cljsdoc)</td>

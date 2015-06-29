@@ -21,11 +21,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2655
+clojurescript @ r2657
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:306-307](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/cljs/core.cljs#L306-L307)</ins>
+            └── <ins>[core.cljs:306-307](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L306-L307)</ins>
 </pre>
 
 
@@ -48,7 +48,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IWithMeta",
  :source {:code "(defprotocol IWithMeta\n  (^clj -with-meta [o meta]))",
           :repo "clojurescript",
-          :tag "r2655",
+          :tag "r2657",
           :filename "src/cljs/cljs/core.cljs",
           :lines [306 307]},
  :methods [{:name "-with-meta",

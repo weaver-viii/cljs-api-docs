@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2655
+clojurescript @ r2657
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:333-334](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/cljs/core.cljs#L333-L334)</ins>
+            └── <ins>[core.cljs:333-334](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L333-L334)</ins>
 </pre>
 
 
@@ -52,7 +52,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IReversible",
  :source {:code "(defprotocol IReversible\n  (^clj -rseq [coll]))",
           :repo "clojurescript",
-          :tag "r2655",
+          :tag "r2657",
           :filename "src/cljs/cljs/core.cljs",
           :lines [333 334]},
  :methods [{:name "-rseq", :signature ["[coll]"], :docstring nil}],

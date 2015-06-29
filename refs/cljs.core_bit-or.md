@@ -64,11 +64,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2655
+clojurescript @ r2657
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2028-2030](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/cljs/core.cljs#L2028-L2030)</ins>
+            └── <ins>[core.cljs:2028-2030](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L2028-L2030)</ins>
 </pre>
 
 
@@ -81,11 +81,11 @@ clojurescript @ r2655
 ```
 
  <pre>
-clojurescript @ r2655
+clojurescript @ r2657
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:501-503](https://github.com/clojure/clojurescript/blob/r2655/src/clj/cljs/core.clj#L501-L503)</ins>
+            └── <ins>[core.clj:501-503](https://github.com/clojure/clojurescript/blob/r2657/src/clj/cljs/core.clj#L501-L503)</ins>
 </pre>
 
 ---
@@ -111,12 +111,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-or",
  :source {:code "(defn bit-or\n  [x y] (cljs.core/bit-or x y))",
           :repo "clojurescript",
-          :tag "r2655",
+          :tag "r2657",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2028 2030]},
  :extra-sources ({:code "(defmacro ^::ana/numeric bit-or\n  ([x y] (core/list 'js* \"(~{} | ~{})\" x y))\n  ([x y & more] `(bit-or (bit-or ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r2655",
+                  :tag "r2657",
                   :filename "src/clj/cljs/core.clj",
                   :lines [501 503]}),
  :examples [{:id "ecea10",

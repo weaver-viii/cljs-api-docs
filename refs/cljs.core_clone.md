@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2655
+clojurescript @ r2657
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:639-640](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/cljs/core.cljs#L639-L640)</ins>
+            └── <ins>[core.cljs:639-640](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L639-L640)</ins>
 </pre>
 
 
@@ -53,7 +53,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[value]"],
  :source {:code "(defn clone [value]\n  (-clone value))",
           :repo "clojurescript",
-          :tag "r2655",
+          :tag "r2657",
           :filename "src/cljs/cljs/core.cljs",
           :lines [639 640]},
  :full-name "cljs.core/clone",

@@ -2,7 +2,7 @@
 
  <table border="1">
 <tr>
-<td>__0.0-2655__ [all](HISTORY.md)</td>
+<td>__0.0-2657__ [all](HISTORY.md)</td>
 <td>2015-01-03</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.6.0</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-2655__ ([See Full History](HISTORY.md)):
+Changes from __0.0-2657__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
@@ -85,46 +85,16 @@ __Library API Changes__
 
 <tr>
 <td>
-<img valign="middle" src="https://img.shields.io/badge/+-dynamic var-brightgreen.svg">
+<img valign="middle" src="https://img.shields.io/badge/+-special form (repl)-brightgreen.svg">
 </td>
-<td><samp>[cljs.core/\*loaded-libs\*](refs/cljs.core_STARloaded-libsSTAR.md)</samp></td>
+<td><samp>[specialrepl/require-macros](refs/specialrepl_require-macros.md)</samp></td>
 </tr>
 </table>
 
 __Compiler API Changes__
 
  <table>
-
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
-</td>
-<td><samp>[~~cljs.analyzer.api/ns-specs~~](refs/cljs.analyzer.api_ns-specs.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
-</td>
-<td><samp>[~~cljs.repl/merge-require~~](refs/cljs.repl_merge-require.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
-</td>
-<td><samp>[~~cljs.repl/merge-spec~~](refs/cljs.repl_merge-spec.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-var-red.svg">
-</td>
-<td><samp>[~~cljs.repl/spec-sort~~](refs/cljs.repl_spec-sort.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
-</td>
-<td><samp>[~~cljs.repl/update-require-spec~~](refs/cljs.repl_update-require-spec.md)</samp></td>
-</tr>
+<tr><td>_no symbols were added or removed in this version_</td></tr>
 </table>
 
 ---
@@ -700,6 +670,12 @@ application.
 <td><samp>[require](refs/specialrepl_require.md)</samp></td>
 <td><samp>special form (repl)</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2629"><img valign="middle" alt="[+] 0.0-2629" src="https://img.shields.io/badge/+-0.0--2629-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[require-macros](refs/specialrepl_require-macros.md)</samp></td>
+<td><samp>special form (repl)</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2657"><img valign="middle" alt="[+] 0.0-2657" src="https://img.shields.io/badge/+-0.0--2657-lightgrey.svg"></a> </td>
 </tr>
 </table>
 #### cljs.core

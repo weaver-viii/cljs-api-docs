@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2655
+clojurescript @ r2657
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:502-511](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/cljs/core.cljs#L502-L511)</ins>
+            └── <ins>[core.cljs:502-511](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L502-L511)</ins>
 </pre>
 
 
@@ -61,7 +61,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[s]"],
  :source {:code "(defn hash-string* [s]\n  (if-not (nil? s)\n    (let [len (alength s)]\n      (if (pos? len)\n        (loop [i 0 hash 0]\n          (if (< i len)\n            (recur (inc i) (+ (imul 31 hash) (.charCodeAt s i)))\n            hash))\n        0))\n    0))",
           :repo "clojurescript",
-          :tag "r2655",
+          :tag "r2657",
           :filename "src/cljs/cljs/core.cljs",
           :lines [502 511]},
  :full-name "cljs.core/hash-string*",

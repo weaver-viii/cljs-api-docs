@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2655
+clojurescript @ r2657
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:558-559](https://github.com/clojure/clojurescript/blob/r2655/src/cljs/cljs/core.cljs#L558-L559)</ins>
+            └── <ins>[core.cljs:558-559](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L558-L559)</ins>
 </pre>
 
 
@@ -59,11 +59,11 @@ clojurescript @ r2655
 ```
 
  <pre>
-clojurescript @ r2655
+clojurescript @ r2657
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:321-328](https://github.com/clojure/clojurescript/blob/r2655/src/clj/cljs/core.clj#L321-L328)</ins>
+            └── <ins>[core.clj:321-328](https://github.com/clojure/clojurescript/blob/r2657/src/clj/cljs/core.clj#L321-L328)</ins>
 </pre>
 
 ---
@@ -90,12 +90,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_instanceQMARK",
  :source {:code "(defn ^boolean instance? [t o]\n  (cljs.core/instance? t o))",
           :repo "clojurescript",
-          :tag "r2655",
+          :tag "r2657",
           :filename "src/cljs/cljs/core.cljs",
           :lines [558 559]},
  :extra-sources ({:code "(defmacro instance? [t o]\n  ;; Google Closure warns about some references to RegExp, so\n  ;; (instance? RegExp ...) needs to be inlined, but the expansion\n  ;; should preserve the order of argument evaluation.\n  (bool-expr (if (clojure.core/symbol? t)\n               (core/list 'js* \"(~{} instanceof ~{})\" o t)\n               `(let [t# ~t o# ~o]\n                  (~'js* \"(~{} instanceof ~{})\" o# t#)))))",
                   :repo "clojurescript",
-                  :tag "r2655",
+                  :tag "r2657",
                   :filename "src/clj/cljs/core.clj",
                   :lines [321 328]}),
  :full-name "cljs.core/instance?",

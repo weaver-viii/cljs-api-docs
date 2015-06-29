@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2655
+clojurescript @ r2657
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:292-293](https://github.com/clojure/clojurescript/blob/r2655/src/clj/cljs/core.clj#L292-L293)</ins>
+            └── <ins>[core.clj:292-293](https://github.com/clojure/clojurescript/blob/r2657/src/clj/cljs/core.clj#L292-L293)</ins>
 </pre>
 
 
@@ -74,7 +74,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_js-debugger",
  :source {:code "(defmacro js-debugger []\n  (core/list 'js* \"debugger;\"))",
           :repo "clojurescript",
-          :tag "r2655",
+          :tag "r2657",
           :filename "src/clj/cljs/core.clj",
           :lines [292 293]},
  :examples [{:id "87f2fa",
