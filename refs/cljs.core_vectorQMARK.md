@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3123
+clojurescript @ r3126
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1781-1783](https://github.com/clojure/clojurescript/blob/r3123/src/cljs/cljs/core.cljs#L1781-L1783)</ins>
+            └── <ins>[core.cljs:1781-1783](https://github.com/clojure/clojurescript/blob/r3126/src/cljs/cljs/core.cljs#L1781-L1783)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_vectorQMARK",
  :source {:code "(defn ^boolean vector?\n  [x] (satisfies? IVector x))",
           :repo "clojurescript",
-          :tag "r3123",
+          :tag "r3126",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1781 1783]},
  :full-name "cljs.core/vector?",

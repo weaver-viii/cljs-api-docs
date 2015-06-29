@@ -41,11 +41,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3123
+clojurescript @ r3126
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:356-372](https://github.com/clojure/clojurescript/blob/r3123/src/cljs/cljs/test.cljs#L356-L372)</ins>
+            └── <ins>[test.cljs:356-372](https://github.com/clojure/clojurescript/blob/r3126/src/cljs/cljs/test.cljs#L356-L372)</ins>
 </pre>
 
 
@@ -68,7 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[filename line column]"],
  :source {:code "(defn mapped-line-and-column [filename line column]\n  (let [default [filename line column]]\n    (if-let [source-map (:source-map (get-current-env))]\n      ;; source maps are 0 indexed for lines\n      (if-let [columns (get-in source-map [filename (dec line)])]\n        (vec\n          (map\n            ;; source maps are 0 indexed for columns\n            ;; multiple segments may exist at column\n            ;; just take first\n            (first\n              (if-let [mapping (get columns (dec column))]\n                mapping\n                (second (first columns))))\n            [:source :line :col]))\n        default)\n      default)))",
           :repo "clojurescript",
-          :tag "r3123",
+          :tag "r3126",
           :filename "src/cljs/cljs/test.cljs",
           :lines [356 372]},
  :full-name "cljs.test/mapped-line-and-column",

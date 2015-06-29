@@ -46,12 +46,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3123
+clojurescript @ r3126
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:193-211](https://github.com/clojure/clojurescript/blob/r3123/src/cljs/clojure/core/reducers.cljs#L193-L211)</ins>
+                └── <ins>[reducers.cljs:193-211](https://github.com/clojure/clojurescript/blob/r3126/src/cljs/clojure/core/reducers.cljs#L193-L211)</ins>
 </pre>
 
 
@@ -76,7 +76,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.core.reducers_Cat",
  :source {:code "(deftype Cat [cnt left right]\n  cljs.core/ICounted\n  (-count [_] cnt)\n\n  cljs.core/ISeqable\n  (-seq [_] (concat (seq left) (seq right)))\n\n  cljs.core/IReduce\n  (-reduce [this f1] (-reduce this f1 (f1)))\n  (-reduce\n    [_  f1 init]\n    (-reduce\n     right f1\n     (-reduce left f1 init)))\n\n  CollFold\n  (coll-fold\n    [this n combinef reducef]\n    (-reduce this reducef)))",
           :repo "clojurescript",
-          :tag "r3123",
+          :tag "r3126",
           :filename "src/cljs/clojure/core/reducers.cljs",
           :lines [193 211]},
  :full-name "clojure.core.reducers/Cat",

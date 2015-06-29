@@ -23,11 +23,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3123
+clojurescript @ r3126
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:113-116](https://github.com/clojure/clojurescript/blob/r3123/src/clj/cljs/repl.clj#L113-L116)</ins>
+            └── <ins>[repl.clj:113-116](https://github.com/clojure/clojurescript/blob/r3126/src/clj/cljs/repl.clj#L113-L116)</ins>
 </pre>
 
 
@@ -50,7 +50,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_IParseError",
  :source {:code "(defprotocol IParseError\n  (-parse-error [repl-env error build-options]\n    \"Given the original JavaScript error return the error to actually\n     use.\"))",
           :repo "clojurescript",
-          :tag "r3123",
+          :tag "r3126",
           :filename "src/clj/cljs/repl.clj",
           :lines [113 116]},
  :methods [{:name "-parse-error",

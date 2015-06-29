@@ -51,12 +51,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3123
+clojurescript @ r3126
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[repl.cljs:163-185](https://github.com/clojure/clojurescript/blob/r3123/src/cljs/clojure/browser/repl.cljs#L163-L185)</ins>
+                └── <ins>[repl.cljs:170-192](https://github.com/clojure/clojurescript/blob/r3126/src/cljs/clojure/browser/repl.cljs#L170-L192)</ins>
 </pre>
 
 
@@ -81,9 +81,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.repl_connect",
  :source {:code "(defn connect\n  [repl-server-url]\n  (let [repl-connection\n        (net/xpc-connection\n          {:peer_uri repl-server-url})]\n    (swap! xpc-connection (constantly repl-connection))\n    (net/register-service repl-connection\n      :evaluate-javascript\n      (fn [js]\n        (net/transmit\n          repl-connection\n          :send-result\n          (evaluate-javascript repl-connection js))))\n    (net/connect repl-connection\n      (constantly nil)\n      (fn [iframe]\n        (set! (.-display (.-style iframe))\n          \"none\")))\n    (bootstrap)\n    repl-connection))",
           :repo "clojurescript",
-          :tag "r3123",
+          :tag "r3126",
           :filename "src/cljs/clojure/browser/repl.cljs",
-          :lines [163 185]},
+          :lines [170 192]},
  :full-name "clojure.browser.repl/connect",
  :docstring "Connects to a REPL server from an HTML document. After the\nconnection is made, the REPL will evaluate forms in the context of\nthe document that called this function."}
 

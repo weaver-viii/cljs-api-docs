@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3123
+clojurescript @ r3126
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:152-161](https://github.com/clojure/clojurescript/blob/r3123/src/cljs/cljs/reader.cljs#L152-L161)</ins>
+            └── <ins>[reader.cljs:152-161](https://github.com/clojure/clojurescript/blob/r3126/src/cljs/cljs/reader.cljs#L152-L161)</ins>
 </pre>
 
 
@@ -61,7 +61,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[c]"],
  :source {:code "(defn escape-char-map [c]\n  (cond\n   (identical? c \\t) \"\\t\"\n   (identical? c \\r) \"\\r\"\n   (identical? c \\n) \"\\n\"\n   (identical? c \\\\) \\\\\n   (identical? c \\\") \\\"\n   (identical? c \\b) \"\\b\"\n   (identical? c \\f) \"\\f\"\n   :else nil))",
           :repo "clojurescript",
-          :tag "r3123",
+          :tag "r3126",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [152 161]},
  :full-name "cljs.reader/escape-char-map",
