@@ -51,11 +51,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3208
+clojurescript @ r3211
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:1107-1126](https://github.com/clojure/clojurescript/blob/r3208/src/clj/cljs/repl.clj#L1107-L1126)</ins>
+            └── <ins>[repl.clj:1107-1126](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/repl.clj#L1107-L1126)</ins>
 </pre>
 
 
@@ -80,7 +80,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_source-fn",
  :source {:code "(defn source-fn\n  [env x]\n  (when-let [v (ana-api/resolve env x)]\n    (when-let [filepath (:file v)]\n      (let [f (io/file filepath)\n            f (if (.exists f)\n                f\n                (io/resource filepath))]\n        (when f\n          (with-open [pbr (PushbackReader. (io/reader f))]\n            (let [rdr (readers/source-logging-push-back-reader pbr)]\n              (dotimes [_ (dec (:line v))] (readers/read-line rdr))\n              (-> (reader/read rdr) meta :source))))))))",
           :repo "clojurescript",
-          :tag "r3208",
+          :tag "r3211",
           :filename "src/clj/cljs/repl.clj",
           :lines [1107 1126]},
  :full-name "cljs.repl/source-fn",

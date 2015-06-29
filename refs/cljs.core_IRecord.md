@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3208
+clojurescript @ r3211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:493-494](https://github.com/clojure/clojurescript/blob/r3208/src/cljs/cljs/core.cljs#L493-L494)</ins>
+            └── <ins>[core.cljs:493-494](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L493-L494)</ins>
 </pre>
 
 
@@ -57,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IRecord",
  :source {:code "(defprotocol IRecord\n  \"Marker interface indicating a record object\")",
           :repo "clojurescript",
-          :tag "r3208",
+          :tag "r3211",
           :filename "src/cljs/cljs/core.cljs",
           :lines [493 494]},
  :full-name "cljs.core/IRecord",

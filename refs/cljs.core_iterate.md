@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3208
+clojurescript @ r3211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4182-4185](https://github.com/clojure/clojurescript/blob/r3208/src/cljs/cljs/core.cljs#L4182-L4185)</ins>
+            └── <ins>[core.cljs:4182-4185](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L4182-L4185)</ins>
 </pre>
 
 
@@ -79,7 +79,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_iterate",
  :source {:code "(defn iterate\n  [f x] (cons x (lazy-seq (iterate f (f x)))))",
           :repo "clojurescript",
-          :tag "r3208",
+          :tag "r3211",
           :filename "src/cljs/cljs/core.cljs",
           :lines [4182 4185]},
  :full-name "cljs.core/iterate",

@@ -56,11 +56,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3208
+clojurescript @ r3211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:153-158](https://github.com/clojure/clojurescript/blob/r3208/src/cljs/cljs/core.cljs#L153-L158)</ins>
+            └── <ins>[core.cljs:153-158](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L153-L158)</ins>
 </pre>
 
 
@@ -88,7 +88,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_arrayQMARK",
  :source {:code "(defn ^boolean array?\n  [x]\n  (if (identical? *target* \"nodejs\")\n    (.isArray js/Array x)\n    (instance? js/Array x)))",
           :repo "clojurescript",
-          :tag "r3208",
+          :tag "r3211",
           :filename "src/cljs/cljs/core.cljs",
           :lines [153 158]},
  :examples [{:id "39913c",

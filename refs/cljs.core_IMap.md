@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3208
+clojurescript @ r3211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:406-410](https://github.com/clojure/clojurescript/blob/r3208/src/cljs/cljs/core.cljs#L406-L410)</ins>
+            └── <ins>[core.cljs:406-410](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L406-L410)</ins>
 </pre>
 
 
@@ -57,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IMap",
  :source {:code "(defprotocol IMap\n  \"Protocol for adding mapping functionality to collections.\"\n  #_(-assoc-ex [coll k v])\n  (^clj -dissoc [coll k]\n    \"Returns a new collection of coll without the mapping for key k.\"))",
           :repo "clojurescript",
-          :tag "r3208",
+          :tag "r3211",
           :filename "src/cljs/cljs/core.cljs",
           :lines [406 410]},
  :methods [{:name "-dissoc",

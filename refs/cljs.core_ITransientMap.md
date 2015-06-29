@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3208
+clojurescript @ r3211
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:567-570](https://github.com/clojure/clojurescript/blob/r3208/src/cljs/cljs/core.cljs#L567-L570)</ins>
+            └── <ins>[core.cljs:567-570](https://github.com/clojure/clojurescript/blob/r3211/src/cljs/cljs/core.cljs#L567-L570)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ITransientMap",
  :source {:code "(defprotocol ITransientMap\n  \"Protocol for adding mapping functionality to transient collections.\"\n  (^clj -dissoc! [tcoll key]\n    \"Returns a new transient collection of tcoll without the mapping for key.\"))",
           :repo "clojurescript",
-          :tag "r3208",
+          :tag "r3211",
           :filename "src/cljs/cljs/core.cljs",
           :lines [567 570]},
  :methods [{:name "-dissoc!",

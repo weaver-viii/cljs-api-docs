@@ -44,12 +44,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3208
+clojurescript @ r3211
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[server.clj:41-53](https://github.com/clojure/clojurescript/blob/r3208/src/clj/cljs/repl/server.clj#L41-L53)</ins>
+                └── <ins>[server.clj:41-53](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/repl/server.clj#L41-L53)</ins>
 </pre>
 
 
@@ -74,7 +74,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.server_dispatch-on",
  :source {:code "(defn dispatch-on\n  ([method pred handler]\n    (dispatch-on method {:pred pred :handler handler}))\n  ([method {:as m}]\n    (swap! handlers\n      (fn [old]\n        (update-in old [method] #(conj (vec %) m))))))",
           :repo "clojurescript",
-          :tag "r3208",
+          :tag "r3211",
           :filename "src/clj/cljs/repl/server.clj",
           :lines [41 53]},
  :full-name "cljs.repl.server/dispatch-on",

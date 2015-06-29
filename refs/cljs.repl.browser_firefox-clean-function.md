@@ -35,12 +35,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3208
+clojurescript @ r3211
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:372-382](https://github.com/clojure/clojurescript/blob/r3208/src/clj/cljs/repl/browser.clj#L372-L382)</ins>
+                └── <ins>[browser.clj:372-382](https://github.com/clojure/clojurescript/blob/r3211/src/clj/cljs/repl/browser.clj#L372-L382)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[f]"],
  :source {:code "(defn firefox-clean-function [f]\n  (as-> f f\n    (cond\n      (string/blank? f) nil\n      (not= (.indexOf f \"</\") -1)\n      (let [idx (.indexOf f \"</\")]\n        (.substring f (+ idx 2)))\n      :else f)\n    (-> f\n      (string/replace #\"<\" \"\")\n      (string/replace #\"\\/\" \"\"))))",
           :repo "clojurescript",
-          :tag "r3208",
+          :tag "r3211",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [372 382]},
  :full-name "cljs.repl.browser/firefox-clean-function",
