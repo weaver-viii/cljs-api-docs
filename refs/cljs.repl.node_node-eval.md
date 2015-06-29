@@ -30,17 +30,25 @@ Source code:
   [repl-env js]
   (let [{:keys [in out]} @(:socket repl-env)]
     (write out js)
-    {:status :success
-     :value (read-response in)}))
+    (let [result (json/read-str
+                   (read-response in) :key-fn keyword)]
+      (condp = (:status result)
+        "success"
+        {:status :success
+         :value (:value result)}
+
+        "exception"
+        {:status :exception
+         :value (:value result)}))))
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[node.clj:49-55](https://github.com/clojure/clojurescript/blob/r2657/src/clj/cljs/repl/node.clj#L49-L55)</ins>
+                └── <ins>[node.clj:50-64](https://github.com/clojure/clojurescript/blob/r2665/src/clj/cljs/repl/node.clj#L50-L64)</ins>
 </pre>
 
 
@@ -63,11 +71,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-2629"]],
  :type "function",
  :full-name-encode "cljs.repl.node_node-eval",
- :source {:code "(defn node-eval\n  [repl-env js]\n  (let [{:keys [in out]} @(:socket repl-env)]\n    (write out js)\n    {:status :success\n     :value (read-response in)}))",
+ :source {:code "(defn node-eval\n  [repl-env js]\n  (let [{:keys [in out]} @(:socket repl-env)]\n    (write out js)\n    (let [result (json/read-str\n                   (read-response in) :key-fn keyword)]\n      (condp = (:status result)\n        \"success\"\n        {:status :success\n         :value (:value result)}\n\n        \"exception\"\n        {:status :exception\n         :value (:value result)}))))",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/clj/cljs/repl/node.clj",
-          :lines [49 55]},
+          :lines [50 64]},
  :full-name "cljs.repl.node/node-eval",
  :docstring "Evaluate a JavaScript string in the Node REPL process."}
 

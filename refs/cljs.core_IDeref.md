@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:297-298](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L297-L298)</ins>
+            └── <ins>[core.cljs:303-304](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L303-L304)</ins>
 </pre>
 
 
@@ -52,9 +52,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IDeref",
  :source {:code "(defprotocol IDeref\n (-deref [o]))",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [297 298]},
+          :lines [303 304]},
  :methods [{:name "-deref", :signature ["[o]"], :docstring nil}],
  :full-name "cljs.core/IDeref",
  :clj-symbol "clojure.lang/IDeref"}

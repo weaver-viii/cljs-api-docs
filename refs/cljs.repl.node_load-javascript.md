@@ -33,12 +33,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[node.clj:57-61](https://github.com/clojure/clojurescript/blob/r2657/src/clj/cljs/repl/node.clj#L57-L61)</ins>
+                └── <ins>[node.clj:66-70](https://github.com/clojure/clojurescript/blob/r2665/src/clj/cljs/repl/node.clj#L66-L70)</ins>
 </pre>
 
 
@@ -63,9 +63,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.node_load-javascript",
  :source {:code "(defn load-javascript\n  [repl-env provides url]\n  (node-eval repl-env\n    (str \"goog.require('\" (comp/munge (first provides)) \"')\")))",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/clj/cljs/repl/node.clj",
-          :lines [57 61]},
+          :lines [66 70]},
  :full-name "cljs.repl.node/load-javascript",
  :docstring "Load a Closure JavaScript file into the Node REPL process."}
 

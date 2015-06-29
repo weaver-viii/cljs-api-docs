@@ -42,11 +42,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1854-1856](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L1854-L1856)</ins>
+            └── <ins>[core.cljs:1860-1862](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L1860-L1862)</ins>
 </pre>
 
 
@@ -58,11 +58,11 @@ clojurescript @ r2657
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:459-460](https://github.com/clojure/clojurescript/blob/r2657/src/clj/cljs/core.clj#L459-L460)</ins>
+            └── <ins>[core.clj:459-460](https://github.com/clojure/clojurescript/blob/r2665/src/clj/cljs/core.clj#L459-L460)</ins>
 </pre>
 
 ---
@@ -88,12 +88,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_dec",
  :source {:code "(defn dec\n  [x] (- x 1))",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1854 1856]},
+          :lines [1860 1862]},
  :extra-sources ({:code "(defmacro ^::ana/numeric dec [x]\n  `(- ~x 1))",
                   :repo "clojurescript",
-                  :tag "r2657",
+                  :tag "r2665",
                   :filename "src/clj/cljs/core.clj",
                   :lines [459 460]}),
  :full-name "cljs.core/dec",

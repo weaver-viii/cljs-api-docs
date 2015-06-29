@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:455](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L455)</ins>
+            └── <ins>[core.cljs:461](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L461)</ins>
 </pre>
 
 
@@ -46,9 +46,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def m3-C2 0x1b873593)",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [455]},
+          :lines [461]},
  :full-name "cljs.core/m3-C2",
  :full-name-encode "cljs.core_m3-C2",
  :history [["+" "0.0-2261"]]}

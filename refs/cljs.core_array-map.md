@@ -59,11 +59,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7027-7031](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L7027-L7031)</ins>
+            └── <ins>[core.cljs:7033-7037](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L7033-L7037)</ins>
 </pre>
 
 
@@ -82,11 +82,11 @@ clojurescript @ r2657
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1429-1437](https://github.com/clojure/clojurescript/blob/r2657/src/clj/cljs/core.clj#L1429-L1437)</ins>
+            └── <ins>[core.clj:1429-1437](https://github.com/clojure/clojurescript/blob/r2665/src/clj/cljs/core.clj#L1429-L1437)</ins>
 </pre>
 
 ---
@@ -114,12 +114,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_array-map",
  :source {:code "(defn array-map\n  [& keyvals]\n  (.fromArray cljs.core/PersistentArrayMap (apply array keyvals) true false))",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7027 7031]},
+          :lines [7033 7037]},
  :extra-sources ({:code "(defmacro array-map\n  ([] '(.-EMPTY cljs.core/PersistentArrayMap))\n  ([& kvs]\n     (let [keys (map first (partition 2 kvs))]\n       (if (core/and (every? #(= (:op %) :constant)\n                       (map #(cljs.analyzer/analyze &env %) keys))\n                     (= (count (into #{} keys)) (count keys)))\n         `(cljs.core/PersistentArrayMap. nil ~(clojure.core// (count kvs) 2) (array ~@kvs) nil)\n         `(.fromArray cljs.core/PersistentArrayMap (array ~@kvs) true false)))))",
                   :repo "clojurescript",
-                  :tag "r2657",
+                  :tag "r2665",
                   :filename "src/clj/cljs/core.clj",
                   :lines [1429 1437]}),
  :examples [{:id "198026",

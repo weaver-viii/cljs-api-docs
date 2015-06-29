@@ -22,12 +22,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:22-24](https://github.com/clojure/clojurescript/blob/r2657/src/clj/cljs/repl/browser.clj#L22-L24)</ins>
+                └── <ins>[browser.clj:22-24](https://github.com/clojure/clojurescript/blob/r2665/src/clj/cljs/repl/browser.clj#L22-L24)</ins>
 </pre>
 
 
@@ -49,7 +49,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(defonce browser-state\n  (atom {:return-value-fn nil\n         :client-js nil}))",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [22 24]},
  :full-name "cljs.repl.browser/browser-state",

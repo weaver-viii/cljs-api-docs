@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:433-436](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L433-L436)</ins>
+            └── <ins>[core.cljs:439-442](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L439-L442)</ins>
 </pre>
 
 
@@ -58,9 +58,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_int-rotate-left",
  :source {:code "(defn ^number int-rotate-left [x n]\n  (bit-or\n    (bit-shift-left x n)\n    (unsigned-bit-shift-right x (- n))))",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [433 436]},
+          :lines [439 442]},
  :full-name "cljs.core/int-rotate-left"}
 
 ```

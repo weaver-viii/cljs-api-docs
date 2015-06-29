@@ -64,11 +64,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2020-2022](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L2020-L2022)</ins>
+            └── <ins>[core.cljs:2026-2028](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L2026-L2028)</ins>
 </pre>
 
 
@@ -81,11 +81,11 @@ clojurescript @ r2657
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:508-510](https://github.com/clojure/clojurescript/blob/r2657/src/clj/cljs/core.clj#L508-L510)</ins>
+            └── <ins>[core.clj:508-510](https://github.com/clojure/clojurescript/blob/r2665/src/clj/cljs/core.clj#L508-L510)</ins>
 </pre>
 
 ---
@@ -111,12 +111,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-xor",
  :source {:code "(defn bit-xor\n  [x y] (cljs.core/bit-xor x y))",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2020 2022]},
+          :lines [2026 2028]},
  :extra-sources ({:code "(defmacro ^::ana/numeric bit-xor\n  ([x y] (core/list 'js* \"(~{} ^ ~{})\" x y))\n  ([x y & more] `(bit-xor (bit-xor ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r2657",
+                  :tag "r2665",
                   :filename "src/clj/cljs/core.clj",
                   :lines [508 510]}),
  :examples [{:id "3ccd99",

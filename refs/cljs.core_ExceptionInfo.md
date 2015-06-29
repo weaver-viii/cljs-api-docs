@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:9047](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L9047)</ins>
+            └── <ins>[core.cljs:9053](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L9053)</ins>
 </pre>
 
 
@@ -57,9 +57,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ExceptionInfo",
  :source {:code "(deftype ExceptionInfo [message data cause])",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [9047]},
+          :lines [9053]},
  :full-name "cljs.core/ExceptionInfo",
  :clj-symbol "clojure.lang/ExceptionInfo"}
 

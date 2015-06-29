@@ -2,8 +2,8 @@
 
  <table border="1">
 <tr>
-<td>__0.0-2657__ [all](HISTORY.md)</td>
-<td>2015-01-03</td>
+<td>__0.0-2665__ [all](HISTORY.md)</td>
+<td>2015-01-04</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.6.0</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-2657__ ([See Full History](HISTORY.md)):
+Changes from __0.0-2665__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
@@ -82,19 +82,19 @@ __Syntax API Changes__
 __Library API Changes__
 
  <table>
-
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-special form (repl)-brightgreen.svg">
-</td>
-<td><samp>[specialrepl/require-macros](refs/specialrepl_require-macros.md)</samp></td>
-</tr>
+<tr><td>_no symbols were added or removed in this version_</td></tr>
 </table>
 
 __Compiler API Changes__
 
  <table>
-<tr><td>_no symbols were added or removed in this version_</td></tr>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl.browser/setup](refs/cljs.repl.browser_setup.md)</samp></td>
+</tr>
 </table>
 
 ---
@@ -6576,6 +6576,12 @@ self-compile.
 <td><samp>[~~server-state~~](refs/cljs.repl.browser_server-state.md)</samp></td>
 <td><samp>var</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1503"><img valign="middle" alt="[×] 0.0-1503" src="https://img.shields.io/badge/×-0.0--1503-red.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[setup](refs/cljs.repl.browser_setup.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2665"><img valign="middle" alt="[+] 0.0-2665" src="https://img.shields.io/badge/+-0.0--2665-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td></td>

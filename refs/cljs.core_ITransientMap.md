@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:372-373](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L372-L373)</ins>
+            └── <ins>[core.cljs:378-379](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L378-L379)</ins>
 </pre>
 
 
@@ -52,9 +52,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ITransientMap",
  :source {:code "(defprotocol ITransientMap\n  (^clj -dissoc! [tcoll key]))",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [372 373]},
+          :lines [378 379]},
  :methods [{:name "-dissoc!",
             :signature ["[tcoll key]"],
             :docstring nil}],

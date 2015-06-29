@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:626-630](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L626-L630)</ins>
+            └── <ins>[core.cljs:632-636](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L632-L636)</ins>
 </pre>
 
 
@@ -61,9 +61,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_Var",
  :source {:code "(deftype Var [val sym _meta]\n  IDeref\n  (-deref [_] val)\n  IMeta\n  (-meta [_] _meta))",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [626 630]},
+          :lines [632 636]},
  :full-name "cljs.core/Var",
  :clj-symbol "clojure.lang/Var"}
 

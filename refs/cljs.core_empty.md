@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1132-1136](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L1132-L1136)</ins>
+            └── <ins>[core.cljs:1138-1142](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L1138-L1142)</ins>
 </pre>
 
 
@@ -77,9 +77,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_empty",
  :source {:code "(defn empty\n  [coll]\n  (when-not (nil? coll)\n    (-empty coll)))",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1132 1136]},
+          :lines [1138 1142]},
  :full-name "cljs.core/empty",
  :clj-symbol "clojure.core/empty",
  :docstring "Returns an empty collection of the same category as coll, or nil"}

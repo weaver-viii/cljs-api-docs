@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1669-1673](https://github.com/clojure/clojurescript/blob/r2657/src/clj/cljs/core.clj#L1669-L1673)</ins>
+            └── <ins>[core.clj:1669-1673](https://github.com/clojure/clojurescript/blob/r2665/src/clj/cljs/core.clj#L1669-L1673)</ins>
 </pre>
 
 
@@ -56,7 +56,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[ty]"],
  :source {:code "(defmacro es6-iterable [ty]\n  `(aset (.-prototype ~ty) cljs.core/ITER_SYMBOL\n     (fn []\n       (this-as this#\n         (cljs.core/es6-iterator this#)))))",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/clj/cljs/core.clj",
           :lines [1669 1673]},
  :full-name "cljs.core/es6-iterable",

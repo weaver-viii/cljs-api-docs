@@ -33,11 +33,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:734-742](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L734-L742)</ins>
+            └── <ins>[core.cljs:740-748](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L740-L748)</ins>
 </pre>
 
 
@@ -60,9 +60,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[value iter _rest]"],
  :source {:code "(deftype ES6IteratorSeq [value iter ^:mutable _rest]\n  ISeqable\n  (-seq [this] this)\n  ISeq\n  (-first [_] value)\n  (-rest [_]\n    (when (nil? _rest)\n      (set! _rest (es6-iterator-seq iter)))\n    _rest))",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [734 742]},
+          :lines [740 748]},
  :full-name "cljs.core/ES6IteratorSeq",
  :full-name-encode "cljs.core_ES6IteratorSeq",
  :history [["+" "0.0-2411"]]}

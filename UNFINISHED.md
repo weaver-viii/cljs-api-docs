@@ -6536,7 +6536,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.browser/setup</td>
-<td></td>
+<td>[ref](refs/cljs.repl.browser_setup.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.browser_setup.cljsdoc)</td>
 <td></td>
 <td></td>

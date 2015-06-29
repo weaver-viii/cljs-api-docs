@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2404-2405](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L2404-L2405)</ins>
+            └── <ins>[core.cljs:2410-2411](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L2410-L2411)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[k]"],
  :source {:code "(defn hash-keyword [k]\n  (int (+ (hash-symbol k) 0x9e3779b9)))",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2404 2405]},
+          :lines [2410 2411]},
  :full-name "cljs.core/hash-keyword",
  :full-name-encode "cljs.core_hash-keyword",
  :history [["+" "0.0-2261"]]}

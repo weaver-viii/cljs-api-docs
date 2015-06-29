@@ -30,11 +30,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2987-2992](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L2987-L2992)</ins>
+            └── <ins>[core.cljs:2993-2998](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L2993-L2998)</ins>
 </pre>
 
 
@@ -57,9 +57,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[]"],
  :source {:code "(defn nil-iter []\n  (reify\n    Object\n    (hasNext [_] false)\n    (next [_] (js/Error. \"No such element\"))\n    (remove [_] (js/Error. \"Unsupported operation\"))))",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2987 2992]},
+          :lines [2993 2998]},
  :full-name "cljs.core/nil-iter",
  :full-name-encode "cljs.core_nil-iter",
  :history [["+" "0.0-2301"]]}

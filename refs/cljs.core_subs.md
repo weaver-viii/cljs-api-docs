@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2133-2137](https://github.com/clojure/clojurescript/blob/r2657/src/cljs/cljs/core.cljs#L2133-L2137)</ins>
+            └── <ins>[core.cljs:2139-2143](https://github.com/clojure/clojurescript/blob/r2665/src/cljs/cljs/core.cljs#L2139-L2143)</ins>
 </pre>
 
 
@@ -75,9 +75,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_subs",
  :source {:code "(defn subs\n  ([s start] (.substring s start))\n  ([s start end] (.substring s start end)))",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2133 2137]},
+          :lines [2139 2143]},
  :full-name "cljs.core/subs",
  :clj-symbol "clojure.core/subs",
  :docstring "Returns the substring of s beginning at start inclusive, and ending\nat end (defaults to length of string), exclusive."}

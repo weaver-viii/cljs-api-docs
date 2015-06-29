@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2657
+clojurescript @ r2665
 └── src
     └── clj
         └── cljs
-            └── <ins>[test.clj:329-339](https://github.com/clojure/clojurescript/blob/r2657/src/clj/cljs/test.clj#L329-L339)</ins>
+            └── <ins>[test.clj:329-339](https://github.com/clojure/clojurescript/blob/r2665/src/clj/cljs/test.clj#L329-L339)</ins>
 </pre>
 
 
@@ -67,7 +67,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_use-fixtures",
  :source {:code "(defmacro use-fixtures [type & fns]\n  (condp = type\n    :once\n    `(def ~'cljs-test-once-fixtures\n       [~@fns])\n    :each\n    `(def ~'cljs-test-each-fixtures\n       [~@fns])\n    :else\n    (throw\n      (Exception. \"First argument to cljs.test/use-fixtures must be :once or :each\"))))",
           :repo "clojurescript",
-          :tag "r2657",
+          :tag "r2665",
           :filename "src/clj/cljs/test.clj",
           :lines [329 339]},
  :full-name "cljs.test/use-fixtures",
