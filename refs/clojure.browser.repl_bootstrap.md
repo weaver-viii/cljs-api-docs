@@ -76,12 +76,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3117
+clojurescript @ r3119
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[repl.cljs:114-161](https://github.com/clojure/clojurescript/blob/r3117/src/cljs/clojure/browser/repl.cljs#L114-L161)</ins>
+                └── <ins>[repl.cljs:114-161](https://github.com/clojure/clojurescript/blob/r3119/src/cljs/clojure/browser/repl.cljs#L114-L161)</ins>
 </pre>
 
 
@@ -106,7 +106,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.repl_bootstrap",
  :source {:code "(defn bootstrap\n  []\n  ;; Monkey-patch goog.provide if running under optimizations :none - David\n  (when-not js/COMPILED\n    (set! (.-require__ js/goog) js/goog.require)\n    ;; suppress useless Google Closure error about duplicate provides\n    (set! (.-isProvided_ js/goog) (fn [name] false))\n    (set! (.-writeScriptTag__ js/goog)\n      (fn [src opt_sourceText]\n        (let [loaded (atom false)\n              onload (fn []\n                       (when (and load-queue (false? @loaded))\n                         (swap! loaded not)\n                         (if (zero? (alength load-queue))\n                           (set! load-queue nil)\n                           (.apply js/goog.writeScriptTag__ nil (.shift load-queue)))))]\n          (.appendChild js/document.body\n           (as-> (.createElement js/document \"script\") script\n             (doto script\n               (aset \"type\" \"text/javascript\")\n               (aset \"onload\" onload)\n               (aset \"onreadystatechange\" onload))\n             (if (nil? opt_sourceText)\n               (doto script (aset \"src\" src))\n               (doto script (gdom/setTextContext opt_sourceText))))))))\n    (set! (.-writeScriptTag_ js/goog)\n      (fn [src opt_sourceText]\n        (if load-queue\n          (.push load-queue #js [src opt_sourceText])\n          (do\n            (set! load-queue #js [])\n            (js/goog.writeScriptTag__ src opt_sourceText)))))\n    (set! (.-require js/goog)\n      (fn [src reload]\n        (when (= reload \"reload-all\")\n          (set! (.-cljsReloadAll_ js/goog) true))\n        (let [reload? (or reload (.-cljsReloadAll__ js/goog))]\n          (when reload?\n            (let [path (aget js/goog.dependencies_.nameToPath src)]\n              (js-delete js/goog.dependencies_.visited path)\n              (js-delete js/goog.dependencies_.written\n                (str js/goog.basePath path))))\n          (let [ret (.require__ js/goog src)]\n            (when (= reload \"reload-all\")\n              (set! (.-cljsReloadAll_ js/goog) false))\n            ret))))))",
           :repo "clojurescript",
-          :tag "r3117",
+          :tag "r3119",
           :filename "src/cljs/clojure/browser/repl.cljs",
           :lines [114 161]},
  :full-name "clojure.browser.repl/bootstrap",

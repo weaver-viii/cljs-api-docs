@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3117
+clojurescript @ r3119
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:63-69](https://github.com/clojure/clojurescript/blob/r3117/src/cljs/cljs/core.cljs#L63-L69)</ins>
+            └── <ins>[core.cljs:63-69](https://github.com/clojure/clojurescript/blob/r3119/src/cljs/cljs/core.cljs#L63-L69)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_STARprint-metaSTAR",
  :source {:code "(def\n  ^{:dynamic true\n    :doc \"If set to logical true, when printing an object, its metadata will also\n  be printed in a form that can be read back by the reader.\n\n  Defaults to false.\"}\n  *print-meta* false)",
           :repo "clojurescript",
-          :tag "r3117",
+          :tag "r3119",
           :filename "src/cljs/cljs/core.cljs",
           :lines [63 69]},
  :full-name "cljs.core/*print-meta*",

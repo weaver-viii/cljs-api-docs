@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3117
+clojurescript @ r3119
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:579-582](https://github.com/clojure/clojurescript/blob/r3117/src/cljs/cljs/core.cljs#L579-L582)</ins>
+            └── <ins>[core.cljs:579-582](https://github.com/clojure/clojurescript/blob/r3119/src/cljs/cljs/core.cljs#L579-L582)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ITransientSet",
  :source {:code "(defprotocol ITransientSet\n  \"Protocol for adding set functionality to a transient collection.\"\n  (^clj -disjoin! [tcoll v]\n    \"Returns tcoll without v.\"))",
           :repo "clojurescript",
-          :tag "r3117",
+          :tag "r3119",
           :filename "src/cljs/cljs/core.cljs",
           :lines [579 582]},
  :methods [{:name "-disjoin!",

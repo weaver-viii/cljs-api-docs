@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3117
+clojurescript @ r3119
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:439-442](https://github.com/clojure/clojurescript/blob/r3117/src/cljs/cljs/core.cljs#L439-L442)</ins>
+            └── <ins>[core.cljs:439-442](https://github.com/clojure/clojurescript/blob/r3119/src/cljs/cljs/core.cljs#L439-L442)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IDeref",
  :source {:code "(defprotocol IDeref\n  \"Protocol for adding dereference functionality to a reference.\"\n  (-deref [o]\n    \"Returns the value of the reference o.\"))",
           :repo "clojurescript",
-          :tag "r3117",
+          :tag "r3119",
           :filename "src/cljs/cljs/core.cljs",
           :lines [439 442]},
  :methods [{:name "-deref",

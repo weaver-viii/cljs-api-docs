@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3117
+clojurescript @ r3119
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:920-923](https://github.com/clojure/clojurescript/blob/r3117/src/cljs/cljs/core.cljs#L920-L923)</ins>
+            └── <ins>[core.cljs:920-923](https://github.com/clojure/clojurescript/blob/r3119/src/cljs/cljs/core.cljs#L920-L923)</ins>
 </pre>
 
 
@@ -61,7 +61,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_clone",
  :source {:code "(defn clone\n  [value]\n  (-clone value))",
           :repo "clojurescript",
-          :tag "r3117",
+          :tag "r3119",
           :filename "src/cljs/cljs/core.cljs",
           :lines [920 923]},
  :full-name "cljs.core/clone",

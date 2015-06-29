@@ -61,11 +61,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3117
+clojurescript @ r3119
 └── src
     └── cljs
         └── clojure
-            └── <ins>[string.cljs:27-38](https://github.com/clojure/clojurescript/blob/r3117/src/cljs/clojure/string.cljs#L27-L38)</ins>
+            └── <ins>[string.cljs:27-38](https://github.com/clojure/clojurescript/blob/r3119/src/cljs/clojure/string.cljs#L27-L38)</ins>
 </pre>
 
 
@@ -94,7 +94,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.string_replace",
  :source {:code "(defn replace\n  [s match replacement]\n  (cond (string? match)\n        (.replace s (js/RegExp. (gstring/regExpEscape match) \"g\") replacement)\n        (instance? js/RegExp match)\n        (.replace s (js/RegExp. (.-source match) \"g\") replacement)\n        :else (throw (str \"Invalid match arg: \" match))))",
           :repo "clojurescript",
-          :tag "r3117",
+          :tag "r3119",
           :filename "src/cljs/clojure/string.cljs",
           :lines [27 38]},
  :full-name "clojure.string/replace",
