@@ -53,11 +53,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3053
+clojurescript @ r3058
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1194-1197](https://github.com/clojure/clojurescript/blob/r3053/src/cljs/cljs/core.cljs#L1194-L1197)</ins>
+            └── <ins>[core.cljs:1194-1197](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L1194-L1197)</ins>
 </pre>
 
 
@@ -84,7 +84,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ffirst",
  :source {:code "(defn ffirst\n  [coll]\n  (first (first coll)))",
           :repo "clojurescript",
-          :tag "r3053",
+          :tag "r3058",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1194 1197]},
  :examples [{:id "575ba2",

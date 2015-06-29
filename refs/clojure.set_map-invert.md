@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3053
+clojurescript @ r3058
 └── src
     └── cljs
         └── clojure
-            └── <ins>[set.cljs:97-99](https://github.com/clojure/clojurescript/blob/r3053/src/cljs/clojure/set.cljs#L97-L99)</ins>
+            └── <ins>[set.cljs:97-99](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/clojure/set.cljs#L97-L99)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.set_map-invert",
  :source {:code "(defn map-invert\n  [m] (reduce (fn [m [k v]] (assoc m v k)) {} m))",
           :repo "clojurescript",
-          :tag "r3053",
+          :tag "r3058",
           :filename "src/cljs/clojure/set.cljs",
           :lines [97 99]},
  :full-name "clojure.set/map-invert",

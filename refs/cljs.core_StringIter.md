@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3053
+clojurescript @ r3058
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3157-3164](https://github.com/clojure/clojurescript/blob/r3053/src/cljs/cljs/core.cljs#L3157-L3164)</ins>
+            └── <ins>[core.cljs:3157-3164](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L3157-L3164)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[s i]"],
  :source {:code "(deftype StringIter [s ^:mutable i]\n  Object\n  (hasNext [_] (< i (alength s)))\n  (next [_]\n    (let [ret (.charAt s i)]\n      (set! i (inc i))\n      ret))\n  (remove [_] (js/Error. \"Unsupported operation\")))",
           :repo "clojurescript",
-          :tag "r3053",
+          :tag "r3058",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3157 3164]},
  :full-name "cljs.core/StringIter",

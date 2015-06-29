@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3053
+clojurescript @ r3058
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:32-34](https://github.com/clojure/clojurescript/blob/r3053/src/cljs/cljs/core.cljs#L32-L34)</ins>
+            └── <ins>[core.cljs:32-34](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L32-L34)</ins>
 </pre>
 
 
@@ -60,7 +60,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_set-print-fnBANG",
  :source {:code "(defn set-print-fn!\n  [f] (set! *print-fn* f))",
           :repo "clojurescript",
-          :tag "r3053",
+          :tag "r3058",
           :filename "src/cljs/cljs/core.cljs",
           :lines [32 34]},
  :full-name "cljs.core/set-print-fn!",

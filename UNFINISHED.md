@@ -6112,7 +6112,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/repl-special-doc-map</td>
-<td></td>
+<td>[ref](refs/cljs.repl_repl-special-doc-map.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_repl-special-doc-map.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7640,7 +7640,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.browser.repl/get-ua-product</td>
-<td></td>
+<td>[ref](refs/clojure.browser.repl_get-ua-product.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.browser.repl_get-ua-product.cljsdoc)</td>
 <td></td>
 <td></td>

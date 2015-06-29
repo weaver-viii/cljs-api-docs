@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3053
+clojurescript @ r3058
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2147-2151](https://github.com/clojure/clojurescript/blob/r3053/src/cljs/cljs/core.cljs#L2147-L2151)</ins>
+            └── <ins>[core.cljs:2147-2151](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L2147-L2151)</ins>
 </pre>
 
 
@@ -78,7 +78,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_rem",
  :source {:code "(defn rem\n  [n d]\n  (let [q (quot n d)]\n    (- n (* d q))))",
           :repo "clojurescript",
-          :tag "r3053",
+          :tag "r3058",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2147 2151]},
  :full-name "cljs.core/rem",

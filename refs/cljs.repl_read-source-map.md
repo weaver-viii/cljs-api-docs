@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3053
+clojurescript @ r3058
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:199-204](https://github.com/clojure/clojurescript/blob/r3053/src/clj/cljs/repl.clj#L199-L204)</ins>
+            └── <ins>[repl.clj:199-204](https://github.com/clojure/clojurescript/blob/r3058/src/clj/cljs/repl.clj#L199-L204)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_read-source-map",
  :source {:code "(defn read-source-map\n  [f]\n  (let [smf (io/file (str f \".map\"))]\n    (when (.exists smf)\n      (sm/decode (json/read-str (slurp smf) :key-fn keyword)))))",
           :repo "clojurescript",
-          :tag "r3053",
+          :tag "r3058",
           :filename "src/clj/cljs/repl.clj",
           :lines [199 204]},
  :full-name "cljs.repl/read-source-map",

@@ -79,11 +79,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3053
+clojurescript @ r3058
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8751-8770](https://github.com/clojure/clojurescript/blob/r3053/src/cljs/cljs/core.cljs#L8751-L8770)</ins>
+            └── <ins>[core.cljs:8751-8770](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L8751-L8770)</ins>
 </pre>
 
 
@@ -110,7 +110,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_clj-GTjs",
  :source {:code "(defn clj->js\n   [x]\n   (when-not (nil? x)\n     (if (satisfies? IEncodeJS x)\n       (-clj->js x)\n       (cond\n         (keyword? x) (name x)\n         (symbol? x) (str x)\n         (map? x) (let [m (js-obj)]\n                    (doseq [[k v] x]\n                      (aset m (key->js k) (clj->js v)))\n                    m)\n         (coll? x) (let [arr (array)]\n                     (doseq [x (map clj->js x)]\n                       (.push arr x))\n                     arr)\n         :else x))))",
           :repo "clojurescript",
-          :tag "r3053",
+          :tag "r3058",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8751 8770]},
  :examples [{:id "2b1057",

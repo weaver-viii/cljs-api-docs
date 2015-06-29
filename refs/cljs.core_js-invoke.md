@@ -56,11 +56,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3053
+clojurescript @ r3058
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:241-245](https://github.com/clojure/clojurescript/blob/r3053/src/cljs/cljs/core.cljs#L241-L245)</ins>
+            └── <ins>[core.cljs:241-245](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L241-L245)</ins>
 </pre>
 
 
@@ -86,7 +86,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_js-invoke",
  :source {:code "(defn js-invoke\n  [obj s & args]\n  (.apply (aget obj s) obj (into-array args)))",
           :repo "clojurescript",
-          :tag "r3053",
+          :tag "r3058",
           :filename "src/cljs/cljs/core.cljs",
           :lines [241 245]},
  :examples [{:id "373cce",
