@@ -2,8 +2,8 @@
 
  <table border="1">
 <tr>
-<td>__0.0-2816__ [all](HISTORY.md)</td>
-<td>2015-02-10</td>
+<td>__0.0-2843__ [all](HISTORY.md)</td>
+<td>2015-02-12</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.6.0</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-2816__ ([See Full History](HISTORY.md)):
+Changes from __0.0-2843__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
@@ -88,7 +88,25 @@ __Library API Changes__
 __Compiler API Changes__
 
  <table>
-<tr><td>_no symbols were added or removed in this version_</td></tr>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-protocol-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl/IParseStacktrace](refs/cljs.repl_IParseStacktrace.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-protocol-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl/IPrintStacktrace](refs/cljs.repl_IPrintStacktrace.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl/mapped-stacktrace](refs/cljs.repl_mapped-stacktrace.md)</samp></td>
+</tr>
 </table>
 
 ---
@@ -6462,6 +6480,12 @@ self-compile.
 </tr>
 <tr>
 <td></td>
+<td><samp>[mapped-stacktrace](refs/cljs.repl_mapped-stacktrace.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2843"><img valign="middle" alt="[+] 0.0-2843" src="https://img.shields.io/badge/+-0.0--2843-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
 <td><samp>[~~merge-require~~](refs/cljs.repl_merge-require.md)</samp></td>
 <td><samp>function</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2629"><img valign="middle" alt="[+] 0.0-2629" src="https://img.shields.io/badge/+-0.0--2629-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2655"><img valign="middle" alt="[×] 0.0-2655" src="https://img.shields.io/badge/×-0.0--2655-red.svg"></a> </td>
@@ -6543,6 +6567,18 @@ self-compile.
 <td><samp>[IJavaScriptEnv](refs/cljs.repl_IJavaScriptEnv.md)</samp></td>
 <td><samp>protocol</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[IParseStacktrace](refs/cljs.repl_IParseStacktrace.md)</samp></td>
+<td><samp>protocol</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2843"><img valign="middle" alt="[+] 0.0-2843" src="https://img.shields.io/badge/+-0.0--2843-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[IPrintStacktrace](refs/cljs.repl_IPrintStacktrace.md)</samp></td>
+<td><samp>protocol</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2843"><img valign="middle" alt="[+] 0.0-2843" src="https://img.shields.io/badge/+-0.0--2843-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td></td>

@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2816
+clojurescript @ r2843
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1316-1322](https://github.com/clojure/clojurescript/blob/r2816/src/cljs/cljs/core.cljs#L1316-L1322)</ins>
+            └── <ins>[core.cljs:1316-1322](https://github.com/clojure/clojurescript/blob/r2843/src/cljs/cljs/core.cljs#L1316-L1322)</ins>
 </pre>
 
 
@@ -81,7 +81,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_nthrest",
  :source {:code "(defn nthrest\n  [coll n]\n    (loop [n n xs coll]\n      (if (and (pos? n) (seq xs))\n        (recur (dec n) (rest xs))\n        xs)))",
           :repo "clojurescript",
-          :tag "r2816",
+          :tag "r2843",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1316 1322]},
  :full-name "cljs.core/nthrest",

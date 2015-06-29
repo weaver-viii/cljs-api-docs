@@ -158,11 +158,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2816
+clojurescript @ r2843
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:1470-1488](https://github.com/clojure/clojurescript/blob/r2816/src/clj/cljs/analyzer.clj#L1470-L1488)</ins>
+            └── <ins>[analyzer.clj:1470-1488](https://github.com/clojure/clojurescript/blob/r2843/src/clj/cljs/analyzer.clj#L1470-L1488)</ins>
 </pre>
 
 
@@ -189,7 +189,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "special_DOT",
  :source {:code "(defmethod parse '.\n  [_ env [_ target & [field & member+] :as form] _ _]\n  (disallowing-recur\n   (let [{:keys [dot-action target method field args]} (build-dot-form [target field member+])\n         enve        (assoc env :context :expr)\n         targetexpr  (analyze enve target)]\n     (case dot-action\n           ::access {:env env :op :dot :form form\n                     :target targetexpr\n                     :field field\n                     :children [targetexpr]\n                     :tag (-> form meta :tag)}\n           ::call   (let [argexprs (map #(analyze enve %) args)]\n                      {:env env :op :dot :form form\n                       :target targetexpr\n                       :method method\n                       :args argexprs\n                       :children (into [targetexpr] argexprs)\n                       :tag (-> form meta :tag)})))))",
           :repo "clojurescript",
-          :tag "r2816",
+          :tag "r2843",
           :filename "src/clj/cljs/analyzer.clj",
           :lines [1470 1488]},
  :examples [{:id "22ccbb",

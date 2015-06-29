@@ -51,11 +51,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2816
+clojurescript @ r2843
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:422-444](https://github.com/clojure/clojurescript/blob/r2816/src/cljs/cljs/test.cljs#L422-L444)</ins>
+            └── <ins>[test.cljs:437-459](https://github.com/clojure/clojurescript/blob/r2843/src/cljs/cljs/test.cljs#L437-L459)</ins>
 </pre>
 
 
@@ -80,9 +80,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_test-var-block",
  :source {:code "(defn test-var-block\n  [v]\n  {:pre [(instance? Var v)]}\n  (if-let [t (:test (meta v))]\n    [(fn []\n       (update-current-env! [:testing-vars] conj v)\n       (update-current-env! [:report-counters :test] inc)\n       (do-report {:type :begin-test-var :var v})\n       (let [{:keys [async-disabled]} (get-current-env)]\n         (cond-> (try\n                   (t)\n                   (catch :default e\n                     (do-report\n                      {:type :error\n                       :message \"Uncaught exception, not in assertion.\"\n                       :expected nil\n                       :actual e})))\n           async-disabled (-> async? not (assert async-disabled)))))\n     (fn []\n       (do-report {:type :end-test-var :var v})\n       (update-current-env! [:testing-vars] rest))]))",
           :repo "clojurescript",
-          :tag "r2816",
+          :tag "r2843",
           :filename "src/cljs/cljs/test.cljs",
-          :lines [422 444]},
+          :lines [437 459]},
  :full-name "cljs.test/test-var-block",
  :docstring "Like test-var, but returns a block for further composition and\nlater execution."}
 

@@ -5880,7 +5880,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/IParseStacktrace</td>
-<td></td>
+<td>[ref](refs/cljs.repl_IParseStacktrace.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_IParseStacktrace.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5888,7 +5888,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/IPrintStacktrace</td>
-<td></td>
+<td>[ref](refs/cljs.repl_IPrintStacktrace.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_IPrintStacktrace.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6032,7 +6032,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/mapped-stacktrace</td>
-<td></td>
+<td>[ref](refs/cljs.repl_mapped-stacktrace.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_mapped-stacktrace.cljsdoc)</td>
 <td></td>
 <td></td>

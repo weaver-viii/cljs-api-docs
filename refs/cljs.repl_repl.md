@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2816
+clojurescript @ r2843
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:531-534](https://github.com/clojure/clojurescript/blob/r2816/src/clj/cljs/repl.clj#L531-L534)</ins>
+            └── <ins>[repl.clj:607-610](https://github.com/clojure/clojurescript/blob/r2843/src/clj/cljs/repl.clj#L607-L610)</ins>
 </pre>
 
 
@@ -61,9 +61,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_repl",
  :source {:code "(defn repl\n  [repl-env & {:as opts}]\n  (repl* repl-env opts))",
           :repo "clojurescript",
-          :tag "r2816",
+          :tag "r2843",
           :filename "src/clj/cljs/repl.clj",
-          :lines [531 534]},
+          :lines [607 610]},
  :full-name "cljs.repl/repl",
  :docstring "Note - repl will reload core.cljs every time, even if supplied old repl-env"}
 

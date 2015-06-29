@@ -37,7 +37,7 @@ Source code:
           (map
             ;; source maps are 0 indexed for columns
             ;; multiple segments may exist at column
-            ;; just take first
+            ;; the last segment seems most accurate
             (last
               (if-let [mapping (get columns (dec column))]
                 mapping
@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2816
+clojurescript @ r2843
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:177-195](https://github.com/clojure/clojurescript/blob/r2816/src/clj/cljs/repl.clj#L177-L195)</ins>
+            └── <ins>[repl.clj:196-214](https://github.com/clojure/clojurescript/blob/r2843/src/clj/cljs/repl.clj#L196-L214)</ins>
 </pre>
 
 
@@ -74,11 +74,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-2814"]],
  :type "function",
  :full-name-encode "cljs.repl_mapped-line-and-column",
- :source {:code "(defn mapped-line-and-column\n  [source-map line column]\n  (let [default [line column]]\n    ;; source maps are 0 indexed for lines\n    (if-let [columns (get source-map (dec line))]\n      (vec\n        (map inc\n          (map\n            ;; source maps are 0 indexed for columns\n            ;; multiple segments may exist at column\n            ;; just take first\n            (last\n              (if-let [mapping (get columns (dec column))]\n                mapping\n                (second (first columns))))\n            [:line :col])))\n      default)))",
+ :source {:code "(defn mapped-line-and-column\n  [source-map line column]\n  (let [default [line column]]\n    ;; source maps are 0 indexed for lines\n    (if-let [columns (get source-map (dec line))]\n      (vec\n        (map inc\n          (map\n            ;; source maps are 0 indexed for columns\n            ;; multiple segments may exist at column\n            ;; the last segment seems most accurate\n            (last\n              (if-let [mapping (get columns (dec column))]\n                mapping\n                (second (first columns))))\n            [:line :col])))\n      default)))",
           :repo "clojurescript",
-          :tag "r2816",
+          :tag "r2843",
           :filename "src/clj/cljs/repl.clj",
-          :lines [177 195]},
+          :lines [196 214]},
  :full-name "cljs.repl/mapped-line-and-column",
  :docstring "Given a cljs.source-map source map data structure map a generated line\nand column back to the original line and column."}
 

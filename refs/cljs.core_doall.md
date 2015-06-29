@@ -60,11 +60,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2816
+clojurescript @ r2843
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8046-8058](https://github.com/clojure/clojurescript/blob/r2816/src/cljs/cljs/core.cljs#L8046-L8058)</ins>
+            └── <ins>[core.cljs:8046-8058](https://github.com/clojure/clojurescript/blob/r2843/src/cljs/cljs/core.cljs#L8046-L8058)</ins>
 </pre>
 
 
@@ -91,7 +91,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_doall",
  :source {:code "(defn doall\n  ([coll]\n   (dorun coll)\n   coll)\n  ([n coll]\n   (dorun n coll)\n   coll))",
           :repo "clojurescript",
-          :tag "r2816",
+          :tag "r2843",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8046 8058]},
  :full-name "cljs.core/doall",

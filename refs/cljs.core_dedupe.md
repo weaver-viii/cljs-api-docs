@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2816
+clojurescript @ r2843
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8574-8589](https://github.com/clojure/clojurescript/blob/r2816/src/cljs/cljs/core.cljs#L8574-L8589)</ins>
+            └── <ins>[core.cljs:8580-8595](https://github.com/clojure/clojurescript/blob/r2843/src/cljs/cljs/core.cljs#L8580-L8595)</ins>
 </pre>
 
 
@@ -76,9 +76,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_dedupe",
  :source {:code "(defn dedupe\n  ([]\n   (fn [rf]\n     (let [pa (volatile! ::none)]\n       (fn\n         ([] (rf))\n         ([result] (rf result))\n         ([result input]\n            (let [prior @pa]\n              (vreset! pa input)\n              (if (= prior input)\n                result\n                (rf result input))))))))\n  ([coll] (sequence (dedupe) coll)))",
           :repo "clojurescript",
-          :tag "r2816",
+          :tag "r2843",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [8574 8589]},
+          :lines [8580 8595]},
  :full-name "cljs.core/dedupe",
  :docstring "Returns a lazy sequence removing consecutive duplicates in coll.\nReturns a transducer when no collection is provided."}
 

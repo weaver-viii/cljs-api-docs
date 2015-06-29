@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2816
+clojurescript @ r2843
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:47-63](https://github.com/clojure/clojurescript/blob/r2816/src/clj/cljs/repl.clj#L47-L63)</ins>
+            └── <ins>[repl.clj:48-64](https://github.com/clojure/clojurescript/blob/r2843/src/clj/cljs/repl.clj#L48-L64)</ins>
 </pre>
 
 
@@ -74,9 +74,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_skip-whitespace",
  :source {:code "(defn skip-whitespace\n  [s]\n  (loop [c (.read s)]\n    (cond\n      (= c (int \\newline)) :line-start\n      (= c -1) :stream-end\n      (= c (int \\;)) (do (.readLine s) :line-start)\n      (or (Character/isWhitespace (char c)) (= c (int \\,))) (recur (.read s))\n      :else (do (.unread s c) :body))))",
           :repo "clojurescript",
-          :tag "r2816",
+          :tag "r2843",
           :filename "src/clj/cljs/repl.clj",
-          :lines [47 63]},
+          :lines [48 64]},
  :full-name "cljs.repl/skip-whitespace",
  :docstring "Skips whitespace characters on stream s. Returns :line-start, :stream-end,\nor :body to indicate the relative location of the next character on s.\nInterprets comma as whitespace and semicolon as comment to end of line.\nDoes not interpret #! as comment to end of line because only one\ncharacter of lookahead is available. The stream must either be an\ninstance of LineNumberingPushbackReader or duplicate its behavior of both\nsupporting .unread and collapsing all of CR, LF, and CRLF to a single\n\\newline."}
 

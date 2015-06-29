@@ -20,12 +20,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2816
+clojurescript @ r2843
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:121](https://github.com/clojure/clojurescript/blob/r2816/src/clj/cljs/repl/browser.clj#L121)</ins>
+                └── <ins>[browser.clj:122](https://github.com/clojure/clojurescript/blob/r2843/src/clj/cljs/repl/browser.clj#L122)</ins>
 </pre>
 
 
@@ -47,9 +47,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def ordering (agent {:expecting nil :fns {}}))",
           :repo "clojurescript",
-          :tag "r2816",
+          :tag "r2843",
           :filename "src/clj/cljs/repl/browser.clj",
-          :lines [121]},
+          :lines [122]},
  :full-name "cljs.repl.browser/ordering",
  :full-name-encode "cljs.repl.browser_ordering",
  :history [["+" "0.0-927"]]}

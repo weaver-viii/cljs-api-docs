@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2816
+clojurescript @ r2843
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:252-253](https://github.com/clojure/clojurescript/blob/r2816/src/cljs/cljs/test.cljs#L252-L253)</ins>
+            └── <ins>[test.cljs:267-268](https://github.com/clojure/clojurescript/blob/r2843/src/cljs/cljs/test.cljs#L267-L268)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[new-env]"],
  :source {:code "(defn set-env! [new-env]\n  (set! *current-env* new-env))",
           :repo "clojurescript",
-          :tag "r2816",
+          :tag "r2843",
           :filename "src/cljs/cljs/test.cljs",
-          :lines [252 253]},
+          :lines [267 268]},
  :full-name "cljs.test/set-env!",
  :full-name-encode "cljs.test_set-envBANG",
  :history [["+" "0.0-2496"]]}

@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2816
+clojurescript @ r2843
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8593-8599](https://github.com/clojure/clojurescript/blob/r2816/src/cljs/cljs/core.cljs#L8593-L8599)</ins>
+            └── <ins>[core.cljs:8599-8605](https://github.com/clojure/clojurescript/blob/r2843/src/cljs/cljs/core.cljs#L8599-L8605)</ins>
 </pre>
 
 
@@ -67,9 +67,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_random-sample",
  :source {:code "(defn random-sample\n  ([prob]\n     (filter (fn [_] (< (rand) prob))))\n  ([prob coll]\n     (filter (fn [_] (< (rand) prob)) coll)))",
           :repo "clojurescript",
-          :tag "r2816",
+          :tag "r2843",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [8593 8599]},
+          :lines [8599 8605]},
  :full-name "cljs.core/random-sample",
  :docstring "Returns items from coll with random probability of prob (0.0 -\n1.0).  Returns a transducer when no collection is provided."}
 

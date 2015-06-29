@@ -26,12 +26,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2816
+clojurescript @ r2843
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[dom.cljs:20-21](https://github.com/clojure/clojurescript/blob/r2816/src/cljs/clojure/browser/dom.cljs#L20-L21)</ins>
+                └── <ins>[dom.cljs:20-21](https://github.com/clojure/clojurescript/blob/r2843/src/cljs/clojure/browser/dom.cljs#L20-L21)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[& args]"],
  :source {:code "(defn log [& args]\n  (.log js/console (apply pr-str args)))",
           :repo "clojurescript",
-          :tag "r2816",
+          :tag "r2843",
           :filename "src/cljs/clojure/browser/dom.cljs",
           :lines [20 21]},
  :full-name "clojure.browser.dom/log",

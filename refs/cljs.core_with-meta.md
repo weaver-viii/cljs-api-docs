@@ -66,11 +66,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2816
+clojurescript @ r2843
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1453-1460](https://github.com/clojure/clojurescript/blob/r2816/src/cljs/cljs/core.cljs#L1453-L1460)</ins>
+            └── <ins>[core.cljs:1453-1460](https://github.com/clojure/clojurescript/blob/r2843/src/cljs/cljs/core.cljs#L1453-L1460)</ins>
 </pre>
 
 
@@ -97,7 +97,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_with-meta",
  :source {:code "(defn with-meta\n  [o meta]\n  (if (and (fn? o) (not (satisfies? IWithMeta o)))\n    (MetaFn. o meta)\n    (when-not (nil? o)\n      (-with-meta o meta))))",
           :repo "clojurescript",
-          :tag "r2816",
+          :tag "r2843",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1453 1460]},
  :examples [{:id "f189d4",
