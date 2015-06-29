@@ -40,11 +40,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2197
+clojurescript @ r2199
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1633-1638](https://github.com/clojure/clojurescript/blob/r2197/src/cljs/cljs/core.cljs#L1633-L1638)</ins>
+            └── <ins>[core.cljs:1633-1638](https://github.com/clojure/clojurescript/blob/r2199/src/cljs/cljs/core.cljs#L1633-L1638)</ins>
 </pre>
 
 
@@ -70,7 +70,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-substract",
  :source {:code "(defn ^number unchecked-substract\n  ([x] (cljs.core/unchecked-subtract x))\n  ([x y] (cljs.core/unchecked-subtract x y))\n  ([x y & more] (reduce unchecked-substract (cljs.core/unchecked-subtract x y) more)))",
           :repo "clojurescript",
-          :tag "r2197",
+          :tag "r2199",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1633 1638]},
  :full-name "cljs.core/unchecked-substract",

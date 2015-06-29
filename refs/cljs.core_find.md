@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2197
+clojurescript @ r2199
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1266-1272](https://github.com/clojure/clojurescript/blob/r2197/src/cljs/cljs/core.cljs#L1266-L1272)</ins>
+            └── <ins>[core.cljs:1266-1272](https://github.com/clojure/clojurescript/blob/r2199/src/cljs/cljs/core.cljs#L1266-L1272)</ins>
 </pre>
 
 
@@ -78,7 +78,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_find",
  :source {:code "(defn find\n  [coll k]\n  (when (and (not (nil? coll))\n             (associative? coll)\n             (contains? coll k))\n    [k (get coll k)]))",
           :repo "clojurescript",
-          :tag "r2197",
+          :tag "r2199",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1266 1272]},
  :full-name "cljs.core/find",
