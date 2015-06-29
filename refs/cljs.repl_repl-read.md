@@ -47,17 +47,17 @@ Source code:
                     *in*)]
      (or ({:line-start request-prompt :stream-end request-exit}
           (skip-whitespace *in*))
-        (let [input (reader/read)]
+        (let [input (reader/read {:read-cond :allow :features #{:cljs}} *in*)]
           (skip-if-eol *in*)
           input)))))
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:77-98](https://github.com/clojure/clojurescript/blob/r3196/src/clj/cljs/repl.clj#L77-L98)</ins>
+            └── <ins>[repl.clj:77-98](https://github.com/clojure/clojurescript/blob/r3208/src/clj/cljs/repl.clj#L77-L98)</ins>
 </pre>
 
 
@@ -81,9 +81,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-2719"]],
  :type "function",
  :full-name-encode "cljs.repl_repl-read",
- :source {:code "(defn repl-read\n  ([request-prompt request-exit]\n   (repl-read request-prompt request-exit *repl-opts*))\n  ([request-prompt request-exit opts]\n   (binding [*in* (if (true? (:source-map-inline opts))\n                    ((:reader opts))\n                    *in*)]\n     (or ({:line-start request-prompt :stream-end request-exit}\n          (skip-whitespace *in*))\n        (let [input (reader/read)]\n          (skip-if-eol *in*)\n          input)))))",
+ :source {:code "(defn repl-read\n  ([request-prompt request-exit]\n   (repl-read request-prompt request-exit *repl-opts*))\n  ([request-prompt request-exit opts]\n   (binding [*in* (if (true? (:source-map-inline opts))\n                    ((:reader opts))\n                    *in*)]\n     (or ({:line-start request-prompt :stream-end request-exit}\n          (skip-whitespace *in*))\n        (let [input (reader/read {:read-cond :allow :features #{:cljs}} *in*)]\n          (skip-if-eol *in*)\n          input)))))",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/clj/cljs/repl.clj",
           :lines [77 98]},
  :full-name "cljs.repl/repl-read",

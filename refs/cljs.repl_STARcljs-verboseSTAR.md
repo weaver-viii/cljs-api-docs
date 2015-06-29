@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:34](https://github.com/clojure/clojurescript/blob/r3196/src/clj/cljs/repl.clj#L34)</ins>
+            └── <ins>[repl.clj:34](https://github.com/clojure/clojurescript/blob/r3208/src/clj/cljs/repl.clj#L34)</ins>
 </pre>
 
 
@@ -46,7 +46,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "dynamic var",
  :source {:code "(def ^:dynamic *cljs-verbose* false)",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/clj/cljs/repl.clj",
           :lines [34]},
  :full-name "cljs.repl/*cljs-verbose*",

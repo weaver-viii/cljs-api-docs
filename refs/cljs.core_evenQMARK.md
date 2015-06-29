@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3607-3611](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/cljs/core.cljs#L3607-L3611)</ins>
+            └── <ins>[core.cljs:3608-3612](https://github.com/clojure/clojurescript/blob/r3208/src/cljs/cljs/core.cljs#L3608-L3612)</ins>
 </pre>
 
 
@@ -78,9 +78,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_evenQMARK",
  :source {:code "(defn ^boolean even?\n   [n] (if (integer? n)\n        (zero? (bit-and n 1))\n        (throw (js/Error. (str \"Argument must be an integer: \" n)))))",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3607 3611]},
+          :lines [3608 3612]},
  :full-name "cljs.core/even?",
  :clj-symbol "clojure.core/even?",
  :docstring "Returns true if n is even, throws an exception if n is not an integer"}

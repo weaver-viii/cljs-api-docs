@@ -37,12 +37,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── clj
         └── cljs
             └── build
-                └── <ins>[api.clj:86-91](https://github.com/clojure/clojurescript/blob/r3196/src/clj/cljs/build/api.clj#L86-L91)</ins>
+                └── <ins>[api.clj:89-94](https://github.com/clojure/clojurescript/blob/r3208/src/clj/cljs/build/api.clj#L89-L94)</ins>
 </pre>
 
 
@@ -68,9 +68,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.build.api_src-file-GTgoog-require",
  :source {:code "(defn ^String src-file->goog-require\n  ([src] (closure/src-file->goog-require src))\n  ([src options]\n    (closure/src-file->goog-require src options)))",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/clj/cljs/build/api.clj",
-          :lines [86 91]},
+          :lines [89 94]},
  :full-name "cljs.build.api/src-file->goog-require",
  :docstring "Given a ClojureScript or Google Closure style JavaScript source file return\nthe goog.require statement for it."}
 

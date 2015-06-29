@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:1153-1155](https://github.com/clojure/clojurescript/blob/r3196/src/clj/cljs/analyzer.clj#L1153-L1155)</ins>
+            └── <ins>[analyzer.clj:1154-1156](https://github.com/clojure/clojurescript/blob/r3208/src/clj/cljs/analyzer.clj#L1154-L1156)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "special_quote",
  :source {:code "(defmethod parse 'quote\n  [_ env [_ x] _ _]\n  (analyze (assoc env :quoted? true) x))",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [1153 1155]},
+          :lines [1154 1156]},
  :full-name "special/quote",
  :clj-symbol "clojure.core/quote",
  :docstring "Yields the unevaluated form."}

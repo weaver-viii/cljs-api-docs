@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:542-547](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/cljs/test.cljs#L542-L547)</ins>
+            └── <ins>[test.cljs:542-547](https://github.com/clojure/clojurescript/blob/r3208/src/cljs/cljs/test.cljs#L542-L547)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_test-vars",
  :source {:code "(defn test-vars\n  [vars]\n  (run-block (test-vars-block vars)))",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/cljs/cljs/test.cljs",
           :lines [542 547]},
  :full-name "cljs.test/test-vars",

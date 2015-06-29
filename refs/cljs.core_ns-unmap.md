@@ -39,11 +39,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:2014-2021](https://github.com/clojure/clojurescript/blob/r3196/src/clj/cljs/core.clj#L2014-L2021)</ins>
+            └── <ins>[core.clj:2014-2021](https://github.com/clojure/clojurescript/blob/r3208/src/clj/cljs/core.clj#L2014-L2021)</ins>
 </pre>
 
 
@@ -68,7 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ns-unmap",
  :source {:code "(defmacro ns-unmap\n  [[quote0 ns] [quote1 sym]]\n  (core/assert (core/and (= quote0 'quote) (core/symbol? ns)\n                         (= quote1 'quote) (core/symbol? sym))\n    \"Arguments to ns-unmap must be quoted symbols\")\n  (swap! env/*compiler* update-in [::ana/namespaces ns :defs] dissoc sym)\n  `(js-delete ~(cljs.compiler/munge ns) ~(cljs.compiler/munge (core/str sym))))",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/clj/cljs/core.clj",
           :lines [2014 2021]},
  :full-name "cljs.core/ns-unmap",

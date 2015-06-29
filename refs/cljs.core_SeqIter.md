@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3380-3396](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/cljs/core.cljs#L3380-L3396)</ins>
+            └── <ins>[core.cljs:3381-3397](https://github.com/clojure/clojurescript/blob/r3208/src/cljs/cljs/core.cljs#L3381-L3397)</ins>
 </pre>
 
 
@@ -73,9 +73,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_SeqIter",
  :source {:code "(deftype SeqIter [^:mutable _seq ^:mutable _next]\n  Object\n  (hasNext [_]\n    (if (identical? _seq INIT)\n      (do\n        (set! _seq START)\n        (set! _next (seq _next)))\n      (if (identical? _seq _next)\n        (set! _next (next _seq))))\n    (not (nil? _next)))\n  (next [this]\n    (if-not (.hasNext this)\n      (throw (js/Error. \"No such element\"))\n      (do\n        (set! _seq _next)\n        (first _next))))\n  (remove [_] (js/Error. \"Unsupported operation\")))",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3380 3396]},
+          :lines [3381 3397]},
  :full-name "cljs.core/SeqIter",
  :clj-symbol "clojure.lang/SeqIterator"}
 

@@ -76,11 +76,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4387-4394](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/cljs/core.cljs#L4387-L4394)</ins>
+            └── <ins>[core.cljs:4388-4395](https://github.com/clojure/clojurescript/blob/r3208/src/cljs/cljs/core.cljs#L4388-L4395)</ins>
 </pre>
 
 
@@ -107,9 +107,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_assoc-in",
  :source {:code "(defn assoc-in\n  [m [k & ks] v]\n  (if ks\n    (assoc m k (assoc-in (get m k) ks v))\n    (assoc m k v)))",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [4387 4394]},
+          :lines [4388 4395]},
  :examples [{:id "e76f20",
              :content "```clj\n(def users [{:name \"James\" :age 26}\n            {:name \"John\" :age 43}])\n```\n\nUpdate the age of the second (index 1) user:\n\n```clj\n(assoc-in users [1 :age] 44)\n;;=> [{:name \"James\", :age 26}\n;;    {:name \"John\", :age 44}]\n```\n\nInsert the password of the second (index 1) user:\n\n```clj\n(assoc-in users [1 :password] \"nhoJ\")\n;;=> [{:name \"James\", :age 26}\n;;    {:password \"nhoJ\", :name \"John\", :age 43}]\n```"}],
  :full-name "cljs.core/assoc-in",

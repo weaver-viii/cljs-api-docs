@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2071-2080](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/cljs/core.cljs#L2071-L2080)</ins>
+            └── <ins>[core.cljs:2072-2081](https://github.com/clojure/clojurescript/blob/r3208/src/cljs/cljs/core.cljs#L2072-L2081)</ins>
 </pre>
 
 
@@ -73,9 +73,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_completing",
  :source {:code "(defn completing\n  ([f] (completing f identity))\n  ([f cf]\n    (fn\n      ([] (f))\n      ([x] (cf x))\n      ([x y] (f x y)))))",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2071 2080]},
+          :lines [2072 2081]},
  :full-name "cljs.core/completing",
  :clj-symbol "clojure.core/completing",
  :docstring "Takes a reducing function f of 2 args and returns a fn suitable for\ntransduce by adding an arity-1 signature that calls cf (default -\nidentity) on the result argument."}

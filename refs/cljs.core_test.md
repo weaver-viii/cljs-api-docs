@@ -39,11 +39,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:9599-9606](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/cljs/core.cljs#L9599-L9606)</ins>
+            └── <ins>[core.cljs:9600-9607](https://github.com/clojure/clojurescript/blob/r3208/src/cljs/cljs/core.cljs#L9600-L9607)</ins>
 </pre>
 
 
@@ -68,9 +68,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_test",
  :source {:code "(defn test\n  [v]\n  (let [f (.-cljs$lang$test v)]\n    (if f\n      (do (f) :ok)\n      :no-test)))",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [9599 9606]},
+          :lines [9600 9607]},
  :full-name "cljs.core/test",
  :clj-symbol "clojure.core/test",
  :docstring "test [v] finds fn at key :test in var metadata and calls it,\npresuming failure will throw exception"}

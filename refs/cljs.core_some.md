@@ -55,11 +55,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3593-3600](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/cljs/core.cljs#L3593-L3600)</ins>
+            └── <ins>[core.cljs:3594-3601](https://github.com/clojure/clojurescript/blob/r3208/src/cljs/cljs/core.cljs#L3594-L3601)</ins>
 </pre>
 
 
@@ -90,9 +90,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_some",
  :source {:code "(defn some\n  [pred coll]\n    (when (seq coll)\n      (or (pred (first coll)) (recur pred (next coll)))))",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3593 3600]},
+          :lines [3594 3601]},
  :full-name "cljs.core/some",
  :clj-symbol "clojure.core/some",
  :docstring "Returns the first logical true value of (pred x) for any x in coll,\nelse nil.  One common idiom is to use a set as pred, for example\nthis will return :fred if :fred is in the sequence, otherwise nil:\n(some #{:fred} coll)"}

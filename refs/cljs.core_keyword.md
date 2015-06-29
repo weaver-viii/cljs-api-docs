@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2817-2829](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/cljs/core.cljs#L2817-L2829)</ins>
+            └── <ins>[core.cljs:2818-2830](https://github.com/clojure/clojurescript/blob/r3208/src/cljs/cljs/core.cljs#L2818-L2830)</ins>
 </pre>
 
 
@@ -76,9 +76,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_keyword",
  :source {:code "(defn keyword\n  ([name] (cond\n            (keyword? name) name\n            (symbol? name) (Keyword.\n                             (cljs.core/namespace name)\n                             (cljs.core/name name) (.-str name) nil)\n            (string? name) (let [parts (.split name \"/\")]\n                             (if (== (alength parts) 2)\n                               (Keyword. (aget parts 0) (aget parts 1) name nil)\n                               (Keyword. nil (aget parts 0) name nil)))))\n  ([ns name] (Keyword. ns name (str (when ns (str ns \"/\")) name) nil)))",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2817 2829]},
+          :lines [2818 2830]},
  :full-name "cljs.core/keyword",
  :clj-symbol "clojure.core/keyword",
  :docstring "Returns a Keyword with the given namespace and name.  Do not use :\nin the keyword strings, it will be added automatically."}

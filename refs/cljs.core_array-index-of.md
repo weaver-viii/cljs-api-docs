@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5533-5545](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/cljs/core.cljs#L5533-L5545)</ins>
+            └── <ins>[core.cljs:5534-5546](https://github.com/clojure/clojurescript/blob/r3208/src/cljs/cljs/core.cljs#L5534-L5546)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[arr k]"],
  :source {:code "(defn array-index-of [arr k]\n  (cond\n    (keyword? k) (array-index-of-keyword? arr k)\n\n    (or ^boolean (goog/isString k) (number? k))\n    (array-index-of-identical? arr k)\n\n    (symbol? k) (array-index-of-symbol? arr k)\n\n    (nil? k)\n    (array-index-of-nil? arr)\n\n    :else (array-index-of-equiv? arr k)))",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [5533 5545]},
+          :lines [5534 5546]},
  :full-name "cljs.core/array-index-of",
  :full-name-encode "cljs.core_array-index-of",
  :history [["+" "0.0-3178"]]}

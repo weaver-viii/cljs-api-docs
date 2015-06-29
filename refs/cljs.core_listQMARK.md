@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2747-2750](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/cljs/core.cljs#L2747-L2750)</ins>
+            └── <ins>[core.cljs:2748-2751](https://github.com/clojure/clojurescript/blob/r3208/src/cljs/cljs/core.cljs#L2748-L2751)</ins>
 </pre>
 
 
@@ -77,9 +77,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_listQMARK",
  :source {:code "(defn ^boolean list?\n  [x]\n  (satisfies? IList x))",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2747 2750]},
+          :lines [2748 2751]},
  :full-name "cljs.core/list?",
  :clj-symbol "clojure.core/list?",
  :docstring "Returns true if x implements IList"}

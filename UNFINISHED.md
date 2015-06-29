@@ -24,7 +24,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.analyzer.api/analyze</td>
-<td></td>
+<td>[ref](refs/cljs.analyzer.api_analyze.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.analyzer.api_analyze.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -32,7 +32,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.analyzer.api/analyze-file</td>
-<td></td>
+<td>[ref](refs/cljs.analyzer.api_analyze-file.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.analyzer.api_analyze-file.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -40,7 +40,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.analyzer.api/empty-env</td>
-<td></td>
+<td>[ref](refs/cljs.analyzer.api_empty-env.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.analyzer.api_empty-env.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -56,7 +56,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.analyzer.api/forms-seq</td>
-<td></td>
+<td>[ref](refs/cljs.analyzer.api_forms-seq.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.analyzer.api_forms-seq.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -112,7 +112,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.analyzer.api/parse-ns</td>
-<td></td>
+<td>[ref](refs/cljs.analyzer.api_parse-ns.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.analyzer.api_parse-ns.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -120,7 +120,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.analyzer.api/remove-ns</td>
-<td></td>
+<td>[ref](refs/cljs.analyzer.api_remove-ns.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.analyzer.api_remove-ns.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -152,7 +152,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.build.api/build</td>
-<td></td>
+<td>[ref](refs/cljs.build.api_build.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.build.api_build.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -192,7 +192,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.build.api/inputs</td>
-<td></td>
+<td>[ref](refs/cljs.build.api_inputs.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.build.api_inputs.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -272,7 +272,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.build.api/watch</td>
-<td></td>
+<td>[ref](refs/cljs.build.api_watch.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.build.api_watch.cljsdoc)</td>
 <td></td>
 <td></td>

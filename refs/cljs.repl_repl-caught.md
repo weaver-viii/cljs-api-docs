@@ -39,11 +39,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:696-710](https://github.com/clojure/clojurescript/blob/r3196/src/clj/cljs/repl.clj#L696-L710)</ins>
+            └── <ins>[repl.clj:695-709](https://github.com/clojure/clojurescript/blob/r3208/src/clj/cljs/repl.clj#L695-L709)</ins>
 </pre>
 
 
@@ -66,9 +66,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[e repl-env opts]"],
  :source {:code "(defn repl-caught [e repl-env opts]\n  (if (and (instance? IExceptionInfo e)\n           (#{:js-eval-error :js-eval-exception} (:type (ex-data e))))\n    (let [{:keys [type repl-env error form js]} (ex-data e)]\n      (case type\n        :js-eval-error\n        (display-error repl-env error form opts)\n\n        :js-eval-exception\n        (display-error repl-env error form\n          (if (:repl-verbose opts)\n            #(prn \"Error evaluating:\" form :as js)\n            (constantly nil))\n          opts)))\n    (.printStackTrace e *err*)))",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/clj/cljs/repl.clj",
-          :lines [696 710]},
+          :lines [695 709]},
  :full-name "cljs.repl/repl-caught",
  :full-name-encode "cljs.repl_repl-caught",
  :history [["+" "0.0-2911"]]}

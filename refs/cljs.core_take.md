@@ -72,11 +72,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4067-4090](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/cljs/core.cljs#L4067-L4090)</ins>
+            └── <ins>[core.cljs:4068-4091](https://github.com/clojure/clojurescript/blob/r3208/src/cljs/cljs/core.cljs#L4068-L4091)</ins>
 </pre>
 
 
@@ -106,9 +106,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_take",
  :source {:code "(defn take\n  ([n]\n     (fn [rf]\n       (let [na (volatile! n)]\n         (fn\n           ([] (rf))\n           ([result] (rf result))\n           ([result input]\n              (let [n @na\n                    nn (vswap! na dec)\n                    result (if (pos? n)\n                             (rf result input)\n                             result)]\n                (if (not (pos? nn))\n                  (ensure-reduced result)\n                  result)))))))\n  ([n coll]\n     (lazy-seq\n       (when (pos? n)\n         (when-let [s (seq coll)]\n           (cons (first s) (take (dec n) (rest s))))))))",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [4067 4090]},
+          :lines [4068 4091]},
  :full-name "cljs.core/take",
  :clj-symbol "clojure.core/take",
  :docstring "Returns a lazy sequence of the first n items in coll, or all items if\nthere are fewer than n.  Returns a stateful transducer when\nno collection is provided."}

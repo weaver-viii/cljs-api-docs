@@ -67,11 +67,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2190-2195](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/cljs/core.cljs#L2190-L2195)</ins>
+            └── <ins>[core.cljs:2191-2196](https://github.com/clojure/clojurescript/blob/r3208/src/cljs/cljs/core.cljs#L2191-L2196)</ins>
 </pre>
 
 
@@ -86,11 +86,11 @@ clojurescript @ r3196
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:548-552](https://github.com/clojure/clojurescript/blob/r3196/src/clj/cljs/core.clj#L548-L552)</ins>
+            └── <ins>[core.clj:548-552](https://github.com/clojure/clojurescript/blob/r3208/src/clj/cljs/core.clj#L548-L552)</ins>
 </pre>
 
 ---
@@ -117,12 +117,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_min",
  :source {:code "(defn ^number min\n  ([x] x)\n  ([x y] (cljs.core/min x y))\n  ([x y & more]\n   (reduce min (cljs.core/min x y) more)))",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2190 2195]},
+          :lines [2191 2196]},
  :extra-sources ({:code "(defmacro ^::ana/numeric min\n  ([x] x)\n  ([x y] `(let [x# ~x, y# ~y]\n            (~'js* \"((~{} < ~{}) ? ~{} : ~{})\" x# y# x# y#)))\n  ([x y & more] `(min (min ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r3196",
+                  :tag "r3208",
                   :filename "src/clj/cljs/core.clj",
                   :lines [548 552]}),
  :examples [{:id "ab2de5",

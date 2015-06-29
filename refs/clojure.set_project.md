@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3196
+clojurescript @ r3208
 └── src
     └── cljs
         └── clojure
-            └── <ins>[set.cljs:67-70](https://github.com/clojure/clojurescript/blob/r3196/src/cljs/clojure/set.cljs#L67-L70)</ins>
+            └── <ins>[set.cljs:67-70](https://github.com/clojure/clojurescript/blob/r3208/src/cljs/clojure/set.cljs#L67-L70)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.set_project",
  :source {:code "(defn project\n  [xrel ks]\n    (set (map #(select-keys % ks) xrel)))",
           :repo "clojurescript",
-          :tag "r3196",
+          :tag "r3208",
           :filename "src/cljs/clojure/set.cljs",
           :lines [67 70]},
  :full-name "clojure.set/project",
