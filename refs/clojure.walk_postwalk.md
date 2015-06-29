@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2277
+clojurescript @ r2280
 └── src
     └── cljs
         └── clojure
-            └── <ins>[walk.cljs:50-56](https://github.com/clojure/clojurescript/blob/r2277/src/cljs/clojure/walk.cljs#L50-L56)</ins>
+            └── <ins>[walk.cljs:50-56](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/clojure/walk.cljs#L50-L56)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.walk_postwalk",
  :source {:code "(defn postwalk\n  [f form]\n  (walk (partial postwalk f) f form))",
           :repo "clojurescript",
-          :tag "r2277",
+          :tag "r2280",
           :filename "src/cljs/clojure/walk.cljs",
           :lines [50 56]},
  :full-name "clojure.walk/postwalk",

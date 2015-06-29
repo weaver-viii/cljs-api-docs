@@ -21,12 +21,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2277
+clojurescript @ r2280
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:46-47](https://github.com/clojure/clojurescript/blob/r2277/src/cljs/clojure/core/reducers.cljs#L46-L47)</ins>
+                └── <ins>[reducers.cljs:46-47](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/clojure/core/reducers.cljs#L46-L47)</ins>
 </pre>
 
 
@@ -49,7 +49,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.core.reducers_CollFold",
  :source {:code "(defprotocol CollFold\n  (coll-fold [coll n combinef reducef]))",
           :repo "clojurescript",
-          :tag "r2277",
+          :tag "r2280",
           :filename "src/cljs/clojure/core/reducers.cljs",
           :lines [46 47]},
  :methods [{:name "coll-fold",

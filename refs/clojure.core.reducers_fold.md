@@ -53,12 +53,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2277
+clojurescript @ r2280
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:49-64](https://github.com/clojure/clojurescript/blob/r2277/src/cljs/clojure/core/reducers.cljs#L49-L64)</ins>
+                └── <ins>[reducers.cljs:49-64](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/clojure/core/reducers.cljs#L49-L64)</ins>
 </pre>
 
 
@@ -85,7 +85,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.core.reducers_fold",
  :source {:code "(defn fold\n  ([reducef coll] (fold reducef reducef coll))\n  ([combinef reducef coll] (fold 512 combinef reducef coll))\n  ([n combinef reducef coll]\n     (coll-fold coll n combinef reducef)))",
           :repo "clojurescript",
-          :tag "r2277",
+          :tag "r2280",
           :filename "src/cljs/clojure/core/reducers.cljs",
           :lines [49 64]},
  :full-name "clojure.core.reducers/fold",

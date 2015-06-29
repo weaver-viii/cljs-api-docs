@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2277
+clojurescript @ r2280
 └── src
     └── cljs
         └── clojure
-            └── <ins>[set.cljs:61-65](https://github.com/clojure/clojurescript/blob/r2277/src/cljs/clojure/set.cljs#L61-L65)</ins>
+            └── <ins>[set.cljs:61-65](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/clojure/set.cljs#L61-L65)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.set_select",
  :source {:code "(defn select\n  [pred xset]\n    (reduce (fn [s k] (if (pred k) s (disj s k)))\n            xset xset))",
           :repo "clojurescript",
-          :tag "r2277",
+          :tag "r2280",
           :filename "src/cljs/clojure/set.cljs",
           :lines [61 65]},
  :full-name "clojure.set/select",

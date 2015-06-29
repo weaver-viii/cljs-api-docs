@@ -87,11 +87,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2277
+clojurescript @ r2280
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7510-7525](https://github.com/clojure/clojurescript/blob/r2277/src/cljs/cljs/core.cljs#L7510-L7525)</ins>
+            └── <ins>[core.cljs:7510-7525](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/core.cljs#L7510-L7525)</ins>
 </pre>
 
 
@@ -122,7 +122,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_atom",
  :source {:code "(defn atom\n  ([x] (Atom. x nil nil nil))\n  ([x & {:keys [meta validator]}] (Atom. x meta validator nil)))",
           :repo "clojurescript",
-          :tag "r2277",
+          :tag "r2280",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7510 7525]},
  :examples [{:id "e6a38a",

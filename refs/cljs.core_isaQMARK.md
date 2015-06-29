@@ -53,11 +53,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2277
+clojurescript @ r2280
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7834-7852](https://github.com/clojure/clojurescript/blob/r2277/src/cljs/cljs/core.cljs#L7834-L7852)</ins>
+            └── <ins>[core.cljs:7834-7852](https://github.com/clojure/clojurescript/blob/r2280/src/cljs/cljs/core.cljs#L7834-L7852)</ins>
 </pre>
 
 
@@ -83,7 +83,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_isaQMARK",
  :source {:code "(defn ^boolean isa?\n  ([child parent] (isa? @(get-global-hierarchy) child parent))\n  ([h child parent]\n     (or (= child parent)\n         ;; (and (class? parent) (class? child)\n         ;;    (. ^Class parent isAssignableFrom child))\n         (contains? ((:ancestors h) child) parent)\n         ;;(and (class? child) (some #(contains? ((:ancestors h) %) parent) (supers child)))\n         (and (vector? parent) (vector? child)\n              (== (count parent) (count child))\n              (loop [ret true i 0]\n                (if (or (not ret) (== i (count parent)))\n                  ret\n                  (recur (isa? h (child i) (parent i)) (inc i))))))))",
           :repo "clojurescript",
-          :tag "r2277",
+          :tag "r2280",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7834 7852]},
  :full-name "cljs.core/isa?",
