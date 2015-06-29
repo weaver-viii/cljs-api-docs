@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2629
+clojurescript @ r2644
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:157-163](https://github.com/clojure/clojurescript/blob/r2629/src/cljs/clojure/zip.cljs#L157-L163)</ins>
+            └── <ins>[zip.cljs:157-163](https://github.com/clojure/clojurescript/blob/r2644/src/cljs/clojure/zip.cljs#L157-L163)</ins>
 </pre>
 
 
@@ -67,7 +67,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_leftmost",
  :source {:code "(defn leftmost\n  [loc]\n    (let [[node {l :l r :r :as path}] loc]\n      (if (and path (seq l))\n        (with-meta [(first l) (assoc path :l [] :r (concat (rest l) [node] r))] (meta loc))\n        loc)))",
           :repo "clojurescript",
-          :tag "r2629",
+          :tag "r2644",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [157 163]},
  :full-name "clojure.zip/leftmost",

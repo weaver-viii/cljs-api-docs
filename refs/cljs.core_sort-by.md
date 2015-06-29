@@ -57,11 +57,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2629
+clojurescript @ r2644
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1656-1664](https://github.com/clojure/clojurescript/blob/r2629/src/cljs/cljs/core.cljs#L1656-L1664)</ins>
+            └── <ins>[core.cljs:1656-1664](https://github.com/clojure/clojurescript/blob/r2644/src/cljs/cljs/core.cljs#L1656-L1664)</ins>
 </pre>
 
 
@@ -88,7 +88,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_sort-by",
  :source {:code "(defn sort-by\n  ([keyfn coll]\n   (sort-by keyfn compare coll))\n  ([keyfn comp coll]\n     (sort (fn [x y] ((fn->comparator comp) (keyfn x) (keyfn y))) coll)))",
           :repo "clojurescript",
-          :tag "r2629",
+          :tag "r2644",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1656 1664]},
  :full-name "cljs.core/sort-by",

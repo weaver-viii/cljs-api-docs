@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2629
+clojurescript @ r2644
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:187-191](https://github.com/clojure/clojurescript/blob/r2629/src/clj/cljs/repl.clj#L187-L191)</ins>
+            └── <ins>[repl.clj:190-194](https://github.com/clojure/clojurescript/blob/r2644/src/clj/cljs/repl.clj#L190-L194)</ins>
 </pre>
 
 
@@ -50,9 +50,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def spec-sort\n  {:as 0\n   :refer 1\n   :refer-macros 2\n   :include-macros 3})",
           :repo "clojurescript",
-          :tag "r2629",
+          :tag "r2644",
           :filename "src/clj/cljs/repl.clj",
-          :lines [187 191]},
+          :lines [190 194]},
  :full-name "cljs.repl/spec-sort",
  :full-name-encode "cljs.repl_spec-sort",
  :history [["+" "0.0-2629"]]}

@@ -55,33 +55,33 @@ Test bit at index n
 Source code:
 
 ```clj
-(defn bit-test
+(defn ^boolean bit-test
   [x n]
   (cljs.core/bit-test x n))
 ```
 
  <pre>
-clojurescript @ r2629
+clojurescript @ r2644
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2053-2056](https://github.com/clojure/clojurescript/blob/r2629/src/cljs/cljs/core.cljs#L2053-L2056)</ins>
+            └── <ins>[core.cljs:2053-2056](https://github.com/clojure/clojurescript/blob/r2644/src/cljs/cljs/core.cljs#L2053-L2056)</ins>
 </pre>
 
 
 ---
 
 ```clj
-(defmacro ^::ana/numeric bit-test [x n]
-  (core/list 'js* "((~{} & (1 << ~{})) != 0)" x n))
+(defmacro bit-test [x n]
+  (bool-expr (core/list 'js* "((~{} & (1 << ~{})) != 0)" x n)))
 ```
 
  <pre>
-clojurescript @ r2629
+clojurescript @ r2644
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:522-523](https://github.com/clojure/clojurescript/blob/r2629/src/clj/cljs/core.clj#L522-L523)</ins>
+            └── <ins>[core.clj:522-523](https://github.com/clojure/clojurescript/blob/r2644/src/clj/cljs/core.clj#L522-L523)</ins>
 </pre>
 
 ---
@@ -98,20 +98,21 @@ __Meta__ - To retrieve the API data for this symbol:
 
 ```clj
 {:description "Test bit at index `n`. Returns `true` if 1, and `false` if 0. Same as `(x & (1 << y)) != 0` in JavaScript.",
+ :return-type boolean,
  :ns "cljs.core",
  :name "bit-test",
  :signature ["[x n]"],
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.core_bit-test",
- :source {:code "(defn bit-test\n  [x n]\n  (cljs.core/bit-test x n))",
+ :source {:code "(defn ^boolean bit-test\n  [x n]\n  (cljs.core/bit-test x n))",
           :repo "clojurescript",
-          :tag "r2629",
+          :tag "r2644",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2053 2056]},
- :extra-sources ({:code "(defmacro ^::ana/numeric bit-test [x n]\n  (core/list 'js* \"((~{} & (1 << ~{})) != 0)\" x n))",
+ :extra-sources ({:code "(defmacro bit-test [x n]\n  (bool-expr (core/list 'js* \"((~{} & (1 << ~{})) != 0)\" x n)))",
                   :repo "clojurescript",
-                  :tag "r2629",
+                  :tag "r2644",
                   :filename "src/clj/cljs/core.clj",
                   :lines [522 523]}),
  :examples [{:id "f64664",

@@ -77,11 +77,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2629
+clojurescript @ r2644
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8330-8337](https://github.com/clojure/clojurescript/blob/r2629/src/cljs/cljs/core.cljs#L8330-L8337)</ins>
+            └── <ins>[core.cljs:8330-8337](https://github.com/clojure/clojurescript/blob/r2644/src/cljs/cljs/core.cljs#L8330-L8337)</ins>
 </pre>
 
 
@@ -108,7 +108,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_alter-metaBANG",
  :source {:code "(defn alter-meta!\n  [iref f & args]\n  (set! (.-meta iref) (apply f (.-meta iref) args)))",
           :repo "clojurescript",
-          :tag "r2629",
+          :tag "r2644",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8330 8337]},
  :examples [{:id "8378a0",

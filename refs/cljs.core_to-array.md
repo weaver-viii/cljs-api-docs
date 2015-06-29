@@ -40,11 +40,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2629
+clojurescript @ r2644
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2683-2691](https://github.com/clojure/clojurescript/blob/r2629/src/cljs/cljs/core.cljs#L2683-L2691)</ins>
+            └── <ins>[core.cljs:2683-2691](https://github.com/clojure/clojurescript/blob/r2644/src/cljs/cljs/core.cljs#L2683-L2691)</ins>
 </pre>
 
 
@@ -69,7 +69,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_to-array",
  :source {:code "(defn to-array\n  [s]\n  (let [ary (array)]\n    (loop [s s]\n      (if (seq s)\n        (do (. ary push (first s))\n            (recur (next s)))\n        ary))))",
           :repo "clojurescript",
-          :tag "r2629",
+          :tag "r2644",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2683 2691]},
  :full-name "cljs.core/to-array",

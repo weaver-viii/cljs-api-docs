@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2629
+clojurescript @ r2644
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:397](https://github.com/clojure/clojurescript/blob/r2629/src/cljs/cljs/core.cljs#L397)</ins>
+            └── <ins>[core.cljs:397](https://github.com/clojure/clojurescript/blob/r2644/src/cljs/cljs/core.cljs#L397)</ins>
 </pre>
 
 
@@ -47,7 +47,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IAtom",
  :source {:code "(defprotocol IAtom)",
           :repo "clojurescript",
-          :tag "r2629",
+          :tag "r2644",
           :filename "src/cljs/cljs/core.cljs",
           :lines [397]},
  :full-name "cljs.core/IAtom",

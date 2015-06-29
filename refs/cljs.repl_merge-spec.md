@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2629
+clojurescript @ r2644
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:193-206](https://github.com/clojure/clojurescript/blob/r2629/src/clj/cljs/repl.clj#L193-L206)</ins>
+            └── <ins>[repl.clj:196-209](https://github.com/clojure/clojurescript/blob/r2644/src/clj/cljs/repl.clj#L196-L209)</ins>
 </pre>
 
 
@@ -65,9 +65,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[[lib & {:as aindex}] [_ & {:as bindex}]]"],
  :source {:code "(defn merge-spec [[lib & {:as aindex}] [_ & {:as bindex}]]\n  (let [merged-map\n        (merge-with\n          (fn [x y]\n            (if (vector? x)\n              (vec (distinct (into x y)))\n              y))\n          aindex bindex)]\n    (apply vector lib\n      (apply concat\n        (sort\n          (fn [[sa] [sb]]\n            (compare (spec-sort sa) (spec-sort sb)))\n          merged-map)))))",
           :repo "clojurescript",
-          :tag "r2629",
+          :tag "r2644",
           :filename "src/clj/cljs/repl.clj",
-          :lines [193 206]},
+          :lines [196 209]},
  :full-name "cljs.repl/merge-spec",
  :full-name-encode "cljs.repl_merge-spec",
  :history [["+" "0.0-2629"]]}

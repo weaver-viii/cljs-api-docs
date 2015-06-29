@@ -56,11 +56,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2629
+clojurescript @ r2644
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1872-1878](https://github.com/clojure/clojurescript/blob/r2629/src/cljs/cljs/core.cljs#L1872-L1878)</ins>
+            └── <ins>[core.cljs:1872-1878](https://github.com/clojure/clojurescript/blob/r2644/src/cljs/cljs/core.cljs#L1872-L1878)</ins>
 </pre>
 
 
@@ -86,7 +86,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_char",
  :source {:code "(defn char\n  [x]\n  (cond\n    (number? x) (.fromCharCode js/String x)\n    (and (string? x) (== (.-length x) 1)) x\n    :else (throw (js/Error. \"Argument to char must be a character or number\"))))",
           :repo "clojurescript",
-          :tag "r2629",
+          :tag "r2644",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1872 1878]},
  :examples [{:id "4e1a56",
