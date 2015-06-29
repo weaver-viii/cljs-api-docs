@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2755
+clojurescript @ r2758
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:232-235](https://github.com/clojure/clojurescript/blob/r2755/src/cljs/clojure/zip.cljs#L232-L235)</ins>
+            └── <ins>[zip.cljs:232-235](https://github.com/clojure/clojurescript/blob/r2758/src/cljs/clojure/zip.cljs#L232-L235)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_endQMARK",
  :source {:code "(defn end?\n  [loc]\n    (= :end (loc 1)))",
           :repo "clojurescript",
-          :tag "r2755",
+          :tag "r2758",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [232 235]},
  :full-name "clojure.zip/end?",

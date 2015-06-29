@@ -98,11 +98,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2755
+clojurescript @ r2758
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8662-8690](https://github.com/clojure/clojurescript/blob/r2755/src/cljs/cljs/core.cljs#L8662-L8690)</ins>
+            └── <ins>[core.cljs:8662-8690](https://github.com/clojure/clojurescript/blob/r2758/src/cljs/cljs/core.cljs#L8662-L8690)</ins>
 </pre>
 
 
@@ -129,7 +129,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_js-GTclj",
  :source {:code "(defn js->clj\n  ([x] (js->clj x {:keywordize-keys false}))\n  ([x & opts]\n    (let [{:keys [keywordize-keys]} opts\n          keyfn (if keywordize-keys keyword str)\n          f (fn thisfn [x]\n              (cond\n                (satisfies? IEncodeClojure x)\n                (-js->clj x (apply array-map opts))\n\n                (seq? x)\n                (doall (map thisfn x))\n\n                (coll? x)\n                (into (empty x) (map thisfn x))\n\n                (array? x)\n                (vec (map thisfn x))\n                 \n                (identical? (type x) js/Object)\n                (into {} (for [k (js-keys x)]\n                           [(keyfn k) (thisfn (aget x k))]))\n\n                :else x))]\n      (f x))))",
           :repo "clojurescript",
-          :tag "r2755",
+          :tag "r2758",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8662 8690]},
  :examples [{:id "61d263",
