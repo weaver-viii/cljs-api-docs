@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3115
+clojurescript @ r3117
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:602-605](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L602-L605)</ins>
+            └── <ins>[core.cljs:602-605](https://github.com/clojure/clojurescript/blob/r3117/src/cljs/cljs/core.cljs#L602-L605)</ins>
 </pre>
 
 
@@ -56,7 +56,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IChunkedNext",
  :source {:code "(defprotocol IChunkedNext\n  \"Protocol for accessing the chunks of a collection.\"\n  (-chunked-next [coll]\n    \"Returns a new collection of coll without the first chunk.\"))",
           :repo "clojurescript",
-          :tag "r3115",
+          :tag "r3117",
           :filename "src/cljs/cljs/core.cljs",
           :lines [602 605]},
  :methods [{:name "-chunked-next",

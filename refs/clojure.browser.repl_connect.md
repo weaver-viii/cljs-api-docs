@@ -51,12 +51,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3115
+clojurescript @ r3117
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[repl.cljs:163-185](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/clojure/browser/repl.cljs#L163-L185)</ins>
+                └── <ins>[repl.cljs:163-185](https://github.com/clojure/clojurescript/blob/r3117/src/cljs/clojure/browser/repl.cljs#L163-L185)</ins>
 </pre>
 
 
@@ -81,7 +81,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.repl_connect",
  :source {:code "(defn connect\n  [repl-server-url]\n  (let [repl-connection\n        (net/xpc-connection\n          {:peer_uri repl-server-url})]\n    (swap! xpc-connection (constantly repl-connection))\n    (net/register-service repl-connection\n      :evaluate-javascript\n      (fn [js]\n        (net/transmit\n          repl-connection\n          :send-result\n          (evaluate-javascript repl-connection js))))\n    (net/connect repl-connection\n      (constantly nil)\n      (fn [iframe]\n        (set! (.-display (.-style iframe))\n          \"none\")))\n    (bootstrap)\n    repl-connection))",
           :repo "clojurescript",
-          :tag "r3115",
+          :tag "r3117",
           :filename "src/cljs/clojure/browser/repl.cljs",
           :lines [163 185]},
  :full-name "clojure.browser.repl/connect",

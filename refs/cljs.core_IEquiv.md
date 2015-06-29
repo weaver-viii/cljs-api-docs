@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3115
+clojurescript @ r3117
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:472-475](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L472-L475)</ins>
+            └── <ins>[core.cljs:472-475](https://github.com/clojure/clojurescript/blob/r3117/src/cljs/cljs/core.cljs#L472-L475)</ins>
 </pre>
 
 
@@ -56,7 +56,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IEquiv",
  :source {:code "(defprotocol IEquiv\n  \"Protocol for adding value comparison functionality to a type.\"\n  (^boolean -equiv [o other]\n    \"Returns true if o and other are equal, false otherwise.\"))",
           :repo "clojurescript",
-          :tag "r3115",
+          :tag "r3117",
           :filename "src/cljs/cljs/core.cljs",
           :lines [472 475]},
  :methods [{:name "-equiv",

@@ -33,12 +33,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3115
+clojurescript @ r3117
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[dom.cljs:136-140](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/clojure/browser/dom.cljs#L136-L140)</ins>
+                └── <ins>[dom.cljs:136-140](https://github.com/clojure/clojurescript/blob/r3117/src/cljs/clojure/browser/dom.cljs#L136-L140)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.dom_set-properties",
  :source {:code "(defn set-properties\n  [e m]\n  (gdom/setProperties (ensure-element e)\n                      (apply gobject/create (interleave (keys m) (vals m)))))",
           :repo "clojurescript",
-          :tag "r3115",
+          :tag "r3117",
           :filename "src/cljs/clojure/browser/dom.cljs",
           :lines [136 140]},
  :full-name "clojure.browser.dom/set-properties",

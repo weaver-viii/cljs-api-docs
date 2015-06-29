@@ -20,12 +20,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3115
+clojurescript @ r3117
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[repl.cljs:112](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/clojure/browser/repl.cljs#L112)</ins>
+                └── <ins>[repl.cljs:112](https://github.com/clojure/clojurescript/blob/r3117/src/cljs/clojure/browser/repl.cljs#L112)</ins>
 </pre>
 
 
@@ -47,7 +47,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def load-queue nil)",
           :repo "clojurescript",
-          :tag "r3115",
+          :tag "r3117",
           :filename "src/cljs/clojure/browser/repl.cljs",
           :lines [112]},
  :full-name "clojure.browser.repl/load-queue",

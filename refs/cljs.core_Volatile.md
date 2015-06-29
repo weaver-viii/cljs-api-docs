@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3115
+clojurescript @ r3117
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3884-3890](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L3884-L3890)</ins>
+            └── <ins>[core.cljs:3884-3890](https://github.com/clojure/clojurescript/blob/r3117/src/cljs/cljs/core.cljs#L3884-L3890)</ins>
 </pre>
 
 
@@ -58,7 +58,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[state]"],
  :source {:code "(deftype Volatile [^:mutable state]\n  IVolatile\n  (-vreset! [_ new-state]\n    (set! state new-state))\n\n  IDeref\n  (-deref [_] state))",
           :repo "clojurescript",
-          :tag "r3115",
+          :tag "r3117",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3884 3890]},
  :full-name "cljs.core/Volatile",

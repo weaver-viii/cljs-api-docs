@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3115
+clojurescript @ r3117
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:223-241](https://github.com/clojure/clojurescript/blob/r3115/src/clj/cljs/repl.clj#L223-L241)</ins>
+            └── <ins>[repl.clj:223-241](https://github.com/clojure/clojurescript/blob/r3117/src/clj/cljs/repl.clj#L223-L241)</ins>
 </pre>
 
 
@@ -76,7 +76,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_mapped-line-and-column",
  :source {:code "(defn mapped-line-and-column\n  [source-map line column]\n  (let [default [line column]]\n    ;; source maps are 0 indexed for lines\n    (if-let [columns (get source-map (dec line))]\n      (vec\n        (map inc\n          (map\n            ;; source maps are 0 indexed for columns\n            ;; multiple segments may exist at column\n            ;; the last segment seems most accurate\n            (last\n              (if-let [mapping (get columns (dec column))]\n                mapping\n                (second (first columns))))\n            [:line :col])))\n      default)))",
           :repo "clojurescript",
-          :tag "r3115",
+          :tag "r3117",
           :filename "src/clj/cljs/repl.clj",
           :lines [223 241]},
  :full-name "cljs.repl/mapped-line-and-column",

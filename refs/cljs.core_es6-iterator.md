@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3115
+clojurescript @ r3117
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1014-1017](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L1014-L1017)</ins>
+            └── <ins>[core.cljs:1014-1017](https://github.com/clojure/clojurescript/blob/r3117/src/cljs/cljs/core.cljs#L1014-L1017)</ins>
 </pre>
 
 
@@ -61,7 +61,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_es6-iterator",
  :source {:code "(defn es6-iterator\n  [coll]\n  (ES6Iterator. (seq coll)))",
           :repo "clojurescript",
-          :tag "r3115",
+          :tag "r3117",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1014 1017]},
  :full-name "cljs.core/es6-iterator",
