@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:290-291](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L290-L291)</ins>
+            └── <ins>[core.cljs:304-305](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L304-L305)</ins>
 </pre>
 
 
@@ -52,9 +52,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ILookup",
  :source {:code "(defprotocol ILookup\n  (-lookup [o k] [o k not-found]))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [290 291]},
+          :lines [304 305]},
  :methods [{:name "-lookup",
             :signature ["[o k]" "[o k not-found]"],
             :docstring nil}],

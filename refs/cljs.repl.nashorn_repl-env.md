@@ -9,7 +9,7 @@
 </table>
 
  <samp>
-(__repl-env__ & {:keys \[debug\], :as opts})<br>
+(__repl-env__ & {:as opts})<br>
 </samp>
 
 ---
@@ -20,33 +20,25 @@
 Source docstring:
 
 ```
-Create a Nashorn repl-env for use with the repl/repl* method in Clojurescript and as the
-:repl-env argument to piggieback/cljs-repl. Besides the usual repl options (e.g. :source-map),
-opts has the following extra parameters:
-
-:output-dir  the directory of the compiled files, e.g. "resources/public/my-app" (mandatory).
-:output-to   load this file initially into Nashorn, relative to output-dir.
-             Use a minimal bootstrapped cljs.core environment if not specified.
+Create a Nashorn repl-env for use with the repl/repl* method in Clojurescript.
 ```
 
 Source code:
 
 ```clj
 (defn repl-env 
-  [& {:keys [debug] :as opts}]
-  (let [engine (create-engine)]
-    (merge
-      (NashornEnv. engine debug)
-      opts)))
+  [& {:as opts}]
+  (assert (even? (count opts)) "Arguments must be interleaved key value pairs")
+  (repl-env* opts))
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[nashorn.clj:200-212](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/repl/nashorn.clj#L200-L212)</ins>
+                └── <ins>[nashorn.clj:225-229](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/repl/nashorn.clj#L225-L229)</ins>
 </pre>
 
 
@@ -65,17 +57,17 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.repl.nashorn",
  :name "repl-env",
- :signature ["[& {:keys [debug], :as opts}]"],
+ :signature ["[& {:as opts}]"],
  :history [["+" "0.0-2814"]],
  :type "function",
  :full-name-encode "cljs.repl.nashorn_repl-env",
- :source {:code "(defn repl-env \n  [& {:keys [debug] :as opts}]\n  (let [engine (create-engine)]\n    (merge\n      (NashornEnv. engine debug)\n      opts)))",
+ :source {:code "(defn repl-env \n  [& {:as opts}]\n  (assert (even? (count opts)) \"Arguments must be interleaved key value pairs\")\n  (repl-env* opts))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/clj/cljs/repl/nashorn.clj",
-          :lines [200 212]},
+          :lines [225 229]},
  :full-name "cljs.repl.nashorn/repl-env",
- :docstring "Create a Nashorn repl-env for use with the repl/repl* method in Clojurescript and as the\n:repl-env argument to piggieback/cljs-repl. Besides the usual repl options (e.g. :source-map),\nopts has the following extra parameters:\n\n:output-dir  the directory of the compiled files, e.g. \"resources/public/my-app\" (mandatory).\n:output-to   load this file initially into Nashorn, relative to output-dir.\n             Use a minimal bootstrapped cljs.core environment if not specified."}
+ :docstring "Create a Nashorn repl-env for use with the repl/repl* method in Clojurescript."}
 
 ```
 

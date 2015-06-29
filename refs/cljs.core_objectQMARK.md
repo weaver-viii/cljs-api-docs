@@ -25,22 +25,28 @@ See Also:
 
 ---
 
+Source docstring:
+
+```
+Returns true if x's constructor is Object
+```
 
 Source code:
 
 ```clj
-(defn ^boolean object? [x]
+(defn ^boolean object?
+  [x]
   (if-not (nil? x)
     (identical? (.-constructor x) js/Object)
     false))
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:112-115](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L112-L115)</ins>
+            └── <ins>[core.cljs:116-121](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L116-L121)</ins>
 </pre>
 
 
@@ -66,12 +72,13 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/array?"],
  :full-name-encode "cljs.core_objectQMARK",
- :source {:code "(defn ^boolean object? [x]\n  (if-not (nil? x)\n    (identical? (.-constructor x) js/Object)\n    false))",
+ :source {:code "(defn ^boolean object?\n  [x]\n  (if-not (nil? x)\n    (identical? (.-constructor x) js/Object)\n    false))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [112 115]},
- :full-name "cljs.core/object?"}
+          :lines [116 121]},
+ :full-name "cljs.core/object?",
+ :docstring "Returns true if x's constructor is Object"}
 
 ```
 

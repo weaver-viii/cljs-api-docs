@@ -23,11 +23,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2391](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L2391)</ins>
+            └── <ins>[core.cljs:2455](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L2455)</ins>
 </pre>
 
 
@@ -52,9 +52,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ListDOTEMPTY",
  :source {:code "(set! (.-EMPTY List) (EmptyList. nil))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2391]},
+          :lines [2455]},
  :full-name "cljs.core/List.EMPTY",
  :clj-symbol "clojure.lang/PersistentList.EMPTY"}
 

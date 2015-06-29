@@ -20,20 +20,26 @@
 
 
 
+Source docstring:
+
+```
+Return true if x is a Symbol
+```
 
 Source code:
 
 ```clj
-(defn ^boolean symbol? [x]
+(defn ^boolean symbol?
+  [x]
   (instance? Symbol x))
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:580-581](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L580-L581)</ins>
+            └── <ins>[core.cljs:600-603](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L600-L603)</ins>
 </pre>
 
 
@@ -45,11 +51,11 @@ clojurescript @ r2985
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:334-335](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/core.clj#L334-L335)</ins>
+            └── <ins>[core.clj:341-342](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/core.clj#L341-L342)</ins>
 </pre>
 
 ---
@@ -72,18 +78,19 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.core_symbolQMARK",
- :source {:code "(defn ^boolean symbol? [x]\n  (instance? Symbol x))",
+ :source {:code "(defn ^boolean symbol?\n  [x]\n  (instance? Symbol x))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [580 581]},
+          :lines [600 603]},
  :extra-sources ({:code "(defmacro symbol? [x]\n  (bool-expr `(instance? Symbol ~x)))",
                   :repo "clojurescript",
-                  :tag "r2985",
+                  :tag "r3030",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [334 335]}),
+                  :lines [341 342]}),
  :full-name "cljs.core/symbol?",
- :clj-symbol "clojure.core/symbol?"}
+ :clj-symbol "clojure.core/symbol?",
+ :docstring "Return true if x is a Symbol"}
 
 ```
 

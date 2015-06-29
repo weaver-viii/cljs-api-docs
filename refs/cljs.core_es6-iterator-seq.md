@@ -17,11 +17,17 @@
 
 
 
+Source docstring:
+
+```
+EXPERIMENTAL: Given an ES2015 compatible iterator return a seq.
+```
 
 Source code:
 
 ```clj
-(defn es6-iterator-seq [iter]
+(defn es6-iterator-seq
+  [iter]
   (let [v (.next iter)]
     (if (.-done v)
       ()
@@ -29,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:809-813](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L809-L813)</ins>
+            └── <ins>[core.cljs:839-845](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L839-L845)</ins>
 </pre>
 
 
@@ -52,16 +58,17 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "es6-iterator-seq",
- :type "function",
  :signature ["[iter]"],
- :source {:code "(defn es6-iterator-seq [iter]\n  (let [v (.next iter)]\n    (if (.-done v)\n      ()\n      (ES6IteratorSeq. (.-value v) iter nil))))",
-          :repo "clojurescript",
-          :tag "r2985",
-          :filename "src/cljs/cljs/core.cljs",
-          :lines [809 813]},
- :full-name "cljs.core/es6-iterator-seq",
+ :history [["+" "0.0-2411"]],
+ :type "function",
  :full-name-encode "cljs.core_es6-iterator-seq",
- :history [["+" "0.0-2411"]]}
+ :source {:code "(defn es6-iterator-seq\n  [iter]\n  (let [v (.next iter)]\n    (if (.-done v)\n      ()\n      (ES6IteratorSeq. (.-value v) iter nil))))",
+          :repo "clojurescript",
+          :tag "r3030",
+          :filename "src/cljs/cljs/core.cljs",
+          :lines [839 845]},
+ :full-name "cljs.core/es6-iterator-seq",
+ :docstring "EXPERIMENTAL: Given an ES2015 compatible iterator return a seq."}
 
 ```
 

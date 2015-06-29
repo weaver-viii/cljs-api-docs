@@ -41,11 +41,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:39-51](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/repl.clj#L39-L51)</ins>
+            └── <ins>[repl.clj:39-51](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/repl.clj#L39-L51)</ins>
 </pre>
 
 
@@ -70,7 +70,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_skip-if-eol",
  :source {:code "(defn skip-if-eol\n  [s]\n  (let [c (readers/read-char s)]\n    (case c\n      \\newline :line-start\n      nil :stream-end\n      (do (readers/unread s c) :body))))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/clj/cljs/repl.clj",
           :lines [39 51]},
  :full-name "cljs.repl/skip-if-eol",

@@ -66,11 +66,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2091-2095](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L2091-L2095)</ins>
+            └── <ins>[core.cljs:2153-2157](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L2153-L2157)</ins>
 </pre>
 
 
@@ -83,11 +83,11 @@ clojurescript @ r2985
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:509-511](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/core.clj#L509-L511)</ins>
+            └── <ins>[core.clj:516-518](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/core.clj#L516-L518)</ins>
 </pre>
 
 ---
@@ -113,14 +113,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-xor",
  :source {:code "(defn bit-xor\n  ([x y] (cljs.core/bit-xor x y))\n  ([x y & more]\n     (reduce bit-xor (cljs.core/bit-xor x y) more)))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2091 2095]},
+          :lines [2153 2157]},
  :extra-sources ({:code "(defmacro ^::ana/numeric bit-xor\n  ([x y] (core/list 'js* \"(~{} ^ ~{})\" x y))\n  ([x y & more] `(bit-xor (bit-xor ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r2985",
+                  :tag "r3030",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [509 511]}),
+                  :lines [516 518]}),
  :examples [{:id "3ccd99",
              :content "Bits can be entered using radix notation:\n\n```clj\n(bit-xor 2r1100 2r1010)\n;;=> 6\n;; 6 = 2r0110\n```\n\nSame numbers in decimal:\n\n```clj\n(bit-xor 12 10)\n;;=> 6\n```"}],
  :full-name "cljs.core/bit-xor",

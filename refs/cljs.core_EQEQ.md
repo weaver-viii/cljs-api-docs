@@ -75,11 +75,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2162-2173](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L2162-L2173)</ins>
+            └── <ins>[core.cljs:2224-2235](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L2224-L2235)</ins>
 </pre>
 
 
@@ -93,11 +93,11 @@ clojurescript @ r2985
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:455-458](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/core.clj#L455-L458)</ins>
+            └── <ins>[core.clj:462-465](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/core.clj#L462-L465)</ins>
 </pre>
 
 ---
@@ -124,14 +124,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_EQEQ",
  :source {:code "(defn ^boolean ==\n  ([x] true)\n  ([x y] (-equiv x y))\n  ([x y & more]\n   (if (== x y)\n     (if (next more)\n       (recur y (first more) (next more))\n       (== y (first more)))\n     false)))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2162 2173]},
+          :lines [2224 2235]},
  :extra-sources ({:code "(defmacro ^::ana/numeric ==\n  ([x] true)\n  ([x y] (bool-expr (core/list 'js* \"(~{} === ~{})\" x y)))\n  ([x y & more] `(and (== ~x ~y) (== ~y ~@more))))",
                   :repo "clojurescript",
-                  :tag "r2985",
+                  :tag "r3030",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [455 458]}),
+                  :lines [462 465]}),
  :examples [{:id "5ac342",
              :content "```clj\n(== 1 1)\n;;=> true\n\n(== 1 2)\n;;=> false\n```"}],
  :full-name "cljs.core/==",

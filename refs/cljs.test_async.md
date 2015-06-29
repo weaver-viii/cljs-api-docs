@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── clj
         └── cljs
-            └── <ins>[test.clj:222-239](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/test.clj#L222-L239)</ins>
+            └── <ins>[test.clj:222-239](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/test.clj#L222-L239)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_async",
  :source {:code "(defmacro async\n  [done & body]\n  `(reify\n     cljs.test/IAsyncTest\n     cljs.core/IFn\n     (~'-invoke [_# ~done]\n       ~@body)))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/clj/cljs/test.clj",
           :lines [222 239]},
  :full-name "cljs.test/async",

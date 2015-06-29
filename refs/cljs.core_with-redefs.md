@@ -52,11 +52,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1104-1124](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/core.clj#L1104-L1124)</ins>
+            └── <ins>[core.clj:1312-1332](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/core.clj#L1312-L1332)</ins>
 </pre>
 
 
@@ -81,9 +81,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_with-redefs",
  :source {:code "(defmacro with-redefs\n  [bindings & body]\n  (let [names (take-nth 2 bindings)\n        vals (take-nth 2 (drop 1 bindings))\n        tempnames (map (comp gensym name) names)\n        binds (map core/vector names vals)\n        resets (reverse (map core/vector names tempnames))\n        bind-value (fn [[k v]] (core/list 'set! k v))]\n    `(let [~@(interleave tempnames names)]\n       ~@(map bind-value binds)\n       (try\n         ~@body\n        (finally\n          ~@(map bind-value resets))))))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/clj/cljs/core.clj",
-          :lines [1104 1124]},
+          :lines [1312 1332]},
  :full-name "cljs.core/with-redefs",
  :clj-symbol "clojure.core/with-redefs",
  :docstring "binding => var-symbol temp-value-expr\n\nTemporarily redefines vars while executing the body.  The\ntemp-value-exprs will be evaluated and each resulting value will\nreplace in parallel the root value of its var.  After the body is\nexecuted, the root values of all the vars will be set back to their\nold values. Useful for mocking out functions during testing."}

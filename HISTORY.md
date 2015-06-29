@@ -16,6 +16,29 @@
 <th>comp</th>
 </tr>
 <tr>
+<td>__[0.0-3030](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-3030)__</td>
+<td>2015-03-07</td>
+<td><kbd>1.6.0</kbd></td>
+<td><kbd>0.8.16</kbd></td>
+<td><kbd>0.0-20140718-946a7d39</kbd></td>
+<td>
+<a href="#user-content-00-3030-syntax">
+ 
+</a>
+</td>
+<td>
+<a href="#user-content-00-3030-library">
+ 
+</a>
+</td>
+<td>
+<a href="#user-content-00-3030-compiler">
+<img valign="middle" src="https://img.shields.io/badge/+-4-brightgreen.svg"> <img valign="middle" src="https://img.shields.io/badge/×-1-red.svg">
+</a>
+</td>
+</tr>
+
+<tr>
 <td>__[0.0-2985](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2985)__</td>
 <td>2015-03-04</td>
 <td><kbd>1.6.0</kbd></td>
@@ -2223,6 +2246,53 @@
 </td>
 </tr>
 
+</table>
+
+### 0.0-3030
+
+<a name="00-3030-syntax"></a> __Syntax API Changes__
+ <table>
+<tr><td>_no syntax forms were added or removed in this version_</td></tr>
+</table>
+
+<a name="00-3030-library"></a> __Library API Changes__
+ <table>
+<tr><td>_no symbols were added or removed in this version_</td></tr>
+</table>
+
+<a name="00-3030-compiler"></a> __Compiler API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-protocol-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl/IParseError](refs/cljs.repl_IParseError.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-protocol-red.svg">
+</td>
+<td><samp>[~~cljs.repl/IParseErrorMessage~~](refs/cljs.repl_IParseErrorMessage.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl.browser/repl-env\*](refs/cljs.repl.browser_repl-envSTAR.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl.nashorn/repl-env\*](refs/cljs.repl.nashorn_repl-envSTAR.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.repl.rhino/repl-env\*](refs/cljs.repl.rhino_repl-envSTAR.md)</samp></td>
+</tr>
 </table>
 
 ### 0.0-2985

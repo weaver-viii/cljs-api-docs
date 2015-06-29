@@ -28,20 +28,27 @@ See Also:
 
 ---
 
+Source docstring:
+
+```
+Evaluates x and tests if it is an instance of the type
+c. Returns true or false
+```
 
 Source code:
 
 ```clj
-(defn ^boolean instance? [t o]
+(defn ^boolean instance?
+  [t o]
   (cljs.core/instance? t o))
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:577-578](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L577-L578)</ins>
+            └── <ins>[core.cljs:594-598](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L594-L598)</ins>
 </pre>
 
 
@@ -59,11 +66,11 @@ clojurescript @ r2985
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:322-329](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/core.clj#L322-L329)</ins>
+            └── <ins>[core.clj:329-336](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/core.clj#L329-L336)</ins>
 </pre>
 
 ---
@@ -88,18 +95,19 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/type"],
  :full-name-encode "cljs.core_instanceQMARK",
- :source {:code "(defn ^boolean instance? [t o]\n  (cljs.core/instance? t o))",
+ :source {:code "(defn ^boolean instance?\n  [t o]\n  (cljs.core/instance? t o))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [577 578]},
+          :lines [594 598]},
  :extra-sources ({:code "(defmacro instance? [t o]\n  ;; Google Closure warns about some references to RegExp, so\n  ;; (instance? RegExp ...) needs to be inlined, but the expansion\n  ;; should preserve the order of argument evaluation.\n  (bool-expr (if (clojure.core/symbol? t)\n               (core/list 'js* \"(~{} instanceof ~{})\" o t)\n               `(let [t# ~t o# ~o]\n                  (~'js* \"(~{} instanceof ~{})\" o# t#)))))",
                   :repo "clojurescript",
-                  :tag "r2985",
+                  :tag "r3030",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [322 329]}),
+                  :lines [329 336]}),
  :full-name "cljs.core/instance?",
- :clj-symbol "clojure.core/instance?"}
+ :clj-symbol "clojure.core/instance?",
+ :docstring "Evaluates x and tests if it is an instance of the type\nc. Returns true or false"}
 
 ```
 

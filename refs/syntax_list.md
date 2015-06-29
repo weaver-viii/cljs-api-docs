@@ -78,13 +78,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.10
+tools.reader @ tools.reader-0.8.16
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:591-610](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.10/src/main/clojure/clojure/tools/reader.clj#L591-L610)</ins>
+                    └── <ins>[reader.clj:588-607](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.16/src/main/clojure/clojure/tools/reader.clj#L588-L607)</ins>
 </pre>
 
 
@@ -93,11 +93,9 @@ tools.reader @ tools.reader-0.8.10
 ```clj
 (defn- read-list
   [rdr _]
-  (let [[start-line start-column] (when (indexing-reader? rdr)
-                                    [(get-line-number rdr) (int (dec (get-column-number rdr)))])
+  (let [[start-line start-column] (starting-line-col-info rdr)
         the-list (read-delimited \) rdr true)
-        [end-line end-column] (when (indexing-reader? rdr)
-                                [(get-line-number rdr) (int (get-column-number rdr))])]
+        [end-line end-column] (ending-line-col-info rdr)]
     (with-meta (if (empty? the-list)
                  '()
                  (clojure.lang.PersistentList/create the-list))
@@ -112,13 +110,13 @@ tools.reader @ tools.reader-0.8.10
 ```
 
  <pre>
-tools.reader @ tools.reader-0.8.10
+tools.reader @ tools.reader-0.8.16
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:169-186](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.10/src/main/clojure/clojure/tools/reader.clj#L169-L186)</ins>
+                    └── <ins>[reader.clj:174-189](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.16/src/main/clojure/clojure/tools/reader.clj#L174-L189)</ins>
 </pre>
 
 ---
@@ -143,14 +141,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_list",
  :source {:code "(defn- macros [ch]\n  (case ch\n    \\\" read-string*\n    \\: read-keyword\n    \\; read-comment\n    \\' (wrapping-reader 'quote)\n    \\@ (wrapping-reader 'clojure.core/deref)\n    \\^ read-meta\n    \\` read-syntax-quote ;;(wrapping-reader 'syntax-quote)\n    \\~ read-unquote\n    \\( read-list\n    \\) read-unmatched-delimiter\n    \\[ read-vector\n    \\] read-unmatched-delimiter\n    \\{ read-map\n    \\} read-unmatched-delimiter\n    \\\\ read-char*\n    \\% read-arg\n    \\# read-dispatch\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.8.10",
+          :tag "tools.reader-0.8.16",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [591 610]},
- :extra-sources [{:code "(defn- read-list\n  [rdr _]\n  (let [[start-line start-column] (when (indexing-reader? rdr)\n                                    [(get-line-number rdr) (int (dec (get-column-number rdr)))])\n        the-list (read-delimited \\) rdr true)\n        [end-line end-column] (when (indexing-reader? rdr)\n                                [(get-line-number rdr) (int (get-column-number rdr))])]\n    (with-meta (if (empty? the-list)\n                 '()\n                 (clojure.lang.PersistentList/create the-list))\n      (when start-line\n        (merge\n         (when-let [file (get-file-name rdr)]\n           {:file file})\n         {:line start-line\n          :column start-column\n          :end-line end-line\n          :end-column end-column})))))",
+          :lines [588 607]},
+ :extra-sources [{:code "(defn- read-list\n  [rdr _]\n  (let [[start-line start-column] (starting-line-col-info rdr)\n        the-list (read-delimited \\) rdr true)\n        [end-line end-column] (ending-line-col-info rdr)]\n    (with-meta (if (empty? the-list)\n                 '()\n                 (clojure.lang.PersistentList/create the-list))\n      (when start-line\n        (merge\n         (when-let [file (get-file-name rdr)]\n           {:file file})\n         {:line start-line\n          :column start-column\n          :end-line end-line\n          :end-column end-column})))))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.8.10",
+                  :tag "tools.reader-0.8.16",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [169 186]}],
+                  :lines [174 189]}],
  :syntax-form "()",
  :examples [{:id "cd26b0",
              :content "The following is a list that is evaluated to create var `a`:\n\n```clj\n(def a 1)\n```\n\nAn empty list is unevaluated and left as an empty list:\n\n```clj\n()\n;;=> ()\n```\n\nTo signify an unevaluated list, precede it with a quote:\n\n```clj\n'(1 2 3)\n;;=> (1 2 3)\n```"}],

@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7133-7140](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L7133-L7140)</ins>
+            └── <ins>[core.cljs:7223-7230](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L7223-L7230)</ins>
 </pre>
 
 
@@ -73,11 +73,11 @@ clojurescript @ r2985
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1440-1448](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/core.clj#L1440-L1448)</ins>
+            └── <ins>[core.clj:1671-1679](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/core.clj#L1671-L1679)</ins>
 </pre>
 
 ---
@@ -103,14 +103,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash-map",
  :source {:code "(defn hash-map\n  [& keyvals]\n  (loop [in (seq keyvals), out (transient (.-EMPTY PersistentHashMap))]\n    (if in\n      (recur (nnext in) (assoc! out (first in) (second in)))\n      (persistent! out))))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7133 7140]},
+          :lines [7223 7230]},
  :extra-sources ({:code "(defmacro hash-map\n  ([] `(.-EMPTY cljs.core/PersistentHashMap))\n  ([& kvs]\n    (let [pairs (partition 2 kvs)\n          ks    (map first pairs)\n          vs    (map second pairs)]\n      (vary-meta\n        `(.fromArrays cljs.core/PersistentHashMap (array ~@ks) (array ~@vs))\n        assoc :tag 'cljs.core/PersistentHashMap))))",
                   :repo "clojurescript",
-                  :tag "r2985",
+                  :tag "r3030",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [1440 1448]}),
+                  :lines [1671 1679]}),
  :full-name "cljs.core/hash-map",
  :clj-symbol "clojure.core/hash-map",
  :docstring "keyval => key val\nReturns a new hash map with supplied mappings."}

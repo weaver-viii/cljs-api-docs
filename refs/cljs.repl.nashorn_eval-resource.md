@@ -34,12 +34,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[nashorn.clj:78-83](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/repl/nashorn.clj#L78-L83)</ins>
+                └── <ins>[nashorn.clj:86-91](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/repl/nashorn.clj#L86-L91)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.nashorn_eval-resource",
  :source {:code "(defn eval-resource \n  [engine path debug]\n  (let [r (io/resource path)]\n    (eval-str engine (slurp r))\n    (when debug (println \"loaded: \" path))))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/clj/cljs/repl/nashorn.clj",
-          :lines [78 83]},
+          :lines [86 91]},
  :full-name "cljs.repl.nashorn/eval-resource",
  :docstring "Evaluate a file on the classpath in the engine."}
 

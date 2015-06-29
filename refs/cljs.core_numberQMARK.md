@@ -28,20 +28,26 @@ See Also:
 
 ---
 
+Source docstring:
+
+```
+Returns true if x is a JavaScript number.
+```
 
 Source code:
 
 ```clj
-(defn ^boolean number? [n]
+(defn ^boolean number?
+  [n]
   (cljs.core/number? n))
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:101-102](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L101-L102)</ins>
+            └── <ins>[core.cljs:103-106](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L103-L106)</ins>
 </pre>
 
 
@@ -53,11 +59,11 @@ clojurescript @ r2985
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:331-332](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/core.clj#L331-L332)</ins>
+            └── <ins>[core.clj:338-339](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/core.clj#L338-L339)</ins>
 </pre>
 
 ---
@@ -82,18 +88,19 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/integer?"],
  :full-name-encode "cljs.core_numberQMARK",
- :source {:code "(defn ^boolean number? [n]\n  (cljs.core/number? n))",
+ :source {:code "(defn ^boolean number?\n  [n]\n  (cljs.core/number? n))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [101 102]},
+          :lines [103 106]},
  :extra-sources ({:code "(defmacro number? [x]\n  (bool-expr (core/list 'js* \"typeof ~{} === 'number'\" x)))",
                   :repo "clojurescript",
-                  :tag "r2985",
+                  :tag "r3030",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [331 332]}),
+                  :lines [338 339]}),
  :full-name "cljs.core/number?",
- :clj-symbol "clojure.core/number?"}
+ :clj-symbol "clojure.core/number?",
+ :docstring "Returns true if x is a JavaScript number."}
 
 ```
 

@@ -17,20 +17,26 @@
 
 
 
+Source docstring:
+
+```
+EXPERIMENTAL: Return a ES2015 compatible iterator for coll.
+```
 
 Source code:
 
 ```clj
-(defn es6-iterator [coll]
+(defn es6-iterator
+  [coll]
   (ES6Iterator. (seq coll)))
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:794-795](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L794-L795)</ins>
+            └── <ins>[core.cljs:822-825](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L822-L825)</ins>
 </pre>
 
 
@@ -49,16 +55,17 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "es6-iterator",
- :type "function",
  :signature ["[coll]"],
- :source {:code "(defn es6-iterator [coll]\n  (ES6Iterator. (seq coll)))",
-          :repo "clojurescript",
-          :tag "r2985",
-          :filename "src/cljs/cljs/core.cljs",
-          :lines [794 795]},
- :full-name "cljs.core/es6-iterator",
+ :history [["+" "0.0-2371"]],
+ :type "function",
  :full-name-encode "cljs.core_es6-iterator",
- :history [["+" "0.0-2371"]]}
+ :source {:code "(defn es6-iterator\n  [coll]\n  (ES6Iterator. (seq coll)))",
+          :repo "clojurescript",
+          :tag "r3030",
+          :filename "src/cljs/cljs/core.cljs",
+          :lines [822 825]},
+ :full-name "cljs.core/es6-iterator",
+ :docstring "EXPERIMENTAL: Return a ES2015 compatible iterator for coll."}
 
 ```
 

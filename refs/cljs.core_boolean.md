@@ -43,20 +43,26 @@ See Also:
 
 ---
 
+Source docstring:
+
+```
+Coerce to boolean
+```
 
 Source code:
 
 ```clj
-(defn ^boolean boolean [x]
+(defn ^boolean boolean
+  [x]
   (if x true false))
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1612-1613](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L1612-L1613)</ins>
+            └── <ins>[core.cljs:1661-1664](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L1661-L1664)</ins>
 </pre>
 
 
@@ -82,15 +88,16 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["special/if"],
  :full-name-encode "cljs.core_boolean",
- :source {:code "(defn ^boolean boolean [x]\n  (if x true false))",
+ :source {:code "(defn ^boolean boolean\n  [x]\n  (if x true false))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1612 1613]},
+          :lines [1661 1664]},
  :examples [{:id "9edf3a",
              :content "```clj\n(boolean 1)\n;;=> true\n\n(boolean 0)\n;;=> true\n\n(boolean nil)\n;;=> false\n```"}],
  :full-name "cljs.core/boolean",
- :clj-symbol "clojure.core/boolean"}
+ :clj-symbol "clojure.core/boolean",
+ :docstring "Coerce to boolean"}
 
 ```
 

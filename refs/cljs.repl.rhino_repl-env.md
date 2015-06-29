@@ -9,7 +9,7 @@
 </table>
 
  <samp>
-(__repl-env__)<br>
+(__repl-env__ & {:as opts})<br>
 </samp>
 
 ---
@@ -28,23 +28,17 @@ Source code:
 
 ```clj
 (defn repl-env
-  []
-  (let [cx (Context/enter)]
-    ;; just avoid the 64K method limit
-    ;; Rhino is slow even with optimizations enabled
-    (.setOptimizationLevel cx -1)
-    (merge (RhinoEnv.)
-      {:cx cx
-       :scope (.initStandardObjects cx)})))
+  [& {:as opts}]
+  (repl-env* opts))
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[rhino.clj:201-211](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/repl/rhino.clj#L201-L211)</ins>
+                └── <ins>[rhino.clj:222-226](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/repl/rhino.clj#L222-L226)</ins>
 </pre>
 
 
@@ -63,15 +57,15 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.repl.rhino",
  :name "repl-env",
- :signature ["[]"],
+ :signature ["[& {:as opts}]"],
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.repl.rhino_repl-env",
- :source {:code "(defn repl-env\n  []\n  (let [cx (Context/enter)]\n    ;; just avoid the 64K method limit\n    ;; Rhino is slow even with optimizations enabled\n    (.setOptimizationLevel cx -1)\n    (merge (RhinoEnv.)\n      {:cx cx\n       :scope (.initStandardObjects cx)})))",
+ :source {:code "(defn repl-env\n  [& {:as opts}]\n  (repl-env* opts))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/clj/cljs/repl/rhino.clj",
-          :lines [201 211]},
+          :lines [222 226]},
  :full-name "cljs.repl.rhino/repl-env",
  :docstring "Returns a fresh JS environment, suitable for passing to repl.\nHang on to return for use across repl calls."}
 

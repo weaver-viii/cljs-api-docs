@@ -5864,7 +5864,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl/IParseError</td>
-<td></td>
+<td>[ref](refs/cljs.repl_IParseError.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl_IParseError.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6416,7 +6416,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.browser/repl-env\*</td>
-<td></td>
+<td>[ref](refs/cljs.repl.browser_repl-envSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.browser_repl-envSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6592,7 +6592,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.nashorn/repl-env\*</td>
-<td></td>
+<td>[ref](refs/cljs.repl.nashorn_repl-envSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.nashorn_repl-envSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -6800,7 +6800,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.repl.rhino/repl-env\*</td>
-<td></td>
+<td>[ref](refs/cljs.repl.rhino_repl-envSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.repl.rhino_repl-envSTAR.cljsdoc)</td>
 <td></td>
 <td></td>

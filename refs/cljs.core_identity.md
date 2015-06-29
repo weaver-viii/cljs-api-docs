@@ -28,19 +28,25 @@ See Also:
 
 ---
 
+Source docstring:
+
+```
+Returns its argument.
+```
 
 Source code:
 
 ```clj
-(defn identity [x] x)
+(defn identity
+  [x] x)
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1818](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L1818)</ins>
+            └── <ins>[core.cljs:1871-1873](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L1871-L1873)</ins>
 </pre>
 
 
@@ -65,13 +71,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/nil?"],
  :full-name-encode "cljs.core_identity",
- :source {:code "(defn identity [x] x)",
+ :source {:code "(defn identity\n  [x] x)",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1818]},
+          :lines [1871 1873]},
  :full-name "cljs.core/identity",
- :clj-symbol "clojure.core/identity"}
+ :clj-symbol "clojure.core/identity",
+ :docstring "Returns its argument."}
 
 ```
 

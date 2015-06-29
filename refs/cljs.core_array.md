@@ -78,11 +78,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:186-196](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L186-L196)</ins>
+            └── <ins>[core.cljs:198-208](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L198-L208)</ins>
 </pre>
 
 
@@ -100,11 +100,11 @@ clojurescript @ r2985
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1397-1404](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/core.clj#L1397-L1404)</ins>
+            └── <ins>[core.clj:1628-1635](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/core.clj#L1628-L1635)</ins>
 </pre>
 
 ---
@@ -133,14 +133,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_array",
  :source {:code "(defn ^array array\n  [var-args]            ;; [& items]\n  (let [a (js/Array. (alength (cljs.core/js-arguments)))]\n    (loop [i 0]\n      (if (< i (alength a))\n        (do\n          (aset a i (aget (cljs.core/js-arguments) i))\n          (recur (inc i)))\n        a))))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [186 196]},
+          :lines [198 208]},
  :extra-sources ({:code "(defmacro array [& rest]\n  (let [xs-str (->> (repeat \"~{}\")\n                    (take (count rest))\n                    (interpose \",\")\n                    (apply core/str))]\n    (vary-meta\n      (list* 'js* (core/str \"[\" xs-str \"]\") rest)\n      assoc :tag 'array)))",
                   :repo "clojurescript",
-                  :tag "r2985",
+                  :tag "r3030",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [1397 1404]}),
+                  :lines [1628 1635]}),
  :examples [{:id "3a546d",
              :content "```clj\n(array 1 2 3)\n;;=> #js [1 2 3]\n\n(apply array [1 2 3])\n;;=> #js [1 2 3]\n\n#js [1 2 3]\n;;=> #js [1 2 3]\n```"}
             {:id "cca945",

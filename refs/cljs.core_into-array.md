@@ -29,6 +29,12 @@ See Also:
 
 ---
 
+Source docstring:
+
+```
+Returns an array with components set to the values in aseq. Optional type
+argument accepted for compatibility with Clojure.
+```
 
 Source code:
 
@@ -41,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:221-225](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L221-L225)</ins>
+            └── <ins>[core.cljs:233-239](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L233-L239)</ins>
 </pre>
 
 
@@ -73,11 +79,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_into-array",
  :source {:code "(defn ^array into-array\n  ([aseq]\n     (into-array nil aseq))\n  ([type aseq]\n     (reduce (fn [a x] (.push a x) a) (array) aseq)))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [221 225]},
+          :lines [233 239]},
  :full-name "cljs.core/into-array",
- :clj-symbol "clojure.core/into-array"}
+ :clj-symbol "clojure.core/into-array",
+ :docstring "Returns an array with components set to the values in aseq. Optional type\nargument accepted for compatibility with Clojure."}
 
 ```
 

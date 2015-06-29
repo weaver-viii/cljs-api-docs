@@ -30,11 +30,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:70-72](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/core.clj#L70-L72)</ins>
+            └── <ins>[core.clj:70-72](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/core.clj#L70-L72)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_defonce",
  :source {:code "(defmacro defonce [x init]\n  `(when-not (exists? ~x)\n     (def ~x ~init)))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/clj/cljs/core.clj",
           :lines [70 72]},
  :full-name "cljs.core/defonce",

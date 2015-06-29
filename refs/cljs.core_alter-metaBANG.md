@@ -77,11 +77,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8468-8475](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L8468-L8475)</ins>
+            └── <ins>[core.cljs:8564-8571](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L8564-L8571)</ins>
 </pre>
 
 
@@ -108,9 +108,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_alter-metaBANG",
  :source {:code "(defn alter-meta!\n  [iref f & args]\n  (set! (.-meta iref) (apply f (.-meta iref) args)))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [8468 8475]},
+          :lines [8564 8571]},
  :examples [{:id "8378a0",
              :content "Metadata of symbols and collections can be altered:\n\n```clj\n(def a ^:foo [1 2 3])\n(meta a)\n;;=> {:foo true}\n\n(alter-meta! a assoc :bar true)\n(meta a)\n;;=> {:foo true, :bar true}\n```\n\nMetadata of vars cannot be altered:\n\n```clj\n(def a [1 2 3])\n(meta #'a)\n;;=> {:arglists (), :test nil, :name a, :column 1, :line 1, :file \"<cljs repl>\", :doc nil, :ns cljs.user}\n\n(alter-meta! #'a assoc :bar true)\n(:bar (meta #'a))\n;;=> nil\n```"}],
  :full-name "cljs.core/alter-meta!",

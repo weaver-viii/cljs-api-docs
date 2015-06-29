@@ -32,20 +32,27 @@ See Also:
 
 ---
 
+Source docstring:
+
+```
+Returns, in constant time, a seq of the items in rev (which
+can be a vector or sorted-map), in reverse order. If rev is empty returns nil
+```
 
 Source code:
 
 ```clj
-(defn ^seq rseq [coll]
+(defn ^seq rseq
+  [coll]
   (-rseq coll))
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2398-2399](https://github.com/clojure/clojurescript/blob/r2985/src/cljs/cljs/core.cljs#L2398-L2399)</ins>
+            └── <ins>[core.cljs:2464-2468](https://github.com/clojure/clojurescript/blob/r3030/src/cljs/cljs/core.cljs#L2464-L2468)</ins>
 </pre>
 
 
@@ -71,13 +78,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/reverse"],
  :full-name-encode "cljs.core_rseq",
- :source {:code "(defn ^seq rseq [coll]\n  (-rseq coll))",
+ :source {:code "(defn ^seq rseq\n  [coll]\n  (-rseq coll))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2398 2399]},
+          :lines [2464 2468]},
  :full-name "cljs.core/rseq",
- :clj-symbol "clojure.core/rseq"}
+ :clj-symbol "clojure.core/rseq",
+ :docstring "Returns, in constant time, a seq of the items in rev (which\ncan be a vector or sorted-map), in reverse order. If rev is empty returns nil"}
 
 ```
 

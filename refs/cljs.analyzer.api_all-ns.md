@@ -36,12 +36,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2985
+clojurescript @ r3030
 └── src
     └── clj
         └── cljs
             └── analyzer
-                └── <ins>[api.clj:25-29](https://github.com/clojure/clojurescript/blob/r2985/src/clj/cljs/analyzer/api.clj#L25-L29)</ins>
+                └── <ins>[api.clj:26-30](https://github.com/clojure/clojurescript/blob/r3030/src/clj/cljs/analyzer/api.clj#L26-L30)</ins>
 </pre>
 
 
@@ -66,9 +66,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.analyzer.api_all-ns",
  :source {:code "(defn all-ns\n  []\n  (keys (get @env/*compiler* ::ana/namespaces)))",
           :repo "clojurescript",
-          :tag "r2985",
+          :tag "r3030",
           :filename "src/clj/cljs/analyzer/api.clj",
-          :lines [25 29]},
+          :lines [26 30]},
  :full-name "cljs.analyzer.api/all-ns",
  :clj-symbol "clojure.core/all-ns",
  :docstring "Return all namespaces. Analagous to clojure.core/all-ns but\nreturns symbols identifying namespaces not Namespace instances."}
