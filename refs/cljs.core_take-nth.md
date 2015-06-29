@@ -57,11 +57,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2311
+clojurescript @ r2322
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7505-7522](https://github.com/clojure/clojurescript/blob/r2311/src/cljs/cljs/core.cljs#L7505-L7522)</ins>
+            └── <ins>[core.cljs:7508-7525](https://github.com/clojure/clojurescript/blob/r2322/src/cljs/cljs/core.cljs#L7508-L7525)</ins>
 </pre>
 
 
@@ -87,9 +87,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_take-nth",
  :source {:code "(defn take-nth\n  ([n]\n     (fn [f1]\n       (let [ia (atom -1)]\n         (fn\n           ([] (f1))\n           ([result] (f1 result))\n           ([result input]\n              (let [i (swap! ia inc)]\n                (if (zero? (rem i n))\n                  (f1 result input)\n                  result)))))))\n  ([n coll]\n     (lazy-seq\n       (when-let [s (seq coll)]\n         (cons (first s) (take-nth n (drop n s)))))))",
           :repo "clojurescript",
-          :tag "r2311",
+          :tag "r2322",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7505 7522]},
+          :lines [7508 7525]},
  :full-name "cljs.core/take-nth",
  :clj-symbol "clojure.core/take-nth",
  :docstring "Returns a lazy seq of every nth item in coll.  Returns a stateful\ntransducer when no collection is provided."}

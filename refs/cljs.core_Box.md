@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2311
+clojurescript @ r2322
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5242](https://github.com/clojure/clojurescript/blob/r2311/src/cljs/cljs/core.cljs#L5242)</ins>
+            └── <ins>[core.cljs:5245](https://github.com/clojure/clojurescript/blob/r2322/src/cljs/cljs/core.cljs#L5245)</ins>
 </pre>
 
 
@@ -57,9 +57,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_Box",
  :source {:code "(deftype Box [^:mutable val])",
           :repo "clojurescript",
-          :tag "r2311",
+          :tag "r2322",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [5242]},
+          :lines [5245]},
  :full-name "cljs.core/Box",
  :clj-symbol "clojure.lang/Box"}
 

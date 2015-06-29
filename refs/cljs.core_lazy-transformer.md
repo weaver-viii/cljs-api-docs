@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2311
+clojurescript @ r2322
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2940-2941](https://github.com/clojure/clojurescript/blob/r2311/src/cljs/cljs/core.cljs#L2940-L2941)</ins>
+            └── <ins>[core.cljs:2943-2944](https://github.com/clojure/clojurescript/blob/r2322/src/cljs/cljs/core.cljs#L2943-L2944)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[stepper]"],
  :source {:code "(defn lazy-transformer [stepper]\n  (LazyTransformer. stepper nil nil nil))",
           :repo "clojurescript",
-          :tag "r2311",
+          :tag "r2322",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2940 2941]},
+          :lines [2943 2944]},
  :full-name "cljs.core/lazy-transformer",
  :full-name-encode "cljs.core_lazy-transformer",
  :history [["+" "0.0-2301"]]}

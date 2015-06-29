@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2311
+clojurescript @ r2322
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7233-7235](https://github.com/clojure/clojurescript/blob/r2311/src/cljs/cljs/core.cljs#L7233-L7235)</ins>
+            └── <ins>[core.cljs:7236-7238](https://github.com/clojure/clojurescript/blob/r2322/src/cljs/cljs/core.cljs#L7236-L7238)</ins>
 </pre>
 
 
@@ -71,11 +71,11 @@ clojurescript @ r2311
 ```
 
  <pre>
-clojurescript @ r2311
+clojurescript @ r2322
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1429-1441](https://github.com/clojure/clojurescript/blob/r2311/src/clj/cljs/core.clj#L1429-L1441)</ins>
+            └── <ins>[core.clj:1429-1441](https://github.com/clojure/clojurescript/blob/r2322/src/clj/cljs/core.clj#L1429-L1441)</ins>
 </pre>
 
 ---
@@ -101,12 +101,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash-set",
  :source {:code "(defn hash-set\n  ([] #{})\n  ([& keys] (set keys)))",
           :repo "clojurescript",
-          :tag "r2311",
+          :tag "r2322",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7233 7235]},
+          :lines [7236 7238]},
  :extra-sources ({:code "(defmacro hash-set\n  ([] `(.-EMPTY cljs.core/PersistentHashSet))\n  ([& xs]\n    (if (core/and (core/<= (count xs) 8)\n                  (every? #(= (:op %) :constant)\n                    (map #(cljs.analyzer/analyze &env %) xs))\n                  (= (count (into #{} xs)) (count xs)))\n      `(cljs.core/PersistentHashSet. nil\n         (cljs.core/PersistentArrayMap. nil ~(count xs) (array ~@(interleave xs (repeat nil))) nil)\n         nil)\n      (vary-meta\n        `(.fromArray cljs.core/PersistentHashSet (array ~@xs) true)\n        assoc :tag 'cljs.core/PersistentHashSet))))",
                   :repo "clojurescript",
-                  :tag "r2311",
+                  :tag "r2322",
                   :filename "src/clj/cljs/core.clj",
                   :lines [1429 1441]}),
  :full-name "cljs.core/hash-set",

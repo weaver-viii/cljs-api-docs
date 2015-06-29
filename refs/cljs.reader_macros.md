@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2311
+clojurescript @ r2322
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:390-408](https://github.com/clojure/clojurescript/blob/r2311/src/cljs/cljs/reader.cljs#L390-L408)</ins>
+            └── <ins>[reader.cljs:390-408](https://github.com/clojure/clojurescript/blob/r2322/src/cljs/cljs/reader.cljs#L390-L408)</ins>
 </pre>
 
 
@@ -70,7 +70,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[c]"],
  :source {:code "(defn macros [c]\n  (cond\n   (identical? c \\\") read-string*\n   (identical? c \\:) read-keyword\n   (identical? c \\;) read-comment\n   (identical? c \\') (wrapping-reader 'quote)\n   (identical? c \\@) (wrapping-reader 'deref)\n   (identical? c \\^) read-meta\n   (identical? c \\`) not-implemented\n   (identical? c \\~) not-implemented\n   (identical? c \\() read-list\n   (identical? c \\)) read-unmatched-delimiter\n   (identical? c \\[) read-vector\n   (identical? c \\]) read-unmatched-delimiter\n   (identical? c \\{) read-map\n   (identical? c \\}) read-unmatched-delimiter\n   (identical? c \\\\) read-char\n   (identical? c \\#) read-dispatch\n   :else nil))",
           :repo "clojurescript",
-          :tag "r2311",
+          :tag "r2322",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [390 408]},
  :full-name "cljs.reader/macros",

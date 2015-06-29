@@ -17,7 +17,7 @@ Source code:
 
 ```clj
 (defmethod parse 'deftype*
-  [_ env [_ tsym fields pmasks :as form] _]
+  [_ env [_ tsym fields pmasks :as form] _ _]
   (let [t (:name (resolve-var (dissoc env :locals) tsym))]
     (swap! env/*compiler* update-in [::namespaces (-> env :ns :name) :defs tsym]
            (fn [m]
@@ -26,17 +26,18 @@ Source code:
                        :type true
                        :num-fields (count fields))]
                (merge m
+                 (dissoc (meta tsym) :protocols)
                  {:protocols (-> tsym meta :protocols)}
                  (source-info tsym env)))))
     {:env env :op :deftype* :form form :t t :fields fields :pmasks pmasks}))
 ```
 
  <pre>
-clojurescript @ r2311
+clojurescript @ r2322
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:1178-1190](https://github.com/clojure/clojurescript/blob/r2311/src/clj/cljs/analyzer.clj#L1178-L1190)</ins>
+            └── <ins>[analyzer.clj:1178-1191](https://github.com/clojure/clojurescript/blob/r2322/src/clj/cljs/analyzer.clj#L1178-L1191)</ins>
 </pre>
 
 
@@ -56,11 +57,11 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "special",
  :name "deftype*",
  :type "special form",
- :source {:code "(defmethod parse 'deftype*\n  [_ env [_ tsym fields pmasks :as form] _]\n  (let [t (:name (resolve-var (dissoc env :locals) tsym))]\n    (swap! env/*compiler* update-in [::namespaces (-> env :ns :name) :defs tsym]\n           (fn [m]\n             (let [m (assoc (or m {})\n                       :name t\n                       :type true\n                       :num-fields (count fields))]\n               (merge m\n                 {:protocols (-> tsym meta :protocols)}\n                 (source-info tsym env)))))\n    {:env env :op :deftype* :form form :t t :fields fields :pmasks pmasks}))",
+ :source {:code "(defmethod parse 'deftype*\n  [_ env [_ tsym fields pmasks :as form] _ _]\n  (let [t (:name (resolve-var (dissoc env :locals) tsym))]\n    (swap! env/*compiler* update-in [::namespaces (-> env :ns :name) :defs tsym]\n           (fn [m]\n             (let [m (assoc (or m {})\n                       :name t\n                       :type true\n                       :num-fields (count fields))]\n               (merge m\n                 (dissoc (meta tsym) :protocols)\n                 {:protocols (-> tsym meta :protocols)}\n                 (source-info tsym env)))))\n    {:env env :op :deftype* :form form :t t :fields fields :pmasks pmasks}))",
           :repo "clojurescript",
-          :tag "r2311",
+          :tag "r2322",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [1178 1190]},
+          :lines [1178 1191]},
  :full-name "special/deftype*",
  :full-name-encode "special_deftypeSTAR",
  :history [["+" "0.0-927"]]}

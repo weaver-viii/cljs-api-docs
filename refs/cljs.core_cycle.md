@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2311
+clojurescript @ r2322
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3635-3639](https://github.com/clojure/clojurescript/blob/r2311/src/cljs/cljs/core.cljs#L3635-L3639)</ins>
+            └── <ins>[core.cljs:3638-3642](https://github.com/clojure/clojurescript/blob/r2322/src/cljs/cljs/core.cljs#L3638-L3642)</ins>
 </pre>
 
 
@@ -76,9 +76,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_cycle",
  :source {:code "(defn cycle\n  [coll] (lazy-seq\n          (when-let [s (seq coll)]\n            (concat s (cycle s)))))",
           :repo "clojurescript",
-          :tag "r2311",
+          :tag "r2322",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3635 3639]},
+          :lines [3638 3642]},
  :full-name "cljs.core/cycle",
  :clj-symbol "clojure.core/cycle",
  :docstring "Returns a lazy (infinite!) sequence of repetitions of the items in coll."}

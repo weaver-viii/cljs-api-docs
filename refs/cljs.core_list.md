@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2311
+clojurescript @ r2322
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2236-2249](https://github.com/clojure/clojurescript/blob/r2311/src/cljs/cljs/core.cljs#L2236-L2249)</ins>
+            └── <ins>[core.cljs:2239-2252](https://github.com/clojure/clojurescript/blob/r2322/src/cljs/cljs/core.cljs#L2239-L2252)</ins>
 </pre>
 
 
@@ -68,11 +68,11 @@ clojurescript @ r2311
 ```
 
  <pre>
-clojurescript @ r2311
+clojurescript @ r2322
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1387-1390](https://github.com/clojure/clojurescript/blob/r2311/src/clj/cljs/core.clj#L1387-L1390)</ins>
+            └── <ins>[core.clj:1387-1390](https://github.com/clojure/clojurescript/blob/r2322/src/clj/cljs/core.clj#L1387-L1390)</ins>
 </pre>
 
 ---
@@ -98,12 +98,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_list",
  :source {:code "(defn list [& xs]\n  (let [arr (if (and (instance? IndexedSeq xs) (zero? (.-i xs)))\n              (.-arr xs)\n              (let [arr (array)]\n                (loop [^not-native xs xs]\n                  (if-not (nil? xs)\n                    (do\n                      (.push arr (-first xs))\n                      (recur (-next xs)))\n                    arr))))]\n    (loop [i (alength arr) ^not-native r ()]\n      (if (> i 0)\n        (recur (dec i) (-conj r (aget arr (dec i))))\n        r))))",
           :repo "clojurescript",
-          :tag "r2311",
+          :tag "r2322",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2236 2249]},
+          :lines [2239 2252]},
  :extra-sources ({:code "(defmacro list\n  ([] '(.-EMPTY cljs.core/List))\n  ([x & xs]\n    `(-conj (list ~@xs) ~x)))",
                   :repo "clojurescript",
-                  :tag "r2311",
+                  :tag "r2322",
                   :filename "src/clj/cljs/core.clj",
                   :lines [1387 1390]}),
  :full-name "cljs.core/list",

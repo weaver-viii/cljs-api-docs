@@ -20,16 +20,16 @@ Source code:
 
 ```clj
 (defmethod parse 'quote
-  [_ env [_ x] _]
+  [_ env [_ x] _ _]
   (analyze (assoc env :quoted? true) x))
 ```
 
  <pre>
-clojurescript @ r2311
+clojurescript @ r2322
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:901-903](https://github.com/clojure/clojurescript/blob/r2311/src/clj/cljs/analyzer.clj#L901-L903)</ins>
+            └── <ins>[analyzer.clj:901-903](https://github.com/clojure/clojurescript/blob/r2322/src/clj/cljs/analyzer.clj#L901-L903)</ins>
 </pre>
 
 
@@ -49,9 +49,9 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "special",
  :name "quote",
  :type "special form",
- :source {:code "(defmethod parse 'quote\n  [_ env [_ x] _]\n  (analyze (assoc env :quoted? true) x))",
+ :source {:code "(defmethod parse 'quote\n  [_ env [_ x] _ _]\n  (analyze (assoc env :quoted? true) x))",
           :repo "clojurescript",
-          :tag "r2311",
+          :tag "r2322",
           :filename "src/clj/cljs/analyzer.clj",
           :lines [901 903]},
  :full-name "special/quote",
