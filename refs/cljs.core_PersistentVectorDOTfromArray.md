@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2027
+clojurescript @ r2030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3326-3337](https://github.com/clojure/clojurescript/blob/r2027/src/cljs/cljs/core.cljs#L3326-L3337)</ins>
+            └── <ins>[core.cljs:3338-3349](https://github.com/clojure/clojurescript/blob/r2030/src/cljs/cljs/core.cljs#L3338-L3349)</ins>
 </pre>
 
 
@@ -66,9 +66,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_PersistentVectorDOTfromArray",
  :source {:code "(set! cljs.core.PersistentVector.fromArray\n  (fn [xs ^boolean no-clone]\n    (let [l (alength xs)\n          xs (if no-clone xs (aclone xs))]\n      (if (< l 32)\n        (PersistentVector. nil l 5 cljs.core.PersistentVector.EMPTY_NODE xs nil)\n        (let [node (.slice xs 0 32)\n              v (PersistentVector. nil 32 5 cljs.core.PersistentVector.EMPTY_NODE node nil)]\n          (loop [i 32 out (-as-transient v)]\n            (if (< i l)\n              (recur (inc i) (conj! out (aget xs i)))\n              (persistent! out))))))))",
           :repo "clojurescript",
-          :tag "r2027",
+          :tag "r2030",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3326 3337]},
+          :lines [3338 3349]},
  :full-name "cljs.core/PersistentVector.fromArray"}
 
 ```

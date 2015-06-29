@@ -30,17 +30,17 @@ Source code:
   [reader _]
   (loop []
     (let [ch (read-char reader)]
-      (if (or (identical? ch \n) (identical? ch \r) (nil? ch))
+      (if (or (identical? ch \newline) (identical? ch \return) (nil? ch))
         reader
         (recur)))))
 ```
 
  <pre>
-clojurescript @ r2027
+clojurescript @ r2030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:88-95](https://github.com/clojure/clojurescript/blob/r2027/src/cljs/cljs/reader.cljs#L88-L95)</ins>
+            └── <ins>[reader.cljs:88-95](https://github.com/clojure/clojurescript/blob/r2030/src/cljs/cljs/reader.cljs#L88-L95)</ins>
 </pre>
 
 
@@ -63,9 +63,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.reader_skip-line",
- :source {:code "(defn skip-line\n  [reader _]\n  (loop []\n    (let [ch (read-char reader)]\n      (if (or (identical? ch \\n) (identical? ch \\r) (nil? ch))\n        reader\n        (recur)))))",
+ :source {:code "(defn skip-line\n  [reader _]\n  (loop []\n    (let [ch (read-char reader)]\n      (if (or (identical? ch \\newline) (identical? ch \\return) (nil? ch))\n        reader\n        (recur)))))",
           :repo "clojurescript",
-          :tag "r2027",
+          :tag "r2030",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [88 95]},
  :full-name "cljs.reader/skip-line",

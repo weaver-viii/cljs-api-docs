@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2027
+clojurescript @ r2030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2421-2422](https://github.com/clojure/clojurescript/blob/r2027/src/cljs/cljs/core.cljs#L2421-L2422)</ins>
+            └── <ins>[core.cljs:2433-2434](https://github.com/clojure/clojurescript/blob/r2030/src/cljs/cljs/core.cljs#L2433-L2434)</ins>
 </pre>
 
 
@@ -58,9 +58,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_transient",
  :source {:code "(defn transient [coll]\n  (-as-transient coll))",
           :repo "clojurescript",
-          :tag "r2027",
+          :tag "r2030",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2421 2422]},
+          :lines [2433 2434]},
  :full-name "cljs.core/transient",
  :clj-symbol "clojure.core/transient"}
 

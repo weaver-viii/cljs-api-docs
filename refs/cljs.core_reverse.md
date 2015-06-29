@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2027
+clojurescript @ r2030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1940-1945](https://github.com/clojure/clojurescript/blob/r2027/src/cljs/cljs/core.cljs#L1940-L1945)</ins>
+            └── <ins>[core.cljs:1940-1945](https://github.com/clojure/clojurescript/blob/r2030/src/cljs/cljs/core.cljs#L1940-L1945)</ins>
 </pre>
 
 
@@ -76,7 +76,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_reverse",
  :source {:code "(defn reverse\n  [coll]\n  (if (reversible? coll)\n    (rseq coll)\n    (reduce conj () coll)))",
           :repo "clojurescript",
-          :tag "r2027",
+          :tag "r2030",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1940 1945]},
  :full-name "cljs.core/reverse",

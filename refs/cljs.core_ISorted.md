@@ -27,11 +27,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2027
+clojurescript @ r2030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:292-296](https://github.com/clojure/clojurescript/blob/r2027/src/cljs/cljs/core.cljs#L292-L296)</ins>
+            └── <ins>[core.cljs:292-296](https://github.com/clojure/clojurescript/blob/r2030/src/cljs/cljs/core.cljs#L292-L296)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ISorted",
  :source {:code "(defprotocol ISorted\n  (-sorted-seq [coll ascending?])\n  (-sorted-seq-from [coll k ascending?])\n  (-entry-key [coll entry])\n  (-comparator [coll]))",
           :repo "clojurescript",
-          :tag "r2027",
+          :tag "r2030",
           :filename "src/cljs/cljs/core.cljs",
           :lines [292 296]},
  :methods [{:name "-sorted-seq",

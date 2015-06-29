@@ -61,11 +61,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2027
+clojurescript @ r2030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1627-1630](https://github.com/clojure/clojurescript/blob/r2027/src/cljs/cljs/core.cljs#L1627-L1630)</ins>
+            └── <ins>[core.cljs:1627-1630](https://github.com/clojure/clojurescript/blob/r2030/src/cljs/cljs/core.cljs#L1627-L1630)</ins>
 </pre>
 
 
@@ -92,7 +92,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_mod",
  :source {:code "(defn mod\n  [n d]\n  (js-mod (+ (js-mod n d) d) d))",
           :repo "clojurescript",
-          :tag "r2027",
+          :tag "r2030",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1627 1630]},
  :examples [{:id "8165e8",

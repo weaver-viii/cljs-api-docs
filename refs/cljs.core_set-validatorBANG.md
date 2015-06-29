@@ -58,11 +58,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2027
+clojurescript @ r2030
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6958-6966](https://github.com/clojure/clojurescript/blob/r2027/src/cljs/cljs/core.cljs#L6958-L6966)</ins>
+            └── <ins>[core.cljs:6963-6971](https://github.com/clojure/clojurescript/blob/r2030/src/cljs/cljs/core.cljs#L6963-L6971)</ins>
 </pre>
 
 
@@ -89,9 +89,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_set-validatorBANG",
  :source {:code "(defn set-validator!\n  [iref val]\n  (set! (.-validator iref) val))",
           :repo "clojurescript",
-          :tag "r2027",
+          :tag "r2030",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6958 6966]},
+          :lines [6963 6971]},
  :full-name "cljs.core/set-validator!",
  :clj-symbol "clojure.core/set-validator!",
  :docstring "Sets the validator-fn for an atom. validator-fn must be nil or a\nside-effect-free fn of one argument, which will be passed the intended\nnew state on any state change. If the new state is unacceptable, the\nvalidator-fn should return false or throw an Error. If the current state\nis not acceptable to the new validator, an Error will be thrown and the\nvalidator will not be changed."}
