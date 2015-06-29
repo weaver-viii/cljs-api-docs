@@ -37,13 +37,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── clojure
             └── cljs
                 └── repl
-                    └── <ins>[server.clj:167-175](https://github.com/clojure/clojurescript/blob/r3263/src/main/clojure/cljs/repl/server.clj#L167-L175)</ins>
+                    └── <ins>[server.clj:167-175](https://github.com/clojure/clojurescript/blob/r3264/src/main/clojure/cljs/repl/server.clj#L167-L175)</ins>
 </pre>
 
 
@@ -68,7 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.server_start",
  :source {:code "(defn start\n  [opts]\n  (let [ss (ServerSocket. (:port opts))]\n    (.start\n      (Thread.\n        ((ns-resolve 'clojure.core 'binding-conveyor-fn)\n          (fn [] (server-loop opts ss)))))\n    (swap! state (fn [old] (assoc old :socket ss :port (:port opts))))))",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/clojure/cljs/repl/server.clj",
           :lines [167 175]},
  :full-name "cljs.repl.server/start",

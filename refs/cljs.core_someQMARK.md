@@ -43,12 +43,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:169-171](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L169-L171)</ins>
+                └── <ins>[core.cljs:169-171](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/core.cljs#L169-L171)</ins>
 </pre>
 
 
@@ -76,7 +76,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_someQMARK",
  :source {:code "(defn ^boolean some?\n  [x] (not (nil? x)))",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [169 171]},
  :full-name "cljs.core/some?",

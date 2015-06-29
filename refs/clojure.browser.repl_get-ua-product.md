@@ -30,13 +30,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── cljs
             └── clojure
                 └── browser
-                    └── <ins>[repl.cljs:36-41](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/clojure/browser/repl.cljs#L36-L41)</ins>
+                    └── <ins>[repl.cljs:36-41](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/clojure/browser/repl.cljs#L36-L41)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[]"],
  :source {:code "(defn get-ua-product []\n  (cond\n    product/SAFARI :safari\n    product/CHROME :chrome\n    product/FIREFOX :firefox\n    product/IE :ie))",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/cljs/clojure/browser/repl.cljs",
           :lines [36 41]},
  :full-name "clojure.browser.repl/get-ua-product",

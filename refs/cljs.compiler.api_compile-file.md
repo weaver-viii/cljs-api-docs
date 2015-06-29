@@ -53,13 +53,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── clojure
             └── cljs
                 └── compiler
-                    └── <ins>[api.clj:42-60](https://github.com/clojure/clojurescript/blob/r3263/src/main/clojure/cljs/compiler/api.clj#L42-L60)</ins>
+                    └── <ins>[api.clj:42-60](https://github.com/clojure/clojurescript/blob/r3264/src/main/clojure/cljs/compiler/api.clj#L42-L60)</ins>
 </pre>
 
 
@@ -84,7 +84,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.compiler.api_compile-file",
  :source {:code "(defn compile-file\n  ([src]\n   (comp/compile-file src))\n  ([src dest]\n   (comp/compile-file src dest))\n  ([src dest opts]\n   (comp/compile-file src dest opts)))",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/clojure/cljs/compiler/api.clj",
           :lines [42 60]},
  :full-name "cljs.compiler.api/compile-file",

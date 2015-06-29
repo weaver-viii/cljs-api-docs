@@ -35,12 +35,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:20-27](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L20-L27)</ins>
+                └── <ins>[core.cljs:20-27](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/core.cljs#L20-L27)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "dynamic var",
  :source {:code "(def\n  ^{:dynamic true\n    :doc \"Var bound to the name value of the compiler build :target option.\n  For example, if the compiler build :target is :nodejs, *target* will be bound\n  to \\\"nodejs\\\". *target* is a Google Closure define and can be set by compiler\n  :closure-defines option.\"\n    :jsdoc [\"@define {string}\"]}\n  *target* \"default\")",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [20 27]},
  :full-name "cljs.core/*target*",

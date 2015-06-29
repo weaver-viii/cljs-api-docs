@@ -20,12 +20,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[repl.cljc:35](https://github.com/clojure/clojurescript/blob/r3263/src/main/clojure/cljs/repl.cljc#L35)</ins>
+                └── <ins>[repl.cljc:35](https://github.com/clojure/clojurescript/blob/r3264/src/main/clojure/cljs/repl.cljc#L35)</ins>
 </pre>
 
 
@@ -47,7 +47,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "dynamic var",
  :source {:code "(def ^:dynamic *repl-opts* nil)",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/clojure/cljs/repl.cljc",
           :lines [35]},
  :full-name "cljs.repl/*repl-opts*",

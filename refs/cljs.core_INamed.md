@@ -33,12 +33,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:607-612](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L607-L612)</ins>
+                └── <ins>[core.cljs:607-612](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/core.cljs#L607-L612)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_INamed",
  :source {:code "(defprotocol INamed\n  \"Protocol for adding a name.\"\n  (^string -name [x]\n    \"Returns the name String of x.\")\n  (^string -namespace [x]\n    \"Returns the namespace String of x.\"))",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [607 612]},
  :methods [{:name "-name",

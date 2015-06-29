@@ -42,12 +42,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:1046-1056](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L1046-L1056)</ins>
+                └── <ins>[core.cljs:1046-1056](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/core.cljs#L1046-L1056)</ins>
 </pre>
 
 
@@ -73,7 +73,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_mix-collection-hash",
  :source {:code "(defn ^number mix-collection-hash\n  [hash-basis count]\n  (let [h1 m3-seed\n        k1 (m3-mix-K1 hash-basis)\n        h1 (m3-mix-H1 h1 k1)]\n    (m3-fmix h1 count)))",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [1046 1056]},
  :full-name "cljs.core/mix-collection-hash",

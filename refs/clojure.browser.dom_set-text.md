@@ -34,13 +34,13 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── cljs
             └── clojure
                 └── browser
-                    └── <ins>[dom.cljs:124-129](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/clojure/browser/dom.cljs#L124-L129)</ins>
+                    └── <ins>[dom.cljs:124-129](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/clojure/browser/dom.cljs#L124-L129)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.dom_set-text",
  :source {:code "(defn set-text\n  [e s]\n  (gdom/setTextContent (ensure-element e) s))",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/cljs/clojure/browser/dom.cljs",
           :lines [124 129]},
  :full-name "clojure.browser.dom/set-text",

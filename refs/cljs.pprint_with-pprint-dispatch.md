@@ -36,12 +36,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[pprint.clj:147-151](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/pprint.clj#L147-L151)</ins>
+                └── <ins>[pprint.clj:147-151](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/pprint.clj#L147-L151)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.pprint_with-pprint-dispatch",
  :source {:code "(defmacro with-pprint-dispatch\n  [function & body]\n  `(cljs.core/binding [cljs.pprint/*print-pprint-dispatch* ~function]\n     ~@body))",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/cljs/cljs/pprint.clj",
           :lines [147 151]},
  :full-name "cljs.pprint/with-pprint-dispatch",

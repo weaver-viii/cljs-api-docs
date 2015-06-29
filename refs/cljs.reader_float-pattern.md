@@ -20,12 +20,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[reader.cljs:100](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/reader.cljs#L100)</ins>
+                └── <ins>[reader.cljs:100](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/reader.cljs#L100)</ins>
 </pre>
 
 
@@ -47,7 +47,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def float-pattern (re-pattern \"^([-+]?[0-9]+(\\\\.[0-9]*)?([eE][-+]?[0-9]+)?)(M)?$\"))",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/cljs/cljs/reader.cljs",
           :lines [100]},
  :full-name "cljs.reader/float-pattern",

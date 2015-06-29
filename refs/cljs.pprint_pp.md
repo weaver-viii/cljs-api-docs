@@ -35,12 +35,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[pprint.clj:153-157](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/pprint.clj#L153-L157)</ins>
+                └── <ins>[pprint.clj:153-157](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/pprint.clj#L153-L157)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.pprint_pp",
  :source {:code "(defmacro pp\n  [] `(cljs.pprint/pprint *1))",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/cljs/cljs/pprint.clj",
           :lines [153 157]},
  :full-name "cljs.pprint/pp",

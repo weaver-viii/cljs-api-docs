@@ -30,12 +30,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── clojure
             └── cljs
-                └── <ins>[repl.cljc:486-491](https://github.com/clojure/clojurescript/blob/r3263/src/main/clojure/cljs/repl.cljc#L486-L491)</ins>
+                └── <ins>[repl.cljc:486-491](https://github.com/clojure/clojurescript/blob/r3264/src/main/clojure/cljs/repl.cljc#L486-L491)</ins>
 </pre>
 
 
@@ -58,7 +58,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[repl-env filename res]"],
  :source {:code "(defn load-stream [repl-env filename res]\n  (let [env (ana/empty-env)]\n    (with-open [rdr (io/reader res)]\n      (doseq [form (ana/forms-seq* rdr filename)]\n        (let [env (assoc env :ns (ana/get-namespace ana/*cljs-ns*))]\n          (evaluate-form repl-env env filename form))))))",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/clojure/cljs/repl.cljc",
           :lines [486 491]},
  :full-name "cljs.repl/load-stream",

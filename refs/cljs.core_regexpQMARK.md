@@ -32,12 +32,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:8388-8391](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L8388-L8391)</ins>
+                └── <ins>[core.cljs:8388-8391](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/core.cljs#L8388-L8391)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_regexpQMARK",
  :source {:code "(defn regexp?\n  [x]\n  (instance? js/RegExp x))",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [8388 8391]},
  :full-name "cljs.core/regexp?",

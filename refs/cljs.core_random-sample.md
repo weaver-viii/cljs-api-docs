@@ -41,12 +41,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:8928-8934](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L8928-L8934)</ins>
+                └── <ins>[core.cljs:8928-8934](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/core.cljs#L8928-L8934)</ins>
 </pre>
 
 
@@ -71,7 +71,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_random-sample",
  :source {:code "(defn random-sample\n  ([prob]\n     (filter (fn [_] (< (rand) prob))))\n  ([prob coll]\n     (filter (fn [_] (< (rand) prob)) coll)))",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [8928 8934]},
  :full-name "cljs.core/random-sample",

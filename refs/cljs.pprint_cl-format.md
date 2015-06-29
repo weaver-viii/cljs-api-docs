@@ -63,12 +63,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[pprint.cljs:894-929](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/pprint.cljs#L894-L929)</ins>
+                └── <ins>[pprint.cljs:894-929](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/pprint.cljs#L894-L929)</ins>
 </pre>
 
 
@@ -93,7 +93,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.pprint_cl-format",
  :source {:code "(defn cl-format\n  [writer format-in & args]\n  (let [compiled-format (if (string? format-in) (compile-format format-in) format-in)\n        navigator (init-navigator args)]\n    (execute-format writer compiled-format navigator)))",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/cljs/cljs/pprint.cljs",
           :lines [894 929]},
  :full-name "cljs.pprint/cl-format",

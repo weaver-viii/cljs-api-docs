@@ -2,7 +2,7 @@
 
  <table border="1">
 <tr>
-<td>__0.0-3263__ [all](HISTORY.md)</td>
+<td>__0.0-3264__ [all](HISTORY.md)</td>
 <td>2015-05-09</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.7.0-beta2</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-3263__ ([See Full History](HISTORY.md)):
+Changes from __0.0-3264__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 

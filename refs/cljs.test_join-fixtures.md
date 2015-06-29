@@ -38,12 +38,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[test.cljs:485-491](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/test.cljs#L485-L491)</ins>
+                └── <ins>[test.cljs:485-491](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/test.cljs#L485-L491)</ins>
 </pre>
 
 
@@ -68,7 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_join-fixtures",
  :source {:code "(defn join-fixtures\n  [fixtures]\n  (reduce compose-fixtures default-fixture fixtures))",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/cljs/cljs/test.cljs",
           :lines [485 491]},
  :full-name "cljs.test/join-fixtures",

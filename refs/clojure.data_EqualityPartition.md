@@ -30,12 +30,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── cljs
             └── clojure
-                └── <ins>[data.cljs:75-77](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/clojure/data.cljs#L75-L77)</ins>
+                └── <ins>[data.cljs:75-77](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/clojure/data.cljs#L75-L77)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.data_EqualityPartition",
  :source {:code "(defprotocol EqualityPartition\n  \"Implementation detail. Subject to change.\"\n  (equality-partition [x] \"Implementation detail. Subject to change.\"))",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/cljs/clojure/data.cljs",
           :lines [75 77]},
  :methods [{:name "equality-partition",

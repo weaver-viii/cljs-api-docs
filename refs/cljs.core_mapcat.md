@@ -55,12 +55,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:4246-4254](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L4246-L4254)</ins>
+                └── <ins>[core.cljs:4246-4254](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/core.cljs#L4246-L4254)</ins>
 </pre>
 
 
@@ -87,7 +87,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_mapcat",
  :source {:code "(defn mapcat\n  ([f] (comp (map f) cat))\n  ([f & colls]\n     (apply concat (apply map f colls))))",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [4246 4254]},
  :full-name "cljs.core/mapcat",

@@ -32,12 +32,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3263
+clojurescript @ r3264
 └── src
     └── main
         └── cljs
             └── cljs
-                └── <ins>[core.cljs:920-923](https://github.com/clojure/clojurescript/blob/r3263/src/main/cljs/cljs/core.cljs#L920-L923)</ins>
+                └── <ins>[core.cljs:920-923](https://github.com/clojure/clojurescript/blob/r3264/src/main/cljs/cljs/core.cljs#L920-L923)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_iterableQMARK",
  :source {:code "(defn iterable?\n  [x]\n  (satisfies? IIterable x))",
           :repo "clojurescript",
-          :tag "r3263",
+          :tag "r3264",
           :filename "src/main/cljs/cljs/core.cljs",
           :lines [920 923]},
  :full-name "cljs.core/iterable?",
