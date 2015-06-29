@@ -55,11 +55,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1798
+clojurescript @ r1803
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1204-1216](https://github.com/clojure/clojurescript/blob/r1798/src/clj/cljs/core.clj#L1204-L1216)</ins>
+            └── <ins>[core.clj:1204-1216](https://github.com/clojure/clojurescript/blob/r1803/src/clj/cljs/core.clj#L1204-L1216)</ins>
 </pre>
 
 
@@ -86,7 +86,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_dotimes",
  :source {:code "(defmacro dotimes\n  [bindings & body]\n  (let [i (first bindings)\n        n (second bindings)]\n    `(let [n# ~n]\n       (loop [~i 0]\n         (when (< ~i n#)\n           ~@body\n           (recur (inc ~i)))))))",
           :repo "clojurescript",
-          :tag "r1798",
+          :tag "r1803",
           :filename "src/clj/cljs/core.clj",
           :lines [1204 1216]},
  :full-name "cljs.core/dotimes",

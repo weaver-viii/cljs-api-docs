@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1798
+clojurescript @ r1803
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:47](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L47)</ins>
+            └── <ins>[core.cljs:47](https://github.com/clojure/clojurescript/blob/r1803/src/cljs/cljs/core.cljs#L47)</ins>
 </pre>
 
 
@@ -46,7 +46,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def not-native nil)",
           :repo "clojurescript",
-          :tag "r1798",
+          :tag "r1803",
           :filename "src/cljs/cljs/core.cljs",
           :lines [47]},
  :full-name "cljs.core/not-native",

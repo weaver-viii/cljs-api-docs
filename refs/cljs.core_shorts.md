@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1798
+clojurescript @ r1803
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1529](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L1529)</ins>
+            └── <ins>[core.cljs:1538](https://github.com/clojure/clojurescript/blob/r1803/src/cljs/cljs/core.cljs#L1538)</ins>
 </pre>
 
 
@@ -57,9 +57,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_shorts",
  :source {:code "(defn shorts [x] x)",
           :repo "clojurescript",
-          :tag "r1798",
+          :tag "r1803",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1529]},
+          :lines [1538]},
  :full-name "cljs.core/shorts",
  :clj-symbol "clojure.core/shorts"}
 

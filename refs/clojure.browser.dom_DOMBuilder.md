@@ -21,12 +21,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1798
+clojurescript @ r1803
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[dom.cljs:17-18](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/clojure/browser/dom.cljs#L17-L18)</ins>
+                └── <ins>[dom.cljs:17-18](https://github.com/clojure/clojurescript/blob/r1803/src/cljs/clojure/browser/dom.cljs#L17-L18)</ins>
 </pre>
 
 
@@ -49,7 +49,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.dom_DOMBuilder",
  :source {:code "(defprotocol DOMBuilder\n  (-element [this] [this attrs-or-children] [this attrs children]))",
           :repo "clojurescript",
-          :tag "r1798",
+          :tag "r1803",
           :filename "src/cljs/clojure/browser/dom.cljs",
           :lines [17 18]},
  :methods [{:name "-element",

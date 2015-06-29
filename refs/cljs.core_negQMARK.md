@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1798
+clojurescript @ r1803
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1645-1647](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L1645-L1647)</ins>
+            └── <ins>[core.cljs:1654-1656](https://github.com/clojure/clojurescript/blob/r1803/src/cljs/cljs/core.cljs#L1654-L1656)</ins>
 </pre>
 
 
@@ -59,11 +59,11 @@ clojurescript @ r1798
 ```
 
  <pre>
-clojurescript @ r1798
+clojurescript @ r1803
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:381-382](https://github.com/clojure/clojurescript/blob/r1798/src/clj/cljs/core.clj#L381-L382)</ins>
+            └── <ins>[core.clj:381-382](https://github.com/clojure/clojurescript/blob/r1803/src/clj/cljs/core.clj#L381-L382)</ins>
 </pre>
 
 ---
@@ -90,12 +90,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_negQMARK",
  :source {:code "(defn ^boolean neg?\n  [x] (cljs.core/neg? x))",
           :repo "clojurescript",
-          :tag "r1798",
+          :tag "r1803",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1645 1647]},
+          :lines [1654 1656]},
  :extra-sources ({:code "(defmacro neg? [x]\n  `(< ~x 0))",
                   :repo "clojurescript",
-                  :tag "r1798",
+                  :tag "r1803",
                   :filename "src/clj/cljs/core.clj",
                   :lines [381 382]}),
  :full-name "cljs.core/neg?",

@@ -32,12 +32,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1798
+clojurescript @ r1803
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[dom.cljs:131-134](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/clojure/browser/dom.cljs#L131-L134)</ins>
+                └── <ins>[dom.cljs:131-134](https://github.com/clojure/clojurescript/blob/r1803/src/cljs/clojure/browser/dom.cljs#L131-L134)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.dom_get-value",
  :source {:code "(defn get-value\n  [e]\n  (.-value (ensure-element e)))",
           :repo "clojurescript",
-          :tag "r1798",
+          :tag "r1803",
           :filename "src/cljs/clojure/browser/dom.cljs",
           :lines [131 134]},
  :full-name "clojure.browser.dom/get-value",

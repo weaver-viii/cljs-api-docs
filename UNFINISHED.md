@@ -3120,7 +3120,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/lazy-cat</td>
-<td></td>
+<td>[ref](refs/cljs.core_lazy-cat.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_lazy-cat.cljsdoc)</td>
 <td><img width="20px" height="20px" valign="middle" src="http://i.imgur.com/JfULGnn.png"></td>
 <td></td>
@@ -4416,7 +4416,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/special-symbol?</td>
-<td></td>
+<td>[ref](refs/cljs.core_special-symbolQMARK.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_special-symbolQMARK.cljsdoc)</td>
 <td></td>
 <td></td>

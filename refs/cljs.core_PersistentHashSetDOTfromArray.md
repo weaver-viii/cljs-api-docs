@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1798
+clojurescript @ r1803
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5679-5690](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L5679-L5690)</ins>
+            └── <ins>[core.cljs:5688-5699](https://github.com/clojure/clojurescript/blob/r1803/src/cljs/cljs/core.cljs#L5688-L5699)</ins>
 </pre>
 
 
@@ -66,9 +66,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_PersistentHashSetDOTfromArray",
  :source {:code "(set! cljs.core.PersistentHashSet/fromArray\n  (fn [items ^boolean no-clone]\n    (let [len (alength items)]\n     (if (<= (/ len 2) cljs.core.PersistentArrayMap/HASHMAP_THRESHOLD)\n       (let [arr (if no-clone items (aclone items))]\n         (PersistentHashSet. nil\n           (cljs.core.PersistentArrayMap/fromArray arr true) nil))\n       (loop [i 0\n              out (transient cljs.core.PersistentHashSet/EMPTY)]\n         (if (< i len)\n           (recur (+ i 2) (conj! out (aget items i)))\n           (persistent! out)))))))",
           :repo "clojurescript",
-          :tag "r1798",
+          :tag "r1803",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [5679 5690]},
+          :lines [5688 5699]},
  :full-name "cljs.core/PersistentHashSet.fromArray"}
 
 ```

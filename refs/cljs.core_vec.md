@@ -41,11 +41,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1798
+clojurescript @ r1803
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3205-3209](https://github.com/clojure/clojurescript/blob/r1798/src/cljs/cljs/core.cljs#L3205-L3209)</ins>
+            └── <ins>[core.cljs:3214-3218](https://github.com/clojure/clojurescript/blob/r1803/src/cljs/cljs/core.cljs#L3214-L3218)</ins>
 </pre>
 
 
@@ -72,9 +72,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_vec",
  :source {:code "(defn vec [coll]\n  (-persistent!\n   (reduce -conj!\n           (-as-transient cljs.core.PersistentVector/EMPTY)\n           coll)))",
           :repo "clojurescript",
-          :tag "r1798",
+          :tag "r1803",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3205 3209]},
+          :lines [3214 3218]},
  :full-name "cljs.core/vec",
  :clj-symbol "clojure.core/vec"}
 
