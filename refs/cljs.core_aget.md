@@ -98,11 +98,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:147-152](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L147-L152)</ins>
+            └── <ins>[core.cljs:147-152](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L147-L152)</ins>
 </pre>
 
 
@@ -111,18 +111,18 @@ clojurescript @ r2014
 ```clj
 (defmacro aget
   ([a i]
-     (list 'js* "(~{}[~{}])" a i))
+     (core/list 'js* "(~{}[~{}])" a i))
   ([a i & idxs]
      (let [astr (apply core/str (repeat (count idxs) "[~{}]"))]
       `(~'js* ~(core/str "(~{}[~{}]" astr ")") ~a ~i ~@idxs))))
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:313-318](https://github.com/clojure/clojurescript/blob/r2014/src/clj/cljs/core.clj#L313-L318)</ins>
+            └── <ins>[core.clj:313-318](https://github.com/clojure/clojurescript/blob/r2024/src/clj/cljs/core.clj#L313-L318)</ins>
 </pre>
 
 ---
@@ -151,12 +151,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_aget",
  :source {:code "(defn aget\n  ([array i]\n     (cljs.core/aget array i))\n  ([array i & idxs]\n     (apply aget (aget array i) idxs)))",
           :repo "clojurescript",
-          :tag "r2014",
+          :tag "r2024",
           :filename "src/cljs/cljs/core.cljs",
           :lines [147 152]},
- :extra-sources ({:code "(defmacro aget\n  ([a i]\n     (list 'js* \"(~{}[~{}])\" a i))\n  ([a i & idxs]\n     (let [astr (apply core/str (repeat (count idxs) \"[~{}]\"))]\n      `(~'js* ~(core/str \"(~{}[~{}]\" astr \")\") ~a ~i ~@idxs))))",
+ :extra-sources ({:code "(defmacro aget\n  ([a i]\n     (core/list 'js* \"(~{}[~{}])\" a i))\n  ([a i & idxs]\n     (let [astr (apply core/str (repeat (count idxs) \"[~{}]\"))]\n      `(~'js* ~(core/str \"(~{}[~{}]\" astr \")\") ~a ~i ~@idxs))))",
                   :repo "clojurescript",
-                  :tag "r2014",
+                  :tag "r2024",
                   :filename "src/clj/cljs/core.clj",
                   :lines [313 318]}),
  :examples [{:id "e36007",

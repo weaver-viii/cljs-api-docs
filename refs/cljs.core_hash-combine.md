@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1782-1786](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L1782-L1786)</ins>
+            └── <ins>[core.cljs:1782-1786](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L1782-L1786)</ins>
 </pre>
 
 
@@ -56,7 +56,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[seed hash]"],
  :source {:code "(defn hash-combine [seed hash]\n  ; a la boost\n  (bit-xor seed (+ hash 0x9e3779b9\n                   (bit-shift-left seed 6)\n                   (bit-shift-right seed 2))))",
           :repo "clojurescript",
-          :tag "r2014",
+          :tag "r2024",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1782 1786]},
  :full-name "cljs.core/hash-combine",

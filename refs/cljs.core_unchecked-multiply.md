@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1549-1554](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L1549-L1554)</ins>
+            └── <ins>[core.cljs:1549-1554](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L1549-L1554)</ins>
 </pre>
 
 
@@ -62,11 +62,11 @@ clojurescript @ r2014
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:366-367](https://github.com/clojure/clojurescript/blob/r2014/src/clj/cljs/core.clj#L366-L367)</ins>
+            └── <ins>[core.clj:366-367](https://github.com/clojure/clojurescript/blob/r2024/src/clj/cljs/core.clj#L366-L367)</ins>
 </pre>
 
 ---
@@ -90,12 +90,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-multiply",
  :source {:code "(defn unchecked-multiply\n  ([] 1)\n  ([x] x)\n  ([x y] (cljs.core/unchecked-multiply x y))\n  ([x y & more] (reduce unchecked-multiply (cljs.core/unchecked-multiply x y) more)))",
           :repo "clojurescript",
-          :tag "r2014",
+          :tag "r2024",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1549 1554]},
  :extra-sources ({:code "(defmacro unchecked-multiply\n  ([& xs] `(* ~@xs)))",
                   :repo "clojurescript",
-                  :tag "r2014",
+                  :tag "r2024",
                   :filename "src/clj/cljs/core.clj",
                   :lines [366 367]}),
  :full-name "cljs.core/unchecked-multiply",

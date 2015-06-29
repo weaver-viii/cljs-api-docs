@@ -61,11 +61,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1688-1691](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L1688-L1691)</ins>
+            └── <ins>[core.cljs:1688-1691](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L1688-L1691)</ins>
 </pre>
 
 
@@ -73,15 +73,15 @@ clojurescript @ r2014
 
 ```clj
 (defmacro bit-test [x n]
-  (list 'js* "((~{} & (1 << ~{})) != 0)" x n))
+  (core/list 'js* "((~{} & (1 << ~{})) != 0)" x n))
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:496-497](https://github.com/clojure/clojurescript/blob/r2014/src/clj/cljs/core.clj#L496-L497)</ins>
+            └── <ins>[core.clj:496-497](https://github.com/clojure/clojurescript/blob/r2024/src/clj/cljs/core.clj#L496-L497)</ins>
 </pre>
 
 ---
@@ -106,12 +106,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-test",
  :source {:code "(defn bit-test\n  [x n]\n  (cljs.core/bit-test x n))",
           :repo "clojurescript",
-          :tag "r2014",
+          :tag "r2024",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1688 1691]},
- :extra-sources ({:code "(defmacro bit-test [x n]\n  (list 'js* \"((~{} & (1 << ~{})) != 0)\" x n))",
+ :extra-sources ({:code "(defmacro bit-test [x n]\n  (core/list 'js* \"((~{} & (1 << ~{})) != 0)\" x n))",
                   :repo "clojurescript",
-                  :tag "r2014",
+                  :tag "r2024",
                   :filename "src/clj/cljs/core.clj",
                   :lines [496 497]}),
  :examples [{:id "f64664",

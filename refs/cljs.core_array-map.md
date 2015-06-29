@@ -59,13 +59,32 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5788-5792](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L5788-L5792)</ins>
+            └── <ins>[core.cljs:5791-5795](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L5791-L5795)</ins>
 </pre>
 
+
+---
+
+```clj
+(defmacro array-map
+  ([] {})
+  ([& kvs]
+    (if (core/> (count kvs) 8)
+      `(hash-map ~@kvs)
+      `(cljs.core.PersistentArrayMap.fromArray (array ~@kvs) true))))
+```
+
+ <pre>
+clojurescript @ r2024
+└── src
+    └── clj
+        └── cljs
+            └── <ins>[core.clj:1301-1306](https://github.com/clojure/clojurescript/blob/r2024/src/clj/cljs/core.clj#L1301-L1306)</ins>
+</pre>
 
 ---
 
@@ -92,9 +111,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_array-map",
  :source {:code "(defn array-map\n  [& keyvals]\n  (PersistentArrayMap. nil (quot (count keyvals) 2) (apply array keyvals) nil))",
           :repo "clojurescript",
-          :tag "r2014",
+          :tag "r2024",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [5788 5792]},
+          :lines [5791 5795]},
+ :extra-sources ({:code "(defmacro array-map\n  ([] {})\n  ([& kvs]\n    (if (core/> (count kvs) 8)\n      `(hash-map ~@kvs)\n      `(cljs.core.PersistentArrayMap.fromArray (array ~@kvs) true))))",
+                  :repo "clojurescript",
+                  :tag "r2024",
+                  :filename "src/clj/cljs/core.clj",
+                  :lines [1301 1306]}),
  :examples [{:id "198026",
              :content "```clj\n(array-map :a 10)\n;;=> {:a 10}\n\n(array-map :a 10 :b 20)\n;;=> {:a 10 :b 20}\n```"}],
  :full-name "cljs.core/array-map",

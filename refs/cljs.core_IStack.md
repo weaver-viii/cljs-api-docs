@@ -25,11 +25,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:246-248](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L246-L248)</ins>
+            └── <ins>[core.cljs:246-248](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L246-L248)</ins>
 </pre>
 
 
@@ -53,7 +53,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IStack",
  :source {:code "(defprotocol IStack\n  (-peek [coll])\n  (-pop [coll]))",
           :repo "clojurescript",
-          :tag "r2014",
+          :tag "r2024",
           :filename "src/cljs/cljs/core.cljs",
           :lines [246 248]},
  :methods [{:name "-peek", :signature ["[coll]"], :docstring nil}

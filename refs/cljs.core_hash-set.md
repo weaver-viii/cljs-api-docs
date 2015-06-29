@@ -44,13 +44,30 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6201-6203](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L6201-L6203)</ins>
+            └── <ins>[core.cljs:6204-6206](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L6204-L6206)</ins>
 </pre>
 
+
+---
+
+```clj
+(defmacro hash-set
+  ([] #{})
+  ([& xs]
+    `#{~@xs}))
+```
+
+ <pre>
+clojurescript @ r2024
+└── src
+    └── clj
+        └── cljs
+            └── <ins>[core.clj:1316-1319](https://github.com/clojure/clojurescript/blob/r2024/src/clj/cljs/core.clj#L1316-L1319)</ins>
+</pre>
 
 ---
 
@@ -75,9 +92,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash-set",
  :source {:code "(defn hash-set\n  ([] #{})\n  ([& keys] (set keys)))",
           :repo "clojurescript",
-          :tag "r2014",
+          :tag "r2024",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6201 6203]},
+          :lines [6204 6206]},
+ :extra-sources ({:code "(defmacro hash-set\n  ([] #{})\n  ([& xs]\n    `#{~@xs}))",
+                  :repo "clojurescript",
+                  :tag "r2024",
+                  :filename "src/clj/cljs/core.clj",
+                  :lines [1316 1319]}),
  :full-name "cljs.core/hash-set",
  :clj-symbol "clojure.core/hash-set"}
 

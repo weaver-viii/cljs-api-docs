@@ -35,17 +35,37 @@ See Also:
 Source code:
 
 ```clj
-(defn vector [& args] (vec args))
+(defn vector [& args]
+  (if (instance? IndexedSeq args)
+    (cljs.core.PersistentVector.fromArray (.-arr args) true)
+    (vec args)))
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3345](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L3345)</ins>
+            └── <ins>[core.cljs:3345-3348](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L3345-L3348)</ins>
 </pre>
 
+
+---
+
+```clj
+(defmacro vector
+  ([] [])
+  ([& xs]
+    `[~@xs]))
+```
+
+ <pre>
+clojurescript @ r2024
+└── src
+    └── clj
+        └── cljs
+            └── <ins>[core.clj:1296-1299](https://github.com/clojure/clojurescript/blob/r2024/src/clj/cljs/core.clj#L1296-L1299)</ins>
+</pre>
 
 ---
 
@@ -71,11 +91,16 @@ __Meta__ - To retrieve the API data for this symbol:
            "cljs.core/pop"
            "cljs.core/into"],
  :full-name-encode "cljs.core_vector",
- :source {:code "(defn vector [& args] (vec args))",
+ :source {:code "(defn vector [& args]\n  (if (instance? IndexedSeq args)\n    (cljs.core.PersistentVector.fromArray (.-arr args) true)\n    (vec args)))",
           :repo "clojurescript",
-          :tag "r2014",
+          :tag "r2024",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3345]},
+          :lines [3345 3348]},
+ :extra-sources ({:code "(defmacro vector\n  ([] [])\n  ([& xs]\n    `[~@xs]))",
+                  :repo "clojurescript",
+                  :tag "r2024",
+                  :filename "src/clj/cljs/core.clj",
+                  :lines [1296 1299]}),
  :full-name "cljs.core/vector",
  :clj-symbol "clojure.core/vector"}
 

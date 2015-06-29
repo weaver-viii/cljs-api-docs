@@ -31,15 +31,19 @@ Source code:
         [type assign-impls] (if-let [type (base-type type-sym)]
                               [type base-assign-impls]
                               [(resolve type-sym) proto-assign-impls])]
+    (when (and (:extending-base-js-type cljs.analyzer/*cljs-warnings*)
+               (js-base-type type-sym))
+      (cljs.analyzer/warning :extending-base-js-type env
+          {:current-symbol type-sym :suggested-symbol (js-base-type type-sym)}))
     `(do ~@(mapcat #(assign-impls env resolve type-sym type %) impl-map))))
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:732-739](https://github.com/clojure/clojurescript/blob/r2014/src/clj/cljs/core.clj#L732-L739)</ins>
+            └── <ins>[core.clj:740-751](https://github.com/clojure/clojurescript/blob/r2024/src/clj/cljs/core.clj#L740-L751)</ins>
 </pre>
 
 
@@ -62,11 +66,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "macro",
  :full-name-encode "cljs.core_extend-type",
- :source {:code "(defmacro extend-type [type-sym & impls]\n  (let [env &env\n        resolve (partial resolve-var env)\n        impl-map (->impl-map impls)\n        [type assign-impls] (if-let [type (base-type type-sym)]\n                              [type base-assign-impls]\n                              [(resolve type-sym) proto-assign-impls])]\n    `(do ~@(mapcat #(assign-impls env resolve type-sym type %) impl-map))))",
+ :source {:code "(defmacro extend-type [type-sym & impls]\n  (let [env &env\n        resolve (partial resolve-var env)\n        impl-map (->impl-map impls)\n        [type assign-impls] (if-let [type (base-type type-sym)]\n                              [type base-assign-impls]\n                              [(resolve type-sym) proto-assign-impls])]\n    (when (and (:extending-base-js-type cljs.analyzer/*cljs-warnings*)\n               (js-base-type type-sym))\n      (cljs.analyzer/warning :extending-base-js-type env\n          {:current-symbol type-sym :suggested-symbol (js-base-type type-sym)}))\n    `(do ~@(mapcat #(assign-impls env resolve type-sym type %) impl-map))))",
           :repo "clojurescript",
-          :tag "r2014",
+          :tag "r2024",
           :filename "src/clj/cljs/core.clj",
-          :lines [732 739]},
+          :lines [740 751]},
  :full-name "cljs.core/extend-type",
  :clj-symbol "clojure.core/extend-type"}
 

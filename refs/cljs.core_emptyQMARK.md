@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1086-1090](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L1086-L1090)</ins>
+            └── <ins>[core.cljs:1086-1090](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L1086-L1090)</ins>
 </pre>
 
 
@@ -78,7 +78,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_emptyQMARK",
  :source {:code "(defn ^boolean empty?\n  [coll] (or (nil? coll)\n             (not (seq coll))))",
           :repo "clojurescript",
-          :tag "r2014",
+          :tag "r2024",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1086 1090]},
  :full-name "cljs.core/empty?",

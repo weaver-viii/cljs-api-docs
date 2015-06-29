@@ -52,11 +52,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1482-1487](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L1482-L1487)</ins>
+            └── <ins>[core.cljs:1482-1487](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L1482-L1487)</ins>
 </pre>
 
 
@@ -71,11 +71,11 @@ clojurescript @ r2014
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:448-452](https://github.com/clojure/clojurescript/blob/r2014/src/clj/cljs/core.clj#L448-L452)</ins>
+            └── <ins>[core.clj:448-452](https://github.com/clojure/clojurescript/blob/r2024/src/clj/cljs/core.clj#L448-L452)</ins>
 </pre>
 
 ---
@@ -101,12 +101,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_max",
  :source {:code "(defn max\n  ([x] x)\n  ([x y] (cljs.core/max x y))\n  ([x y & more]\n   (reduce max (cljs.core/max x y) more)))",
           :repo "clojurescript",
-          :tag "r2014",
+          :tag "r2024",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1482 1487]},
  :extra-sources ({:code "(defmacro max\n  ([x] x)\n  ([x y] `(let [x# ~x, y# ~y]\n            (~'js* \"((~{} > ~{}) ? ~{} : ~{})\" x# y# x# y#)))\n  ([x y & more] `(max (max ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r2014",
+                  :tag "r2024",
                   :filename "src/clj/cljs/core.clj",
                   :lines [448 452]}),
  :full-name "cljs.core/max",

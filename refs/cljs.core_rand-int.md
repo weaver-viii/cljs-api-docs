@@ -42,11 +42,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7170-7172](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L7170-L7172)</ins>
+            └── <ins>[core.cljs:7173-7175](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L7173-L7175)</ins>
 </pre>
 
 
@@ -58,11 +58,11 @@ clojurescript @ r2014
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1649-1651](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L1649-L1651)</ins>
+            └── <ins>[core.cljs:1649-1651](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L1649-L1651)</ins>
 </pre>
 
 ---
@@ -88,12 +88,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_rand-int",
  :source {:code "(defn rand-int\n  [n] (Math/floor (* (Math/random) n)))",
           :repo "clojurescript",
-          :tag "r2014",
+          :tag "r2024",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7170 7172]},
+          :lines [7173 7175]},
  :extra-sources ({:code "(defn rand-int\n  [n] (fix (rand n)))",
                   :repo "clojurescript",
-                  :tag "r2014",
+                  :tag "r2024",
                   :filename "src/cljs/cljs/core.cljs",
                   :lines [1649 1651]}),
  :full-name "cljs.core/rand-int",

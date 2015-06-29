@@ -23,16 +23,16 @@ Source code:
 ```clj
 (defmacro exists? [x]
   (bool-expr
-    (list 'js* "typeof ~{} !== 'undefined'"
+    (core/list 'js* "typeof ~{} !== 'undefined'"
       (vary-meta x assoc :cljs.analyzer/no-resolve true))))
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:284-287](https://github.com/clojure/clojurescript/blob/r2014/src/clj/cljs/core.clj#L284-L287)</ins>
+            └── <ins>[core.clj:284-287](https://github.com/clojure/clojurescript/blob/r2024/src/clj/cljs/core.clj#L284-L287)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "exists?",
  :type "macro",
  :signature ["[x]"],
- :source {:code "(defmacro exists? [x]\n  (bool-expr\n    (list 'js* \"typeof ~{} !== 'undefined'\"\n      (vary-meta x assoc :cljs.analyzer/no-resolve true))))",
+ :source {:code "(defmacro exists? [x]\n  (bool-expr\n    (core/list 'js* \"typeof ~{} !== 'undefined'\"\n      (vary-meta x assoc :cljs.analyzer/no-resolve true))))",
           :repo "clojurescript",
-          :tag "r2014",
+          :tag "r2024",
           :filename "src/clj/cljs/core.clj",
           :lines [284 287]},
  :full-name "cljs.core/exists?",

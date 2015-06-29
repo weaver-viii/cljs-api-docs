@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2014
+clojurescript @ r2024
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2174-2180](https://github.com/clojure/clojurescript/blob/r2014/src/cljs/cljs/core.cljs#L2174-L2180)</ins>
+            └── <ins>[core.cljs:2174-2180](https://github.com/clojure/clojurescript/blob/r2024/src/cljs/cljs/core.cljs#L2174-L2180)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[arr]" "[arr off]" "[arr off end]"],
  :source {:code "(defn array-chunk\n  ([arr]\n     (ArrayChunk. arr 0 (alength arr)))\n  ([arr off]\n     (ArrayChunk. arr off (alength arr)))\n  ([arr off end]\n     (ArrayChunk. arr off end)))",
           :repo "clojurescript",
-          :tag "r2014",
+          :tag "r2024",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2174 2180]},
  :full-name "cljs.core/array-chunk",
