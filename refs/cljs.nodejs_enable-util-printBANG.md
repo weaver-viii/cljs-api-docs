@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3153
+clojurescript @ r3165
 └── src
     └── cljs
         └── cljs
-            └── <ins>[nodejs.cljs:18-22](https://github.com/clojure/clojurescript/blob/r3153/src/cljs/cljs/nodejs.cljs#L18-L22)</ins>
+            └── <ins>[nodejs.cljs:18-22](https://github.com/clojure/clojurescript/blob/r3165/src/cljs/cljs/nodejs.cljs#L18-L22)</ins>
 </pre>
 
 
@@ -56,7 +56,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[]"],
  :source {:code "(defn enable-util-print! []\n  (set! *print-newline* false)\n  (set! *print-fn*\n    (fn [& args]\n      (.apply (.-log js/console) js/console (into-array args)))))",
           :repo "clojurescript",
-          :tag "r3153",
+          :tag "r3165",
           :filename "src/cljs/cljs/nodejs.cljs",
           :lines [18 22]},
  :full-name "cljs.nodejs/enable-util-print!",

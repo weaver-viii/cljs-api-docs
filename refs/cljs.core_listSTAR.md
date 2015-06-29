@@ -61,11 +61,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3153
+clojurescript @ r3165
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3187-3195](https://github.com/clojure/clojurescript/blob/r3153/src/cljs/cljs/core.cljs#L3187-L3195)</ins>
+            └── <ins>[core.cljs:3187-3195](https://github.com/clojure/clojurescript/blob/r3165/src/cljs/cljs/core.cljs#L3187-L3195)</ins>
 </pre>
 
 
@@ -96,7 +96,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_listSTAR",
  :source {:code "(defn list*\n  ([args] (seq args))\n  ([a args] (cons a args))\n  ([a b args] (cons a (cons b args)))\n  ([a b c args] (cons a (cons b (cons c args))))\n  ([a b c d & more]\n     (cons a (cons b (cons c (cons d (spread more)))))))",
           :repo "clojurescript",
-          :tag "r3153",
+          :tag "r3165",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3187 3195]},
  :full-name "cljs.core/list*",

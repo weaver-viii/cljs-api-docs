@@ -44,12 +44,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3153
+clojurescript @ r3165
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:96-104](https://github.com/clojure/clojurescript/blob/r3153/src/cljs/clojure/core/reducers.cljs#L96-L104)</ins>
+                └── <ins>[reducers.cljs:96-104](https://github.com/clojure/clojurescript/blob/r3165/src/cljs/clojure/core/reducers.cljs#L96-L104)</ins>
 </pre>
 
 
@@ -74,7 +74,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.core.reducers_map",
  :source {:code "(defcurried map\n  \"Applies f to every value in the reduction of coll. Foldable.\"\n  {}\n  [f coll]\n  (folder coll\n   (fn [f1]\n     (rfn [f1 k]\n          ([ret k v]\n             (f1 ret (f k v)))))))",
           :repo "clojurescript",
-          :tag "r3153",
+          :tag "r3165",
           :filename "src/cljs/clojure/core/reducers.cljs",
           :lines [96 104]},
  :full-name "clojure.core.reducers/map",

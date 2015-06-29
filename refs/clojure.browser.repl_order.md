@@ -20,12 +20,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3153
+clojurescript @ r3165
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[repl.cljs:77](https://github.com/clojure/clojurescript/blob/r3153/src/cljs/clojure/browser/repl.cljs#L77)</ins>
+                └── <ins>[repl.cljs:77](https://github.com/clojure/clojurescript/blob/r3165/src/cljs/clojure/browser/repl.cljs#L77)</ins>
 </pre>
 
 
@@ -47,7 +47,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def order (atom 0))",
           :repo "clojurescript",
-          :tag "r3153",
+          :tag "r3165",
           :filename "src/cljs/clojure/browser/repl.cljs",
           :lines [77]},
  :full-name "clojure.browser.repl/order",

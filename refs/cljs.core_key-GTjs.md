@@ -33,11 +33,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3153
+clojurescript @ r3165
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8948-8956](https://github.com/clojure/clojurescript/blob/r3153/src/cljs/cljs/core.cljs#L8948-L8956)</ins>
+            └── <ins>[core.cljs:8948-8956](https://github.com/clojure/clojurescript/blob/r3165/src/cljs/cljs/core.cljs#L8948-L8956)</ins>
 </pre>
 
 
@@ -60,7 +60,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[k]"],
  :source {:code "(defn key->js [k]\n  (if (satisfies? IEncodeJS k)\n    (-clj->js k)\n    (if (or (string? k)\n            (number? k)\n            (keyword? k)\n            (symbol? k))\n      (clj->js k)\n      (pr-str k))))",
           :repo "clojurescript",
-          :tag "r3153",
+          :tag "r3165",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8948 8956]},
  :full-name "cljs.core/key->js",

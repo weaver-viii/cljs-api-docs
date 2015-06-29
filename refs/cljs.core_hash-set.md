@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3153
+clojurescript @ r3165
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7902-7906](https://github.com/clojure/clojurescript/blob/r3153/src/cljs/cljs/core.cljs#L7902-L7906)</ins>
+            └── <ins>[core.cljs:7902-7906](https://github.com/clojure/clojurescript/blob/r3165/src/cljs/cljs/core.cljs#L7902-L7906)</ins>
 </pre>
 
 
@@ -77,11 +77,11 @@ clojurescript @ r3153
 ```
 
  <pre>
-clojurescript @ r3153
+clojurescript @ r3165
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1727-1739](https://github.com/clojure/clojurescript/blob/r3153/src/clj/cljs/core.clj#L1727-L1739)</ins>
+            └── <ins>[core.clj:1727-1739](https://github.com/clojure/clojurescript/blob/r3165/src/clj/cljs/core.clj#L1727-L1739)</ins>
 </pre>
 
 ---
@@ -107,12 +107,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash-set",
  :source {:code "(defn hash-set\n  ([] #{})\n  ([& keys] (set keys)))",
           :repo "clojurescript",
-          :tag "r3153",
+          :tag "r3165",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7902 7906]},
  :extra-sources ({:code "(defmacro hash-set\n  ([] `(.-EMPTY cljs.core/PersistentHashSet))\n  ([& xs]\n    (if (core/and (core/<= (count xs) 8)\n                  (every? #(= (:op %) :constant)\n                    (map #(cljs.analyzer/analyze &env %) xs))\n                  (= (count (into #{} xs)) (count xs)))\n      `(cljs.core/PersistentHashSet. nil\n         (cljs.core/PersistentArrayMap. nil ~(count xs) (array ~@(interleave xs (repeat nil))) nil)\n         nil)\n      (vary-meta\n        `(.fromArray cljs.core/PersistentHashSet (array ~@xs) true)\n        assoc :tag 'cljs.core/PersistentHashSet))))",
                   :repo "clojurescript",
-                  :tag "r3153",
+                  :tag "r3165",
                   :filename "src/clj/cljs/core.clj",
                   :lines [1727 1739]}),
  :full-name "cljs.core/hash-set",

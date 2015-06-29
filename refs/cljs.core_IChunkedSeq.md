@@ -33,11 +33,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3153
+clojurescript @ r3165
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:595-600](https://github.com/clojure/clojurescript/blob/r3153/src/cljs/cljs/core.cljs#L595-L600)</ins>
+            └── <ins>[core.cljs:595-600](https://github.com/clojure/clojurescript/blob/r3165/src/cljs/cljs/core.cljs#L595-L600)</ins>
 </pre>
 
 
@@ -61,7 +61,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IChunkedSeq",
  :source {:code "(defprotocol IChunkedSeq\n  \"Protocol for accessing a collection as sequential chunks.\"\n  (-chunked-first [coll]\n    \"Returns the first chunk in coll.\")\n  (-chunked-rest [coll]\n    \"Return a new collection of coll with the first chunk removed.\"))",
           :repo "clojurescript",
-          :tag "r3153",
+          :tag "r3165",
           :filename "src/cljs/cljs/core.cljs",
           :lines [595 600]},
  :methods [{:name "-chunked-first",

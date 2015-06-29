@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3153
+clojurescript @ r3165
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7998-8003](https://github.com/clojure/clojurescript/blob/r3153/src/cljs/cljs/core.cljs#L7998-L8003)</ins>
+            └── <ins>[core.cljs:7998-8003](https://github.com/clojure/clojurescript/blob/r3165/src/cljs/cljs/core.cljs#L7998-L8003)</ins>
 </pre>
 
 
@@ -85,7 +85,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_min-key",
  :source {:code "(defn min-key\n  ([k x] x)\n  ([k x y] (if (< (k x) (k y)) x y))\n  ([k x y & more]\n     (reduce #(min-key k %1 %2) (min-key k x y) more)))",
           :repo "clojurescript",
-          :tag "r3153",
+          :tag "r3165",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7998 8003]},
  :full-name "cljs.core/min-key",

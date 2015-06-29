@@ -42,12 +42,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3153
+clojurescript @ r3165
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[server.clj:24-37](https://github.com/clojure/clojurescript/blob/r3153/src/clj/cljs/repl/server.clj#L24-L37)</ins>
+                └── <ins>[server.clj:24-37](https://github.com/clojure/clojurescript/blob/r3165/src/clj/cljs/repl/server.clj#L24-L37)</ins>
 </pre>
 
 
@@ -72,7 +72,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.server_set-connection",
  :source {:code "(defn set-connection\n  [conn]\n  (if-let [promised-conn (:promised-conn @state)]\n    (do\n      (swap! state\n        (fn [old]\n          (-> old\n            (assoc :connection nil)\n            (assoc :promised-conn nil))))\n      (deliver promised-conn conn))\n    (swap! state (fn [old] (assoc old :connection conn)))))",
           :repo "clojurescript",
-          :tag "r3153",
+          :tag "r3165",
           :filename "src/clj/cljs/repl/server.clj",
           :lines [24 37]},
  :full-name "cljs.repl.server/set-connection",

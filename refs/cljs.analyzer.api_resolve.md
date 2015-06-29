@@ -41,12 +41,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3153
+clojurescript @ r3165
 └── src
     └── clj
         └── cljs
             └── analyzer
-                └── <ins>[api.clj:15-24](https://github.com/clojure/clojurescript/blob/r3153/src/clj/cljs/analyzer/api.clj#L15-L24)</ins>
+                └── <ins>[api.clj:15-24](https://github.com/clojure/clojurescript/blob/r3165/src/clj/cljs/analyzer/api.clj#L15-L24)</ins>
 </pre>
 
 
@@ -71,7 +71,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.analyzer.api_resolve",
  :source {:code "(defn resolve\n  [env sym]\n  {:pre [(map? env) (symbol? sym)]}\n  (try\n    (ana/resolve-var env sym\n      (ana/confirm-var-exists-throw))\n    (catch Exception e\n      (ana/resolve-macro-var env sym))))",
           :repo "clojurescript",
-          :tag "r3153",
+          :tag "r3165",
           :filename "src/clj/cljs/analyzer/api.clj",
           :lines [15 24]},
  :full-name "cljs.analyzer.api/resolve",

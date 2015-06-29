@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3153
+clojurescript @ r3165
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:447-450](https://github.com/clojure/clojurescript/blob/r3153/src/cljs/cljs/core.cljs#L447-L450)</ins>
+            └── <ins>[core.cljs:447-450](https://github.com/clojure/clojurescript/blob/r3165/src/cljs/cljs/core.cljs#L447-L450)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IMeta",
  :source {:code "(defprotocol IMeta\n  \"Protocol for accessing the metadata of an object.\"\n  (^clj-or-nil -meta [o]\n    \"Returns the metadata of object o.\"))",
           :repo "clojurescript",
-          :tag "r3153",
+          :tag "r3165",
           :filename "src/cljs/cljs/core.cljs",
           :lines [447 450]},
  :methods [{:name "-meta",

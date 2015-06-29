@@ -33,11 +33,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3153
+clojurescript @ r3165
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:327-335](https://github.com/clojure/clojurescript/blob/r3153/src/cljs/cljs/reader.cljs#L327-L335)</ins>
+            └── <ins>[reader.cljs:327-335](https://github.com/clojure/clojurescript/blob/r3165/src/cljs/cljs/reader.cljs#L327-L335)</ins>
 </pre>
 
 
@@ -60,7 +60,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[reader initch]"],
  :source {:code "(defn read-symbol\n  [reader initch]\n  (let [token (read-token reader initch)]\n    (if (and (gstring/contains token \"/\")\n             (not (== (.-length token) 1)))\n      (symbol (subs token 0 (.indexOf token \"/\"))\n              (subs token (inc (.indexOf token \"/\"))\n                (.-length token)))\n      (special-symbols token (symbol token)))))",
           :repo "clojurescript",
-          :tag "r3153",
+          :tag "r3165",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [327 335]},
  :full-name "cljs.reader/read-symbol",

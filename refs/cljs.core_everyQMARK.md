@@ -48,11 +48,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3153
+clojurescript @ r3165
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3579-3586](https://github.com/clojure/clojurescript/blob/r3153/src/cljs/cljs/core.cljs#L3579-L3586)</ins>
+            └── <ins>[core.cljs:3579-3586](https://github.com/clojure/clojurescript/blob/r3165/src/cljs/cljs/core.cljs#L3579-L3586)</ins>
 </pre>
 
 
@@ -80,7 +80,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_everyQMARK",
  :source {:code "(defn ^boolean every?\n  [pred coll]\n  (cond\n   (nil? (seq coll)) true\n   (pred (first coll)) (recur pred (next coll))\n   :else false))",
           :repo "clojurescript",
-          :tag "r3153",
+          :tag "r3165",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3579 3586]},
  :full-name "cljs.core/every?",
