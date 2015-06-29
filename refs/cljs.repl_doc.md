@@ -64,11 +64,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2740
+clojurescript @ r2755
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:439-442](https://github.com/clojure/clojurescript/blob/r2740/src/clj/cljs/repl.clj#L439-L442)</ins>
+            └── <ins>[repl.clj:434-437](https://github.com/clojure/clojurescript/blob/r2755/src/clj/cljs/repl.clj#L434-L437)</ins>
 </pre>
 
 
@@ -95,9 +95,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_doc",
  :source {:code "(defmacro doc\n  [sym]\n  `(cljs.repl/print-doc (meta (var ~sym))))",
           :repo "clojurescript",
-          :tag "r2740",
+          :tag "r2755",
           :filename "src/clj/cljs/repl.clj",
-          :lines [439 442]},
+          :lines [434 437]},
  :examples [{:id "4d2768",
              :content "```clj\n(doc map)\n;; Prints:\n;;  -------------------------\n;;  cljs.core/map\n;;  [f coll]\n;;    Returns a lazy sequence consisting of the result of applying f to\n;;    the set of first items of each coll, followed by applying f to the\n;;    set of second items in each coll, until any one of the colls is\n;;    exhausted.  Any remaining items in other colls are ignored. Function\n;;    f should accept number-of-colls arguments. Returns a transducer when\n;;    no collection is provided.\n;;\n;;=> nil\n```"}],
  :full-name "cljs.repl/doc",

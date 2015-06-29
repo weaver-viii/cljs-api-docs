@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2740
+clojurescript @ r2755
 └── src
     └── cljs
         └── cljs
-            └── <ins>[pprint.cljs:120](https://github.com/clojure/clojurescript/blob/r2740/src/cljs/cljs/pprint.cljs#L120)</ins>
+            └── <ins>[pprint.cljs:120](https://github.com/clojure/clojurescript/blob/r2755/src/cljs/cljs/pprint.cljs#L120)</ins>
 </pre>
 
 
@@ -47,7 +47,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.pprint_PrettyFlush",
  :source {:code "(defprotocol PrettyFlush (ppflush [this]))",
           :repo "clojurescript",
-          :tag "r2740",
+          :tag "r2755",
           :filename "src/cljs/cljs/pprint.cljs",
           :lines [120]},
  :methods [{:name "ppflush", :signature ["[this]"], :docstring nil}],

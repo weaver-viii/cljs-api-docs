@@ -24,12 +24,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2740
+clojurescript @ r2755
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[server.clj:8-12](https://github.com/clojure/clojurescript/blob/r2740/src/clj/cljs/repl/server.clj#L8-L12)</ins>
+                └── <ins>[server.clj:8-12](https://github.com/clojure/clojurescript/blob/r2755/src/clj/cljs/repl/server.clj#L8-L12)</ins>
 </pre>
 
 
@@ -51,7 +51,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(defonce state\n  (atom\n    {:socket nil\n     :connection nil\n     :promised-conn nil}))",
           :repo "clojurescript",
-          :tag "r2740",
+          :tag "r2755",
           :filename "src/clj/cljs/repl/server.clj",
           :lines [8 12]},
  :full-name "cljs.repl.server/state",

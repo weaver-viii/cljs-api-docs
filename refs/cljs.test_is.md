@@ -51,11 +51,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2740
+clojurescript @ r2755
 └── src
     └── clj
         └── cljs
-            └── <ins>[test.clj:149-165](https://github.com/clojure/clojurescript/blob/r2740/src/clj/cljs/test.clj#L149-L165)</ins>
+            └── <ins>[test.clj:149-165](https://github.com/clojure/clojurescript/blob/r2755/src/clj/cljs/test.clj#L149-L165)</ins>
 </pre>
 
 
@@ -80,7 +80,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_is",
  :source {:code "(defmacro is\n  ([form] `(cljs.test/is ~form nil))\n  ([form msg]\n   `(cljs.test/try-expr ~msg ~form)))",
           :repo "clojurescript",
-          :tag "r2740",
+          :tag "r2755",
           :filename "src/clj/cljs/test.clj",
           :lines [149 165]},
  :full-name "cljs.test/is",

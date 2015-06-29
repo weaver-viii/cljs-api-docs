@@ -51,11 +51,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2740
+clojurescript @ r2755
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:357-376](https://github.com/clojure/clojurescript/blob/r2740/src/cljs/cljs/test.cljs#L357-L376)</ins>
+            └── <ins>[test.cljs:357-376](https://github.com/clojure/clojurescript/blob/r2755/src/cljs/cljs/test.cljs#L357-L376)</ins>
 </pre>
 
 
@@ -80,7 +80,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_test-var",
  :source {:code "(defn test-var\n  [v]\n  {:pre [(instance? Var v)]}\n  (if-let [t (:test (meta v))]\n    (do\n      (update-current-env! [:testing-vars] conj v)\n      (update-current-env! [:report-counters :test] inc)\n      (do-report {:type :begin-test-var :var v})\n      (try\n        (t)\n        (catch :default e\n          (do-report\n            {:type :error\n             :message \"Uncaught exception, not in assertion.\"\n             :expected nil\n             :actual e})))\n      (do-report {:type :end-test-var :var v})\n      (update-current-env! [:testing-vars] rest))))",
           :repo "clojurescript",
-          :tag "r2740",
+          :tag "r2755",
           :filename "src/cljs/cljs/test.cljs",
           :lines [357 376]},
  :full-name "cljs.test/test-var",

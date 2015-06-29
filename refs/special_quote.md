@@ -25,11 +25,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2740
+clojurescript @ r2755
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:1000-1002](https://github.com/clojure/clojurescript/blob/r2740/src/clj/cljs/analyzer.clj#L1000-L1002)</ins>
+            └── <ins>[analyzer.clj:1003-1005](https://github.com/clojure/clojurescript/blob/r2755/src/clj/cljs/analyzer.clj#L1003-L1005)</ins>
 </pre>
 
 
@@ -51,9 +51,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "special form",
  :source {:code "(defmethod parse 'quote\n  [_ env [_ x] _ _]\n  (analyze (assoc env :quoted? true) x))",
           :repo "clojurescript",
-          :tag "r2740",
+          :tag "r2755",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [1000 1002]},
+          :lines [1003 1005]},
  :full-name "special/quote",
  :full-name-encode "special_quote",
  :clj-symbol "clojure.core/quote",

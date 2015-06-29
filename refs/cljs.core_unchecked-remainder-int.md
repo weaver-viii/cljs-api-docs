@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2740
+clojurescript @ r2755
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2010-2011](https://github.com/clojure/clojurescript/blob/r2740/src/cljs/cljs/core.cljs#L2010-L2011)</ins>
+            └── <ins>[core.cljs:2010-2011](https://github.com/clojure/clojurescript/blob/r2755/src/cljs/cljs/core.cljs#L2010-L2011)</ins>
 </pre>
 
 
@@ -45,11 +45,11 @@ clojurescript @ r2740
 ```
 
  <pre>
-clojurescript @ r2740
+clojurescript @ r2755
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:405-406](https://github.com/clojure/clojurescript/blob/r2740/src/clj/cljs/core.clj#L405-L406)</ins>
+            └── <ins>[core.clj:405-406](https://github.com/clojure/clojurescript/blob/r2755/src/clj/cljs/core.clj#L405-L406)</ins>
 </pre>
 
 ---
@@ -73,12 +73,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-remainder-int",
  :source {:code "(defn unchecked-remainder-int [x n]\n  (cljs.core/unchecked-remainder-int x n))",
           :repo "clojurescript",
-          :tag "r2740",
+          :tag "r2755",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2010 2011]},
  :extra-sources ({:code "(defmacro ^::ana/numeric unchecked-remainder-int\n  ([x n] `(mod ~x ~n)))",
                   :repo "clojurescript",
-                  :tag "r2740",
+                  :tag "r2755",
                   :filename "src/clj/cljs/core.clj",
                   :lines [405 406]}),
  :full-name "cljs.core/unchecked-remainder-int",
