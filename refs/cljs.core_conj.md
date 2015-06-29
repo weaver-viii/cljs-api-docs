@@ -68,11 +68,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1503
+clojurescript @ r1513
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:743-752](https://github.com/clojure/clojurescript/blob/r1503/src/cljs/cljs/core.cljs#L743-L752)</ins>
+            └── <ins>[core.cljs:743-752](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/core.cljs#L743-L752)</ins>
 </pre>
 
 
@@ -102,7 +102,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_conj",
  :source {:code "(defn conj\n  ([coll x]\n     (-conj coll x))\n  ([coll x & xs]\n     (if xs\n       (recur (conj coll x) (first xs) (next xs))\n       (conj coll x))))",
           :repo "clojurescript",
-          :tag "r1503",
+          :tag "r1513",
           :filename "src/cljs/cljs/core.cljs",
           :lines [743 752]},
  :full-name "cljs.core/conj",

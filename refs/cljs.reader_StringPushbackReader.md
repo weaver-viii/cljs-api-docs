@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1503
+clojurescript @ r1513
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:18-28](https://github.com/clojure/clojurescript/blob/r1503/src/cljs/cljs/reader.cljs#L18-L28)</ins>
+            └── <ins>[reader.cljs:18-28](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/reader.cljs#L18-L28)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[s index-atom buffer-atom]"],
  :source {:code "(deftype StringPushbackReader [s index-atom buffer-atom]\n  PushbackReader\n  (read-char [reader]\n             (if (empty? @buffer-atom)\n               (let [idx @index-atom]\n                 (swap! index-atom inc)\n                 (aget s idx))\n               (let [buf @buffer-atom]\n                 (swap! buffer-atom rest)\n                 (first buf))))\n  (unread [reader ch] (swap! buffer-atom #(cons ch %))))",
           :repo "clojurescript",
-          :tag "r1503",
+          :tag "r1513",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [18 28]},
  :full-name "cljs.reader/StringPushbackReader",

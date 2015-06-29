@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1503
+clojurescript @ r1513
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:985-987](https://github.com/clojure/clojurescript/blob/r1503/src/cljs/cljs/core.cljs#L985-L987)</ins>
+            └── <ins>[core.cljs:986-988](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/core.cljs#L986-L988)</ins>
 </pre>
 
 
@@ -59,11 +59,11 @@ clojurescript @ r1503
 ```
 
  <pre>
-clojurescript @ r1503
+clojurescript @ r1513
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:202-203](https://github.com/clojure/clojurescript/blob/r1503/src/clj/cljs/core.clj#L202-L203)</ins>
+            └── <ins>[core.clj:202-203](https://github.com/clojure/clojurescript/blob/r1513/src/clj/cljs/core.clj#L202-L203)</ins>
 </pre>
 
 ---
@@ -90,12 +90,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_falseQMARK",
  :source {:code "(defn ^boolean false?\n  [x] (cljs.core/false? x))",
           :repo "clojurescript",
-          :tag "r1503",
+          :tag "r1513",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [985 987]},
+          :lines [986 988]},
  :extra-sources ({:code "(defmacro false? [x]\n  (bool-expr (list 'js* \"~{} === false\" x)))",
                   :repo "clojurescript",
-                  :tag "r1503",
+                  :tag "r1513",
                   :filename "src/clj/cljs/core.clj",
                   :lines [202 203]}),
  :full-name "cljs.core/false?",

@@ -41,15 +41,16 @@ Source code:
 
 ```clj
 (defn ^boolean empty?
-  [coll] (not (seq coll)))
+  [coll] (or (nil? coll)
+             (not (seq coll))))
 ```
 
  <pre>
-clojurescript @ r1503
+clojurescript @ r1513
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:905-908](https://github.com/clojure/clojurescript/blob/r1503/src/cljs/cljs/core.cljs#L905-L908)</ins>
+            └── <ins>[core.cljs:905-909](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/core.cljs#L905-L909)</ins>
 </pre>
 
 
@@ -75,11 +76,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "function",
  :related ["cljs.core/seq"],
  :full-name-encode "cljs.core_emptyQMARK",
- :source {:code "(defn ^boolean empty?\n  [coll] (not (seq coll)))",
+ :source {:code "(defn ^boolean empty?\n  [coll] (or (nil? coll)\n             (not (seq coll))))",
           :repo "clojurescript",
-          :tag "r1503",
+          :tag "r1513",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [905 908]},
+          :lines [905 909]},
  :full-name "cljs.core/empty?",
  :clj-symbol "clojure.core/empty?",
  :docstring "Returns true if coll has no items - same as (not (seq coll)).\nPlease use the idiom (seq x) rather than (not (empty? x))"}

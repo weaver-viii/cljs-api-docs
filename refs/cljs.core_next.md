@@ -68,11 +68,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1503
+clojurescript @ r1513
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:345-352](https://github.com/clojure/clojurescript/blob/r1503/src/cljs/cljs/core.cljs#L345-L352)</ins>
+            └── <ins>[core.cljs:345-352](https://github.com/clojure/clojurescript/blob/r1513/src/cljs/cljs/core.cljs#L345-L352)</ins>
 </pre>
 
 
@@ -100,7 +100,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_next",
  :source {:code "(defn ^seq next\n  [coll]\n  (when-not (nil? coll)\n    (if (satisfies? INext coll)\n      (-next coll)\n      (seq (rest coll)))))",
           :repo "clojurescript",
-          :tag "r1503",
+          :tag "r1513",
           :filename "src/cljs/cljs/core.cljs",
           :lines [345 352]},
  :examples [{:id "7db59a",
