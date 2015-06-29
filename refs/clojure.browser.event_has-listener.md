@@ -25,12 +25,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2301
+clojurescript @ r2307
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[event.cljs:93](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/clojure/browser/event.cljs#L93)</ins>
+                └── <ins>[event.cljs:93](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/clojure/browser/event.cljs#L93)</ins>
 </pre>
 
 
@@ -53,7 +53,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[obj opt_type opt_capture]"],
  :source {:code "(defn has-listener [obj opt_type opt_capture])",
           :repo "clojurescript",
-          :tag "r2301",
+          :tag "r2307",
           :filename "src/cljs/clojure/browser/event.cljs",
           :lines [93]},
  :full-name "clojure.browser.event/has-listener",

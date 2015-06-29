@@ -26,12 +26,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2301
+clojurescript @ r2307
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[event.cljs:78-79](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/clojure/browser/event.cljs#L78-L79)</ins>
+                └── <ins>[event.cljs:78-79](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/clojure/browser/event.cljs#L78-L79)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[e]"],
  :source {:code "(defn expose [e]\n  (events/expose e))",
           :repo "clojurescript",
-          :tag "r2301",
+          :tag "r2307",
           :filename "src/cljs/clojure/browser/event.cljs",
           :lines [78 79]},
  :full-name "clojure.browser.event/expose",

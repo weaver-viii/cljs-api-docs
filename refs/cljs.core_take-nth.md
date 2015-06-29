@@ -57,11 +57,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2301
+clojurescript @ r2307
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7489-7506](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L7489-L7506)</ins>
+            └── <ins>[core.cljs:7489-7506](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L7489-L7506)</ins>
 </pre>
 
 
@@ -87,7 +87,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_take-nth",
  :source {:code "(defn take-nth\n  ([n]\n     (fn [f1]\n       (let [ia (atom -1)]\n         (fn\n           ([] (f1))\n           ([result] (f1 result))\n           ([result input]\n              (let [i (swap! ia inc)]\n                (if (zero? (rem i n))\n                  (f1 result input)\n                  result)))))))\n  ([n coll]\n     (lazy-seq\n       (when-let [s (seq coll)]\n         (cons (first s) (take-nth n (drop n s)))))))",
           :repo "clojurescript",
-          :tag "r2301",
+          :tag "r2307",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7489 7506]},
  :full-name "cljs.core/take-nth",

@@ -88,11 +88,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2301
+clojurescript @ r2307
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2482-2542](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L2482-L2542)</ins>
+            └── <ins>[core.cljs:2488-2548](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L2488-L2548)</ins>
 </pre>
 
 
@@ -117,9 +117,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ChunkedCons",
  :source {:code "(deftype ChunkedCons [chunk more meta ^:mutable __hash]\n  Object\n  (toString [coll]\n    (pr-str* coll))\n  (equiv [this other]\n    (-equiv this other))\n  \n  IWithMeta\n  (-with-meta [coll m]\n    (ChunkedCons. chunk more m __hash))\n\n  IMeta\n  (-meta [coll] meta)\n\n  ISequential\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  ISeqable\n  (-seq [coll] coll)\n\n  ASeq\n  ISeq\n  (-first [coll] (-nth chunk 0))\n  (-rest [coll]\n    (if (> (-count chunk) 1)\n      (ChunkedCons. (-drop-first chunk) more meta nil)\n      (if (nil? more)\n        ()\n        more)))\n\n  INext\n  (-next [coll]\n    (if (> (-count chunk) 1)\n      (ChunkedCons. (-drop-first chunk) more meta nil)\n      (let [more (-seq more)]\n        (when-not (nil? more)\n          more))))\n\n  IChunkedSeq\n  (-chunked-first [coll] chunk)\n  (-chunked-rest [coll]\n    (if (nil? more)\n      ()\n      more))\n\n  IChunkedNext\n  (-chunked-next [coll]\n    (if (nil? more)\n      nil\n      more))\n\n  ICollection\n  (-conj [this o]\n    (cons o this))\n\n  IEmptyableCollection\n  (-empty [coll] (with-meta (.-EMPTY List) meta))\n\n  IHash\n  (-hash [coll] (caching-hash coll hash-ordered-coll __hash)))",
           :repo "clojurescript",
-          :tag "r2301",
+          :tag "r2307",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2482 2542]},
+          :lines [2488 2548]},
  :full-name "cljs.core/ChunkedCons",
  :clj-symbol "clojure.lang/ChunkedCons"}
 

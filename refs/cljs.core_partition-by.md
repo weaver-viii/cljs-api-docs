@@ -86,11 +86,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2301
+clojurescript @ r2307
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7513-7551](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L7513-L7551)</ins>
+            └── <ins>[core.cljs:7513-7551](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L7513-L7551)</ins>
 </pre>
 
 
@@ -119,7 +119,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_partition-by",
  :source {:code "(defn partition-by\n  ([f]\n     (fn [f1]\n       (let [a (array-list)\n             pa (atom ::none)]\n         (fn\n           ([] (f1))\n           ([result]\n              (let [result (if (.isEmpty a)\n                             result\n                             (let [v (vec (.toArray a))]\n                               ;;flushing ops must clear before invoking possibly\n                               ;;failing nested op, else infinite loop\n                               (.clear a)\n                               (f1 result v)))]\n                (f1 result)))\n           ([result input]\n              (let [pval @pa\n                    val (f input)]\n                (reset! pa val)\n                (if (or (keyword-identical? pval ::none)\n                        (= val pval))\n                  (do\n                    (.add a input)\n                    result)\n                  (let [v (vec (.toArray a))]\n                    (.clear a)\n                    (.add a input)\n                    (f1 result v)))))))))\n  ([f coll]\n     (lazy-seq\n       (when-let [s (seq coll)]\n         (let [fst (first s)\n               fv (f fst)\n               run (cons fst (take-while #(= fv (f %)) (next s)))]\n           (cons run (partition-by f (seq (drop (count run) s)))))))))",
           :repo "clojurescript",
-          :tag "r2301",
+          :tag "r2307",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7513 7551]},
  :full-name "cljs.core/partition-by",

@@ -80,11 +80,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2301
+clojurescript @ r2307
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7316-7346](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L7316-L7346)</ins>
+            └── <ins>[core.cljs:7316-7346](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L7316-L7346)</ins>
 </pre>
 
 
@@ -111,7 +111,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_partition-all",
  :source {:code "(defn partition-all\n  ([n]\n   (fn [f1]\n     (let [a (array-list)]\n       (fn\n         ([] (f1))\n         ([result]\n            (let [result (if (.isEmpty a)\n                           result\n                           (let [v (vec (.toArray a))]\n                             ;;flushing ops must clear before invoking possibly\n                             ;;failing nested op, else infinite loop\n                             (.clear a)\n                             (f1 result v)))]\n              (f1 result)))\n         ([result input]\n            (.add a input)\n            (if (== n (.size a))\n              (let [v (vec (.toArray a))]\n                (.clear a)\n                (f1 result v))\n              result))))))\n  ([n coll]\n     (partition-all n n coll))\n  ([n step coll]\n     (lazy-seq\n      (when-let [s (seq coll)]\n        (cons (take n s) (partition-all n step (drop step s)))))))",
           :repo "clojurescript",
-          :tag "r2301",
+          :tag "r2307",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7316 7346]},
  :full-name "cljs.core/partition-all",

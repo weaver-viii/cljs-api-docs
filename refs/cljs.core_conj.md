@@ -72,11 +72,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2301
+clojurescript @ r2307
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1021-1034](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L1021-L1034)</ins>
+            └── <ins>[core.cljs:1027-1040](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L1027-L1040)</ins>
 </pre>
 
 
@@ -106,9 +106,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_conj",
  :source {:code "(defn conj\n  ([] [])\n  ([coll] coll)\n  ([coll x]\n    (if-not (nil? coll)\n      (-conj coll x)\n      (list x)))\n  ([coll x & xs]\n    (if xs\n      (recur (conj coll x) (first xs) (next xs))\n      (conj coll x))))",
           :repo "clojurescript",
-          :tag "r2301",
+          :tag "r2307",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1021 1034]},
+          :lines [1027 1040]},
  :full-name "cljs.core/conj",
  :clj-symbol "clojure.core/conj",
  :docstring "conj[oin]. Returns a new collection with the xs\n'added'. (conj nil item) returns (item).  The 'addition' may\nhappen at different 'places' depending on the concrete type."}

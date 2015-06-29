@@ -82,11 +82,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2301
+clojurescript @ r2307
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3842-3867](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L3842-L3867)</ins>
+            └── <ins>[core.cljs:3842-3867](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L3842-L3867)</ins>
 </pre>
 
 
@@ -117,7 +117,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_update-in",
  :source {:code "(defn update-in\n  ([m [k & ks] f]\n   (if ks\n     (assoc m k (update-in (get m k) ks f))\n     (assoc m k (f (get m k)))))\n  ([m [k & ks] f a]\n   (if ks\n     (assoc m k (update-in (get m k) ks f a))\n     (assoc m k (f (get m k) a))))\n  ([m [k & ks] f a b]\n   (if ks\n     (assoc m k (update-in (get m k) ks f a b))\n     (assoc m k (f (get m k) a b))))\n  ([m [k & ks] f a b c]\n   (if ks\n     (assoc m k (update-in (get m k) ks f a b c))\n     (assoc m k (f (get m k) a b c))))\n  ([m [k & ks] f a b c & args]\n   (if ks\n     (assoc m k (apply update-in (get m k) ks f a b c args))\n     (assoc m k (apply f (get m k) a b c args)))))",
           :repo "clojurescript",
-          :tag "r2301",
+          :tag "r2307",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3842 3867]},
  :full-name "cljs.core/update-in",

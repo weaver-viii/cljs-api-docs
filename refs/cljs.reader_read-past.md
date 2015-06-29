@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2301
+clojurescript @ r2307
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:215-222](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/reader.cljs#L215-L222)</ins>
+            └── <ins>[reader.cljs:215-222](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/reader.cljs#L215-L222)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.reader_read-past",
  :source {:code "(defn read-past\n  [pred rdr]\n  (loop [ch (read-char rdr)]\n    (if (pred ch)\n      (recur (read-char rdr))\n      ch)))",
           :repo "clojurescript",
-          :tag "r2301",
+          :tag "r2307",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [215 222]},
  :full-name "cljs.reader/read-past",

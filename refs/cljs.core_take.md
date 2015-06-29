@@ -72,11 +72,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2301
+clojurescript @ r2307
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3532-3555](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L3532-L3555)</ins>
+            └── <ins>[core.cljs:3532-3555](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L3532-L3555)</ins>
 </pre>
 
 
@@ -106,7 +106,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_take",
  :source {:code "(defn take\n  ([n]\n     (fn [f1]\n       (let [na (atom n)]\n         (fn\n           ([] (f1))\n           ([result] (f1 result))\n           ([result input]\n              (let [n @na\n                    nn (swap! na dec)\n                    result (if (pos? n)\n                             (f1 result input)\n                             result)]\n                (if (not (pos? nn))\n                  (reduced result)\n                  result)))))))\n  ([n coll]\n     (lazy-seq\n       (when (pos? n)\n         (when-let [s (seq coll)]\n           (cons (first s) (take (dec n) (rest s))))))))",
           :repo "clojurescript",
-          :tag "r2301",
+          :tag "r2307",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3532 3555]},
  :full-name "cljs.core/take",

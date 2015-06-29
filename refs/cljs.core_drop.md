@@ -70,11 +70,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2301
+clojurescript @ r2307
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3557-3578](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L3557-L3578)</ins>
+            └── <ins>[core.cljs:3557-3578](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L3557-L3578)</ins>
 </pre>
 
 
@@ -105,7 +105,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_drop",
  :source {:code "(defn drop\n  ([n]\n     (fn [f1]\n       (let [na (atom n)]\n         (fn\n           ([] (f1))\n           ([result] (f1 result))\n           ([result input]\n              (let [n @na]\n                (swap! na dec)\n                (if (pos? n)\n                  result\n                  (f1 result input))))))))\n  ([n coll]\n     (let [step (fn [n coll]\n                  (let [s (seq coll)]\n                    (if (and (pos? n) s)\n                      (recur (dec n) (rest s))\n                      s)))]\n       (lazy-seq (step n coll)))))",
           :repo "clojurescript",
-          :tag "r2301",
+          :tag "r2307",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3557 3578]},
  :full-name "cljs.core/drop",

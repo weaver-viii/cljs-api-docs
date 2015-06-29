@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2301
+clojurescript @ r2307
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8158-8169](https://github.com/clojure/clojurescript/blob/r2301/src/cljs/cljs/core.cljs#L8158-L8169)</ins>
+            └── <ins>[core.cljs:8158-8169](https://github.com/clojure/clojurescript/blob/r2307/src/cljs/cljs/core.cljs#L8158-L8169)</ins>
 </pre>
 
 
@@ -63,7 +63,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[xform coll]"],
  :source {:code "(deftype Iteration [xform coll]\n   ISequential\n   \n   ISeqable\n   (-seq [_] (seq (sequence xform coll)))\n\n   IReduce\n   (-reduce [_ f init] (transduce xform f init coll))\n\n   IPrintWithWriter\n   (-pr-writer [coll writer opts]\n     (pr-sequential-writer writer pr-writer \"(\" \" \" \")\" opts coll)))",
           :repo "clojurescript",
-          :tag "r2301",
+          :tag "r2307",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8158 8169]},
  :full-name "cljs.core/Iteration",
