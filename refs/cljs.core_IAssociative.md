@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1552
+clojurescript @ r1576
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:185-188](https://github.com/clojure/clojurescript/blob/r1552/src/cljs/cljs/core.cljs#L185-L188)</ins>
+            └── <ins>[core.cljs:185-188](https://github.com/clojure/clojurescript/blob/r1576/src/cljs/cljs/core.cljs#L185-L188)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IAssociative",
  :source {:code "(defprotocol IAssociative\n  (-contains-key? [coll k])\n  #_(-entry-at [coll k])\n  (-assoc [coll k v]))",
           :repo "clojurescript",
-          :tag "r1552",
+          :tag "r1576",
           :filename "src/cljs/cljs/core.cljs",
           :lines [185 188]},
  :methods [{:name "-contains-key?",

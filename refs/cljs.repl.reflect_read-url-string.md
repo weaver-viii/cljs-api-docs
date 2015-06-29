@@ -20,12 +20,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1552
+clojurescript @ r1576
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[reflect.clj:42](https://github.com/clojure/clojurescript/blob/r1552/src/clj/cljs/repl/reflect.clj#L42)</ins>
+                └── <ins>[reflect.clj:42](https://github.com/clojure/clojurescript/blob/r1576/src/clj/cljs/repl/reflect.clj#L42)</ins>
 </pre>
 
 
@@ -47,7 +47,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def read-url-string (comp read-string url-decode))",
           :repo "clojurescript",
-          :tag "r1552",
+          :tag "r1576",
           :filename "src/clj/cljs/repl/reflect.clj",
           :lines [42]},
  :full-name "cljs.repl.reflect/read-url-string",

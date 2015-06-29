@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1552
+clojurescript @ r1576
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:343-349](https://github.com/clojure/clojurescript/blob/r1552/src/cljs/cljs/reader.cljs#L343-L349)</ins>
+            └── <ins>[reader.cljs:343-349](https://github.com/clojure/clojurescript/blob/r1576/src/cljs/cljs/reader.cljs#L343-L349)</ins>
 </pre>
 
 
@@ -58,7 +58,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[f]"],
  :source {:code "(defn desugar-meta\n  [f]\n  (cond\n   (symbol? f) {:tag f}\n   (string? f) {:tag f}\n   (keyword? f) {f true}\n   :else f))",
           :repo "clojurescript",
-          :tag "r1552",
+          :tag "r1576",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [343 349]},
  :full-name "cljs.reader/desugar-meta",

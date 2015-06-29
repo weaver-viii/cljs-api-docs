@@ -63,11 +63,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1552
+clojurescript @ r1576
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1701-1736](https://github.com/clojure/clojurescript/blob/r1552/src/cljs/cljs/core.cljs#L1701-L1736)</ins>
+            └── <ins>[core.cljs:1701-1736](https://github.com/clojure/clojurescript/blob/r1576/src/cljs/cljs/core.cljs#L1701-L1736)</ins>
 </pre>
 
 
@@ -92,7 +92,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_Cons",
  :source {:code "(deftype Cons [meta first rest ^:mutable __hash]\n  IList\n\n  Object\n  (toString [this]\n    (pr-str this))\n\n  IWithMeta\n  (-with-meta [coll meta] (Cons. meta first rest __hash))\n\n  IMeta\n  (-meta [coll] meta)\n\n  ASeq\n  ISeq\n  (-first [coll] first)\n  (-rest [coll] (if (nil? rest) () rest))\n\n  INext\n  (-next [coll] (if (nil? rest) nil (-seq rest)))\n\n  ICollection\n  (-conj [coll o] (Cons. nil o coll __hash))\n\n  IEmptyableCollection\n  (-empty [coll] (with-meta cljs.core.List/EMPTY meta))\n\n  ISequential\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  IHash\n  (-hash [coll] (caching-hash coll hash-coll __hash))\n\n  ISeqable\n  (-seq [coll] coll))",
           :repo "clojurescript",
-          :tag "r1552",
+          :tag "r1576",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1701 1736]},
  :full-name "cljs.core/Cons",

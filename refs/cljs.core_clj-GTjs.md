@@ -65,11 +65,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1552
+clojurescript @ r1576
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6927-6932](https://github.com/clojure/clojurescript/blob/r1552/src/cljs/cljs/core.cljs#L6927-L6932)</ins>
+            └── <ins>[core.cljs:6929-6934](https://github.com/clojure/clojurescript/blob/r1576/src/cljs/cljs/core.cljs#L6929-L6934)</ins>
 </pre>
 
 
@@ -96,9 +96,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_clj-GTjs",
  :source {:code "(defn clj->js\n   [x]\n   (-clj->js x))",
           :repo "clojurescript",
-          :tag "r1552",
+          :tag "r1576",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6927 6932]},
+          :lines [6929 6934]},
  :examples [{:id "2b1057",
              :content "```clj\n(clj->js {:foo 1 :bar 2})\n;;=> #js {:foo 1, :bar 2}\n\n(clj->js [:foo \"bar\" 'baz])\n;;=> #js [\"foo\" \"bar\" \"baz\"]\n\n(clj->js [1 {:foo \"bar\"} 4])\n;;=> #js [1 #js {:foo \"bar\"} 4]\n```"}],
  :full-name "cljs.core/clj->js",

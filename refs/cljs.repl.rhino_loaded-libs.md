@@ -1,10 +1,10 @@
-## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> cljs.repl.rhino/loaded-libs
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> ~~cljs.repl.rhino/loaded-libs~~
 
  <table border="1">
 <tr>
 
 <td>var</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1576"><img valign="middle" alt="[×] 0.0-1576" src="https://img.shields.io/badge/×-0.0--1576-red.svg"></a> </td>
 </tr>
 </table>
 
@@ -52,7 +52,8 @@ __Meta__ - To retrieve the API data for this symbol:
           :lines [20]},
  :full-name "cljs.repl.rhino/loaded-libs",
  :full-name-encode "cljs.repl.rhino_loaded-libs",
- :history [["+" "0.0-927"]]}
+ :history [["+" "0.0-927"] ["-" "0.0-1576"]],
+ :removed {:in "0.0-1576", :last-seen "0.0-1552"}}
 
 ```
 

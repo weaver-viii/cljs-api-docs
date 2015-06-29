@@ -53,11 +53,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1552
+clojurescript @ r1576
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:314-322](https://github.com/clojure/clojurescript/blob/r1552/src/cljs/cljs/core.cljs#L314-L322)</ins>
+            └── <ins>[core.cljs:314-322](https://github.com/clojure/clojurescript/blob/r1576/src/cljs/cljs/core.cljs#L314-L322)</ins>
 </pre>
 
 
@@ -85,7 +85,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_seq",
  :source {:code "(defn ^seq seq\n  [coll]\n  (when-not (nil? coll)\n    (if (satisfies? ASeq coll)\n      coll\n      (-seq coll))))",
           :repo "clojurescript",
-          :tag "r1552",
+          :tag "r1576",
           :filename "src/cljs/cljs/core.cljs",
           :lines [314 322]},
  :full-name "cljs.core/seq",

@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1552
+clojurescript @ r1576
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:192-195](https://github.com/clojure/clojurescript/blob/r1552/src/cljs/cljs/reader.cljs#L192-L195)</ins>
+            └── <ins>[reader.cljs:192-195](https://github.com/clojure/clojurescript/blob/r1576/src/cljs/cljs/reader.cljs#L192-L195)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[unicode-pattern reader escape-char unicode-str]"],
  :source {:code "(defn validate-unicode-escape [unicode-pattern reader escape-char unicode-str]\n  (if (re-matches unicode-pattern unicode-str)\n    unicode-str\n    (reader-error reader \"Unexpected unicode escape \\\\\" escape-char unicode-str)))",
           :repo "clojurescript",
-          :tag "r1552",
+          :tag "r1576",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [192 195]},
  :full-name "cljs.reader/validate-unicode-escape",

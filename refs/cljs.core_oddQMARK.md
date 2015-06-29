@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1552
+clojurescript @ r1576
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2245-2247](https://github.com/clojure/clojurescript/blob/r1552/src/cljs/cljs/core.cljs#L2245-L2247)</ins>
+            └── <ins>[core.cljs:2245-2247](https://github.com/clojure/clojurescript/blob/r1576/src/cljs/cljs/core.cljs#L2245-L2247)</ins>
 </pre>
 
 
@@ -76,7 +76,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_oddQMARK",
  :source {:code "(defn ^boolean odd?\n  [n] (not (even? n)))",
           :repo "clojurescript",
-          :tag "r1552",
+          :tag "r1576",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2245 2247]},
  :full-name "cljs.core/odd?",

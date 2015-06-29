@@ -512,7 +512,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ExceptionInfo</td>
-<td></td>
+<td>[ref](refs/cljs.core_ExceptionInfo.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ExceptionInfo.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2504,7 +2504,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ex-cause</td>
-<td></td>
+<td>[ref](refs/cljs.core_ex-cause.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ex-cause.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2512,7 +2512,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ex-data</td>
-<td></td>
+<td>[ref](refs/cljs.core_ex-data.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ex-data.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2520,7 +2520,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ex-info</td>
-<td></td>
+<td>[ref](refs/cljs.core_ex-info.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ex-info.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2528,7 +2528,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ex-message</td>
-<td></td>
+<td>[ref](refs/cljs.core_ex-message.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ex-message.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5472,7 +5472,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.reader/\*default-data-reader-fn\*</td>
-<td></td>
+<td>[ref](refs/cljs.reader_STARdefault-data-reader-fnSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.reader_STARdefault-data-reader-fnSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5488,7 +5488,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.reader/deregister-default-tag-parser!</td>
-<td></td>
+<td>[ref](refs/cljs.reader_deregister-default-tag-parserBANG.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.reader_deregister-default-tag-parserBANG.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5816,7 +5816,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.reader/register-default-tag-parser!</td>
-<td></td>
+<td>[ref](refs/cljs.reader_register-default-tag-parserBANG.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.reader_register-default-tag-parserBANG.cljsdoc)</td>
 <td></td>
 <td></td>

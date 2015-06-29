@@ -25,11 +25,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1552
+clojurescript @ r1576
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:175-177](https://github.com/clojure/clojurescript/blob/r1552/src/cljs/cljs/core.cljs#L175-L177)</ins>
+            └── <ins>[core.cljs:175-177](https://github.com/clojure/clojurescript/blob/r1576/src/cljs/cljs/core.cljs#L175-L177)</ins>
 </pre>
 
 
@@ -53,7 +53,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ISeq",
  :source {:code "(defprotocol ISeq\n  (-first [coll])\n  (-rest [coll]))",
           :repo "clojurescript",
-          :tag "r1552",
+          :tag "r1576",
           :filename "src/cljs/cljs/core.cljs",
           :lines [175 177]},
  :methods [{:name "-first", :signature ["[coll]"], :docstring nil}

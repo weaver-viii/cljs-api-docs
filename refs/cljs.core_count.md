@@ -65,11 +65,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1552
+clojurescript @ r1576
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:786-792](https://github.com/clojure/clojurescript/blob/r1552/src/cljs/cljs/core.cljs#L786-L792)</ins>
+            └── <ins>[core.cljs:786-792](https://github.com/clojure/clojurescript/blob/r1576/src/cljs/cljs/core.cljs#L786-L792)</ins>
 </pre>
 
 
@@ -95,7 +95,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_count",
  :source {:code "(defn count\n  [coll]\n  (if (counted? coll)\n    (-count coll)\n    (accumulating-seq-count coll)))",
           :repo "clojurescript",
-          :tag "r1552",
+          :tag "r1576",
           :filename "src/cljs/cljs/core.cljs",
           :lines [786 792]},
  :examples [{:id "96e470",
