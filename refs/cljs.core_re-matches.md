@@ -42,11 +42,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1885
+clojurescript @ r1886
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6519-6526](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/cljs/core.cljs#L6519-L6526)</ins>
+            └── <ins>[core.cljs:6519-6526](https://github.com/clojure/clojurescript/blob/r1886/src/cljs/cljs/core.cljs#L6519-L6526)</ins>
 </pre>
 
 
@@ -72,7 +72,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_re-matches",
  :source {:code "(defn re-matches\n  [re s]\n  (let [matches (.exec re s)]\n    (when (= (first matches) s)\n      (if (== (count matches) 1)\n        (first matches)\n        (vec matches)))))",
           :repo "clojurescript",
-          :tag "r1885",
+          :tag "r1886",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6519 6526]},
  :full-name "cljs.core/re-matches",

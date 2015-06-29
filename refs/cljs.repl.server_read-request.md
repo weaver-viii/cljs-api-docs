@@ -29,12 +29,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1885
+clojurescript @ r1886
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[server.clj:95-99](https://github.com/clojure/clojurescript/blob/r1885/src/clj/cljs/repl/server.clj#L95-L99)</ins>
+                └── <ins>[server.clj:95-99](https://github.com/clojure/clojurescript/blob/r1886/src/clj/cljs/repl/server.clj#L95-L99)</ins>
 </pre>
 
 
@@ -57,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[rdr]"],
  :source {:code "(defn read-request [rdr]\n  (let [line (.readLine rdr)]\n    (cond (.startsWith line \"POST\") (read-post line rdr)\n          (.startsWith line \"GET\") (read-get line rdr)\n          :else {:method :unknown :content line})))",
           :repo "clojurescript",
-          :tag "r1885",
+          :tag "r1886",
           :filename "src/clj/cljs/repl/server.clj",
           :lines [95 99]},
  :full-name "cljs.repl.server/read-request",

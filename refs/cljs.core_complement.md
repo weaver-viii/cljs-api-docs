@@ -49,11 +49,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1885
+clojurescript @ r1886
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2533-2541](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/cljs/core.cljs#L2533-L2541)</ins>
+            └── <ins>[core.cljs:2533-2541](https://github.com/clojure/clojurescript/blob/r1886/src/cljs/cljs/core.cljs#L2533-L2541)</ins>
 </pre>
 
 
@@ -81,7 +81,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_complement",
  :source {:code "(defn ^boolean complement\n  [f]\n  (fn\n    ([] (not (f)))\n    ([x] (not (f x)))\n    ([x y] (not (f x y)))\n    ([x y & zs] (not (apply f x y zs)))))",
           :repo "clojurescript",
-          :tag "r1885",
+          :tag "r1886",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2533 2541]},
  :full-name "cljs.core/complement",

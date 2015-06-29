@@ -52,11 +52,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1885
+clojurescript @ r1886
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2814-2821](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/cljs/core.cljs#L2814-L2821)</ins>
+            └── <ins>[core.cljs:2814-2821](https://github.com/clojure/clojurescript/blob/r1886/src/cljs/cljs/core.cljs#L2814-L2821)</ins>
 </pre>
 
 
@@ -83,7 +83,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_take-last",
  :source {:code "(defn take-last\n  [n coll]\n  (loop [s (seq coll), lead (seq (drop n coll))]\n    (if lead\n      (recur (next s) (next lead))\n      s)))",
           :repo "clojurescript",
-          :tag "r1885",
+          :tag "r1886",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2814 2821]},
  :full-name "cljs.core/take-last",

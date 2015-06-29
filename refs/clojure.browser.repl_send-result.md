@@ -26,12 +26,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1885
+clojurescript @ r1886
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[repl.cljs:38-39](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/clojure/browser/repl.cljs#L38-L39)</ins>
+                └── <ins>[repl.cljs:38-39](https://github.com/clojure/clojurescript/blob/r1886/src/cljs/clojure/browser/repl.cljs#L38-L39)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[connection url data]"],
  :source {:code "(defn send-result [connection url data]\n  (net/transmit connection url \"POST\" data nil 0))",
           :repo "clojurescript",
-          :tag "r1885",
+          :tag "r1886",
           :filename "src/cljs/clojure/browser/repl.cljs",
           :lines [38 39]},
  :full-name "clojure.browser.repl/send-result",

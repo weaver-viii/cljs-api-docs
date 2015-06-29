@@ -42,11 +42,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1885
+clojurescript @ r1886
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7464-7471](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/cljs/core.cljs#L7464-L7471)</ins>
+            └── <ins>[core.cljs:7464-7471](https://github.com/clojure/clojurescript/blob/r1886/src/cljs/cljs/core.cljs#L7464-L7471)</ins>
 </pre>
 
 
@@ -71,7 +71,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ex-info",
  :source {:code "(defn ex-info\n  ([msg map]\n     (ExceptionInfo. msg map nil))\n  ([msg map cause]\n     (ExceptionInfo. msg map cause)))",
           :repo "clojurescript",
-          :tag "r1885",
+          :tag "r1886",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7464 7471]},
  :full-name "cljs.core/ex-info",

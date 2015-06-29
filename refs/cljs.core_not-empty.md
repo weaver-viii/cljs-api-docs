@@ -42,11 +42,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1885
+clojurescript @ r1886
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2489-2491](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/cljs/core.cljs#L2489-L2491)</ins>
+            └── <ins>[core.cljs:2489-2491](https://github.com/clojure/clojurescript/blob/r1886/src/cljs/cljs/core.cljs#L2489-L2491)</ins>
 </pre>
 
 
@@ -73,7 +73,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_not-empty",
  :source {:code "(defn not-empty\n  [coll] (when (seq coll) coll))",
           :repo "clojurescript",
-          :tag "r1885",
+          :tag "r1886",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2489 2491]},
  :full-name "cljs.core/not-empty",
