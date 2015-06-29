@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1535
+clojurescript @ r1552
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6748-6751](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/core.cljs#L6748-L6751)</ins>
+            └── <ins>[core.cljs:6799-6802](https://github.com/clojure/clojurescript/blob/r1552/src/cljs/cljs/core.cljs#L6799-L6802)</ins>
 </pre>
 
 
@@ -75,9 +75,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_get-validator",
  :source {:code "(defn get-validator\n  [iref]\n  (.-validator iref))",
           :repo "clojurescript",
-          :tag "r1535",
+          :tag "r1552",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6748 6751]},
+          :lines [6799 6802]},
  :full-name "cljs.core/get-validator",
  :clj-symbol "clojure.core/get-validator",
  :docstring "Gets the validator-fn for a var/ref/agent/atom."}

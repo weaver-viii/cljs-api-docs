@@ -25,11 +25,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1535
+clojurescript @ r1552
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:279-281](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/cljs/core.cljs#L279-L281)</ins>
+            └── <ins>[core.cljs:282-284](https://github.com/clojure/clojurescript/blob/r1552/src/cljs/cljs/core.cljs#L282-L284)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ITransientCollection",
  :source {:code "(defprotocol ITransientCollection\n  (-conj! [tcoll val])\n  (-persistent! [tcoll]))",
           :repo "clojurescript",
-          :tag "r1535",
+          :tag "r1552",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [279 281]},
+          :lines [282 284]},
  :methods [{:name "-conj!",
             :signature ["[tcoll val]"],
             :docstring nil}

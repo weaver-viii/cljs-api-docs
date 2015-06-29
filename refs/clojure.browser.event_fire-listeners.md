@@ -26,12 +26,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1535
+clojurescript @ r1552
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[event.cljs:82-83](https://github.com/clojure/clojurescript/blob/r1535/src/cljs/clojure/browser/event.cljs#L82-L83)</ins>
+                └── <ins>[event.cljs:82-83](https://github.com/clojure/clojurescript/blob/r1552/src/cljs/clojure/browser/event.cljs#L82-L83)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[obj type capture event]"],
  :source {:code "(defn fire-listeners\n  [obj type capture event])",
           :repo "clojurescript",
-          :tag "r1535",
+          :tag "r1552",
           :filename "src/cljs/clojure/browser/event.cljs",
           :lines [82 83]},
  :full-name "clojure.browser.event/fire-listeners",

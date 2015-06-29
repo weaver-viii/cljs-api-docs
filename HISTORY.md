@@ -16,6 +16,29 @@
 <th>comp</th>
 </tr>
 <tr>
+<td>__[0.0-1552](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1552)__</td>
+<td>2012-12-03</td>
+<td><kbd>1.4.0</kbd></td>
+<td><kbd></kbd></td>
+<td><kbd>20120710-r2029</kbd></td>
+<td>
+<a href="#user-content-00-1552-syntax">
+ 
+</a>
+</td>
+<td>
+<a href="#user-content-00-1552-library">
+<img valign="middle" src="https://img.shields.io/badge/+-5-brightgreen.svg"> 
+</a>
+</td>
+<td>
+<a href="#user-content-00-1552-compiler">
+ 
+</a>
+</td>
+</tr>
+
+<tr>
 <td>__[0.0-1535](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1535)__</td>
 <td>2012-11-08</td>
 <td><kbd>1.4.0</kbd></td>
@@ -337,6 +360,53 @@
 </td>
 </tr>
 
+</table>
+
+### 0.0-1552
+
+<a name="00-1552-syntax"></a> __Syntax API Changes__
+ <table>
+<tr><td>_no syntax forms were added or removed in this version_</td></tr>
+</table>
+
+<a name="00-1552-library"></a> __Library API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-protocol-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/Fn](refs/cljs.core_Fn.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-protocol-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/IEncodeClojure](refs/cljs.core_IEncodeClojure.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-protocol-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/IEncodeJS](refs/cljs.core_IEncodeJS.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/clj->js](refs/cljs.core_clj-GTjs.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/js-mod](refs/cljs.core_js-mod.md)</samp></td>
+</tr>
+</table>
+
+<a name="00-1552-compiler"></a> __Compiler API Changes__
+ <table>
+<tr><td>_no symbols were added or removed in this version_</td></tr>
 </table>
 
 ### 0.0-1535
