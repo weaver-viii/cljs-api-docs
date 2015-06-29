@@ -16,6 +16,29 @@
 <th>comp</th>
 </tr>
 <tr>
+<td>__[0.0-2227](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2227)__</td>
+<td>2014-05-22</td>
+<td><kbd>1.5.1</kbd></td>
+<td><kbd>0.8.3</kbd></td>
+<td><kbd>0.0-20130212-95c19e7f0f5f</kbd></td>
+<td>
+<a href="#user-content-00-2227-syntax">
+ 
+</a>
+</td>
+<td>
+<a href="#user-content-00-2227-library">
+<img valign="middle" src="https://img.shields.io/badge/+-1-brightgreen.svg"> 
+</a>
+</td>
+<td>
+<a href="#user-content-00-2227-compiler">
+ 
+</a>
+</td>
+</tr>
+
+<tr>
 <td>__[0.0-2202](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2202)__</td>
 <td>2014-04-02</td>
 <td><kbd>1.5.1</kbd></td>
@@ -1326,6 +1349,29 @@
 </td>
 </tr>
 
+</table>
+
+### 0.0-2227
+
+<a name="00-2227-syntax"></a> __Syntax API Changes__
+ <table>
+<tr><td>_no syntax forms were added or removed in this version_</td></tr>
+</table>
+
+<a name="00-2227-library"></a> __Library API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-special form-brightgreen.svg">
+</td>
+<td><samp>[special/case\*](refs/special_caseSTAR.md)</samp></td>
+</tr>
+</table>
+
+<a name="00-2227-compiler"></a> __Compiler API Changes__
+ <table>
+<tr><td>_no symbols were added or removed in this version_</td></tr>
 </table>
 
 ### 0.0-2202

@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2202
+clojurescript @ r2227
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1567](https://github.com/clojure/clojurescript/blob/r2202/src/cljs/cljs/core.cljs#L1567)</ins>
+            └── <ins>[core.cljs:1567](https://github.com/clojure/clojurescript/blob/r2227/src/cljs/cljs/core.cljs#L1567)</ins>
 </pre>
 
 
@@ -43,11 +43,11 @@ clojurescript @ r2202
 ```
 
  <pre>
-clojurescript @ r2202
+clojurescript @ r2227
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:353](https://github.com/clojure/clojurescript/blob/r2202/src/clj/cljs/core.clj#L353)</ins>
+            └── <ins>[core.clj:374](https://github.com/clojure/clojurescript/blob/r2227/src/clj/cljs/core.clj#L374)</ins>
 </pre>
 
 ---
@@ -72,14 +72,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_double",
  :source {:code "(defn ^number double [x] x)",
           :repo "clojurescript",
-          :tag "r2202",
+          :tag "r2227",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1567]},
  :extra-sources ({:code "(defmacro double [x] x)",
                   :repo "clojurescript",
-                  :tag "r2202",
+                  :tag "r2227",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [353]}),
+                  :lines [374]}),
  :full-name "cljs.core/double",
  :clj-symbol "clojure.core/double"}
 

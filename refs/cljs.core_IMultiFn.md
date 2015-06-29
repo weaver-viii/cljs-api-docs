@@ -23,16 +23,15 @@ Source code:
   (-prefer-method [mf dispatch-val dispatch-val-y])
   (-get-method [mf dispatch-val])
   (-methods [mf])
-  (-prefers [mf])
-  (-dispatch [mf args]))
+  (-prefers [mf]))
 ```
 
  <pre>
-clojurescript @ r2202
+clojurescript @ r2227
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7609-7617](https://github.com/clojure/clojurescript/blob/r2202/src/cljs/cljs/core.cljs#L7609-L7617)</ins>
+            └── <ins>[core.cljs:7640-7647](https://github.com/clojure/clojurescript/blob/r2227/src/cljs/cljs/core.cljs#L7640-L7647)</ins>
 </pre>
 
 
@@ -53,11 +52,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "IMultiFn",
  :type "protocol",
  :full-name-encode "cljs.core_IMultiFn",
- :source {:code "(defprotocol IMultiFn\n  (-reset [mf])\n  (-add-method [mf dispatch-val method])\n  (-remove-method [mf dispatch-val])\n  (-prefer-method [mf dispatch-val dispatch-val-y])\n  (-get-method [mf dispatch-val])\n  (-methods [mf])\n  (-prefers [mf])\n  (-dispatch [mf args]))",
+ :source {:code "(defprotocol IMultiFn\n  (-reset [mf])\n  (-add-method [mf dispatch-val method])\n  (-remove-method [mf dispatch-val])\n  (-prefer-method [mf dispatch-val dispatch-val-y])\n  (-get-method [mf dispatch-val])\n  (-methods [mf])\n  (-prefers [mf]))",
           :repo "clojurescript",
-          :tag "r2202",
+          :tag "r2227",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7609 7617]},
+          :lines [7640 7647]},
  :methods [{:name "-reset", :signature ["[mf]"], :docstring nil}
            {:name "-add-method",
             :signature ["[mf dispatch-val method]"],
@@ -72,10 +71,7 @@ __Meta__ - To retrieve the API data for this symbol:
             :signature ["[mf dispatch-val]"],
             :docstring nil}
            {:name "-methods", :signature ["[mf]"], :docstring nil}
-           {:name "-prefers", :signature ["[mf]"], :docstring nil}
-           {:name "-dispatch",
-            :signature ["[mf args]"],
-            :docstring nil}],
+           {:name "-prefers", :signature ["[mf]"], :docstring nil}],
  :full-name "cljs.core/IMultiFn",
  :history [["+" "0.0-927"]]}
 

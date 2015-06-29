@@ -2,8 +2,8 @@
 
  <table border="1">
 <tr>
-<td>__0.0-2202__ [all](HISTORY.md)</td>
-<td>2014-04-02</td>
+<td>__0.0-2227__ [all](HISTORY.md)</td>
+<td>2014-05-22</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.5.1</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-2202__ ([See Full History](HISTORY.md)):
+Changes from __0.0-2227__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
@@ -82,7 +82,13 @@ __Syntax API Changes__
 __Library API Changes__
 
  <table>
-<tr><td>_no symbols were added or removed in this version_</td></tr>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-special form-brightgreen.svg">
+</td>
+<td><samp>[special/case\*](refs/special_caseSTAR.md)</samp></td>
+</tr>
 </table>
 
 __Compiler API Changes__
@@ -495,6 +501,12 @@ application.
 <td><samp>[.](refs/special_DOT.md)</samp></td>
 <td><samp>special form</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[case\*](refs/special_caseSTAR.md)</samp></td>
+<td><samp>special form</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2227"><img valign="middle" alt="[+] 0.0-2227" src="https://img.shields.io/badge/+-0.0--2227-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/catch)</td>

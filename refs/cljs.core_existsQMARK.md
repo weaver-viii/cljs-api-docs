@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2202
+clojurescript @ r2227
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:300-303](https://github.com/clojure/clojurescript/blob/r2202/src/clj/cljs/core.clj#L300-L303)</ins>
+            └── <ins>[core.clj:321-324](https://github.com/clojure/clojurescript/blob/r2227/src/clj/cljs/core.clj#L321-L324)</ins>
 </pre>
 
 
@@ -55,9 +55,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[x]"],
  :source {:code "(defmacro exists? [x]\n  (bool-expr\n    (core/list 'js* \"typeof ~{} !== 'undefined'\"\n      (vary-meta x assoc :cljs.analyzer/no-resolve true))))",
           :repo "clojurescript",
-          :tag "r2202",
+          :tag "r2227",
           :filename "src/clj/cljs/core.clj",
-          :lines [300 303]},
+          :lines [321 324]},
  :full-name "cljs.core/exists?",
  :full-name-encode "cljs.core_existsQMARK",
  :history [["+" "0.0-1798"]]}

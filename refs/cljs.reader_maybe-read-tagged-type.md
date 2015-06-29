@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2202
+clojurescript @ r2227
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:563-573](https://github.com/clojure/clojurescript/blob/r2202/src/cljs/cljs/reader.cljs#L563-L573)</ins>
+            └── <ins>[reader.cljs:555-565](https://github.com/clojure/clojurescript/blob/r2227/src/cljs/cljs/reader.cljs#L555-L565)</ins>
 </pre>
 
 
@@ -62,9 +62,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[rdr initch]"],
  :source {:code "(defn maybe-read-tagged-type\n  [rdr initch]\n  (let [tag (read-symbol rdr initch)\n        pfn (get @*tag-table* (str tag))\n        dfn @*default-data-reader-fn*]\n    (cond\n     pfn (pfn (read rdr true nil false))\n     dfn (dfn tag (read rdr true nil false))\n     :else (reader-error rdr\n                         \"Could not find tag parser for \" (str tag)\n                         \" in \" (pr-str (keys @*tag-table*))))))",
           :repo "clojurescript",
-          :tag "r2202",
+          :tag "r2227",
           :filename "src/cljs/cljs/reader.cljs",
-          :lines [563 573]},
+          :lines [555 565]},
  :full-name "cljs.reader/maybe-read-tagged-type",
  :full-name-encode "cljs.reader_maybe-read-tagged-type",
  :history [["+" "0.0-1236"]]}

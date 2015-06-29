@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2202
+clojurescript @ r2227
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:179-185](https://github.com/clojure/clojurescript/blob/r2202/src/cljs/cljs/reader.cljs#L179-L185)</ins>
+            └── <ins>[reader.cljs:171-177](https://github.com/clojure/clojurescript/blob/r2227/src/cljs/cljs/reader.cljs#L171-L177)</ins>
 </pre>
 
 
@@ -58,9 +58,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[reader]"],
  :source {:code "(defn read-4-chars [reader]\n  (.toString\n    (gstring/StringBuffer.\n      (read-char reader)\n      (read-char reader)\n      (read-char reader)\n      (read-char reader))))",
           :repo "clojurescript",
-          :tag "r2202",
+          :tag "r2227",
           :filename "src/cljs/cljs/reader.cljs",
-          :lines [179 185]},
+          :lines [171 177]},
  :full-name "cljs.reader/read-4-chars",
  :full-name-encode "cljs.reader_read-4-chars",
  :history [["+" "0.0-1424"]]}

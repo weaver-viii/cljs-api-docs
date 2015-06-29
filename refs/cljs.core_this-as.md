@@ -33,11 +33,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2202
+clojurescript @ r2227
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:633-637](https://github.com/clojure/clojurescript/blob/r2202/src/clj/cljs/core.clj#L633-L637)</ins>
+            └── <ins>[core.clj:654-658](https://github.com/clojure/clojurescript/blob/r2227/src/clj/cljs/core.clj#L654-L658)</ins>
 </pre>
 
 
@@ -62,9 +62,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_this-as",
  :source {:code "(defmacro this-as\n  [name & body]\n  `(let [~name (js-this)]\n     ~@body))",
           :repo "clojurescript",
-          :tag "r2202",
+          :tag "r2227",
           :filename "src/clj/cljs/core.clj",
-          :lines [633 637]},
+          :lines [654 658]},
  :full-name "cljs.core/this-as",
  :docstring "Defines a scope where JavaScript's implicit \"this\" is bound to the name provided."}
 
