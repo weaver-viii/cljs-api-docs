@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2797-2806](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/core.cljs#L2797-L2806)</ins>
+            └── <ins>[core.cljs:2810-2819](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L2810-L2819)</ins>
 </pre>
 
 
@@ -73,9 +73,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_disjBANG",
  :source {:code "(defn disj!\n  ([tcoll val]\n    (-disjoin! tcoll val))\n  ([tcoll val & vals]\n    (let [ntcoll (-disjoin! tcoll val)]\n      (if vals\n        (recur ntcoll (first vals) (next vals))\n        ntcoll))))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2797 2806]},
+          :lines [2810 2819]},
  :full-name "cljs.core/disj!",
  :clj-symbol "clojure.core/disj!",
  :docstring "disj[oin]. Returns a transient set of the same (hashed/sorted) type, that\ndoes not contain key(s)."}

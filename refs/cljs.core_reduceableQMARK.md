@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1372-1374](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/core.cljs#L1372-L1374)</ins>
+            └── <ins>[core.cljs:1385-1387](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L1385-L1387)</ins>
 </pre>
 
 
@@ -61,9 +61,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_reduceableQMARK",
  :source {:code "(defn ^boolean reduceable?\n  [x] (satisfies? IReduce x))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1372 1374]},
+          :lines [1385 1387]},
  :full-name "cljs.core/reduceable?",
  :docstring "Returns true if coll satisfies IReduce"}
 

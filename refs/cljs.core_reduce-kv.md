@@ -59,11 +59,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1652-1662](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/core.cljs#L1652-L1662)</ins>
+            └── <ins>[core.cljs:1665-1675](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L1665-L1675)</ins>
 </pre>
 
 
@@ -90,9 +90,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_reduce-kv",
  :source {:code "(defn reduce-kv\n  ([f init coll]\n    (if-not (nil? coll)\n      (-kv-reduce coll f init)\n      init)))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1652 1662]},
+          :lines [1665 1675]},
  :full-name "cljs.core/reduce-kv",
  :clj-symbol "clojure.core/reduce-kv",
  :docstring "Reduces an associative collection. f should be a function of 3\narguments. Returns the result of applying f to init, the first key\nand the first value in coll, then applying f to that result and the\n2nd key and value, etc. If coll contains no entries, returns init\nand f is not called. Note that reduce-kv is supported on vectors,\nwhere the keys will be the ordinals."}

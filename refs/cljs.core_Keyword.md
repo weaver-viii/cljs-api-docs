@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2327-2353](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/core.cljs#L2327-L2353)</ins>
+            └── <ins>[core.cljs:2340-2366](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L2340-L2366)</ins>
 </pre>
 
 
@@ -83,9 +83,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_Keyword",
  :source {:code "(deftype Keyword [ns name fqn ^:mutable _hash]\n  Object\n  (toString [_] (str \":\" fqn))\n  (equiv [this other]\n    (-equiv this other))\n  \n  IEquiv\n  (-equiv [_ other]\n    (if (instance? Keyword other)\n      (identical? fqn (.-fqn other))\n      false))\n  IFn\n  (-invoke [kw coll]\n    (get coll kw))\n  (-invoke [kw coll not-found]\n    (get coll kw not-found))\n\n  IHash\n  (-hash [this]\n    (caching-hash this hash-keyword _hash))\n\n  INamed\n  (-name [_] name)\n  (-namespace [_] ns)\n\n  IPrintWithWriter\n  (-pr-writer [o writer _] (-write writer (str \":\" fqn))))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2327 2353]},
+          :lines [2340 2366]},
  :full-name "cljs.core/Keyword",
  :clj-symbol "clojure.lang/Keyword"}
 

@@ -16,6 +16,29 @@
 <th>comp</th>
 </tr>
 <tr>
+<td>__[0.0-2371](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371)__</td>
+<td>2014-10-10</td>
+<td><kbd>1.6.0</kbd></td>
+<td><kbd>0.8.9</kbd></td>
+<td><kbd>0.0-20140718-946a7d39</kbd></td>
+<td>
+<a href="#user-content-00-2371-syntax">
+ 
+</a>
+</td>
+<td>
+<a href="#user-content-00-2371-library">
+<img valign="middle" src="https://img.shields.io/badge/+-13-brightgreen.svg"> <img valign="middle" src="https://img.shields.io/badge/×-8-red.svg">
+</a>
+</td>
+<td>
+<a href="#user-content-00-2371-compiler">
+ 
+</a>
+</td>
+</tr>
+
+<tr>
 <td>__[0.0-2356](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2356)__</td>
 <td>2014-09-26</td>
 <td><kbd>1.6.0</kbd></td>
@@ -1625,6 +1648,149 @@
 </td>
 </tr>
 
+</table>
+
+### 0.0-2371
+
+<a name="00-2371-syntax"></a> __Syntax API Changes__
+ <table>
+<tr><td>_no syntax forms were added or removed in this version_</td></tr>
+</table>
+
+<a name="00-2371-library"></a> __Library API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/ES6EntriesIterator](refs/cljs.core_ES6EntriesIterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/ES6Iterator](refs/cljs.core_ES6Iterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/ES6SetEntriesIterator](refs/cljs.core_ES6SetEntriesIterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/Eduction](refs/cljs.core_Eduction.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-type-red.svg">
+</td>
+<td><samp>[~~cljs.core/EntriesIterator~~](refs/cljs.core_EntriesIterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/IndexedSeqIterator](refs/cljs.core_IndexedSeqIterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-type-red.svg">
+</td>
+<td><samp>[~~cljs.core/Iteration~~](refs/cljs.core_Iteration.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-type-red.svg">
+</td>
+<td><samp>[~~cljs.core/Iterator~~](refs/cljs.core_Iterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/PersistentArrayMapIterator](refs/cljs.core_PersistentArrayMapIterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/RangeIterator](refs/cljs.core_RangeIterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/RangedIterator](refs/cljs.core_RangedIterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-type-red.svg">
+</td>
+<td><samp>[~~cljs.core/SetEntriesIterator~~](refs/cljs.core_SetEntriesIterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/eduction](refs/cljs.core_eduction.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
+</td>
+<td><samp>[~~cljs.core/entries-iterator~~](refs/cljs.core_entries-iterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/es6-entries-iterator](refs/cljs.core_es6-entries-iterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/es6-iterator](refs/cljs.core_es6-iterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/es6-set-entries-iterator](refs/cljs.core_es6-set-entries-iterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
+</td>
+<td><samp>[~~cljs.core/iteration~~](refs/cljs.core_iteration.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
+</td>
+<td><samp>[~~cljs.core/iterator~~](refs/cljs.core_iterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/ranged-iterator](refs/cljs.core_ranged-iterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
+</td>
+<td><samp>[~~cljs.core/set-entries-iterator~~](refs/cljs.core_set-entries-iterator.md)</samp></td>
+</tr>
+</table>
+
+<a name="00-2371-compiler"></a> __Compiler API Changes__
+ <table>
+<tr><td>_no symbols were added or removed in this version_</td></tr>
 </table>
 
 ### 0.0-2356

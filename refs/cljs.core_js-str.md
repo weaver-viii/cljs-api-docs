@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1685-1686](https://github.com/clojure/clojurescript/blob/r2356/src/clj/cljs/core.clj#L1685-L1686)</ins>
+            └── <ins>[core.clj:1687-1688](https://github.com/clojure/clojurescript/blob/r2371/src/clj/cljs/core.clj#L1687-L1688)</ins>
 </pre>
 
 
@@ -78,9 +78,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_js-str",
  :source {:code "(defmacro js-str [s]\n  (core/list 'js* \"''+~{}\" s))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/clj/cljs/core.clj",
-          :lines [1685 1686]},
+          :lines [1687 1688]},
  :examples [{:id "e92009",
              :content "```clj\n(js-str 23)\n;;=> \"23\"\n\n(js-str #js {:foo 1})\n;;=> \"[Object object]\"\n```"}],
  :full-name "cljs.core/js-str"}

@@ -63,11 +63,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1676-1683](https://github.com/clojure/clojurescript/blob/r2356/src/clj/cljs/core.clj#L1676-L1683)</ins>
+            └── <ins>[core.clj:1678-1685](https://github.com/clojure/clojurescript/blob/r2371/src/clj/cljs/core.clj#L1678-L1685)</ins>
 </pre>
 
 
@@ -94,9 +94,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_lazy-cat",
  :source {:code "(defmacro lazy-cat\n  [& colls]\n  `(concat ~@(map #(core/list `lazy-seq %) colls)))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/clj/cljs/core.clj",
-          :lines [1676 1683]},
+          :lines [1678 1685]},
  :full-name "cljs.core/lazy-cat",
  :clj-symbol "clojure.core/lazy-cat",
  :docstring "Expands to code which yields a lazy sequence of the concatenation\nof the supplied colls.  Each coll expr is not evaluated until it is\nneeded. \n\n(lazy-cat xs ys zs) === (concat (lazy-seq xs) (lazy-seq ys) (lazy-seq zs))"}

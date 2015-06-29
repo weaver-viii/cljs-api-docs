@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4854](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/core.cljs#L4854)</ins>
+            └── <ins>[core.cljs:4904](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L4904)</ins>
 </pre>
 
 
@@ -47,9 +47,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :parent-type "ObjMap",
  :source {:code "(set! (.-EMPTY ObjMap) (ObjMap. nil (array) (js-obj) 0 0))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [4854]},
+          :lines [4904]},
  :full-name "cljs.core/ObjMap.EMPTY",
  :full-name-encode "cljs.core_ObjMapDOTEMPTY",
  :history [["+" "0.0-927"]]}

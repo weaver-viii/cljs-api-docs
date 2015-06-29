@@ -32,26 +32,26 @@ Source code:
 ```clj
 (defn dedupe
   ([]
-   (fn [f1]
+   (fn [rf]
      (let [pa (atom ::none)]
        (fn
-         ([] (f1))
-         ([result] (f1 result))
+         ([] (rf))
+         ([result] (rf result))
          ([result input]
             (let [prior @pa]
               (reset! pa input)
               (if (= prior input)
                 result
-                (f1 result input))))))))
+                (rf result input))))))))
   ([coll] (sequence (dedupe) coll)))
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8167-8182](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/core.cljs#L8167-L8182)</ins>
+            └── <ins>[core.cljs:8269-8284](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L8269-L8284)</ins>
 </pre>
 
 
@@ -74,11 +74,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-2301"]],
  :type "function",
  :full-name-encode "cljs.core_dedupe",
- :source {:code "(defn dedupe\n  ([]\n   (fn [f1]\n     (let [pa (atom ::none)]\n       (fn\n         ([] (f1))\n         ([result] (f1 result))\n         ([result input]\n            (let [prior @pa]\n              (reset! pa input)\n              (if (= prior input)\n                result\n                (f1 result input))))))))\n  ([coll] (sequence (dedupe) coll)))",
+ :source {:code "(defn dedupe\n  ([]\n   (fn [rf]\n     (let [pa (atom ::none)]\n       (fn\n         ([] (rf))\n         ([result] (rf result))\n         ([result input]\n            (let [prior @pa]\n              (reset! pa input)\n              (if (= prior input)\n                result\n                (rf result input))))))))\n  ([coll] (sequence (dedupe) coll)))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [8167 8182]},
+          :lines [8269 8284]},
  :full-name "cljs.core/dedupe",
  :docstring "Returns a lazy sequence removing consecutive duplicates in coll.\nReturns a transducer when no collection is provided."}
 

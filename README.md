@@ -2,8 +2,8 @@
 
  <table border="1">
 <tr>
-<td>__0.0-2356__ [all](HISTORY.md)</td>
-<td>2014-09-26</td>
+<td>__0.0-2371__ [all](HISTORY.md)</td>
+<td>2014-10-10</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.6.0</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
 <td>[<img valign="middle" width="18px" src="http://i.imgur.com/yGyeE7k.png">
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-2356__ ([See Full History](HISTORY.md)):
+Changes from __0.0-2371__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
@@ -85,15 +85,129 @@ __Library API Changes__
 
 <tr>
 <td>
-<img valign="middle" src="https://img.shields.io/badge/+-protocol-brightgreen.svg">
+<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
 </td>
-<td><samp>[cljs.core/IIterable](refs/cljs.core_IIterable.md)</samp></td>
+<td><samp>[cljs.core/ES6EntriesIterator](refs/cljs.core_ES6EntriesIterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/ES6Iterator](refs/cljs.core_ES6Iterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/ES6SetEntriesIterator](refs/cljs.core_ES6SetEntriesIterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/Eduction](refs/cljs.core_Eduction.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-type-red.svg">
+</td>
+<td><samp>[~~cljs.core/EntriesIterator~~](refs/cljs.core_EntriesIterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/IndexedSeqIterator](refs/cljs.core_IndexedSeqIterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-type-red.svg">
+</td>
+<td><samp>[~~cljs.core/Iteration~~](refs/cljs.core_Iteration.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-type-red.svg">
+</td>
+<td><samp>[~~cljs.core/Iterator~~](refs/cljs.core_Iterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/PersistentArrayMapIterator](refs/cljs.core_PersistentArrayMapIterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/RangeIterator](refs/cljs.core_RangeIterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-type-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/RangedIterator](refs/cljs.core_RangedIterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-type-red.svg">
+</td>
+<td><samp>[~~cljs.core/SetEntriesIterator~~](refs/cljs.core_SetEntriesIterator.md)</samp></td>
 </tr>
 <tr>
 <td>
 <img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
 </td>
-<td><samp>[cljs.core/iterable?](refs/cljs.core_iterableQMARK.md)</samp></td>
+<td><samp>[cljs.core/eduction](refs/cljs.core_eduction.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
+</td>
+<td><samp>[~~cljs.core/entries-iterator~~](refs/cljs.core_entries-iterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/es6-entries-iterator](refs/cljs.core_es6-entries-iterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/es6-iterator](refs/cljs.core_es6-iterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/es6-set-entries-iterator](refs/cljs.core_es6-set-entries-iterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
+</td>
+<td><samp>[~~cljs.core/iteration~~](refs/cljs.core_iteration.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
+</td>
+<td><samp>[~~cljs.core/iterator~~](refs/cljs.core_iterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[cljs.core/ranged-iterator](refs/cljs.core_ranged-iterator.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-function-red.svg">
+</td>
+<td><samp>[~~cljs.core/set-entries-iterator~~](refs/cljs.core_set-entries-iterator.md)</samp></td>
 </tr>
 </table>
 
@@ -1543,6 +1657,12 @@ application.
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
 </tr>
 <tr>
+<td></td>
+<td><samp>[eduction](refs/cljs.core_eduction.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[+] 0.0-2371" src="https://img.shields.io/badge/+-0.0--2371-lightgrey.svg"></a> </td>
+</tr>
+<tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/empty)</td>
 <td><samp>[empty](refs/cljs.core_empty.md)</samp></td>
 <td><samp>function</samp></td>
@@ -1562,9 +1682,27 @@ application.
 </tr>
 <tr>
 <td></td>
-<td><samp>[entries-iterator](refs/cljs.core_entries-iterator.md)</samp></td>
+<td><samp>[~~entries-iterator~~](refs/cljs.core_entries-iterator.md)</samp></td>
 <td><samp>function</samp></td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2268"><img valign="middle" alt="[+] 0.0-2268" src="https://img.shields.io/badge/+-0.0--2268-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2268"><img valign="middle" alt="[+] 0.0-2268" src="https://img.shields.io/badge/+-0.0--2268-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[×] 0.0-2371" src="https://img.shields.io/badge/×-0.0--2371-red.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[es6-entries-iterator](refs/cljs.core_es6-entries-iterator.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[+] 0.0-2371" src="https://img.shields.io/badge/+-0.0--2371-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[es6-iterator](refs/cljs.core_es6-iterator.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[+] 0.0-2371" src="https://img.shields.io/badge/+-0.0--2371-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[es6-set-entries-iterator](refs/cljs.core_es6-set-entries-iterator.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[+] 0.0-2371" src="https://img.shields.io/badge/+-0.0--2371-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/even?)</td>
@@ -1988,15 +2126,15 @@ application.
 </tr>
 <tr>
 <td></td>
-<td><samp>[iteration](refs/cljs.core_iteration.md)</samp></td>
+<td><samp>[~~iteration~~](refs/cljs.core_iteration.md)</samp></td>
 <td><samp>function</samp></td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2301"><img valign="middle" alt="[+] 0.0-2301" src="https://img.shields.io/badge/+-0.0--2301-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2301"><img valign="middle" alt="[+] 0.0-2301" src="https://img.shields.io/badge/+-0.0--2301-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[×] 0.0-2371" src="https://img.shields.io/badge/×-0.0--2371-red.svg"></a> </td>
 </tr>
 <tr>
 <td></td>
-<td><samp>[iterator](refs/cljs.core_iterator.md)</samp></td>
+<td><samp>[~~iterator~~](refs/cljs.core_iterator.md)</samp></td>
 <td><samp>function</samp></td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2268"><img valign="middle" alt="[+] 0.0-2268" src="https://img.shields.io/badge/+-0.0--2268-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2268"><img valign="middle" alt="[+] 0.0-2268" src="https://img.shields.io/badge/+-0.0--2268-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[×] 0.0-2371" src="https://img.shields.io/badge/×-0.0--2371-red.svg"></a> </td>
 </tr>
 <tr>
 <td></td>
@@ -2713,6 +2851,12 @@ application.
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
 </tr>
 <tr>
+<td></td>
+<td><samp>[ranged-iterator](refs/cljs.core_ranged-iterator.md)</samp></td>
+<td><samp>function</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[+] 0.0-2371" src="https://img.shields.io/badge/+-0.0--2371-lightgrey.svg"></a> </td>
+</tr>
+<tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](http://clojure.github.io/clojure/branch-master/clojure.core-api.html#clojure.core/re-find)</td>
 <td><samp>[re-find](refs/cljs.core_re-find.md)</samp></td>
 <td><samp>function</samp></td>
@@ -2954,9 +3098,9 @@ application.
 </tr>
 <tr>
 <td></td>
-<td><samp>[set-entries-iterator](refs/cljs.core_set-entries-iterator.md)</samp></td>
+<td><samp>[~~set-entries-iterator~~](refs/cljs.core_set-entries-iterator.md)</samp></td>
 <td><samp>function</samp></td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2268"><img valign="middle" alt="[+] 0.0-2268" src="https://img.shields.io/badge/+-0.0--2268-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2268"><img valign="middle" alt="[+] 0.0-2268" src="https://img.shields.io/badge/+-0.0--2268-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[×] 0.0-2371" src="https://img.shields.io/badge/×-0.0--2371-red.svg"></a> </td>
 </tr>
 <tr>
 <td></td>
@@ -3979,6 +4123,30 @@ application.
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-927"><img valign="middle" alt="[+] 0.0-927" src="https://img.shields.io/badge/+-0.0--927-lightgrey.svg"></a> </td>
 </tr>
 <tr>
+<td></td>
+<td><samp>[ES6EntriesIterator](refs/cljs.core_ES6EntriesIterator.md)</samp></td>
+<td><samp>type</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[+] 0.0-2371" src="https://img.shields.io/badge/+-0.0--2371-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[ES6Iterator](refs/cljs.core_ES6Iterator.md)</samp></td>
+<td><samp>type</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[+] 0.0-2371" src="https://img.shields.io/badge/+-0.0--2371-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[ES6SetEntriesIterator](refs/cljs.core_ES6SetEntriesIterator.md)</samp></td>
+<td><samp>type</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[+] 0.0-2371" src="https://img.shields.io/badge/+-0.0--2371-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[Eduction](refs/cljs.core_Eduction.md)</samp></td>
+<td><samp>type</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[+] 0.0-2371" src="https://img.shields.io/badge/+-0.0--2371-lightgrey.svg"></a> </td>
+</tr>
+<tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](https://github.com/clojure/clojure/blob//src/jvm/clojure/lang/PersistentList.java)</td>
 <td><samp>[EmptyList](refs/cljs.core_EmptyList.md)</samp></td>
 <td><samp>type</samp></td>
@@ -3986,9 +4154,9 @@ application.
 </tr>
 <tr>
 <td></td>
-<td><samp>[EntriesIterator](refs/cljs.core_EntriesIterator.md)</samp></td>
+<td><samp>[~~EntriesIterator~~](refs/cljs.core_EntriesIterator.md)</samp></td>
 <td><samp>type</samp></td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2268"><img valign="middle" alt="[+] 0.0-2268" src="https://img.shields.io/badge/+-0.0--2268-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2268"><img valign="middle" alt="[+] 0.0-2268" src="https://img.shields.io/badge/+-0.0--2268-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[×] 0.0-2371" src="https://img.shields.io/badge/×-0.0--2371-red.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](https://github.com/clojure/clojure/blob//src/jvm/clojure/lang/ExceptionInfo.java)</td>
@@ -4028,15 +4196,21 @@ application.
 </tr>
 <tr>
 <td></td>
-<td><samp>[Iteration](refs/cljs.core_Iteration.md)</samp></td>
+<td><samp>[IndexedSeqIterator](refs/cljs.core_IndexedSeqIterator.md)</samp></td>
 <td><samp>type</samp></td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2301"><img valign="middle" alt="[+] 0.0-2301" src="https://img.shields.io/badge/+-0.0--2301-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[+] 0.0-2371" src="https://img.shields.io/badge/+-0.0--2371-lightgrey.svg"></a> </td>
 </tr>
 <tr>
 <td></td>
-<td><samp>[Iterator](refs/cljs.core_Iterator.md)</samp></td>
+<td><samp>[~~Iteration~~](refs/cljs.core_Iteration.md)</samp></td>
 <td><samp>type</samp></td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2268"><img valign="middle" alt="[+] 0.0-2268" src="https://img.shields.io/badge/+-0.0--2268-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2301"><img valign="middle" alt="[+] 0.0-2301" src="https://img.shields.io/badge/+-0.0--2301-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[×] 0.0-2371" src="https://img.shields.io/badge/×-0.0--2371-red.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[~~Iterator~~](refs/cljs.core_Iterator.md)</samp></td>
+<td><samp>type</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2268"><img valign="middle" alt="[+] 0.0-2268" src="https://img.shields.io/badge/+-0.0--2268-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[×] 0.0-2371" src="https://img.shields.io/badge/×-0.0--2371-red.svg"></a> </td>
 </tr>
 <tr>
 <td>[<img width="18px" valign="middle" src="http://i.imgur.com/1GjPKvB.png">](https://github.com/clojure/clojure/blob//src/jvm/clojure/lang/APersistentMap.java)</td>
@@ -4178,6 +4352,12 @@ application.
 </tr>
 <tr>
 <td></td>
+<td><samp>[PersistentArrayMapIterator](refs/cljs.core_PersistentArrayMapIterator.md)</samp></td>
+<td><samp>type</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[+] 0.0-2371" src="https://img.shields.io/badge/+-0.0--2371-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
 <td><samp>[PersistentArrayMapSeq](refs/cljs.core_PersistentArrayMapSeq.md)</samp></td>
 <td><samp>type</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1820"><img valign="middle" alt="[+] 0.0-1820" src="https://img.shields.io/badge/+-0.0--1820-lightgrey.svg"></a> </td>
@@ -4310,6 +4490,18 @@ application.
 </tr>
 <tr>
 <td></td>
+<td><samp>[RangeIterator](refs/cljs.core_RangeIterator.md)</samp></td>
+<td><samp>type</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[+] 0.0-2371" src="https://img.shields.io/badge/+-0.0--2371-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
+<td><samp>[RangedIterator](refs/cljs.core_RangedIterator.md)</samp></td>
+<td><samp>type</samp></td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[+] 0.0-2371" src="https://img.shields.io/badge/+-0.0--2371-lightgrey.svg"></a> </td>
+</tr>
+<tr>
+<td></td>
 <td><samp>[RedNode](refs/cljs.core_RedNode.md)</samp></td>
 <td><samp>type</samp></td>
 <td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1211"><img valign="middle" alt="[+] 0.0-1211" src="https://img.shields.io/badge/+-0.0--1211-lightgrey.svg"></a> </td>
@@ -4340,9 +4532,9 @@ application.
 </tr>
 <tr>
 <td></td>
-<td><samp>[SetEntriesIterator](refs/cljs.core_SetEntriesIterator.md)</samp></td>
+<td><samp>[~~SetEntriesIterator~~](refs/cljs.core_SetEntriesIterator.md)</samp></td>
 <td><samp>type</samp></td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2268"><img valign="middle" alt="[+] 0.0-2268" src="https://img.shields.io/badge/+-0.0--2268-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2268"><img valign="middle" alt="[+] 0.0-2268" src="https://img.shields.io/badge/+-0.0--2268-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[×] 0.0-2371" src="https://img.shields.io/badge/×-0.0--2371-red.svg"></a> </td>
 </tr>
 <tr>
 <td></td>

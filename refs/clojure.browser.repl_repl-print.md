@@ -27,12 +27,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[repl.cljs:23-25](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/clojure/browser/repl.cljs#L23-L25)</ins>
+                └── <ins>[repl.cljs:23-25](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/clojure/browser/repl.cljs#L23-L25)</ins>
 </pre>
 
 
@@ -55,7 +55,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[data]"],
  :source {:code "(defn repl-print [data]\n  (if-let [conn @xpc-connection]\n    (net/transmit conn :print (pr-str data))))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/clojure/browser/repl.cljs",
           :lines [23 25]},
  :full-name "clojure.browser.repl/repl-print",

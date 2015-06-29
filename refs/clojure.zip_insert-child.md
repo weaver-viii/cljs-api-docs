@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:194-198](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/clojure/zip.cljs#L194-L198)</ins>
+            └── <ins>[zip.cljs:194-198](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/clojure/zip.cljs#L194-L198)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_insert-child",
  :source {:code "(defn insert-child\n  [loc item]\n    (replace loc (make-node loc (node loc) (cons item (children loc)))))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [194 198]},
  :full-name "clojure.zip/insert-child",

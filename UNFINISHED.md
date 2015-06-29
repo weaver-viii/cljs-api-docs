@@ -456,7 +456,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ES6EntriesIterator</td>
-<td></td>
+<td>[ref](refs/cljs.core_ES6EntriesIterator.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ES6EntriesIterator.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -464,7 +464,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ES6Iterator</td>
-<td></td>
+<td>[ref](refs/cljs.core_ES6Iterator.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ES6Iterator.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -480,7 +480,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ES6SetEntriesIterator</td>
-<td></td>
+<td>[ref](refs/cljs.core_ES6SetEntriesIterator.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ES6SetEntriesIterator.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -488,7 +488,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/Eduction</td>
-<td></td>
+<td>[ref](refs/cljs.core_Eduction.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_Eduction.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -992,7 +992,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/IndexedSeqIterator</td>
-<td></td>
+<td>[ref](refs/cljs.core_IndexedSeqIterator.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_IndexedSeqIterator.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1200,7 +1200,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/PersistentArrayMapIterator</td>
-<td></td>
+<td>[ref](refs/cljs.core_PersistentArrayMapIterator.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_PersistentArrayMapIterator.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1392,7 +1392,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/RangeIterator</td>
-<td></td>
+<td>[ref](refs/cljs.core_RangeIterator.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_RangeIterator.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1400,7 +1400,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/RangedIterator</td>
-<td></td>
+<td>[ref](refs/cljs.core_RangedIterator.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_RangedIterator.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2368,7 +2368,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/eduction</td>
-<td></td>
+<td>[ref](refs/cljs.core_eduction.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_eduction.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2416,7 +2416,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/es6-entries-iterator</td>
-<td></td>
+<td>[ref](refs/cljs.core_es6-entries-iterator.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_es6-entries-iterator.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2432,7 +2432,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/es6-iterator</td>
-<td></td>
+<td>[ref](refs/cljs.core_es6-iterator.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_es6-iterator.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2448,7 +2448,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/es6-set-entries-iterator</td>
-<td></td>
+<td>[ref](refs/cljs.core_es6-set-entries-iterator.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_es6-set-entries-iterator.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3920,7 +3920,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/ranged-iterator</td>
-<td></td>
+<td>[ref](refs/cljs.core_ranged-iterator.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_ranged-iterator.cljsdoc)</td>
 <td></td>
 <td></td>

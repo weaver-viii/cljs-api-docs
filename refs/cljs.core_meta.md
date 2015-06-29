@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1304-1309](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/core.cljs#L1304-L1309)</ins>
+            └── <ins>[core.cljs:1317-1322](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L1317-L1322)</ins>
 </pre>
 
 
@@ -66,9 +66,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_meta",
  :source {:code "(defn meta\n  [o]\n  (when (and (not (nil? o))\n             (satisfies? IMeta o))\n    (-meta o)))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1304 1309]},
+          :lines [1317 1322]},
  :full-name "cljs.core/meta",
  :clj-symbol "clojure.core/meta",
  :docstring "Returns the metadata of obj, returns nil if there is no metadata."}

@@ -140,11 +140,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:676-692](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/core.cljs#L676-L692)</ins>
+            └── <ins>[core.cljs:676-692](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L676-L692)</ins>
 </pre>
 
 
@@ -172,7 +172,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_EQ",
  :source {:code "(defn ^boolean =\n  ([x] true)\n  ([x y]\n    (if (nil? x)\n      (nil? y)\n      (or (identical? x y)\n        ^boolean (-equiv x y))))\n  ([x y & more]\n     (if (= x y)\n       (if (next more)\n         (recur y (first more) (next more))\n         (= y (first more)))\n       false)))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/cljs/core.cljs",
           :lines [676 692]},
  :examples [{:id "edffb6",

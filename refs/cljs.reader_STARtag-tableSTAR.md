@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:564-568](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/reader.cljs#L564-L568)</ins>
+            └── <ins>[reader.cljs:564-568](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/reader.cljs#L564-L568)</ins>
 </pre>
 
 
@@ -50,7 +50,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "dynamic var",
  :source {:code "(def ^:dynamic *tag-table*\n  (atom {\"inst\"  read-date\n         \"uuid\"  read-uuid\n         \"queue\" read-queue\n         \"js\"    read-js}))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [564 568]},
  :full-name "cljs.reader/*tag-table*",

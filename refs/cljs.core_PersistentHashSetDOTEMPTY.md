@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7082-7083](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/core.cljs#L7082-L7083)</ins>
+            └── <ins>[core.cljs:7160-7161](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L7160-L7161)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_PersistentHashSetDOTEMPTY",
  :source {:code "(set! (.-EMPTY PersistentHashSet)\n  (PersistentHashSet. nil (.-EMPTY PersistentArrayMap) 0))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7082 7083]},
+          :lines [7160 7161]},
  :full-name "cljs.core/PersistentHashSet.EMPTY",
  :clj-symbol "clojure.lang/PersistentHashSet.EMPTY"}
 

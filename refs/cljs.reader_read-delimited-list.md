@@ -38,11 +38,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:225-238](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/reader.cljs#L225-L238)</ins>
+            └── <ins>[reader.cljs:225-238](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/reader.cljs#L225-L238)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[delim rdr recursive?]"],
  :source {:code "(defn read-delimited-list\n  [delim rdr recursive?]\n  (loop [a (transient [])]\n    (let [ch (read-past whitespace? rdr)]\n      (when-not ch (reader-error rdr \"EOF while reading\"))\n      (if (identical? delim ch)\n        (persistent! a)\n        (if-let [macrofn (macros ch)]\n          (let [mret (macrofn rdr ch)]\n            (recur (if (identical? mret rdr) a (conj! a mret))))\n          (do\n            (unread rdr ch)\n            (let [o (read rdr true nil recursive?)]\n              (recur (if (identical? o rdr) a (conj! a o))))))))))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [225 238]},
  :full-name "cljs.reader/read-delimited-list",

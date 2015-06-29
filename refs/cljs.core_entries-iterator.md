@@ -1,10 +1,10 @@
-## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> cljs.core/entries-iterator
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> ~~cljs.core/entries-iterator~~
 
  <table border="1">
 <tr>
 
 <td>function</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2268"><img valign="middle" alt="[+] 0.0-2268" src="https://img.shields.io/badge/+-0.0--2268-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2268"><img valign="middle" alt="[+] 0.0-2268" src="https://img.shields.io/badge/+-0.0--2268-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[×] 0.0-2371" src="https://img.shields.io/badge/×-0.0--2371-red.svg"></a> </td>
 </tr>
 </table>
 
@@ -49,16 +49,17 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "entries-iterator",
- :type "function",
  :signature ["[coll]"],
+ :history [["+" "0.0-2268"] ["-" "0.0-2371"]],
+ :type "function",
+ :full-name-encode "cljs.core_entries-iterator",
  :source {:code "(defn entries-iterator [coll]\n  (EntriesIterator. (seq coll)))",
           :repo "clojurescript",
           :tag "r2356",
           :filename "src/cljs/cljs/core.cljs",
           :lines [4883 4884]},
  :full-name "cljs.core/entries-iterator",
- :full-name-encode "cljs.core_entries-iterator",
- :history [["+" "0.0-2268"]]}
+ :removed {:in "0.0-2371", :last-seen "0.0-2356"}}
 
 ```
 

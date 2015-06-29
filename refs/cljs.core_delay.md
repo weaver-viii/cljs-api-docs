@@ -33,11 +33,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1110-1115](https://github.com/clojure/clojurescript/blob/r2356/src/clj/cljs/core.clj#L1110-L1115)</ins>
+            └── <ins>[core.clj:1112-1117](https://github.com/clojure/clojurescript/blob/r2371/src/clj/cljs/core.clj#L1112-L1117)</ins>
 </pre>
 
 
@@ -62,9 +62,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_delay",
  :source {:code "(defmacro delay [& body]\n  \"Takes a body of expressions and yields a Delay object that will\n  invoke the body only the first time it is forced (with force or deref/@), and\n  will cache the result and return it on all subsequent force\n  calls.\"\n  `(new cljs.core/Delay (fn [] ~@body) nil))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/clj/cljs/core.clj",
-          :lines [1110 1115]},
+          :lines [1112 1117]},
  :full-name "cljs.core/delay",
  :clj-symbol "clojure.core/delay"}
 

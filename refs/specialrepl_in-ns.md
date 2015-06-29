@@ -51,11 +51,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:162-171](https://github.com/clojure/clojurescript/blob/r2356/src/clj/cljs/repl.clj#L162-L171)</ins>
+            └── <ins>[repl.clj:162-171](https://github.com/clojure/clojurescript/blob/r2371/src/clj/cljs/repl.clj#L162-L171)</ins>
 </pre>
 
 
@@ -81,7 +81,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "specialrepl_in-ns",
  :source {:code "(def default-special-fns\n  (let [load-file-fn (fn [repl-env file] (load-file repl-env file))]\n    {'in-ns (fn [_ quoted-ns]\n              (let [ns-name (second quoted-ns)]\n                (when-not (ana/get-namespace ns-name)\n                  (swap! env/*compiler* update-in [::ana/namespaces ns-name] {:name ns-name}))\n                (set! ana/*cljs-ns* ns-name)))\n     'load-file load-file-fn\n     'clojure.core/load-file load-file-fn\n     'load-namespace (fn [repl-env ns] (load-namespace repl-env ns))}))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/clj/cljs/repl.clj",
           :lines [162 171]},
  :examples [{:id "e81eb3", :content "```clj\n(in-ns 'foo.core)\n```"}],

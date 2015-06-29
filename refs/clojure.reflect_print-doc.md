@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── clojure
-            └── <ins>[reflect.cljs:38-42](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/clojure/reflect.cljs#L38-L42)</ins>
+            └── <ins>[reflect.cljs:38-42](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/clojure/reflect.cljs#L38-L42)</ins>
 </pre>
 
 
@@ -56,7 +56,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[{:keys [name method-params doc]}]"],
  :source {:code "(defn print-doc [{:keys [name method-params doc]}]\n  (when-not (empty? name)\n    (println name)\n    (println method-params)\n    (println doc)))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/clojure/reflect.cljs",
           :lines [38 42]},
  :full-name "clojure.reflect/print-doc",

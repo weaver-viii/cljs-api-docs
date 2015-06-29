@@ -35,12 +35,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:237-240](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/clojure/core/reducers.cljs#L237-L240)</ins>
+                └── <ins>[reducers.cljs:237-240](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/clojure/core/reducers.cljs#L237-L240)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.core.reducers_foldcat",
  :source {:code "(defn foldcat\n  [coll]\n  (fold cat append! coll))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/clojure/core/reducers.cljs",
           :lines [237 240]},
  :full-name "clojure.core.reducers/foldcat",

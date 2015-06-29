@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2749-2754](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/core.cljs#L2749-L2754)</ins>
+            └── <ins>[core.cljs:2762-2767](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L2762-L2767)</ins>
 </pre>
 
 
@@ -66,9 +66,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_persistentBANG",
  :source {:code "(defn persistent!\n  [tcoll]\n  (-persistent! tcoll))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2749 2754]},
+          :lines [2762 2767]},
  :full-name "cljs.core/persistent!",
  :clj-symbol "clojure.core/persistent!",
  :docstring "Returns a new, persistent version of the transient collection, in\nconstant time. The transient collection cannot be used after this\ncall, any such use will throw an exception."}

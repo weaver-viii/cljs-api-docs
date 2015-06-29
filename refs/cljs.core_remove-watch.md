@@ -68,11 +68,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8092-8097](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/core.cljs#L8092-L8097)</ins>
+            └── <ins>[core.cljs:8194-8199](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L8194-L8199)</ins>
 </pre>
 
 
@@ -99,9 +99,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_remove-watch",
  :source {:code "(defn remove-watch\n  [iref key]\n  (-remove-watch iref key))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [8092 8097]},
+          :lines [8194 8199]},
  :examples [{:id "70044a",
              :content "```clj\n(def a (atom {}))\n\n(add-watch a :logger\n  (fn [_key _atom old-state new-state]\n    (println \"old:\" old-state)\n    (println \"new:\" new-state)))\n\n(swap! a assoc :foo \"bar\")\n;;=> will print the following:\n;; old: {}\n;; new: {:foo \"bar\"}\n\n(remove-watch a :logger)\n\n(swap! a assoc :foo 3)\n;;=> nothing will be printed...\n```"}],
  :full-name "cljs.core/remove-watch",

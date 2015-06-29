@@ -61,11 +61,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4587-4623](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/core.cljs#L4587-L4623)</ins>
+            └── <ins>[core.cljs:4637-4673](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L4637-L4673)</ins>
 </pre>
 
 
@@ -88,9 +88,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[meta front rear __hash]"],
  :source {:code "(deftype PersistentQueueSeq [meta front rear ^:mutable __hash]\n  Object\n  (toString [coll]\n    (pr-str* coll))\n  (equiv [this other]\n    (-equiv this other))\n\n  IWithMeta\n  (-with-meta [coll meta] (PersistentQueueSeq. meta front rear __hash))\n\n  IMeta\n  (-meta [coll] meta)\n\n  ISeq\n  (-first [coll] (first front))\n  (-rest  [coll]\n    (if-let [f1 (next front)]\n      (PersistentQueueSeq. meta f1 rear nil)\n      (if (nil? rear)\n        (-empty coll)\n        (PersistentQueueSeq. meta rear nil nil))))\n\n  ICollection\n  (-conj [coll o] (cons o coll))\n\n  IEmptyableCollection\n  (-empty [coll] (with-meta (.-EMPTY List) meta))\n\n  ISequential\n  IEquiv\n  (-equiv [coll other] (equiv-sequential coll other))\n\n  IHash\n  (-hash [coll] (caching-hash coll hash-ordered-coll __hash))\n\n  ISeqable\n  (-seq [coll] coll))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [4587 4623]},
+          :lines [4637 4673]},
  :full-name "cljs.core/PersistentQueueSeq",
  :full-name-encode "cljs.core_PersistentQueueSeq",
  :history [["+" "0.0-927"]]}

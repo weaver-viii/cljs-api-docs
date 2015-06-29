@@ -33,12 +33,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[rhino.clj:86-94](https://github.com/clojure/clojurescript/blob/r2356/src/clj/cljs/repl/rhino.clj#L86-L94)</ins>
+                └── <ins>[rhino.clj:86-94](https://github.com/clojure/clojurescript/blob/r2371/src/clj/cljs/repl/rhino.clj#L86-L94)</ins>
 </pre>
 
 
@@ -61,7 +61,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[repl-env ns url]"],
  :source {:code "(defn load-javascript [repl-env ns url]\n  (let [missing (remove #(contains? @(:loaded-libs repl-env) %) ns)]\n    (when (seq missing)\n      (do (try\n            (with-open [reader (io/reader url)]\n              (-eval reader repl-env (.toString url) 1))\n            ;; TODO: don't show errors for goog/base.js line number 105\n            (catch Throwable ex (println (.getMessage ex))))\n          (swap! (:loaded-libs repl-env) (partial apply conj) missing)))))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/clj/cljs/repl/rhino.clj",
           :lines [86 94]},
  :full-name "cljs.repl.rhino/load-javascript",

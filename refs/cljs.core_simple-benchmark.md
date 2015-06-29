@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1621-1637](https://github.com/clojure/clojurescript/blob/r2356/src/clj/cljs/core.clj#L1621-L1637)</ins>
+            └── <ins>[core.clj:1623-1639](https://github.com/clojure/clojurescript/blob/r2371/src/clj/cljs/core.clj#L1623-L1639)</ins>
 </pre>
 
 
@@ -74,9 +74,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_simple-benchmark",
  :source {:code "(defmacro simple-benchmark\n  [bindings expr iterations & {:keys [print-fn] :or {print-fn 'println}}]\n  (let [bs-str   (pr-str bindings)\n        expr-str (pr-str expr)]\n    `(let ~bindings\n       (let [start#   (.getTime (js/Date.))\n             ret#     (dotimes [_# ~iterations] ~expr)\n             end#     (.getTime (js/Date.))\n             elapsed# (- end# start#)]\n         (~print-fn (str ~bs-str \", \" ~expr-str \", \"\n                         ~iterations \" runs, \" elapsed# \" msecs\"))))))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/clj/cljs/core.clj",
-          :lines [1621 1637]},
+          :lines [1623 1639]},
  :full-name "cljs.core/simple-benchmark",
  :docstring "Runs expr iterations times in the context of a let expression with\nthe given bindings, then prints out the bindings and the expr\nfollowed by number of iterations and total time. The optional\nargument print-fn, defaulting to println, sets function used to\nprint the result. expr's string representation will be produced\nusing pr-str in any case."}
 

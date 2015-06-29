@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7691-7703](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/cljs/core.cljs#L7691-L7703)</ins>
+            └── <ins>[core.cljs:7791-7803](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/cljs/core.cljs#L7791-L7803)</ins>
 </pre>
 
 
@@ -80,9 +80,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_re-find",
  :source {:code "(defn re-find\n  [re s]\n  (if (string? s)\n    (let [matches (.exec re s)]\n      (when-not (nil? matches)\n        (if (== (count matches) 1)\n          (first matches)\n          (vec matches))))\n    (throw (js/TypeError. \"re-find must match against a string.\"))))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7691 7703]},
+          :lines [7791 7803]},
  :full-name "cljs.core/re-find",
  :clj-symbol "clojure.core/re-find",
  :docstring "Returns the first regex match, if any, of s to re, using\nre.exec(s). Returns a vector, containing first the matching\nsubstring, then any capturing groups if the regular expression contains\ncapturing groups."}

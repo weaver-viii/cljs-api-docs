@@ -46,12 +46,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:152-162](https://github.com/clojure/clojurescript/blob/r2356/src/cljs/clojure/core/reducers.cljs#L152-L162)</ins>
+                └── <ins>[reducers.cljs:152-162](https://github.com/clojure/clojurescript/blob/r2371/src/cljs/clojure/core/reducers.cljs#L152-L162)</ins>
 </pre>
 
 
@@ -76,7 +76,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.core.reducers_take-while",
  :source {:code "(defcurried take-while\n  \"Ends the reduction of coll when (pred val) returns logical false.\"\n  {}\n  [pred coll]\n  (reducer coll\n   (fn [f1]\n     (rfn [f1 k]\n          ([ret k v]\n             (if (pred k v)\n               (f1 ret k v)\n               (reduced ret)))))))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/cljs/clojure/core/reducers.cljs",
           :lines [152 162]},
  :full-name "clojure.core.reducers/take-while",

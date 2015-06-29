@@ -33,11 +33,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2356
+clojurescript @ r2371
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:658-662](https://github.com/clojure/clojurescript/blob/r2356/src/clj/cljs/core.clj#L658-L662)</ins>
+            └── <ins>[core.clj:658-662](https://github.com/clojure/clojurescript/blob/r2371/src/clj/cljs/core.clj#L658-L662)</ins>
 </pre>
 
 
@@ -62,7 +62,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_this-as",
  :source {:code "(defmacro this-as\n  [name & body]\n  `(let [~name (js-this)]\n     ~@body))",
           :repo "clojurescript",
-          :tag "r2356",
+          :tag "r2371",
           :filename "src/clj/cljs/core.clj",
           :lines [658 662]},
  :full-name "cljs.core/this-as",

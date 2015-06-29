@@ -1,10 +1,10 @@
-## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> cljs.core/Iteration
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> ~~cljs.core/Iteration~~
 
  <table border="1">
 <tr>
 
 <td>type</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2301"><img valign="middle" alt="[+] 0.0-2301" src="https://img.shields.io/badge/+-0.0--2301-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2301"><img valign="middle" alt="[+] 0.0-2301" src="https://img.shields.io/badge/+-0.0--2301-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2371"><img valign="middle" alt="[×] 0.0-2371" src="https://img.shields.io/badge/×-0.0--2371-red.svg"></a> </td>
 </tr>
 </table>
 
@@ -59,16 +59,17 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "Iteration",
- :type "type",
  :signature ["[xform coll]"],
+ :history [["+" "0.0-2301"] ["-" "0.0-2371"]],
+ :type "type",
+ :full-name-encode "cljs.core_Iteration",
  :source {:code "(deftype Iteration [xform coll]\n   ISequential\n   \n   ISeqable\n   (-seq [_] (seq (sequence xform coll)))\n\n   IReduce\n   (-reduce [_ f init] (transduce xform f init coll))\n\n   IPrintWithWriter\n   (-pr-writer [coll writer opts]\n     (pr-sequential-writer writer pr-writer \"(\" \" \" \")\" opts coll)))",
           :repo "clojurescript",
           :tag "r2356",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8192 8203]},
  :full-name "cljs.core/Iteration",
- :full-name-encode "cljs.core_Iteration",
- :history [["+" "0.0-2301"]]}
+ :removed {:in "0.0-2371", :last-seen "0.0-2356"}}
 
 ```
 
