@@ -26,12 +26,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2723
+clojurescript @ r2725
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:51-52](https://github.com/clojure/clojurescript/blob/r2723/src/clj/cljs/repl/browser.clj#L51-L52)</ins>
+                └── <ins>[browser.clj:51-52](https://github.com/clojure/clojurescript/blob/r2725/src/clj/cljs/repl/browser.clj#L51-L52)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[]"],
  :source {:code "(defn repl-client-js []\n  (slurp (:client-js @browser-state)))",
           :repo "clojurescript",
-          :tag "r2723",
+          :tag "r2725",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [51 52]},
  :full-name "cljs.repl.browser/repl-client-js",

@@ -20,11 +20,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2723
+clojurescript @ r2725
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:224](https://github.com/clojure/clojurescript/blob/r2723/src/cljs/cljs/test.cljs#L224)</ins>
+            └── <ins>[test.cljs:224](https://github.com/clojure/clojurescript/blob/r2725/src/cljs/cljs/test.cljs#L224)</ins>
 </pre>
 
 
@@ -46,7 +46,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "dynamic var",
  :source {:code "(def ^:dynamic *current-env* nil)",
           :repo "clojurescript",
-          :tag "r2723",
+          :tag "r2725",
           :filename "src/cljs/cljs/test.cljs",
           :lines [224]},
  :full-name "cljs.test/*current-env*",

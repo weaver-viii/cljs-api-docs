@@ -56,11 +56,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2723
+clojurescript @ r2725
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7979-7991](https://github.com/clojure/clojurescript/blob/r2723/src/cljs/cljs/core.cljs#L7979-L7991)</ins>
+            └── <ins>[core.cljs:7979-7991](https://github.com/clojure/clojurescript/blob/r2725/src/cljs/cljs/core.cljs#L7979-L7991)</ins>
 </pre>
 
 
@@ -87,7 +87,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_reductions",
  :source {:code "(defn reductions\n  ([f coll]\n     (lazy-seq\n      (if-let [s (seq coll)]\n        (reductions f (first s) (rest s))\n        (list (f)))))\n  ([f init coll]\n     (cons init\n           (lazy-seq\n            (when-let [s (seq coll)]\n              (reductions f (f init (first s)) (rest s)))))))",
           :repo "clojurescript",
-          :tag "r2723",
+          :tag "r2725",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7979 7991]},
  :full-name "cljs.core/reductions",

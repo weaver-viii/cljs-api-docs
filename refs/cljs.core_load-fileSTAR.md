@@ -30,11 +30,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2723
+clojurescript @ r2725
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1694-1699](https://github.com/clojure/clojurescript/blob/r2723/src/clj/cljs/core.clj#L1694-L1699)</ins>
+            └── <ins>[core.clj:1694-1699](https://github.com/clojure/clojurescript/blob/r2725/src/clj/cljs/core.clj#L1694-L1699)</ins>
 </pre>
 
 
@@ -57,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[f]"],
  :source {:code "(defmacro load-file* [f]\n  (core/let [{:keys [target output-dir]} (:options @env/*compiler*)]\n    (core/condp = target\n      ;; under Node.js, always relative to JVM working directory\n      :nodejs `(. js/goog (~'nodeGlobalRequire (str ~output-dir ~File/separator ~f)))\n      `(. js/goog (~'importScript_ ~f)))))",
           :repo "clojurescript",
-          :tag "r2723",
+          :tag "r2725",
           :filename "src/clj/cljs/core.clj",
           :lines [1694 1699]},
  :full-name "cljs.core/load-file*",

@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2723
+clojurescript @ r2725
 └── src
     └── cljs
         └── clojure
-            └── <ins>[set.cljs:82-85](https://github.com/clojure/clojurescript/blob/r2723/src/cljs/clojure/set.cljs#L82-L85)</ins>
+            └── <ins>[set.cljs:82-85](https://github.com/clojure/clojurescript/blob/r2725/src/cljs/clojure/set.cljs#L82-L85)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.set_rename",
  :source {:code "(defn rename\n  [xrel kmap]\n    (set (map #(rename-keys % kmap) xrel)))",
           :repo "clojurescript",
-          :tag "r2723",
+          :tag "r2725",
           :filename "src/cljs/clojure/set.cljs",
           :lines [82 85]},
  :full-name "clojure.set/rename",

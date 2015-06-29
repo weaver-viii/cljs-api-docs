@@ -24,11 +24,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2723
+clojurescript @ r2725
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:93-97](https://github.com/clojure/clojurescript/blob/r2723/src/clj/cljs/repl.clj#L93-L97)</ins>
+            └── <ins>[repl.clj:93-97](https://github.com/clojure/clojurescript/blob/r2725/src/clj/cljs/repl.clj#L93-L97)</ins>
 </pre>
 
 
@@ -51,7 +51,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_IJavaScriptEnv",
  :source {:code "(defprotocol IJavaScriptEnv\n  (-setup [this opts] \"initialize the environment\")\n  (-evaluate [this filename line js] \"evaluate a javascript string\")\n  (-load [this provides url] \"load code at url into the environment\")\n  (-tear-down [this] \"dispose of the environment\"))",
           :repo "clojurescript",
-          :tag "r2723",
+          :tag "r2725",
           :filename "src/clj/cljs/repl.clj",
           :lines [93 97]},
  :methods [{:name "-setup",

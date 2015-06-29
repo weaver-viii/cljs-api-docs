@@ -21,11 +21,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2723
+clojurescript @ r2725
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:311-312](https://github.com/clojure/clojurescript/blob/r2723/src/cljs/cljs/core.cljs#L311-L312)</ins>
+            └── <ins>[core.cljs:311-312](https://github.com/clojure/clojurescript/blob/r2725/src/cljs/cljs/core.cljs#L311-L312)</ins>
 </pre>
 
 
@@ -48,7 +48,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_IDerefWithTimeout",
  :source {:code "(defprotocol IDerefWithTimeout\n  (-deref-with-timeout [o msec timeout-val]))",
           :repo "clojurescript",
-          :tag "r2723",
+          :tag "r2725",
           :filename "src/cljs/cljs/core.cljs",
           :lines [311 312]},
  :methods [{:name "-deref-with-timeout",
