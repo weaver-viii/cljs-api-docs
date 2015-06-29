@@ -70,11 +70,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1933
+clojurescript @ r1934
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:816-827](https://github.com/clojure/clojurescript/blob/r1933/src/cljs/cljs/core.cljs#L816-L827)</ins>
+            └── <ins>[core.cljs:816-827](https://github.com/clojure/clojurescript/blob/r1934/src/cljs/cljs/core.cljs#L816-L827)</ins>
 </pre>
 
 
@@ -104,7 +104,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_conj",
  :source {:code "(defn conj\n  ([coll x]\n    (if-not (nil? coll)\n      (-conj coll x)\n      (list x)))\n  ([coll x & xs]\n    (if xs\n      (recur (conj coll x) (first xs) (next xs))\n      (conj coll x))))",
           :repo "clojurescript",
-          :tag "r1933",
+          :tag "r1934",
           :filename "src/cljs/cljs/core.cljs",
           :lines [816 827]},
  :full-name "cljs.core/conj",

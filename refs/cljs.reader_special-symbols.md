@@ -30,11 +30,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1933
+clojurescript @ r1934
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:310-315](https://github.com/clojure/clojurescript/blob/r1933/src/cljs/cljs/reader.cljs#L310-L315)</ins>
+            └── <ins>[reader.cljs:310-315](https://github.com/clojure/clojurescript/blob/r1934/src/cljs/cljs/reader.cljs#L310-L315)</ins>
 </pre>
 
 
@@ -57,7 +57,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[t not-found]"],
  :source {:code "(defn special-symbols [t not-found]\n  (cond\n   (identical? t \"nil\") nil\n   (identical? t \"true\") true\n   (identical? t \"false\") false\n   :else not-found))",
           :repo "clojurescript",
-          :tag "r1933",
+          :tag "r1934",
           :filename "src/cljs/cljs/reader.cljs",
           :lines [310 315]},
  :full-name "cljs.reader/special-symbols",

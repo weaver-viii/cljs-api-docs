@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1933
+clojurescript @ r1934
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:143-150](https://github.com/clojure/clojurescript/blob/r1933/src/clj/cljs/repl.clj#L143-L150)</ins>
+            └── <ins>[repl.clj:143-150](https://github.com/clojure/clojurescript/blob/r1934/src/clj/cljs/repl.clj#L143-L150)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_analyze-source",
  :source {:code "(defn analyze-source\n  [src-dir]\n  (if-let [src-dir (and (not (empty? src-dir))\n                     (File. src-dir))]\n    (doseq [file (comp/cljs-files-in src-dir)]\n      (ana/analyze-file (str \"file://\" (.getAbsolutePath file))))))",
           :repo "clojurescript",
-          :tag "r1933",
+          :tag "r1934",
           :filename "src/clj/cljs/repl.clj",
           :lines [143 150]},
  :full-name "cljs.repl/analyze-source",

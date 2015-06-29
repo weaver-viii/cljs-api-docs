@@ -85,11 +85,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1933
+clojurescript @ r1934
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:48-50](https://github.com/clojure/clojurescript/blob/r1933/src/cljs/cljs/core.cljs#L48-L50)</ins>
+            └── <ins>[core.cljs:48-50](https://github.com/clojure/clojurescript/blob/r1934/src/cljs/cljs/core.cljs#L48-L50)</ins>
 </pre>
 
 
@@ -115,7 +115,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_STAR3",
  :source {:code "(def\n  ^{:doc \"bound in a repl thread to the third most recent value printed\"}\n  *3)",
           :repo "clojurescript",
-          :tag "r1933",
+          :tag "r1934",
           :filename "src/cljs/cljs/core.cljs",
           :lines [48 50]},
  :examples [{:id "d7a6e9",

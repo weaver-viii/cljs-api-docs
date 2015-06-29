@@ -45,11 +45,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1933
+clojurescript @ r1934
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:283-288](https://github.com/clojure/clojurescript/blob/r1933/src/clj/cljs/analyzer.clj#L283-L288)</ins>
+            └── <ins>[analyzer.clj:292-297](https://github.com/clojure/clojurescript/blob/r1934/src/clj/cljs/analyzer.clj#L292-L297)</ins>
 </pre>
 
 
@@ -76,9 +76,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "special_throw",
  :source {:code "(defmethod parse 'throw\n  [op env [_ throw :as form] name]\n  (let [throw-expr (disallowing-recur (analyze (assoc env :context :expr) throw))]\n    {:env env :op :throw :form form\n     :throw throw-expr\n     :children [throw-expr]}))",
           :repo "clojurescript",
-          :tag "r1933",
+          :tag "r1934",
           :filename "src/clj/cljs/analyzer.clj",
-          :lines [283 288]},
+          :lines [292 297]},
  :full-name "special/throw",
  :clj-symbol "clojure.core/throw"}
 

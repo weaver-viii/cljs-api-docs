@@ -53,11 +53,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1933
+clojurescript @ r1934
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2875-2880](https://github.com/clojure/clojurescript/blob/r1933/src/cljs/cljs/core.cljs#L2875-L2880)</ins>
+            └── <ins>[core.cljs:2875-2880](https://github.com/clojure/clojurescript/blob/r1934/src/cljs/cljs/core.cljs#L2875-L2880)</ins>
 </pre>
 
 
@@ -88,7 +88,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_repeatedly",
  :source {:code "(defn repeatedly\n  ([f] (lazy-seq (cons (f) (repeatedly f))))\n  ([n f] (take n (repeatedly f))))",
           :repo "clojurescript",
-          :tag "r1933",
+          :tag "r1934",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2875 2880]},
  :full-name "cljs.core/repeatedly",

@@ -55,12 +55,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1933
+clojurescript @ r1934
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:207-224](https://github.com/clojure/clojurescript/blob/r1933/src/cljs/clojure/core/reducers.cljs#L207-L224)</ins>
+                └── <ins>[reducers.cljs:207-224](https://github.com/clojure/clojurescript/blob/r1934/src/cljs/clojure/core/reducers.cljs#L207-L224)</ins>
 </pre>
 
 
@@ -85,7 +85,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.core.reducers_cat",
  :source {:code "(defn cat\n  ([] (array))\n  ([ctor]\n     (fn\n       ([] (ctor))\n       ([left right] (cat left right))))\n  ([left right]\n     (cond\n       (zero? (count left)) right\n       (zero? (count right)) left\n       :else\n       (Cat. (+ (count left) (count right)) left right))))",
           :repo "clojurescript",
-          :tag "r1933",
+          :tag "r1934",
           :filename "src/cljs/clojure/core/reducers.cljs",
           :lines [207 224]},
  :full-name "clojure.core.reducers/cat",

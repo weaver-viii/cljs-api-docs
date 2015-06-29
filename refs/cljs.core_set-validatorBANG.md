@@ -58,11 +58,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1933
+clojurescript @ r1934
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6953-6961](https://github.com/clojure/clojurescript/blob/r1933/src/cljs/cljs/core.cljs#L6953-L6961)</ins>
+            └── <ins>[core.cljs:6953-6961](https://github.com/clojure/clojurescript/blob/r1934/src/cljs/cljs/core.cljs#L6953-L6961)</ins>
 </pre>
 
 
@@ -89,7 +89,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_set-validatorBANG",
  :source {:code "(defn set-validator!\n  [iref val]\n  (set! (.-validator iref) val))",
           :repo "clojurescript",
-          :tag "r1933",
+          :tag "r1934",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6953 6961]},
  :full-name "cljs.core/set-validator!",

@@ -2,7 +2,7 @@
 
  <table border="1">
 <tr>
-<td>__0.0-1933__ [all](HISTORY.md)</td>
+<td>__0.0-1934__ [all](HISTORY.md)</td>
 <td>2013-10-11</td>
 <td>[<img valign="middle" width="24px" src="http://i.imgur.com/1GjPKvB.png">
 <kbd>Clojure 1.5.1</kbd>](http://clojure.github.io/clojure/branch-master/index.html)</td>
@@ -71,7 +71,7 @@ Also, see the <img width="20px" height="20px" valign="middle" src="http://i.imgu
 
 ## Latest Changes
 
-Changes from __0.0-1933__ ([See Full History](HISTORY.md)):
+Changes from __0.0-1934__ ([See Full History](HISTORY.md)):
 
 __Syntax API Changes__
 
@@ -82,25 +82,7 @@ __Syntax API Changes__
 __Library API Changes__
 
  <table>
-
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-macro-red.svg">
-</td>
-<td><samp>[~~cljs.core/try~~](refs/cljs.core_try.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/+-special form-brightgreen.svg">
-</td>
-<td><samp>[special/try](refs/special_try.md)</samp></td>
-</tr>
-<tr>
-<td>
-<img valign="middle" src="https://img.shields.io/badge/×-special form-red.svg">
-</td>
-<td><samp>[~~special/try\*~~](refs/special_trySTAR.md)</samp></td>
-</tr>
+<tr><td>_no symbols were added or removed in this version_</td></tr>
 </table>
 
 __Compiler API Changes__

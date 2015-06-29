@@ -27,11 +27,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1933
+clojurescript @ r1934
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4108-4110](https://github.com/clojure/clojurescript/blob/r1933/src/cljs/cljs/core.cljs#L4108-L4110)</ins>
+            └── <ins>[core.cljs:4108-4110](https://github.com/clojure/clojurescript/blob/r1934/src/cljs/cljs/core.cljs#L4108-L4110)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[arr i _meta]"],
  :source {:code "(defn persistent-array-map-seq [arr i _meta]\n  (when (<= i (- (alength arr) 2))\n    (PersistentArrayMapSeq. arr i _meta)))",
           :repo "clojurescript",
-          :tag "r1933",
+          :tag "r1934",
           :filename "src/cljs/cljs/core.cljs",
           :lines [4108 4110]},
  :full-name "cljs.core/persistent-array-map-seq",

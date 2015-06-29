@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1933
+clojurescript @ r1934
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6578-6585](https://github.com/clojure/clojurescript/blob/r1933/src/cljs/cljs/core.cljs#L6578-L6585)</ins>
+            └── <ins>[core.cljs:6578-6585](https://github.com/clojure/clojurescript/blob/r1934/src/cljs/cljs/core.cljs#L6578-L6585)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[writer print-one begin sep end opts coll]"],
  :source {:code "(defn pr-sequential-writer [writer print-one begin sep end opts coll]\n  (-write writer begin)\n  (when (seq coll)\n    (print-one (first coll) writer opts))\n  (doseq [o (next coll)]\n    (-write writer sep)\n    (print-one o writer opts))\n  (-write writer end))",
           :repo "clojurescript",
-          :tag "r1933",
+          :tag "r1934",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6578 6585]},
  :full-name "cljs.core/pr-sequential-writer",
