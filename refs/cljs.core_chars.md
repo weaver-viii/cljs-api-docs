@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2124](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L2124)</ins>
+            └── <ins>[core.cljs:2320](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L2320)</ins>
 </pre>
 
 
@@ -57,9 +57,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_chars",
  :source {:code "(defn chars [x] x)",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2124]},
+          :lines [2320]},
  :full-name "cljs.core/chars",
  :clj-symbol "clojure.core/chars"}
 

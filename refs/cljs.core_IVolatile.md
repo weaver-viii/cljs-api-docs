@@ -12,20 +12,28 @@
 
 
 
+Source docstring:
+
+```
+Protocol for adding volatile functionality.
+```
 
 Source code:
 
 ```clj
 (defprotocol IVolatile
-  (-vreset! [o new-value]))
+  "Protocol for adding volatile functionality."
+  (-vreset! [o new-value]
+    "Sets the value of volatile o to new-value without regard for the
+     current value. Returns new-value."))
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:440-441](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L440-L441)</ins>
+            └── <ins>[core.cljs:627-631](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L627-L631)</ins>
 </pre>
 
 
@@ -44,18 +52,19 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "IVolatile",
+ :history [["+" "0.0-2496"]],
  :type "protocol",
  :full-name-encode "cljs.core_IVolatile",
- :source {:code "(defprotocol IVolatile\n  (-vreset! [o new-value]))",
+ :source {:code "(defprotocol IVolatile\n  \"Protocol for adding volatile functionality.\"\n  (-vreset! [o new-value]\n    \"Sets the value of volatile o to new-value without regard for the\n     current value. Returns new-value.\"))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [440 441]},
+          :lines [627 631]},
  :methods [{:name "-vreset!",
             :signature ["[o new-value]"],
-            :docstring nil}],
+            :docstring "Sets the value of volatile o to new-value without regard for the\n     current value. Returns new-value."}],
  :full-name "cljs.core/IVolatile",
- :history [["+" "0.0-2496"]]}
+ :docstring "Protocol for adding volatile functionality."}
 
 ```
 

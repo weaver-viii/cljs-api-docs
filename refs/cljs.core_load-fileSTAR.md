@@ -1,10 +1,10 @@
-## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> cljs.core/load-file\*
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> ~~cljs.core/load-file\*~~
 
  <table border="1">
 <tr>
 
 <td>macro</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2719"><img valign="middle" alt="[+] 0.0-2719" src="https://img.shields.io/badge/+-0.0--2719-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-2719"><img valign="middle" alt="[+] 0.0-2719" src="https://img.shields.io/badge/+-0.0--2719-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-3115"><img valign="middle" alt="[×] 0.0-3115" src="https://img.shields.io/badge/×-0.0--3115-red.svg"></a> </td>
 </tr>
 </table>
 
@@ -53,16 +53,17 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "load-file*",
- :type "macro",
  :signature ["[f]"],
+ :history [["+" "0.0-2719"] ["-" "0.0-3115"]],
+ :type "macro",
+ :full-name-encode "cljs.core_load-fileSTAR",
  :source {:code "(defmacro load-file* [f]\n  (core/let [{:keys [target output-dir]} (:options @env/*compiler*)]\n    (core/condp = target\n      ;; under Node.js, always relative to JVM working directory\n      :nodejs `(. js/goog (~'nodeGlobalRequire (str ~output-dir ~File/separator ~f)))\n      `(. js/goog (~'importScript_ ~f)))))",
           :repo "clojurescript",
           :tag "r3058",
           :filename "src/clj/cljs/core.clj",
           :lines [1926 1931]},
  :full-name "cljs.core/load-file*",
- :full-name-encode "cljs.core_load-fileSTAR",
- :history [["+" "0.0-2719"]]}
+ :removed {:in "0.0-3115", :last-seen "0.0-3058"}}
 
 ```
 

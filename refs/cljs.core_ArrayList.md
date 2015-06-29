@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7799-7805](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L7799-L7805)</ins>
+            └── <ins>[core.cljs:8005-8011](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L8005-L8011)</ins>
 </pre>
 
 
@@ -58,9 +58,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[arr]"],
  :source {:code "(deftype ArrayList [^:mutable arr]\n  Object\n  (add [_ x] (.push arr x))\n  (size [_] (alength arr))\n  (clear [_] (set! arr (array)))\n  (isEmpty [_] (zero? (alength arr)))\n  (toArray [_] arr))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [7799 7805]},
+          :lines [8005 8011]},
  :full-name "cljs.core/ArrayList",
  :full-name-encode "cljs.core_ArrayList",
  :history [["+" "0.0-2301"]]}

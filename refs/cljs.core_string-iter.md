@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3166-3167](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L3166-L3167)</ins>
+            └── <ins>[core.cljs:3362-3363](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L3362-L3363)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[x]"],
  :source {:code "(defn string-iter [x]\n  (StringIter. x 0))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3166 3167]},
+          :lines [3362 3363]},
  :full-name "cljs.core/string-iter",
  :full-name-encode "cljs.core_string-iter",
  :history [["+" "0.0-2301"]]}

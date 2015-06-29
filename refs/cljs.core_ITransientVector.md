@@ -15,21 +15,29 @@
 
 
 
+Source docstring:
+
+```
+Protocol for adding vector functionality to transient collections.
+```
 
 Source code:
 
 ```clj
 (defprotocol ITransientVector
-  (^clj -assoc-n! [tcoll n val])
-  (^clj -pop! [tcoll]))
+  "Protocol for adding vector functionality to transient collections."
+  (^clj -assoc-n! [tcoll n val]
+    "Returns tcoll with value val added at position n.")
+  (^clj -pop! [tcoll]
+    "Returns tcoll with the last item removed from it."))
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:408-410](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L408-L410)</ins>
+            └── <ins>[core.cljs:572-577](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L572-L577)</ins>
 </pre>
 
 
@@ -51,17 +59,20 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1211"]],
  :type "protocol",
  :full-name-encode "cljs.core_ITransientVector",
- :source {:code "(defprotocol ITransientVector\n  (^clj -assoc-n! [tcoll n val])\n  (^clj -pop! [tcoll]))",
+ :source {:code "(defprotocol ITransientVector\n  \"Protocol for adding vector functionality to transient collections.\"\n  (^clj -assoc-n! [tcoll n val]\n    \"Returns tcoll with value val added at position n.\")\n  (^clj -pop! [tcoll]\n    \"Returns tcoll with the last item removed from it.\"))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [408 410]},
+          :lines [572 577]},
  :methods [{:name "-assoc-n!",
             :signature ["[tcoll n val]"],
-            :docstring nil}
-           {:name "-pop!", :signature ["[tcoll]"], :docstring nil}],
+            :docstring "Returns tcoll with value val added at position n."}
+           {:name "-pop!",
+            :signature ["[tcoll]"],
+            :docstring "Returns tcoll with the last item removed from it."}],
  :full-name "cljs.core/ITransientVector",
- :clj-symbol "clojure.lang/ITransientVector"}
+ :clj-symbol "clojure.lang/ITransientVector",
+ :docstring "Protocol for adding vector functionality to transient collections."}
 
 ```
 

@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2035-2038](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L2035-L2038)</ins>
+            └── <ins>[core.cljs:2231-2234](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L2231-L2234)</ins>
 </pre>
 
 
@@ -51,11 +51,11 @@ clojurescript @ r3058
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:385-386](https://github.com/clojure/clojurescript/blob/r3058/src/clj/cljs/core.clj#L385-L386)</ins>
+            └── <ins>[core.clj:396-397](https://github.com/clojure/clojurescript/blob/r3115/src/clj/cljs/core.clj#L396-L397)</ins>
 </pre>
 
 ---
@@ -79,14 +79,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-dec",
  :source {:code "(defn unchecked-dec\n  [x]\n  (cljs.core/unchecked-dec x))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2035 2038]},
+          :lines [2231 2234]},
  :extra-sources ({:code "(defmacro ^::ana/numeric unchecked-dec\n  ([x] `(dec ~x)))",
                   :repo "clojurescript",
-                  :tag "r3058",
+                  :tag "r3115",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [385 386]}),
+                  :lines [396 397]}),
  :full-name "cljs.core/unchecked-dec",
  :clj-symbol "clojure.core/unchecked-dec",
  :docstring "Returns a number one less than x, an int."}

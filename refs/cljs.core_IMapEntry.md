@@ -15,21 +15,29 @@
 
 
 
+Source docstring:
+
+```
+Protocol for examining a map entry.
+```
 
 Source code:
 
 ```clj
 (defprotocol IMapEntry
-  (-key [coll])
-  (-val [coll]))
+  "Protocol for examining a map entry."
+  (-key [coll]
+    "Returns the key of the map entry.")
+  (-val [coll]
+    "Returns the value of the map entry."))
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:316-318](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L316-L318)</ins>
+            └── <ins>[core.cljs:412-417](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L412-L417)</ins>
 </pre>
 
 
@@ -51,15 +59,20 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1211"]],
  :type "protocol",
  :full-name-encode "cljs.core_IMapEntry",
- :source {:code "(defprotocol IMapEntry\n  (-key [coll])\n  (-val [coll]))",
+ :source {:code "(defprotocol IMapEntry\n  \"Protocol for examining a map entry.\"\n  (-key [coll]\n    \"Returns the key of the map entry.\")\n  (-val [coll]\n    \"Returns the value of the map entry.\"))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [316 318]},
- :methods [{:name "-key", :signature ["[coll]"], :docstring nil}
-           {:name "-val", :signature ["[coll]"], :docstring nil}],
+          :lines [412 417]},
+ :methods [{:name "-key",
+            :signature ["[coll]"],
+            :docstring "Returns the key of the map entry."}
+           {:name "-val",
+            :signature ["[coll]"],
+            :docstring "Returns the value of the map entry."}],
  :full-name "cljs.core/IMapEntry",
- :clj-symbol "clojure.lang/IMapEntry"}
+ :clj-symbol "clojure.lang/IMapEntry",
+ :docstring "Protocol for examining a map entry."}
 
 ```
 

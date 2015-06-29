@@ -49,11 +49,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1297-1303](https://github.com/clojure/clojurescript/blob/r3058/src/clj/cljs/core.clj#L1297-L1303)</ins>
+            └── <ins>[core.clj:1338-1344](https://github.com/clojure/clojurescript/blob/r3115/src/clj/cljs/core.clj#L1338-L1344)</ins>
 </pre>
 
 
@@ -83,9 +83,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_lazy-seq",
  :source {:code "(defmacro lazy-seq\n  [& body]\n  `(new cljs.core/LazySeq nil (fn [] ~@body) nil nil))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/clj/cljs/core.clj",
-          :lines [1297 1303]},
+          :lines [1338 1344]},
  :full-name "cljs.core/lazy-seq",
  :clj-symbol "clojure.core/lazy-seq",
  :docstring "Takes a body of expressions that returns an ISeq or nil, and yields\na ISeqable object that will invoke the body only the first time seq\nis called, and will cache the result and return it on all subsequent\nseq calls."}

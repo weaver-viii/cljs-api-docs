@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2107-2110](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L2107-L2110)</ins>
+            └── <ins>[core.cljs:2303-2306](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L2303-L2306)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-int",
  :source {:code "(defn unchecked-int\n  [x]\n  (fix x))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2107 2110]},
+          :lines [2303 2306]},
  :full-name "cljs.core/unchecked-int",
  :clj-symbol "clojure.core/unchecked-int",
  :docstring "Coerce to int by stripping decimal places."}

@@ -12,20 +12,27 @@
 
 
 
+Source docstring:
+
+```
+Protocol for adding value comparison functionality to a type.
+```
 
 Source code:
 
 ```clj
 (defprotocol IEquiv
-  (^boolean -equiv [o other]))
+  "Protocol for adding value comparison functionality to a type."
+  (^boolean -equiv [o other]
+    "Returns true if o and other are equal, false otherwise."))
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:348-349](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L348-L349)</ins>
+            └── <ins>[core.cljs:472-475](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L472-L475)</ins>
 </pre>
 
 
@@ -44,16 +51,19 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "IEquiv",
+ :history [["+" "0.0-927"]],
  :type "protocol",
  :full-name-encode "cljs.core_IEquiv",
- :source {:code "(defprotocol IEquiv\n  (^boolean -equiv [o other]))",
+ :source {:code "(defprotocol IEquiv\n  \"Protocol for adding value comparison functionality to a type.\"\n  (^boolean -equiv [o other]\n    \"Returns true if o and other are equal, false otherwise.\"))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [348 349]},
- :methods [{:name "-equiv", :signature ["[o other]"], :docstring nil}],
+          :lines [472 475]},
+ :methods [{:name "-equiv",
+            :signature ["[o other]"],
+            :docstring "Returns true if o and other are equal, false otherwise."}],
  :full-name "cljs.core/IEquiv",
- :history [["+" "0.0-927"]]}
+ :docstring "Protocol for adding value comparison functionality to a type."}
 
 ```
 

@@ -16,6 +16,29 @@
 <th>comp</th>
 </tr>
 <tr>
+<td>__[0.0-3115](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-3115)__</td>
+<td>2015-03-15</td>
+<td><kbd>1.6.0</kbd></td>
+<td><kbd>0.8.16</kbd></td>
+<td><kbd>0.0-20140718-946a7d39</kbd></td>
+<td>
+<a href="#user-content-00-3115-syntax">
+ 
+</a>
+</td>
+<td>
+<a href="#user-content-00-3115-library">
+<img valign="middle" src="https://img.shields.io/badge/+-2-brightgreen.svg"> <img valign="middle" src="https://img.shields.io/badge/×-1-red.svg">
+</a>
+</td>
+<td>
+<a href="#user-content-00-3115-compiler">
+ <img valign="middle" src="https://img.shields.io/badge/×-2-red.svg">
+</a>
+</td>
+</tr>
+
+<tr>
 <td>__[0.0-3058](https://github.com/cljsinfo/cljs-api-docs/tree/0.0-3058)__</td>
 <td>2015-03-09</td>
 <td><kbd>1.6.0</kbd></td>
@@ -2292,6 +2315,53 @@
 </td>
 </tr>
 
+</table>
+
+### 0.0-3115
+
+<a name="00-3115-syntax"></a> __Syntax API Changes__
+ <table>
+<tr><td>_no syntax forms were added or removed in this version_</td></tr>
+</table>
+
+<a name="00-3115-library"></a> __Library API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-macro-red.svg">
+</td>
+<td><samp>[~~cljs.core/load-file\*~~](refs/cljs.core_load-fileSTAR.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-function-brightgreen.svg">
+</td>
+<td><samp>[clojure.browser.repl/bootstrap](refs/clojure.browser.repl_bootstrap.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/+-var-brightgreen.svg">
+</td>
+<td><samp>[clojure.browser.repl/load-queue](refs/clojure.browser.repl_load-queue.md)</samp></td>
+</tr>
+</table>
+
+<a name="00-3115-compiler"></a> __Compiler API Changes__
+ <table>
+
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-var-red.svg">
+</td>
+<td><samp>[~~cljs.repl.browser/loaded-libs~~](refs/cljs.repl.browser_loaded-libs.md)</samp></td>
+</tr>
+<tr>
+<td>
+<img valign="middle" src="https://img.shields.io/badge/×-var-red.svg">
+</td>
+<td><samp>[~~cljs.repl.browser/preloaded-libs~~](refs/cljs.repl.browser_preloaded-libs.md)</samp></td>
+</tr>
 </table>
 
 ### 0.0-3058

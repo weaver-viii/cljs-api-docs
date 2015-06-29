@@ -15,20 +15,31 @@
 
 
 
+Source docstring:
+
+```
+Protocol for seq types that can reduce themselves.
+  Called by cljs.core/reduce.
+```
 
 Source code:
 
 ```clj
 (defprotocol IReduce
-  (-reduce [coll f] [coll f start]))
+  "Protocol for seq types that can reduce themselves.
+  Called by cljs.core/reduce."
+  (-reduce [coll f] [coll f start]
+    "f should be a function of 2 arguments. If start is not supplied,
+     returns the result of applying f to the first 2 items in coll, then
+     applying f to that result and the 3rd item, etc."))
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:342-343](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L342-L343)</ins>
+            └── <ins>[core.cljs:457-463](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L457-L463)</ins>
 </pre>
 
 
@@ -50,16 +61,17 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "protocol",
  :full-name-encode "cljs.core_IReduce",
- :source {:code "(defprotocol IReduce\n  (-reduce [coll f] [coll f start]))",
+ :source {:code "(defprotocol IReduce\n  \"Protocol for seq types that can reduce themselves.\n  Called by cljs.core/reduce.\"\n  (-reduce [coll f] [coll f start]\n    \"f should be a function of 2 arguments. If start is not supplied,\n     returns the result of applying f to the first 2 items in coll, then\n     applying f to that result and the 3rd item, etc.\"))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [342 343]},
+          :lines [457 463]},
  :methods [{:name "-reduce",
             :signature ["[coll f]" "[coll f start]"],
-            :docstring nil}],
+            :docstring "f should be a function of 2 arguments. If start is not supplied,\n     returns the result of applying f to the first 2 items in coll, then\n     applying f to that result and the 3rd item, etc."}],
  :full-name "cljs.core/IReduce",
- :clj-symbol "clojure.lang/IReduce"}
+ :clj-symbol "clojure.lang/IReduce",
+ :docstring "Protocol for seq types that can reduce themselves.\n  Called by cljs.core/reduce."}
 
 ```
 

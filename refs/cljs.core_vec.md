@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4566-4575](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L4566-L4575)</ins>
+            └── <ins>[core.cljs:4762-4771](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L4762-L4771)</ins>
 </pre>
 
 
@@ -81,9 +81,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_vec",
  :source {:code "(defn vec\n  [coll]\n  (if (array? coll)\n    (.fromArray PersistentVector coll true)\n    (-persistent!\n      (reduce -conj!\n        (-as-transient (.-EMPTY PersistentVector))\n        coll))))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [4566 4575]},
+          :lines [4762 4771]},
  :full-name "cljs.core/vec",
  :clj-symbol "clojure.core/vec",
  :docstring "Creates a new vector containing the contents of coll. JavaScript arrays\nwill be aliased and should not be modified."}

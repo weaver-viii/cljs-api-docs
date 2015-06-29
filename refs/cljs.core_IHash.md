@@ -12,20 +12,27 @@
 
 
 
+Source docstring:
+
+```
+Protocol for adding hashing functionality to a type.
+```
 
 Source code:
 
 ```clj
 (defprotocol IHash
-  (-hash [o]))
+  "Protocol for adding hashing functionality to a type."
+  (-hash [o]
+    "Returns the hash code of o."))
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:351-352](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L351-L352)</ins>
+            └── <ins>[core.cljs:477-480](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L477-L480)</ins>
 </pre>
 
 
@@ -44,16 +51,19 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "IHash",
+ :history [["+" "0.0-927"]],
  :type "protocol",
  :full-name-encode "cljs.core_IHash",
- :source {:code "(defprotocol IHash\n  (-hash [o]))",
+ :source {:code "(defprotocol IHash\n  \"Protocol for adding hashing functionality to a type.\"\n  (-hash [o]\n    \"Returns the hash code of o.\"))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [351 352]},
- :methods [{:name "-hash", :signature ["[o]"], :docstring nil}],
+          :lines [477 480]},
+ :methods [{:name "-hash",
+            :signature ["[o]"],
+            :docstring "Returns the hash code of o."}],
  :full-name "cljs.core/IHash",
- :history [["+" "0.0-927"]]}
+ :docstring "Protocol for adding hashing functionality to a type."}
 
 ```
 

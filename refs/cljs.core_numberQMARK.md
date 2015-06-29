@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:103-106](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L103-L106)</ins>
+            └── <ins>[core.cljs:160-163](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L160-L163)</ins>
 </pre>
 
 
@@ -59,11 +59,11 @@ clojurescript @ r3058
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:338-339](https://github.com/clojure/clojurescript/blob/r3058/src/clj/cljs/core.clj#L338-L339)</ins>
+            └── <ins>[core.clj:349-350](https://github.com/clojure/clojurescript/blob/r3115/src/clj/cljs/core.clj#L349-L350)</ins>
 </pre>
 
 ---
@@ -90,14 +90,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_numberQMARK",
  :source {:code "(defn ^boolean number?\n  [n]\n  (cljs.core/number? n))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [103 106]},
+          :lines [160 163]},
  :extra-sources ({:code "(defmacro number? [x]\n  (bool-expr (core/list 'js* \"typeof ~{} === 'number'\" x)))",
                   :repo "clojurescript",
-                  :tag "r3058",
+                  :tag "r3115",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [338 339]}),
+                  :lines [349 350]}),
  :full-name "cljs.core/number?",
  :clj-symbol "clojure.core/number?",
  :docstring "Returns true if x is a JavaScript number."}

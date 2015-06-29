@@ -42,11 +42,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:924-926](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L924-L926)</ins>
+            └── <ins>[core.cljs:1120-1122](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L1120-L1122)</ins>
 </pre>
 
 
@@ -58,11 +58,11 @@ clojurescript @ r3058
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:470-471](https://github.com/clojure/clojurescript/blob/r3058/src/clj/cljs/core.clj#L470-L471)</ins>
+            └── <ins>[core.clj:481-482](https://github.com/clojure/clojurescript/blob/r3115/src/clj/cljs/core.clj#L481-L482)</ins>
 </pre>
 
 ---
@@ -88,14 +88,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_inc",
  :source {:code "(defn inc\n  [x] (cljs.core/+ x 1))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [924 926]},
+          :lines [1120 1122]},
  :extra-sources ({:code "(defmacro ^::ana/numeric inc [x]\n  `(+ ~x 1))",
                   :repo "clojurescript",
-                  :tag "r3058",
+                  :tag "r3115",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [470 471]}),
+                  :lines [481 482]}),
  :full-name "cljs.core/inc",
  :clj-symbol "clojure.core/inc",
  :docstring "Returns a number one greater than num."}

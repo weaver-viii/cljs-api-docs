@@ -15,21 +15,29 @@
 
 
 
+Source docstring:
+
+```
+Protocol for accessing a collection as sequential chunks.
+```
 
 Source code:
 
 ```clj
 (defprotocol IChunkedSeq
-  (-chunked-first [coll])
-  (-chunked-rest [coll]))
+  "Protocol for accessing a collection as sequential chunks."
+  (-chunked-first [coll]
+    "Returns the first chunk in coll.")
+  (-chunked-rest [coll]
+    "Return a new collection of coll with the first chunk removed."))
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:421-423](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L421-L423)</ins>
+            └── <ins>[core.cljs:595-600](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L595-L600)</ins>
 </pre>
 
 
@@ -51,19 +59,20 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1424"]],
  :type "protocol",
  :full-name-encode "cljs.core_IChunkedSeq",
- :source {:code "(defprotocol IChunkedSeq\n  (-chunked-first [coll])\n  (-chunked-rest [coll]))",
+ :source {:code "(defprotocol IChunkedSeq\n  \"Protocol for accessing a collection as sequential chunks.\"\n  (-chunked-first [coll]\n    \"Returns the first chunk in coll.\")\n  (-chunked-rest [coll]\n    \"Return a new collection of coll with the first chunk removed.\"))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [421 423]},
+          :lines [595 600]},
  :methods [{:name "-chunked-first",
             :signature ["[coll]"],
-            :docstring nil}
+            :docstring "Returns the first chunk in coll."}
            {:name "-chunked-rest",
             :signature ["[coll]"],
-            :docstring nil}],
+            :docstring "Return a new collection of coll with the first chunk removed."}],
  :full-name "cljs.core/IChunkedSeq",
- :clj-symbol "clojure.lang/IChunkedSeq"}
+ :clj-symbol "clojure.lang/IChunkedSeq",
+ :docstring "Protocol for accessing a collection as sequential chunks."}
 
 ```
 

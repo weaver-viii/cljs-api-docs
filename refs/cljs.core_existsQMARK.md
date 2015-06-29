@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:313-319](https://github.com/clojure/clojurescript/blob/r3058/src/clj/cljs/core.clj#L313-L319)</ins>
+            └── <ins>[core.clj:324-330](https://github.com/clojure/clojurescript/blob/r3115/src/clj/cljs/core.clj#L324-L330)</ins>
 </pre>
 
 
@@ -64,9 +64,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_existsQMARK",
  :source {:code "(defmacro exists?\n  [x]\n  (bool-expr\n    (core/list 'js* \"typeof ~{} !== 'undefined'\"\n      (vary-meta x assoc :cljs.analyzer/no-resolve true))))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/clj/cljs/core.clj",
-          :lines [313 319]},
+          :lines [324 330]},
  :full-name "cljs.core/exists?",
  :docstring "Return true if argument exists, analogous to usage of typeof operator\nin JavaScript."}
 

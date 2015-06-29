@@ -12,20 +12,27 @@
 
 
 
+Source docstring:
+
+```
+Protocol for accessing the chunks of a collection.
+```
 
 Source code:
 
 ```clj
 (defprotocol IChunkedNext
-  (-chunked-next [coll]))
+  "Protocol for accessing the chunks of a collection."
+  (-chunked-next [coll]
+    "Returns a new collection of coll without the first chunk."))
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:425-426](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L425-L426)</ins>
+            └── <ins>[core.cljs:602-605](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L602-L605)</ins>
 </pre>
 
 
@@ -44,18 +51,19 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "IChunkedNext",
+ :history [["+" "0.0-1424"]],
  :type "protocol",
  :full-name-encode "cljs.core_IChunkedNext",
- :source {:code "(defprotocol IChunkedNext\n  (-chunked-next [coll]))",
+ :source {:code "(defprotocol IChunkedNext\n  \"Protocol for accessing the chunks of a collection.\"\n  (-chunked-next [coll]\n    \"Returns a new collection of coll without the first chunk.\"))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [425 426]},
+          :lines [602 605]},
  :methods [{:name "-chunked-next",
             :signature ["[coll]"],
-            :docstring nil}],
+            :docstring "Returns a new collection of coll without the first chunk."}],
  :full-name "cljs.core/IChunkedNext",
- :history [["+" "0.0-1424"]]}
+ :docstring "Protocol for accessing the chunks of a collection."}
 
 ```
 

@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2822-2823](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L2822-L2823)</ins>
+            └── <ins>[core.cljs:3018-3019](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L3018-L3019)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[b x]"],
  :source {:code "(defn chunk-append [b x]\n  (.add b x))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2822 2823]},
+          :lines [3018 3019]},
  :full-name "cljs.core/chunk-append",
  :full-name-encode "cljs.core_chunk-append",
  :history [["+" "0.0-1424"]]}

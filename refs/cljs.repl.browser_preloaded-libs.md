@@ -1,10 +1,10 @@
-## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> cljs.repl.browser/preloaded-libs
+## <img width="48px" valign="middle" src="http://i.imgur.com/Hi20huC.png"> ~~cljs.repl.browser/preloaded-libs~~
 
  <table border="1">
 <tr>
 
 <td>var</td>
-<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1424"><img valign="middle" alt="[+] 0.0-1424" src="https://img.shields.io/badge/+-0.0--1424-lightgrey.svg"></a> </td>
+<td><a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-1424"><img valign="middle" alt="[+] 0.0-1424" src="https://img.shields.io/badge/+-0.0--1424-lightgrey.svg"></a> <a href="https://github.com/cljsinfo/cljs-api-docs/tree/0.0-3115"><img valign="middle" alt="[×] 0.0-3115" src="https://img.shields.io/badge/×-0.0--3115-red.svg"></a> </td>
 </tr>
 </table>
 
@@ -52,7 +52,8 @@ __Meta__ - To retrieve the API data for this symbol:
           :lines [28]},
  :full-name "cljs.repl.browser/preloaded-libs",
  :full-name-encode "cljs.repl.browser_preloaded-libs",
- :history [["+" "0.0-1424"]]}
+ :history [["+" "0.0-1424"] ["-" "0.0-3115"]],
+ :removed {:in "0.0-3115", :last-seen "0.0-3058"}}
 
 ```
 

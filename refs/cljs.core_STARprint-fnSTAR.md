@@ -33,11 +33,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:24-30](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L24-L30)</ins>
+            └── <ins>[core.cljs:29-35](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L29-L35)</ins>
 </pre>
 
 
@@ -60,9 +60,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "dynamic var",
  :source {:code "(defonce\n  ^{:doc \"Each runtime environment provides a different way to print output.\n  Whatever function *print-fn* is bound to will be passed any\n  Strings which should be printed.\" :dynamic true}\n  *print-fn*\n  (fn [_]\n    (throw (js/Error. \"No *print-fn* fn set for evaluation environment\"))))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [24 30]},
+          :lines [29 35]},
  :full-name "cljs.core/*print-fn*",
  :full-name-encode "cljs.core_STARprint-fnSTAR",
  :history [["+" "0.0-927"]]}

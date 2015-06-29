@@ -9,7 +9,7 @@
 </table>
 
  <samp>
-(__setup__ repl-env opts)<br>
+(__setup__ {:keys \[working-dir\], :as repl-env} opts)<br>
 </samp>
 
 ---
@@ -21,17 +21,25 @@
 Source code:
 
 ```clj
-(defn setup [repl-env opts]
+(defn setup [{:keys [working-dir] :as repl-env} opts]
+  (println "Compiling client js ...")
+  (swap! browser-state
+    (fn [old]
+      (assoc old :client-js
+        (create-client-js-file
+          repl-env (io/file working-dir "client.js")))))
+  (println "Waiting for browser to connect ...")
+  opts
   (server/start repl-env))
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:195-196](https://github.com/clojure/clojurescript/blob/r3058/src/clj/cljs/repl/browser.clj#L195-L196)</ins>
+                └── <ins>[browser.clj:485-494](https://github.com/clojure/clojurescript/blob/r3115/src/clj/cljs/repl/browser.clj#L485-L494)</ins>
 </pre>
 
 
@@ -51,12 +59,12 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "cljs.repl.browser",
  :name "setup",
  :type "function",
- :signature ["[repl-env opts]"],
- :source {:code "(defn setup [repl-env opts]\n  (server/start repl-env))",
+ :signature ["[{:keys [working-dir], :as repl-env} opts]"],
+ :source {:code "(defn setup [{:keys [working-dir] :as repl-env} opts]\n  (println \"Compiling client js ...\")\n  (swap! browser-state\n    (fn [old]\n      (assoc old :client-js\n        (create-client-js-file\n          repl-env (io/file working-dir \"client.js\")))))\n  (println \"Waiting for browser to connect ...\")\n  opts\n  (server/start repl-env))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/clj/cljs/repl/browser.clj",
-          :lines [195 196]},
+          :lines [485 494]},
  :full-name "cljs.repl.browser/setup",
  :full-name-encode "cljs.repl.browser_setup",
  :history [["+" "0.0-2665"]]}

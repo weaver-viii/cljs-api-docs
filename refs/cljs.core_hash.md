@@ -56,11 +56,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:561-585](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L561-L585)</ins>
+            └── <ins>[core.cljs:753-777](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L753-L777)</ins>
 </pre>
 
 
@@ -85,9 +85,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash",
  :source {:code "(defn hash\n  [o]\n  (cond\n    (implements? IHash o)\n    (-hash ^not-native o)\n\n    (number? o)\n    (js-mod (Math/floor o) 2147483647)\n\n    (true? o) 1\n\n    (false? o) 0\n\n    (string? o)\n    (m3-hash-int (hash-string o))\n\n    (instance? js/Date o)\n    (.valueOf o)\n\n    (nil? o) 0\n\n    :else\n    (-hash o)))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [561 585]},
+          :lines [753 777]},
  :full-name "cljs.core/hash",
  :clj-symbol "clojure.core/hash",
  :docstring "Returns the hash code of its argument. Note this is the hash code\nconsistent with =."}

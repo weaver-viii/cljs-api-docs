@@ -32,11 +32,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:403-406](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/test.cljs#L403-L406)</ins>
+            └── <ins>[test.cljs:402-405](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/test.cljs#L402-L405)</ins>
 </pre>
 
 
@@ -61,9 +61,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_asyncQMARK",
  :source {:code "(defn async?\n  [x]\n  (satisfies? IAsyncTest x))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/test.cljs",
-          :lines [403 406]},
+          :lines [402 405]},
  :full-name "cljs.test/async?",
  :docstring "Returns whether x implements IAsyncTest."}
 

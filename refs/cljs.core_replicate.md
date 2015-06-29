@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3974-3976](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L3974-L3976)</ins>
+            └── <ins>[core.cljs:4170-4172](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L4170-L4172)</ins>
 </pre>
 
 
@@ -63,9 +63,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_replicate",
  :source {:code "(defn replicate\n  [n x] (take n (repeat x)))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [3974 3976]},
+          :lines [4170 4172]},
  :full-name "cljs.core/replicate",
  :clj-symbol "clojure.core/replicate",
  :docstring "Returns a lazy seq of n xs."}

@@ -61,11 +61,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2196-2199](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L2196-L2199)</ins>
+            └── <ins>[core.cljs:2392-2395](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L2392-L2395)</ins>
 </pre>
 
 
@@ -77,11 +77,11 @@ clojurescript @ r3058
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:530-531](https://github.com/clojure/clojurescript/blob/r3058/src/clj/cljs/core.clj#L530-L531)</ins>
+            └── <ins>[core.clj:541-542](https://github.com/clojure/clojurescript/blob/r3115/src/clj/cljs/core.clj#L541-L542)</ins>
 </pre>
 
 ---
@@ -107,14 +107,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-test",
  :source {:code "(defn ^boolean bit-test\n  [x n]\n  (cljs.core/bit-test x n))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2196 2199]},
+          :lines [2392 2395]},
  :extra-sources ({:code "(defmacro bit-test [x n]\n  (bool-expr (core/list 'js* \"((~{} & (1 << ~{})) != 0)\" x n)))",
                   :repo "clojurescript",
-                  :tag "r3058",
+                  :tag "r3115",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [530 531]}),
+                  :lines [541 542]}),
  :examples [{:id "f64664",
              :content "Bits can be entered using radix notation:\n\n```clj\n(bit-test 2r0100 2)\n;;=> true\n\n(bit-test 2r0100 1)\n;;=> false\n```\n\nSame numbers in decimal:\n\n```clj\n(bit-test 4 2)\n;;=> true\n\n(bit-test 4 1)\n;;=> false\n```"}],
  :full-name "cljs.core/bit-test",

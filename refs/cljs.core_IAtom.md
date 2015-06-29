@@ -12,19 +12,25 @@
 
 
 
+Source docstring:
+
+```
+Marker protocol indicating an atom.
+```
 
 Source code:
 
 ```clj
-(defprotocol IAtom)
+(defprotocol IAtom
+  "Marker protocol indicating an atom.")
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:432](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L432)</ins>
+            └── <ins>[core.cljs:614-615](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L614-L615)</ins>
 </pre>
 
 
@@ -45,12 +51,13 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "IAtom",
  :type "protocol",
  :full-name-encode "cljs.core_IAtom",
- :source {:code "(defprotocol IAtom)",
+ :source {:code "(defprotocol IAtom\n  \"Marker protocol indicating an atom.\")",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [432]},
+          :lines [614 615]},
  :full-name "cljs.core/IAtom",
+ :docstring "Marker protocol indicating an atom.",
  :history [["+" "0.0-2173"]]}
 
 ```

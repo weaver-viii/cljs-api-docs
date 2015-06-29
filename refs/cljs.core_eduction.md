@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8721-8726](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L8721-L8726)</ins>
+            └── <ins>[core.cljs:8928-8933](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L8928-L8933)</ins>
 </pre>
 
 
@@ -63,9 +63,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_eduction",
  :source {:code "(defn eduction\n  [xform coll]\n  (Eduction. xform coll))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [8721 8726]},
+          :lines [8928 8933]},
  :full-name "cljs.core/eduction",
  :docstring "Returns a reducible/iterable/seqable application of\nthe transducer to the items in coll. Note that these applications\t\nwill be performed every time iterator/seq/reduce is called."}
 

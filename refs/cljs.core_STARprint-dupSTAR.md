@@ -15,19 +15,33 @@
 
 
 
+Source docstring:
+
+```
+When set to logical true, objects will be printed in a way that preserves
+their type when read in later.
+
+Defaults to false.
+```
 
 Source code:
 
 ```clj
-(def ^:dynamic *print-dup* false)
+(def
+  ^{:dynamic true
+    :doc "When set to logical true, objects will be printed in a way that preserves
+  their type when read in later.
+
+  Defaults to false."}
+  *print-dup* false)
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:40](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L40)</ins>
+            └── <ins>[core.cljs:71-77](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L71-L77)</ins>
 </pre>
 
 
@@ -46,16 +60,17 @@ __Meta__ - To retrieve the API data for this symbol:
 ```clj
 {:ns "cljs.core",
  :name "*print-dup*",
+ :history [["+" "0.0-927"]],
  :type "dynamic var",
- :source {:code "(def ^:dynamic *print-dup* false)",
-          :repo "clojurescript",
-          :tag "r3058",
-          :filename "src/cljs/cljs/core.cljs",
-          :lines [40]},
- :full-name "cljs.core/*print-dup*",
  :full-name-encode "cljs.core_STARprint-dupSTAR",
+ :source {:code "(def\n  ^{:dynamic true\n    :doc \"When set to logical true, objects will be printed in a way that preserves\n  their type when read in later.\n\n  Defaults to false.\"}\n  *print-dup* false)",
+          :repo "clojurescript",
+          :tag "r3115",
+          :filename "src/cljs/cljs/core.cljs",
+          :lines [71 77]},
+ :full-name "cljs.core/*print-dup*",
  :clj-symbol "clojure.core/*print-dup*",
- :history [["+" "0.0-927"]]}
+ :docstring "When set to logical true, objects will be printed in a way that preserves\ntheir type when read in later.\n\nDefaults to false."}
 
 ```
 

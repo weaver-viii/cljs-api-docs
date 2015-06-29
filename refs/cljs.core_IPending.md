@@ -15,20 +15,29 @@
 
 
 
+Source docstring:
+
+```
+Protocol for types which can have a deferred realization. Currently only
+  implemented by Delay.
+```
 
 Source code:
 
 ```clj
 (defprotocol IPending
-  (^boolean -realized? [d]))
+  "Protocol for types which can have a deferred realization. Currently only
+  implemented by Delay."
+  (^boolean -realized? [d]
+    "Returns true if a value for d has been produced, false otherwise."))
 ```
 
  <pre>
-clojurescript @ r3058
+clojurescript @ r3115
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:387-388](https://github.com/clojure/clojurescript/blob/r3058/src/cljs/cljs/core.cljs#L387-L388)</ins>
+            └── <ins>[core.cljs:533-537](https://github.com/clojure/clojurescript/blob/r3115/src/cljs/cljs/core.cljs#L533-L537)</ins>
 </pre>
 
 
@@ -50,14 +59,17 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "protocol",
  :full-name-encode "cljs.core_IPending",
- :source {:code "(defprotocol IPending\n  (^boolean -realized? [d]))",
+ :source {:code "(defprotocol IPending\n  \"Protocol for types which can have a deferred realization. Currently only\n  implemented by Delay.\"\n  (^boolean -realized? [d]\n    \"Returns true if a value for d has been produced, false otherwise.\"))",
           :repo "clojurescript",
-          :tag "r3058",
+          :tag "r3115",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [387 388]},
- :methods [{:name "-realized?", :signature ["[d]"], :docstring nil}],
+          :lines [533 537]},
+ :methods [{:name "-realized?",
+            :signature ["[d]"],
+            :docstring "Returns true if a value for d has been produced, false otherwise."}],
  :full-name "cljs.core/IPending",
- :clj-symbol "clojure.lang/IPending"}
+ :clj-symbol "clojure.lang/IPending",
+ :docstring "Protocol for types which can have a deferred realization. Currently only\n  implemented by Delay."}
 
 ```
 
