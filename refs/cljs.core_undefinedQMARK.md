@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2261
+clojurescript @ r2268
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1397-1398](https://github.com/clojure/clojurescript/blob/r2261/src/cljs/cljs/core.cljs#L1397-L1398)</ins>
+            └── <ins>[core.cljs:1398-1399](https://github.com/clojure/clojurescript/blob/r2268/src/cljs/cljs/core.cljs#L1398-L1399)</ins>
 </pre>
 
 
@@ -42,11 +42,11 @@ clojurescript @ r2261
 ```
 
  <pre>
-clojurescript @ r2261
+clojurescript @ r2268
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:330-331](https://github.com/clojure/clojurescript/blob/r2261/src/clj/cljs/core.clj#L330-L331)</ins>
+            └── <ins>[core.clj:330-331](https://github.com/clojure/clojurescript/blob/r2268/src/clj/cljs/core.clj#L330-L331)</ins>
 </pre>
 
 ---
@@ -71,12 +71,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_undefinedQMARK",
  :source {:code "(defn ^boolean undefined? [x]\n  (cljs.core/undefined? x))",
           :repo "clojurescript",
-          :tag "r2261",
+          :tag "r2268",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1397 1398]},
+          :lines [1398 1399]},
  :extra-sources ({:code "(defmacro undefined? [x]\n  (bool-expr (core/list 'js* \"(void 0 === ~{})\" x)))",
                   :repo "clojurescript",
-                  :tag "r2261",
+                  :tag "r2268",
                   :filename "src/clj/cljs/core.clj",
                   :lines [330 331]}),
  :full-name "cljs.core/undefined?"}

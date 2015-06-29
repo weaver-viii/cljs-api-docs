@@ -40,19 +40,21 @@ Source code:
 ```clj
 (defn re-find
   [re s]
-  (let [matches (.exec re s)]
-    (when-not (nil? matches)
-      (if (== (count matches) 1)
-        (first matches)
-        (vec matches)))))
+  (if (string? s)
+    (let [matches (.exec re s)]
+      (when-not (nil? matches)
+        (if (== (count matches) 1)
+          (first matches)
+          (vec matches))))
+    (throw (js/TypeError. "re-find must match against a string."))))
 ```
 
  <pre>
-clojurescript @ r2261
+clojurescript @ r2268
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6934-6944](https://github.com/clojure/clojurescript/blob/r2261/src/cljs/cljs/core.cljs#L6934-L6944)</ins>
+            └── <ins>[core.cljs:7050-7062](https://github.com/clojure/clojurescript/blob/r2268/src/cljs/cljs/core.cljs#L7050-L7062)</ins>
 </pre>
 
 
@@ -76,11 +78,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.core_re-find",
- :source {:code "(defn re-find\n  [re s]\n  (let [matches (.exec re s)]\n    (when-not (nil? matches)\n      (if (== (count matches) 1)\n        (first matches)\n        (vec matches)))))",
+ :source {:code "(defn re-find\n  [re s]\n  (if (string? s)\n    (let [matches (.exec re s)]\n      (when-not (nil? matches)\n        (if (== (count matches) 1)\n          (first matches)\n          (vec matches))))\n    (throw (js/TypeError. \"re-find must match against a string.\"))))",
           :repo "clojurescript",
-          :tag "r2261",
+          :tag "r2268",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6934 6944]},
+          :lines [7050 7062]},
  :full-name "cljs.core/re-find",
  :clj-symbol "clojure.core/re-find",
  :docstring "Returns the first regex match, if any, of s to re, using\nre.exec(s). Returns a vector, containing first the matching\nsubstring, then any capturing groups if the regular expression contains\ncapturing groups."}

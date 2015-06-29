@@ -504,7 +504,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/EntriesIterator</td>
-<td></td>
+<td>[ref](refs/cljs.core_EntriesIterator.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_EntriesIterator.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1008,7 +1008,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/Iterator</td>
-<td></td>
+<td>[ref](refs/cljs.core_Iterator.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_Iterator.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -1448,7 +1448,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/SetEntriesIterator</td>
-<td></td>
+<td>[ref](refs/cljs.core_SetEntriesIterator.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_SetEntriesIterator.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -2408,7 +2408,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/entries-iterator</td>
-<td></td>
+<td>[ref](refs/cljs.core_entries-iterator.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_entries-iterator.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -3000,7 +3000,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/iterator</td>
-<td></td>
+<td>[ref](refs/cljs.core_iterator.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_iterator.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -4248,7 +4248,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/set-entries-iterator</td>
-<td></td>
+<td>[ref](refs/cljs.core_set-entries-iterator.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_set-entries-iterator.cljsdoc)</td>
 <td></td>
 <td></td>

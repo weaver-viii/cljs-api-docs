@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2261
+clojurescript @ r2268
 └── src
     └── cljs
         └── clojure
-            └── <ins>[zip.cljs:69-74](https://github.com/clojure/clojurescript/blob/r2261/src/cljs/clojure/zip.cljs#L69-L74)</ins>
+            └── <ins>[zip.cljs:69-74](https://github.com/clojure/clojurescript/blob/r2268/src/cljs/clojure/zip.cljs#L69-L74)</ins>
 </pre>
 
 
@@ -66,7 +66,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.zip_children",
  :source {:code "(defn children\n  [loc]\n    (if (branch? loc)\n      ((:zip/children (meta loc)) (node loc))\n      (throw \"called children on a leaf node\")))",
           :repo "clojurescript",
-          :tag "r2261",
+          :tag "r2268",
           :filename "src/cljs/clojure/zip.cljs",
           :lines [69 74]},
  :full-name "clojure.zip/children",
