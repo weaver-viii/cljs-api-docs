@@ -29,12 +29,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2505
+clojurescript @ r2511
 └── src
     └── clj
         └── cljs
             └── analyzer
-                └── <ins>[api.clj:26-27](https://github.com/clojure/clojurescript/blob/r2505/src/clj/cljs/analyzer/api.clj#L26-L27)</ins>
+                └── <ins>[api.clj:26-27](https://github.com/clojure/clojurescript/blob/r2511/src/clj/cljs/analyzer/api.clj#L26-L27)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.analyzer.api_ns-resolve",
  :source {:code "(defn ns-resolve [ns sym]\n  (get-in @env/*compiler* [::ana/namespaces ns :defs sym]))",
           :repo "clojurescript",
-          :tag "r2505",
+          :tag "r2511",
           :filename "src/clj/cljs/analyzer/api.clj",
           :lines [26 27]},
  :full-name "cljs.analyzer.api/ns-resolve",

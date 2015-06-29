@@ -76,11 +76,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2505
+clojurescript @ r2511
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1796-1801](https://github.com/clojure/clojurescript/blob/r2505/src/cljs/cljs/core.cljs#L1796-L1801)</ins>
+            └── <ins>[core.cljs:1796-1801](https://github.com/clojure/clojurescript/blob/r2511/src/cljs/cljs/core.cljs#L1796-L1801)</ins>
 </pre>
 
 
@@ -95,11 +95,11 @@ clojurescript @ r2505
 ```
 
  <pre>
-clojurescript @ r2505
+clojurescript @ r2511
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:418-422](https://github.com/clojure/clojurescript/blob/r2505/src/clj/cljs/core.clj#L418-L422)</ins>
+            └── <ins>[core.clj:418-422](https://github.com/clojure/clojurescript/blob/r2511/src/clj/cljs/core.clj#L418-L422)</ins>
 </pre>
 
 ---
@@ -126,12 +126,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_STAR",
  :source {:code "(defn ^number *\n  ([] 1)\n  ([x] x)\n  ([x y] (cljs.core/* x y))\n  ([x y & more] (reduce * (cljs.core/* x y) more)))",
           :repo "clojurescript",
-          :tag "r2505",
+          :tag "r2511",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1796 1801]},
  :extra-sources ({:code "(defmacro ^::ana/numeric *\n  ([] 1)\n  ([x] x)\n  ([x y] (core/list 'js* \"(~{} * ~{})\" x y))\n  ([x y & more] `(* (* ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r2505",
+                  :tag "r2511",
                   :filename "src/clj/cljs/core.clj",
                   :lines [418 422]}),
  :examples [{:id "bc4a1f",

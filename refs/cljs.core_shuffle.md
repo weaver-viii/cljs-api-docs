@@ -40,11 +40,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2505
+clojurescript @ r2511
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1691-1696](https://github.com/clojure/clojurescript/blob/r2505/src/cljs/cljs/core.cljs#L1691-L1696)</ins>
+            └── <ins>[core.cljs:1691-1696](https://github.com/clojure/clojurescript/blob/r2511/src/cljs/cljs/core.cljs#L1691-L1696)</ins>
 </pre>
 
 
@@ -70,7 +70,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_shuffle",
  :source {:code "(defn shuffle\n  [coll]\n  (let [a (to-array coll)]\n    (garray/shuffle a)\n    (vec a)))",
           :repo "clojurescript",
-          :tag "r2505",
+          :tag "r2511",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1691 1696]},
  :full-name "cljs.core/shuffle",
