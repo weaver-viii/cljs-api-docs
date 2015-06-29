@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1878
+clojurescript @ r1885
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:361-369](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L361-L369)</ins>
+            └── <ins>[core.cljs:359-367](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/cljs/core.cljs#L359-L367)</ins>
 </pre>
 
 
@@ -66,9 +66,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_pr-strSTAR",
  :source {:code "(defn pr-str*\n  [^not-native obj]\n  (let [sb (gstring/StringBuffer.)\n        writer (StringBufferWriter. sb)]\n    (-pr-writer obj writer (pr-opts))\n    (-flush writer)\n    (str sb)))",
           :repo "clojurescript",
-          :tag "r1878",
+          :tag "r1885",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [361 369]},
+          :lines [359 367]},
  :full-name "cljs.core/pr-str*",
  :docstring "Support so that collections can implement toString without\nloading all the printing machinery."}
 

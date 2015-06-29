@@ -69,11 +69,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1878
+clojurescript @ r1885
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2420-2421](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L2420-L2421)</ins>
+            └── <ins>[core.cljs:2408-2409](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/cljs/core.cljs#L2408-L2409)</ins>
 </pre>
 
 
@@ -100,9 +100,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_assocBANG",
  :source {:code "(defn assoc! [tcoll key val]\n  (-assoc! tcoll key val))",
           :repo "clojurescript",
-          :tag "r1878",
+          :tag "r1885",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2420 2421]},
+          :lines [2408 2409]},
  :examples [{:id "7d1e6b",
              :content "```clj\n(def tcoll (transient! {}))\n(assoc! tcoll :a 1)\n(assoc! tcoll :b 2)\n\ntcoll\n;;=> #<[object Object]> \n\n(:a tcoll)\n;;=> 1\n\n(:b tcoll)\n;;=> 2\n\n(def a (persistent! tcoll))\n;;=> {:a 1 :b 2}\n```"}],
  :full-name "cljs.core/assoc!",

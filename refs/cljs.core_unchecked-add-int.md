@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1878
+clojurescript @ r1885
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1523-1528](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L1523-L1528)</ins>
+            └── <ins>[core.cljs:1516-1521](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/cljs/core.cljs#L1516-L1521)</ins>
 </pre>
 
 
@@ -62,11 +62,11 @@ clojurescript @ r1878
 ```
 
  <pre>
-clojurescript @ r1878
+clojurescript @ r1885
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:299-300](https://github.com/clojure/clojurescript/blob/r1878/src/clj/cljs/core.clj#L299-L300)</ins>
+            └── <ins>[core.clj:302-303](https://github.com/clojure/clojurescript/blob/r1885/src/clj/cljs/core.clj#L302-L303)</ins>
 </pre>
 
 ---
@@ -90,14 +90,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-add-int",
  :source {:code "(defn unchecked-add-int\n  ([] 0)\n  ([x] x)\n  ([x y] (cljs.core/unchecked-add-int x y))\n  ([x y & more] (reduce unchecked-add-int (cljs.core/unchecked-add-int x y) more)))",
           :repo "clojurescript",
-          :tag "r1878",
+          :tag "r1885",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1523 1528]},
+          :lines [1516 1521]},
  :extra-sources ({:code "(defmacro unchecked-add-int\n  ([& xs] `(+ ~@xs)))",
                   :repo "clojurescript",
-                  :tag "r1878",
+                  :tag "r1885",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [299 300]}),
+                  :lines [302 303]}),
  :full-name "cljs.core/unchecked-add-int",
  :clj-symbol "clojure.core/unchecked-add-int",
  :docstring "Returns the sum of nums. (+) returns 0."}

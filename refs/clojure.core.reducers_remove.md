@@ -42,12 +42,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1878
+clojurescript @ r1885
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:136-141](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/clojure/core/reducers.cljs#L136-L141)</ins>
+                └── <ins>[reducers.cljs:137-142](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/clojure/core/reducers.cljs#L137-L142)</ins>
 </pre>
 
 
@@ -72,9 +72,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.core.reducers_remove",
  :source {:code "(defcurried remove\n  \"Removes values in the reduction of coll for which (pred val)\n  returns logical true. Foldable.\"\n  {}\n  [pred coll]\n  (filter (complement pred) coll))",
           :repo "clojurescript",
-          :tag "r1878",
+          :tag "r1885",
           :filename "src/cljs/clojure/core/reducers.cljs",
-          :lines [136 141]},
+          :lines [137 142]},
  :full-name "clojure.core.reducers/remove",
  :clj-symbol "clojure.core.reducers/remove",
  :docstring "Removes values in the reduction of coll for which (pred val)\n  returns logical true. Foldable."}

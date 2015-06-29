@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1878
+clojurescript @ r1885
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1506](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L1506)</ins>
+            └── <ins>[core.cljs:1499](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/cljs/core.cljs#L1499)</ins>
 </pre>
 
 
@@ -43,11 +43,11 @@ clojurescript @ r1878
 ```
 
  <pre>
-clojurescript @ r1878
+clojurescript @ r1885
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:286](https://github.com/clojure/clojurescript/blob/r1878/src/clj/cljs/core.clj#L286)</ins>
+            └── <ins>[core.clj:289](https://github.com/clojure/clojurescript/blob/r1885/src/clj/cljs/core.clj#L289)</ins>
 </pre>
 
 ---
@@ -71,14 +71,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_short",
  :source {:code "(defn short [x] x)",
           :repo "clojurescript",
-          :tag "r1878",
+          :tag "r1885",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1506]},
+          :lines [1499]},
  :extra-sources ({:code "(defmacro short [x] x)",
                   :repo "clojurescript",
-                  :tag "r1878",
+                  :tag "r1885",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [286]}),
+                  :lines [289]}),
  :full-name "cljs.core/short",
  :clj-symbol "clojure.core/short"}
 

@@ -49,12 +49,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1878
+clojurescript @ r1885
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:68-85](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/clojure/core/reducers.cljs#L68-L85)</ins>
+                └── <ins>[reducers.cljs:69-86](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/clojure/core/reducers.cljs#L69-L86)</ins>
 </pre>
 
 
@@ -79,9 +79,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.core.reducers_folder",
  :source {:code "(defn folder\n  ([coll xf]\n     (reify\n       cljs.core/IReduce\n       (-reduce [_ f1]\n         (-reduce coll (xf f1) (f1)))\n       (-reduce [_ f1 init]\n         (-reduce coll (xf f1) init))\n\n       #_\n       CollFold\n       #_\n       (coll-fold [_ n combinef reducef]\n         (coll-fold coll n combinef (xf reducef))))))",
           :repo "clojurescript",
-          :tag "r1878",
+          :tag "r1885",
           :filename "src/cljs/clojure/core/reducers.cljs",
-          :lines [68 85]},
+          :lines [69 86]},
  :full-name "clojure.core.reducers/folder",
  :clj-symbol "clojure.core.reducers/folder",
  :docstring "Given a foldable collection, and a transformation function xf,\nreturns a foldable collection, where any supplied reducing\nfn will be transformed by xf. xf is a function of reducing fn to\nreducing fn."}

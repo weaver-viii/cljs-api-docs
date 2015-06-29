@@ -23,12 +23,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1878
+clojurescript @ r1885
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:53](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/clojure/core/reducers.cljs#L53)</ins>
+                └── <ins>[reducers.cljs:54](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/clojure/core/reducers.cljs#L54)</ins>
 </pre>
 
 
@@ -50,9 +50,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "var",
  :source {:code "(def fold reduce)",
           :repo "clojurescript",
-          :tag "r1878",
+          :tag "r1885",
           :filename "src/cljs/clojure/core/reducers.cljs",
-          :lines [53]},
+          :lines [54]},
  :full-name "clojure.core.reducers/fold",
  :full-name-encode "clojure.core.reducers_fold",
  :clj-symbol "clojure.core.reducers/fold",

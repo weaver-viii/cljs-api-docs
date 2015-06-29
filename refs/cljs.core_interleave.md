@@ -57,11 +57,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1878
+clojurescript @ r1885
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2878-2890](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L2878-L2890)</ins>
+            └── <ins>[core.cljs:2866-2878](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/cljs/core.cljs#L2866-L2878)</ins>
 </pre>
 
 
@@ -88,9 +88,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_interleave",
  :source {:code "(defn interleave\n  ([c1 c2]\n     (lazy-seq\n      (let [s1 (seq c1) s2 (seq c2)]\n        (when (and s1 s2)\n          (cons (first s1) (cons (first s2)\n                                 (interleave (rest s1) (rest s2))))))))\n  ([c1 c2 & colls]\n     (lazy-seq\n      (let [ss (map seq (conj colls c2 c1))]\n        (when (every? identity ss)\n          (concat (map first ss) (apply interleave (map rest ss))))))))",
           :repo "clojurescript",
-          :tag "r1878",
+          :tag "r1885",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2878 2890]},
+          :lines [2866 2878]},
  :full-name "cljs.core/interleave",
  :clj-symbol "clojure.core/interleave",
  :docstring "Returns a lazy seq of the first item in each coll, then the second etc."}

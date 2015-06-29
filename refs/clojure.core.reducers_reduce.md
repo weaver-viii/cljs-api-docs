@@ -39,18 +39,19 @@ Source code:
   ([f init coll]
      (if (map? coll)
        (-kv-reduce coll f init)
-       (if-not (nil? coll)
-         (-reduce coll f init)
-         init))))
+       (cond
+         (nil? coll) init
+         (array? coll) (array-reduce coll f init)
+         :else (-reduce coll f init)))))
 ```
 
  <pre>
-clojurescript @ r1878
+clojurescript @ r1885
 └── src
     └── cljs
         └── clojure
             └── core
-                └── <ins>[reducers.cljs:20-30](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/clojure/core/reducers.cljs#L20-L30)</ins>
+                └── <ins>[reducers.cljs:20-31](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/clojure/core/reducers.cljs#L20-L31)</ins>
 </pre>
 
 
@@ -73,11 +74,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1236"]],
  :type "function",
  :full-name-encode "clojure.core.reducers_reduce",
- :source {:code "(defn reduce\n  ([f coll] (reduce f (f) coll))\n  ([f init coll]\n     (if (map? coll)\n       (-kv-reduce coll f init)\n       (if-not (nil? coll)\n         (-reduce coll f init)\n         init))))",
+ :source {:code "(defn reduce\n  ([f coll] (reduce f (f) coll))\n  ([f init coll]\n     (if (map? coll)\n       (-kv-reduce coll f init)\n       (cond\n         (nil? coll) init\n         (array? coll) (array-reduce coll f init)\n         :else (-reduce coll f init)))))",
           :repo "clojurescript",
-          :tag "r1878",
+          :tag "r1885",
           :filename "src/cljs/clojure/core/reducers.cljs",
-          :lines [20 30]},
+          :lines [20 31]},
  :full-name "clojure.core.reducers/reduce",
  :clj-symbol "clojure.core.reducers/reduce",
  :docstring "Like core/reduce except:\n  When init is not provided, (f) is used.\n  Maps are reduced with reduce-kv"}

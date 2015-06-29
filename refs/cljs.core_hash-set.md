@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1878
+clojurescript @ r1885
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6190-6192](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L6190-L6192)</ins>
+            └── <ins>[core.cljs:6178-6180](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/cljs/core.cljs#L6178-L6180)</ins>
 </pre>
 
 
@@ -75,9 +75,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_hash-set",
  :source {:code "(defn hash-set\n  ([] #{})\n  ([& keys] (set keys)))",
           :repo "clojurescript",
-          :tag "r1878",
+          :tag "r1885",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [6190 6192]},
+          :lines [6178 6180]},
  :full-name "cljs.core/hash-set",
  :clj-symbol "clojure.core/hash-set"}
 

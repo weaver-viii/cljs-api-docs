@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1878
+clojurescript @ r1885
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1543-1544](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L1543-L1544)</ins>
+            └── <ins>[core.cljs:1536-1537](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/cljs/core.cljs#L1536-L1537)</ins>
 </pre>
 
 
@@ -45,11 +45,11 @@ clojurescript @ r1878
 ```
 
  <pre>
-clojurescript @ r1878
+clojurescript @ r1885
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:311-312](https://github.com/clojure/clojurescript/blob/r1878/src/clj/cljs/core.clj#L311-L312)</ins>
+            └── <ins>[core.clj:314-315](https://github.com/clojure/clojurescript/blob/r1885/src/clj/cljs/core.clj#L314-L315)</ins>
 </pre>
 
 ---
@@ -73,14 +73,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-inc",
  :source {:code "(defn unchecked-inc [x]\n  (cljs.core/unchecked-inc x))",
           :repo "clojurescript",
-          :tag "r1878",
+          :tag "r1885",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1543 1544]},
+          :lines [1536 1537]},
  :extra-sources ({:code "(defmacro unchecked-inc\n  ([x] `(inc ~x)))",
                   :repo "clojurescript",
-                  :tag "r1878",
+                  :tag "r1885",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [311 312]}),
+                  :lines [314 315]}),
  :full-name "cljs.core/unchecked-inc",
  :clj-symbol "clojure.core/unchecked-inc"}
 

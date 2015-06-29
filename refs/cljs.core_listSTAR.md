@@ -61,11 +61,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1878
+clojurescript @ r1885
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2398-2406](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L2398-L2406)</ins>
+            └── <ins>[core.cljs:2386-2394](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/cljs/core.cljs#L2386-L2394)</ins>
 </pre>
 
 
@@ -96,9 +96,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_listSTAR",
  :source {:code "(defn list*\n  ([args] (seq args))\n  ([a args] (cons a args))\n  ([a b args] (cons a (cons b args)))\n  ([a b c args] (cons a (cons b (cons c args))))\n  ([a b c d & more]\n     (cons a (cons b (cons c (cons d (spread more)))))))",
           :repo "clojurescript",
-          :tag "r1878",
+          :tag "r1885",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2398 2406]},
+          :lines [2386 2394]},
  :full-name "cljs.core/list*",
  :clj-symbol "clojure.core/list*",
  :docstring "Creates a new list containing the items prepended to the rest, the\nlast of which will be treated as a sequence."}

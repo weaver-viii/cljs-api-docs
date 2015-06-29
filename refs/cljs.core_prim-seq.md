@@ -33,11 +33,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1878
+clojurescript @ r1885
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:723-728](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L723-L728)</ins>
+            └── <ins>[core.cljs:721-726](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/cljs/core.cljs#L721-L726)</ins>
 </pre>
 
 
@@ -60,9 +60,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[prim]" "[prim i]"],
  :source {:code "(defn prim-seq\n  ([prim]\n     (prim-seq prim 0))\n  ([prim i]\n     (when (< i (alength prim))\n       (IndexedSeq. prim i))))",
           :repo "clojurescript",
-          :tag "r1878",
+          :tag "r1885",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [723 728]},
+          :lines [721 726]},
  :full-name "cljs.core/prim-seq",
  :full-name-encode "cljs.core_prim-seq",
  :history [["+" "0.0-927"]]}

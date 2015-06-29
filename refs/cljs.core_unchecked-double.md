@@ -28,11 +28,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1878
+clojurescript @ r1885
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1514](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L1514)</ins>
+            └── <ins>[core.cljs:1507](https://github.com/clojure/clojurescript/blob/r1885/src/cljs/cljs/core.cljs#L1507)</ins>
 </pre>
 
 
@@ -43,11 +43,11 @@ clojurescript @ r1878
 ```
 
  <pre>
-clojurescript @ r1878
+clojurescript @ r1885
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:294](https://github.com/clojure/clojurescript/blob/r1878/src/clj/cljs/core.clj#L294)</ins>
+            └── <ins>[core.clj:297](https://github.com/clojure/clojurescript/blob/r1885/src/clj/cljs/core.clj#L297)</ins>
 </pre>
 
 ---
@@ -71,14 +71,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-double",
  :source {:code "(defn unchecked-double [x] x)",
           :repo "clojurescript",
-          :tag "r1878",
+          :tag "r1885",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1514]},
+          :lines [1507]},
  :extra-sources ({:code "(defmacro unchecked-double [x] x)",
                   :repo "clojurescript",
-                  :tag "r1878",
+                  :tag "r1885",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [294]}),
+                  :lines [297]}),
  :full-name "cljs.core/unchecked-double",
  :clj-symbol "clojure.core/unchecked-double"}
 
