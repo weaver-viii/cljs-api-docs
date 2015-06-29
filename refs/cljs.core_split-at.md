@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2496
+clojurescript @ r2498
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:3806-3809](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/core.cljs#L3806-L3809)</ins>
+            └── <ins>[core.cljs:3806-3809](https://github.com/clojure/clojurescript/blob/r2498/src/cljs/cljs/core.cljs#L3806-L3809)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_split-at",
  :source {:code "(defn split-at\n  [n coll]\n  [(take n coll) (drop n coll)])",
           :repo "clojurescript",
-          :tag "r2496",
+          :tag "r2498",
           :filename "src/cljs/cljs/core.cljs",
           :lines [3806 3809]},
  :full-name "cljs.core/split-at",

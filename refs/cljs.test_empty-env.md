@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2496
+clojurescript @ r2498
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:233-239](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/test.cljs#L233-L239)</ins>
+            └── <ins>[test.cljs:216-222](https://github.com/clojure/clojurescript/blob/r2498/src/cljs/cljs/test.cljs#L216-L222)</ins>
 </pre>
 
 
@@ -61,9 +61,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[]" "[reporter]"],
  :source {:code "(defn empty-env\n  ([] (empty-env ::default))\n  ([reporter]\n   {:report-counters {:test 0 :pass 0 :fail 0 :error 0}\n    :testing-vars ()\n    :testing-contexts ()\n    :reporter reporter}))",
           :repo "clojurescript",
-          :tag "r2496",
+          :tag "r2498",
           :filename "src/cljs/cljs/test.cljs",
-          :lines [233 239]},
+          :lines [216 222]},
  :full-name "cljs.test/empty-env",
  :full-name-encode "cljs.test_empty-env",
  :history [["+" "0.0-2496"]]}

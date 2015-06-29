@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2496
+clojurescript @ r2498
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1990-1993](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/core.cljs#L1990-L1993)</ins>
+            └── <ins>[core.cljs:1990-1993](https://github.com/clojure/clojurescript/blob/r2498/src/cljs/cljs/core.cljs#L1990-L1993)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_unchecked-long",
  :source {:code "(defn unchecked-long\n  [x]\n  (fix x))",
           :repo "clojurescript",
-          :tag "r2496",
+          :tag "r2498",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1990 1993]},
  :full-name "cljs.core/unchecked-long",

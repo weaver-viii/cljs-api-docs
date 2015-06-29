@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2496
+clojurescript @ r2498
 └── src
     └── clj
         └── cljs
-            └── <ins>[test.clj:43-55](https://github.com/clojure/clojurescript/blob/r2496/src/clj/cljs/test.clj#L43-L55)</ins>
+            └── <ins>[test.clj:43-55](https://github.com/clojure/clojurescript/blob/r2498/src/clj/cljs/test.clj#L43-L55)</ins>
 </pre>
 
 
@@ -73,7 +73,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.test_assert-any",
  :source {:code "(defn assert-any\n  [msg form]\n  `(let [value# ~form]\n     (if value#\n       (cljs.test/do-report\n         {:type :pass, :message ~msg,\n          :expected '~form, :actual value#})\n       (cljs.test/do-report\n         {:type :fail, :message ~msg,\n          :expected '~form, :actual value#}))\n     value#))",
           :repo "clojurescript",
-          :tag "r2496",
+          :tag "r2498",
           :filename "src/clj/cljs/test.clj",
           :lines [43 55]},
  :full-name "cljs.test/assert-any",

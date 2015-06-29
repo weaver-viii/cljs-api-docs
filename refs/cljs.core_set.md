@@ -69,11 +69,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2496
+clojurescript @ r2498
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7489-7504](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/core.cljs#L7489-L7504)</ins>
+            └── <ins>[core.cljs:7489-7504](https://github.com/clojure/clojurescript/blob/r2498/src/cljs/cljs/core.cljs#L7489-L7504)</ins>
 </pre>
 
 
@@ -114,7 +114,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_set",
  :source {:code "(defn set\n  [coll]\n  (let [^not-native in (seq coll)]\n    (cond\n      (nil? in) #{}\n\n      (and (instance? IndexedSeq in) (zero? (.-i in)))\n      (set-from-indexed-seq in)\n\n      :else\n      (loop [in in\n              ^not-native out (-as-transient #{})]\n        (if-not (nil? in)\n          (recur (-next in) (-conj! out (-first in)))\n          (-persistent! out))))))",
           :repo "clojurescript",
-          :tag "r2496",
+          :tag "r2498",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7489 7504]},
  :full-name "cljs.core/set",

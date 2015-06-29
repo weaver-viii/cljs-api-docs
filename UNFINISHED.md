@@ -7328,7 +7328,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.test/use-fixtures</td>
-<td></td>
+<td>[ref](refs/cljs.test_use-fixtures.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.test_use-fixtures.cljsdoc)</td>
 <td></td>
 <td></td>

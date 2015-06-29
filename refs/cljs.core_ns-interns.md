@@ -40,11 +40,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2496
+clojurescript @ r2498
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1675-1683](https://github.com/clojure/clojurescript/blob/r2496/src/clj/cljs/core.clj#L1675-L1683)</ins>
+            └── <ins>[core.clj:1675-1683](https://github.com/clojure/clojurescript/blob/r2498/src/clj/cljs/core.clj#L1675-L1683)</ins>
 </pre>
 
 
@@ -69,7 +69,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_ns-interns",
  :source {:code "(defmacro ns-interns\n  [[quote ns]]\n  (core/assert (core/and (= quote 'quote) (core/symbol? ns))\n    \"Argument to ns-interns must be a quoted symbol\")\n  `(into {}\n     [~@(map\n          (fn [[sym _]] `[(symbol ~(name sym)) (var ~sym)])\n          (get-in @env/*compiler* [:cljs.analyzer/namespaces ns :defs]))]))",
           :repo "clojurescript",
-          :tag "r2496",
+          :tag "r2498",
           :filename "src/clj/cljs/core.clj",
           :lines [1675 1683]},
  :full-name "cljs.core/ns-interns",

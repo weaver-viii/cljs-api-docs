@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2496
+clojurescript @ r2498
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:246-247](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/test.cljs#L246-L247)</ins>
+            └── <ins>[test.cljs:229-230](https://github.com/clojure/clojurescript/blob/r2498/src/cljs/cljs/test.cljs#L229-L230)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[ks f & args]"],
  :source {:code "(defn update-current-env! [ks f & args]\n  (set! *current-env* (apply update-in (get-current-env) ks f args)))",
           :repo "clojurescript",
-          :tag "r2496",
+          :tag "r2498",
           :filename "src/cljs/cljs/test.cljs",
-          :lines [246 247]},
+          :lines [229 230]},
  :full-name "cljs.test/update-current-env!",
  :full-name-encode "cljs.test_update-current-envBANG",
  :history [["+" "0.0-2496"]]}

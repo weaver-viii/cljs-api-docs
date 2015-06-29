@@ -30,12 +30,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2496
+clojurescript @ r2498
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[server.clj:88-93](https://github.com/clojure/clojurescript/blob/r2496/src/clj/cljs/repl/server.clj#L88-L93)</ins>
+                └── <ins>[server.clj:88-93](https://github.com/clojure/clojurescript/blob/r2498/src/clj/cljs/repl/server.clj#L88-L93)</ins>
 </pre>
 
 
@@ -58,7 +58,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[line rdr]"],
  :source {:code "(defn read-get [line rdr]\n  (let [[_ path _] (str/split line #\" \")\n        headers (parse-headers (read-headers rdr))]\n    {:method :get\n     :path path\n     :headers headers}))",
           :repo "clojurescript",
-          :tag "r2496",
+          :tag "r2498",
           :filename "src/clj/cljs/repl/server.clj",
           :lines [88 93]},
  :full-name "cljs.repl.server/read-get",

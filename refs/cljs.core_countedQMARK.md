@@ -39,11 +39,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2496
+clojurescript @ r2498
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:921-923](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/core.cljs#L921-L923)</ins>
+            └── <ins>[core.cljs:921-923](https://github.com/clojure/clojurescript/blob/r2498/src/cljs/cljs/core.cljs#L921-L923)</ins>
 </pre>
 
 
@@ -70,7 +70,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_countedQMARK",
  :source {:code "(defn ^boolean counted?\n  [x] (satisfies? ICounted x))",
           :repo "clojurescript",
-          :tag "r2496",
+          :tag "r2498",
           :filename "src/cljs/cljs/core.cljs",
           :lines [921 923]},
  :full-name "cljs.core/counted?",

@@ -26,11 +26,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2496
+clojurescript @ r2498
 └── src
     └── cljs
         └── cljs
-            └── <ins>[test.cljs:328-329](https://github.com/clojure/clojurescript/blob/r2496/src/cljs/cljs/test.cljs#L328-L329)</ins>
+            └── <ins>[test.cljs:311-312](https://github.com/clojure/clojurescript/blob/r2498/src/cljs/cljs/test.cljs#L311-L312)</ins>
 </pre>
 
 
@@ -53,9 +53,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[stack-element]"],
  :source {:code "(defn js-filename [stack-element]\n  (first (.split (last (.split stack-element \"/out/\")) \":\")))",
           :repo "clojurescript",
-          :tag "r2496",
+          :tag "r2498",
           :filename "src/cljs/cljs/test.cljs",
-          :lines [328 329]},
+          :lines [311 312]},
  :full-name "cljs.test/js-filename",
  :full-name-encode "cljs.test_js-filename",
  :history [["+" "0.0-2496"]]}

@@ -34,12 +34,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2496
+clojurescript @ r2498
 └── src
     └── clj
         └── cljs
             └── build
-                └── <ins>[api.clj:31-36](https://github.com/clojure/clojurescript/blob/r2496/src/clj/cljs/build/api.clj#L31-L36)</ins>
+                └── <ins>[api.clj:31-36](https://github.com/clojure/clojurescript/blob/r2498/src/clj/cljs/build/api.clj#L31-L36)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.build.api_mark-cljs-ns-for-recompileBANG",
  :source {:code "(defn mark-cljs-ns-for-recompile!\n  [output-dir ns-sym]\n  (let [s (target-file-for-cljs-ns output-dir ns-sym)]\n    (when (.exists s)\n      (.setLastModified s 5000))))",
           :repo "clojurescript",
-          :tag "r2496",
+          :tag "r2498",
           :filename "src/clj/cljs/build/api.clj",
           :lines [31 36]},
  :full-name "cljs.build.api/mark-cljs-ns-for-recompile!",
