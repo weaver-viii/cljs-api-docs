@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1211
+clojurescript @ r1236
 └── src
     └── clj
         └── cljs
-            └── <ins>[compiler.clj:1162-1173](https://github.com/clojure/clojurescript/blob/r1211/src/clj/cljs/compiler.clj#L1162-L1173)</ins>
+            └── <ins>[compiler.clj:1205-1216](https://github.com/clojure/clojurescript/blob/r1236/src/clj/cljs/compiler.clj#L1205-L1216)</ins>
 </pre>
 
 
@@ -57,9 +57,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "special form",
  :source {:code "(defmethod parse 'deftype*\n  [_ env [_ tsym fields pmasks :as form] _]\n  (let [t (munge (:name (resolve-var (dissoc env :locals) tsym)))]\n    (swap! namespaces update-in [(-> env :ns :name) :defs tsym]\n           (fn [m]\n             (let [m (assoc (or m {}) :name t)]\n               (if-let [line (:line env)]\n                 (-> m\n                     (assoc :file *cljs-file*)\n                     (assoc :line line))\n                 m))))\n    {:env env :op :deftype* :as form :t t :fields fields :pmasks pmasks}))",
           :repo "clojurescript",
-          :tag "r1211",
+          :tag "r1236",
           :filename "src/clj/cljs/compiler.clj",
-          :lines [1162 1173]},
+          :lines [1205 1216]},
  :full-name "special/deftype*",
  :full-name-encode "special_deftypeSTAR",
  :history [["+" "0.0-927"]]}

@@ -37,11 +37,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1211
+clojurescript @ r1236
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:849-850](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L849-L850)</ins>
+            └── <ins>[core.cljs:861-862](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/core.cljs#L861-L862)</ins>
 </pre>
 
 
@@ -69,9 +69,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_numberQMARK",
  :source {:code "(defn ^boolean number? [n]\n  (goog/isNumber n))",
           :repo "clojurescript",
-          :tag "r1211",
+          :tag "r1236",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [849 850]},
+          :lines [861 862]},
  :full-name "cljs.core/number?",
  :clj-symbol "clojure.core/number?"}
 

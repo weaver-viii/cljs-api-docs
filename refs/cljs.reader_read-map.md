@@ -30,11 +30,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1211
+clojurescript @ r1236
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:213-218](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/reader.cljs#L213-L218)</ins>
+            └── <ins>[reader.cljs:243-248](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/reader.cljs#L243-L248)</ins>
 </pre>
 
 
@@ -57,9 +57,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[rdr _]"],
  :source {:code "(defn read-map\n  [rdr _]\n  (let [l (read-delimited-list \"}\" rdr true)]\n    (when (odd? (count l))\n      (reader-error rdr \"Map literal must contain an even number of forms\"))\n    (apply hash-map l)))",
           :repo "clojurescript",
-          :tag "r1211",
+          :tag "r1236",
           :filename "src/cljs/cljs/reader.cljs",
-          :lines [213 218]},
+          :lines [243 248]},
  :full-name "cljs.reader/read-map",
  :full-name-encode "cljs.reader_read-map",
  :history [["+" "0.0-927"]]}

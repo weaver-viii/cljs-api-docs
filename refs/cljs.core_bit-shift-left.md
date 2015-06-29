@@ -60,11 +60,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1211
+clojurescript @ r1236
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1188-1190](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L1188-L1190)</ins>
+            └── <ins>[core.cljs:1200-1202](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/core.cljs#L1200-L1202)</ins>
 </pre>
 
 
@@ -76,11 +76,11 @@ clojurescript @ r1211
 ```
 
  <pre>
-clojurescript @ r1211
+clojurescript @ r1236
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:223-224](https://github.com/clojure/clojurescript/blob/r1211/src/clj/cljs/core.clj#L223-L224)</ins>
+            └── <ins>[core.clj:224-225](https://github.com/clojure/clojurescript/blob/r1236/src/clj/cljs/core.clj#L224-L225)</ins>
 </pre>
 
 ---
@@ -106,14 +106,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-shift-left",
  :source {:code "(defn bit-shift-left\n  [x n] (cljs.core/bit-shift-left x n))",
           :repo "clojurescript",
-          :tag "r1211",
+          :tag "r1236",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [1188 1190]},
+          :lines [1200 1202]},
  :extra-sources ({:code "(defmacro bit-shift-left [x n]\n  (list 'js* \"(~{} << ~{})\" x n))",
                   :repo "clojurescript",
-                  :tag "r1211",
+                  :tag "r1236",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [223 224]}),
+                  :lines [224 225]}),
  :examples [{:id "67c34a",
              :content "Bits can be entered using radix notation:\n\n```clj\n(bit-shift-left 2r0101 1)\n;;=> 10\n;; 10 = 2r1010\n```\n\nSame numbers in decimal:\n\n```clj\n(bit-shift-left 5 1)\n;;=> 10\n```"}],
  :full-name "cljs.core/bit-shift-left",

@@ -9,6 +9,9 @@
 </table>
 
  <samp>
+(__prim-seq__ prim)<br>
+</samp>
+ <samp>
 (__prim-seq__ prim i)<br>
 </samp>
 
@@ -21,17 +24,20 @@
 Source code:
 
 ```clj
-(defn prim-seq [prim i]
-  (when-not (zero? (.-length prim))
-    (IndexedSeq. prim i)))
+(defn prim-seq
+  ([prim]
+     (prim-seq prim 0))
+  ([prim i]
+     (when-not (zero? (.-length prim))
+       (IndexedSeq. prim i))))
 ```
 
  <pre>
-clojurescript @ r1211
+clojurescript @ r1236
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:462-464](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L462-L464)</ins>
+            └── <ins>[core.cljs:462-467](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/core.cljs#L462-L467)</ins>
 </pre>
 
 
@@ -51,12 +57,12 @@ __Meta__ - To retrieve the API data for this symbol:
 {:ns "cljs.core",
  :name "prim-seq",
  :type "function",
- :signature ["[prim i]"],
- :source {:code "(defn prim-seq [prim i]\n  (when-not (zero? (.-length prim))\n    (IndexedSeq. prim i)))",
+ :signature ["[prim]" "[prim i]"],
+ :source {:code "(defn prim-seq\n  ([prim]\n     (prim-seq prim 0))\n  ([prim i]\n     (when-not (zero? (.-length prim))\n       (IndexedSeq. prim i))))",
           :repo "clojurescript",
-          :tag "r1211",
+          :tag "r1236",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [462 464]},
+          :lines [462 467]},
  :full-name "cljs.core/prim-seq",
  :full-name-encode "cljs.core_prim-seq",
  :history [["+" "0.0-927"]]}

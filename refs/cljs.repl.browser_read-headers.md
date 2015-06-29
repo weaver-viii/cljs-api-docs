@@ -30,12 +30,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1211
+clojurescript @ r1236
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:135-140](https://github.com/clojure/clojurescript/blob/r1211/src/clj/cljs/repl/browser.clj#L135-L140)</ins>
+                └── <ins>[browser.clj:135-140](https://github.com/clojure/clojurescript/blob/r1236/src/clj/cljs/repl/browser.clj#L135-L140)</ins>
 </pre>
 
 
@@ -58,7 +58,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[rdr]"],
  :source {:code "(defn read-headers [rdr]\n  (loop [next-line (.readLine rdr)\n         header-lines []]\n    (if (= \"\" next-line)\n      header-lines                      ;we're done reading headers\n      (recur (.readLine rdr) (conj header-lines next-line)))))",
           :repo "clojurescript",
-          :tag "r1211",
+          :tag "r1236",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [135 140]},
  :full-name "cljs.repl.browser/read-headers",

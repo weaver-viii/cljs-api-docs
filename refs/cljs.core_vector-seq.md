@@ -43,11 +43,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1211
+clojurescript @ r1236
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2510-2528](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L2510-L2528)</ins>
+            └── <ins>[core.cljs:2522-2540](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/core.cljs#L2522-L2540)</ins>
 </pre>
 
 
@@ -70,9 +70,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[v offset]"],
  :source {:code "(defn vector-seq [v offset]\n  (let [c (-count v)]\n    (when (pos? c)\n      (reify\n        IPrintable\n        (-pr-seq [vseq opts] (pr-sequential pr-seq \"(\" \" \" \")\" opts vseq))\n        ISequential\n        IEquiv\n        (-equiv [vseq other] (equiv-sequential vseq other))\n        ASeq\n        ISeq\n        (-first [_] (-nth v offset))\n        (-rest [_]\n          (let [offset (inc offset)]\n            (if (< offset c)\n              (vector-seq v offset)\n              ())))\n        ISeqable\n        (-seq [vseq] vseq)))))",
           :repo "clojurescript",
-          :tag "r1211",
+          :tag "r1236",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2510 2528]},
+          :lines [2522 2540]},
  :full-name "cljs.core/vector-seq",
  :full-name-encode "cljs.core_vector-seq",
  :history [["+" "0.0-1211"]]}

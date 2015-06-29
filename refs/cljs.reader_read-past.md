@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1211
+clojurescript @ r1236
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:159-166](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/reader.cljs#L159-L166)</ins>
+            └── <ins>[reader.cljs:185-192](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/reader.cljs#L185-L192)</ins>
 </pre>
 
 
@@ -65,9 +65,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.reader_read-past",
  :source {:code "(defn read-past\n  [pred rdr]\n  (loop [ch (read-char rdr)]\n    (if (pred ch)\n      (recur (read-char rdr))\n      ch)))",
           :repo "clojurescript",
-          :tag "r1211",
+          :tag "r1236",
           :filename "src/cljs/cljs/reader.cljs",
-          :lines [159 166]},
+          :lines [185 192]},
  :full-name "cljs.reader/read-past",
  :docstring "Read until first character that doesn't match pred, returning\nchar."}
 

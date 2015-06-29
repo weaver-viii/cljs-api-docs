@@ -30,11 +30,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1211
+clojurescript @ r1236
 └── src
     └── clj
         └── cljs
-            └── <ins>[compiler.clj:1055-1062](https://github.com/clojure/clojurescript/blob/r1211/src/clj/cljs/compiler.clj#L1055-L1062)</ins>
+            └── <ins>[compiler.clj:1098-1105](https://github.com/clojure/clojurescript/blob/r1236/src/clj/cljs/compiler.clj#L1098-L1105)</ins>
 </pre>
 
 
@@ -56,9 +56,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "special form",
  :source {:code "(defmethod parse 'new\n  [_ env [_ ctor & args :as form] _]\n  (disallowing-recur\n   (let [enve (assoc env :context :expr)\n         ctorexpr (analyze enve ctor)\n         argexprs (vec (map #(analyze enve %) args))]\n     {:env env :op :new :form form :ctor ctorexpr :args argexprs\n      :children (into [ctorexpr] argexprs)})))",
           :repo "clojurescript",
-          :tag "r1211",
+          :tag "r1236",
           :filename "src/clj/cljs/compiler.clj",
-          :lines [1055 1062]},
+          :lines [1098 1105]},
  :full-name "special/new",
  :full-name-encode "special_new",
  :clj-symbol "clojure.core/new",

@@ -30,11 +30,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1211
+clojurescript @ r1236
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2664-2669](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L2664-L2669)</ins>
+            └── <ins>[core.cljs:2676-2681](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/core.cljs#L2676-L2681)</ins>
 </pre>
 
 
@@ -60,9 +60,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_PersistentVectorDOTfromArray",
  :source {:code "(set! cljs.core.PersistentVector/fromArray\n      (fn [xs]\n        (loop [xs (seq xs) out (transient cljs.core.PersistentVector/EMPTY)]\n          (if xs\n            (recur (next xs) (conj! out (first xs)))\n            (persistent! out)))))",
           :repo "clojurescript",
-          :tag "r1211",
+          :tag "r1236",
           :filename "src/cljs/cljs/core.cljs",
-          :lines [2664 2669]},
+          :lines [2676 2681]},
  :full-name "cljs.core/PersistentVector.fromArray"}
 
 ```

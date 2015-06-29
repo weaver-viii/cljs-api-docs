@@ -4352,7 +4352,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.core/simple-benchmark</td>
-<td></td>
+<td>[ref](refs/cljs.core_simple-benchmark.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.core_simple-benchmark.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5496,7 +5496,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.reader/\*tag-table\*</td>
-<td></td>
+<td>[ref](refs/cljs.reader_STARtag-tableSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.reader_STARtag-tableSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5592,7 +5592,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.reader/maybe-read-tagged-type</td>
-<td></td>
+<td>[ref](refs/cljs.reader_maybe-read-tagged-type.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.reader_maybe-read-tagged-type.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5776,7 +5776,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.reader/read-string\*</td>
-<td></td>
+<td>[ref](refs/cljs.reader_read-stringSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.reader_read-stringSTAR.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -5840,7 +5840,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>cljs.reader/register-tag-parser!</td>
-<td></td>
+<td>[ref](refs/cljs.reader_register-tag-parserBANG.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/cljs.reader_register-tag-parserBANG.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7816,7 +7816,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.core.reducers/Cat</td>
-<td></td>
+<td>[ref](refs/clojure.core.reducers_Cat.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.core.reducers_Cat.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7832,7 +7832,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.core.reducers/append!</td>
-<td></td>
+<td>[ref](refs/clojure.core.reducers_appendBANG.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.core.reducers_appendBANG.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7840,7 +7840,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.core.reducers/cat</td>
-<td></td>
+<td>[ref](refs/clojure.core.reducers_cat.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.core.reducers_cat.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7848,7 +7848,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.core.reducers/drop</td>
-<td></td>
+<td>[ref](refs/clojure.core.reducers_drop.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.core.reducers_drop.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7856,7 +7856,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.core.reducers/filter</td>
-<td></td>
+<td>[ref](refs/clojure.core.reducers_filter.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.core.reducers_filter.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7864,7 +7864,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.core.reducers/flatten</td>
-<td></td>
+<td>[ref](refs/clojure.core.reducers_flatten.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.core.reducers_flatten.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7872,7 +7872,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.core.reducers/fold</td>
-<td></td>
+<td>[ref](refs/clojure.core.reducers_fold.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.core.reducers_fold.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7880,7 +7880,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.core.reducers/foldcat</td>
-<td></td>
+<td>[ref](refs/clojure.core.reducers_foldcat.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.core.reducers_foldcat.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7888,7 +7888,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.core.reducers/folder</td>
-<td></td>
+<td>[ref](refs/clojure.core.reducers_folder.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.core.reducers_folder.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7896,7 +7896,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.core.reducers/map</td>
-<td></td>
+<td>[ref](refs/clojure.core.reducers_map.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.core.reducers_map.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7904,7 +7904,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.core.reducers/mapcat</td>
-<td></td>
+<td>[ref](refs/clojure.core.reducers_mapcat.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.core.reducers_mapcat.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7912,7 +7912,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.core.reducers/monoid</td>
-<td></td>
+<td>[ref](refs/clojure.core.reducers_monoid.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.core.reducers_monoid.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7920,7 +7920,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.core.reducers/reduce</td>
-<td></td>
+<td>[ref](refs/clojure.core.reducers_reduce.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.core.reducers_reduce.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7928,7 +7928,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.core.reducers/reducer</td>
-<td></td>
+<td>[ref](refs/clojure.core.reducers_reducer.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.core.reducers_reducer.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7936,7 +7936,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.core.reducers/remove</td>
-<td></td>
+<td>[ref](refs/clojure.core.reducers_remove.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.core.reducers_remove.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7944,7 +7944,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.core.reducers/take</td>
-<td></td>
+<td>[ref](refs/clojure.core.reducers_take.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.core.reducers_take.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -7952,7 +7952,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>clojure.core.reducers/take-while</td>
-<td></td>
+<td>[ref](refs/clojure.core.reducers_take-while.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/clojure.core.reducers_take-while.cljsdoc)</td>
 <td></td>
 <td></td>
@@ -8584,7 +8584,7 @@ If a symbol has all aforementioned docs, then it is __removed__ from the table.
 </tr>
 <tr>
 <td>special/letfn\*</td>
-<td></td>
+<td>[ref](refs/special_letfnSTAR.md)</td>
 <td>[cljsdoc](https://github.com/cljsinfo/cljs-api-docs/blob/master/cljsdoc/special_letfnSTAR.cljsdoc)</td>
 <td></td>
 <td></td>

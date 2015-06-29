@@ -37,22 +37,23 @@ Source code:
      (nil? ch) (if eof-is-error (reader-error reader "EOF") sentinel)
      (whitespace? ch) (recur reader eof-is-error sentinel is-recursive)
      (comment-prefix? ch) (recur (read-comment reader ch) eof-is-error sentinel is-recursive)
-     :else (let [res
+     :else (let [f (macros ch)
+                 res
                  (cond
-                  (macros ch) ((macros ch) reader ch)
+                  f (f reader ch)
                   (number-literal? reader ch) (read-number reader ch)
                   :else (read-symbol reader ch))]
-     (if (= res reader)
+     (if (identical? res reader)
        (recur reader eof-is-error sentinel is-recursive)
        res)))))
 ```
 
  <pre>
-clojurescript @ r1211
+clojurescript @ r1236
 └── src
     └── cljs
         └── cljs
-            └── <ins>[reader.cljs:338-354](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/reader.cljs#L338-L354)</ins>
+            └── <ins>[reader.cljs:374-391](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/reader.cljs#L374-L391)</ins>
 </pre>
 
 
@@ -75,11 +76,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "function",
  :full-name-encode "cljs.reader_read",
- :source {:code "(defn read\n  [reader eof-is-error sentinel is-recursive]\n  (let [ch (read-char reader)]\n    (cond\n     (nil? ch) (if eof-is-error (reader-error reader \"EOF\") sentinel)\n     (whitespace? ch) (recur reader eof-is-error sentinel is-recursive)\n     (comment-prefix? ch) (recur (read-comment reader ch) eof-is-error sentinel is-recursive)\n     :else (let [res\n                 (cond\n                  (macros ch) ((macros ch) reader ch)\n                  (number-literal? reader ch) (read-number reader ch)\n                  :else (read-symbol reader ch))]\n     (if (= res reader)\n       (recur reader eof-is-error sentinel is-recursive)\n       res)))))",
+ :source {:code "(defn read\n  [reader eof-is-error sentinel is-recursive]\n  (let [ch (read-char reader)]\n    (cond\n     (nil? ch) (if eof-is-error (reader-error reader \"EOF\") sentinel)\n     (whitespace? ch) (recur reader eof-is-error sentinel is-recursive)\n     (comment-prefix? ch) (recur (read-comment reader ch) eof-is-error sentinel is-recursive)\n     :else (let [f (macros ch)\n                 res\n                 (cond\n                  f (f reader ch)\n                  (number-literal? reader ch) (read-number reader ch)\n                  :else (read-symbol reader ch))]\n     (if (identical? res reader)\n       (recur reader eof-is-error sentinel is-recursive)\n       res)))))",
           :repo "clojurescript",
-          :tag "r1211",
+          :tag "r1236",
           :filename "src/cljs/cljs/reader.cljs",
-          :lines [338 354]},
+          :lines [374 391]},
  :full-name "cljs.reader/read",
  :clj-symbol "clojure.core/read",
  :docstring "Reads the first object from a PushbackReader. Returns the object read.\nIf EOF, throws if eof-is-error is true. Otherwise returns sentinel."}

@@ -31,11 +31,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1211
+clojurescript @ r1236
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:290-293](https://github.com/clojure/clojurescript/blob/r1211/src/cljs/cljs/core.cljs#L290-L293)</ins>
+            └── <ins>[core.cljs:290-293](https://github.com/clojure/clojurescript/blob/r1236/src/cljs/cljs/core.cljs#L290-L293)</ins>
 </pre>
 
 
@@ -60,7 +60,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_type",
  :source {:code "(defn type [x]\n  (if (or (nil? x) (undefined? x))\n    nil\n    (js* \"(~{x}).constructor\")))",
           :repo "clojurescript",
-          :tag "r1211",
+          :tag "r1236",
           :filename "src/cljs/cljs/core.cljs",
           :lines [290 293]},
  :full-name "cljs.core/type",

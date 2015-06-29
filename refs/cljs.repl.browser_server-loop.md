@@ -30,12 +30,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1211
+clojurescript @ r1236
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:257-262](https://github.com/clojure/clojurescript/blob/r1211/src/clj/cljs/repl/browser.clj#L257-L262)</ins>
+                └── <ins>[browser.clj:257-262](https://github.com/clojure/clojurescript/blob/r1236/src/clj/cljs/repl/browser.clj#L257-L262)</ins>
 </pre>
 
 
@@ -58,7 +58,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[opts server-socket]"],
  :source {:code "(defn server-loop\n  [opts server-socket]\n  (let [conn (.accept server-socket)]\n    (do (.setKeepAlive conn true)\n        (future (handle-connection opts conn))\n        (recur opts server-socket))))",
           :repo "clojurescript",
-          :tag "r1211",
+          :tag "r1236",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [257 262]},
  :full-name "cljs.repl.browser/server-loop",
