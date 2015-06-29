@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2911
+clojurescript @ r2913
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8859-8878](https://github.com/clojure/clojurescript/blob/r2911/src/cljs/cljs/core.cljs#L8859-L8878)</ins>
+            └── <ins>[core.cljs:8859-8878](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/cljs/core.cljs#L8859-L8878)</ins>
 </pre>
 
 
@@ -83,7 +83,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_underive",
  :source {:code "(defn underive\n  ([tag parent]\n    (swap-global-hierarchy! underive tag parent)\n    nil)\n  ([h tag parent]\n    (let [parentMap (:parents h)\n          childsParents (if (parentMap tag)\n                          (disj (parentMap tag) parent) #{})\n          newParents (if (not-empty childsParents)\n                      (assoc parentMap tag childsParents)\n                      (dissoc parentMap tag))\n          deriv-seq (flatten (map #(cons (first %) (interpose (first %) (second %)))\n                                  (seq newParents)))]\n      (if (contains? (parentMap tag) parent)\n        (reduce #(apply derive %1 %2) (make-hierarchy)\n                (partition 2 deriv-seq))\n        h))))",
           :repo "clojurescript",
-          :tag "r2911",
+          :tag "r2913",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8859 8878]},
  :full-name "cljs.core/underive",

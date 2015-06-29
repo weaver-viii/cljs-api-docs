@@ -34,11 +34,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2911
+clojurescript @ r2913
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:464-473](https://github.com/clojure/clojurescript/blob/r2911/src/clj/cljs/repl.clj#L464-L473)</ins>
+            └── <ins>[repl.clj:464-473](https://github.com/clojure/clojurescript/blob/r2913/src/clj/cljs/repl.clj#L464-L473)</ins>
 </pre>
 
 
@@ -61,7 +61,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[specs]"],
  :source {:code "(defn self-require? [specs]\n  (some\n    (fn [quoted-spec-or-kw]\n      (and (not (keyword? quoted-spec-or-kw))\n           (let [spec (second quoted-spec-or-kw)\n                 ns (if (sequential? spec)\n                      (first spec)\n                      spec)]\n             (= ns ana/*cljs-ns*))))\n    specs))",
           :repo "clojurescript",
-          :tag "r2911",
+          :tag "r2913",
           :filename "src/clj/cljs/repl.clj",
           :lines [464 473]},
  :full-name "cljs.repl/self-require?",

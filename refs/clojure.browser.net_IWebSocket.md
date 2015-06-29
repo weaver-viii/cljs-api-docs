@@ -21,12 +21,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2911
+clojurescript @ r2913
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[net.cljs:143-144](https://github.com/clojure/clojurescript/blob/r2911/src/cljs/clojure/browser/net.cljs#L143-L144)</ins>
+                └── <ins>[net.cljs:143-144](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/clojure/browser/net.cljs#L143-L144)</ins>
 </pre>
 
 
@@ -49,7 +49,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "clojure.browser.net_IWebSocket",
  :source {:code "(defprotocol IWebSocket\n  (open? [this]))",
           :repo "clojurescript",
-          :tag "r2911",
+          :tag "r2913",
           :filename "src/cljs/clojure/browser/net.cljs",
           :lines [143 144]},
  :methods [{:name "open?", :signature ["[this]"], :docstring nil}],

@@ -36,11 +36,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2911
+clojurescript @ r2913
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:9139-9143](https://github.com/clojure/clojurescript/blob/r2911/src/cljs/cljs/core.cljs#L9139-L9143)</ins>
+            └── <ins>[core.cljs:9139-9143](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/cljs/core.cljs#L9139-L9143)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_prefer-method",
  :source {:code "(defn prefer-method\n  [multifn dispatch-val-x dispatch-val-y]\n  (-prefer-method multifn dispatch-val-x dispatch-val-y))",
           :repo "clojurescript",
-          :tag "r2911",
+          :tag "r2913",
           :filename "src/cljs/cljs/core.cljs",
           :lines [9139 9143]},
  :full-name "cljs.core/prefer-method",

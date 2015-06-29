@@ -97,11 +97,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2911
+clojurescript @ r2913
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:698-766](https://github.com/clojure/clojurescript/blob/r2911/src/clj/cljs/repl.clj#L698-L766)</ins>
+            └── <ins>[repl.clj:698-766](https://github.com/clojure/clojurescript/blob/r2913/src/clj/cljs/repl.clj#L698-L766)</ins>
 </pre>
 
 
@@ -126,7 +126,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_repl",
  :source {:code "(defn repl\n  [repl-env & {:as opts}]\n  (repl* repl-env opts))",
           :repo "clojurescript",
-          :tag "r2911",
+          :tag "r2913",
           :filename "src/clj/cljs/repl.clj",
           :lines [698 766]},
  :full-name "cljs.repl/repl",

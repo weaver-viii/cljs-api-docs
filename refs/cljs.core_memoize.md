@@ -52,11 +52,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2911
+clojurescript @ r2913
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:8706-8719](https://github.com/clojure/clojurescript/blob/r2911/src/cljs/cljs/core.cljs#L8706-L8719)</ins>
+            └── <ins>[core.cljs:8706-8719](https://github.com/clojure/clojurescript/blob/r2913/src/cljs/cljs/core.cljs#L8706-L8719)</ins>
 </pre>
 
 
@@ -82,7 +82,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_memoize",
  :source {:code "(defn memoize\n  [f]\n  (let [mem (atom {})]\n    (fn [& args]\n      (let [v (get @mem args lookup-sentinel)]\n        (if (identical? v lookup-sentinel)\n          (let [ret (apply f args)]\n            (swap! mem assoc args ret)\n            ret)\n          v)))))",
           :repo "clojurescript",
-          :tag "r2911",
+          :tag "r2913",
           :filename "src/cljs/cljs/core.cljs",
           :lines [8706 8719]},
  :full-name "cljs.core/memoize",

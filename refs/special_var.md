@@ -39,11 +39,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2911
+clojurescript @ r2913
 └── src
     └── clj
         └── cljs
-            └── <ins>[analyzer.clj:552-568](https://github.com/clojure/clojurescript/blob/r2911/src/clj/cljs/analyzer.clj#L552-L568)</ins>
+            └── <ins>[analyzer.clj:552-568](https://github.com/clojure/clojurescript/blob/r2913/src/clj/cljs/analyzer.clj#L552-L568)</ins>
 </pre>
 
 
@@ -65,7 +65,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :type "special form",
  :source {:code "(defmethod parse 'var\n  [op env [_ sym :as form] _ _]\n  (let [var (resolve-var env sym (confirm-var-exists-throw))]\n    {:env env :op :var-special :form form\n     :var (analyze env sym)\n     :sym (analyze env `(quote ~(symbol (name (:ns var)) (name (:name var)))))\n     :meta (let [ks [:ns :doc :file :line :column]\n                 m (merge\n                     (assoc (zipmap ks (map #(list 'quote (get var %)) ks))\n                       :name `(quote ~(symbol (name (:name var))))\n                       :test `(when ~sym (.-cljs$lang$test ~sym))\n                       :arglists (map with-meta (:arglists var) (:arglists-meta var)))\n                     (let [user-meta (:meta var)\n                           uks (keys user-meta)]\n                       (zipmap uks\n                         (map #(list 'quote (get user-meta %)) uks))))]\n             (analyze env m))}))",
           :repo "clojurescript",
-          :tag "r2911",
+          :tag "r2913",
           :filename "src/clj/cljs/analyzer.clj",
           :lines [552 568]},
  :full-name "special/var",

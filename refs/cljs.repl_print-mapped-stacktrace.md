@@ -39,11 +39,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2911
+clojurescript @ r2913
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:262-269](https://github.com/clojure/clojurescript/blob/r2911/src/clj/cljs/repl.clj#L262-L269)</ins>
+            └── <ins>[repl.clj:262-269](https://github.com/clojure/clojurescript/blob/r2913/src/clj/cljs/repl.clj#L262-L269)</ins>
 </pre>
 
 
@@ -68,7 +68,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_print-mapped-stacktrace",
  :source {:code "(defn print-mapped-stacktrace\n  ([stacktrace] (print-mapped-stacktrace stacktrace *repl-opts*))\n  ([stacktrace opts]\n    (doseq [{:keys [function file line column]}\n            (mapped-stacktrace stacktrace opts)]\n      ((:print opts) \"\\t\" (str function \" (\" file \":\" line \":\" column \")\")))))",
           :repo "clojurescript",
-          :tag "r2911",
+          :tag "r2913",
           :filename "src/clj/cljs/repl.clj",
           :lines [262 269]},
  :full-name "cljs.repl/print-mapped-stacktrace",
