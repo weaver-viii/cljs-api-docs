@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1877
+clojurescript @ r1878
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1143-1146](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L1143-L1146)</ins>
+            └── <ins>[core.cljs:1143-1146](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L1143-L1146)</ins>
 </pre>
 
 
@@ -75,7 +75,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_js-keys",
  :source {:code "(defn js-keys [obj]\n  (let [keys (array)]\n    (goog.object/forEach obj (fn [val key obj] (.push keys key)))\n    keys))",
           :repo "clojurescript",
-          :tag "r1877",
+          :tag "r1878",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1143 1146]},
  :examples [{:id "5dd933",

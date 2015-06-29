@@ -57,11 +57,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1877
+clojurescript @ r1878
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2943-2956](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L2943-L2956)</ins>
+            └── <ins>[core.cljs:2943-2956](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L2943-L2956)</ins>
 </pre>
 
 
@@ -87,7 +87,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_tree-seq",
  :source {:code "(defn tree-seq\n   [branch? children root]\n   (let [walk (fn walk [node]\n                (lazy-seq\n                 (cons node\n                  (when (branch? node)\n                    (mapcat walk (children node))))))]\n     (walk root)))",
           :repo "clojurescript",
-          :tag "r1877",
+          :tag "r1878",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2943 2956]},
  :full-name "cljs.core/tree-seq",

@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1877
+clojurescript @ r1878
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6758-6761](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L6758-L6761)</ins>
+            └── <ins>[core.cljs:6758-6761](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L6758-L6761)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_printf",
  :source {:code "(defn printf\n  [fmt & args]\n  (print (apply format fmt args)))",
           :repo "clojurescript",
-          :tag "r1877",
+          :tag "r1878",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6758 6761]},
  :full-name "cljs.core/printf",

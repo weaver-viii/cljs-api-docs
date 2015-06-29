@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1877
+clojurescript @ r1878
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1200-1206](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L1200-L1206)</ins>
+            └── <ins>[core.cljs:1200-1206](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L1200-L1206)</ins>
 </pre>
 
 
@@ -78,7 +78,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_integerQMARK",
  :source {:code "(defn ^boolean integer?\n  [n]\n  (and (number? n)\n       (not ^boolean (js/isNaN n))\n       (not (identical? n js/Infinity))\n       (== (js/parseFloat n) (js/parseInt n 10))))",
           :repo "clojurescript",
-          :tag "r1877",
+          :tag "r1878",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1200 1206]},
  :full-name "cljs.core/integer?",

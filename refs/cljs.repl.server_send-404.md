@@ -31,12 +31,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1877
+clojurescript @ r1878
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[server.clj:130-136](https://github.com/clojure/clojurescript/blob/r1877/src/clj/cljs/repl/server.clj#L130-L136)</ins>
+                └── <ins>[server.clj:130-136](https://github.com/clojure/clojurescript/blob/r1878/src/clj/cljs/repl/server.clj#L130-L136)</ins>
 </pre>
 
 
@@ -59,7 +59,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[conn path]"],
  :source {:code "(defn send-404 [conn path]\n  (send-and-close conn 404\n                  (str \"<html><body>\"\n                       \"<h2>Page not found</h2>\"\n                       \"No page \" path \" found on this server.\"\n                       \"</body></html>\")\n                  \"text/html\"))",
           :repo "clojurescript",
-          :tag "r1877",
+          :tag "r1878",
           :filename "src/clj/cljs/repl/server.clj",
           :lines [130 136]},
  :full-name "cljs.repl.server/send-404",

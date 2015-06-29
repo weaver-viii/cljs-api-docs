@@ -35,11 +35,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1877
+clojurescript @ r1878
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1771-1774](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L1771-L1774)</ins>
+            └── <ins>[core.cljs:1771-1774](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L1771-L1774)</ins>
 </pre>
 
 
@@ -64,7 +64,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_format",
  :source {:code "(defn format\n  [fmt & args]\n  (apply gstring/format fmt args))",
           :repo "clojurescript",
-          :tag "r1877",
+          :tag "r1878",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1771 1774]},
  :full-name "cljs.core/format",

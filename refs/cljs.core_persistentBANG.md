@@ -29,11 +29,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1877
+clojurescript @ r1878
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2414-2415](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L2414-L2415)</ins>
+            └── <ins>[core.cljs:2414-2415](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L2414-L2415)</ins>
 </pre>
 
 
@@ -58,7 +58,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_persistentBANG",
  :source {:code "(defn persistent! [tcoll]\n  (-persistent! tcoll))",
           :repo "clojurescript",
-          :tag "r1877",
+          :tag "r1878",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2414 2415]},
  :full-name "cljs.core/persistent!",

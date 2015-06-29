@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1877
+clojurescript @ r1878
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:7168-7173](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L7168-L7173)</ins>
+            └── <ins>[core.cljs:7168-7173](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L7168-L7173)</ins>
 </pre>
 
 
@@ -78,7 +78,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_rand-nth",
  :source {:code "(defn rand-nth\n  [coll]\n  (nth coll (rand-int (count coll))))",
           :repo "clojurescript",
-          :tag "r1877",
+          :tag "r1878",
           :filename "src/cljs/cljs/core.cljs",
           :lines [7168 7173]},
  :full-name "cljs.core/rand-nth",

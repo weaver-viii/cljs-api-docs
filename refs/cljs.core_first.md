@@ -67,11 +67,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1877
+clojurescript @ r1878
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:448-457](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L448-L457)</ins>
+            └── <ins>[core.cljs:448-457](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L448-L457)</ins>
 </pre>
 
 
@@ -103,7 +103,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_first",
  :source {:code "(defn first\n  [coll]\n  (when-not (nil? coll)\n    (if (satisfies? ISeq coll false)\n      (-first ^not-native coll)\n      (let [s (seq coll)]\n        (when-not (nil? s)\n          (-first s))))))",
           :repo "clojurescript",
-          :tag "r1877",
+          :tag "r1878",
           :filename "src/cljs/cljs/core.cljs",
           :lines [448 457]},
  :examples [{:id "40e413",

@@ -44,11 +44,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1877
+clojurescript @ r1878
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:2992-2999](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L2992-L2999)</ins>
+            └── <ins>[core.cljs:2992-2999](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L2992-L2999)</ins>
 </pre>
 
 
@@ -74,7 +74,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_filterv",
  :source {:code "(defn filterv\n  [pred coll]\n  (-> (reduce (fn [v o] (if (pred o) (conj! v o) v))\n              (transient [])\n              coll)\n      persistent!))",
           :repo "clojurescript",
-          :tag "r1877",
+          :tag "r1878",
           :filename "src/cljs/cljs/core.cljs",
           :lines [2992 2999]},
  :full-name "cljs.core/filterv",

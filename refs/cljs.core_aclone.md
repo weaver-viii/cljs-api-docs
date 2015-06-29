@@ -60,11 +60,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1877
+clojurescript @ r1878
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:127-130](https://github.com/clojure/clojurescript/blob/r1877/src/cljs/cljs/core.cljs#L127-L130)</ins>
+            └── <ins>[core.cljs:127-130](https://github.com/clojure/clojurescript/blob/r1878/src/cljs/cljs/core.cljs#L127-L130)</ins>
 </pre>
 
 
@@ -76,11 +76,11 @@ clojurescript @ r1877
 ```
 
  <pre>
-clojurescript @ r1877
+clojurescript @ r1878
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1209-1210](https://github.com/clojure/clojurescript/blob/r1877/src/clj/cljs/core.clj#L1209-L1210)</ins>
+            └── <ins>[core.clj:1209-1210](https://github.com/clojure/clojurescript/blob/r1878/src/clj/cljs/core.clj#L1209-L1210)</ins>
 </pre>
 
 ---
@@ -106,12 +106,12 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_aclone",
  :source {:code "(defn aclone\n  [array-like]\n  (.slice array-like))",
           :repo "clojurescript",
-          :tag "r1877",
+          :tag "r1878",
           :filename "src/cljs/cljs/core.cljs",
           :lines [127 130]},
  :extra-sources ({:code "(defmacro aclone [a]\n  (list 'js* \"~{}.slice()\" a))",
                   :repo "clojurescript",
-                  :tag "r1877",
+                  :tag "r1878",
                   :filename "src/clj/cljs/core.clj",
                   :lines [1209 1210]}),
  :examples [{:id "422c4e",
