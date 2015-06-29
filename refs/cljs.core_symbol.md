@@ -40,11 +40,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1443
+clojurescript @ r1449
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1453-1458](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L1453-L1458)</ins>
+            └── <ins>[core.cljs:1453-1458](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L1453-L1458)</ins>
 </pre>
 
 
@@ -69,7 +69,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_symbol",
  :source {:code "(defn symbol\n  ([name] (cond (symbol? name) name\n                (keyword? name) (str* \"\\uFDD1\" \"'\" (subs name 2)))\n     :else (str* \"\\uFDD1\" \"'\" name))\n  ([ns name] (symbol (str* ns \"/\" name))))",
           :repo "clojurescript",
-          :tag "r1443",
+          :tag "r1449",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1453 1458]},
  :full-name "cljs.core/symbol",

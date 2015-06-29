@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1443
+clojurescript @ r1449
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5837-5844](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L5837-L5844)</ins>
+            └── <ins>[core.cljs:5837-5844](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L5837-L5844)</ins>
 </pre>
 
 
@@ -85,7 +85,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_take-while",
  :source {:code "(defn take-while\n  [pred coll]\n  (lazy-seq\n   (when-let [s (seq coll)]\n     (when (pred (first s))\n       (cons (first s) (take-while pred (rest s)))))))",
           :repo "clojurescript",
-          :tag "r1443",
+          :tag "r1449",
           :filename "src/cljs/cljs/core.cljs",
           :lines [5837 5844]},
  :full-name "cljs.core/take-while",

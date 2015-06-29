@@ -62,12 +62,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1443
+clojurescript @ r1449
 └── src
     └── clj
         └── cljs
             └── repl
-                └── <ins>[browser.clj:347-380](https://github.com/clojure/clojurescript/blob/r1443/src/clj/cljs/repl/browser.clj#L347-L380)</ins>
+                └── <ins>[browser.clj:347-380](https://github.com/clojure/clojurescript/blob/r1449/src/clj/cljs/repl/browser.clj#L347-L380)</ins>
 </pre>
 
 
@@ -92,7 +92,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl.browser_repl-env",
  :source {:code "(defn repl-env\n  [& {:as opts}]\n  (let [opts (merge {:port          9000\n                     :optimizations :simple\n                     :working-dir   \".repl\"\n                     :serve-static  true\n                     :static-dir    [\".\" \"out/\"]\n                     :preloaded-libs   []}\n                    opts)]\n    (do (reset! preloaded-libs (set (concat (always-preload) (map str (:preloaded-libs opts)))))\n        (reset! loaded-libs @preloaded-libs)\n        (swap! server-state\n               (fn [old] (assoc old :client-js\n                               (future (create-client-js-file\n                                        opts\n                                        (io/file (:working-dir opts) \"client.js\"))))))\n        opts)))",
           :repo "clojurescript",
-          :tag "r1443",
+          :tag "r1449",
           :filename "src/clj/cljs/repl/browser.clj",
           :lines [347 380]},
  :full-name "cljs.repl.browser/repl-env",

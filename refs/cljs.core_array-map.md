@@ -59,11 +59,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1443
+clojurescript @ r1449
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5446-5450](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L5446-L5450)</ins>
+            └── <ins>[core.cljs:5446-5450](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L5446-L5450)</ins>
 </pre>
 
 
@@ -92,7 +92,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_array-map",
  :source {:code "(defn array-map\n  [& keyvals]\n  (PersistentArrayMap. nil (quot (count keyvals) 2) (apply array keyvals) nil))",
           :repo "clojurescript",
-          :tag "r1443",
+          :tag "r1449",
           :filename "src/cljs/cljs/core.cljs",
           :lines [5446 5450]},
  :examples [{:id "198026",

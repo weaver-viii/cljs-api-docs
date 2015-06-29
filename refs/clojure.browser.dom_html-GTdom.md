@@ -26,12 +26,12 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1443
+clojurescript @ r1449
 └── src
     └── cljs
         └── clojure
             └── browser
-                └── <ins>[dom.cljs:101-102](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/clojure/browser/dom.cljs#L101-L102)</ins>
+                └── <ins>[dom.cljs:101-102](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/clojure/browser/dom.cljs#L101-L102)</ins>
 </pre>
 
 
@@ -54,7 +54,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :signature ["[s]"],
  :source {:code "(defn html->dom [s]\n  (gdom/htmlToDocumentFragment s))",
           :repo "clojurescript",
-          :tag "r1443",
+          :tag "r1449",
           :filename "src/cljs/clojure/browser/dom.cljs",
           :lines [101 102]},
  :full-name "clojure.browser.dom/html->dom",

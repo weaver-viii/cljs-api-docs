@@ -46,11 +46,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1443
+clojurescript @ r1449
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:543-547](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L543-L547)</ins>
+            └── <ins>[core.cljs:543-547](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L543-L547)</ins>
 </pre>
 
 
@@ -76,7 +76,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_array-seq",
  :source {:code "(defn array-seq\n  ([array]\n     (prim-seq array 0))\n  ([array i]\n     (prim-seq array i)))",
           :repo "clojurescript",
-          :tag "r1443",
+          :tag "r1449",
           :filename "src/cljs/cljs/core.cljs",
           :lines [543 547]},
  :examples [{:id "9ef6de",

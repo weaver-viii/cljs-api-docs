@@ -23,11 +23,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1443
+clojurescript @ r1449
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:4232](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L4232)</ins>
+            └── <ins>[core.cljs:4232](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L4232)</ins>
 </pre>
 
 
@@ -52,7 +52,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_BitmapIndexedNodeDOTEMPTY",
  :source {:code "(set! cljs.core.BitmapIndexedNode/EMPTY (BitmapIndexedNode. nil 0 (make-array 0)))",
           :repo "clojurescript",
-          :tag "r1443",
+          :tag "r1449",
           :filename "src/cljs/cljs/core.cljs",
           :lines [4232]},
  :full-name "cljs.core/BitmapIndexedNode.EMPTY",

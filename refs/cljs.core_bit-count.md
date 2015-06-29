@@ -54,11 +54,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1443
+clojurescript @ r1449
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1369-1374](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L1369-L1374)</ins>
+            └── <ins>[core.cljs:1369-1374](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L1369-L1374)</ins>
 </pre>
 
 
@@ -84,7 +84,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-count",
  :source {:code "(defn bit-count\n  [v]\n  (let [v (- v (bit-and (bit-shift-right v 1) 0x55555555))\n        v (+ (bit-and v 0x33333333) (bit-and (bit-shift-right v 2) 0x33333333))]\n    (bit-shift-right (* (bit-and (+ v (bit-shift-right v 4)) 0xF0F0F0F) 0x1010101) 24)))",
           :repo "clojurescript",
-          :tag "r1443",
+          :tag "r1449",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1369 1374]},
  :examples [{:id "35c78c",

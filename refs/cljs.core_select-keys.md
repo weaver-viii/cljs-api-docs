@@ -47,11 +47,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r1443
+clojurescript @ r1449
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:5528-5540](https://github.com/clojure/clojurescript/blob/r1443/src/cljs/cljs/core.cljs#L5528-L5540)</ins>
+            └── <ins>[core.cljs:5528-5540](https://github.com/clojure/clojurescript/blob/r1449/src/cljs/cljs/core.cljs#L5528-L5540)</ins>
 </pre>
 
 
@@ -77,7 +77,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_select-keys",
  :source {:code "(defn select-keys\n  [map keyseq]\n    (loop [ret {} keys (seq keyseq)]\n      (if keys\n        (let [key   (first keys)\n              entry (get map key ::not-found)]\n          (recur\n           (if (not= entry ::not-found)\n             (assoc ret key entry)\n             ret)\n           (next keys)))\n        ret)))",
           :repo "clojurescript",
-          :tag "r1443",
+          :tag "r1449",
           :filename "src/cljs/cljs/core.cljs",
           :lines [5528 5540]},
  :full-name "cljs.core/select-keys",
