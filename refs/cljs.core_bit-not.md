@@ -54,27 +54,27 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1708-1710](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L1708-L1710)</ins>
+            └── <ins>[core.cljs:1708-1710](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L1708-L1710)</ins>
 </pre>
 
 
 ---
 
 ```clj
-(defmacro bit-not [x]
+(defmacro ^::ana/numeric bit-not [x]
   (core/list 'js* "(~ ~{})" x))
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:464-465](https://github.com/clojure/clojurescript/blob/r2060/src/clj/cljs/core.clj#L464-L465)</ins>
+            └── <ins>[core.clj:465-466](https://github.com/clojure/clojurescript/blob/r2067/src/clj/cljs/core.clj#L465-L466)</ins>
 </pre>
 
 ---
@@ -99,14 +99,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-not",
  :source {:code "(defn bit-not\n  [x] (cljs.core/bit-not x))",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1708 1710]},
- :extra-sources ({:code "(defmacro bit-not [x]\n  (core/list 'js* \"(~ ~{})\" x))",
+ :extra-sources ({:code "(defmacro ^::ana/numeric bit-not [x]\n  (core/list 'js* \"(~ ~{})\" x))",
                   :repo "clojurescript",
-                  :tag "r2060",
+                  :tag "r2067",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [464 465]}),
+                  :lines [465 466]}),
  :examples [{:id "d4c5e3",
              :content "Bits can be entered using radix notation:\n\n```clj\n(bit-not 2r1100)\n;;=> -13\n```\n\nSame numbers in decimal:\n\n```clj\n(bit-not 12)\n;;=> -13\n```"}],
  :full-name "cljs.core/bit-not",

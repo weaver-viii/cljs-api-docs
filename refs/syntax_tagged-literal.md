@@ -37,13 +37,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.7.10
+tools.reader @ tools.reader-0.8.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:630-641](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.10/src/main/clojure/clojure/tools/reader.clj#L630-L641)</ins>
+                    └── <ins>[reader.clj:649-660](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.0/src/main/clojure/clojure/tools/reader.clj#L649-L660)</ins>
 </pre>
 
 
@@ -67,9 +67,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_tagged-literal",
  :source {:code "(defn- read-tagged [rdr initch]\n  (let [tag (read rdr true nil false)]\n    (if-not (symbol? tag)\n      (reader-error rdr \"Reader tag must be a symbol\"))\n    (if-let [f (or (*data-readers* tag)\n                   (default-data-readers tag))]\n      (read-tagged* rdr tag f)\n      (if (.contains (name tag) \".\")\n        (read-ctor rdr tag)\n        (if-let [f *default-data-reader-fn*]\n          (f tag (read rdr true nil true))\n          (reader-error rdr \"No reader function for tag \" (name tag)))))))",
           :repo "tools.reader",
-          :tag "tools.reader-0.7.10",
+          :tag "tools.reader-0.8.0",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [630 641]},
+          :lines [649 660]},
  :syntax-form "#",
  :edn-doc "https://github.com/edn-format/edn#tagged-elements",
  :full-name "syntax/tagged-literal",

@@ -77,13 +77,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.7.10
+tools.reader @ tools.reader-0.8.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:559-578](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.10/src/main/clojure/clojure/tools/reader.clj#L559-L578)</ins>
+                    └── <ins>[reader.clj:578-597](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.0/src/main/clojure/clojure/tools/reader.clj#L578-L597)</ins>
 </pre>
 
 
@@ -94,17 +94,17 @@ tools.reader @ tools.reader-0.7.10
   [rdr backquote]
   (binding [gensym-env {}]
     (-> (read rdr true nil true)
-        syntax-quote*)))
+      syntax-quote*)))
 ```
 
  <pre>
-tools.reader @ tools.reader-0.7.10
+tools.reader @ tools.reader-0.8.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:553-557](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.10/src/main/clojure/clojure/tools/reader.clj#L553-L557)</ins>
+                    └── <ins>[reader.clj:572-576](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.0/src/main/clojure/clojure/tools/reader.clj#L572-L576)</ins>
 </pre>
 
 ---
@@ -129,14 +129,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_syntax-quote",
  :source {:code "(defn- macros [ch]\n  (case ch\n    \\\" read-string*\n    \\: read-keyword\n    \\; read-comment\n    \\' (wrapping-reader 'quote)\n    \\@ (wrapping-reader 'clojure.core/deref)\n    \\^ read-meta\n    \\` read-syntax-quote ;;(wrapping-reader 'syntax-quote)\n    \\~ read-unquote\n    \\( read-list\n    \\) read-unmatched-delimiter\n    \\[ read-vector\n    \\] read-unmatched-delimiter\n    \\{ read-map\n    \\} read-unmatched-delimiter\n    \\\\ read-char*\n    \\% read-arg\n    \\# read-dispatch\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.7.10",
+          :tag "tools.reader-0.8.0",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [559 578]},
- :extra-sources [{:code "(defn- read-syntax-quote\n  [rdr backquote]\n  (binding [gensym-env {}]\n    (-> (read rdr true nil true)\n        syntax-quote*)))",
+          :lines [578 597]},
+ :extra-sources [{:code "(defn- read-syntax-quote\n  [rdr backquote]\n  (binding [gensym-env {}]\n    (-> (read rdr true nil true)\n      syntax-quote*)))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.7.10",
+                  :tag "tools.reader-0.8.0",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [553 557]}],
+                  :lines [572 576]}],
  :syntax-form "`",
  :examples [{:id "bffbdf",
              :content "```clj\n`foo\n;;=> cljs.user/foo\n\n`foo#\n;;=> foo__20418__auto__\n\n`(def foo 1)\n;;=> (def cljs.user/foo 1)\n```"}],

@@ -20,15 +20,15 @@ Source code:
 
 ```clj
 (defprotocol IMeta
-  (-meta [o]))
+  (^clj-or-nil -meta [o]))
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:276-277](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L276-L277)</ins>
+            └── <ins>[core.cljs:276-277](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L276-L277)</ins>
 </pre>
 
 
@@ -50,9 +50,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "protocol",
  :full-name-encode "cljs.core_IMeta",
- :source {:code "(defprotocol IMeta\n  (-meta [o]))",
+ :source {:code "(defprotocol IMeta\n  (^clj-or-nil -meta [o]))",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/cljs/cljs/core.cljs",
           :lines [276 277]},
  :methods [{:name "-meta", :signature ["[o]"], :docstring nil}],

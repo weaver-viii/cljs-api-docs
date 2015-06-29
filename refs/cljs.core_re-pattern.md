@@ -39,11 +39,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:6623-6627](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L6623-L6627)</ins>
+            └── <ins>[core.cljs:6623-6627](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L6623-L6627)</ins>
 </pre>
 
 
@@ -69,7 +69,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_re-pattern",
  :source {:code "(defn re-pattern\n  [s]\n  (let [[_ flags pattern] (re-find #\"^(?:\\(\\?([idmsux]*)\\))?(.*)\" s)]\n    (js/RegExp. pattern flags)))",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/cljs/cljs/core.cljs",
           :lines [6623 6627]},
  :full-name "cljs.core/re-pattern",

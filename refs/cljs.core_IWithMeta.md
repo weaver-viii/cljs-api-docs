@@ -17,15 +17,15 @@ Source code:
 
 ```clj
 (defprotocol IWithMeta
-  (-with-meta [o meta]))
+  (^clj -with-meta [o meta]))
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:279-280](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L279-L280)</ins>
+            └── <ins>[core.cljs:279-280](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L279-L280)</ins>
 </pre>
 
 
@@ -46,9 +46,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "IWithMeta",
  :type "protocol",
  :full-name-encode "cljs.core_IWithMeta",
- :source {:code "(defprotocol IWithMeta\n  (-with-meta [o meta]))",
+ :source {:code "(defprotocol IWithMeta\n  (^clj -with-meta [o meta]))",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/cljs/cljs/core.cljs",
           :lines [279 280]},
  :methods [{:name "-with-meta",

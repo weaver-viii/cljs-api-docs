@@ -50,11 +50,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1976-1989](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L1976-L1989)</ins>
+            └── <ins>[core.cljs:1976-1989](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L1976-L1989)</ins>
 </pre>
 
 
@@ -68,11 +68,11 @@ clojurescript @ r2060
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:1293-1296](https://github.com/clojure/clojurescript/blob/r2060/src/clj/cljs/core.clj#L1293-L1296)</ins>
+            └── <ins>[core.clj:1294-1297](https://github.com/clojure/clojurescript/blob/r2067/src/clj/cljs/core.clj#L1294-L1297)</ins>
 </pre>
 
 ---
@@ -98,14 +98,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_list",
  :source {:code "(defn list [& xs]\n  (let [arr (if (instance? IndexedSeq xs)\n              (.-arr xs)\n              (let [arr (array)]\n                (loop [^not-native xs xs]\n                  (if-not (nil? xs)\n                    (do\n                      (.push arr (-first xs))\n                      (recur (-next xs)))\n                    arr))))]\n    (loop [i (alength arr) ^not-native r ()]\n      (if (> i 0)\n        (recur (dec i) (-conj r (aget arr (dec i))))\n        r))))",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1976 1989]},
  :extra-sources ({:code "(defmacro list\n  ([] `cljs.core.List.EMPTY)\n  ([x & xs]\n    `(-conj (list ~@xs) ~x)))",
                   :repo "clojurescript",
-                  :tag "r2060",
+                  :tag "r2067",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [1293 1296]}),
+                  :lines [1294 1297]}),
  :full-name "cljs.core/list",
  :clj-symbol "clojure.core/list"}
 

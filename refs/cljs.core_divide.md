@@ -27,18 +27,18 @@
 Source code:
 
 ```clj
-(defmacro divide
+(defmacro ^::ana/numeric divide
   ([x] `(/ 1 ~x))
   ([x y] (core/list 'js* "(~{} / ~{})" x y))
   ([x y & more] `(/ (/ ~x ~y) ~@more)))
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:404-407](https://github.com/clojure/clojurescript/blob/r2060/src/clj/cljs/core.clj#L404-L407)</ins>
+            └── <ins>[core.clj:405-408](https://github.com/clojure/clojurescript/blob/r2067/src/clj/cljs/core.clj#L405-L408)</ins>
 </pre>
 
 
@@ -59,11 +59,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :name "divide",
  :type "macro",
  :signature ["[x]" "[x y]" "[x y & more]"],
- :source {:code "(defmacro divide\n  ([x] `(/ 1 ~x))\n  ([x y] (core/list 'js* \"(~{} / ~{})\" x y))\n  ([x y & more] `(/ (/ ~x ~y) ~@more)))",
+ :source {:code "(defmacro ^::ana/numeric divide\n  ([x] `(/ 1 ~x))\n  ([x y] (core/list 'js* \"(~{} / ~{})\" x y))\n  ([x y & more] `(/ (/ ~x ~y) ~@more)))",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/clj/cljs/core.clj",
-          :lines [404 407]},
+          :lines [405 408]},
  :full-name "cljs.core/divide",
  :full-name-encode "cljs.core_divide",
  :history [["+" "0.0-1798"]]}

@@ -20,16 +20,16 @@ Source code:
 
 ```clj
 (defprotocol ITransientCollection
-  (-conj! [tcoll val])
-  (-persistent! [tcoll]))
+  (^clj -conj! [tcoll val])
+  (^clj -persistent! [tcoll]))
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:338-340](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L338-L340)</ins>
+            └── <ins>[core.cljs:338-340](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L338-L340)</ins>
 </pre>
 
 
@@ -51,9 +51,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1211"]],
  :type "protocol",
  :full-name-encode "cljs.core_ITransientCollection",
- :source {:code "(defprotocol ITransientCollection\n  (-conj! [tcoll val])\n  (-persistent! [tcoll]))",
+ :source {:code "(defprotocol ITransientCollection\n  (^clj -conj! [tcoll val])\n  (^clj -persistent! [tcoll]))",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/cljs/cljs/core.cljs",
           :lines [338 340]},
  :methods [{:name "-conj!",

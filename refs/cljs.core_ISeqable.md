@@ -20,15 +20,15 @@ Source code:
 
 ```clj
 (defprotocol ISeqable
-  (-seq [o]))
+  (^clj-or-nil -seq [o]))
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:294-295](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L294-L295)</ins>
+            └── <ins>[core.cljs:294-295](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L294-L295)</ins>
 </pre>
 
 
@@ -50,9 +50,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "protocol",
  :full-name-encode "cljs.core_ISeqable",
- :source {:code "(defprotocol ISeqable\n  (-seq [o]))",
+ :source {:code "(defprotocol ISeqable\n  (^clj-or-nil -seq [o]))",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/cljs/cljs/core.cljs",
           :lines [294 295]},
  :methods [{:name "-seq", :signature ["[o]"], :docstring nil}],

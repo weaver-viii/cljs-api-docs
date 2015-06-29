@@ -64,28 +64,28 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1690-1692](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L1690-L1692)</ins>
+            └── <ins>[core.cljs:1690-1692](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L1690-L1692)</ins>
 </pre>
 
 
 ---
 
 ```clj
-(defmacro bit-or
+(defmacro ^::ana/numeric bit-or
   ([x y] (core/list 'js* "(~{} | ~{})" x y))
   ([x y & more] `(bit-or (bit-or ~x ~y) ~@more)))
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:476-478](https://github.com/clojure/clojurescript/blob/r2060/src/clj/cljs/core.clj#L476-L478)</ins>
+            └── <ins>[core.clj:477-479](https://github.com/clojure/clojurescript/blob/r2067/src/clj/cljs/core.clj#L477-L479)</ins>
 </pre>
 
 ---
@@ -111,14 +111,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_bit-or",
  :source {:code "(defn bit-or\n  [x y] (cljs.core/bit-or x y))",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1690 1692]},
- :extra-sources ({:code "(defmacro bit-or\n  ([x y] (core/list 'js* \"(~{} | ~{})\" x y))\n  ([x y & more] `(bit-or (bit-or ~x ~y) ~@more)))",
+ :extra-sources ({:code "(defmacro ^::ana/numeric bit-or\n  ([x y] (core/list 'js* \"(~{} | ~{})\" x y))\n  ([x y & more] `(bit-or (bit-or ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r2060",
+                  :tag "r2067",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [476 478]}),
+                  :lines [477 479]}),
  :examples [{:id "ecea10",
              :content "Bits can be entered using radix notation:\n\n```clj\n(bit-or 2r1100 2r1010)\n;;=> 14\n;; 14 = 2r1110\n```\n\nSame numbers in decimal:\n\n```clj\n(bit-or 12 10)\n;;=> 14\n```"}],
  :full-name "cljs.core/bit-or",

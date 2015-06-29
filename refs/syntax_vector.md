@@ -62,13 +62,13 @@ Source code:
 ```
 
  <pre>
-tools.reader @ tools.reader-0.7.10
+tools.reader @ tools.reader-0.8.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:559-578](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.10/src/main/clojure/clojure/tools/reader.clj#L559-L578)</ins>
+                    └── <ins>[reader.clj:578-597](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.0/src/main/clojure/clojure/tools/reader.clj#L578-L597)</ins>
 </pre>
 
 
@@ -77,22 +77,27 @@ tools.reader @ tools.reader-0.7.10
 ```clj
 (defn- read-vector
   [rdr _]
-  (let [[line column] (when (indexing-reader? rdr)
-                        [(get-line-number rdr) (int (dec (get-column-number rdr)))])
-        the-vector (read-delimited \] rdr true)]
+  (let [[start-line start-column] (when (indexing-reader? rdr)
+                                    [(get-line-number rdr) (int (dec (get-column-number rdr)))])
+        the-vector (read-delimited \] rdr true)
+        [end-line end-column] (when (indexing-reader? rdr)
+                                [(get-line-number rdr) (int (get-column-number rdr))])]
     (with-meta the-vector
-      (when line
-        {:line line :column column}))))
+      (when start-line
+        {:line start-line
+         :column start-column
+         :end-line end-line
+         :end-column end-column}))))
 ```
 
  <pre>
-tools.reader @ tools.reader-0.7.10
+tools.reader @ tools.reader-0.8.0
 └── src
     └── main
         └── clojure
             └── clojure
                 └── tools
-                    └── <ins>[reader.clj:176-183](https://github.com/clojure/tools.reader/blob/tools.reader-0.7.10/src/main/clojure/clojure/tools/reader.clj#L176-L183)</ins>
+                    └── <ins>[reader.clj:182-194](https://github.com/clojure/tools.reader/blob/tools.reader-0.8.0/src/main/clojure/clojure/tools/reader.clj#L182-L194)</ins>
 </pre>
 
 ---
@@ -117,14 +122,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "syntax_vector",
  :source {:code "(defn- macros [ch]\n  (case ch\n    \\\" read-string*\n    \\: read-keyword\n    \\; read-comment\n    \\' (wrapping-reader 'quote)\n    \\@ (wrapping-reader 'clojure.core/deref)\n    \\^ read-meta\n    \\` read-syntax-quote ;;(wrapping-reader 'syntax-quote)\n    \\~ read-unquote\n    \\( read-list\n    \\) read-unmatched-delimiter\n    \\[ read-vector\n    \\] read-unmatched-delimiter\n    \\{ read-map\n    \\} read-unmatched-delimiter\n    \\\\ read-char*\n    \\% read-arg\n    \\# read-dispatch\n    nil))",
           :repo "tools.reader",
-          :tag "tools.reader-0.7.10",
+          :tag "tools.reader-0.8.0",
           :filename "src/main/clojure/clojure/tools/reader.clj",
-          :lines [559 578]},
- :extra-sources [{:code "(defn- read-vector\n  [rdr _]\n  (let [[line column] (when (indexing-reader? rdr)\n                        [(get-line-number rdr) (int (dec (get-column-number rdr)))])\n        the-vector (read-delimited \\] rdr true)]\n    (with-meta the-vector\n      (when line\n        {:line line :column column}))))",
+          :lines [578 597]},
+ :extra-sources [{:code "(defn- read-vector\n  [rdr _]\n  (let [[start-line start-column] (when (indexing-reader? rdr)\n                                    [(get-line-number rdr) (int (dec (get-column-number rdr)))])\n        the-vector (read-delimited \\] rdr true)\n        [end-line end-column] (when (indexing-reader? rdr)\n                                [(get-line-number rdr) (int (get-column-number rdr))])]\n    (with-meta the-vector\n      (when start-line\n        {:line start-line\n         :column start-column\n         :end-line end-line\n         :end-column end-column}))))",
                   :repo "tools.reader",
-                  :tag "tools.reader-0.7.10",
+                  :tag "tools.reader-0.8.0",
                   :filename "src/main/clojure/clojure/tools/reader.clj",
-                  :lines [176 183]}],
+                  :lines [182 194]}],
  :syntax-form "[]",
  :examples [{:id "18e143",
              :content "```clj\n[1 2 3]\n;;=> [1 2 3]\n```"}],

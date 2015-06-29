@@ -20,17 +20,17 @@ Source code:
 
 ```clj
 (defprotocol IAssociative
-  (-contains-key? [coll k])
+  (^boolean -contains-key? [coll k])
   #_(-entry-at [coll k])
-  (-assoc [coll k v]))
+  (^clj -assoc [coll k v]))
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:247-250](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L247-L250)</ins>
+            └── <ins>[core.cljs:247-250](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L247-L250)</ins>
 </pre>
 
 
@@ -52,9 +52,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "protocol",
  :full-name-encode "cljs.core_IAssociative",
- :source {:code "(defprotocol IAssociative\n  (-contains-key? [coll k])\n  #_(-entry-at [coll k])\n  (-assoc [coll k v]))",
+ :source {:code "(defprotocol IAssociative\n  (^boolean -contains-key? [coll k])\n  #_(-entry-at [coll k])\n  (^clj -assoc [coll k v]))",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/cljs/cljs/core.cljs",
           :lines [247 250]},
  :methods [{:name "-contains-key?",

@@ -52,18 +52,18 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:1511-1516](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L1511-L1516)</ins>
+            └── <ins>[core.cljs:1511-1516](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L1511-L1516)</ins>
 </pre>
 
 
 ---
 
 ```clj
-(defmacro max
+(defmacro ^::ana/numeric max
   ([x] x)
   ([x y] `(let [x# ~x, y# ~y]
             (~'js* "((~{} > ~{}) ? ~{} : ~{})" x# y# x# y#)))
@@ -71,11 +71,11 @@ clojurescript @ r2060
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:449-453](https://github.com/clojure/clojurescript/blob/r2060/src/clj/cljs/core.clj#L449-L453)</ins>
+            └── <ins>[core.clj:450-454](https://github.com/clojure/clojurescript/blob/r2067/src/clj/cljs/core.clj#L450-L454)</ins>
 </pre>
 
 ---
@@ -101,14 +101,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_max",
  :source {:code "(defn max\n  ([x] x)\n  ([x y] (cljs.core/max x y))\n  ([x y & more]\n   (reduce max (cljs.core/max x y) more)))",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/cljs/cljs/core.cljs",
           :lines [1511 1516]},
- :extra-sources ({:code "(defmacro max\n  ([x] x)\n  ([x y] `(let [x# ~x, y# ~y]\n            (~'js* \"((~{} > ~{}) ? ~{} : ~{})\" x# y# x# y#)))\n  ([x y & more] `(max (max ~x ~y) ~@more)))",
+ :extra-sources ({:code "(defmacro ^::ana/numeric max\n  ([x] x)\n  ([x y] `(let [x# ~x, y# ~y]\n            (~'js* \"((~{} > ~{}) ? ~{} : ~{})\" x# y# x# y#)))\n  ([x y & more] `(max (max ~x ~y) ~@more)))",
                   :repo "clojurescript",
-                  :tag "r2060",
+                  :tag "r2067",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [449 453]}),
+                  :lines [450 454]}),
  :full-name "cljs.core/max",
  :clj-symbol "clojure.core/max",
  :docstring "Returns the greatest of the nums."}

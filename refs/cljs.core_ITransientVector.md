@@ -20,16 +20,16 @@ Source code:
 
 ```clj
 (defprotocol ITransientVector
-  (-assoc-n! [tcoll n val])
-  (-pop! [tcoll]))
+  (^clj -assoc-n! [tcoll n val])
+  (^clj -pop! [tcoll]))
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:348-350](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L348-L350)</ins>
+            └── <ins>[core.cljs:348-350](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L348-L350)</ins>
 </pre>
 
 
@@ -51,9 +51,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1211"]],
  :type "protocol",
  :full-name-encode "cljs.core_ITransientVector",
- :source {:code "(defprotocol ITransientVector\n  (-assoc-n! [tcoll n val])\n  (-pop! [tcoll]))",
+ :source {:code "(defprotocol ITransientVector\n  (^clj -assoc-n! [tcoll n val])\n  (^clj -pop! [tcoll]))",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/cljs/cljs/core.cljs",
           :lines [348 350]},
  :methods [{:name "-assoc-n!",

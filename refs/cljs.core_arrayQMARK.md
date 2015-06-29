@@ -48,11 +48,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:87-88](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L87-L88)</ins>
+            └── <ins>[core.cljs:87-88](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L87-L88)</ins>
 </pre>
 
 
@@ -64,11 +64,11 @@ clojurescript @ r2060
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:278-279](https://github.com/clojure/clojurescript/blob/r2060/src/clj/cljs/core.clj#L278-L279)</ins>
+            └── <ins>[core.clj:279-280](https://github.com/clojure/clojurescript/blob/r2067/src/clj/cljs/core.clj#L279-L280)</ins>
 </pre>
 
 ---
@@ -95,14 +95,14 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.core_arrayQMARK",
  :source {:code "(defn ^boolean array? [x]\n  (cljs.core/array? x))",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/cljs/cljs/core.cljs",
           :lines [87 88]},
  :extra-sources ({:code "(defmacro array? [x]\n  (bool-expr (core/list 'js* \"~{} instanceof Array\" x)))",
                   :repo "clojurescript",
-                  :tag "r2060",
+                  :tag "r2067",
                   :filename "src/clj/cljs/core.clj",
-                  :lines [278 279]}),
+                  :lines [279 280]}),
  :examples [{:id "39913c",
              :content "```clj\n(array? #js [1 2 3])\n;;=> true\n\n(array? [1 2 3])\n;;=> false\n\n(array? \"hi\")\n;;=> false\n```"}],
  :full-name "cljs.core/array?"}

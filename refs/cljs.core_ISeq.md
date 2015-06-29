@@ -21,15 +21,15 @@ Source code:
 ```clj
 (defprotocol ISeq
   (-first [coll])
-  (-rest [coll]))
+  (^clj -rest [coll]))
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── cljs
         └── cljs
-            └── <ins>[core.cljs:237-239](https://github.com/clojure/clojurescript/blob/r2060/src/cljs/cljs/core.cljs#L237-L239)</ins>
+            └── <ins>[core.cljs:237-239](https://github.com/clojure/clojurescript/blob/r2067/src/cljs/cljs/core.cljs#L237-L239)</ins>
 </pre>
 
 
@@ -51,9 +51,9 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-927"]],
  :type "protocol",
  :full-name-encode "cljs.core_ISeq",
- :source {:code "(defprotocol ISeq\n  (-first [coll])\n  (-rest [coll]))",
+ :source {:code "(defprotocol ISeq\n  (-first [coll])\n  (^clj -rest [coll]))",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/cljs/cljs/core.cljs",
           :lines [237 239]},
  :methods [{:name "-first", :signature ["[coll]"], :docstring nil}

@@ -24,16 +24,16 @@
 Source code:
 
 ```clj
-(defmacro unchecked-subtract-int
+(defmacro ^::ana/numeric unchecked-subtract-int
   ([& xs] `(- ~@xs)))
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── clj
         └── cljs
-            └── <ins>[core.clj:385-386](https://github.com/clojure/clojurescript/blob/r2060/src/clj/cljs/core.clj#L385-L386)</ins>
+            └── <ins>[core.clj:386-387](https://github.com/clojure/clojurescript/blob/r2067/src/clj/cljs/core.clj#L386-L387)</ins>
 </pre>
 
 
@@ -56,11 +56,11 @@ __Meta__ - To retrieve the API data for this symbol:
  :history [["+" "0.0-1798"]],
  :type "macro",
  :full-name-encode "cljs.core_unchecked-subtract-int",
- :source {:code "(defmacro unchecked-subtract-int\n  ([& xs] `(- ~@xs)))",
+ :source {:code "(defmacro ^::ana/numeric unchecked-subtract-int\n  ([& xs] `(- ~@xs)))",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/clj/cljs/core.clj",
-          :lines [385 386]},
+          :lines [386 387]},
  :full-name "cljs.core/unchecked-subtract-int",
  :clj-symbol "clojure.core/unchecked-subtract-int"}
 

@@ -74,11 +74,11 @@ Source code:
 ```
 
  <pre>
-clojurescript @ r2060
+clojurescript @ r2067
 └── src
     └── clj
         └── cljs
-            └── <ins>[repl.clj:154-199](https://github.com/clojure/clojurescript/blob/r2060/src/clj/cljs/repl.clj#L154-L199)</ins>
+            └── <ins>[repl.clj:154-199](https://github.com/clojure/clojurescript/blob/r2067/src/clj/cljs/repl.clj#L154-L199)</ins>
 </pre>
 
 
@@ -103,7 +103,7 @@ __Meta__ - To retrieve the API data for this symbol:
  :full-name-encode "cljs.repl_repl",
  :source {:code "(defn repl\n  [repl-env & {:keys [analyze-path verbose warn-on-undeclared special-fns static-fns]}]\n  (print \"To quit, type: \")\n  (prn :cljs/quit)\n  (env/with-compiler-env\n    (or (::env/compiler repl-env) (env/default-compiler-env))\n    (binding [ana/*cljs-ns* 'cljs.user\n              *cljs-verbose* verbose\n              ana/*cljs-warnings* (assoc ana/*cljs-warnings*\n                                    :undeclared-var warn-on-undeclared\n                                    :undeclared-ns warn-on-undeclared\n                                    :undeclared-ns-form warn-on-undeclared)\n              ana/*cljs-static-fns* static-fns]\n      (when analyze-path\n        (analyze-source analyze-path))\n      (let [env {:context :expr :locals {}}\n            special-fns (merge default-special-fns special-fns)\n            is-special-fn? (set (keys special-fns))\n            read-error (Object.)]\n        (-setup repl-env)\n        (loop [forms (ana/forms-seq *in* \"NO_SOURCE_FILE\")]\n          (print (str \"ClojureScript:\" ana/*cljs-ns* \"> \"))\n          (flush)\n          (let [form (try\n                       (binding [*data-readers* tags/*cljs-data-readers*]\n                         (if (seq forms)\n                           (first forms)\n                           :cljs/quit))\n                       (catch Exception e\n                         (println (.getMessage e))\n                         read-error))]\n            (cond\n             (identical? form read-error) (recur (ana/forms-seq *in* \"NO_SOURCE_FILE\"))\n             \n             (= form :cljs/quit) :quit\n\n             (and (seq? form) (is-special-fn? (first form)))\n             (do (apply (get special-fns (first form)) repl-env (rest form))\n                 (newline)\n                 (recur (rest forms)))\n\n             :else\n             (do (eval-and-print repl-env env form)\n                 (recur (rest forms))))))\n        (-tear-down repl-env)))))",
           :repo "clojurescript",
-          :tag "r2060",
+          :tag "r2067",
           :filename "src/clj/cljs/repl.clj",
           :lines [154 199]},
  :full-name "cljs.repl/repl",
